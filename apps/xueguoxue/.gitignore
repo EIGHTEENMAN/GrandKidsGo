@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.DS_Store
+tmp/
+
+# 音频产物（按需同步，不入仓，避免中文文件名转义污染 git 索引）
+public/audio/

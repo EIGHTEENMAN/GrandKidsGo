@@ -1,0 +1,8 @@
+# 生成的配图文件不提交到 git（体积大，在服务器直接生成）
+*.jpg
+*.svg
+*.webp
+*.webp.mock
+*.mp4
+*.mp3
+!poems-data.json

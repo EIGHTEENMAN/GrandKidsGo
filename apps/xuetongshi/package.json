@@ -1,0 +1,21 @@
+{
+  "name": "xuetongshi",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "start": "npx serve -s dist -l 3004"
+  },
+  "dependencies": {
+    "pinyin-pro": "^3.28.1",
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.3",
+    "typescript": "~5.7.2",
+    "vite": "^6.2.4",
+    "vue-tsc": "^2.2.8"
+  }
+}

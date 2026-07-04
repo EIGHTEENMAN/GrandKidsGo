@@ -1,0 +1,21 @@
+{
+  "dynasties": [
+    {
+      "dynasty": "近现代",
+      "quota": 100
+    },
+    {
+      "dynasty": "明",
+      "quota": 80
+    },
+    {
+      "dynasty": "汉",
+      "quota": 50
+    },
+    {
+      "dynasty": "三国",
+      "quota": 30
+    }
+  ],
+  "estimated_calls": 260
+}

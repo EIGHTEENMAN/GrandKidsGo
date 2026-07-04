@@ -1,0 +1,72 @@
+{
+  "solar-system": {
+    "id": "solar-system",
+    "status": "exists"
+  },
+  "earth-moon": {
+    "id": "earth-moon",
+    "status": "ok",
+    "size": 340506,
+    "time": "34.7"
+  },
+  "force-motion": {
+    "id": "force-motion",
+    "status": "ok",
+    "size": 194691,
+    "time": "21.0"
+  },
+  "simple-machines": {
+    "id": "simple-machines",
+    "status": "ok",
+    "size": 186337,
+    "time": "19.3"
+  },
+  "human-body": {
+    "id": "human-body",
+    "status": "ok",
+    "size": 366442,
+    "time": "18.6"
+  },
+  "dinosaurs": {
+    "id": "dinosaurs",
+    "status": "ok",
+    "size": 485077,
+    "time": "20.3"
+  },
+  "space-explore": {
+    "id": "space-explore",
+    "status": "ok",
+    "size": 379825,
+    "time": "19.8"
+  },
+  "basic-circuits": {
+    "id": "basic-circuits",
+    "status": "ok",
+    "size": 167186,
+    "time": "20.7"
+  },
+  "volcanoes": {
+    "id": "volcanoes",
+    "status": "ok",
+    "size": 424636,
+    "time": "21.1"
+  },
+  "weather-climate": {
+    "id": "weather-climate",
+    "status": "ok",
+    "size": 278549,
+    "time": "20.5"
+  },
+  "matter-elements": {
+    "id": "matter-elements",
+    "status": "ok",
+    "size": 121071,
+    "time": "19.0"
+  },
+  "atoms-molecules": {
+    "id": "atoms-molecules",
+    "status": "ok",
+    "size": 391002,
+    "time": "70.1"
+  }
+}

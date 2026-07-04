@@ -1,0 +1,36 @@
+# 依赖和构建
+node_modules/
+dist/
+.next/
+target/
+
+# 系统文件
+.DS_Store
+*.bak
+
+# IDE/dev tool 缓存产物（不该入库）
+*.vue.snapshot
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.vite/
+
+# Claude
+.claude/
+
+# 数据集（单独 clone）
+chinese-poetry/
+
+# 批量处理状态文件（PoC 跑完后可清空）
+scripts/generate-poem-audio/*-status.json
+scripts/generate-poem-audio/node_modules/
+
+# 原始数据备份（merge 前快照）
+apps/xueshici/public/images/poems/poems-data.original.json
+
+# 诗配画 / 听书 大型产物（按需同步，不入仓）
+apps/xueshici/public/audio/
+apps/xueshici/public/images/poems/1004_*.mp3
+apps/xueshici/dist/audio/

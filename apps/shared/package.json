@@ -1,0 +1,7 @@
+{
+  "name": "@haodaer/shared",
+  "private": true,
+  "dependencies": {
+    "pinyin-pro": "^3.28.1"
+  }
+}

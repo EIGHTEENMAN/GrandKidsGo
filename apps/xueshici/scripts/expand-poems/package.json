@@ -1,0 +1,10 @@
+{
+  "name": "expand-poems",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "opencc-js": "^1.0.5",
+    "zod": "^3.22.4"
+  }
+}

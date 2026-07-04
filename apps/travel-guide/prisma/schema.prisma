@@ -1,0 +1,289 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String   @id @default(uuid())
+  username  String   @unique
+  nickname  String?
+  password  String
+  avatar    String?
+  role      String   @default("user")
+  createdAt DateTime @default(now()) @map("created_at")
+
+  guides     Guide[]
+  ratings    Rating[]
+  comments   Comment[]
+  likes      Like[]
+  favorites  Favorite[]
+  qas        QA[]
+  votes      Vote[]
+  voteBallots VoteBallot[]
+  gallery    ChildGallery[]
+  kidSays    KidSay[]
+  badges     UserBadge[]
+  checkins   ChildCheckIn[]
+  challenges UserChallenge[]
+
+  @@map("users")
+}
+
+model Guide {
+  id         String   @id @default(uuid())
+  title      String
+  summary    String?
+  coverImage String?   @map("cover_image")
+  destination String
+  category   String?
+  ageRange   String?   @map("age_range")
+  days       Int?
+  budget     Int?
+  isPublish  Boolean  @default(false) @map("is_publish")
+  viewCount  Int      @default(0) @map("view_count")
+  createdAt  DateTime @default(now()) @map("created_at")
+  updatedAt  DateTime @updatedAt @map("updated_at")
+
+  authorId String @map("author_id")
+  author   User   @relation(fields: [authorId], references: [id])
+
+  sections   GuideSection[]
+  ratings    Rating[]
+  comments   Comment[]
+  likes      Like[]
+  favorites  Favorite[]
+  qas        QA[]
+
+  @@index([destination])
+  @@index([category])
+  @@index([authorId])
+  @@map("guides")
+}
+
+model GuideSection {
+  id      String  @id @default(uuid())
+  title   String?
+  content String
+  order   Int     @default(0)
+
+  guideId String @map("guide_id")
+  guide   Guide  @relation(fields: [guideId], references: [id], onDelete: Cascade)
+
+  @@index([guideId])
+  @@map("guide_sections")
+}
+
+model Rating {
+  id        String   @id @default(uuid())
+  score     Int
+  createdAt DateTime @default(now()) @map("created_at")
+
+  guideId String @map("guide_id")
+  guide   Guide  @relation(fields: [guideId], references: [id], onDelete: Cascade)
+  userId  String @map("user_id")
+  user    User   @relation(fields: [userId], references: [id])
+
+  @@unique([guideId, userId])
+  @@map("ratings")
+}
+
+model Comment {
+  id        String   @id @default(uuid())
+  content   String
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  guideId  String   @map("guide_id")
+  guide    Guide    @relation(fields: [guideId], references: [id], onDelete: Cascade)
+  userId   String   @map("user_id")
+  user     User     @relation(fields: [userId], references: [id])
+  parentId String?  @map("parent_id")
+  parent   Comment? @relation("CommentReplies", fields: [parentId], references: [id])
+  replies  Comment[] @relation("CommentReplies")
+
+  @@index([guideId])
+  @@map("comments")
+}
+
+model Like {
+  id        String   @id @default(uuid())
+  createdAt DateTime @default(now()) @map("created_at")
+
+  guideId String @map("guide_id")
+  guide   Guide  @relation(fields: [guideId], references: [id], onDelete: Cascade)
+  userId  String @map("user_id")
+  user    User   @relation(fields: [userId], references: [id])
+
+  @@unique([guideId, userId])
+  @@map("likes")
+}
+
+model Favorite {
+  id        String   @id @default(uuid())
+  createdAt DateTime @default(now()) @map("created_at")
+
+  guideId String @map("guide_id")
+  guide   Guide  @relation(fields: [guideId], references: [id], onDelete: Cascade)
+  userId  String @map("user_id")
+  user    User   @relation(fields: [userId], references: [id])
+
+  @@unique([guideId, userId])
+  @@map("favorites")
+}
+
+model QA {
+  id        String   @id @default(uuid())
+  question  String
+  answer    String?
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  guideId String @map("guide_id")
+  guide   Guide  @relation(fields: [guideId], references: [id], onDelete: Cascade)
+  userId  String @map("user_id")
+  user    User   @relation(fields: [userId], references: [id])
+
+  @@index([guideId])
+  @@map("qas")
+}
+
+model Badge {
+  id          String @id @default(uuid())
+  name        String
+  description String?
+  icon        String
+  criteria    String
+
+  userBadges UserBadge[]
+
+  @@map("badges")
+}
+
+model UserBadge {
+  id        String   @id @default(uuid())
+  awardedAt DateTime @default(now()) @map("awarded_at")
+
+  userId  String @map("user_id")
+  user    User   @relation(fields: [userId], references: [id])
+  badgeId String @map("badge_id")
+  badge   Badge  @relation(fields: [badgeId], references: [id])
+
+  @@unique([userId, badgeId])
+  @@map("user_badges")
+}
+
+model ChildCheckIn {
+  id        String   @id @default(uuid())
+  location  String
+  note      String?
+  lat       Float?
+  lng       Float?
+  createdAt DateTime @default(now()) @map("created_at")
+
+  userId String @map("user_id")
+  user   User   @relation(fields: [userId], references: [id])
+
+  @@index([userId])
+  @@map("child_checkins")
+}
+
+model Vote {
+  id        String    @id @default(uuid())
+  title     String
+  options   String
+  expiresAt DateTime? @map("expires_at")
+  createdAt DateTime  @default(now()) @map("created_at")
+
+  creatorId String @map("creator_id")
+  creator   User   @relation(fields: [creatorId], references: [id])
+  ballots   VoteBallot[]
+
+  @@map("votes")
+}
+
+model VoteBallot {
+  id          String   @id @default(uuid())
+  optionIndex Int      @map("option_index")
+  createdAt   DateTime @default(now()) @map("created_at")
+
+  voteId String @map("vote_id")
+  vote   Vote   @relation(fields: [voteId], references: [id], onDelete: Cascade)
+  userId String @map("user_id")
+  user   User   @relation(fields: [userId], references: [id])
+
+  @@unique([voteId, userId])
+  @@map("vote_ballots")
+}
+
+model Challenge {
+  id          String   @id @default(uuid())
+  title       String
+  description String?
+  coverImage  String?  @map("cover_image")
+  startAt     DateTime @map("start_at")
+  endAt       DateTime @map("end_at")
+  createdAt   DateTime @default(now()) @map("created_at")
+
+  participants UserChallenge[]
+
+  @@map("challenges")
+}
+
+model UserChallenge {
+  id       String   @id @default(uuid())
+  joinedAt DateTime @default(now()) @map("joined_at")
+
+  userId      String @map("user_id")
+  user        User   @relation(fields: [userId], references: [id])
+  challengeId String @map("challenge_id")
+  challenge   Challenge @relation(fields: [challengeId], references: [id])
+
+  @@unique([userId, challengeId])
+  @@map("user_challenges")
+}
+
+model ChildGallery {
+  id        String   @id @default(uuid())
+  imageUrl  String   @map("image_url")
+  caption   String?
+  createdAt DateTime @default(now()) @map("created_at")
+
+  userId String @map("user_id")
+  user   User   @relation(fields: [userId], references: [id])
+
+  @@index([userId])
+  @@map("child_galleries")
+}
+
+model KidSay {
+  id        String   @id @default(uuid())
+  content   String
+  age       Int?
+  createdAt DateTime @default(now()) @map("created_at")
+
+  userId String @map("user_id")
+  user   User   @relation(fields: [userId], references: [id])
+
+  @@index([userId])
+  @@map("kid_says")
+}
+
+model ContentReview {
+  id          String    @id @default(uuid())
+  contentType String    @map("content_type")
+  contentId   String?   @map("content_id")
+  content     String
+  reason      String?
+  status      String    @default("pending")
+  reviewedBy  String?   @map("reviewed_by")
+  reviewedAt  DateTime? @map("reviewed_at")
+  createdAt   DateTime  @default(now()) @map("created_at")
+
+  @@index([status])
+  @@index([contentType])
+  @@map("content_reviews")
+}

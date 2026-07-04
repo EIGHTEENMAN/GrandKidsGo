@@ -1,0 +1,2106 @@
+{
+  "generatedAt": "2026-06-23T09:17:52.659Z",
+  "totalTopics": 243,
+  "totalSections": 199,
+  "topics": [
+    {
+      "id": "solar-system",
+      "title": "太阳系",
+      "category": "科学",
+      "summary": "认识太阳系和八大行星",
+      "sections": [
+        "ss1"
+      ]
+    },
+    {
+      "id": "human-body",
+      "title": "人体奥秘",
+      "category": "科学",
+      "summary": "探索奇妙的人体结构",
+      "sections": [
+        "hb1"
+      ]
+    },
+    {
+      "id": "force-motion",
+      "title": "力与运动",
+      "category": "科学",
+      "summary": "认识生活中的各种力",
+      "sections": [
+        "fm1"
+      ]
+    },
+    {
+      "id": "matter-elements",
+      "title": "物质与元素",
+      "category": "科学",
+      "summary": "认识构成万物的物质",
+      "sections": [
+        "me1"
+      ]
+    },
+    {
+      "id": "light-sound",
+      "title": "声光电磁",
+      "category": "科学",
+      "summary": "探索声光电磁的奇妙世界",
+      "sections": [
+        "ls1"
+      ]
+    },
+    {
+      "id": "energy-power",
+      "title": "能量与能源",
+      "category": "科学",
+      "summary": "了解各种形式的能量",
+      "sections": [
+        "ep1"
+      ]
+    },
+    {
+      "id": "time-space",
+      "title": "时间与空间",
+      "category": "科学",
+      "summary": "探索时空的奥秘",
+      "sections": [
+        "ts1"
+      ]
+    },
+    {
+      "id": "space-explore",
+      "title": "宇宙探索",
+      "category": "科学",
+      "summary": "人类探索宇宙的历程",
+      "sections": [
+        "se1"
+      ]
+    },
+    {
+      "id": "atoms-molecules",
+      "title": "原子与分子",
+      "category": "科学",
+      "summary": "认识微观粒子世界",
+      "sections": [
+        "am1"
+      ]
+    },
+    {
+      "id": "earth-moon",
+      "title": "地球与月球",
+      "category": "科学",
+      "summary": "了解地球和月球",
+      "sections": [
+        "em1"
+      ]
+    },
+    {
+      "id": "simple-machines",
+      "title": "简单机械",
+      "category": "科学",
+      "summary": "认识省力的机械",
+      "sections": [
+        "sm1"
+      ]
+    },
+    {
+      "id": "plants-basic",
+      "title": "植物常识",
+      "category": "科学",
+      "summary": "认识基本植物知识",
+      "sections": [
+        "pb1"
+      ]
+    },
+    {
+      "id": "temp-heat",
+      "title": "温度与热量",
+      "category": "科学",
+      "summary": "了解冷热现象",
+      "sections": [
+        "th1"
+      ]
+    },
+    {
+      "id": "basic-circuits",
+      "title": "电路基础",
+      "category": "科学",
+      "summary": "学习电的流动",
+      "sections": [
+        "bc1"
+      ]
+    },
+    {
+      "id": "earth-structure",
+      "title": "地球的结构",
+      "category": "地理",
+      "summary": "认识地球内部和表面",
+      "sections": [
+        "es1"
+      ]
+    },
+    {
+      "id": "oceans",
+      "title": "海洋世界",
+      "category": "地理",
+      "summary": "探索蓝色海洋",
+      "sections": [
+        "oc1"
+      ]
+    },
+    {
+      "id": "weather-climate",
+      "title": "天气与气候",
+      "category": "地理",
+      "summary": "了解天气和气候特征",
+      "sections": [
+        "wc1"
+      ]
+    },
+    {
+      "id": "china-geo",
+      "title": "中国地理",
+      "category": "地理",
+      "summary": "了解祖国壮丽河山",
+      "sections": [
+        "cg1"
+      ]
+    },
+    {
+      "id": "world-geo",
+      "title": "世界地理",
+      "category": "地理",
+      "summary": "认识世界各地风貌",
+      "sections": [
+        "wg1"
+      ]
+    },
+    {
+      "id": "rivers-lakes",
+      "title": "河流与湖泊",
+      "category": "地理",
+      "summary": "认识地球上的江河湖泊",
+      "sections": [
+        "rl1"
+      ]
+    },
+    {
+      "id": "mountains",
+      "title": "山脉与高原",
+      "category": "地理",
+      "summary": "认识高山和高原",
+      "sections": [
+        "mt1"
+      ]
+    },
+    {
+      "id": "forests",
+      "title": "森林与草原",
+      "category": "地理",
+      "summary": "了解森林草原生态",
+      "sections": [
+        "fo1"
+      ]
+    },
+    {
+      "id": "deserts",
+      "title": "沙漠与荒漠",
+      "category": "地理",
+      "summary": "了解世界沙漠",
+      "sections": [
+        "de1"
+      ]
+    },
+    {
+      "id": "polar",
+      "title": "极地世界",
+      "category": "地理",
+      "summary": "了解南北极",
+      "sections": [
+        "po1"
+      ]
+    },
+    {
+      "id": "volcanoes",
+      "title": "火山与地震",
+      "category": "地理",
+      "summary": "了解火山地震现象",
+      "sections": [
+        "vo1"
+      ]
+    },
+    {
+      "id": "islands",
+      "title": "岛屿与半岛",
+      "category": "地理",
+      "summary": "认识地球上的岛屿",
+      "sections": [
+        "is1"
+      ]
+    },
+    {
+      "id": "natural-hazards",
+      "title": "自然灾害",
+      "category": "地理",
+      "summary": "了解各种自然灾害",
+      "sections": [
+        "nh1"
+      ]
+    },
+    {
+      "id": "animal-kingdom",
+      "title": "动物王国",
+      "category": "自然",
+      "summary": "认识动物世界",
+      "sections": [
+        "ak1"
+      ]
+    },
+    {
+      "id": "plant-world",
+      "title": "植物世界",
+      "category": "自然",
+      "summary": "探索植物奥秘",
+      "sections": [
+        "pw1"
+      ]
+    },
+    {
+      "id": "ecosystem",
+      "title": "生态系统",
+      "category": "自然",
+      "summary": "了解生物与环境关系",
+      "sections": [
+        "ec1"
+      ]
+    },
+    {
+      "id": "dinosaurs",
+      "title": "恐龙世界",
+      "category": "自然",
+      "summary": "认识远古恐龙",
+      "sections": [
+        "di1"
+      ]
+    },
+    {
+      "id": "micro-world",
+      "title": "微生物世界",
+      "category": "自然",
+      "summary": "看不见的生命",
+      "sections": [
+        "mw1"
+      ]
+    },
+    {
+      "id": "evolution",
+      "title": "进化与适应",
+      "category": "自然",
+      "summary": "了解生物进化",
+      "sections": [
+        "ev1"
+      ]
+    },
+    {
+      "id": "rare-animals",
+      "title": "珍稀动物",
+      "category": "自然",
+      "summary": "认识濒危动物",
+      "sections": [
+        "ra1"
+      ]
+    },
+    {
+      "id": "ocean-life",
+      "title": "海洋生物",
+      "category": "自然",
+      "summary": "认识海洋中的生物",
+      "sections": [
+        "ol1"
+      ]
+    },
+    {
+      "id": "bird-world",
+      "title": "鸟类世界",
+      "category": "自然",
+      "summary": "了解各种鸟类",
+      "sections": [
+        "bw1"
+      ]
+    },
+    {
+      "id": "insect-world",
+      "title": "昆虫世界",
+      "category": "自然",
+      "summary": "认识种类最多的动物",
+      "sections": [
+        "iw1"
+      ]
+    },
+    {
+      "id": "amphibians-reptiles",
+      "title": "两栖与爬行",
+      "category": "自然",
+      "summary": "认识两栖爬行动物",
+      "sections": [
+        "ar1"
+      ]
+    },
+    {
+      "id": "mammals",
+      "title": "哺乳动物大全",
+      "category": "自然",
+      "summary": "了解各种哺乳动物",
+      "sections": [
+        "ml1"
+      ]
+    },
+    {
+      "id": "nature-wonders",
+      "title": "自然奇观",
+      "category": "自然",
+      "summary": "令人惊叹的自然景观",
+      "sections": [
+        "nw1"
+      ]
+    },
+    {
+      "id": "camouflage",
+      "title": "动物伪装",
+      "category": "自然",
+      "summary": "动物如何伪装自己",
+      "sections": [
+        "ca1"
+      ]
+    },
+    {
+      "id": "food-chains",
+      "title": "食物链",
+      "category": "自然",
+      "summary": "了解自然食物关系",
+      "sections": [
+        "fc1"
+      ]
+    },
+    {
+      "id": "confucius",
+      "title": "孔子",
+      "category": "历史人物",
+      "summary": "中国最伟大的思想家",
+      "sections": [
+        "c1"
+      ]
+    },
+    {
+      "id": "qin-shihuang",
+      "title": "秦始皇",
+      "category": "历史人物",
+      "summary": "中国第一位皇帝",
+      "sections": [
+        "q1"
+      ]
+    },
+    {
+      "id": "edison",
+      "title": "爱迪生",
+      "category": "历史人物",
+      "summary": "伟大发明家电灯发明者",
+      "sections": [
+        "e1"
+      ]
+    },
+    {
+      "id": "zhuge-liang",
+      "title": "诸葛亮",
+      "category": "历史人物",
+      "summary": "智慧化身",
+      "sections": [
+        "z1"
+      ]
+    },
+    {
+      "id": "li-bai",
+      "title": "李白",
+      "category": "历史人物",
+      "summary": "浪漫主义诗仙",
+      "sections": [
+        "l1"
+      ]
+    },
+    {
+      "id": "newton",
+      "title": "牛顿",
+      "category": "历史人物",
+      "summary": "发现万有引力的科学家",
+      "sections": [
+        "n1"
+      ]
+    },
+    {
+      "id": "madame-curie",
+      "title": "居里夫人",
+      "category": "历史人物",
+      "summary": "两次诺贝尔奖科学家",
+      "sections": [
+        "m1"
+      ]
+    },
+    {
+      "id": "sima-qian",
+      "title": "司马迁",
+      "category": "历史人物",
+      "summary": "史家之绝唱",
+      "sections": [
+        "s1"
+      ]
+    },
+    {
+      "id": "zu-chongzhi",
+      "title": "祖冲之",
+      "category": "历史人物",
+      "summary": "古代伟大数学家",
+      "sections": [
+        "z1"
+      ]
+    },
+    {
+      "id": "zheng-he",
+      "title": "郑和",
+      "category": "历史人物",
+      "summary": "远航世界的航海家",
+      "sections": [
+        "z1"
+      ]
+    },
+    {
+      "id": "yue-fei",
+      "title": "岳飞",
+      "category": "历史人物",
+      "summary": "精忠报国英雄",
+      "sections": [
+        "y1"
+      ]
+    },
+    {
+      "id": "caocao",
+      "title": "曹操",
+      "category": "历史人物",
+      "summary": "一代枭雄",
+      "sections": [
+        "c1"
+      ]
+    },
+    {
+      "id": "einstein",
+      "title": "爱因斯坦",
+      "category": "历史人物",
+      "summary": "相对论之父",
+      "sections": [
+        "e1"
+      ]
+    },
+    {
+      "id": "archimedes",
+      "title": "阿基米德",
+      "category": "历史人物",
+      "summary": "古希腊数学家科学家",
+      "sections": [
+        "a1"
+      ]
+    },
+    {
+      "id": "da-vinci",
+      "title": "达芬奇",
+      "category": "历史人物",
+      "summary": "文艺复兴天才",
+      "sections": [
+        "d1"
+      ]
+    },
+    {
+      "id": "gandhi",
+      "title": "甘地",
+      "category": "历史人物",
+      "summary": "印度圣雄",
+      "sections": [
+        "g1"
+      ]
+    },
+    {
+      "id": "socrates",
+      "title": "苏格拉底",
+      "category": "历史人物",
+      "summary": "西方哲学奠基人",
+      "sections": [
+        "s1"
+      ]
+    },
+    {
+      "id": "chinese-painting",
+      "title": "中国画",
+      "category": "艺术",
+      "summary": "欣赏传统绘画",
+      "sections": [
+        "c1"
+      ]
+    },
+    {
+      "id": "music-world",
+      "title": "音乐世界",
+      "category": "艺术",
+      "summary": "认识音乐表达方式",
+      "sections": [
+        "m1"
+      ]
+    },
+    {
+      "id": "architecture",
+      "title": "建筑艺术",
+      "category": "艺术",
+      "summary": "欣赏著名建筑",
+      "sections": [
+        "a1"
+      ]
+    },
+    {
+      "id": "calligraphy",
+      "title": "书法艺术",
+      "category": "艺术",
+      "summary": "汉字书写之美",
+      "sections": [
+        "c1"
+      ]
+    },
+    {
+      "id": "dance-theater",
+      "title": "舞蹈与戏剧",
+      "category": "艺术",
+      "summary": "舞台表演艺术",
+      "sections": [
+        "d1"
+      ]
+    },
+    {
+      "id": "sculpture",
+      "title": "雕塑艺术",
+      "category": "艺术",
+      "summary": "立体造型艺术之美",
+      "sections": [
+        "s1"
+      ]
+    },
+    {
+      "id": "famous-paintings",
+      "title": "中外名画",
+      "category": "艺术",
+      "summary": "世界著名绘画杰作",
+      "sections": [
+        "f1"
+      ]
+    },
+    {
+      "id": "folk-art",
+      "title": "民间艺术",
+      "category": "艺术",
+      "summary": "传统民间艺术之美",
+      "sections": [
+        "f1"
+      ]
+    },
+    {
+      "id": "ceramics",
+      "title": "陶瓷艺术",
+      "category": "艺术",
+      "summary": "了解陶瓷艺术的千年传承",
+      "sections": [
+        "c1"
+      ]
+    },
+    {
+      "id": "photography",
+      "title": "摄影艺术",
+      "category": "艺术",
+      "summary": "了解摄影艺术基础知识",
+      "sections": [
+        "p1"
+      ]
+    },
+    {
+      "id": "film-art",
+      "title": "电影艺术",
+      "category": "艺术",
+      "summary": "了解电影艺术基础知识",
+      "sections": [
+        "f1"
+      ]
+    },
+    {
+      "id": "opera",
+      "title": "中国传统戏曲",
+      "category": "艺术",
+      "summary": "了解中国传统戏曲基础知识",
+      "sections": [
+        "o1"
+      ]
+    },
+    {
+      "id": "modern-art",
+      "title": "现代艺术",
+      "category": "艺术",
+      "summary": "了解现代艺术基础知识",
+      "sections": [
+        "m1"
+      ]
+    },
+    {
+      "id": "ancient-invent",
+      "title": "古代发明",
+      "category": "科技工程",
+      "summary": "了解中国古代发明",
+      "sections": [
+        "a1"
+      ]
+    },
+    {
+      "id": "transport",
+      "title": "交通技术",
+      "category": "科技工程",
+      "summary": "交通工具发展史",
+      "sections": [
+        "t1"
+      ]
+    },
+    {
+      "id": "communication",
+      "title": "通信技术",
+      "category": "科技工程",
+      "summary": "通信方式变革",
+      "sections": [
+        "c1"
+      ]
+    },
+    {
+      "id": "computer",
+      "title": "计算机与互联网",
+      "category": "科技工程",
+      "summary": "了解计算机与互联网基础知识",
+      "sections": [
+        "c1"
+      ]
+    },
+    {
+      "id": "robots",
+      "title": "机器人",
+      "category": "科技工程",
+      "summary": "了解机器人基础知识",
+      "sections": [
+        "r1"
+      ]
+    },
+    {
+      "id": "aerospace",
+      "title": "航空航天",
+      "category": "科技工程",
+      "summary": "了解航空航天基础知识",
+      "sections": [
+        "a1"
+      ]
+    },
+    {
+      "id": "materials",
+      "title": "材料科学",
+      "category": "科技工程",
+      "summary": "了解材料科学基础知识",
+      "sections": [
+        "m1"
+      ]
+    },
+    {
+      "id": "energy-tech",
+      "title": "能源技术",
+      "category": "科技工程",
+      "summary": "了解能源技术基础知识",
+      "sections": [
+        "e1"
+      ]
+    },
+    {
+      "id": "bridge-tunnel",
+      "title": "桥梁与隧道",
+      "category": "科技工程",
+      "summary": "了解桥梁与隧道基础知识",
+      "sections": [
+        "b1"
+      ]
+    },
+    {
+      "id": "agricultural-tech",
+      "title": "农业技术",
+      "category": "科技工程",
+      "summary": "了解农业技术基础知识",
+      "sections": [
+        "a1"
+      ]
+    },
+    {
+      "id": "smartphone",
+      "title": "智能手机",
+      "category": "科技工程",
+      "summary": "了解智能手机基础知识",
+      "sections": [
+        "s1"
+      ]
+    },
+    {
+      "id": "medical-tech",
+      "title": "医疗技术",
+      "category": "科技工程",
+      "summary": "了解医疗技术基础知识",
+      "sections": [
+        "m1"
+      ]
+    },
+    {
+      "id": "diet-nutrition",
+      "title": "饮食营养",
+      "category": "健康生活",
+      "summary": "了解饮食营养基础知识",
+      "sections": [
+        "d1"
+      ]
+    },
+    {
+      "id": "sport-health",
+      "title": "运动健康",
+      "category": "健康生活",
+      "summary": "了解运动健康基础知识",
+      "sections": [
+        "s1"
+      ]
+    },
+    {
+      "id": "disease-prevent",
+      "title": "疾病预防",
+      "category": "健康生活",
+      "summary": "了解疾病预防基础知识",
+      "sections": [
+        "d1"
+      ]
+    },
+    {
+      "id": "mental-health",
+      "title": "心理健康",
+      "category": "健康生活",
+      "summary": "了解心理健康基础知识",
+      "sections": [
+        "m1"
+      ]
+    },
+    {
+      "id": "first-aid",
+      "title": "急救常识",
+      "category": "健康生活",
+      "summary": "了解急救常识基础知识",
+      "sections": [
+        "f1"
+      ]
+    },
+    {
+      "id": "good-habits",
+      "title": "良好习惯",
+      "category": "健康生活",
+      "summary": "了解良好习惯基础知识",
+      "sections": [
+        "g1"
+      ]
+    },
+    {
+      "id": "sleep-rest",
+      "title": "睡眠与休息",
+      "category": "健康生活",
+      "summary": "了解睡眠与休息基础知识",
+      "sections": [
+        "s1"
+      ]
+    },
+    {
+      "id": "eye-care",
+      "title": "保护视力",
+      "category": "健康生活",
+      "summary": "了解保护视力基础知识",
+      "sections": [
+        "e1"
+      ]
+    },
+    {
+      "id": "dental-care",
+      "title": "口腔健康",
+      "category": "健康生活",
+      "summary": "了解口腔健康基础知识",
+      "sections": [
+        "d1"
+      ]
+    },
+    {
+      "id": "growth-body",
+      "title": "成长发育",
+      "category": "健康生活",
+      "summary": "了解成长发育基础知识",
+      "sections": [
+        "g1"
+      ]
+    },
+    {
+      "id": "immune-system",
+      "title": "免疫系统",
+      "category": "健康生活",
+      "summary": "了解免疫系统基础知识",
+      "sections": [
+        "i1"
+      ]
+    },
+    {
+      "id": "classification",
+      "title": "分类与归纳",
+      "category": "逻辑思维",
+      "summary": "了解分类与归纳基础知识",
+      "sections": [
+        "c1"
+      ]
+    },
+    {
+      "id": "cause-effect",
+      "title": "因果关系",
+      "category": "逻辑思维",
+      "summary": "了解因果关系基础知识",
+      "sections": [
+        "c1"
+      ]
+    },
+    {
+      "id": "analogy",
+      "title": "类比推理",
+      "category": "逻辑思维",
+      "summary": "了解类比推理基础知识",
+      "sections": [
+        "a1"
+      ]
+    },
+    {
+      "id": "observe-find",
+      "title": "观察与发现",
+      "category": "逻辑思维",
+      "summary": "了解观察与发现基础知识",
+      "sections": [
+        "o1"
+      ]
+    },
+    {
+      "id": "creativity",
+      "title": "创造力",
+      "category": "逻辑思维",
+      "summary": "了解创造力基础知识",
+      "sections": [
+        "c1"
+      ]
+    },
+    {
+      "id": "critical-thinking",
+      "title": "批判性思维",
+      "category": "逻辑思维",
+      "summary": "了解批判性思维基础知识",
+      "sections": [
+        "c1"
+      ]
+    },
+    {
+      "id": "memory-methods",
+      "title": "记忆方法",
+      "category": "逻辑思维",
+      "summary": "了解记忆方法基础知识",
+      "sections": [
+        "m1"
+      ]
+    },
+    {
+      "id": "problem-solving",
+      "title": "问题解决",
+      "category": "逻辑思维",
+      "summary": "了解问题解决基础知识",
+      "sections": [
+        "p1"
+      ]
+    },
+    {
+      "id": "brain-power",
+      "title": "大脑潜能",
+      "category": "逻辑思维",
+      "summary": "了解大脑潜能基础知识",
+      "sections": [
+        "b1"
+      ]
+    },
+    {
+      "id": "decision-making",
+      "title": "决策能力",
+      "category": "逻辑思维",
+      "summary": "了解决策能力基础知识",
+      "sections": [
+        "d1"
+      ]
+    },
+    {
+      "id": "time-management",
+      "title": "时间管理",
+      "category": "逻辑思维",
+      "summary": "了解时间管理基础知识",
+      "sections": [
+        "t1"
+      ]
+    },
+    {
+      "id": "money-trade",
+      "title": "货币与交易",
+      "category": "经济社会",
+      "summary": "了解货币与交易基础知识",
+      "sections": [
+        "m1"
+      ]
+    },
+    {
+      "id": "market-price",
+      "title": "市场与价格",
+      "category": "经济社会",
+      "summary": "了解市场与价格基础知识",
+      "sections": [
+        "m1"
+      ]
+    },
+    {
+      "id": "career",
+      "title": "职业与社会",
+      "category": "经济社会",
+      "summary": "了解职业与社会基础知识",
+      "sections": [
+        "c1"
+      ]
+    },
+    {
+      "id": "saving-spending",
+      "title": "储蓄与消费",
+      "category": "经济社会",
+      "summary": "了解储蓄与消费基础知识",
+      "sections": [
+        "s1"
+      ]
+    },
+    {
+      "id": "trade-global",
+      "title": "贸易全球化",
+      "category": "经济社会",
+      "summary": "了解贸易全球化基础知识",
+      "sections": [
+        "t1"
+      ]
+    },
+    {
+      "id": "law-rules",
+      "title": "法律与规则",
+      "category": "经济社会",
+      "summary": "了解法律与规则基础知识",
+      "sections": [
+        "l1"
+      ]
+    },
+    {
+      "id": "city-life",
+      "title": "城市生活",
+      "category": "经济社会",
+      "summary": "了解城市生活基础知识",
+      "sections": [
+        "c1"
+      ]
+    },
+    {
+      "id": "festivals",
+      "title": "节日文化",
+      "category": "经济社会",
+      "summary": "了解节日文化基础知识",
+      "sections": [
+        "f1"
+      ]
+    },
+    {
+      "id": "family-economics",
+      "title": "家庭经济",
+      "category": "经济社会",
+      "summary": "了解家庭经济基础知识",
+      "sections": [
+        "f1"
+      ]
+    },
+    {
+      "id": "advertising",
+      "title": "广告与消费",
+      "category": "经济社会",
+      "summary": "了解广告与消费基础知识",
+      "sections": [
+        "a1"
+      ]
+    },
+    {
+      "id": "charity",
+      "title": "公益慈善",
+      "category": "经济社会",
+      "summary": "了解公益慈善基础知识",
+      "sections": [
+        "c1"
+      ]
+    },
+    {
+      "id": "chinese-char",
+      "title": "汉字起源",
+      "category": "语言文字",
+      "summary": "了解汉字起源基础知识",
+      "sections": [
+        "c1"
+      ]
+    },
+    {
+      "id": "chengyu",
+      "title": "成语故事",
+      "category": "语言文字",
+      "summary": "了解成语故事基础知识",
+      "sections": [
+        "c1"
+      ]
+    },
+    {
+      "id": "poetry-rhythm",
+      "title": "诗词格律",
+      "category": "语言文字",
+      "summary": "了解诗词格律基础知识",
+      "sections": [
+        "p1"
+      ]
+    },
+    {
+      "id": "myths",
+      "title": "神话传说",
+      "category": "语言文字",
+      "summary": "了解神话传说基础知识",
+      "sections": [
+        "m1"
+      ]
+    },
+    {
+      "id": "fables",
+      "title": "寓言故事",
+      "category": "语言文字",
+      "summary": "了解寓言故事基础知识",
+      "sections": [
+        "f1"
+      ]
+    },
+    {
+      "id": "expression",
+      "title": "表达与沟通",
+      "category": "语言文字",
+      "summary": "了解表达与沟通基础知识",
+      "sections": [
+        "e1"
+      ]
+    },
+    {
+      "id": "world-lang",
+      "title": "世界语言",
+      "category": "语言文字",
+      "summary": "了解世界语言基础知识",
+      "sections": [
+        "w1"
+      ]
+    },
+    {
+      "id": "reading",
+      "title": "阅读方法",
+      "category": "语言文字",
+      "summary": "了解阅读方法基础知识",
+      "sections": [
+        "r1"
+      ]
+    },
+    {
+      "id": "writing-tools",
+      "title": "写作工具",
+      "category": "语言文字",
+      "summary": "了解写作工具基础知识",
+      "sections": [
+        "w1"
+      ]
+    },
+    {
+      "id": "storytelling",
+      "title": "讲故事",
+      "category": "语言文字",
+      "summary": "了解讲故事基础知识",
+      "sections": [
+        "s1"
+      ]
+    },
+    {
+      "id": "idioms",
+      "title": "俗语与谚语",
+      "category": "语言文字",
+      "summary": "了解俗语与谚语基础知识",
+      "sections": [
+        "i1"
+      ]
+    },
+    {
+      "id": "sound-wave",
+      "title": "声波与声音",
+      "category": "科学",
+      "summary": "认识声音的产生和传播",
+      "sections": [
+        "sw1"
+      ]
+    },
+    {
+      "id": "light-optics",
+      "title": "光学与视觉",
+      "category": "科学",
+      "summary": "认识光的特性和视觉原理",
+      "sections": [
+        "lo1"
+      ]
+    },
+    {
+      "id": "magnetism",
+      "title": "磁与电",
+      "category": "科学",
+      "summary": "认识磁现象和简单电路",
+      "sections": [
+        "mg1"
+      ]
+    },
+    {
+      "id": "thermo",
+      "title": "热学基础",
+      "category": "科学",
+      "summary": "认识温度热量和热传递",
+      "sections": [
+        "th1"
+      ]
+    },
+    {
+      "id": "matter-state",
+      "title": "物质的状态",
+      "category": "科学",
+      "summary": "认识物质三态及其变化",
+      "sections": [
+        "ms1"
+      ]
+    },
+    {
+      "id": "chemistry-life",
+      "title": "生活中的化学",
+      "category": "科学",
+      "summary": "了解身边的化学现象",
+      "sections": [
+        "cl1"
+      ]
+    },
+    {
+      "id": "rivers",
+      "title": "河流与湖泊",
+      "category": "地理",
+      "summary": "了解世界主要河流湖泊",
+      "sections": [
+        "rv1"
+      ]
+    },
+    {
+      "id": "glacier",
+      "title": "冰川与冰原",
+      "category": "地理",
+      "summary": "了解冰川的形成和分布",
+      "sections": [
+        "gl1"
+      ]
+    },
+    {
+      "id": "desert",
+      "title": "沙漠与荒漠",
+      "category": "地理",
+      "summary": "了解沙漠的形成和特征",
+      "sections": [
+        "de1"
+      ]
+    },
+    {
+      "id": "grassland",
+      "title": "草原与牧场",
+      "category": "地理",
+      "summary": "了解世界草原分布",
+      "sections": [
+        "gr1"
+      ]
+    },
+    {
+      "id": "forest",
+      "title": "森林生态系统",
+      "category": "地理",
+      "summary": "了解森林类型和功能",
+      "sections": [
+        "fo1"
+      ]
+    },
+    {
+      "id": "wetland",
+      "title": "湿地生态系统",
+      "category": "地理",
+      "summary": "了解湿地类型和保护",
+      "sections": [
+        "we1"
+      ]
+    },
+    {
+      "id": "insects",
+      "title": "昆虫世界",
+      "category": "自然",
+      "summary": "认识丰富多彩的昆虫",
+      "sections": [
+        "in1"
+      ]
+    },
+    {
+      "id": "amphibians",
+      "title": "两栖爬行动物",
+      "category": "自然",
+      "summary": "认识两栖和爬行类动物",
+      "sections": [
+        "am1"
+      ]
+    },
+    {
+      "id": "microbes",
+      "title": "微生物世界",
+      "category": "自然",
+      "summary": "认识看不见的微生物",
+      "sections": [
+        "mi1"
+      ]
+    },
+    {
+      "id": "ecosystem",
+      "title": "生态系统",
+      "category": "自然",
+      "summary": "认识生态系统的组成和平衡",
+      "sections": [
+        "ec1"
+      ]
+    },
+    {
+      "id": "marine-life",
+      "title": "海洋生物",
+      "category": "自然",
+      "summary": "认识丰富的海洋世界",
+      "sections": [
+        "ma1"
+      ]
+    },
+    {
+      "id": "zhugeliang",
+      "title": "诸葛亮",
+      "category": "历史人物",
+      "summary": "三国蜀汉丞相智谋超群",
+      "sections": [
+        "zl1"
+      ]
+    },
+    {
+      "id": "libai",
+      "title": "李白",
+      "category": "历史人物",
+      "summary": "唐代浪漫主义诗仙",
+      "sections": [
+        "lb1"
+      ]
+    },
+    {
+      "id": "dufu",
+      "title": "杜甫",
+      "category": "历史人物",
+      "summary": "唐代现实主义诗圣",
+      "sections": [
+        "df1"
+      ]
+    },
+    {
+      "id": "sculpture",
+      "title": "雕塑艺术",
+      "category": "艺术",
+      "summary": "了解雕塑的历史和经典",
+      "sections": [
+        "sc1"
+      ]
+    },
+    {
+      "id": "calligraphy",
+      "title": "书法艺术",
+      "category": "艺术",
+      "summary": "了解汉字书写之美",
+      "sections": [
+        "ca1"
+      ]
+    },
+    {
+      "id": "comic-anime",
+      "title": "漫画与动画",
+      "category": "艺术",
+      "summary": "了解漫画动画艺术",
+      "sections": [
+        "co1"
+      ]
+    },
+    {
+      "id": "dance",
+      "title": "舞蹈艺术",
+      "category": "艺术",
+      "summary": "了解不同舞蹈形式之美",
+      "sections": [
+        "da1"
+      ]
+    },
+    {
+      "id": "traffic-eng",
+      "title": "交通工程",
+      "category": "科技工程",
+      "summary": "了解现代交通技术",
+      "sections": [
+        "te1"
+      ]
+    },
+    {
+      "id": "water-eng",
+      "title": "水利工程",
+      "category": "科技工程",
+      "summary": "了解水利开发和防洪",
+      "sections": [
+        "wt1"
+      ]
+    },
+    {
+      "id": "biotech",
+      "title": "生物技术",
+      "category": "科技工程",
+      "summary": "了解生物科技的应用",
+      "sections": [
+        "bt1"
+      ]
+    },
+    {
+      "id": "nano-tech",
+      "title": "纳米技术",
+      "category": "科技工程",
+      "summary": "了解极微小的纳米世界",
+      "sections": [
+        "na1"
+      ]
+    },
+    {
+      "id": "env-eng",
+      "title": "环境工程",
+      "category": "科技工程",
+      "summary": "了解环境保护技术",
+      "sections": [
+        "ev1"
+      ]
+    },
+    {
+      "id": "balanced-diet",
+      "title": "均衡饮食",
+      "category": "健康生活",
+      "summary": "了解合理膳食营养",
+      "sections": [
+        "bd1"
+      ]
+    },
+    {
+      "id": "food-safety",
+      "title": "食品安全",
+      "category": "健康生活",
+      "summary": "了解食品卫生和安全知识",
+      "sections": [
+        "fs1"
+      ]
+    },
+    {
+      "id": "drug-knowledge",
+      "title": "药品常识",
+      "category": "健康生活",
+      "summary": "了解安全用药知识",
+      "sections": [
+        "dk1"
+      ]
+    },
+    {
+      "id": "vaccination",
+      "title": "预防接种",
+      "category": "健康生活",
+      "summary": "了解疫苗和免疫保护",
+      "sections": [
+        "va1"
+      ]
+    },
+    {
+      "id": "mental-health",
+      "title": "心理健康管理",
+      "category": "健康生活",
+      "summary": "认识心理健康和自我调节",
+      "sections": [
+        "mh1"
+      ]
+    },
+    {
+      "id": "home-safety",
+      "title": "家庭安全",
+      "category": "健康生活",
+      "summary": "了解家庭生活中的安全知识",
+      "sections": [
+        "hs1"
+      ]
+    },
+    {
+      "id": "logical-fallacy",
+      "title": "逻辑谬误",
+      "category": "逻辑思维",
+      "summary": "认识常见的逻辑错误",
+      "sections": [
+        "lf1"
+      ]
+    },
+    {
+      "id": "reverse-thinking",
+      "title": "逆向思维",
+      "category": "逻辑思维",
+      "summary": "从相反角度思考问题",
+      "sections": [
+        "rt1"
+      ]
+    },
+    {
+      "id": "divergent-thinking",
+      "title": "发散思维",
+      "category": "逻辑思维",
+      "summary": "打开思路多角度思考",
+      "sections": [
+        "dt1"
+      ]
+    },
+    {
+      "id": "abstract-thinking",
+      "title": "抽象思维",
+      "category": "逻辑思维",
+      "summary": "从具体到一般思考",
+      "sections": [
+        "ab1"
+      ]
+    },
+    {
+      "id": "sudoku-logic",
+      "title": "数独与逻辑推理",
+      "category": "逻辑思维",
+      "summary": "通过数独训练逻辑",
+      "sections": [
+        "su1"
+      ]
+    },
+    {
+      "id": "business-mgmt",
+      "title": "企业管理",
+      "category": "经济社会",
+      "summary": "了解企业如何运营",
+      "sections": [
+        "bm1"
+      ]
+    },
+    {
+      "id": "ecommerce",
+      "title": "电子商务",
+      "category": "经济社会",
+      "summary": "了解在线购物和电商",
+      "sections": [
+        "ec1"
+      ]
+    },
+    {
+      "id": "insurance",
+      "title": "保险常识",
+      "category": "经济社会",
+      "summary": "了解保险的基本概念",
+      "sections": [
+        "in1"
+      ]
+    },
+    {
+      "id": "tax-basics",
+      "title": "税收常识",
+      "category": "经济社会",
+      "summary": "了解税收的基本知识",
+      "sections": [
+        "ta1"
+      ]
+    },
+    {
+      "id": "rhetoric",
+      "title": "修辞手法",
+      "category": "语言文字",
+      "summary": "了解语言表达的修辞技巧",
+      "sections": [
+        "rh1"
+      ]
+    },
+    {
+      "id": "punctuation",
+      "title": "标点符号",
+      "category": "语言文字",
+      "summary": "了解标点符号的用法",
+      "sections": [
+        "pu1"
+      ]
+    },
+    {
+      "id": "polyphone",
+      "title": "多音字",
+      "category": "语言文字",
+      "summary": "认识常见多音字",
+      "sections": [
+        "po1"
+      ]
+    },
+    {
+      "id": "xiangjinzi",
+      "title": "形近字",
+      "category": "语言文字",
+      "summary": "辨析形状相似的汉字",
+      "sections": [
+        "xj1"
+      ]
+    },
+    {
+      "id": "riddles",
+      "title": "趣味谜语",
+      "category": "语言文字",
+      "summary": "猜谜语锻炼语言思维",
+      "sections": [
+        "ri1"
+      ]
+    },
+    {
+      "id": "monetary-policy",
+      "title": "货币政策",
+      "category": "经济社会",
+      "summary": "了解国家调控经济的工具",
+      "sections": [
+        "mp1"
+      ]
+    },
+    {
+      "id": "sharing-economy",
+      "title": "共享经济",
+      "category": "经济社会",
+      "summary": "了解共享经济模式",
+      "sections": [
+        "sh1"
+      ]
+    },
+    {
+      "id": "smart-money",
+      "title": "理财入门",
+      "category": "经济社会",
+      "summary": "了解个人理财基础知识",
+      "sections": [
+        "sm1"
+      ]
+    },
+    {
+      "id": "internet-economy",
+      "title": "互联网经济",
+      "category": "经济社会",
+      "summary": "了解互联网如何改变经济",
+      "sections": [
+        "ie1"
+      ]
+    },
+    {
+      "id": "rural-economy",
+      "title": "乡村经济",
+      "category": "经济社会",
+      "summary": "了解农业农村经济发展",
+      "sections": [
+        "re1"
+      ]
+    },
+    {
+      "id": "common-errors",
+      "title": "常见语病",
+      "category": "语言文字",
+      "summary": "了解常见语言错误",
+      "sections": [
+        "ce1"
+      ]
+    },
+    {
+      "id": "ancient-poetry",
+      "title": "古诗词常识",
+      "category": "语言文字",
+      "summary": "了解古诗词基本知识",
+      "sections": [
+        "ap1"
+      ]
+    },
+    {
+      "id": "new-words",
+      "title": "新词与流行语",
+      "category": "语言文字",
+      "summary": "了解语言的发展变化",
+      "sections": [
+        "nw1"
+      ]
+    },
+    {
+      "id": "chinese-dialects",
+      "title": "汉语方言",
+      "category": "语言文字",
+      "summary": "了解汉语的方言多样性",
+      "sections": [
+        "cd1"
+      ]
+    },
+    {
+      "id": "lateral-thinking",
+      "title": "横向思维",
+      "category": "逻辑思维",
+      "summary": "从不同角度解决难题",
+      "sections": [
+        "lt1"
+      ]
+    },
+    {
+      "id": "game-theory",
+      "title": "博弈论基础",
+      "category": "逻辑思维",
+      "summary": "了解策略选择思考",
+      "sections": [
+        "gt1"
+      ]
+    },
+    {
+      "id": "truth-lie",
+      "title": "真假与推理",
+      "category": "逻辑思维",
+      "summary": "逻辑判断真假命题",
+      "sections": [
+        "tl1"
+      ]
+    },
+    {
+      "id": "information-org",
+      "title": "信息整理",
+      "category": "逻辑思维",
+      "summary": "学会整理和组织信息",
+      "sections": [
+        "io1"
+      ]
+    },
+    {
+      "id": "chinese-arch",
+      "title": "中国古建筑",
+      "category": "艺术",
+      "summary": "了解传统建筑艺术",
+      "sections": [
+        "ca1"
+      ]
+    },
+    {
+      "id": "music-genres",
+      "title": "音乐风格",
+      "category": "艺术",
+      "summary": "了解不同音乐风格的特点",
+      "sections": [
+        "mg1"
+      ]
+    },
+    {
+      "id": "fashion",
+      "title": "时尚与设计",
+      "category": "艺术",
+      "summary": "了解时尚艺术文化",
+      "sections": [
+        "fa1"
+      ]
+    },
+    {
+      "id": "5g-iot",
+      "title": "5G与物联网",
+      "category": "科技工程",
+      "summary": "了解新一代通信技术",
+      "sections": [
+        "gi1"
+      ]
+    },
+    {
+      "id": "blockchain",
+      "title": "区块链技术",
+      "category": "科技工程",
+      "summary": "了解区块链基本原理",
+      "sections": [
+        "bl1"
+      ]
+    },
+    {
+      "id": "quantum",
+      "title": "量子科技",
+      "category": "科技工程",
+      "summary": "了解量子力学与量子计算",
+      "sections": [
+        "qu1"
+      ]
+    },
+    {
+      "id": "grow-puberty",
+      "title": "成长青春期",
+      "category": "健康生活",
+      "summary": "了解青春期身体变化",
+      "sections": [
+        "gp1"
+      ]
+    },
+    {
+      "id": "environment-health",
+      "title": "环境与健康",
+      "category": "健康生活",
+      "summary": "了解环境对健康的影响",
+      "sections": [
+        "eh1"
+      ]
+    },
+    {
+      "id": "exercise-plan",
+      "title": "运动计划",
+      "category": "健康生活",
+      "summary": "养成科学运动习惯",
+      "sections": [
+        "ep1"
+      ]
+    },
+    {
+      "id": "ct-four-great",
+      "title": "四大发明",
+      "category": "中国传统文化",
+      "summary": "中国古代四大发明对世界文明的贡献",
+      "sections": []
+    },
+    {
+      "id": "ct-spring-festival",
+      "title": "春节",
+      "category": "中国传统文化",
+      "summary": "中国最重要的传统节日",
+      "sections": []
+    },
+    {
+      "id": "ct-dragon-boat",
+      "title": "端午节",
+      "category": "中国传统文化",
+      "summary": "纪念屈原的传统节日",
+      "sections": []
+    },
+    {
+      "id": "ct-mid-autumn",
+      "title": "中秋节",
+      "category": "中国传统文化",
+      "summary": "团圆赏月的传统节日",
+      "sections": []
+    },
+    {
+      "id": "ct-qingming",
+      "title": "清明节",
+      "category": "中国传统文化",
+      "summary": "祭祖踏青的传统节日",
+      "sections": []
+    },
+    {
+      "id": "ct-chinese-new-year",
+      "title": "春节习俗",
+      "category": "中国传统文化",
+      "summary": "丰富多彩的春节民俗",
+      "sections": []
+    },
+    {
+      "id": "ct-lantern-festival",
+      "title": "元宵节",
+      "category": "中国传统文化",
+      "summary": "春节后的第一个重要节日",
+      "sections": []
+    },
+    {
+      "id": "ct-double-ninth",
+      "title": "重阳节",
+      "category": "中国传统文化",
+      "summary": "敬老登高的传统节日",
+      "sections": []
+    },
+    {
+      "id": "ct-qixi",
+      "title": "七夕节",
+      "category": "中国传统文化",
+      "summary": "中国传统情人节",
+      "sections": []
+    },
+    {
+      "id": "ct-solar-terms-spring",
+      "title": "春季节气",
+      "category": "中国传统文化",
+      "summary": "二十四节气之春季篇",
+      "sections": []
+    },
+    {
+      "id": "ct-solar-terms-summer",
+      "title": "夏季节气",
+      "category": "中国传统文化",
+      "summary": "二十四节气之夏季篇",
+      "sections": []
+    },
+    {
+      "id": "ct-solar-terms-autumn",
+      "title": "秋季节气",
+      "category": "中国传统文化",
+      "summary": "二十四节气之秋季篇",
+      "sections": []
+    },
+    {
+      "id": "ct-solar-terms-winter",
+      "title": "冬季节气",
+      "category": "中国传统文化",
+      "summary": "二十四节气之冬季篇",
+      "sections": []
+    },
+    {
+      "id": "ct-zodiac",
+      "title": "十二生肖",
+      "category": "中国传统文化",
+      "summary": "中国传统纪年与生肖文化",
+      "sections": []
+    },
+    {
+      "id": "ct-calligraphy",
+      "title": "中国书法",
+      "category": "中国传统文化",
+      "summary": "汉字书写的艺术",
+      "sections": []
+    },
+    {
+      "id": "ct-chinese-painting",
+      "title": "中国画",
+      "category": "中国传统文化",
+      "summary": "中国传统绘画艺术",
+      "sections": []
+    },
+    {
+      "id": "ct-peking-opera",
+      "title": "京剧",
+      "category": "中国传统文化",
+      "summary": "中国国粹戏曲艺术",
+      "sections": []
+    },
+    {
+      "id": "ct-tea-culture",
+      "title": "中国茶文化",
+      "category": "中国传统文化",
+      "summary": "品茶悟道的传统艺术",
+      "sections": []
+    },
+    {
+      "id": "ct-chinese-medicine",
+      "title": "中医基础",
+      "category": "中国传统文化",
+      "summary": "中国传统医学智慧",
+      "sections": []
+    },
+    {
+      "id": "ct-chinese-architecture",
+      "title": "中国传统建筑",
+      "category": "中国传统文化",
+      "summary": "匠心独具的古代营造艺术",
+      "sections": []
+    },
+    {
+      "id": "ct-hanfu",
+      "title": "传统服饰",
+      "category": "中国传统文化",
+      "summary": "中华传统服饰文化",
+      "sections": []
+    },
+    {
+      "id": "ct-mythology",
+      "title": "中国神话传说",
+      "category": "中国传统文化",
+      "summary": "古老的神话故事",
+      "sections": []
+    },
+    {
+      "id": "ct-four-classics",
+      "title": "四大名著",
+      "category": "中国传统文化",
+      "summary": "中国古典文学巅峰",
+      "sections": []
+    },
+    {
+      "id": "ct-silk-road",
+      "title": "丝绸之路",
+      "category": "中国传统文化",
+      "summary": "连接东西方的古代商道",
+      "sections": []
+    },
+    {
+      "id": "ct-chinese-porcelain",
+      "title": "中国瓷器",
+      "category": "中国传统文化",
+      "summary": "泥土与火焰的艺术",
+      "sections": []
+    },
+    {
+      "id": "ct-chinese-martial-arts",
+      "title": "中国武术",
+      "category": "中国传统文化",
+      "summary": "强身健体的国术精粹",
+      "sections": []
+    },
+    {
+      "id": "ct-chinese-music",
+      "title": "中国传统乐器",
+      "category": "中国传统文化",
+      "summary": "丝竹管弦的千年雅韵",
+      "sections": []
+    },
+    {
+      "id": "ct-tang-poetry",
+      "title": "唐诗",
+      "category": "中国传统文化",
+      "summary": "中国古典诗歌的黄金时代",
+      "sections": []
+    },
+    {
+      "id": "ct-song-ci",
+      "title": "宋词",
+      "category": "中国传统文化",
+      "summary": "中国古典诗歌的另一座高峰",
+      "sections": []
+    },
+    {
+      "id": "ct-chinese-new-year-customs",
+      "title": "年俗文化",
+      "category": "中国传统文化",
+      "summary": "丰富多彩的过年习俗",
+      "sections": []
+    },
+    {
+      "id": "ct-papermaking",
+      "title": "剪纸艺术",
+      "category": "中国传统文化",
+      "summary": "巧手剪出的纸上艺术",
+      "sections": []
+    },
+    {
+      "id": "ct-chinese-chess",
+      "title": "中国象棋",
+      "category": "中国传统文化",
+      "summary": "方寸之间的智力博弈",
+      "sections": []
+    },
+    {
+      "id": "ct-lion-dance",
+      "title": "舞龙舞狮",
+      "category": "中国传统文化",
+      "summary": "吉祥喜庆的传统表演",
+      "sections": []
+    },
+    {
+      "id": "ct-chinese-cuisine",
+      "title": "中国饮食文化",
+      "category": "中国传统文化",
+      "summary": "舌尖上的千年传承",
+      "sections": []
+    },
+    {
+      "id": "ct-fire-safety",
+      "title": "消防安全",
+      "category": "中国传统文化",
+      "summary": "预防火灾和火灾逃生知识",
+      "sections": []
+    },
+    {
+      "id": "ct-traffic-safety",
+      "title": "交通安全",
+      "category": "中国传统文化",
+      "summary": "出行安全常识",
+      "sections": []
+    },
+    {
+      "id": "ct-water-safety",
+      "title": "防溺水安全",
+      "category": "中国传统文化",
+      "summary": "预防溺水和溺水急救知识",
+      "sections": []
+    },
+    {
+      "id": "ct-electricity-safety",
+      "title": "用电安全",
+      "category": "中国传统文化",
+      "summary": "安全使用电器的常识",
+      "sections": []
+    },
+    {
+      "id": "ct-food-safety",
+      "title": "食品安全",
+      "category": "中国传统文化",
+      "summary": "健康饮食和食品安全知识",
+      "sections": []
+    },
+    {
+      "id": "ct-first-aid",
+      "title": "急救常识",
+      "category": "中国传统文化",
+      "summary": "日常意外伤害的应急处理",
+      "sections": []
+    },
+    {
+      "id": "ct-home-etiquette",
+      "title": "家庭礼仪",
+      "category": "中国传统文化",
+      "summary": "家庭中的文明礼仪规范",
+      "sections": []
+    },
+    {
+      "id": "ct-school-etiquette",
+      "title": "学校礼仪",
+      "category": "中国传统文化",
+      "summary": "校园中的文明礼貌规范",
+      "sections": []
+    },
+    {
+      "id": "ct-public-etiquette",
+      "title": "公共场所礼仪",
+      "category": "中国传统文化",
+      "summary": "出行和公共场合的礼仪规范",
+      "sections": []
+    },
+    {
+      "id": "ct-social-etiquette",
+      "title": "社交礼仪",
+      "category": "中国传统文化",
+      "summary": "社交场合中的基本礼仪",
+      "sections": []
+    }
+  ]
+}

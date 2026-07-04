@@ -1,0 +1,13 @@
+[Unit]
+Description=Haodaer Travel Guide Service
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/haodaer/apps/travel-guide
+ExecStart=/bin/bash -c "cd /haodaer/apps/travel-guide && NODE_OPTIONS='--max-old-space-size=384' exec /usr/bin/node node_modules/next/dist/bin/next start -p 3010"
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

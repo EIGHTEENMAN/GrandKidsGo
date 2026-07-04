@@ -1,0 +1,19 @@
+{
+  "name": "generate-poem-images",
+  "private": true,
+  "type": "module",
+  "description": "AI 诗配画批量生成脚本 — 为诗词生成中国水墨风格配图",
+  "scripts": {
+    "generate": "node generate.mjs",
+    "generate:mock": "MOCK=true node generate.mjs",
+    "status": "node generate.mjs --status",
+    "clean": "node generate.mjs --clean",
+    "retry": "node generate.mjs --retry"
+  },
+  "dependencies": {
+    "openai": "^4.0.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.22.4"
+  }
+}

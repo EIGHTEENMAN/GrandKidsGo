@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fdf2f8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0.6" />
+    </linearGradient>
+    <radialGradient id="circle" cx="50%" cy="40%" r="40%">
+      <stop offset="0%" style="stop-color:#ec4899;stop-opacity:0.15" />
+      <stop offset="100%" style="stop-color:#ec4899;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  <rect width="1024" height="1024" fill="url(#bg)" />
+  <circle cx="512" cy="400" r="280" fill="url(#circle)" />
+  <g opacity="0.08" stroke="#ec4899" stroke-width="1.5" fill="none">
+    <path d="M 100 700 Q 300 650, 500 700 T 924 700" />
+    <path d="M 100 750 Q 300 720, 500 750 T 924 750" />
+    <path d="M 100 800 Q 300 770, 500 800 T 924 800" />
+  </g>
+  <text x="512" y="430" font-family="serif" font-size="280" font-weight="900" fill="#ec4899" text-anchor="middle" opacity="0.18">疾</text>
+  <text x="512" y="600" font-family="sans-serif" font-size="48" font-weight="700" fill="#ec4899" text-anchor="middle" opacity="0.85">疾病预防</text>
+  <text x="512" y="660" font-family="sans-serif" font-size="28" fill="#64748b" text-anchor="middle" opacity="0.7">健康生活</text>
+  <text x="512" y="940" font-family="sans-serif" font-size="20" fill="#94a3b8" text-anchor="middle" opacity="0.6">好大儿 · 学通识</text>
+</svg>

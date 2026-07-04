@@ -1,0 +1,69 @@
+Found 1417 unique English words
+Already have 195 files
+Need to download: 1222 words
+  Progress: 100/1222  |  OK: 93  |  Failed: 7  |  73 words/min
+  Progress: 200/1222  |  OK: 188  |  Failed: 12  |  57 words/min
+  Progress: 300/1222  |  OK: 285  |  Failed: 15  |  57 words/min
+  Progress: 400/1222  |  OK: 381  |  Failed: 19  |  59 words/min
+  Progress: 500/1222  |  OK: 476  |  Failed: 24  |  60 words/min
+  Progress: 600/1222  |  OK: 573  |  Failed: 27  |  62 words/min
+  Progress: 700/1222  |  OK: 671  |  Failed: 29  |  64 words/min
+  Progress: 800/1222  |  OK: 766  |  Failed: 34  |  66 words/min
+  Progress: 900/1222  |  OK: 863  |  Failed: 37  |  67 words/min
+  Progress: 1000/1222  |  OK: 959  |  Failed: 41  |  68 words/min
+  Progress: 1100/1222  |  OK: 1058  |  Failed: 42  |  68 words/min
+  Progress: 1200/1222  |  OK: 1155  |  Failed: 45  |  68 words/min
+  Progress: 1222/1222  |  OK: 1176  |  Failed: 46  |  68 words/min
+
+=== Download Complete ===
+Downloaded: 1176  |  Failed: 46  |  Time: 1084s
+
+Failed words (46):
+  bandana
+  bowtie
+  boxers
+  clogs
+  coffee
+  condor
+  cone
+  dining room
+  diploma
+  earrings
+  eight
+  fingernail
+  flipflops
+  gloves
+  grandpa
+  half brother
+  heels
+  hot dog
+  ice cream
+  lab coat
+  lime
+  living room
+  loafers
+  longsleeve
+  mittens
+  moccasins
+  mountain goat
+  overalls
+  oxfords
+  polka dot
+  post office
+  printed
+  pumps
+  rings
+  sandals
+  shoes
+  shortsleeve
+  slippers
+  socks
+  stairs
+  stockings
+  teacher
+  vacuum
+  wedges
+  wifi
+  xlarge
+
+Total in audio dir: 1371

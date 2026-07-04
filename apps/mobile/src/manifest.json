@@ -1,0 +1,68 @@
+{
+  "name": "童慧行",
+  "appid": "__UNI__HAODAER",
+  "versionName": "1.0.0",
+  "versionCode": "100",
+  "description": "儿童益智乐园 - 读万卷书，行万里路",
+  "uni-app": {
+    "compilerVersion": "3"
+  },
+  "app-plus": {
+    "usingComponents": true,
+    "nvueStyleCompiler": "uni-app",
+    "compilerVersion": 3,
+    "splashscreen": {
+      "alwaysShowBeforeRender": true,
+      "waiting": true,
+      "autoclose": true,
+      "delay": 0
+    },
+    "privacy": {
+      "prompt": "template",
+      "template": {
+        "title": "隐私政策",
+        "message": "童慧行尊重并保护您的隐私。我们需要收集必要的信息以提供更好的服务。",
+        "buttonAccept": "同意",
+        "buttonRefuse": "拒绝"
+      }
+    },
+    "modules": {
+      "Push": {
+        "description": "消息推送，用于通知学习提醒和活动"
+      },
+      "Share": {
+        "description": "分享到微信、QQ等社交平台"
+      },
+      "OAuth": {
+        "description": "微信登录"
+      }
+    },
+    "distribute": {
+      "android": {
+        "permissions": [
+          "<uses-permission android:name=\"android.permission.INTERNET\"/>",
+          "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>",
+          "<uses-permission android:name=\"android.permission.VIBRATE\"/>",
+          "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\"/>"
+        ]
+      },
+      "ios": {
+        "permissions": {
+          "push": {
+            "description": "用于推送学习提醒"
+          }
+        },
+        "capabilities": {
+          "push": true
+        }
+      }
+    }
+  },
+  "quickapp": {},
+  "mp-weixin": {
+    "appid": "",
+    "setting": {
+      "urlCheck": false
+    }
+  }
+}

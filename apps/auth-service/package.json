@@ -1,0 +1,28 @@
+{
+  "name": "@haodaer/auth-service",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "node --experimental-vm-modules node_modules/.bin/jest --passWithNoTests"
+  },
+  "dependencies": {
+    "@alicloud/credentials": "^2.4.4",
+    "@alicloud/dysmsapi20170525": "^4.5.1",
+    "@alicloud/openapi-client": "^0.4.15",
+    "bcryptjs": "^3.0.3",
+    "better-sqlite3": "^12.10.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.3",
+    "uuid": "^14.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}

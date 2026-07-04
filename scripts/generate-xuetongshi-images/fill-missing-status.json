@@ -1,0 +1,1534 @@
+{
+  "basic-circuits-bc2": {
+    "status": "ok",
+    "size": 35043
+  },
+  "basic-circuits-bc5": {
+    "status": "ok",
+    "size": 20170
+  },
+  "basic-circuits-bc6": {
+    "status": "ok",
+    "size": 36158
+  },
+  "basic-circuits-bc7": {
+    "status": "ok",
+    "size": 35778
+  },
+  "sculpture-sc6": {
+    "status": "fail",
+    "error": "AI \u672a\u8bc6\u522b\u54cd\u5e94"
+  },
+  "sound-wave-sw1": {
+    "status": "ok",
+    "size": 38582
+  },
+  "sound-wave-sw2": {
+    "status": "ok",
+    "size": 35894
+  },
+  "sound-wave-sw7": {
+    "status": "ok",
+    "size": 33120
+  },
+  "sound-wave-sw8": {
+    "status": "ok",
+    "size": 37833
+  },
+  "sound-wave-sw9": {
+    "status": "ok",
+    "size": 33203
+  },
+  "sound-wave-sw10": {
+    "status": "ok",
+    "size": 61867
+  },
+  "light-optics-lo1": {
+    "status": "ok",
+    "size": 30042
+  },
+  "light-optics-lo2": {
+    "status": "ok",
+    "size": 28279
+  },
+  "light-optics-lo3": {
+    "status": "ok",
+    "size": 52360
+  },
+  "light-optics-lo4": {
+    "status": "ok",
+    "size": 27229
+  },
+  "light-optics-lo5": {
+    "status": "ok",
+    "size": 20857
+  },
+  "light-optics-lo6": {
+    "status": "ok",
+    "size": 23726
+  },
+  "light-optics-lo7": {
+    "status": "ok",
+    "size": 23391
+  },
+  "light-optics-lo8": {
+    "status": "ok",
+    "size": 16717
+  },
+  "light-optics-lo9": {
+    "status": "ok",
+    "size": 34241
+  },
+  "light-optics-lo10": {
+    "status": "ok",
+    "size": 27972
+  },
+  "magnetism-mg1": {
+    "status": "ok",
+    "size": 31427
+  },
+  "magnetism-mg2": {
+    "status": "ok",
+    "size": 65603
+  },
+  "magnetism-mg3": {
+    "status": "ok",
+    "size": 37453
+  },
+  "magnetism-mg6": {
+    "status": "ok",
+    "size": 35725
+  },
+  "magnetism-mg7": {
+    "status": "ok",
+    "size": 36870
+  },
+  "magnetism-mg8": {
+    "status": "ok",
+    "size": 33754
+  },
+  "magnetism-mg9": {
+    "status": "ok",
+    "size": 58590
+  },
+  "magnetism-mg10": {
+    "status": "ok",
+    "size": 37681
+  },
+  "thermo-th6": {
+    "status": "ok",
+    "size": 75477
+  },
+  "thermo-th7": {
+    "status": "ok",
+    "size": 54332
+  },
+  "thermo-th10": {
+    "status": "ok",
+    "size": 36695
+  },
+  "matter-state-ms6": {
+    "status": "ok",
+    "size": 50840
+  },
+  "matter-state-ms7": {
+    "status": "ok",
+    "size": 42006
+  },
+  "matter-state-ms8": {
+    "status": "ok",
+    "size": 51664
+  },
+  "matter-state-ms9": {
+    "status": "ok",
+    "size": 31931
+  },
+  "matter-state-ms10": {
+    "status": "ok",
+    "size": 39226
+  },
+  "chemistry-life-cl1": {
+    "status": "ok",
+    "size": 26024
+  },
+  "chemistry-life-cl2": {
+    "status": "ok",
+    "size": 39247
+  },
+  "chemistry-life-cl3": {
+    "status": "ok",
+    "size": 35672
+  },
+  "chemistry-life-cl4": {
+    "status": "ok",
+    "size": 28693
+  },
+  "chemistry-life-cl5": {
+    "status": "ok",
+    "size": 43883
+  },
+  "chemistry-life-cl6": {
+    "status": "ok",
+    "size": 38637
+  },
+  "chemistry-life-cl7": {
+    "status": "ok",
+    "size": 60135
+  },
+  "chemistry-life-cl8": {
+    "status": "ok",
+    "size": 36832
+  },
+  "chemistry-life-cl9": {
+    "status": "ok",
+    "size": 54815
+  },
+  "zhugeliang-zl9": {
+    "status": "ok",
+    "size": 33753
+  },
+  "comic-anime-co1": {
+    "status": "fail",
+    "error": "AI \u672a\u8bc6\u522b\u54cd\u5e94"
+  },
+  "ecommerce-ec8": {
+    "status": "ok",
+    "size": 42444
+  },
+  "insurance-in1": {
+    "status": "ok",
+    "size": 75770
+  },
+  "insurance-in2": {
+    "status": "ok",
+    "size": 41030
+  },
+  "insurance-in3": {
+    "status": "ok",
+    "size": 51044
+  },
+  "insurance-in8": {
+    "status": "ok",
+    "size": 26354
+  },
+  "insurance-in10": {
+    "status": "ok",
+    "size": 51991
+  },
+  "monetary-policy-mp5": {
+    "status": "fail",
+    "error": "AI \u672a\u8bc6\u522b\u54cd\u5e94"
+  },
+  "chinese-dialects-cd7": {
+    "status": "fail",
+    "error": "AI \u672a\u8bc6\u522b\u54cd\u5e94"
+  },
+  "chinese-arch-ca7": {
+    "status": "fail",
+    "error": "AI \u672a\u8bc6\u522b\u54cd\u5e94"
+  },
+  "5g-iot-gi3": {
+    "status": "ok",
+    "size": 55084
+  },
+  "5g-iot-gi4": {
+    "status": "ok",
+    "size": 45068
+  },
+  "5g-iot-gi5": {
+    "status": "ok",
+    "size": 32001
+  },
+  "5g-iot-gi6": {
+    "status": "ok",
+    "size": 62491
+  },
+  "5g-iot-gi7": {
+    "status": "ok",
+    "size": 51937
+  },
+  "blockchain-bl6": {
+    "status": "ok",
+    "size": 36612
+  },
+  "blockchain-bl7": {
+    "status": "ok",
+    "size": 45397
+  },
+  "blockchain-bl8": {
+    "status": "ok",
+    "size": 54395
+  },
+  "blockchain-bl9": {
+    "status": "ok",
+    "size": 48587
+  },
+  "quantum-qu9": {
+    "status": "ok",
+    "size": 55170
+  },
+  "grow-puberty-gp2": {
+    "status": "ok",
+    "size": 40463
+  },
+  "grow-puberty-gp4": {
+    "status": "ok",
+    "size": 32716
+  },
+  "grow-puberty-gp5": {
+    "status": "ok",
+    "size": 42478
+  },
+  "grow-puberty-gp8": {
+    "status": "ok",
+    "size": 52388
+  },
+  "grow-puberty-gp9": {
+    "status": "ok",
+    "size": 45189
+  },
+  "grow-puberty-gp10": {
+    "status": "fail",
+    "error": "AI \u672a\u8bc6\u522b\u54cd\u5e94"
+  },
+  "environment-health-eh1": {
+    "status": "ok",
+    "size": 30411
+  },
+  "environment-health-eh4": {
+    "status": "ok",
+    "size": 39184
+  },
+  "environment-health-eh5": {
+    "status": "ok",
+    "size": 44273
+  },
+  "environment-health-eh7": {
+    "status": "ok",
+    "size": 33099
+  },
+  "environment-health-eh8": {
+    "status": "ok",
+    "size": 66434
+  },
+  "environment-health-eh9": {
+    "status": "ok",
+    "size": 52462
+  },
+  "exercise-plan-ep1": {
+    "status": "ok",
+    "size": 55497
+  },
+  "exercise-plan-ep6": {
+    "status": "ok",
+    "size": 34794
+  },
+  "exercise-plan-ep7": {
+    "status": "ok",
+    "size": 47397
+  },
+  "exercise-plan-ep8": {
+    "status": "ok",
+    "size": 41907
+  },
+  "exercise-plan-ep9": {
+    "status": "ok",
+    "size": 51373
+  },
+  "exercise-plan-ep10": {
+    "status": "ok",
+    "size": 34936
+  },
+  "ct-four-great-ct-four-great-s5": {
+    "status": "ok",
+    "size": 35625
+  },
+  "ct-four-great-ct-four-great-s6": {
+    "status": "ok",
+    "size": 45276
+  },
+  "ct-four-great-ct-four-great-s7": {
+    "status": "fail",
+    "error": "AI \u672a\u8bc6\u522b\u54cd\u5e94"
+  },
+  "ct-four-great-ct-four-great-s8": {
+    "status": "ok",
+    "size": 49200
+  },
+  "ct-four-great-ct-four-great-s10": {
+    "status": "ok",
+    "size": 41634
+  },
+  "ct-spring-festival-ct-spring-festival-s1": {
+    "status": "ok",
+    "size": 32943
+  },
+  "ct-spring-festival-ct-spring-festival-s2": {
+    "status": "ok",
+    "size": 46111
+  },
+  "ct-spring-festival-ct-spring-festival-s3": {
+    "status": "ok",
+    "size": 54188
+  },
+  "ct-spring-festival-ct-spring-festival-s5": {
+    "status": "ok",
+    "size": 47488
+  },
+  "ct-spring-festival-ct-spring-festival-s7": {
+    "status": "ok",
+    "size": 36626
+  },
+  "ct-spring-festival-ct-spring-festival-s8": {
+    "status": "ok",
+    "size": 56126
+  },
+  "ct-spring-festival-ct-spring-festival-s10": {
+    "status": "ok",
+    "size": 68601
+  },
+  "ct-dragon-boat-ct-dragon-boat-s1": {
+    "status": "ok",
+    "size": 49823
+  },
+  "ct-dragon-boat-ct-dragon-boat-s6": {
+    "status": "ok",
+    "size": 39795
+  },
+  "ct-dragon-boat-ct-dragon-boat-s7": {
+    "status": "ok",
+    "size": 38238
+  },
+  "ct-dragon-boat-ct-dragon-boat-s8": {
+    "status": "ok",
+    "size": 69360
+  },
+  "ct-dragon-boat-ct-dragon-boat-s9": {
+    "status": "ok",
+    "size": 75419
+  },
+  "ct-dragon-boat-ct-dragon-boat-s10": {
+    "status": "ok",
+    "size": 59893
+  },
+  "ct-mid-autumn-ct-mid-autumn-s1": {
+    "status": "ok",
+    "size": 57974
+  },
+  "ct-mid-autumn-ct-mid-autumn-s5": {
+    "status": "ok",
+    "size": 37534
+  },
+  "ct-mid-autumn-ct-mid-autumn-s6": {
+    "status": "ok",
+    "size": 38131
+  },
+  "ct-mid-autumn-ct-mid-autumn-s7": {
+    "status": "ok",
+    "size": 33773
+  },
+  "ct-mid-autumn-ct-mid-autumn-s8": {
+    "status": "ok",
+    "size": 54713
+  },
+  "ct-mid-autumn-ct-mid-autumn-s9": {
+    "status": "ok",
+    "size": 60118
+  },
+  "ct-mid-autumn-ct-mid-autumn-s10": {
+    "status": "ok",
+    "size": 48487
+  },
+  "ct-qingming-ct-qingming-s1": {
+    "status": "ok",
+    "size": 75126
+  },
+  "ct-qingming-ct-qingming-s2": {
+    "status": "ok",
+    "size": 74650
+  },
+  "ct-qingming-ct-qingming-s4": {
+    "status": "ok",
+    "size": 61195
+  },
+  "ct-qingming-ct-qingming-s5": {
+    "status": "ok",
+    "size": 52483
+  },
+  "ct-qingming-ct-qingming-s6": {
+    "status": "ok",
+    "size": 40261
+  },
+  "ct-qingming-ct-qingming-s7": {
+    "status": "ok",
+    "size": 53689
+  },
+  "ct-qingming-ct-qingming-s8": {
+    "status": "ok",
+    "size": 33479
+  },
+  "ct-qingming-ct-qingming-s9": {
+    "status": "ok",
+    "size": 52023
+  },
+  "ct-chinese-new-year-ct-chinese-new-year-s1": {
+    "status": "ok",
+    "size": 36629
+  },
+  "ct-chinese-new-year-ct-chinese-new-year-s2": {
+    "status": "ok",
+    "size": 70274
+  },
+  "ct-chinese-new-year-ct-chinese-new-year-s4": {
+    "status": "ok",
+    "size": 38817
+  },
+  "ct-chinese-new-year-ct-chinese-new-year-s5": {
+    "status": "ok",
+    "size": 56875
+  },
+  "ct-chinese-new-year-ct-chinese-new-year-s6": {
+    "status": "ok",
+    "size": 59728
+  },
+  "ct-chinese-new-year-ct-chinese-new-year-s7": {
+    "status": "ok",
+    "size": 45915
+  },
+  "ct-chinese-new-year-ct-chinese-new-year-s8": {
+    "status": "ok",
+    "size": 62827
+  },
+  "ct-lantern-festival-ct-lantern-festival-s1": {
+    "status": "ok",
+    "size": 54313
+  },
+  "ct-lantern-festival-ct-lantern-festival-s2": {
+    "status": "ok",
+    "size": 58906
+  },
+  "ct-lantern-festival-ct-lantern-festival-s3": {
+    "status": "ok",
+    "size": 34749
+  },
+  "ct-lantern-festival-ct-lantern-festival-s4": {
+    "status": "ok",
+    "size": 58958
+  },
+  "ct-lantern-festival-ct-lantern-festival-s5": {
+    "status": "ok",
+    "size": 74770
+  },
+  "ct-lantern-festival-ct-lantern-festival-s7": {
+    "status": "ok",
+    "size": 32797
+  },
+  "ct-lantern-festival-ct-lantern-festival-s8": {
+    "status": "ok",
+    "size": 41714
+  },
+  "ct-lantern-festival-ct-lantern-festival-s10": {
+    "status": "ok",
+    "size": 59259
+  },
+  "ct-double-ninth-ct-double-ninth-s1": {
+    "status": "ok",
+    "size": 52315
+  },
+  "ct-double-ninth-ct-double-ninth-s2": {
+    "status": "ok",
+    "size": 41322
+  },
+  "ct-double-ninth-ct-double-ninth-s4": {
+    "status": "ok",
+    "size": 49422
+  },
+  "ct-double-ninth-ct-double-ninth-s5": {
+    "status": "ok",
+    "size": 32894
+  },
+  "ct-double-ninth-ct-double-ninth-s6": {
+    "status": "ok",
+    "size": 58513
+  },
+  "ct-double-ninth-ct-double-ninth-s7": {
+    "status": "ok",
+    "size": 45524
+  },
+  "ct-double-ninth-ct-double-ninth-s10": {
+    "status": "ok",
+    "size": 46798
+  },
+  "ct-qixi-ct-qixi-s1": {
+    "status": "ok",
+    "size": 73880
+  },
+  "ct-qixi-ct-qixi-s2": {
+    "status": "ok",
+    "size": 47911
+  },
+  "ct-qixi-ct-qixi-s5": {
+    "status": "ok",
+    "size": 48726
+  },
+  "ct-qixi-ct-qixi-s6": {
+    "status": "ok",
+    "size": 38222
+  },
+  "ct-qixi-ct-qixi-s7": {
+    "status": "ok",
+    "size": 69298
+  },
+  "ct-qixi-ct-qixi-s9": {
+    "status": "ok",
+    "size": 55032
+  },
+  "ct-solar-terms-spring-ct-solar-terms-spring-s1": {
+    "status": "ok",
+    "size": 52926
+  },
+  "ct-solar-terms-spring-ct-solar-terms-spring-s2": {
+    "status": "ok",
+    "size": 46384
+  },
+  "ct-solar-terms-spring-ct-solar-terms-spring-s3": {
+    "status": "ok",
+    "size": 46014
+  },
+  "ct-solar-terms-spring-ct-solar-terms-spring-s4": {
+    "status": "ok",
+    "size": 36332
+  },
+  "ct-solar-terms-spring-ct-solar-terms-spring-s5": {
+    "status": "ok",
+    "size": 39534
+  },
+  "ct-solar-terms-spring-ct-solar-terms-spring-s7": {
+    "status": "ok",
+    "size": 44397
+  },
+  "ct-solar-terms-spring-ct-solar-terms-spring-s8": {
+    "status": "ok",
+    "size": 38282
+  },
+  "ct-solar-terms-spring-ct-solar-terms-spring-s9": {
+    "status": "ok",
+    "size": 68582
+  },
+  "ct-solar-terms-spring-ct-solar-terms-spring-s10": {
+    "status": "ok",
+    "size": 65092
+  },
+  "ct-solar-terms-summer-ct-solar-terms-summer-s1": {
+    "status": "ok",
+    "size": 47388
+  },
+  "ct-solar-terms-summer-ct-solar-terms-summer-s3": {
+    "status": "ok",
+    "size": 36819
+  },
+  "ct-solar-terms-summer-ct-solar-terms-summer-s4": {
+    "status": "ok",
+    "size": 48673
+  },
+  "ct-solar-terms-summer-ct-solar-terms-summer-s5": {
+    "status": "ok",
+    "size": 38211
+  },
+  "ct-solar-terms-summer-ct-solar-terms-summer-s6": {
+    "status": "ok",
+    "size": 29895
+  },
+  "ct-solar-terms-summer-ct-solar-terms-summer-s7": {
+    "status": "ok",
+    "size": 86936
+  },
+  "ct-solar-terms-summer-ct-solar-terms-summer-s8": {
+    "status": "ok",
+    "size": 44119
+  },
+  "ct-solar-terms-autumn-ct-solar-terms-autumn-s1": {
+    "status": "ok",
+    "size": 47188
+  },
+  "ct-solar-terms-autumn-ct-solar-terms-autumn-s2": {
+    "status": "ok",
+    "size": 33663
+  },
+  "ct-solar-terms-autumn-ct-solar-terms-autumn-s3": {
+    "status": "ok",
+    "size": 37040
+  },
+  "ct-solar-terms-autumn-ct-solar-terms-autumn-s4": {
+    "status": "ok",
+    "size": 48556
+  },
+  "ct-solar-terms-autumn-ct-solar-terms-autumn-s5": {
+    "status": "ok",
+    "size": 44772
+  },
+  "ct-solar-terms-autumn-ct-solar-terms-autumn-s7": {
+    "status": "ok",
+    "size": 50018
+  },
+  "ct-solar-terms-autumn-ct-solar-terms-autumn-s8": {
+    "status": "ok",
+    "size": 37672
+  },
+  "ct-solar-terms-autumn-ct-solar-terms-autumn-s10": {
+    "status": "ok",
+    "size": 46605
+  },
+  "ct-solar-terms-winter-ct-solar-terms-winter-s1": {
+    "status": "ok",
+    "size": 46035
+  },
+  "ct-solar-terms-winter-ct-solar-terms-winter-s2": {
+    "status": "ok",
+    "size": 77727
+  },
+  "ct-solar-terms-winter-ct-solar-terms-winter-s3": {
+    "status": "ok",
+    "size": 47257
+  },
+  "ct-solar-terms-winter-ct-solar-terms-winter-s5": {
+    "status": "ok",
+    "size": 47296
+  },
+  "ct-solar-terms-winter-ct-solar-terms-winter-s6": {
+    "status": "ok",
+    "size": 45877
+  },
+  "ct-solar-terms-winter-ct-solar-terms-winter-s7": {
+    "status": "ok",
+    "size": 42258
+  },
+  "ct-solar-terms-winter-ct-solar-terms-winter-s8": {
+    "status": "ok",
+    "size": 54335
+  },
+  "ct-solar-terms-winter-ct-solar-terms-winter-s10": {
+    "status": "ok",
+    "size": 32414
+  },
+  "ct-zodiac-ct-zodiac-s1": {
+    "status": "ok",
+    "size": 36784
+  },
+  "ct-zodiac-ct-zodiac-s2": {
+    "status": "ok",
+    "size": 45707
+  },
+  "ct-zodiac-ct-zodiac-s3": {
+    "status": "ok",
+    "size": 45810
+  },
+  "ct-zodiac-ct-zodiac-s4": {
+    "status": "ok",
+    "size": 51026
+  },
+  "ct-zodiac-ct-zodiac-s5": {
+    "status": "ok",
+    "size": 77440
+  },
+  "ct-zodiac-ct-zodiac-s7": {
+    "status": "ok",
+    "size": 55034
+  },
+  "ct-zodiac-ct-zodiac-s8": {
+    "status": "ok",
+    "size": 51272
+  },
+  "ct-zodiac-ct-zodiac-s9": {
+    "status": "ok",
+    "size": 59260
+  },
+  "ct-zodiac-ct-zodiac-s10": {
+    "status": "ok",
+    "size": 55422
+  },
+  "ct-calligraphy-ct-calligraphy-s2": {
+    "status": "ok",
+    "size": 49366
+  },
+  "ct-calligraphy-ct-calligraphy-s5": {
+    "status": "ok",
+    "size": 27464
+  },
+  "ct-calligraphy-ct-calligraphy-s7": {
+    "status": "ok",
+    "size": 52677
+  },
+  "ct-calligraphy-ct-calligraphy-s8": {
+    "status": "ok",
+    "size": 50984
+  },
+  "ct-calligraphy-ct-calligraphy-s10": {
+    "status": "ok",
+    "size": 48052
+  },
+  "ct-chinese-painting-ct-chinese-painting-s1": {
+    "status": "ok",
+    "size": 34625
+  },
+  "ct-chinese-painting-ct-chinese-painting-s4": {
+    "status": "ok",
+    "size": 44501
+  },
+  "ct-chinese-painting-ct-chinese-painting-s5": {
+    "status": "ok",
+    "size": 60196
+  },
+  "ct-chinese-painting-ct-chinese-painting-s7": {
+    "status": "ok",
+    "size": 34114
+  },
+  "ct-chinese-painting-ct-chinese-painting-s8": {
+    "status": "ok",
+    "size": 46996
+  },
+  "ct-chinese-painting-ct-chinese-painting-s9": {
+    "status": "ok",
+    "size": 61736
+  },
+  "ct-chinese-painting-ct-chinese-painting-s10": {
+    "status": "ok",
+    "size": 53154
+  },
+  "ct-peking-opera-ct-peking-opera-s1": {
+    "status": "ok",
+    "size": 52992
+  },
+  "ct-peking-opera-ct-peking-opera-s2": {
+    "status": "ok",
+    "size": 77757
+  },
+  "ct-peking-opera-ct-peking-opera-s4": {
+    "status": "ok",
+    "size": 46289
+  },
+  "ct-peking-opera-ct-peking-opera-s6": {
+    "status": "ok",
+    "size": 65883
+  },
+  "ct-peking-opera-ct-peking-opera-s7": {
+    "status": "ok",
+    "size": 41103
+  },
+  "ct-peking-opera-ct-peking-opera-s8": {
+    "status": "ok",
+    "size": 44969
+  },
+  "ct-peking-opera-ct-peking-opera-s9": {
+    "status": "ok",
+    "size": 60985
+  },
+  "ct-tea-culture-ct-tea-culture-s1": {
+    "status": "ok",
+    "size": 57763
+  },
+  "ct-tea-culture-ct-tea-culture-s2": {
+    "status": "ok",
+    "size": 65062
+  },
+  "ct-tea-culture-ct-tea-culture-s3": {
+    "status": "ok",
+    "size": 45461
+  },
+  "ct-tea-culture-ct-tea-culture-s4": {
+    "status": "ok",
+    "size": 45402
+  },
+  "ct-tea-culture-ct-tea-culture-s5": {
+    "status": "ok",
+    "size": 48419
+  },
+  "ct-tea-culture-ct-tea-culture-s6": {
+    "status": "ok",
+    "size": 76869
+  },
+  "ct-tea-culture-ct-tea-culture-s9": {
+    "status": "ok",
+    "size": 46027
+  },
+  "ct-tea-culture-ct-tea-culture-s10": {
+    "status": "ok",
+    "size": 53441
+  },
+  "ct-chinese-medicine-ct-chinese-medicine-s1": {
+    "status": "ok",
+    "note": "already exists (legacy filename)"
+  },
+  "ct-chinese-medicine-ct-chinese-medicine-s2": {
+    "status": "ok",
+    "size": 31881
+  },
+  "ct-chinese-medicine-ct-chinese-medicine-s3": {
+    "status": "ok",
+    "size": 66104
+  },
+  "ct-chinese-medicine-ct-chinese-medicine-s4": {
+    "status": "ok",
+    "size": 54709
+  },
+  "ct-chinese-medicine-ct-chinese-medicine-s5": {
+    "status": "ok",
+    "size": 46082
+  },
+  "ct-chinese-medicine-ct-chinese-medicine-s6": {
+    "status": "ok",
+    "size": 41658
+  },
+  "ct-chinese-medicine-ct-chinese-medicine-s8": {
+    "status": "ok",
+    "size": 28472
+  },
+  "ct-chinese-medicine-ct-chinese-medicine-s9": {
+    "status": "ok",
+    "size": 59866
+  },
+  "ct-chinese-medicine-ct-chinese-medicine-s10": {
+    "status": "ok",
+    "size": 53220
+  },
+  "ct-chinese-architecture-ct-chinese-architecture-s1": {
+    "status": "ok",
+    "size": 66931
+  },
+  "ct-chinese-architecture-ct-chinese-architecture-s3": {
+    "status": "ok",
+    "size": 77332
+  },
+  "ct-chinese-architecture-ct-chinese-architecture-s4": {
+    "status": "ok",
+    "size": 76966
+  },
+  "ct-chinese-architecture-ct-chinese-architecture-s6": {
+    "status": "ok",
+    "size": 61923
+  },
+  "ct-chinese-architecture-ct-chinese-architecture-s7": {
+    "status": "ok",
+    "size": 80801
+  },
+  "ct-chinese-architecture-ct-chinese-architecture-s9": {
+    "status": "ok",
+    "size": 52511
+  },
+  "ct-chinese-architecture-ct-chinese-architecture-s10": {
+    "status": "ok",
+    "size": 74797
+  },
+  "ct-hanfu-ct-hanfu-s3": {
+    "status": "ok",
+    "size": 47998
+  },
+  "ct-hanfu-ct-hanfu-s4": {
+    "status": "ok",
+    "size": 38966
+  },
+  "ct-hanfu-ct-hanfu-s5": {
+    "status": "ok",
+    "size": 39508
+  },
+  "ct-hanfu-ct-hanfu-s6": {
+    "status": "ok",
+    "size": 42317
+  },
+  "ct-hanfu-ct-hanfu-s7": {
+    "status": "ok",
+    "size": 44566
+  },
+  "ct-hanfu-ct-hanfu-s9": {
+    "status": "ok",
+    "size": 42765
+  },
+  "ct-hanfu-ct-hanfu-s10": {
+    "status": "ok",
+    "size": 33171
+  },
+  "ct-mythology-ct-mythology-s1": {
+    "status": "ok",
+    "size": 50526
+  },
+  "ct-mythology-ct-mythology-s4": {
+    "status": "ok",
+    "size": 56992
+  },
+  "ct-mythology-ct-mythology-s5": {
+    "status": "ok",
+    "size": 57937
+  },
+  "ct-mythology-ct-mythology-s7": {
+    "status": "ok",
+    "size": 42752
+  },
+  "ct-mythology-ct-mythology-s9": {
+    "status": "ok",
+    "size": 50116
+  },
+  "ct-mythology-ct-mythology-s10": {
+    "status": "ok",
+    "size": 44876
+  },
+  "ct-four-classics-ct-four-classics-s5": {
+    "status": "ok",
+    "size": 46549
+  },
+  "ct-four-classics-ct-four-classics-s7": {
+    "status": "ok",
+    "size": 48507
+  },
+  "ct-four-classics-ct-four-classics-s8": {
+    "status": "ok",
+    "size": 30342
+  },
+  "ct-four-classics-ct-four-classics-s10": {
+    "status": "ok",
+    "size": 48869
+  },
+  "ct-silk-road-ct-silk-road-s1": {
+    "status": "ok",
+    "size": 37945
+  },
+  "ct-silk-road-ct-silk-road-s3": {
+    "status": "ok",
+    "size": 36608
+  },
+  "ct-silk-road-ct-silk-road-s4": {
+    "status": "fail",
+    "error": "AI \u672a\u8bc6\u522b\u54cd\u5e94"
+  },
+  "ct-silk-road-ct-silk-road-s5": {
+    "status": "ok",
+    "size": 34615
+  },
+  "ct-silk-road-ct-silk-road-s6": {
+    "status": "ok",
+    "size": 31782
+  },
+  "ct-silk-road-ct-silk-road-s7": {
+    "status": "ok",
+    "size": 39714
+  },
+  "ct-silk-road-ct-silk-road-s10": {
+    "status": "fail",
+    "error": "AI \u672a\u8bc6\u522b\u54cd\u5e94"
+  },
+  "ct-chinese-porcelain-ct-chinese-porcelain-s1": {
+    "status": "ok",
+    "size": 43615
+  },
+  "ct-chinese-porcelain-ct-chinese-porcelain-s2": {
+    "status": "ok",
+    "size": 36272
+  },
+  "ct-chinese-porcelain-ct-chinese-porcelain-s3": {
+    "status": "ok",
+    "size": 43141
+  },
+  "ct-chinese-porcelain-ct-chinese-porcelain-s5": {
+    "status": "ok",
+    "size": 53596
+  },
+  "ct-chinese-porcelain-ct-chinese-porcelain-s7": {
+    "status": "ok",
+    "size": 45909
+  },
+  "ct-chinese-porcelain-ct-chinese-porcelain-s8": {
+    "status": "ok",
+    "size": 31439
+  },
+  "ct-chinese-porcelain-ct-chinese-porcelain-s10": {
+    "status": "ok",
+    "size": 49166
+  },
+  "ct-chinese-martial-arts-ct-chinese-martial-arts-s1": {
+    "status": "ok",
+    "size": 33320
+  },
+  "ct-chinese-martial-arts-ct-chinese-martial-arts-s2": {
+    "status": "ok",
+    "size": 37298
+  },
+  "ct-chinese-martial-arts-ct-chinese-martial-arts-s4": {
+    "status": "ok",
+    "size": 34323
+  },
+  "ct-chinese-martial-arts-ct-chinese-martial-arts-s5": {
+    "status": "ok",
+    "size": 42755
+  },
+  "ct-chinese-martial-arts-ct-chinese-martial-arts-s7": {
+    "status": "ok",
+    "size": 40830
+  },
+  "ct-chinese-martial-arts-ct-chinese-martial-arts-s8": {
+    "status": "ok",
+    "size": 41596
+  },
+  "ct-chinese-martial-arts-ct-chinese-martial-arts-s9": {
+    "status": "ok",
+    "size": 41299
+  },
+  "ct-chinese-martial-arts-ct-chinese-martial-arts-s10": {
+    "status": "ok",
+    "size": 42075
+  },
+  "ct-chinese-music-ct-chinese-music-s1": {
+    "status": "ok",
+    "size": 39005
+  },
+  "ct-chinese-music-ct-chinese-music-s2": {
+    "status": "ok",
+    "size": 36425
+  },
+  "ct-chinese-music-ct-chinese-music-s3": {
+    "status": "ok",
+    "size": 37418
+  },
+  "ct-chinese-music-ct-chinese-music-s5": {
+    "status": "ok",
+    "size": 43676
+  },
+  "ct-chinese-music-ct-chinese-music-s6": {
+    "status": "ok",
+    "size": 42070
+  },
+  "ct-chinese-music-ct-chinese-music-s9": {
+    "status": "ok",
+    "size": 59177
+  },
+  "ct-chinese-music-ct-chinese-music-s10": {
+    "status": "fail",
+    "error": "AI \u672a\u8bc6\u522b\u54cd\u5e94"
+  },
+  "ct-tang-poetry-ct-tang-poetry-s1": {
+    "status": "ok",
+    "size": 38083
+  },
+  "ct-tang-poetry-ct-tang-poetry-s2": {
+    "status": "ok",
+    "size": 27926
+  },
+  "ct-song-ci-ct-song-ci-s1": {
+    "status": "ok",
+    "size": 44641
+  },
+  "ct-song-ci-ct-song-ci-s3": {
+    "status": "ok",
+    "size": 35147
+  },
+  "ct-chinese-new-year-customs-ct-chinese-new-year-customs-s1": {
+    "status": "ok",
+    "size": 59165
+  },
+  "ct-chinese-new-year-customs-ct-chinese-new-year-customs-s2": {
+    "status": "ok",
+    "size": 69835
+  },
+  "ct-chinese-new-year-customs-ct-chinese-new-year-customs-s3": {
+    "status": "ok",
+    "size": 48331
+  },
+  "ct-chinese-new-year-customs-ct-chinese-new-year-customs-s4": {
+    "status": "ok",
+    "size": 65563
+  },
+  "ct-chinese-new-year-customs-ct-chinese-new-year-customs-s8": {
+    "status": "ok",
+    "size": 51869
+  },
+  "ct-chinese-new-year-customs-ct-chinese-new-year-customs-s9": {
+    "status": "ok",
+    "size": 55092
+  },
+  "ct-chinese-new-year-customs-ct-chinese-new-year-customs-s10": {
+    "status": "ok",
+    "size": 51388
+  },
+  "ct-papermaking-ct-papermaking-s2": {
+    "status": "ok",
+    "size": 120199
+  },
+  "ct-papermaking-ct-papermaking-s3": {
+    "status": "ok",
+    "size": 39503
+  },
+  "ct-papermaking-ct-papermaking-s4": {
+    "status": "ok",
+    "size": 121134
+  },
+  "ct-papermaking-ct-papermaking-s5": {
+    "status": "ok",
+    "size": 48949
+  },
+  "ct-papermaking-ct-papermaking-s6": {
+    "status": "ok",
+    "size": 70518
+  },
+  "ct-papermaking-ct-papermaking-s8": {
+    "status": "ok",
+    "size": 47956
+  },
+  "ct-papermaking-ct-papermaking-s10": {
+    "status": "ok",
+    "size": 46425
+  },
+  "ct-chinese-chess-ct-chinese-chess-s4": {
+    "status": "ok",
+    "size": 43252
+  },
+  "ct-chinese-chess-ct-chinese-chess-s5": {
+    "status": "ok",
+    "size": 45639
+  },
+  "ct-chinese-chess-ct-chinese-chess-s6": {
+    "status": "ok",
+    "size": 43081
+  },
+  "ct-chinese-chess-ct-chinese-chess-s7": {
+    "status": "ok",
+    "size": 35736
+  },
+  "ct-chinese-chess-ct-chinese-chess-s8": {
+    "status": "ok",
+    "size": 38505
+  },
+  "ct-lion-dance-ct-lion-dance-s3": {
+    "status": "ok",
+    "size": 81541
+  },
+  "ct-lion-dance-ct-lion-dance-s5": {
+    "status": "ok",
+    "size": 66052
+  },
+  "ct-lion-dance-ct-lion-dance-s6": {
+    "status": "ok",
+    "size": 40806
+  },
+  "ct-lion-dance-ct-lion-dance-s7": {
+    "status": "ok",
+    "size": 39461
+  },
+  "ct-lion-dance-ct-lion-dance-s8": {
+    "status": "ok",
+    "size": 50250
+  },
+  "ct-lion-dance-ct-lion-dance-s9": {
+    "status": "ok",
+    "size": 53945
+  },
+  "ct-lion-dance-ct-lion-dance-s10": {
+    "status": "ok",
+    "size": 56982
+  },
+  "ct-chinese-cuisine-ct-chinese-cuisine-s2": {
+    "status": "ok",
+    "size": 58424
+  },
+  "ct-chinese-cuisine-ct-chinese-cuisine-s3": {
+    "status": "ok",
+    "size": 63274
+  },
+  "ct-chinese-cuisine-ct-chinese-cuisine-s6": {
+    "status": "ok",
+    "size": 36786
+  },
+  "ct-chinese-cuisine-ct-chinese-cuisine-s7": {
+    "status": "ok",
+    "size": 64014
+  },
+  "ct-fire-safety-ct-fire-safety-s1": {
+    "status": "ok",
+    "size": 39321
+  },
+  "ct-fire-safety-ct-fire-safety-s2": {
+    "status": "ok",
+    "size": 37561
+  },
+  "ct-fire-safety-ct-fire-safety-s3": {
+    "status": "ok",
+    "size": 31219
+  },
+  "ct-fire-safety-ct-fire-safety-s4": {
+    "status": "ok",
+    "size": 39068
+  },
+  "ct-fire-safety-ct-fire-safety-s5": {
+    "status": "ok",
+    "size": 35781
+  },
+  "ct-fire-safety-ct-fire-safety-s6": {
+    "status": "ok",
+    "size": 33494
+  },
+  "ct-fire-safety-ct-fire-safety-s7": {
+    "status": "ok",
+    "size": 35386
+  },
+  "ct-fire-safety-ct-fire-safety-s9": {
+    "status": "ok",
+    "size": 30516
+  },
+  "ct-fire-safety-ct-fire-safety-s10": {
+    "status": "ok",
+    "size": 37618
+  },
+  "ct-traffic-safety-ct-traffic-safety-s1": {
+    "status": "ok",
+    "size": 52998
+  },
+  "ct-traffic-safety-ct-traffic-safety-s3": {
+    "status": "ok",
+    "size": 43963
+  },
+  "ct-traffic-safety-ct-traffic-safety-s4": {
+    "status": "ok",
+    "size": 54108
+  },
+  "ct-traffic-safety-ct-traffic-safety-s5": {
+    "status": "ok",
+    "size": 39542
+  },
+  "ct-traffic-safety-ct-traffic-safety-s6": {
+    "status": "ok",
+    "size": 37942
+  },
+  "ct-traffic-safety-ct-traffic-safety-s7": {
+    "status": "ok",
+    "size": 33411
+  },
+  "ct-traffic-safety-ct-traffic-safety-s8": {
+    "status": "ok",
+    "size": 47619
+  },
+  "ct-traffic-safety-ct-traffic-safety-s9": {
+    "status": "ok",
+    "size": 60333
+  },
+  "ct-traffic-safety-ct-traffic-safety-s10": {
+    "status": "ok",
+    "size": 47434
+  },
+  "ct-water-safety-ct-water-safety-s1": {
+    "status": "ok",
+    "size": 47368
+  },
+  "ct-water-safety-ct-water-safety-s2": {
+    "status": "ok",
+    "size": 53654
+  },
+  "ct-water-safety-ct-water-safety-s5": {
+    "status": "ok",
+    "size": 46228
+  },
+  "ct-water-safety-ct-water-safety-s6": {
+    "status": "ok",
+    "size": 40210
+  },
+  "ct-water-safety-ct-water-safety-s10": {
+    "status": "ok",
+    "size": 47538
+  },
+  "ct-electricity-safety-ct-electricity-safety-s1": {
+    "status": "ok",
+    "size": 38264
+  },
+  "ct-electricity-safety-ct-electricity-safety-s2": {
+    "status": "ok",
+    "size": 43802
+  },
+  "ct-electricity-safety-ct-electricity-safety-s3": {
+    "status": "ok",
+    "size": 35642
+  },
+  "ct-electricity-safety-ct-electricity-safety-s5": {
+    "status": "ok",
+    "size": 33122
+  },
+  "ct-food-safety-ct-food-safety-s1": {
+    "status": "ok",
+    "size": 54680
+  },
+  "ct-food-safety-ct-food-safety-s2": {
+    "status": "ok",
+    "size": 47317
+  },
+  "ct-food-safety-ct-food-safety-s3": {
+    "status": "ok",
+    "size": 45531
+  },
+  "ct-food-safety-ct-food-safety-s5": {
+    "status": "ok",
+    "size": 53030
+  },
+  "ct-food-safety-ct-food-safety-s6": {
+    "status": "ok",
+    "size": 36943
+  },
+  "ct-food-safety-ct-food-safety-s7": {
+    "status": "ok",
+    "size": 55063
+  },
+  "ct-first-aid-ct-first-aid-s1": {
+    "status": "ok",
+    "size": 46543
+  },
+  "ct-first-aid-ct-first-aid-s2": {
+    "status": "ok",
+    "size": 42086
+  },
+  "ct-first-aid-ct-first-aid-s3": {
+    "status": "ok",
+    "size": 32126
+  },
+  "ct-first-aid-ct-first-aid-s4": {
+    "status": "ok",
+    "size": 36016
+  },
+  "ct-first-aid-ct-first-aid-s5": {
+    "status": "ok",
+    "note": "already exists (legacy filename)"
+  },
+  "ct-first-aid-ct-first-aid-s6": {
+    "status": "ok",
+    "size": 30355
+  },
+  "ct-first-aid-ct-first-aid-s7": {
+    "status": "ok",
+    "size": 41379
+  },
+  "ct-first-aid-ct-first-aid-s8": {
+    "status": "ok",
+    "size": 55934
+  },
+  "ct-first-aid-ct-first-aid-s10": {
+    "status": "ok",
+    "size": 36486
+  },
+  "ct-home-etiquette-ct-home-etiquette-s2": {
+    "status": "ok",
+    "size": 46038
+  },
+  "ct-home-etiquette-ct-home-etiquette-s4": {
+    "status": "ok",
+    "size": 52623
+  },
+  "ct-home-etiquette-ct-home-etiquette-s5": {
+    "status": "ok",
+    "size": 52631
+  },
+  "ct-home-etiquette-ct-home-etiquette-s6": {
+    "status": "ok",
+    "size": 38293
+  },
+  "ct-home-etiquette-ct-home-etiquette-s8": {
+    "status": "ok",
+    "size": 53244
+  },
+  "ct-home-etiquette-ct-home-etiquette-s9": {
+    "status": "ok",
+    "size": 56066
+  },
+  "ct-home-etiquette-ct-home-etiquette-s10": {
+    "status": "ok",
+    "size": 43888
+  },
+  "ct-school-etiquette-ct-school-etiquette-s2": {
+    "status": "ok",
+    "size": 49848
+  },
+  "ct-school-etiquette-ct-school-etiquette-s3": {
+    "status": "ok",
+    "size": 39157
+  },
+  "ct-school-etiquette-ct-school-etiquette-s4": {
+    "status": "fail",
+    "error": "AI \u672a\u8bc6\u522b\u54cd\u5e94"
+  },
+  "ct-school-etiquette-ct-school-etiquette-s5": {
+    "status": "ok",
+    "size": 36666
+  },
+  "ct-school-etiquette-ct-school-etiquette-s6": {
+    "status": "ok",
+    "size": 33467
+  },
+  "ct-school-etiquette-ct-school-etiquette-s8": {
+    "status": "ok",
+    "size": 38745
+  },
+  "ct-school-etiquette-ct-school-etiquette-s9": {
+    "status": "fail",
+    "error": "AI \u672a\u8bc6\u522b\u54cd\u5e94"
+  },
+  "ct-school-etiquette-ct-school-etiquette-s10": {
+    "status": "ok",
+    "size": 40985
+  },
+  "ct-public-etiquette-ct-public-etiquette-s1": {
+    "status": "ok",
+    "size": 55755
+  },
+  "ct-public-etiquette-ct-public-etiquette-s2": {
+    "status": "ok",
+    "size": 46014
+  },
+  "ct-public-etiquette-ct-public-etiquette-s3": {
+    "status": "ok",
+    "size": 42534
+  },
+  "ct-public-etiquette-ct-public-etiquette-s5": {
+    "status": "ok",
+    "size": 48160
+  },
+  "ct-public-etiquette-ct-public-etiquette-s8": {
+    "status": "ok",
+    "size": 38403
+  },
+  "ct-public-etiquette-ct-public-etiquette-s9": {
+    "status": "ok",
+    "size": 31384
+  },
+  "ct-social-etiquette-ct-social-etiquette-s1": {
+    "status": "ok",
+    "size": 35960
+  },
+  "ct-social-etiquette-ct-social-etiquette-s2": {
+    "status": "ok",
+    "size": 50534
+  },
+  "ct-social-etiquette-ct-social-etiquette-s3": {
+    "status": "ok",
+    "size": 36954
+  },
+  "ct-social-etiquette-ct-social-etiquette-s4": {
+    "status": "ok",
+    "size": 30245
+  },
+  "ct-social-etiquette-ct-social-etiquette-s5": {
+    "status": "ok",
+    "size": 43107
+  },
+  "ct-social-etiquette-ct-social-etiquette-s6": {
+    "status": "ok",
+    "size": 37624
+  },
+  "ct-social-etiquette-ct-social-etiquette-s7": {
+    "status": "ok",
+    "size": 38989
+  },
+  "ct-social-etiquette-ct-social-etiquette-s8": {
+    "status": "ok",
+    "size": 35742
+  },
+  "ct-social-etiquette-ct-social-etiquette-s9": {
+    "status": "ok",
+    "size": 37381
+  },
+  "ct-social-etiquette-ct-social-etiquette-s10": {
+    "status": "ok",
+    "size": 33972
+  }
+}

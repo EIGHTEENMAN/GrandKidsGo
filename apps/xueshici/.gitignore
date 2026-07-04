@@ -1,0 +1,6 @@
+node_modules/
+dist/
+.DS_Store
+# 生成资产（TTS音频 + 诗配动画），通过 rsync 部署
+*.mp3
+*.mp4
