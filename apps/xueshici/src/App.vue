@@ -321,7 +321,7 @@ function playOriginalText() {
   stopAll()
   speaking.value = true
   playingTarget.value = 'original'
-  const src = `/audio/poems/${currentPoem.value.id}_original.mp3?v=2`
+  const src = `/audio/original/${currentPoem.value.id}.mp3`
   const bgm = selectBgm(currentPoem.value)
   playMp3({
     src,
@@ -336,7 +336,7 @@ function playTranslation() {
   stopAll()
   speaking.value = true
   playingTarget.value = 'translation'
-  const src = `/audio/poems/${currentPoem.value.id}_translation.mp3?v=2`
+  const src = `/audio/translation/${currentPoem.value.id}.mp3`
   const bgm = selectBgm(currentPoem.value)
   playMp3({
     src,
@@ -351,7 +351,7 @@ function playInterpretation() {
   stopAll()
   speaking.value = true
   playingTarget.value = 'interpretation'
-  const src = `/audio/poems/${currentPoem.value.id}_interpretation.mp3?v=3`
+  const src = `/audio/interpretation/${currentPoem.value.id}.mp3`
   const bgm = selectBgm(currentPoem.value)
   playMp3({
     src,
@@ -369,8 +369,7 @@ function stopAudio() {
 function getReaderContent(): string {
   if (!currentPoem.value || !currentSection.value) return ''
   const info = `《${currentPoem.value.title}》${currentPoem.value.author}，${currentPoem.value.dynasty}。`
-  const sentences = splitBySentence(currentSection.value.original, currentPoem.value).join('\n')
-  return info + '\n' + sentences
+  return info + '\n' + currentSection.value.original
 }
 
 // 智能断句（适配绝句/律诗/楚辞/诗经/词）：
@@ -461,56 +460,6 @@ function isProse(poem: { title?: string; tags?: string; author?: string } | null
   // tags
   if (/古文|散文|古文观止/.test(poem.tags || '')) return true
   return false
-}
-
-function splitBySentence(text: string, poem: { title?: string; tags?: string; author?: string } | null = null): string[] {
-  if (!text) return []
-
-  // 散文体：按虚词断句，每句独立显示（不强制对仗联）
-  if (isProse(poem)) {
-    const rawLines = text.split('\n').map(l => l.trim()).filter(l => l.length > 0)
-    const lines: string[] = []
-    for (const l of rawLines) {
-      lines.push(...splitProseLine(l))
-    }
-    if (lines.length === 0) return []
-    return lines.map(l => /[。？！]$/.test(l) ? l : l + '。')
-  }
-
-  // 诗体：源数据已经用中文标点（，。；？！）分好短句了。
-  // 关键修复：直接按标点断句，**禁止按字数切**——按字数切会把
-  // "窈窕淑女" 这类词从中间切开导致显示错乱（参看 7-4 用户反馈关雎全错位）
-  const rawLines = text.split('\n').map(l => l.trim()).filter(l => l.length > 0)
-  // 按全部中文标点（，。；？！）切，**保留**标点作为句子末尾
-  // 楚辞里"兮"是句中语气词不作断点；如要单独处理走 splitProseLine（散文体）
-  const cutByPunct = (s: string): string[] => {
-    // 不切掉标点：用 lookbehind 在每个标点后切，但保留标点
-    return s.split(/(?<=[。？！；，])/).map(p => p.trim()).filter(p => p.length > 0)
-  }
-  const lines: string[] = []
-  for (const l of rawLines) {
-    lines.push(...cutByPunct(l))
-  }
-  if (lines.length === 0) return []
-
-  // 2 句一组（古诗对仗联）：拼成「出句，+ 对句。」结构
-  // 源数据已经在句末自带标点（，或。），先 strip 末尾标点再统一添加
-  const stripTail = (s: string) => s.replace(/[。？！，；]+$/, '')
-  const ensureEndPunct = (s: string, punct: string) => /[。？！]$/.test(s) ? s : s + punct
-  const result: string[] = []
-  for (let i = 0; i < lines.length; i += 2) {
-    const pair = lines.slice(i, i + 2)
-    if (pair.length === 2) {
-      // 出句末加 "，"，对句末加 "。"
-      const first = stripTail(pair[0]) + '，'
-      const second = ensureEndPunct(stripTail(pair[1]), '。')
-      result.push(first + second)
-    } else {
-      // 末尾单段：保证带 "。"
-      result.push(ensureEndPunct(stripTail(pair[0]), '。'))
-    }
-  }
-  return result
 }
 
 async function doSearch() {
@@ -773,7 +722,7 @@ onUnmounted(() => {
               </button>
             </div>
             <div class="sc-original-text">
-              <p v-for="(line, i) in splitBySentence(currentSection.original, currentPoem)" :key="i" class="sc-original-line"><PointReader :text="line" /></p>
+              <p v-for="(line, i) in currentSection.original.split('\\n').map(s => s.trim()).filter(s => s)" :key="i" class="sc-original-line"><PointReader :text="line" /></p>
             </div>
           </div>
           <div class="sc-content-block">
