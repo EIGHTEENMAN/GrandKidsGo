@@ -98,9 +98,10 @@ case "$KIND" in
     do_backup lite
     echo "🚀 rsync dist/ → nginx root"
     rsync $RSYNC_OPTS "$LOCAL_DIST/" "$REMOTE_ROOT"
-    # 把 dist 内的入口文件展到 nginx root，让 nginx location / 和 /assets/ 直接命中
-    ssh "$SERVER" "cp '$NGINX_HTML_DIR/$NGINX_DIR_NAME/dist/index.html' '$NGINX_HTML_DIR/$NGINX_DIR_NAME/index.html' && \
-                   rsync -av '$NGINX_HTML_DIR/$NGINX_DIR_NAME/dist/assets/' '$NGINX_HTML_DIR/$NGINX_DIR_NAME/assets/'"
+    # 把 dist/index.html 和 dist/assets/ 从本地 rsync 到 nginx root（让 location / 和 /assets/ 直接命中）。
+    # 注意：上面 rsync 已平铺 dist/ → nginx root，并 --delete 清掉 dist/ 副本；这里从 LOCAL 源头上传。
+    rsync -av "$LOCAL_DIST/index.html" "$SERVER:$NGINX_HTML_DIR/$NGINX_DIR_NAME/index.html"
+    rsync -av --delete "$LOCAL_DIST/assets/" "$SERVER:$NGINX_HTML_DIR/$NGINX_DIR_NAME/assets/"
     ;;
   text)
     if [ -z "$SUBTYPE" ] || [ "$SUBTYPE" = "all" ]; then
@@ -109,8 +110,8 @@ case "$KIND" in
       echo "🚀 rsync dist/ → nginx root (无音频 + 图片子目录)"
       RSYNC_OPTS="$RSYNC_BASE --exclude='audio/' --exclude='images/'"
       rsync $RSYNC_OPTS "$LOCAL_DIST/" "$REMOTE_ROOT"
-      ssh "$SERVER" "cp '$NGINX_HTML_DIR/$NGINX_DIR_NAME/dist/index.html' '$NGINX_HTML_DIR/$NGINX_DIR_NAME/index.html' && \
-                     rsync -av '$NGINX_HTML_DIR/$NGINX_DIR_NAME/dist/assets/' '$NGINX_HTML_DIR/$NGINX_DIR_NAME/assets/'"
+      rsync -av "$LOCAL_DIST/index.html" "$SERVER:$NGINX_HTML_DIR/$NGINX_DIR_NAME/index.html"
+      rsync -av --delete "$LOCAL_DIST/assets/" "$SERVER:$NGINX_HTML_DIR/$NGINX_DIR_NAME/assets/"
     else
       echo "❌ text 模式不支持 SUBTYPE='$SUBTYPE'（用 text full 替代）" >&2
       exit 1
