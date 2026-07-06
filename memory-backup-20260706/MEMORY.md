@@ -98,3 +98,4 @@
 - [Session 2026-07-06 xueshici 手工修复批次2](session-2026-07-06-xueshici-manual-fix-batch2.md) — 47 首 id 54-100 原文分行+标点+反引号，已部署
 - [Session 2026-07-06 xueshici 手工修复批次3](session-2026-07-06-xueshici-manual-fix-batch3.md) — 100 首 id 101-200 原文分行+标点，convert-chunk1.cjs 转换脚本，commit 8d7e775
 - [Session 2026-07-06 xueshici 手工修复批次4](session-2026-07-06-xueshici-manual-fix-batch4.md) — 100 首 id 201-300 含 7 首现代诗手工断句，convert-chunk2.cjs，commit edbec69
+- [Session 2026-07-06 xueshici 手工修复批次5](session-2026-07-06-xueshici-manual-fix-batch5.md) — 100 首 id 301-400 含 3 首无标点（苏轼定风波/罗隐霰/关汉卿大德歌），commit 3e7207b
