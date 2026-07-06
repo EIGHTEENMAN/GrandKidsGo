@@ -3,6 +3,13 @@
 import type { Poem } from '../data/poems'
 import { CHUNK_COUNT, getChunkIndexForPoemId } from '../data/poem-chunks'
 
+// Vite 静态分析 import.meta.glob：让 build 时为每个 chunk 生成独立 chunk 文件
+// 关键：eager:false（按需 import）+ query 后缀让 vite 识别为动态 chunk
+const chunkModules = import.meta.glob<{ [key: string]: Poem[] }>(
+  '../data/poem-chunks/chunk-*.ts',
+  { eager: false }
+)
+
 // 已加载 chunk 缓存：chunkIndex → Poem[]
 const chunkCache = new Map<number, Poem[]>()
 // 正在加载的 Promise（去重）
@@ -16,7 +23,11 @@ async function ensureChunkLoaded(idx: number): Promise<Poem[]> {
   if (chunkCache.has(idx)) return chunkCache.get(idx)!
   if (loadingPromises.has(idx)) return loadingPromises.get(idx)!
 
-  const promise = import(`../data/poem-chunks/chunk-${idx}`)
+  const path = `../data/poem-chunks/chunk-${idx}.ts`
+  const loader = chunkModules[path]
+  if (!loader) throw new Error(`chunk module not found: ${path}`)
+
+  const promise = loader()
     .then(mod => {
       const data = (mod as any)[`chunk${idx}`] as Poem[]
       chunkCache.set(idx, data)

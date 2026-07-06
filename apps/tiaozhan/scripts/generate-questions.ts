@@ -3,7 +3,7 @@ import path from 'path'
 import { fileURLToPath } from 'url'
 
 // ===================== Data Imports =====================
-import { poemsData } from '../../xueshici/src/data/poems.ts'
+import { poemsData } from '../../xueshici/src/data/poems-full.ts'
 import { classicData } from '../../xueguoxue/src/data/classics.ts'
 import { words } from '../../english/src/data/words.ts'
 import { knowledgeData, type Section, type Topic } from '../../xuetongshi/src/data/knowledge.ts'

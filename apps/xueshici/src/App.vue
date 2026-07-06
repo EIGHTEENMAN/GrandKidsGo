@@ -3,6 +3,7 @@ import { ref, computed, watch, onMounted, onUnmounted } from "vue"
 import { poemsIndex, categories, categoryColors, poetBios, type PoemMeta } from './data/poems-meta'
 import type { Poem, Section } from './data/poems'
 import { speak, stopSpeaking, playMp3, stopAll, selectBgm, detectMood } from './lib/audio'
+import { loadPoem, loadPoemsByAuthor, loadAllPoems } from './lib/poem-loader'
 import { filterApps } from '@shared/composables/useSearch'
 import { reportLearningProgress, getActiveChildId } from '@shared/composables/useLearningProgress'
 import { useLearningStats } from '@shared/composables/useLearningStats'
@@ -15,21 +16,8 @@ import YouthModeGate from '@shared/components/YouthModeGate.vue'
 import PointReader from '@shared/components/PointReader.vue'
 import PoemIllustration from './components/PoemIllustration.vue'
 
-// Lazy loading state for full poem data
-const fullData = ref<Poem[] | null>(null)
+// Lazy loading state — chunk-based, replaced old fullData/ensureFullData
 const loadingData = ref(false)
-let fullDataPromise: Promise<void> | null = null
-
-async function ensureFullData() {
-  if (fullData.value) return
-  if (fullDataPromise) return fullDataPromise
-  loadingData.value = true
-  fullDataPromise = import('./data/poems').then(mod => {
-    fullData.value = mod.poemsData
-    loadingData.value = false
-  })
-  await fullDataPromise
-}
 
 // Navigation: home -> poet -> reader (详情页已合并到 reader 顶部)
 type View = 'home' | 'poet' | 'reader' | 'search'
@@ -58,12 +46,17 @@ const dailyQuote = computed(() => {
 // Learning progress tracking
 const readerEntryTime = ref(0)
 
-// Previous/next poem navigation by same author
-const sameAuthorPoems = computed(() => {
-  if (!currentPoet.value || !currentPoem.value) return []
-  const source = fullData.value || []
-  return source.filter((p: Poem) => p.author === currentPoet.value)
-})
+// Previous/next poem navigation by same author (chunk-based)
+// 同一作者所有 id 涉及的 chunk 都加载完后，从内存里 filter
+const sameAuthorPoems = ref<Poem[]>([])
+async function refreshSameAuthor() {
+  if (!currentPoet.value) { sameAuthorPoems.value = []; return }
+  const ids = poemsIndex
+    .filter(p => p.author === currentPoet.value)
+    .map(p => Number(p.id))
+  sameAuthorPoems.value = await loadPoemsByAuthor(currentPoet.value, ids)
+}
+watch([currentPoet, currentPoem], refreshSameAuthor, { immediate: true })
 const poemIndex = computed(() => {
   if (!currentPoem.value) return -1
   return sameAuthorPoems.value.findIndex((p: Poem) => p.id === currentPoem.value?.id)
@@ -190,8 +183,7 @@ function openDetail(p: Poem) {
 
 async function openDetailFromMeta(meta: PoemMeta) {
   stopSpeaking()
-  await ensureFullData()
-  const poem = fullData.value?.find(p => p.id == meta.id)
+  const poem = await loadPoem(Number(meta.id))
   if (poem) { openDetail(poem) }
 }
 
@@ -246,8 +238,7 @@ async function restoreFromHash() {
     currentView.value = 'poet'
   } else if (view === 'detail') {
     // 旧详情页链接 → 重定向到该诗第一段的 reader
-    await ensureFullData()
-    const item = fullData.value?.find(p => p.id == id)
+    const item = await loadPoem(Number(id))
     if (item && item.sections.length > 0) {
       currentPoem.value = item
       currentSection.value = item.sections[0]
@@ -262,7 +253,6 @@ async function restoreFromHash() {
       history.replaceState(null, '', window.location.pathname)
     }
   } else if (view === 'reader') {
-    await ensureFullData()
     // 解析 poemId-sectionId（兼容旧的纯 section id）
     const dashIdx = id.indexOf('-')
     let poemId: string | null = null
@@ -272,9 +262,10 @@ async function restoreFromHash() {
       sectionId = id.slice(dashIdx + 1)
     }
     let found = false
-    for (const p of fullData.value!) {
-      // 优先按 (poemId, sectionId) 匹配，避免 section.id 不唯一导致的"总是跳到关雎"
-      if (poemId != null && p.id == poemId) {
+    // 优先按 (poemId, sectionId) 匹配，避免 section.id 不唯一导致的"总是跳到关雎"
+    if (poemId != null) {
+      const p = await loadPoem(Number(poemId))
+      if (p) {
         const sec = p.sections.find(s => s.id == sectionId)
         if (sec) {
           currentPoem.value = p
@@ -283,13 +274,13 @@ async function restoreFromHash() {
           found = true
           // 升级旧 hash 为新格式
           history.replaceState(null, '', `#reader/${p.id}-${sec.id}`)
-          break
         }
       }
     }
-    // 兼容极旧链接：纯 sectionId（此时按 section 找，但因不唯一会取第一首——所以加警告）
+    // 兼容极旧链接：纯 sectionId → 此时只能扫所有诗（不太常见，保留兼容）
     if (!found && poemId == null) {
-      for (const p of fullData.value!) {
+      const allPoems = await loadAllPoems()
+      for (const p of allPoems) {
         const sec = p.sections.find(s => s.id == id)
         if (sec) {
           currentPoem.value = p
@@ -464,10 +455,10 @@ function isProse(poem: { title?: string; tags?: string; author?: string } | null
 
 async function doSearch() {
   if (!searchQuery.value) return
-  await ensureFullData()
+  const allPoems = await loadAllPoems()
   const q = searchQuery.value.toLowerCase().trim()
   const results: { poem: Poem; sections: Section[] }[] = []
-  for (const poem of fullData.value!) {
+  for (const poem of allPoems) {
     const poemMatch = poem.title.toLowerCase().includes(q) || poem.author.toLowerCase().includes(q)
     const matchingSections: Section[] = []
     for (const section of poem.sections) {
@@ -520,11 +511,11 @@ onMounted(async () => {
   const qParam = params.get('q')
   if (qParam) { searchQuery.value = qParam }
 
-  // 预加载诗词详情数据（用户在浏览器空闲时下载，点击诗时零延迟）
+  // 预加载诗词数据（用户在浏览器空闲时下载，点击诗时零延迟）
   if ('requestIdleCallback' in window) {
-    ;(window as any).requestIdleCallback(() => ensureFullData(), { timeout: 2000 })
+    ;(window as any).requestIdleCallback(() => loadAllPoems().catch(() => {}), { timeout: 3000 })
   } else {
-    setTimeout(ensureFullData, 1000)
+    setTimeout(() => loadAllPoems().catch(() => {}), 1000)
   }
 
   // Restore view state from URL hash (supports browser refresh and back/forward)
