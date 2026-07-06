@@ -97,3 +97,4 @@
 - [Session 2026-07-06 xueshici 手工修复批次1](session-2026-07-06-xueshici-manual-fix-batch1.md) — 手工修 id 23-53（31 首诗经汉乐府原文分行+标点，commit 723834fe）
 - [Session 2026-07-06 xueshici 手工修复批次2](session-2026-07-06-xueshici-manual-fix-batch2.md) — 47 首 id 54-100 原文分行+标点+反引号，已部署
 - [Session 2026-07-06 xueshici 手工修复批次3](session-2026-07-06-xueshici-manual-fix-batch3.md) — 100 首 id 101-200 原文分行+标点，convert-chunk1.cjs 转换脚本，commit 8d7e775
+- [Session 2026-07-06 xueshici 手工修复批次4](session-2026-07-06-xueshici-manual-fix-batch4.md) — 100 首 id 201-300 含 7 首现代诗手工断句，convert-chunk2.cjs，commit edbec69
