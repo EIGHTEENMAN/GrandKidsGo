@@ -96,3 +96,4 @@
 - [Session 2026-07-06 xueshici 21 chunk lazy load](session-2026-07-06-xueshici-chunk-lazy-load.md) — poems.ts 1.5MB 拆 21 chunk + import.meta.glob 静态分析 + tiaozhan 切 poems-full.ts（commit 0c05ba0d）首屏 900KB → 324KB gzip
 - [Session 2026-07-06 xueshici 手工修复批次1](session-2026-07-06-xueshici-manual-fix-batch1.md) — 手工修 id 23-53（31 首诗经汉乐府原文分行+标点，commit 723834fe）
 - [Session 2026-07-06 xueshici 手工修复批次2](session-2026-07-06-xueshici-manual-fix-batch2.md) — 47 首 id 54-100 原文分行+标点+反引号，已部署
+- [Session 2026-07-06 xueshici 手工修复批次3](session-2026-07-06-xueshici-manual-fix-batch3.md) — 100 首 id 101-200 原文分行+标点，convert-chunk1.cjs 转换脚本，commit 8d7e775
