@@ -722,7 +722,7 @@ onUnmounted(() => {
               </button>
             </div>
             <div class="sc-original-text">
-              <p v-for="(line, i) in currentSection.original.split('\\n').map(s => s.trim()).filter(s => s)" :key="i" class="sc-original-line"><PointReader :text="line" /></p>
+              <p v-for="(line, i) in currentSection.original.split('\n').map(s => s.trim()).filter(s => s)" :key="i" class="sc-original-line"><PointReader :text="line" /></p>
             </div>
           </div>
           <div class="sc-content-block">
