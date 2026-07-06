@@ -9,7 +9,8 @@ const fs = require('fs')
 const path = require('path')
 
 const ROOT = path.join(__dirname, '..')
-const SRC = path.join(ROOT, 'src', 'data', 'poems.ts')
+// 数据源是 poems-full.ts（原 poems.ts git mv 而来）；瘦身的 poems.ts 只剩空数组
+const SRC = path.join(ROOT, 'src', 'data', 'poems-full.ts')
 const OUT_DIR = path.join(ROOT, 'src', 'data', 'poem-chunks')
 
 const CHUNK_SIZE = 100
