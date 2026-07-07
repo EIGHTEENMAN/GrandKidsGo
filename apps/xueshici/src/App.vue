@@ -520,7 +520,11 @@ onMounted(async () => {
 
   // Restore view state from URL hash (supports browser refresh and back/forward)
   await restoreFromHash()
-  window.addEventListener('popstate', restoreFromHash)
+  window.addEventListener('popstate', () => {
+    stopSpeaking()
+    // 浏览器返回时也会触发 popstate
+    restoreFromHash()
+  })
 })
 
 onUnmounted(() => {
