@@ -243,6 +243,7 @@ function goBack() {
 }
 
 function onPopState() {
+  stopSpeaking()
   const hash = window.location.hash.slice(1)
   if (!hash) {
     currentView.value = 'home'

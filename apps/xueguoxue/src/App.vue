@@ -392,7 +392,7 @@ onMounted(async () => {
 
   // Restore view state from URL hash
   await restoreFromHash()
-  window.addEventListener('popstate', () => { restoreFromHash() })
+  window.addEventListener("popstate", () => { stopSpeaking(); restoreFromHash() })
 })
 
 onUnmounted(() => {
