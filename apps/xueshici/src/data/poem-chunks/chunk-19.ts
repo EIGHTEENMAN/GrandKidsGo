@@ -1316,8 +1316,8 @@ export const chunk19: Poem[] = [
     ] },
   { id: 2161, title: "过湖北山家",
     author: "施闰章",
-    dynasty: "明",
-    category: "明",
+    dynasty: "清",
+    category: "清",
     summary: `路回临石岸，树老出墙根。
 野水合诸涧，桃花成一村。`,
     tags: "古诗",
@@ -1755,8 +1755,8 @@ export const chunk19: Poem[] = [
     ] },
   { id: 2183, title: "归园田居（其一）",
     author: "陶渊明",
-    dynasty: "南北朝",
-    category: "南北朝",
+    dynasty: "魏晋南北朝",
+    category: "魏晋南北朝",
     summary: `少无适俗韵，性本爱丘山。
 误落尘网中，一去三十年。`,
     tags: "古诗",
@@ -1790,8 +1790,8 @@ export const chunk19: Poem[] = [
     ] },
   { id: 2184, title: "饮酒（其五）",
     author: "陶渊明",
-    dynasty: "南北朝",
-    category: "南北朝",
+    dynasty: "魏晋南北朝",
+    category: "魏晋南北朝",
     summary: `结庐在人境，而无车马喧。
 问君何能尔？心远地自偏。`,
     tags: "古诗",
@@ -1817,8 +1817,8 @@ export const chunk19: Poem[] = [
     ] },
   { id: 2185, title: "桃花源记（节选）",
     author: "陶渊明",
-    dynasty: "南北朝",
-    category: "南北朝",
+    dynasty: "魏晋南北朝",
+    category: "魏晋南北朝",
     summary: `晋太元中，武陵人捕鱼为业。
 缘溪行，忘路之远近。`,
     tags: "古诗",
