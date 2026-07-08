@@ -13,7 +13,7 @@ export interface PoemMeta {
   sectionCount: number
 }
 
-export const categoryColors: Record<string, string> = {"春秋战国": "#d97706", "汉": "#dc2626", "三国": "#f97316", "魏晋南北朝": "#8b5cf6", "唐": "#f59e0b", "宋": "#06b6d4", "元": "#ec4899", "明": "#ef4444", "清": "#1d4ed8", "近现代": "#64748b"}
+export const categoryColors: Record<string, string> = {"春秋战国": "#d97706", "汉": "#dc2626", "三国": "#f97316", "魏晋南北朝": "#8b5cf6", "唐": "#f59e0b", "宋": "#06b6d4", "元": "#ec4899", "明": "#ef4444", "清": "#1d4ed8", "南北朝": "#a855f7", "近现代": "#64748b"}
 
 export const categories: string[] = ["春秋战国", "汉", "三国", "魏晋南北朝", "唐", "宋", "元", "明", "清", "近现代"]
 
