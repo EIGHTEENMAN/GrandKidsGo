@@ -79,6 +79,14 @@ do_backup() {
 }
 
 # 通用 rsync option：排除 macOS AppleDouble
+
+# ===== Backup 保留策略：每个 app 只保留最近 5 个 backup =====
+cleanup_old_backups() {
+  local app_name="$1"
+  local keep=5
+  ssh "$SERVER" "cd '$BACKUP_BASE/$app_name' && ls -dt */ 2>/dev/null | tail -n +$((keep + 1)) | xargs -r rm -rf" 2>/dev/null || true
+}
+
 RSYNC_BASE=(
   -av
   --delete
@@ -194,3 +202,6 @@ echo
 echo "✅ 部署完成"
 echo "  备份位置: $BACKUP_DIR"
 echo "  远程路径: $REMOTE_ROOT"
+
+# 自动清理旧 backup
+cleanup_old_backups "$APP_NAME"
