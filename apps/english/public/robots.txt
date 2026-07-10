@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://english.grandand.com/sitemap.xml

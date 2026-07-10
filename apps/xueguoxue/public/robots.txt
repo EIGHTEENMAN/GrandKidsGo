@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://xueguoxue.grandand.com/sitemap.xml
