@@ -1,0 +1,3 @@
+- [Session 2026-07-06~08 全量](session-2026-07-07-recap.md) — 2028首原文标点修复、朝代修复、翻译替换、返回键停止、上线前测试、GEO
+- [Session 2026-07-08 上线前测试](session-2026-07-08-launch-test.md) — 上线前系统测试 + SEO + 安全 headers 修复
+- [Session 2026-07-06 新电脑恢复](session-2026-07-06-新电脑恢复.md) — git 恢复 + memory 恢复
