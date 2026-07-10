@@ -4,6 +4,7 @@ import { knowledgeIndex, categories, categoryColors, dailyQuotes, type TopicMeta
 import type { Topic, Section } from './data/knowledge'
 import { speak, stopSpeaking } from './lib/audio'
 import { filterApps } from '@shared/composables/useSearch'
+import { injectWebSite, injectLearningResource } from '@shared/composables/useGeoInjectLd'
 import { reportLearningProgress, getActiveChildId } from '@shared/composables/useLearningProgress'
 import { useLearningStats } from '@shared/composables/useLearningStats'
 import { useAuth } from '@shared/composables/useAuth'

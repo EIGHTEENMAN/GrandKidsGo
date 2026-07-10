@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref, computed, onMounted } from 'vue'
+import { injectWebSite } from '@shared/composables/useGeoInjectLd'
 import { isLoggedIn, getUser, getIsNewUser, fetchUser, setUser, setToken, getActiveProfile, setActiveProfile, getToken } from '@/api/auth'
 import { useAuthStore } from '@/stores/auth'
 import AuthModal from '@/components/AuthModal.vue'

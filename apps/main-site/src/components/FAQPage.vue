@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
+import { injectFAQ } from '@shared/composables/useGeoInjectLd'
 
 interface FAQItem {
   q: string
@@ -43,7 +44,16 @@ const faqs: FAQItem[] = [
 
 const activeIdx = ref<number | null>(null)
 
+const faqData: { q: string; a: string }[] = [
+  { q: '童慧行是什么？', a: '童慧行是一个专为儿童和家长打造的成长陪伴平台。' },
+  { q: '孩子可以单独使用吗？', a: '可以。14 岁以下儿童需经家长同意注册并使用。' },
+  { q: '是否需要付费？', a: '目前所有内容、攻略、社区功能完全免费。' },
+  { q: '如何注册账号？', a: '点击右上角注册，输入手机号获取验证码即可。' },
+  { q: '如何保护孩子的隐私？', a: '14 岁以下儿童注册需家长同意。' },
+]
+
 onMounted(() => {
+  injectFAQ(faqData)
   const hash = window.location.hash.replace('#', '')
   const idx = parseInt(hash.replace('q', ''))
   if (!isNaN(idx) && idx >= 0 && idx < faqs.length) {

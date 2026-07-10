@@ -5,6 +5,7 @@ import type { Classic, Section } from './data/classics'
 import { playSectionAudioWithFallback, stopAll, speak, stopSpeaking } from './lib/audio'
 import { useAuth } from '@shared/composables/useAuth'
 import { filterApps } from '@shared/composables/useSearch'
+import { injectWebSite, injectLearningResource } from '@shared/composables/useGeoInjectLd'
 import { reportLearningProgress, getActiveChildId } from '@shared/composables/useLearningProgress'
 import { useLearningStats } from '@shared/composables/useLearningStats'
 import HeaderBar from '@shared/components/HeaderBar.vue'
@@ -68,6 +69,20 @@ function goNextSection() {
 }
 const showChallenge = ref(false) // 答题功能暂时隐藏，待后续优化再启用
 const challengeSectionRef = ref('')
+
+// GEO: 学国学 JSON-LD（进入详情页则注入）
+watch([() => currentView.value, () => currentClassic.value], () => {
+  if (currentView.value === 'reader' && currentClassic.value) {
+    const cc = (currentClassic.value as any)
+    injectLearningResource({
+      name: cc.title + ' - 童慧行学国学',
+      description: cc.summary || cc.title,
+      author: cc.author || '',
+      url: 'https://xueguoxue.grandand.com/#reader/' + cc.id + '-' + (cc.sections?.[0]?.id || 1),
+      type: 'classic',
+    })
+  }
+})
 
 watch(currentView, (newView, oldView) => {
   if (oldView === 'reader' && newView !== 'reader' && readerEntryTime.value > 0) {
