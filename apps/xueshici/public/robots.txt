@@ -1,0 +1,5 @@
+# 童慧行学诗词
+User-agent: *
+Allow: /
+
+Sitemap: https://xueshici.grandand.com/sitemap.xml

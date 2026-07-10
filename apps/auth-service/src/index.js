@@ -24,6 +24,8 @@ app.use('/api/user', userRoutes);
 app.use('/api/oauth', oauthRoutes);
 app.use('/api/search', searchRoutes);
 app.use('/api/llm', llmRoutes);
+app.use('/api', require('./routes/errors'));
+
 
 app.get('/health', (_req, res) => {
   res.json({ status: 'ok', timestamp: new Date().toISOString() });
