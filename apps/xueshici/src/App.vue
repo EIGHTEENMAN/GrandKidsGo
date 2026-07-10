@@ -531,6 +531,48 @@ onUnmounted(() => {
   window.removeEventListener('beforeunload', stopSpeaking)
   window.removeEventListener('popstate', restoreFromHash)
 })
+
+// ===== GEO: JSON-LD 结构化数据 =====
+function injectJsonLd(data: object) {
+  // 移除旧的 jsonld
+  const old = document.getElementById('jsonld-shici')
+  if (old) old.remove()
+  const script = document.createElement('script')
+  script.id = 'jsonld-shici'
+  script.type = 'application/ld+json'
+  script.textContent = JSON.stringify(data)
+  document.head.appendChild(script)
+}
+
+// 首页结构化数据
+watch([() => currentView.value, () => currentPoem.value], () => {
+  if (currentView.value === 'home' || !currentPoem.value) {
+    injectJsonLd({
+      '@context': 'https://schema.org',
+      '@type': 'WebSite',
+      'name': '童慧行学诗词',
+      'url': 'https://xueshici.grandand.com/',
+      'description': '从诗经到现代诗，2026首古诗含原文、译文、赏析、朗诵音频',
+      'inLanguage': 'zh-CN',
+      'educationalUse': 'learning',
+      'audience': { '@type': 'Audience', 'audienceType': 'children' },
+    })
+  } else if (currentPoem.value) {
+    const p = currentPoem.value
+    injectJsonLd({
+      '@context': 'https://schema.org',
+      '@type': 'LearningResource',
+      'name': p.title + ' - 童慧行学诗词',
+      'description': (p as any).summary || `\${p.title} \${p.author}，收录于童慧行学诗词`,
+      'author': { '@type': 'Person', 'name': p.author },
+      'inLanguage': 'zh-CN',
+      'educationalLevel': 'beginner',
+      'learningResourceType': 'poem',
+      'teaches': [`古诗 - \${(p as any).dynasty || ''}`],
+      'url': `https://xueshici.grandand.com/#reader/\${p.id}-\${(p as any).sections?.[0]?.id || 1}`,
+    })
+  }
+}, { immediate: true })
 </script>
 
 <template>
