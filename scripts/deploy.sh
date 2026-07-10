@@ -79,7 +79,13 @@ do_backup() {
 }
 
 # 通用 rsync option：排除 macOS AppleDouble
-RSYNC_BASE="-av --delete --exclude='._*'"
+RSYNC_BASE=(
+  -av
+  --delete
+  --exclude='._*'
+  --filter="protect audio/**"
+  --filter="protect images/**"
+)
 
 # 分发到不同 deploy 路径
 case "$KIND" in
@@ -93,11 +99,11 @@ case "$KIND" in
       exit 1
     fi
     # skip-media 策略：audio/images 服务端独立，跳过
-    RSYNC_OPTS="$RSYNC_BASE --exclude='audio/' --exclude='images/'"
+    RSYNC_OPTS=("${RSYNC_BASE[@]}" '--exclude=audio/' '--exclude=images/')
     echo "💾 备份 (lite: 仅 dist + index.html)"
     do_backup lite
     echo "🚀 rsync dist/ → nginx root"
-    rsync $RSYNC_OPTS "$LOCAL_DIST/" "$REMOTE_ROOT"
+    rsync "${RSYNC_OPTS[@]}" "$LOCAL_DIST/" "$REMOTE_ROOT"
     # 把 dist/index.html 和 dist/assets/ 从本地 rsync 到 nginx root（让 location / 和 /assets/ 直接命中）。
     # 注意：上面 rsync 已平铺 dist/ → nginx root，并 --delete 清掉 dist/ 副本；这里从 LOCAL 源头上传。
     rsync -av "$LOCAL_DIST/index.html" "$SERVER:$NGINX_HTML_DIR/$NGINX_DIR_NAME/index.html"
@@ -108,8 +114,8 @@ case "$KIND" in
       echo "💾 备份 (lite)"
       do_backup lite
       echo "🚀 rsync dist/ → nginx root (无音频 + 图片子目录)"
-      RSYNC_OPTS="$RSYNC_BASE --exclude='audio/' --exclude='images/'"
-      rsync $RSYNC_OPTS "$LOCAL_DIST/" "$REMOTE_ROOT"
+      RSYNC_OPTS=("${RSYNC_BASE[@]}" '--exclude=audio/' '--exclude=images/')
+      rsync "${RSYNC_OPTS[@]}" "$LOCAL_DIST/" "$REMOTE_ROOT"
       rsync -av "$LOCAL_DIST/index.html" "$SERVER:$NGINX_HTML_DIR/$NGINX_DIR_NAME/index.html"
       rsync -av --delete "$LOCAL_DIST/assets/" "$SERVER:$NGINX_HTML_DIR/$NGINX_DIR_NAME/assets/"
     else
@@ -132,7 +138,7 @@ case "$KIND" in
         echo "🚀 rsync audio/$SUBTYPE → 服务端"
         # 只备份这一类 audio (变少了)，不备份其他类型
         ssh "$SERVER" "mkdir -p '$BACKUP_DIR' && rsync -a '$NGINX_HTML_DIR/$NGINX_DIR_NAME/audio/$SUBTYPE/' '$BACKUP_DIR/audio-$SUBTYPE/' 2>/dev/null || true"
-        rsync $RSYNC_BASE "$SRC/" "$SERVER:$NGINX_HTML_DIR/$NGINX_DIR_NAME/audio/$SUBTYPE/"
+        rsync ${RSYNC_BASE[@]} "$SRC/" "$SERVER:$NGINX_HTML_DIR/$NGINX_DIR_NAME/audio/$SUBTYPE/"
         ;;
       all)
         if [ ! -d "$APP_DIR/public/audio" ]; then
@@ -141,7 +147,7 @@ case "$KIND" in
         fi
         echo "🚀 rsync audio/ 全部 → 服务端"
         ssh "$SERVER" "mkdir -p '$BACKUP_DIR' && rsync -a '$NGINX_HTML_DIR/$NGINX_DIR_NAME/audio/' '$BACKUP_DIR/audio/' 2>/dev/null || true"
-        rsync $RSYNC_BASE "$APP_DIR/public/audio/" "$SERVER:$NGINX_HTML_DIR/$NGINX_DIR_NAME/audio/"
+        rsync ${RSYNC_BASE[@]} "$APP_DIR/public/audio/" "$SERVER:$NGINX_HTML_DIR/$NGINX_DIR_NAME/audio/"
         ;;
       *)
         echo "❌ 未知的 audio type '$SUBTYPE'" >&2
@@ -156,7 +162,7 @@ case "$KIND" in
     fi
     echo "🚀 rsync images/ → 服务端"
     ssh "$SERVER" "mkdir -p '$BACKUP_DIR' && rsync -a '$NGINX_HTML_DIR/$NGINX_DIR_NAME/images/' '$BACKUP_DIR/images/' 2>/dev/null || true"
-    rsync $RSYNC_BASE "$APP_DIR/public/images/" "$SERVER:$NGINX_HTML_DIR/$NGINX_DIR_NAME/images/"
+    rsync ${RSYNC_BASE[@]} "$APP_DIR/public/images/" "$SERVER:$NGINX_HTML_DIR/$NGINX_DIR_NAME/images/"
     ;;
   *)
     echo "❌ 未知 kind '$KIND'。支持: text-full | text | audio | images" >&2
