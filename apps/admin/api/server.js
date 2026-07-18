@@ -64,13 +64,26 @@ app.use(express.static('dist'));
 app.use(express.json());
 
 // ─── Auth Middleware ───
-
+// 行为：① 走 JWT Bearer 登录校验 ② 若 header 带 x-admin-token 且等于 ADMIN_TOKEN，走 v1.5 走天下路由
 function authMiddleware(req, res, next) {
-  // Only protect API routes
+  // 只保护 /api/ 路由
   if (!req.path.startsWith('/api/')) return next();
+
+  // 公开白名单
   const excluded = ['/api/login', '/api/health', '/api/analytics/track'];
   if (excluded.includes(req.path)) return next();
 
+  // x-admin-token（给走天下用）或 JWT（admin 老用户）—— 任一通过即可
+  const adminHeader = req.headers['x-admin-token'];
+  if (adminHeader) {
+    const expected = (process.env.ADMIN_TOKEN ?? 'dev-admin-token').trim();
+    if (adminHeader.trim() === expected) {
+      req.admin = { id: 'travel-admin', role: 'admin' };
+      return next();
+    }
+  }
+
+  // JWT Bearer 校验
   const authHeader = req.headers.authorization;
   if (!authHeader || !authHeader.startsWith('Bearer ')) {
     return res.status(401).json({ error: '未登录' });
@@ -521,6 +534,235 @@ app.get('/api/admin/analytics/overview', (req, res) => {
     res.json(result);
   } catch (e) {
     res.status(500).json({ error: e.message });
+  }
+});
+
+// =============================================================================
+// 走天下攻略审核 + KOL 复评（v1.5 第十六节 admin 后台 + DEPLOY.md 第七节 P1）
+// =============================================================================
+
+function travelDbUrl() {
+  // 默认从 env 取，没有则读 travel-guide 的 .env
+  let url = process.env.TRAVEL_DATABASE_URL;
+  if (!url) {
+    try {
+      const env = readFileSync('../travel-guide/.env', 'utf8');
+      const line = env.split('\n').find((l) => l.startsWith('DATABASE_URL='));
+      if (line) url = line.substring('DATABASE_URL='.length);
+    } catch { /* ignore */ }
+  }
+  if (!url) {
+    url = 'postgresql://shibaxia@localhost:5432/travel_dev?schema=public';
+  }
+  // psql 不认识 ?schema=，手动剥掉；同时 psql 需要密码直传，得用 PG 协议
+  // 简单方案：用 -d 参数或 env 变量避免 ?schema=
+  return url.replace(/[?&]schema=[^&]*/, '');
+}
+
+function runPg(sql) {
+  return execSync(`psql "${travelDbUrl()}" -t -A -F "|" -c "${sql.replace(/"/g, '\\"').replace(/\n/g, ' ')}"`, {
+    encoding: 'utf8',
+    timeout: 10000,
+  });
+}
+
+// 简单 admin token 校验（开发期 dev-admin-token，生产改 .env）
+function requireAdmin(req, res, next) {
+  const token =
+    req.headers['x-admin-token'] ||
+    (req.headers.authorization ?? '').replace(/^Bearer\s+/i, '');
+  const expected = (process.env.ADMIN_TOKEN ?? 'dev-admin-token').trim();
+  if (token !== expected) {
+    return res.status(403).json({ error: { code: 'FORBIDDEN', message: 'admin token 错' } });
+  }
+  next();
+}
+
+// 批量拉取 auth-service 用户信息（同机 SQLite 只读）
+const TRAVEL_AUTH_DB_PATH = process.env.AUTH_DB_PATH || path.join(__dirname, '..', '..', 'auth-service', 'data', 'auth.db');
+let authDbForTravel = null;
+(async () => {
+  try {
+    const Database = (await import('better-sqlite3')).default;
+    authDbForTravel = new Database(TRAVEL_AUTH_DB_PATH, { readonly: true });
+    const r = authDbForTravel.prepare('SELECT COUNT(*) AS c FROM users').get();
+    console.log('[travel] auth db connected, users count =', r.c);
+  } catch (e) {
+    console.error('[travel] auth db open failed:', e.message);
+  }
+})();
+
+function batchFetchUsers(ids) {
+  if (!authDbForTravel || !ids.length) return {};
+  const deduped = [...new Set(ids)];
+  const placeholders = deduped.map(() => '?').join(',');
+  try {
+    const rows = authDbForTravel.prepare(
+      `SELECT id, COALESCE(nickname, username, '童慧行用户') AS nickname, avatar
+       FROM users WHERE id IN (${placeholders})`
+    ).all(...deduped);
+    const map = {};
+    for (const r of rows) map[r.id] = { id: r.id, nickname: r.nickname, avatar: r.avatar };
+    return map;
+  } catch { return {}; }
+}
+
+// 列出待审攻略
+app.get('/api/travel/guides/pending', requireAdmin, (req, res) => {
+  try {
+    const out = runPg(`
+      SELECT g.id, g.title, substring(g.content_html from 1 for 200) AS preview,
+             g.cover_images::text AS cover, g.city_id, g.child_ages::text AS child_ages,
+             g.days, g.user_id, g.created_at, c.name AS city_name,
+             (SELECT count(*) FROM guide_likes gl WHERE gl.guide_id = g.id) AS like_count,
+             (SELECT count(*) FROM guide_saves gs WHERE gs.guide_id = g.id) AS save_count
+      FROM guides g
+      LEFT JOIN cities c ON c.id = g.city_id
+      WHERE g.status = 'pending_review'
+      ORDER BY g.created_at ASC
+      LIMIT 50
+    `);
+    const items = out
+      .trim()
+      .split('\n')
+      .filter(Boolean)
+      .map((line) => {
+        const c = line.split('|');
+        return {
+          id: c[0],
+          title: c[1],
+          preview: c[2],
+          cover: c[3] === 'null' ? null : c[3],
+          cityId: c[4],
+          childAges: c[5] ? safeParse(c[5]) : [],
+          days: c[6] ? Number(c[6]) : null,
+          userId: c[7],
+          createdAt: c[8],
+          cityName: c[9],
+          likeCount: Number(c[10] ?? 0),
+          saveCount: Number(c[11] ?? 0),
+        };
+      });
+    // 批量补齐作者昵称/头像
+    const authorMap = batchFetchUsers(items.map(it => it.userId));
+    for (const it of items) {
+      const author = authorMap[it.userId];
+      it.author = author
+        ? { id: author.id, nickname: author.nickname, avatar: author.avatar }
+        : { id: it.userId, nickname: '童慧行用户', avatar: null };
+    }
+    res.json({ items });
+  } catch (e) {
+    res.status(500).json({ error: { code: 'QUERY_FAILED', message: e.message } });
+  }
+});
+
+function safeParse(s) {
+  try { return JSON.parse(s); } catch { return []; }
+}
+
+// admin 批准
+app.post('/api/travel/guides/:id/approve', requireAdmin, (req, res) => {
+  try {
+    runPg(
+      `UPDATE guides SET status='published', published_at=NOW(), updated_at=NOW() WHERE id='${req.params.id}'`,
+    );
+    res.json({ id: req.params.id, status: 'published' });
+  } catch (e) {
+    res.status(500).json({ error: { code: 'UPDATE_FAILED', message: e.message } });
+  }
+});
+
+// admin 拒绝
+app.post('/api/travel/guides/:id/reject', requireAdmin, (req, res) => {
+  try {
+    const reason = (req.body?.reason ?? '').toString().replace(/'/g, "''");
+    runPg(
+      `UPDATE guides SET status='rejected', updated_at=NOW() WHERE id='${req.params.id}'`,
+    );
+    res.json({ id: req.params.id, status: 'rejected', reason });
+  } catch (e) {
+    res.status(500).json({ error: { code: 'UPDATE_FAILED', message: e.message } });
+  }
+});
+
+// 列出 kidHook 含 AI 起草标记的 spot（待 KOL 复评候选）
+app.get('/api/travel/spots/needs-review', requireAdmin, (req, res) => {
+  try {
+    const out = runPg(`
+      SELECT s.id, s.name, s.kid_highlights AS kid_hook, s.mom_highlights AS mom_hook,
+             s.tips, s.pitfalls, c.name AS city_name
+      FROM spots s
+      LEFT JOIN cities c ON c.id = s.city_id
+      WHERE s.kid_highlights LIKE '%AI 起草%'
+         OR s.kid_highlights LIKE '%需要 KOL 复评%'
+         OR s.kid_highlights LIKE '%该地点%'
+      ORDER BY c.name, s.name
+      LIMIT 100
+    `);
+    const items = out
+      .trim()
+      .split('\n')
+      .filter(Boolean)
+      .map((line) => {
+        const c = line.split('|');
+        return {
+          id: c[0],
+          name: c[1],
+          kidHook: c[2],
+          momHook: c[3],
+          tips: c[4] ? c[4].split(' | ') : [],
+          pitfalls: c[5] ? c[5].split(' | ') : [],
+          cityName: c[6],
+        };
+      });
+    res.json({ items });
+  } catch (e) {
+    res.status(500).json({ error: { code: 'QUERY_FAILED', message: e.message } });
+  }
+});
+
+// KOL 复评（更新护城河字段 + 写操作日志）
+app.post('/api/travel/spots/:id/review', requireAdmin, async (req, res) => {
+  try {
+    const { kidHook, momHook, dadHook, tips, pitfalls, reviewer } = req.body ?? {};
+    if (!kidHook || typeof kidHook !== 'string' || kidHook.length > 500) {
+      return res.status(400).json({ error: { code: 'INVALID_KIDHOOK' } });
+    }
+    const esc = (v) => (v ?? '').toString().replace(/'/g, "''");
+    const sql = `
+      UPDATE spots
+      SET kid_highlights='${esc(kidHook)}',
+          mom_highlights='${esc(momHook ?? kidHook)}',
+          dad_highlights='${esc(dadHook ?? kidHook)}',
+          tips='${esc(Array.isArray(tips) ? tips.join(' | ') : tips ?? '')}',
+          pitfalls='${esc(Array.isArray(pitfalls) ? pitfalls.join(' | ') : pitfalls ?? '')}'
+      WHERE id='${req.params.id}'
+      RETURNING id
+    `;
+    const out = runPg(sql);
+    if (!out.trim()) return res.status(404).json({ error: { code: 'NOT_FOUND' } });
+    // 追加操作日志：admin 操作永远留痕
+    try {
+      const opPayload = JSON.stringify({ kidHook, momHook, kidHookLen: kidHook.length }).replace(/'/g, "''");
+      const opSql =
+        "INSERT INTO operation_logs (id, actor_id, actor_role, action, target_type, target_id, after_json, created_at) " +
+        `VALUES (gen_random_uuid()::text, '${esc(reviewer ?? "admin")}', 'admin', 'spot_kol_review', 'spot', '${esc(req.params.id)}', '${opPayload}'::jsonb, NOW())`;
+      const { execSync } = await import('node:child_process');
+      // 用 heredoc 避免 shell 把 $ 当变量展开
+      execSync(
+        `psql "${travelDbUrl()}" -t -A <<EOF
+${opSql}
+EOF
+`,
+        { encoding: 'utf8', timeout: 5000, shell: '/bin/bash' },
+      );
+    } catch (e) {
+      console.error('[admin] 操作日志写入失败（spot 复评仍生效）:', e.message);
+    }
+    res.json({ id: req.params.id, status: 'kol_reviewed', reviewer: reviewer ?? 'admin' });
+  } catch (e) {
+    res.status(500).json({ error: { code: 'UPDATE_FAILED', message: e.message } });
   }
 });
 

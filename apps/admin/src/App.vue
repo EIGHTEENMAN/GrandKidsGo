@@ -15,6 +15,8 @@ const navItems = [
   // HIDDEN: 论坛管理, will re-enable later
   // { path: '/forum', label: '论坛管理', icon: '💬' },
   { path: '/analytics', label: '运营分析', icon: '📈' },
+  { path: '/travel/guides', label: '走天下攻略待审', icon: '🗺️' },
+  { path: '/travel/kol-review', label: '护城河字段复评', icon: '✍️' },
 ]
 
 onMounted(() => {

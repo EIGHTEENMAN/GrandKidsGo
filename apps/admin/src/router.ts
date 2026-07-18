@@ -7,6 +7,8 @@ import Users from './pages/Users.vue'
 // HIDDEN: forum management, will re-enable later
 // import Forum from './pages/Forum.vue'
 import Analytics from './pages/Analytics.vue'
+import TravelGuides from './pages/TravelGuides.vue'
+import KolReview from './pages/KolReview.vue'
 
 const routes = [
   { path: '/login', name: 'login', component: Login, meta: { title: '登录', guest: true } },
@@ -17,6 +19,8 @@ const routes = [
   // HIDDEN: 论坛管理, will re-enable later
   // { path: '/forum', name: 'forum', component: Forum, meta: { title: '论坛管理', requiresAuth: true } },
   { path: '/analytics', name: 'analytics', component: Analytics, meta: { title: '运营分析', requiresAuth: true } },
+  { path: '/travel/guides', name: 'travel-guides', component: TravelGuides, meta: { title: '走天下攻略待审', requiresAuth: true } },
+  { path: '/travel/kol-review', name: 'travel-kol-review', component: KolReview, meta: { title: '护城河字段复评', requiresAuth: true } },
 ]
 
 const router = createRouter({

@@ -1,10 +1,8 @@
 const { Router } = require('express')
 const fs = require('fs')
 const path = require('path')
-const { fileURLToPath } = require('url')
 
 const router = Router()
-const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
 // 前端错误日志 — 写入 /var/log/frontend-errors.log
 const LOG_DIR = process.env.ERROR_LOG_DIR || '/var/log/grandkidsgo'
