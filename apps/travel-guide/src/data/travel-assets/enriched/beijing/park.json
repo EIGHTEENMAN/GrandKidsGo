@@ -1,0 +1,28 @@
+[
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000AA7T72",
+    "name": "奥林匹克森林公园",
+    "address": "北京市朝阳区科荟路33号",
+    "lat": 40.00598,
+    "lng": 116.39877,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFHDBEY1",
+    "name": "玉渊潭公园",
+    "address": "北京市海淀区阜成门外",
+    "lat": 39.92314,
+    "lng": 116.32954,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  }
+]

@@ -1,0 +1,103 @@
+[
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0014073L0",
+    "name": "上海科技馆",
+    "address": "上海市浦东新区世纪大道2000号",
+    "lat": 31.22099,
+    "lng": 121.54131,
+    "tel": "021-68542000",
+    "spotType": "140200",
+    "costText": "45元/人",
+    "openHours": "9:00-17:15",
+    "kidHook": "该地点（AI 起草 v1，占位）孩子亮点需由 KOL 妈妈复评，建议先带孩子实地探访一次再下结论。",
+    "momHook": "适合妈妈拍照打卡的 该地点",
+    "dadHook": "该地点 体力消耗中等",
+    "kidHighlights": [
+      "该地点 有适合 该地点 主题的互动体验"
+    ],
+    "tips": [
+      "建议提前预约，避免周末人流高峰"
+    ],
+    "pitfalls": [
+      "馆内餐饮选择有限，可自带零食与水杯"
+    ],
+    "dataSource": "ai_draft_v1",
+    "fetchedAt": "2026-07-16T14:51:47.815Z"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B00140A1XZ",
+    "name": "上海自然博物馆",
+    "address": "上海市静安区北京西路510号",
+    "lat": 31.23345,
+    "lng": 121.44633,
+    "spotType": "140100",
+    "costText": "30元/人",
+    "openHours": "9:00-17:00",
+    "kidHook": "该地点（AI 起草 v1，占位）孩子亮点需由 KOL 妈妈复评，建议先带孩子实地探访一次再下结论。",
+    "momHook": "适合妈妈拍照打卡的 该地点",
+    "dadHook": "该地点 体力消耗中等",
+    "kidHighlights": [
+      "该地点 有适合 该地点 主题的互动体验"
+    ],
+    "tips": [
+      "建议提前预约，避免周末人流高峰"
+    ],
+    "pitfalls": [
+      "馆内餐饮选择有限，可自带零食与水杯"
+    ],
+    "dataSource": "ai_draft_v1",
+    "fetchedAt": "2026-07-16T14:51:47.815Z"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B00140DHK0",
+    "name": "上海野生动物园",
+    "address": "上海市浦东新区南六公路178号",
+    "lat": 31.04706,
+    "lng": 121.73652,
+    "spotType": "110101",
+    "costText": "130元/人",
+    "openHours": "8:00-17:00",
+    "kidHook": "该地点（AI 起草 v1，占位）孩子亮点需由 KOL 妈妈复评，建议先带孩子实地探访一次再下结论。",
+    "momHook": "适合妈妈拍照打卡的 该地点",
+    "dadHook": "该地点 体力消耗中等",
+    "kidHighlights": [
+      "该地点 有适合 该地点 主题的互动体验"
+    ],
+    "tips": [
+      "建议提前预约，避免周末人流高峰"
+    ],
+    "pitfalls": [
+      "馆内餐饮选择有限，可自带零食与水杯"
+    ],
+    "dataSource": "ai_draft_v1",
+    "fetchedAt": "2026-07-16T14:51:47.815Z"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B00140HRYT",
+    "name": "上海海昌海洋公园",
+    "address": "上海市浦东新区南汇新城镇银飞路166号",
+    "lat": 30.90214,
+    "lng": 121.89711,
+    "spotType": "110100",
+    "costText": "360元/人",
+    "openHours": "9:30-17:00",
+    "kidHook": "该地点（AI 起草 v1，占位）孩子亮点需由 KOL 妈妈复评，建议先带孩子实地探访一次再下结论。",
+    "momHook": "适合妈妈拍照打卡的 该地点",
+    "dadHook": "该地点 体力消耗中等",
+    "kidHighlights": [
+      "该地点 有适合 该地点 主题的互动体验"
+    ],
+    "tips": [
+      "建议提前预约，避免周末人流高峰"
+    ],
+    "pitfalls": [
+      "馆内餐饮选择有限，可自带零食与水杯"
+    ],
+    "dataSource": "ai_draft_v1",
+    "fetchedAt": "2026-07-16T14:51:47.815Z"
+  }
+]

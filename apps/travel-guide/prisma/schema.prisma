@@ -1,3 +1,7 @@
+// 走天下 v1.5 数据底座
+// 26 张表 = 基础地理 9 + 模板与生成 2 + 用户产出与感受 6 + 公共内容 5 + 评价与结果 2 + 勋章 2
+// 详见 项目建设方案/走天下实施方案-v1.5.md 第三节 + 附录 A
+
 generator client {
   provider = "prisma-client-js"
 }
@@ -7,283 +11,802 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model User {
+// =============================================================================
+// 基础地理组（9 张）
+// =============================================================================
+
+model City {
+  id          String   @id @default(uuid())
+  name        String   @unique
+  province    String?
+  coverImage  String?  @map("cover_image")
+  kidHook     String?  @map("kid_hook")
+  momHook     String?  @map("mom_hook")
+  dadHook     String?  @map("dad_hook")
+  bestSeasons String[] @map("best_seasons")
+  tags        String[]
+  lat         Float?
+  lng         Float?
+  createdAt   DateTime @default(now()) @map("created_at")
+
+  spots        Spot[]
+  restaurants  Restaurant[]
+  hotels       Hotel[]
+  transports   Transport[]         @relation("FromCity")
+  transportsTo Transport[]         @relation("ToCity")
+  parks        Park[]
+  playgrounds  Playground[]
+  malls        Mall[]
+  hospitals    Hospital[]
+  templates    ItineraryTemplate[]
+  plans        PlanRecord[]
+  guides       Guide[]
+  records      TravelRecord[]
+
+  @@map("cities")
+}
+
+model Spot {
+  id                String   @id @default(uuid())
+  cityId            String   @map("city_id")
+  name              String
+  kidHighlights     String?  @map("kid_highlights")
+  momHighlights     String?  @map("mom_highlights")
+  dadHighlights     String?  @map("dad_highlights")
+  tips              String?
+  pitfalls          String?
+  recommendedMonths Int[]    @map("recommended_months")
+  durationMinutes   Int?     @map("duration_minutes")
+  kidScore          Float?   @map("kid_score")
+  momScore          Float?   @map("mom_score")
+  dadScore          Float?   @map("dad_score")
+  images            String[]
+  tags              String[]
+  lat               Float?
+  lng               Float?
+  spotType          String?  @map("spot_type")
+  createdAt         DateTime @default(now()) @map("created_at")
+
+  city         City               @relation(fields: [cityId], references: [id], onDelete: Cascade)
+  media        PlanMedia[]
+  notes        PlanNote[]
+  ratings      ChildRating[]
+  reviews      SpotReview[]
+  expectations ChildExpectation[]
+
+  @@unique([cityId, name])
+  @@index([cityId])
+  @@index([spotType])
+  @@map("spots")
+}
+
+model Restaurant {
+  id                String   @id @default(uuid())
+  cityId            String   @map("city_id")
+  name              String
+  hasHighChair      Boolean  @default(false) @map("has_high_chair")
+  isKidTolerant     Boolean  @default(false) @map("is_kid_tolerant")
+  hasKidsMenu       Boolean  @default(false) @map("has_kids_menu")
+  cuisine           String?
+  avgPricePerPerson Int?     @map("avg_price_per_person")
+  tags              String[]
+  lat               Float?
+  lng               Float?
+  createdAt         DateTime @default(now()) @map("created_at")
+
+  city City @relation(fields: [cityId], references: [id], onDelete: Cascade)
+
+  @@unique([cityId, name])
+  @@index([cityId])
+  @@map("restaurants")
+}
+
+model Hotel {
+  id               String   @id @default(uuid())
+  cityId           String   @map("city_id")
+  name             String
+  hasFamilyRoom    Boolean  @default(false) @map("has_family_room")
+  hasKidsPool      Boolean  @default(false) @map("has_kids_pool")
+  hasKidsBreakfast Boolean  @default(false) @map("has_kids_breakfast")
+  avgPricePerNight Int?     @map("avg_price_per_night")
+  tags             String[]
+  lat              Float?
+  lng              Float?
+  createdAt        DateTime @default(now()) @map("created_at")
+
+  city City @relation(fields: [cityId], references: [id], onDelete: Cascade)
+
+  @@unique([cityId, name])
+  @@index([cityId])
+  @@map("hotels")
+}
+
+model Transport {
+  id              String   @id @default(uuid())
+  fromCityId      String   @map("from_city_id")
+  toCityId        String   @map("to_city_id")
+  mode            String
+  durationMinutes Int      @map("duration_minutes")
+  priceReference  Int?     @map("price_reference")
+  notes           String?
+  createdAt       DateTime @default(now()) @map("created_at")
+
+  fromCity City @relation("FromCity", fields: [fromCityId], references: [id])
+  toCity   City @relation("ToCity", fields: [toCityId], references: [id])
+
+  @@index([fromCityId, toCityId])
+  @@map("transports")
+}
+
+model Park {
+  id              String   @id @default(uuid())
+  cityId          String   @map("city_id")
+  name            String
+  hasKidsPlayArea Boolean  @default(false) @map("has_kids_play_area")
+  durationMinutes Int?     @map("duration_minutes")
+  tags            String[]
+  lat             Float?
+  lng             Float?
+  createdAt       DateTime @default(now()) @map("created_at")
+
+  city City @relation(fields: [cityId], references: [id], onDelete: Cascade)
+
+  @@index([cityId])
+  @@map("parks")
+}
+
+model Playground {
+  id              String   @id @default(uuid())
+  cityId          String   @map("city_id")
+  name            String
+  ageMinMonths    Int?     @map("age_min_months")
+  ageMaxMonths    Int?     @map("age_max_months")
+  durationMinutes Int?     @map("duration_minutes")
+  tags            String[]
+  lat             Float?
+  lng             Float?
+  createdAt       DateTime @default(now()) @map("created_at")
+
+  city City @relation(fields: [cityId], references: [id], onDelete: Cascade)
+
+  @@index([cityId])
+  @@map("playgrounds")
+}
+
+model Mall {
+  id              String   @id @default(uuid())
+  cityId          String   @map("city_id")
+  name            String
+  hasKidsPlayArea Boolean  @default(false) @map("has_kids_play_area")
+  tags            String[]
+  lat             Float?
+  lng             Float?
+  createdAt       DateTime @default(now()) @map("created_at")
+
+  city City @relation(fields: [cityId], references: [id], onDelete: Cascade)
+
+  @@index([cityId])
+  @@map("malls")
+}
+
+model Hospital {
+  id            String   @id @default(uuid())
+  cityId        String   @map("city_id")
+  name          String
+  hasPediatrics Boolean  @default(false) @map("has_pediatrics")
+  address       String?
+  phone         String?
+  lat           Float?
+  lng           Float?
+  createdAt     DateTime @default(now()) @map("created_at")
+
+  city City @relation(fields: [cityId], references: [id], onDelete: Cascade)
+
+  @@index([cityId])
+  @@map("hospitals")
+}
+
+// =============================================================================
+// 模板与生成组（2 张）
+// =============================================================================
+
+model ItineraryTemplate {
   id        String   @id @default(uuid())
-  username  String   @unique
-  nickname  String?
-  password  String
-  avatar    String?
-  role      String   @default("user")
+  name      String
+  cityId    String   @map("city_id")
+  days      Int
+  season    String?
+  tags      String[]
+  skeleton  Json
   createdAt DateTime @default(now()) @map("created_at")
 
-  guides     Guide[]
-  ratings    Rating[]
-  comments   Comment[]
-  likes      Like[]
-  favorites  Favorite[]
-  qas        QA[]
-  votes      Vote[]
-  voteBallots VoteBallot[]
-  gallery    ChildGallery[]
-  kidSays    KidSay[]
-  badges     UserBadge[]
-  checkins   ChildCheckIn[]
-  challenges UserChallenge[]
+  city City @relation(fields: [cityId], references: [id])
 
-  @@map("users")
+  @@index([cityId])
+  @@map("itinerary_templates")
+}
+
+model UserTravelPreference {
+  id             String   @id @default(uuid())
+  userId         String   @unique @map("user_id")
+  homeCityId     String?  @map("home_city_id")
+  childAges      Int[]    @map("child_ages")
+  travelStyle    String?  @map("travel_style")
+  budgetLevel    String?  @map("budget_level")
+  preferredSpots String[] @map("preferred_spots")
+  updatedAt      DateTime @updatedAt @map("updated_at")
+
+  @@map("user_travel_preferences")
+}
+
+// =============================================================================
+// 用户产出与感受数据组（6 张，含 v1.5 三张新增）
+// =============================================================================
+
+model PlanRecord {
+  id                 String   @id @default(uuid())
+  userId             String   @map("user_id")
+  cityId             String?  @map("city_id")
+  sourceGuideId      String?  @map("source_guide_id")
+  sourcePlanRecordId String?  @map("source_plan_record_id")
+  startDate          DateTime @map("start_date")
+  endDate            DateTime @map("end_date")
+  travelers          Json
+  childAges          Int[]    @map("child_ages")
+  travelStyle        String?  @map("travel_style")
+  status             String   @default("draft")
+  title              String?
+  timelineBlocks     Json?    @map("timeline_blocks")
+  createdAt          DateTime @default(now()) @map("created_at")
+  updatedAt          DateTime @updatedAt @map("updated_at")
+
+  city         City?              @relation(fields: [cityId], references: [id])
+  sourceGuide  Guide?             @relation("GuideFork", fields: [sourceGuideId], references: [id])
+  media        PlanMedia[]
+  notes        PlanNote[]
+  ratings      ChildRating[]
+  expectations ChildExpectation[]
+  guides       Guide[]            @relation("PlanToGuide")
+  badges       TravelBadge[]
+
+  @@index([userId, status])
+  @@index([startDate])
+  @@map("plan_records")
+}
+
+model PlanMedia {
+  id              String    @id @default(uuid())
+  planRecordId    String    @map("plan_record_id")
+  type            String
+  ossKey          String    @map("oss_key")
+  ossUrl          String?   @map("oss_url")
+  takenAt         DateTime? @map("taken_at")
+  spotId          String?   @map("spot_id")
+  timelineBlockId String?   @map("timeline_block_id")
+  caption         String?
+  orderIndex      Int       @default(0) @map("order_index")
+  visibilityLevel String    @default("private") @map("visibility_level")
+  createdAt       DateTime  @default(now()) @map("created_at")
+
+  planRecord PlanRecord @relation(fields: [planRecordId], references: [id], onDelete: Cascade)
+  spot       Spot?      @relation(fields: [spotId], references: [id])
+
+  @@index([planRecordId, orderIndex])
+  @@index([spotId])
+  @@map("plan_media")
+}
+
+model PlanNote {
+  id              String   @id @default(uuid())
+  planRecordId    String   @map("plan_record_id")
+  spotId          String?  @map("spot_id")
+  timelineBlockId String?  @map("timeline_block_id")
+  text            String
+  mood            String?
+  createdAt       DateTime @default(now()) @map("created_at")
+
+  planRecord PlanRecord @relation(fields: [planRecordId], references: [id], onDelete: Cascade)
+  spot       Spot?      @relation(fields: [spotId], references: [id])
+
+  @@index([planRecordId])
+  @@map("plan_notes")
+}
+
+// v1.5 升级为多维度结构化
+model ChildRating {
+  id                  String   @id @default(uuid())
+  planRecordId        String   @map("plan_record_id")
+  timelineBlockId     String?  @map("timeline_block_id")
+  spotId              String?  @map("spot_id")
+  childId             String   @map("child_id")
+  physicalState       String?  @map("physical_state")
+  emotionalPeak       String?  @map("emotional_peak")
+  stayDurationMinutes Int?     @map("stay_duration_minutes")
+  willingnessToReturn String?  @map("willingness_to_return")
+  cryEpisodes         Json     @map("cry_episodes")
+  childAgeAtVisit     Int?     @map("child_age_at_visit")
+  linkedMediaIds      String[] @map("linked_media_ids")
+  recordedAt          DateTime @default(now()) @map("recorded_at")
+
+  planRecord PlanRecord          @relation(fields: [planRecordId], references: [id], onDelete: Cascade)
+  spot       Spot?               @relation(fields: [spotId], references: [id])
+  profile    ChildFeelingProfile @relation(fields: [childId], references: [childId])
+
+  @@index([planRecordId])
+  @@index([spotId, childAgeAtVisit])
+  @@index([childId])
+  @@map("child_ratings")
+}
+
+// v1.5 新增——孩子感受画像（多孩家庭一份/孩）
+model ChildFeelingProfile {
+  childId                          String    @id @map("child_id")
+  spotTypePreferences              Json      @map("spot_type_preferences")
+  averageActiveStayMinutes         Float?    @map("average_active_stay_minutes")
+  cryingTriggers                   Json      @map("crying_triggers")
+  energyCurveByTimeOfDay           Json      @map("energy_curve_by_time_of_day")
+  averageEmotionalPeakDistribution Json      @map("average_emotional_peak_distribution")
+  totalDataPoints                  Int       @default(0) @map("total_data_points")
+  lastUpdatedAt                    DateTime? @map("last_updated_at")
+  createdAt                        DateTime  @default(now()) @map("created_at")
+  privacyLevel                     String    @default("anonymized") @map("privacy_level")
+
+  ratings ChildRating[]
+
+  @@map("child_feeling_profiles")
+}
+
+// v1.5 新增——期望度预测
+model ChildExpectation {
+  id                String   @id @default(uuid())
+  planRecordId      String   @map("plan_record_id")
+  timelineBlockId   String?  @map("timeline_block_id")
+  spotId            String?  @map("spot_id")
+  childId           String   @map("child_id")
+  expectationScore  Float    @map("expectation_score")
+  expectationReason String[] @map("expectation_reason")
+  generatedAt       DateTime @default(now()) @map("generated_at")
+  confidence        Float?
+
+  planRecord PlanRecord @relation(fields: [planRecordId], references: [id], onDelete: Cascade)
+  spot       Spot?      @relation(fields: [spotId], references: [id])
+
+  @@index([planRecordId])
+  @@index([spotId])
+  @@map("child_expectations")
+}
+
+// 孩子基础画像（v1.5 ChildFeelingProfile 的输入）
+model ChildProfile {
+  childId            String    @id @map("child_id")
+  userId             String    @map("user_id")
+  name               String
+  nickname           String?
+  avatar             String?
+  gender             String?
+  birthDate          DateTime? @map("birth_date")
+  heightCm           Float?    @map("height_cm")
+  weightKg           Float?    @map("weight_kg")
+  likes              String[]  @map("likes")
+  activities         String[]  @map("activities")
+  dislikes           String[]  @map("dislikes")
+  activeHoursPerDay  Float?    @map("active_hours_per_day")
+  needNap            String    @default("optional") @map("need_nap")
+  earlyOrLate        String?   @map("early_or_late")
+  hasMotionSickness  Boolean   @default(false) @map("has_motion_sickness")
+  allergies          String[]  @map("allergies")
+  isShyWithStrangers Boolean   @default(false) @map("is_shy_with_strangers")
+  healthNotes        String?   @map("health_notes")
+  createdAt          DateTime  @default(now()) @map("created_at")
+  updatedAt          DateTime  @updatedAt @map("updated_at")
+
+  @@unique([userId, childId])
+  @@index([userId])
+  @@map("child_profiles")
+}
+
+// =============================================================================
+// 公共内容组（5 张）
+// =============================================================================
+
+model GuideDraft {
+  id          String   @id @default(uuid())
+  userId      String   @map("user_id")
+  params      Json
+  outline     Json?
+  contentHtml String?  @map("content_html")
+  status      String   @default("draft")
+  mode        String   @default("quick")
+  createdAt   DateTime @default(now()) @map("created_at")
+  updatedAt   DateTime @updatedAt @map("updated_at")
+
+  @@index([userId])
+  @@map("guide_drafts")
 }
 
 model Guide {
-  id         String   @id @default(uuid())
-  title      String
-  summary    String?
-  coverImage String?   @map("cover_image")
-  destination String
-  category   String?
-  ageRange   String?   @map("age_range")
-  days       Int?
-  budget     Int?
-  isPublish  Boolean  @default(false) @map("is_publish")
-  viewCount  Int      @default(0) @map("view_count")
-  createdAt  DateTime @default(now()) @map("created_at")
-  updatedAt  DateTime @updatedAt @map("updated_at")
+  id                 String    @id @default(uuid())
+  userId             String    @map("user_id")
+  sourcePlanRecordId String?   @map("source_plan_record_id")
+  title              String
+  coverImages        String[]  @map("cover_images")
+  contentHtml        String    @map("content_html")
+  cityId             String?   @map("city_id")
+  days               Int?
+  childAges          Int[]     @map("child_ages")
+  travelStyle        String?   @map("travel_style")
+  season             String?
+  status             String    @default("draft")
+  publishedAt        DateTime? @map("published_at")
+  viewCount          Int       @default(0) @map("view_count")
+  saveCount          Int       @default(0) @map("save_count")
+  likeCount          Int       @default(0) @map("like_count")
+  tags               String[]
+  isAnonymous        Boolean   @default(false) @map("is_anonymous")
+  createdAt          DateTime  @default(now()) @map("created_at")
+  updatedAt          DateTime  @updatedAt @map("updated_at")
 
-  authorId String @map("author_id")
-  author   User   @relation(fields: [authorId], references: [id])
+  city        City?        @relation(fields: [cityId], references: [id])
+  sourcePlan  PlanRecord?  @relation("PlanToGuide", fields: [sourcePlanRecordId], references: [id])
+  forkedPlans PlanRecord[] @relation("GuideFork")
+  saves       GuideSave[]
+  likes       GuideLike[]
 
-  sections   GuideSection[]
-  ratings    Rating[]
-  comments   Comment[]
-  likes      Like[]
-  favorites  Favorite[]
-  qas        QA[]
-
-  @@index([destination])
-  @@index([category])
-  @@index([authorId])
+  @@index([status, publishedAt])
+  @@index([cityId])
   @@map("guides")
 }
 
-model GuideSection {
-  id      String  @id @default(uuid())
-  title   String?
-  content String
-  order   Int     @default(0)
-
-  guideId String @map("guide_id")
-  guide   Guide  @relation(fields: [guideId], references: [id], onDelete: Cascade)
-
-  @@index([guideId])
-  @@map("guide_sections")
-}
-
-model Rating {
+model GuideSave {
   id        String   @id @default(uuid())
-  score     Int
+  userId    String   @map("user_id")
+  guideId   String   @map("guide_id")
   createdAt DateTime @default(now()) @map("created_at")
 
-  guideId String @map("guide_id")
-  guide   Guide  @relation(fields: [guideId], references: [id], onDelete: Cascade)
-  userId  String @map("user_id")
-  user    User   @relation(fields: [userId], references: [id])
+  guide Guide @relation(fields: [guideId], references: [id], onDelete: Cascade)
 
-  @@unique([guideId, userId])
-  @@map("ratings")
+  @@unique([userId, guideId])
+  @@index([userId, createdAt])
+  @@map("guide_saves")
 }
 
-model Comment {
+model GuideLike {
   id        String   @id @default(uuid())
-  content   String
-  createdAt DateTime @default(now()) @map("created_at")
-  updatedAt DateTime @updatedAt @map("updated_at")
-
-  guideId  String   @map("guide_id")
-  guide    Guide    @relation(fields: [guideId], references: [id], onDelete: Cascade)
-  userId   String   @map("user_id")
-  user     User     @relation(fields: [userId], references: [id])
-  parentId String?  @map("parent_id")
-  parent   Comment? @relation("CommentReplies", fields: [parentId], references: [id])
-  replies  Comment[] @relation("CommentReplies")
-
-  @@index([guideId])
-  @@map("comments")
-}
-
-model Like {
-  id        String   @id @default(uuid())
+  userId    String   @map("user_id")
+  guideId   String   @map("guide_id")
   createdAt DateTime @default(now()) @map("created_at")
 
-  guideId String @map("guide_id")
-  guide   Guide  @relation(fields: [guideId], references: [id], onDelete: Cascade)
-  userId  String @map("user_id")
-  user    User   @relation(fields: [userId], references: [id])
+  guide Guide @relation(fields: [guideId], references: [id], onDelete: Cascade)
 
-  @@unique([guideId, userId])
-  @@map("likes")
+  @@unique([userId, guideId])
+  @@index([userId, createdAt])
+  @@map("guide_likes")
 }
 
-model Favorite {
-  id        String   @id @default(uuid())
-  createdAt DateTime @default(now()) @map("created_at")
+model UserFollow {
+  id         String   @id @default(uuid())
+  followerId String   @map("follower_id")
+  followeeId String   @map("followee_id")
+  createdAt  DateTime @default(now()) @map("created_at")
 
-  guideId String @map("guide_id")
-  guide   Guide  @relation(fields: [guideId], references: [id], onDelete: Cascade)
-  userId  String @map("user_id")
-  user    User   @relation(fields: [userId], references: [id])
-
-  @@unique([guideId, userId])
-  @@map("favorites")
+  @@unique([followerId, followeeId])
+  @@map("user_follows")
 }
 
-model QA {
-  id        String   @id @default(uuid())
-  question  String
-  answer    String?
-  createdAt DateTime @default(now()) @map("created_at")
-  updatedAt DateTime @updatedAt @map("updated_at")
+// =============================================================================
+// 评价与结果组（2 张）
+// =============================================================================
 
-  guideId String @map("guide_id")
-  guide   Guide  @relation(fields: [guideId], references: [id], onDelete: Cascade)
-  userId  String @map("user_id")
-  user    User   @relation(fields: [userId], references: [id])
-
-  @@index([guideId])
-  @@map("qas")
-}
-
-model Badge {
-  id          String @id @default(uuid())
-  name        String
-  description String?
-  icon        String
-  criteria    String
-
-  userBadges UserBadge[]
-
-  @@map("badges")
-}
-
-model UserBadge {
-  id        String   @id @default(uuid())
-  awardedAt DateTime @default(now()) @map("awarded_at")
-
-  userId  String @map("user_id")
-  user    User   @relation(fields: [userId], references: [id])
-  badgeId String @map("badge_id")
-  badge   Badge  @relation(fields: [badgeId], references: [id])
-
-  @@unique([userId, badgeId])
-  @@map("user_badges")
-}
-
-model ChildCheckIn {
-  id        String   @id @default(uuid())
-  location  String
-  note      String?
-  lat       Float?
-  lng       Float?
-  createdAt DateTime @default(now()) @map("created_at")
-
-  userId String @map("user_id")
-  user   User   @relation(fields: [userId], references: [id])
-
-  @@index([userId])
-  @@map("child_checkins")
-}
-
-model Vote {
+model SpotReview {
   id        String    @id @default(uuid())
-  title     String
-  options   String
-  expiresAt DateTime? @map("expires_at")
+  spotId    String    @map("spot_id")
+  userId    String    @map("user_id")
+  rating    Int
+  text      String?
+  childAges Int[]     @map("child_ages")
+  visitDate DateTime? @map("visit_date")
+  status    String    @default("pending")
   createdAt DateTime  @default(now()) @map("created_at")
 
-  creatorId String @map("creator_id")
-  creator   User   @relation(fields: [creatorId], references: [id])
-  ballots   VoteBallot[]
+  spot Spot @relation(fields: [spotId], references: [id], onDelete: Cascade)
 
-  @@map("votes")
+  @@index([spotId])
+  @@index([status])
+  @@map("spot_reviews")
 }
 
-model VoteBallot {
-  id          String   @id @default(uuid())
-  optionIndex Int      @map("option_index")
-  createdAt   DateTime @default(now()) @map("created_at")
+model TravelRecord {
+  id           String   @id @default(uuid())
+  userId       String   @map("user_id")
+  cityId       String   @map("city_id")
+  startDate    DateTime @map("start_date")
+  endDate      DateTime @map("end_date")
+  costCents    Int?     @map("cost_cents")
+  companions   Json?
+  planRecordId String?  @map("plan_record_id")
+  createdAt    DateTime @default(now()) @map("created_at")
 
-  voteId String @map("vote_id")
-  vote   Vote   @relation(fields: [voteId], references: [id], onDelete: Cascade)
-  userId String @map("user_id")
-  user   User   @relation(fields: [userId], references: [id])
-
-  @@unique([voteId, userId])
-  @@map("vote_ballots")
-}
-
-model Challenge {
-  id          String   @id @default(uuid())
-  title       String
-  description String?
-  coverImage  String?  @map("cover_image")
-  startAt     DateTime @map("start_at")
-  endAt       DateTime @map("end_at")
-  createdAt   DateTime @default(now()) @map("created_at")
-
-  participants UserChallenge[]
-
-  @@map("challenges")
-}
-
-model UserChallenge {
-  id       String   @id @default(uuid())
-  joinedAt DateTime @default(now()) @map("joined_at")
-
-  userId      String @map("user_id")
-  user        User   @relation(fields: [userId], references: [id])
-  challengeId String @map("challenge_id")
-  challenge   Challenge @relation(fields: [challengeId], references: [id])
-
-  @@unique([userId, challengeId])
-  @@map("user_challenges")
-}
-
-model ChildGallery {
-  id        String   @id @default(uuid())
-  imageUrl  String   @map("image_url")
-  caption   String?
-  createdAt DateTime @default(now()) @map("created_at")
-
-  userId String @map("user_id")
-  user   User   @relation(fields: [userId], references: [id])
+  city City @relation(fields: [cityId], references: [id])
 
   @@index([userId])
-  @@map("child_galleries")
+  @@map("travel_records")
 }
 
-model KidSay {
-  id        String   @id @default(uuid())
-  content   String
-  age       Int?
-  createdAt DateTime @default(now()) @map("created_at")
+// =============================================================================
+// 勋章组（2 张）
+// =============================================================================
 
-  userId String @map("user_id")
-  user   User   @relation(fields: [userId], references: [id])
+model TravelBadgeDef {
+  id           String   @id @default(uuid())
+  name         String   @unique
+  description  String?
+  icon         String?
+  category     String
+  criteria     Json
+  rarity       String   @default("bronze")   // v2.0 稀有度: bronze/silver/gold/diamond
+  tier         Int      @default(0)          // v2.0 排序 0-4
+  seasonalTag  String?  @map("seasonal_tag") // v2.0 季节限定标记
+  hiddenFlag   Boolean  @default(false)      @map("hidden_flag") // v2.0 隐藏勋章
+  createdAt    DateTime @default(now())      @map("created_at")
 
+  awarded TravelBadge[]
+
+  @@index([category])
+  @@index([rarity])
+  @@index([hiddenFlag])
+  @@map("travel_badge_defs")
+}
+
+model TravelBadge {
+  id           String   @id @default(uuid())
+  userId       String   @map("user_id")
+  badgeDefId   String   @map("badge_def_id")
+  obtainedAt   DateTime @default(now())      @map("obtained_at")
+  planRecordId String?                       @map("plan_record_id")
+  shareScope   String   @default("private")  @map("share_scope")
+  sharedAt     DateTime?                     @map("shared_at")
+  exchanged    Boolean  @default(false)      @map("exchanged")
+  exchangedAt  DateTime?                     @map("exchanged_at")
+
+  badgeDef   TravelBadgeDef @relation(fields: [badgeDefId], references: [id])
+  planRecord PlanRecord?    @relation(fields: [planRecordId], references: [id], onDelete: SetNull)
+
+  @@unique([userId, badgeDefId])
   @@index([userId])
-  @@map("kid_says")
+  @@index([shareScope])
+  @@index([exchanged])
+  @@map("travel_badges")
 }
 
-model ContentReview {
-  id          String    @id @default(uuid())
-  contentType String    @map("content_type")
-  contentId   String?   @map("content_id")
-  content     String
-  reason      String?
-  status      String    @default("pending")
-  reviewedBy  String?   @map("reviewed_by")
-  reviewedAt  DateTime? @map("reviewed_at")
-  createdAt   DateTime  @default(now()) @map("created_at")
+// =============================================================================
+// 排行榜 + 兑换 + 隐私（v2.0）
+// =============================================================================
+
+// 排行榜快照：每日 02:00 跑一次
+// 详见 项目建设方案/走天下实施方案-v2.0.md 第九节 B + 附录 B
+model TravelLeaderboardSnapshot {
+  id          String   @id @default(uuid())
+  scope       String   // mom | child | city | guide
+  period      String   // week | month | all
+  payloadJson Json     @map("payload_json")
+  capturedAt  DateTime @default(now()) @map("captured_at")
+  weekKey     String?  @map("week_key")  // ISO week, e.g. "2026-W28"
+
+  @@index([scope, period, capturedAt(sort: Desc)])
+  @@map("travel_leaderboard_snapshots")
+}
+
+// 勋章兑换记录
+// 详见 v2.0 第九节 D
+model TravelBadgeExchange {
+  id              String   @id @default(uuid())
+  userId          String   @map("user_id")
+  badgeDefName    String   @map("badge_def_name")
+  pointsAwarded   Int      @map("points_awarded")
+  status          String   @default("completed")  // pending | completed | reverted
+  exchangedAt     DateTime @default(now())        @map("exchanged_at")
+  revertedAt      DateTime?                       @map("reverted_at")
+  source          String   @default("manual")      // manual | weekly_bonus | monthly_bonus
+
+  @@index([userId, exchangedAt(sort: Desc)])
+  @@index([status, exchangedAt])
+  @@map("travel_badge_exchanges")
+}
+
+// 用户隐私偏好（v2.0 第十五节 B 加强）
+// 详见 v2.0 第二节"隐私跃迁"
+model TravelPrivacySetting {
+  userId                 String   @id @map("user_id")
+  allowLeaderboardPublic Boolean  @default(true)   @map("allow_leaderboard_public")
+  allowCommunityFeed     Boolean  @default(true)   @map("allow_community_feed")
+  badgeShareScope        String   @default("private")  @map("badge_share_scope")  // private | public | community
+  updatedAt              DateTime @updatedAt        @map("updated_at")
+
+  @@map("travel_privacy_settings")
+}
+
+// 关注关系（v2.0 社区）
+model TravelFollowRelation {
+  id         String   @id @default(uuid())
+  followerId String   @map("follower_id")
+  followeeId String   @map("followee_id")
+  muted      Boolean  @default(false)
+  createdAt  DateTime @default(now()) @map("created_at")
+
+  @@unique([followerId, followeeId])
+  @@index([followerId])
+  @@index([followeeId])
+  @@map("travel_follow_relations")
+}
+
+// 社区动态（v2.0 社区）
+// 详见 v2.0 第九节 C
+model TravelActivity {
+  id          String   @id @default(uuid())
+  userId      String   @map("user_id")
+  type        String   // badge_unlocked | guide_published | trip_completed
+  targetId    String?  @map("target_id")
+  contentJson Json     @map("content_json")
+  isPublic    Boolean  @default(true)   @map("is_public")
+  createdAt   DateTime @default(now())  @map("created_at")
+
+  @@index([isPublic, createdAt(sort: Desc)])
+  @@index([userId, createdAt(sort: Desc)])
+  @@index([type, createdAt(sort: Desc)])
+  @@map("travel_activities")
+}
+
+// =============================================================================
+// 数据资产保护层（v1.4 第十五节 B 孩子信息保护硬合规 + v1.5 数据资产闭环）
+// =============================================================================
+
+//
+// 监护人单独同意记录（v1.4 第十五节 B 第二点）
+// 电子留痕 3 年（中国互联网协会《网络平台未成年人保护自律公约》要求）。
+// 同意不可默认勾选，必须主动确认；同一用户的所有孩子素材以这条记录的同意为前置。
+model ConsentRecord {
+  id              String   @id @default(uuid())
+  userId          String   @map("user_id")
+  childId         String   @map("child_id")
+  // 同意项的具体范围
+  scope           String   // "publish_to_public" | "ai_polish" | "ai_face_analysis" | "ai_voice_analysis" | "personalized_recommendation"
+  // 同意项的具体素材 id 数组（如 planId / guideId / mediaIds）
+  targetIds       String[] @map("target_ids")
+  // 同意时间 / IP / 协议版本号
+  grantedAt       DateTime @default(now()) @map("granted_at")
+  expiresAt       DateTime? @map("expires_at")
+  ipAddress       String?  @map("ip_address")
+  userAgent       String?  @map("user_agent")
+  agreementVersion String  @map("agreement_version")
+  // 监护人手机号（首次提交时预存，后续撤回仅需身份证 + 出生证明）
+  guardianPhone   String   @map("guardian_phone")
+  // 撤回（设为非空即视为撤回，留痕）
+  revokedAt       DateTime? @map("revoked_at")
+  // 撤回触发点
+  revokeReason    String?  @map("revoke_reason")
+  revokeMediaIds  String[] @map("revoke_media_ids")
+
+  @@index([userId, childId])
+  @@index([grantedAt])
+  @@index([scope])
+  @@map("consent_records")
+}
+
+//
+// 撤回请求与处理日志（v1.4 第十五节 B 第六点）
+// 每个素材一旦被撤回，级联清除清单：
+//   - 攻略正文里所有引用该素材的位置
+//   - AI 生成的封面图
+//   - 跨产品展示的引用
+//   - CDN 缓存（24 小时内清除）
+//   - AI 已生成的特征向量
+model RetractionLog {
+  id                String   @id @default(uuid())
+  // 发起撤回方
+  initiatedBy       String   @map("initiated_by") // "creator" | "parent_a" | "parent_b" | "child_8plus" | "admin"
+  initiatedByUserId String   @map("initiated_by_user_id")
+  // 撤回对象
+  mediaIds          String[] @map("media_ids")
+  guideId           String?  @map("guide_id")
+  planId            String?  @map("plan_id")
+  // 凭证（情况 A 无需凭证，情况 B 需身份证 + 监护关系）
+  proofType         String?  @map("proof_type")
+  proofUrl          String?  @map("proof_url")
+  // 处理状态
+  status            String   @default("pending") // "pending" | "in_progress" | "completed" | "failed"
+  // 级联清除的清单（JSON，描述每步动作）
+  cascadeActions    Json     @map("cascade_actions")
+  // 处理完成时间
+  completedAt       DateTime? @map("completed_at")
+  // 撤回说明（攻略详情页对其他用户显示"原作者已撤回部分内容"）
+  publicNote        String?  @map("public_note")
+  createdAt         DateTime @default(now()) @map("created_at")
 
   @@index([status])
-  @@index([contentType])
-  @@map("content_reviews")
+  @@index([createdAt])
+  @@map("retraction_logs")
+}
+
+//
+// AI 特征向量清理追踪（v1.4 第十五节 B 第六点 b）
+// 当素材被撤回时，记录下"该素材的 AI 特征向量已从模型 / 缓存中清除"。
+// 这是合规审计的硬要求——光删除原图不够，AI 抽取出来的向量也必须清。
+model AiFeatureVectorTracking {
+  id               String   @id @default(uuid())
+  childId          String   @map("child_id")
+  sourceMediaIds   String[] @map("source_media_ids")
+  // 特征类型
+  vectorType       String   @map("vector_type") // "face" | "voice" | "behavior"
+  // 模型标识（用于反向追溯 + 后续删除）
+  modelProvider    String   @map("model_provider")
+  modelVersion     String   @map("model_version")
+  // 存储位置（v1.5 不实际存向量，只追踪元数据）
+  storageLocation  String   @map("storage_location")
+  // 撤回时置 true（已请求删除）
+  purgeRequestedAt DateTime? @map("purge_requested_at")
+  // 实际清除完成时间
+  purgedAt         DateTime? @map("purged_at")
+  createdAt        DateTime @default(now()) @map("created_at")
+
+  @@index([childId])
+  @@index([purgeRequestedAt])
+  @@map("ai_feature_vector_tracking")
+}
+
+//
+// 操作日志（Wave B 数据资产持久化的硬基线）
+// **不可变**——没有任何 update/delete 路径。仅 append。
+// 用途：
+//   - 合规审计（中国互联网协会要求 3 年留痕）
+//   - 反作弊（SpotReview 五规则的依据）
+//   - 出险时回溯（误删恢复 / 撤回追踪）
+//   - 数据资产统计（每天产生了多少条 guide / 多少条 consent / 多少个撤回）
+model OperationLog {
+  id        String   @id @default(uuid())
+  // 触发者：userId / 系统 / admin
+  actorId   String   @map("actor_id")
+  actorRole String   @map("actor_role") // "user" | "admin" | "system" | "moderation_job"
+  // 动作类型
+  action    String   // "guide_publish" | "guide_approve" | "guide_reject" | "consent_grant" | "consent_revoke" | "rating_create" | "plan_create" | "plan_complete" | "retraction_cascade" | "snapshot_create" | "snapshot_download"
+  // 目标对象
+  targetType String  @map("target_type") // "guide" | "plan" | "consent" | "retraction" | "snapshot" | "media" | "rating"
+  targetId   String   @map("target_id")
+  // 前后对比（JSON）——只追加，append-only
+  beforeJson Json? @map("before_json")
+  afterJson  Json? @map("after_json")
+  // 上下文
+  ipAddress  String?  @map("ip_address")
+  userAgent  String?  @map("user_agent")
+  createdAt  DateTime @default(now()) @map("created_at")
+
+  @@index([actorId, createdAt])
+  @@index([action, createdAt])
+  @@index([targetType, targetId])
+  @@map("operation_logs")
+}
+
+//
+// 每日快照元数据（Wave B 数据资产持久化）
+// 实际快照 JSON 落到 src/data/travel-assets/snapshots/（git 跟踪）
+// + 阿里云 OSS bucket grandkidsgo-assets-backup/
+// 这张表只追踪"哪一天的快照存在哪里"，不做内容冗余。
+model DailySnapshot {
+  id          String   @id @default(uuid())
+  snapshotDate DateTime @map("snapshot_date") @db.Date
+  // 快照范围
+  scope       String   // "all" | "guides" | "consents" | "ratings"
+  // 落地的两个位置
+  gitPath     String   @map("git_path")
+  ossUrl      String?  @map("oss_url")
+  ossKey      String?  @map("oss_key")
+  // 校验（防止快照中途崩溃或上传损坏）
+  fileSha256  String?  @map("file_sha256")
+  fileSize    Int?     @map("file_size")
+  // 包含多少条记录（统计用）
+  recordCount Int?     @map("record_count")
+  createdAt   DateTime @default(now()) @map("created_at")
+
+  @@unique([snapshotDate, scope])
+  @@index([snapshotDate])
+  @@map("daily_snapshots")
 }

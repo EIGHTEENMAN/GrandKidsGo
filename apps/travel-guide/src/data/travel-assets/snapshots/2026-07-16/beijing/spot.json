@@ -1,0 +1,204 @@
+[
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A7KQEB",
+    "name": "北京自然博物馆",
+    "address": "北京市东城区天桥南大街126号",
+    "lat": 39.87632,
+    "lng": 116.39748,
+    "tel": "010-67024477",
+    "spotType": "140100",
+    "costText": "免费",
+    "openHours": "周二-周日9:00-17:00",
+    "kidHook": "该地点（AI 起草 v1，占位）孩子亮点需由 KOL 妈妈复评，建议先带孩子实地探访一次再下结论。",
+    "momHook": "适合妈妈拍照打卡的 该地点",
+    "dadHook": "该地点 体力消耗中等",
+    "kidHighlights": [
+      "该地点 有适合 该地点 主题的互动体验"
+    ],
+    "tips": [
+      "建议提前预约，避免周末人流高峰"
+    ],
+    "pitfalls": [
+      "馆内餐饮选择有限，可自带零食与水杯"
+    ],
+    "dataSource": "ai_draft_v1",
+    "fetchedAt": "2026-07-16T14:51:47.810Z"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFFA9NZW",
+    "name": "中国科学技术馆（新馆）",
+    "address": "北京市朝阳区北辰东路5号",
+    "lat": 40.00712,
+    "lng": 116.47747,
+    "tel": "010-59041000",
+    "spotType": "140200",
+    "costText": "30元/人",
+    "openHours": "9:30-17:00",
+    "kidHook": "该地点（AI 起草 v1，占位）孩子亮点需由 KOL 妈妈复评，建议先带孩子实地探访一次再下结论。",
+    "momHook": "适合妈妈拍照打卡的 该地点",
+    "dadHook": "该地点 体力消耗中等",
+    "kidHighlights": [
+      "该地点 有适合 该地点 主题的互动体验"
+    ],
+    "tips": [
+      "建议提前预约，避免周末人流高峰"
+    ],
+    "pitfalls": [
+      "馆内餐饮选择有限，可自带零食与水杯"
+    ],
+    "dataSource": "ai_draft_v1",
+    "fetchedAt": "2026-07-16T14:51:47.810Z"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A7KM2G",
+    "name": "北京动物园",
+    "address": "北京市西城区西直门外大街",
+    "lat": 39.94334,
+    "lng": 116.33768,
+    "tel": "010-68390211",
+    "spotType": "110101",
+    "costText": "19元/人",
+    "openHours": "7:30-19:00",
+    "kidHook": "该地点（AI 起草 v1，占位）孩子亮点需由 KOL 妈妈复评，建议先带孩子实地探访一次再下结论。",
+    "momHook": "适合妈妈拍照打卡的 该地点",
+    "dadHook": "该地点 体力消耗中等",
+    "kidHighlights": [
+      "该地点 有适合 该地点 主题的互动体验"
+    ],
+    "tips": [
+      "建议提前预约，避免周末人流高峰"
+    ],
+    "pitfalls": [
+      "馆内餐饮选择有限，可自带零食与水杯"
+    ],
+    "dataSource": "ai_draft_v1",
+    "fetchedAt": "2026-07-16T14:51:47.810Z"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0HQR6KQOJ",
+    "name": "北京海洋馆",
+    "address": "北京市西城区高粱桥斜街11号",
+    "lat": 39.94672,
+    "lng": 116.35034,
+    "spotType": "140300",
+    "costText": "175元/人",
+    "openHours": "9:00-17:30",
+    "kidHook": "该地点（AI 起草 v1，占位）孩子亮点需由 KOL 妈妈复评，建议先带孩子实地探访一次再下结论。",
+    "momHook": "适合妈妈拍照打卡的 该地点",
+    "dadHook": "该地点 体力消耗中等",
+    "kidHighlights": [
+      "该地点 有适合 该地点 主题的互动体验"
+    ],
+    "tips": [
+      "建议提前预约，避免周末人流高峰"
+    ],
+    "pitfalls": [
+      "馆内餐饮选择有限，可自带零食与水杯"
+    ],
+    "dataSource": "ai_draft_v1",
+    "fetchedAt": "2026-07-16T14:51:47.810Z"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A7KP4T",
+    "name": "颐和园",
+    "address": "北京市海淀区新建宫门路19号",
+    "lat": 39.99962,
+    "lng": 116.29009,
+    "tel": "010-62881144",
+    "spotType": "110000",
+    "costText": "30元/人",
+    "openHours": "6:30-18:00",
+    "kidHook": "该地点（AI 起草 v1，占位）孩子亮点需由 KOL 妈妈复评，建议先带孩子实地探访一次再下结论。",
+    "momHook": "适合妈妈拍照打卡的 该地点",
+    "dadHook": "该地点 体力消耗中等",
+    "kidHighlights": [
+      "该地点 有适合 该地点 主题的互动体验"
+    ],
+    "tips": [
+      "建议提前预约，避免周末人流高峰"
+    ],
+    "pitfalls": [
+      "馆内餐饮选择有限，可自带零食与水杯"
+    ],
+    "dataSource": "ai_draft_v1",
+    "fetchedAt": "2026-07-16T14:51:47.810Z"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000AA3E0H",
+    "name": "北京欢乐谷",
+    "address": "北京市朝阳区东四环小武基北路",
+    "lat": 39.87663,
+    "lng": 116.51079,
+    "spotType": "110100",
+    "costText": "299元/人",
+    "openHours": "10:00-21:30",
+    "kidHook": "该地点（AI 起草 v1，占位）孩子亮点需由 KOL 妈妈复评，建议先带孩子实地探访一次再下结论。",
+    "momHook": "适合妈妈拍照打卡的 该地点",
+    "dadHook": "该地点 体力消耗中等",
+    "kidHighlights": [
+      "该地点 有适合 该地点 主题的互动体验"
+    ],
+    "tips": [
+      "建议提前预约，避免周末人流高峰"
+    ],
+    "pitfalls": [
+      "馆内餐饮选择有限，可自带零食与水杯"
+    ],
+    "dataSource": "ai_draft_v1",
+    "fetchedAt": "2026-07-16T14:51:47.810Z"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A7KPL0",
+    "name": "北京天文馆",
+    "address": "北京市西城区西直门外大街138号",
+    "lat": 39.94613,
+    "lng": 116.33787,
+    "spotType": "140100",
+    "costText": "10元/人",
+    "openHours": "周三-周日9:30-16:30",
+    "kidHook": "该地点（AI 起草 v1，占位）孩子亮点需由 KOL 妈妈复评，建议先带孩子实地探访一次再下结论。",
+    "momHook": "适合妈妈拍照打卡的 该地点",
+    "dadHook": "该地点 体力消耗中等",
+    "kidHighlights": [
+      "该地点 有适合 该地点 主题的互动体验"
+    ],
+    "tips": [
+      "建议提前预约，避免周末人流高峰"
+    ],
+    "pitfalls": [
+      "馆内餐饮选择有限，可自带零食与水杯"
+    ],
+    "dataSource": "ai_draft_v1",
+    "fetchedAt": "2026-07-16T14:51:47.810Z"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000AAFE04",
+    "name": "蓝天城儿童乐园(朝阳大悦城)",
+    "address": "北京市朝阳区青年路5号",
+    "lat": 39.93223,
+    "lng": 116.51034,
+    "spotType": "110000",
+    "kidHook": "该地点（AI 起草 v1，占位）孩子亮点需由 KOL 妈妈复评，建议先带孩子实地探访一次再下结论。",
+    "momHook": "适合妈妈拍照打卡的 该地点",
+    "dadHook": "该地点 体力消耗中等",
+    "kidHighlights": [
+      "该地点 有适合 该地点 主题的互动体验"
+    ],
+    "tips": [
+      "建议提前预约，避免周末人流高峰"
+    ],
+    "pitfalls": [
+      "馆内餐饮选择有限，可自带零食与水杯"
+    ],
+    "dataSource": "ai_draft_v1",
+    "fetchedAt": "2026-07-16T14:51:47.810Z"
+  }
+]

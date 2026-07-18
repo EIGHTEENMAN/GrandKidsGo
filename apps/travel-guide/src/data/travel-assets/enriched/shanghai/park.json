@@ -1,0 +1,15 @@
+[
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B00140J807",
+    "name": "世纪公园",
+    "address": "上海市浦东新区锦绣路1001号",
+    "lat": 31.22034,
+    "lng": 121.55712,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  }
+]

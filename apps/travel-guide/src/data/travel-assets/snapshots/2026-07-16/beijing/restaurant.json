@@ -1,0 +1,36 @@
+[
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A2XAU9",
+    "name": "肯德基(自然博物馆餐厅)",
+    "address": "北京市东城区天坛东路",
+    "lat": 39.86935,
+    "lng": 116.41822,
+    "hasHighChair": true,
+    "isKidTolerant": true,
+    "hasKidsMenu": true,
+    "cuisine": "50元/人",
+    "avgPricePerPerson": 50,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A877YJ",
+    "name": "海底捞(中关村店)",
+    "address": "北京市海淀区中关村大街15号",
+    "lat": 39.98454,
+    "lng": 116.31045,
+    "hasHighChair": true,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "cuisine": "120元/人",
+    "avgPricePerPerson": 120,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  }
+]

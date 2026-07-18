@@ -766,6 +766,153 @@ EOF
   }
 });
 
+// =============================================================================
+// 走天下 v2.0 admin 审核（排行榜 + 动态）
+// =============================================================================
+
+// 查指定 scope+period 的最新快照
+app.get('/api/travel/admin/leaderboard/:scope/:period', requireAdmin, (req, res) => {
+  try {
+    const { scope, period } = req.params;
+    const VALID_SCOPES = ['mom', 'child', 'city', 'guide'];
+    const VALID_PERIODS = ['week', 'month', 'all'];
+    if (!VALID_SCOPES.includes(scope) || !VALID_PERIODS.includes(period)) {
+      return res.status(400).json({ error: { code: 'INVALID_PARAMS' } });
+    }
+    const out = runPg(`
+      SELECT id, scope, period, payload_json, captured_at, week_key
+      FROM travel_leaderboard_snapshots
+      WHERE scope='${scope}' AND period='${period}'
+      ORDER BY captured_at DESC
+      LIMIT 1
+    `);
+    const line = out.trim();
+    if (!line) return res.json({ snapshot: null, items: [] });
+    const [id, s, p, payloadJson, capturedAt, weekKey] = line.split('|');
+    const items = JSON.parse(payloadJson);
+    // 批量拉昵称
+    const userIds = items.filter((it) => it.userId).map((it) => it.userId);
+    const authorMap = batchFetchUsers(userIds);
+    for (const it of items) {
+      if (it.userId && authorMap[it.userId]) {
+        it.nickname = authorMap[it.userId].nickname;
+        it.avatar = authorMap[it.userId].avatar;
+      }
+    }
+    res.json({ snapshot: { id, scope: s, period: p, capturedAt, weekKey }, items });
+  } catch (e) {
+    res.status(500).json({ error: { code: 'QUERY_FAILED', message: e.message } });
+  }
+});
+
+// 强制置顶（暂时）：在 score 最高的 user 上加个 admin 标志
+app.post('/api/travel/admin/leaderboard/pin', requireAdmin, (req, res) => {
+  // 简化：v1 只记录 admin 意图，不修改快照本身（snapshot 是 immutable）
+  try {
+    const { userId, scope, period, reason } = req.body ?? {};
+    if (!userId || !scope || !period || !reason) {
+      return res.status(400).json({ error: { code: 'INVALID_PARAMS' } });
+    }
+    const esc = (v) => (v ?? '').toString().replace(/'/g, "''");
+    runPg(`
+      INSERT INTO operation_logs (id, actor_id, actor_role, action, target_type, target_id, after_json, created_at)
+      VALUES (gen_random_uuid()::text, '${esc(req.admin?.id ?? 'admin')}', 'admin', 'leaderboard_pin', 'user', '${esc(userId)}',
+              '${esc(JSON.stringify({ scope, period, reason }))}'::jsonb, NOW())
+    `);
+    res.json({ ok: true, message: '已记录置顶意图（v1 仅审计，不修改快照）' });
+  } catch (e) {
+    res.status(500).json({ error: { code: 'LOG_FAILED', message: e.message } });
+  }
+});
+
+// 下线用户（从下周开始不参与公开榜）
+app.post('/api/travel/admin/leaderboard/hide', requireAdmin, (req, res) => {
+  try {
+    const { userId, reason } = req.body ?? {};
+    if (!userId || !reason) {
+      return res.status(400).json({ error: { code: 'INVALID_PARAMS' } });
+    }
+    // v1：用 userFollows / travel_records 都不需要改。直接在 travel_privacy_settings 写一条记录
+    const esc = (v) => (v ?? '').toString().replace(/'/g, "''");
+    runPg(`
+      INSERT INTO travel_privacy_settings (user_id, allow_leaderboard_public, allow_community_feed, badge_share_scope, updated_at)
+      VALUES ('${esc(userId)}', false, true, 'private', NOW())
+      ON CONFLICT (user_id) DO UPDATE SET allow_leaderboard_public=false, updated_at=NOW()
+    `);
+    runPg(`
+      INSERT INTO operation_logs (id, actor_id, actor_role, action, target_type, target_id, after_json, created_at)
+      VALUES (gen_random_uuid()::text, '${esc(req.admin?.id ?? 'admin')}', 'admin', 'leaderboard_hide', 'user', '${esc(userId)}',
+              '${esc(JSON.stringify({ reason }))}'::jsonb, NOW())
+    `);
+    res.json({ ok: true, message: '已下线（不再参与公开榜）' });
+  } catch (e) {
+    res.status(500).json({ error: { code: 'HIDE_FAILED', message: e.message } });
+  }
+});
+
+// 待审动态列表（按 DFA / 举报筛选）
+app.get('/api/travel/admin/activities/pending', requireAdmin, (req, res) => {
+  try {
+    // v1 简化：列出最近 50 条公开动态，admin 自行决定
+    const out = runPg(`
+      SELECT id, user_id, type, target_id, content_json, is_public, created_at
+      FROM travel_activities
+      ORDER BY created_at DESC
+      LIMIT 50
+    `);
+    const items = out.trim().split('\n').filter(Boolean).map((line) => {
+      const [id, userId, type, targetId, contentJson, isPublic, createdAt] = line.split('|');
+      return {
+        id, userId, type, targetId, isPublic, createdAt,
+        content: safeParse(contentJson),
+      };
+    });
+    const userMap = batchFetchUsers(items.map((it) => it.userId));
+    for (const it of items) {
+      const a = userMap[it.userId];
+      if (a) it.author = { id: a.id, nickname: a.nickname, avatar: a.avatar };
+    }
+    res.json({ items });
+  } catch (e) {
+    res.status(500).json({ error: { code: 'QUERY_FAILED', message: e.message } });
+  }
+});
+
+// 隐藏动态
+app.post('/api/travel/admin/activities/:id/hide', requireAdmin, (req, res) => {
+  try {
+    const { reason } = req.body ?? {};
+    const esc = (v) => (v ?? '').toString().replace(/'/g, "''");
+    const out = runPg(`UPDATE travel_activities SET is_public=false WHERE id='${esc(req.params.id)}' RETURNING id`);
+    if (!out.trim()) return res.status(404).json({ error: { code: 'NOT_FOUND' } });
+    runPg(`
+      INSERT INTO operation_logs (id, actor_id, actor_role, action, target_type, target_id, after_json, created_at)
+      VALUES (gen_random_uuid()::text, '${esc(req.admin?.id ?? 'admin')}', 'admin', 'activity_hide', 'activity', '${esc(req.params.id)}',
+              '${esc(JSON.stringify({ reason: reason ?? '' }))}'::jsonb, NOW())
+    `);
+    res.json({ ok: true });
+  } catch (e) {
+    res.status(500).json({ error: { code: 'HIDE_FAILED', message: e.message } });
+  }
+});
+
+// 删除动态
+app.delete('/api/travel/admin/activities/:id', requireAdmin, (req, res) => {
+  try {
+    const esc = (v) => (v ?? '').toString().replace(/'/g, "''");
+    const out = runPg(`DELETE FROM travel_activities WHERE id='${esc(req.params.id)}' RETURNING id`);
+    if (!out.trim()) return res.status(404).json({ error: { code: 'NOT_FOUND' } });
+    runPg(`
+      INSERT INTO operation_logs (id, actor_id, actor_role, action, target_type, target_id, after_json, created_at)
+      VALUES (gen_random_uuid()::text, '${esc(req.admin?.id ?? 'admin')}', 'admin', 'activity_delete', 'activity', '${esc(req.params.id)}',
+              '{}'::jsonb, NOW())
+    `);
+    res.json({ ok: true });
+  } catch (e) {
+    res.status(500).json({ error: { code: 'DELETE_FAILED', message: e.message } });
+  }
+});
+
 // ===================== SPA fallback =====================
 app.get('*', (req, res) => {
   try {

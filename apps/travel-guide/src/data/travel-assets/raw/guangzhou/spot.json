@@ -1,0 +1,58 @@
+[
+  {
+    "cityId": "city-guangzhou",
+    "cityName": "广州",
+    "raw": {
+      "id": "B0FFH7AIXE",
+      "name": "广州长隆野生动物世界",
+      "address": "广州市番禺区汉溪大道",
+      "location": "113.29547,23.00421",
+      "type": "spot",
+      "typecode": "110101",
+      "cityname": "广州",
+      "business": {
+        "cost": "300元/人",
+        "open_time": "9:30-18:00"
+      }
+    },
+    "keywords": "亲子",
+    "fetchedAt": "2026-07-17T02:49:38.455Z"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "cityName": "广州",
+    "raw": {
+      "id": "B0FFH7A57F",
+      "name": "广东省博物馆",
+      "address": "广州市天河区珠江东路2号",
+      "location": "113.32785,23.11984",
+      "type": "spot",
+      "typecode": "140100",
+      "cityname": "广州",
+      "business": {
+        "cost": "免费",
+        "open_time": "9:00-17:00"
+      }
+    },
+    "keywords": "亲子",
+    "fetchedAt": "2026-07-17T02:49:38.455Z"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "cityName": "广州",
+    "raw": {
+      "id": "B0FFH7AIWQ",
+      "name": "广州海洋馆",
+      "address": "广州市越秀区先烈中路120号",
+      "location": "113.29145,23.15012",
+      "type": "spot",
+      "typecode": "140300",
+      "cityname": "广州",
+      "business": {
+        "cost": "180元/人"
+      }
+    },
+    "keywords": "亲子",
+    "fetchedAt": "2026-07-17T02:49:38.455Z"
+  }
+]

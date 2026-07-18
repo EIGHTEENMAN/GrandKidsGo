@@ -34,6 +34,66 @@
       }
     },
     {
+      "path": "pages/travel/wizard/step1-city",
+      "style": {
+        "navigationBarTitleText": "选目的地"
+      }
+    },
+    {
+      "path": "pages/travel/wizard/step2-basic",
+      "style": {
+        "navigationBarTitleText": "孩子画像"
+      }
+    },
+    {
+      "path": "pages/travel/wizard/step3-prefs",
+      "style": {
+        "navigationBarTitleText": "偏好"
+      }
+    },
+    {
+      "path": "pages/travel/wizard/confirm-outline",
+      "style": {
+        "navigationBarTitleText": "三档候选"
+      }
+    },
+    {
+      "path": "pages/travel/plan-detail/index",
+      "style": {
+        "navigationBarTitleText": "我的计划"
+      }
+    },
+    {
+      "path": "pages/travel/guide-detail/index",
+      "style": {
+        "navigationBarTitleText": "攻略详情"
+      }
+    },
+    {
+      "path": "pages/travel/search/index",
+      "style": {
+        "navigationBarTitleText": "搜索"
+      }
+    },
+    {
+      "path": "pages/travel/badges/index",
+      "style": {
+        "navigationBarTitleText": "勋章墙"
+      }
+    },
+    {
+      "path": "pages/travel/leaderboard/index",
+      "style": {
+        "navigationBarTitleText": "排行榜"
+      }
+    },
+    {
+      "path": "pages/travel/community/index",
+      "style": {
+        "navigationBarTitleText": "社区"
+      }
+    },
+    {
       "path": "pages/mine/index",
       "style": {
         "navigationBarTitleText": "我的",

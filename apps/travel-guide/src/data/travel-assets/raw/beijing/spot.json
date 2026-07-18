@@ -1,0 +1,154 @@
+[
+  {
+    "cityId": "city-beijing",
+    "cityName": "北京",
+    "raw": {
+      "id": "B000A7KQEB",
+      "name": "北京自然博物馆",
+      "address": "北京市东城区天桥南大街126号",
+      "location": "116.39748,39.87632",
+      "tel": "010-67024477",
+      "type": "spot",
+      "typecode": "140100",
+      "cityname": "北京",
+      "business": {
+        "cost": "免费",
+        "open_time": "周二-周日9:00-17:00"
+      }
+    },
+    "keywords": "亲子",
+    "fetchedAt": "2026-07-17T02:49:38.450Z"
+  },
+  {
+    "cityId": "city-beijing",
+    "cityName": "北京",
+    "raw": {
+      "id": "B0FFFA9NZW",
+      "name": "中国科学技术馆（新馆）",
+      "address": "北京市朝阳区北辰东路5号",
+      "location": "116.47747,40.00712",
+      "tel": "010-59041000",
+      "type": "spot",
+      "typecode": "140200",
+      "cityname": "北京",
+      "business": {
+        "cost": "30元/人",
+        "open_time": "9:30-17:00"
+      }
+    },
+    "keywords": "亲子",
+    "fetchedAt": "2026-07-17T02:49:38.450Z"
+  },
+  {
+    "cityId": "city-beijing",
+    "cityName": "北京",
+    "raw": {
+      "id": "B000A7KM2G",
+      "name": "北京动物园",
+      "address": "北京市西城区西直门外大街",
+      "location": "116.33768,39.94334",
+      "tel": "010-68390211",
+      "type": "spot",
+      "typecode": "110101",
+      "cityname": "北京",
+      "business": {
+        "cost": "19元/人",
+        "open_time": "7:30-19:00"
+      }
+    },
+    "keywords": "亲子",
+    "fetchedAt": "2026-07-17T02:49:38.450Z"
+  },
+  {
+    "cityId": "city-beijing",
+    "cityName": "北京",
+    "raw": {
+      "id": "B0HQR6KQOJ",
+      "name": "北京海洋馆",
+      "address": "北京市西城区高粱桥斜街11号",
+      "location": "116.35034,39.94672",
+      "type": "spot",
+      "typecode": "140300",
+      "cityname": "北京",
+      "business": {
+        "cost": "175元/人",
+        "open_time": "9:00-17:30"
+      }
+    },
+    "keywords": "亲子",
+    "fetchedAt": "2026-07-17T02:49:38.450Z"
+  },
+  {
+    "cityId": "city-beijing",
+    "cityName": "北京",
+    "raw": {
+      "id": "B000A7KP4T",
+      "name": "颐和园",
+      "address": "北京市海淀区新建宫门路19号",
+      "location": "116.29009,39.99962",
+      "tel": "010-62881144",
+      "type": "spot",
+      "typecode": "110000",
+      "cityname": "北京",
+      "business": {
+        "cost": "30元/人",
+        "open_time": "6:30-18:00"
+      }
+    },
+    "keywords": "亲子",
+    "fetchedAt": "2026-07-17T02:49:38.450Z"
+  },
+  {
+    "cityId": "city-beijing",
+    "cityName": "北京",
+    "raw": {
+      "id": "B000AA3E0H",
+      "name": "北京欢乐谷",
+      "address": "北京市朝阳区东四环小武基北路",
+      "location": "116.51079,39.87663",
+      "type": "spot",
+      "typecode": "110100",
+      "cityname": "北京",
+      "business": {
+        "cost": "299元/人",
+        "open_time": "10:00-21:30"
+      }
+    },
+    "keywords": "亲子",
+    "fetchedAt": "2026-07-17T02:49:38.450Z"
+  },
+  {
+    "cityId": "city-beijing",
+    "cityName": "北京",
+    "raw": {
+      "id": "B000A7KPL0",
+      "name": "北京天文馆",
+      "address": "北京市西城区西直门外大街138号",
+      "location": "116.33787,39.94613",
+      "type": "spot",
+      "typecode": "140100",
+      "cityname": "北京",
+      "business": {
+        "cost": "10元/人",
+        "open_time": "周三-周日9:30-16:30"
+      }
+    },
+    "keywords": "亲子",
+    "fetchedAt": "2026-07-17T02:49:38.450Z"
+  },
+  {
+    "cityId": "city-beijing",
+    "cityName": "北京",
+    "raw": {
+      "id": "B000AAFE04",
+      "name": "蓝天城儿童乐园(朝阳大悦城)",
+      "address": "北京市朝阳区青年路5号",
+      "location": "116.51034,39.93223",
+      "type": "playground",
+      "typecode": "110000",
+      "cityname": "北京"
+    },
+    "keywords": "游乐园",
+    "fetchedAt": "2026-07-17T02:49:38.450Z"
+  }
+]

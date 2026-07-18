@@ -1,0 +1,40 @@
+[
+  {
+    "id": "28bc1e3d-8f84-418a-b53d-f74f4cc3f8ae",
+    "userId": "asset-test-user",
+    "childId": "child-1784276659762-786446",
+    "scope": "publish_to_public",
+    "targetIds": [
+      "guide-future-1"
+    ],
+    "grantedAt": "2026-07-17T08:24:20.157Z",
+    "expiresAt": "2027-07-17T08:24:20.156Z",
+    "ipAddress": "203.0.113.5",
+    "userAgent": "curl/8.7.1",
+    "agreementVersion": "v1.5-2026-07-17",
+    "guardianPhone": "13800000001",
+    "revokedAt": "2026-07-17T08:25:33.521Z",
+    "revokeReason": "妈妈改了主意",
+    "revokeMediaIds": [
+      "media-test-1"
+    ]
+  },
+  {
+    "id": "d4771b9d-4102-49eb-82ee-cc33b0b3b700",
+    "userId": "asset-test-user",
+    "childId": "child-1784276659762-786446",
+    "scope": "ai_polish",
+    "targetIds": [
+      "guide-test-2"
+    ],
+    "grantedAt": "2026-07-17T08:28:36.134Z",
+    "expiresAt": "2027-07-17T08:28:36.133Z",
+    "ipAddress": "203.0.113.10",
+    "userAgent": "curl/8.7.1",
+    "agreementVersion": "v1.5-2026-07-17",
+    "guardianPhone": "13800000001",
+    "revokedAt": null,
+    "revokeReason": null,
+    "revokeMediaIds": []
+  }
+]

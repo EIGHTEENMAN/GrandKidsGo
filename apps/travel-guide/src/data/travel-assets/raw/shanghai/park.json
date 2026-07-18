@@ -1,0 +1,20 @@
+[
+  {
+    "cityId": "city-shanghai",
+    "cityName": "上海",
+    "raw": {
+      "id": "B00140J807",
+      "name": "世纪公园",
+      "address": "上海市浦东新区锦绣路1001号",
+      "location": "121.55712,31.22034",
+      "type": "park",
+      "typecode": "080100",
+      "cityname": "上海",
+      "business": {
+        "cost": "10元/人"
+      }
+    },
+    "keywords": "公园",
+    "fetchedAt": "2026-07-17T02:49:38.454Z"
+  }
+]

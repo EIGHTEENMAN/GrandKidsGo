@@ -1,0 +1,26 @@
+[
+  {
+    "id": "dc34f9dc-4219-4b3c-9f15-fd7084797464",
+    "userId": "smoke-user",
+    "sourcePlanRecordId": "4545b65b-8959-40f8-982f-3d945ca313b7",
+    "title": "冒烟测试计划",
+    "coverImages": [],
+    "contentHtml": "<p>北京 0天 · 3岁娃</p>",
+    "cityId": "city-beijing",
+    "days": 0,
+    "childAges": [
+      36
+    ],
+    "travelStyle": null,
+    "season": null,
+    "status": "published",
+    "publishedAt": "2026-07-17T03:01:04.304Z",
+    "viewCount": 2,
+    "saveCount": 1,
+    "likeCount": 1,
+    "tags": [],
+    "isAnonymous": false,
+    "createdAt": "2026-07-17T02:59:39.348Z",
+    "updatedAt": "2026-07-17T03:02:16.264Z"
+  }
+]

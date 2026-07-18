@@ -1,0 +1,38 @@
+[
+  {
+    "cityId": "city-beijing",
+    "cityName": "北京",
+    "raw": {
+      "id": "B000AA7T72",
+      "name": "奥林匹克森林公园",
+      "address": "北京市朝阳区科荟路33号",
+      "location": "116.39877,40.00598",
+      "type": "park",
+      "typecode": "080100",
+      "cityname": "北京",
+      "business": {
+        "open_time": "6:00-21:00"
+      }
+    },
+    "keywords": "公园",
+    "fetchedAt": "2026-07-17T02:49:38.450Z"
+  },
+  {
+    "cityId": "city-beijing",
+    "cityName": "北京",
+    "raw": {
+      "id": "B0FFHDBEY1",
+      "name": "玉渊潭公园",
+      "address": "北京市海淀区阜成门外",
+      "location": "116.32954,39.92314",
+      "type": "park",
+      "typecode": "080100",
+      "cityname": "北京",
+      "business": {
+        "cost": "2元/人"
+      }
+    },
+    "keywords": "公园",
+    "fetchedAt": "2026-07-17T02:49:38.450Z"
+  }
+]

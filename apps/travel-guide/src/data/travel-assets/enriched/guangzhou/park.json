@@ -1,0 +1,15 @@
+[
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFH7APQ0",
+    "name": "广州珠江公园",
+    "address": "广州市天河区金穗路",
+    "lat": 23.13245,
+    "lng": 113.33612,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  }
+]

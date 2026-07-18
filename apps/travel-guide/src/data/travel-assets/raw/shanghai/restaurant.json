@@ -1,0 +1,20 @@
+[
+  {
+    "cityId": "city-shanghai",
+    "cityName": "上海",
+    "raw": {
+      "id": "B00140HFQ8",
+      "name": "外婆家(世博源店)",
+      "address": "上海市浦东新区国展路1099号",
+      "location": "121.49012,31.18712",
+      "type": "restaurant",
+      "typecode": "050100",
+      "cityname": "上海",
+      "business": {
+        "cost": "80元/人"
+      }
+    },
+    "keywords": "博物馆",
+    "fetchedAt": "2026-07-17T02:49:38.454Z"
+  }
+]

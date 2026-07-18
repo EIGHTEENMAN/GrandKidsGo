@@ -1,0 +1,76 @@
+[
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFH7AIXE",
+    "name": "广州长隆野生动物世界",
+    "address": "广州市番禺区汉溪大道",
+    "lat": 23.00421,
+    "lng": 113.29547,
+    "spotType": "110101",
+    "costText": "300元/人",
+    "openHours": "9:30-18:00",
+    "kidHook": "该地点（AI 起草 v1，占位）孩子亮点需由 KOL 妈妈复评，建议先带孩子实地探访一次再下结论。",
+    "momHook": "适合妈妈拍照打卡的 该地点",
+    "dadHook": "该地点 体力消耗中等",
+    "kidHighlights": [
+      "该地点 有适合 该地点 主题的互动体验"
+    ],
+    "tips": [
+      "建议提前预约，避免周末人流高峰"
+    ],
+    "pitfalls": [
+      "馆内餐饮选择有限，可自带零食与水杯"
+    ],
+    "dataSource": "ai_draft_v1",
+    "fetchedAt": "2026-07-16T14:51:47.817Z"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFH7A57F",
+    "name": "广东省博物馆",
+    "address": "广州市天河区珠江东路2号",
+    "lat": 23.11984,
+    "lng": 113.32785,
+    "spotType": "140100",
+    "costText": "免费",
+    "openHours": "9:00-17:00",
+    "kidHook": "该地点（AI 起草 v1，占位）孩子亮点需由 KOL 妈妈复评，建议先带孩子实地探访一次再下结论。",
+    "momHook": "适合妈妈拍照打卡的 该地点",
+    "dadHook": "该地点 体力消耗中等",
+    "kidHighlights": [
+      "该地点 有适合 该地点 主题的互动体验"
+    ],
+    "tips": [
+      "建议提前预约，避免周末人流高峰"
+    ],
+    "pitfalls": [
+      "馆内餐饮选择有限，可自带零食与水杯"
+    ],
+    "dataSource": "ai_draft_v1",
+    "fetchedAt": "2026-07-16T14:51:47.817Z"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFH7AIWQ",
+    "name": "广州海洋馆",
+    "address": "广州市越秀区先烈中路120号",
+    "lat": 23.15012,
+    "lng": 113.29145,
+    "spotType": "140300",
+    "costText": "180元/人",
+    "kidHook": "该地点（AI 起草 v1，占位）孩子亮点需由 KOL 妈妈复评，建议先带孩子实地探访一次再下结论。",
+    "momHook": "适合妈妈拍照打卡的 该地点",
+    "dadHook": "该地点 体力消耗中等",
+    "kidHighlights": [
+      "该地点 有适合 该地点 主题的互动体验"
+    ],
+    "tips": [
+      "建议提前预约，避免周末人流高峰"
+    ],
+    "pitfalls": [
+      "馆内餐饮选择有限，可自带零食与水杯"
+    ],
+    "dataSource": "ai_draft_v1",
+    "fetchedAt": "2026-07-16T14:51:47.817Z"
+  }
+]

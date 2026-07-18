@@ -1,0 +1,38 @@
+[
+  {
+    "cityId": "city-beijing",
+    "cityName": "北京",
+    "raw": {
+      "id": "B000A2XAU9",
+      "name": "肯德基(自然博物馆餐厅)",
+      "address": "北京市东城区天坛东路",
+      "location": "116.41822,39.86935",
+      "type": "restaurant",
+      "typecode": "050100",
+      "cityname": "北京",
+      "business": {
+        "cost": "50元/人"
+      }
+    },
+    "keywords": "博物馆",
+    "fetchedAt": "2026-07-17T02:49:38.450Z"
+  },
+  {
+    "cityId": "city-beijing",
+    "cityName": "北京",
+    "raw": {
+      "id": "B000A877YJ",
+      "name": "海底捞(中关村店)",
+      "address": "北京市海淀区中关村大街15号",
+      "location": "116.31045,39.98454",
+      "type": "restaurant",
+      "typecode": "050100",
+      "cityname": "北京",
+      "business": {
+        "cost": "120元/人"
+      }
+    },
+    "keywords": "博物馆",
+    "fetchedAt": "2026-07-17T02:49:38.450Z"
+  }
+]

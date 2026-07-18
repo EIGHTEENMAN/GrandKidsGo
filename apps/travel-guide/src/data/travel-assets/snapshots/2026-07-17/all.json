@@ -1,0 +1,125 @@
+{
+  "guides": [
+    {
+      "id": "dc34f9dc-4219-4b3c-9f15-fd7084797464",
+      "userId": "smoke-user",
+      "sourcePlanRecordId": "4545b65b-8959-40f8-982f-3d945ca313b7",
+      "title": "冒烟测试计划",
+      "coverImages": [],
+      "contentHtml": "<p>北京 0天 · 3岁娃</p>",
+      "cityId": "city-beijing",
+      "days": 0,
+      "childAges": [
+        36
+      ],
+      "travelStyle": null,
+      "season": null,
+      "status": "published",
+      "publishedAt": "2026-07-17T03:01:04.304Z",
+      "viewCount": 2,
+      "saveCount": 1,
+      "likeCount": 1,
+      "tags": [],
+      "isAnonymous": false,
+      "createdAt": "2026-07-17T02:59:39.348Z",
+      "updatedAt": "2026-07-17T03:02:16.264Z"
+    }
+  ],
+  "consents": [
+    {
+      "id": "28bc1e3d-8f84-418a-b53d-f74f4cc3f8ae",
+      "userId": "asset-test-user",
+      "childId": "child-1784276659762-786446",
+      "scope": "publish_to_public",
+      "targetIds": [
+        "guide-future-1"
+      ],
+      "grantedAt": "2026-07-17T08:24:20.157Z",
+      "expiresAt": "2027-07-17T08:24:20.156Z",
+      "ipAddress": "203.0.113.5",
+      "userAgent": "curl/8.7.1",
+      "agreementVersion": "v1.5-2026-07-17",
+      "guardianPhone": "13800000001",
+      "revokedAt": "2026-07-17T08:25:33.521Z",
+      "revokeReason": "妈妈改了主意",
+      "revokeMediaIds": [
+        "media-test-1"
+      ]
+    },
+    {
+      "id": "d4771b9d-4102-49eb-82ee-cc33b0b3b700",
+      "userId": "asset-test-user",
+      "childId": "child-1784276659762-786446",
+      "scope": "ai_polish",
+      "targetIds": [
+        "guide-test-2"
+      ],
+      "grantedAt": "2026-07-17T08:28:36.134Z",
+      "expiresAt": "2027-07-17T08:28:36.133Z",
+      "ipAddress": "203.0.113.10",
+      "userAgent": "curl/8.7.1",
+      "agreementVersion": "v1.5-2026-07-17",
+      "guardianPhone": "13800000001",
+      "revokedAt": null,
+      "revokeReason": null,
+      "revokeMediaIds": []
+    }
+  ],
+  "ratings": [
+    {
+      "id": "467d514f-72ca-4933-838e-d2ea550d4781",
+      "planRecordId": "4545b65b-8959-40f8-982f-3d945ca313b7",
+      "timelineBlockId": null,
+      "spotId": "d4c250a0-12de-4c10-a703-ade8e3ad4cff",
+      "childId": "smoke-child",
+      "physicalState": "兴奋",
+      "emotionalPeak": "满电",
+      "stayDurationMinutes": 90,
+      "willingnessToReturn": "要求再来",
+      "cryEpisodes": [],
+      "childAgeAtVisit": 36,
+      "linkedMediaIds": [],
+      "recordedAt": "2026-07-17T03:00:47.945Z"
+    }
+  ],
+  "retractions": [
+    {
+      "id": "7f28d127-dfbe-47cd-8082-f19a45632705",
+      "initiatedBy": "creator",
+      "initiatedByUserId": "asset-test-user",
+      "mediaIds": [
+        "media-test-1"
+      ],
+      "guideId": null,
+      "planId": null,
+      "proofType": null,
+      "proofUrl": null,
+      "status": "in_progress",
+      "cascadeActions": [
+        {
+          "action": "guide_content_replace",
+          "reason": "替换占位图",
+          "target": "pending"
+        },
+        {
+          "action": "ai_face_vector_clear",
+          "reason": "AI 已请求清除",
+          "target": "pending"
+        },
+        {
+          "action": "cdn_purge",
+          "reason": "CDN 24 小时内清除",
+          "target": "pending"
+        },
+        {
+          "action": "main_site_kill_ref",
+          "reason": "主站引用终止",
+          "target": "pending"
+        }
+      ],
+      "completedAt": null,
+      "publicNote": "原作者已撤回部分内容",
+      "createdAt": "2026-07-17T08:25:33.524Z"
+    }
+  ]
+}

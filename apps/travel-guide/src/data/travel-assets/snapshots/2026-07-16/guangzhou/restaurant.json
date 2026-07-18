@@ -1,0 +1,19 @@
+[
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFH7AOJ2",
+    "name": "点都德(天河店)",
+    "address": "广州市天河区天河北路233号",
+    "lat": 23.13845,
+    "lng": 113.33012,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "cuisine": "75元/人",
+    "avgPricePerPerson": 75,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  }
+]

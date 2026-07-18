@@ -24,6 +24,7 @@ app.use('/api/user', userRoutes);
 app.use('/api/oauth', oauthRoutes);
 app.use('/api/search', searchRoutes);
 app.use('/api/llm', llmRoutes);
+app.use('/api/internal', require('./routes/internal'));
 app.use('/api', require('./routes/errors'));
 
 

@@ -5,6 +5,7 @@ import StudyCalendar from '@shared/components/StudyCalendar.vue'
 import CategoryChart from '@shared/components/CategoryChart.vue'
 import AchievementWall from '@shared/components/AchievementWall.vue'
 import LearningPath from '@shared/components/LearningPath.vue'
+import TravelPanel from './TravelPanel.vue'
 
 const props = defineProps<{ open: boolean }>()
 const emit = defineEmits<{ close: []; logout: [] }>()
@@ -778,6 +779,9 @@ const ageOptions = Array.from({ length: 18 }, (_, i) => i + 1)
             </div>
           </template>
         </section>
+
+        <!-- 走天下记录（v2.0 TravelPanel：5 块统计 + 排行榜 + 稀有度分布 + 动态 + 勋章墙） -->
+        <TravelPanel />
 
         <!-- Children Management (same cards but editable) -->
         <section class="pc-card">

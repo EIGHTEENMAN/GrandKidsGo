@@ -1,0 +1,17 @@
+[
+  {
+    "id": "467d514f-72ca-4933-838e-d2ea550d4781",
+    "planRecordId": "4545b65b-8959-40f8-982f-3d945ca313b7",
+    "timelineBlockId": null,
+    "spotId": "d4c250a0-12de-4c10-a703-ade8e3ad4cff",
+    "childId": "smoke-child",
+    "physicalState": "兴奋",
+    "emotionalPeak": "满电",
+    "stayDurationMinutes": 90,
+    "willingnessToReturn": "要求再来",
+    "cryEpisodes": [],
+    "childAgeAtVisit": 36,
+    "linkedMediaIds": [],
+    "recordedAt": "2026-07-17T03:00:47.945Z"
+  }
+]

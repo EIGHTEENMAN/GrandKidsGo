@@ -1,0 +1,17 @@
+[
+  {
+    "cityId": "city-guangzhou",
+    "cityName": "广州",
+    "raw": {
+      "id": "B0FFH7APQ0",
+      "name": "广州珠江公园",
+      "address": "广州市天河区金穗路",
+      "location": "113.33612,23.13245",
+      "type": "park",
+      "typecode": "080100",
+      "cityname": "广州"
+    },
+    "keywords": "公园",
+    "fetchedAt": "2026-07-17T02:49:38.455Z"
+  }
+]

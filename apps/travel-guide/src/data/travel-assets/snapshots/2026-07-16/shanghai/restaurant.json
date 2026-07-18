@@ -1,0 +1,19 @@
+[
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B00140HFQ8",
+    "name": "外婆家(世博源店)",
+    "address": "上海市浦东新区国展路1099号",
+    "lat": 31.18712,
+    "lng": 121.49012,
+    "hasHighChair": true,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "cuisine": "80元/人",
+    "avgPricePerPerson": 80,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  }
+]

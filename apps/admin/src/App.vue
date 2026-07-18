@@ -17,6 +17,8 @@ const navItems = [
   { path: '/analytics', label: '运营分析', icon: '📈' },
   { path: '/travel/guides', label: '走天下攻略待审', icon: '🗺️' },
   { path: '/travel/kol-review', label: '护城河字段复评', icon: '✍️' },
+  { path: '/travel/leaderboard-review', label: '排行榜审核', icon: '🏆' },
+  { path: '/travel/activity-review', label: '动态审核', icon: '📱' },
 ]
 
 onMounted(() => {

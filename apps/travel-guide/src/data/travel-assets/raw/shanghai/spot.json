@@ -1,0 +1,79 @@
+[
+  {
+    "cityId": "city-shanghai",
+    "cityName": "上海",
+    "raw": {
+      "id": "B0014073L0",
+      "name": "上海科技馆",
+      "address": "上海市浦东新区世纪大道2000号",
+      "location": "121.54131,31.22099",
+      "tel": "021-68542000",
+      "type": "spot",
+      "typecode": "140200",
+      "cityname": "上海",
+      "business": {
+        "cost": "45元/人",
+        "open_time": "9:00-17:15"
+      }
+    },
+    "keywords": "亲子",
+    "fetchedAt": "2026-07-17T02:49:38.454Z"
+  },
+  {
+    "cityId": "city-shanghai",
+    "cityName": "上海",
+    "raw": {
+      "id": "B00140A1XZ",
+      "name": "上海自然博物馆",
+      "address": "上海市静安区北京西路510号",
+      "location": "121.44633,31.23345",
+      "type": "spot",
+      "typecode": "140100",
+      "cityname": "上海",
+      "business": {
+        "cost": "30元/人",
+        "open_time": "9:00-17:00"
+      }
+    },
+    "keywords": "亲子",
+    "fetchedAt": "2026-07-17T02:49:38.454Z"
+  },
+  {
+    "cityId": "city-shanghai",
+    "cityName": "上海",
+    "raw": {
+      "id": "B00140DHK0",
+      "name": "上海野生动物园",
+      "address": "上海市浦东新区南六公路178号",
+      "location": "121.73652,31.04706",
+      "type": "spot",
+      "typecode": "110101",
+      "cityname": "上海",
+      "business": {
+        "cost": "130元/人",
+        "open_time": "8:00-17:00"
+      }
+    },
+    "keywords": "亲子",
+    "fetchedAt": "2026-07-17T02:49:38.454Z"
+  },
+  {
+    "cityId": "city-shanghai",
+    "cityName": "上海",
+    "raw": {
+      "id": "B00140HRYT",
+      "name": "上海海昌海洋公园",
+      "address": "上海市浦东新区南汇新城镇银飞路166号",
+      "location": "121.89711,30.90214",
+      "type": "spot",
+      "typecode": "110100",
+      "cityname": "上海",
+      "business": {
+        "cost": "360元/人",
+        "open_time": "9:30-17:00"
+      }
+    },
+    "keywords": "亲子",
+    "fetchedAt": "2026-07-17T02:49:38.454Z"
+  }
+]

@@ -1,7 +1,11 @@
 import { createSSRApp } from 'vue'
-import { initErrorReporter } from '@shared/composables/useErrorReporter'
 import { createPinia } from 'pinia'
 import App from './App.vue'
+
+// shared 包未就绪前的占位：appName 透传给未来 Sentry/PostHog 错误上报
+function initErrorReporter(_opts: { endpoint: string; appName: string }) {
+  // no-op, 占位
+}
 
 export function createApp() {
   const app = createSSRApp(App)
