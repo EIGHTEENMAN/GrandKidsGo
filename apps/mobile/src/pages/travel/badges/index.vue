@@ -4,7 +4,7 @@
 // - 按稀有度排序（钻石 > 金 > 银 > 铜）
 // - 分类切换
 // - 显示等级总分
-// - 显示兑换积分入口（占位，待 Wave 4 实现）
+// - v2.0 勋章触发预测（引擎B第7类）
 
 import { ref, onMounted, computed } from 'vue'
 import { TRAVEL_API_BASE } from '@/utils/travel-api'
@@ -25,6 +25,18 @@ interface BadgeItem {
   exchangeablePoints: number
 }
 
+interface Prediction {
+  badgeDefId: string | null
+  name: string
+  description: string
+  icon: string
+  category: string
+  rarity: string
+  confidence: 'high' | 'medium' | 'low'
+  reason: string
+  actionHint: string
+}
+
 interface Summary {
   total: number
   byRarity: Record<string, number>
@@ -34,6 +46,7 @@ interface Summary {
 }
 
 const items = ref<BadgeItem[]>([])
+const predictions = ref<Prediction[]>([])
 const summary = ref<Summary | null>(null)
 const loading = ref(true)
 const errMsg = ref('')
@@ -42,6 +55,12 @@ const activeCategory = ref<string>('全部')
 function authHeaders(): Record<string, string> {
   const t = uni.getStorageSync('grandkidsgo_token')
   return t ? { Authorization: `Bearer ${t}` } : {}
+}
+
+const CONFIDENCE_META: Record<string, { label: string; color: string; emoji: string }> = {
+  high:   { label: '马上可解锁', color: '#16a34a', emoji: '🔜' },
+  medium: { label: '近期可解锁', color: '#ca8a04', emoji: '🔮' },
+  low:    { label: '短期内', color: '#94a3b8', emoji: '🔭' },
 }
 
 const RARITY_META: Record<string, { label: string; color: string; gradient: string; emoji: string }> = {
@@ -64,17 +83,28 @@ const categories = computed(() => {
 
 onMounted(async () => {
   try {
-    const res = await uni.request({
-      url: `${TRAVEL_API_BASE.value}/api/user/travel-badges`,
-      method: 'GET',
-      header: authHeaders(),
-    })
-    const d = res.data as any
+    const [badgeRes, predRes] = await Promise.all([
+      uni.request({
+        url: `${TRAVEL_API_BASE.value}/api/user/travel-badges`,
+        method: 'GET',
+        header: authHeaders(),
+      }),
+      uni.request({
+        url: `${TRAVEL_API_BASE.value}/api/user/badge-predictions`,
+        method: 'GET',
+        header: authHeaders(),
+      }),
+    ])
+    const d = badgeRes.data as any
     if (d?.error) {
       errMsg.value = d.error.message ?? '加载失败'
     } else {
       items.value = d?.items ?? []
       summary.value = d?.summary ?? null
+    }
+    const pd = predRes.data as any
+    if (pd?.items?.length) {
+      predictions.value = pd.items.slice(0, 3)
     }
   } catch {
     errMsg.value = '网络错误'
@@ -175,6 +205,32 @@ async function exchangeBadge(b: BadgeItem) {
       </view>
     </scroll-view>
 
+    <!-- v2.0 勋章触发预测（引擎B第7类） -->
+    <view v-if="predictions.length > 0" class="predictions-card">
+      <text class="predictions-title">🔮 未来可能解锁的勋章</text>
+      <view
+        v-for="p in predictions"
+        :key="p.name"
+        class="prediction-item"
+        :class="`conf-${p.confidence}`"
+      >
+        <text class="prediction-icon">{{ p.icon }}</text>
+        <view class="prediction-body">
+          <view class="prediction-head">
+            <text class="prediction-name">{{ p.name }}</text>
+            <text
+              class="prediction-badge"
+              :style="{ background: CONFIDENCE_META[p.confidence]?.color + '20', color: CONFIDENCE_META[p.confidence]?.color }"
+            >
+              {{ CONFIDENCE_META[p.confidence]?.emoji }}{{ CONFIDENCE_META[p.confidence]?.label }}
+            </text>
+          </view>
+          <text class="prediction-reason">{{ p.reason }}</text>
+          <text class="prediction-hint">💡 {{ p.actionHint }}</text>
+        </view>
+      </view>
+    </view>
+
     <view v-if="loading" class="loading">
       <text class="loading-text">加载中…</text>
     </view>
@@ -239,6 +295,22 @@ async function exchangeBadge(b: BadgeItem) {
 .rarity-num { font-size: 24rpx; font-weight: 700; }
 .exchange-hint { font-size: 22rpx; color: #64748b; margin-top: 12rpx; text-align: center; }
 .exchange-num { color: #ea580c; font-weight: 700; }
+
+/* v2.0 勋章预测 */
+.predictions-card { background: linear-gradient(135deg, #f0fdf4, #fefce8); border: 1rpx solid #bbf7d0; border-radius: 20rpx; padding: 24rpx; margin-bottom: 24rpx; }
+.predictions-title { display: block; font-size: 26rpx; font-weight: 600; color: #166534; margin-bottom: 16rpx; }
+.prediction-item { display: flex; gap: 16rpx; padding: 16rpx; background: #fff; border-radius: 14rpx; margin-bottom: 12rpx; border: 1rpx solid #e2e8f0; }
+.prediction-item:last-child { margin-bottom: 0; }
+.prediction-item.conf-high { border-left: 4rpx solid #16a34a; }
+.prediction-item.conf-medium { border-left: 4rpx solid #ca8a04; }
+.prediction-item.conf-low { border-left: 4rpx solid #94a3b8; }
+.prediction-icon { font-size: 48rpx; flex-shrink: 0; line-height: 1.2; }
+.prediction-body { flex: 1; }
+.prediction-head { display: flex; align-items: center; gap: 8rpx; flex-wrap: wrap; }
+.prediction-name { font-size: 24rpx; font-weight: 700; color: #0f172a; }
+.prediction-badge { font-size: 18rpx; padding: 2rpx 10rpx; border-radius: 8rpx; font-weight: 500; }
+.prediction-reason { display: block; font-size: 22rpx; color: #64748b; margin-top: 4rpx; }
+.prediction-hint { display: block; font-size: 20rpx; color: #166534; margin-top: 6rpx; font-weight: 500; }
 
 /* 分类切换 */
 .category-bar { white-space: nowrap; margin-bottom: 20rpx; }

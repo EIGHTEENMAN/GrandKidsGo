@@ -13,6 +13,7 @@ dotenv.config();
 import { PrismaClient } from "@prisma/client";
 import { scoringEngine } from "../scoring";
 import { batchFetchUsers, fallbackUser } from "../user-service";
+import { runAntiCheat } from "../anti-cheat";
 
 const prisma = new PrismaClient();
 
@@ -21,6 +22,31 @@ type Period = "week" | "month" | "all";
 
 const ALL_SCOPES: Scope[] = ["mom", "child", "city", "guide"];
 const ALL_PERIODS: Period[] = ["week", "month", "all"];
+
+// 全局反作弊状态（由 initAntiCheat 填充）
+let blockedIds = new Set<string>();
+let flaggedIds = new Set<string>();
+
+async function initAntiCheat() {
+  const plans = await prisma.planRecord.findMany({
+    select: { userId: true },
+    distinct: ["userId"],
+  });
+  const allUserIds = plans.map((p) => p.userId);
+  const flagged = await runAntiCheat(allUserIds);
+  blockedIds = new Set(
+    flagged.filter((f) => f.severity === "block").map((f) => f.userId),
+  );
+  flaggedIds = new Set(
+    flagged.filter((f) => f.severity === "flag").map((f) => f.userId),
+  );
+  if (blockedIds.size > 0) {
+    console.log(`[anti-cheat] blocked: ${Array.from(blockedIds).join(", ")}`);
+  }
+  if (flaggedIds.size > 0) {
+    console.log(`[anti-cheat] flagged: ${Array.from(flaggedIds).join(", ")}`);
+  }
+}
 
 function isoWeek(d: Date): string {
   const date = new Date(d.getTime());
@@ -45,35 +71,37 @@ function periodStart(period: Period, now: Date): Date {
 
 async function buildMamaBoard(period: Period): Promise<any[]> {
   const periodStartAt = periodStart(period, new Date());
-  // travel-guide 没有 user 表（id 来自 auth-service）—— 用 plan_records 推断
   const plans = await prisma.planRecord.findMany({
     select: { userId: true },
     distinct: ["userId"],
   });
   const users = plans.map((p) => ({ id: p.userId }));
 
-  // 反作弊 + 评分
   const scored: Array<any> = [];
   for (const u of users) {
+    if (blockedIds.has(u.id)) {
+      console.log(`[leaderboard] ${u.id} blocked by anti-cheat`);
+      continue;
+    }
     const s = await scoringEngine.scoreMama(u.id);
     if (s.score <= 0) continue;
     const cheat = await scoringEngine.antiCheatFactor(u.id, periodStartAt);
     if (cheat < 1) {
-      console.log(`[leaderboard] ${u.id} anti-cheat: factor=${cheat}`);
+      console.log(`[leaderboard] ${u.id} anti-cheat R1: factor=${cheat}`);
     }
-    scored.push({ userId: u.id, ...s, score: s.score * cheat });
+    const r23Factor = flaggedIds.has(u.id) ? 0.5 : 1;
+    scored.push({ userId: u.id, ...s, score: s.score * cheat * r23Factor });
   }
   scored.sort((a, b) => b.score - a.score);
   const top50 = scored.slice(0, 50);
 
-  // 批量拉昵称
   const authorMap = batchFetchUsers(top50.map((t) => t.userId));
   return top50.map((t, i) => {
     const author = authorMap.get(t.userId) ?? fallbackUser(t.userId);
     return {
       rank: i + 1,
       userId: t.userId,
-      nickname: author.nickname,  // 已脱敏：主站无孩子姓名
+      nickname: author.nickname,
       avatar: author.avatar,
       cityName: null,
       feelingScoreAvg: Math.round(t.feelingScoreAvg * 100) / 100,
@@ -87,13 +115,10 @@ async function buildMamaBoard(period: Period): Promise<any[]> {
 }
 
 async function buildKidBoard(period: Period): Promise<any[]> {
-  // 孩子榜 = 妈妈榜的另一面，用真实感受分为主
-  // 取 child_ages 通过 plan_records（travel_records 没这个字段）
   const records = await prisma.planRecord.findMany({
     where: { childAges: { isEmpty: false } },
     select: { userId: true, childAges: true },
   });
-  // 按 userId 聚合：取最小月龄作为"代表孩子"
   const byUser = new Map<string, number>();
   for (const r of records) {
     if (!r.childAges?.length) continue;
@@ -104,10 +129,13 @@ async function buildKidBoard(period: Period): Promise<any[]> {
   }
 
   const scored: Array<{ userId: string; ageMonths: number; score: number; feeling: number; cities: number }> = [];
-  for (const [userId, ageMonths] of byUser.entries()) {
+  const byUserEntries = Array.from(byUser.entries());
+  for (const [userId, ageMonths] of byUserEntries) {
+    if (blockedIds.has(userId)) continue;
     const k = await scoringEngine.scoreKid(userId);
     if (k.score <= 0) continue;
-    scored.push({ userId, ageMonths, score: k.score, feeling: k.feelingScoreAvg, cities: k.cityCount });
+    const r23Factor = flaggedIds.has(userId) ? 0.5 : 1;
+    scored.push({ userId, ageMonths, score: k.score * r23Factor, feeling: k.feelingScoreAvg, cities: k.cityCount });
   }
   scored.sort((a, b) => b.score - a.score);
   const top50 = scored.slice(0, 50);
@@ -116,7 +144,7 @@ async function buildKidBoard(period: Period): Promise<any[]> {
     rank: i + 1,
     userId: t.userId,
     nickname: null,
-    childLabel: `宝宝 ${t.ageMonths} 月`,  // 隐私：3 月粒度简化
+    childLabel: `宝宝 ${t.ageMonths} 月`,
     cityName: null,
     feelingScoreAvg: Math.round(t.feeling * 100) / 100,
     cityCount: t.cities,
@@ -134,7 +162,7 @@ async function buildCityBoard(period: Period): Promise<any[]> {
   scored.sort((a, b) => b.score - a.score);
   return scored.slice(0, 30).map((s, i) => ({
     rank: i + 1,
-    cityId: s.cityName,  // 复用字段（简化）
+    cityId: s.cityName,
     cityName: s.cityName,
     tripCount: s.tripCount,
     feelingScoreAvg: Math.round(s.feelingAvg * 100) / 100,
@@ -147,15 +175,18 @@ async function buildGuideBoard(period: Period): Promise<any[]> {
     where: { status: "published" },
     select: { id: true, userId: true, publishedAt: true },
   });
-  // 时间窗过滤
   const cutoff = periodStart(period, new Date());
   const recent = guides.filter((g) => g.publishedAt && g.publishedAt >= cutoff);
-  const source = recent.length > 0 ? recent : guides;  // week/month 没数据则用 all
+  const source = recent.length > 0 ? recent : guides;
 
   const scored: any[] = [];
   for (const g of source) {
+    if (blockedIds.has(g.userId)) continue;
     const s = await scoringEngine.scoreGuide(g.id);
-    if (s.score > 0) scored.push({ id: g.id, userId: g.userId, ...s });
+    if (s.score > 0) {
+      const r23Factor = flaggedIds.has(g.userId) ? 0.5 : 1;
+      scored.push({ id: g.id, userId: g.userId, ...s, score: s.score * r23Factor });
+    }
   }
   scored.sort((a, b) => b.score - a.score);
   const top50 = scored.slice(0, 50);
@@ -199,6 +230,10 @@ async function snapshotOne(scope: Scope, period: Period, capturedAt: Date) {
 async function run() {
   const capturedAt = new Date();
   console.log(`[leaderboard] cron start at ${capturedAt.toISOString()}`);
+
+  // 先跑反作弊
+  await initAntiCheat();
+
   for (const scope of ALL_SCOPES) {
     for (const period of ALL_PERIODS) {
       try {

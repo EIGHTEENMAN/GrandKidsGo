@@ -12,13 +12,32 @@ interface FeedItem {
   tags: string[]
   stats: { view: number; save: number; like: number }
   publishedAt: string | null
-  author: { id: string | null; nickname: string }
+  author: { id: string | null; nickname: string; avatar: string | null }
+  score?: number
+}
+
+interface HotBadge {
+  rank: number
+  name: string
+  icon: string
+  rarity: string
+  category: string
+  description: string
+  unlockCount: number
+}
+
+const RARITY_STYLE: Record<string, string> = {
+  bronze: 'background:#a16207;',
+  silver: 'background:#475569;',
+  gold: 'background:#ca8a04;',
+  diamond: 'background:#1e40af;',
 }
 
 const loaded = ref(false)
 const isLoggedIn = ref(false)
 const items = ref<FeedItem[]>([])
 const errMsg = ref<string>('')
+const hotBadges = ref<HotBadge[]>([])
 
 function authHeaders(): Record<string, string> {
   const token = uni.getStorageSync('grandkidsgo_token')
@@ -27,19 +46,30 @@ function authHeaders(): Record<string, string> {
 
 async function loadFeed() {
   try {
-    const res = await uni.request({
-      url: `${TRAVEL_API_BASE.value}/api/guides/feed`,
-      method: 'GET',
-      header: authHeaders(),
-    })
-    const d = res.data as any
+    const [feedRes, badgeRes] = await Promise.all([
+      uni.request({
+        url: `${TRAVEL_API_BASE.value}/api/guides/feed`,
+        method: 'GET',
+        header: authHeaders(),
+      }),
+      uni.request({
+        url: `${TRAVEL_API_BASE.value}/api/guides/hot-badges`,
+        method: 'GET',
+      }),
+    ])
+    const d = feedRes.data as any
     if (d?.error) {
       errMsg.value = d.error.message ?? '加载失败'
     } else {
       items.value = d?.items ?? []
     }
+    const bd = badgeRes.data as any
+    if (bd?.items?.length) {
+      hotBadges.value = bd.items
+    }
     track(TRACK.GUIDE_FEED_VIEWED, {
       itemCount: items.value.length,
+      hotBadgeCount: hotBadges.value.length,
       hasError: !!errMsg.value,
     })
   } catch {
@@ -118,6 +148,23 @@ function showLoginTip() {
       </view>
     </view>
 
+    <!-- v2.0 今日热门勋章 -->
+    <view v-if="hotBadges.length > 0" class="hot-badges">
+      <text class="hot-badges-title">🔥 本周热门勋章</text>
+      <view class="hot-badges-row">
+        <view
+          v-for="b in hotBadges"
+          :key="b.name"
+          class="hot-badge-item"
+          @click="goBadges"
+        >
+          <text class="hot-badge-icon">{{ b.icon }}</text>
+          <text class="hot-badge-name">{{ b.name }}</text>
+          <text class="hot-badge-count">{{ b.unlockCount }} 人获得</text>
+        </view>
+      </view>
+    </view>
+
     <view v-if="errMsg" class="error">
       <text class="error-text">攻略流加载失败：{{ errMsg }}</text>
       <text class="error-hint">（API 不可达属于演示阶段预期；走天下 v1.5 默认接 travel.grandand.com）</text>
@@ -171,6 +218,16 @@ function showLoginTip() {
 .quick-card { background: #fff; border-radius: 20rpx; padding: 28rpx 8rpx; text-align: center; border: 1rpx solid #e2e8f0; }
 .quick-emoji { display: block; font-size: 40rpx; }
 .quick-label { display: block; font-size: 22rpx; color: #475569; margin-top: 8rpx; }
+
+/* v2.0 热门勋章 */
+.hot-badges { background: linear-gradient(135deg, #fffbeb, #fef3c7); border-radius: 20rpx; padding: 24rpx; margin-bottom: 28rpx; border: 1rpx solid #fde68a; }
+.hot-badges-title { display: block; font-size: 24rpx; font-weight: 600; color: #92400e; margin-bottom: 16rpx; }
+.hot-badges-row { display: flex; gap: 12rpx; }
+.hot-badge-item { flex: 1; background: #fff; border-radius: 14rpx; padding: 16rpx 8rpx; text-align: center; border: 1rpx solid #fef3c7; }
+.hot-badge-icon { display: block; font-size: 40rpx; }
+.hot-badge-name { display: block; font-size: 20rpx; font-weight: 600; color: #0f172a; margin-top: 6rpx; }
+.hot-badge-count { display: block; font-size: 18rpx; color: #92400e; margin-top: 4rpx; }
+
 .error { background: #fef2f2; border-radius: 20rpx; padding: 32rpx; margin-bottom: 24rpx; border: 1rpx solid #fecaca; }
 .error-text { display: block; font-size: 26rpx; color: #dc2626; font-weight: 600; }
 .error-hint { display: block; font-size: 22rpx; color: #7f1d1d; margin-top: 8rpx; }
