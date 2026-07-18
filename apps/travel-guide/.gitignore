@@ -3,3 +3,8 @@ node_modules/
 *.local
 .env
 .env*.local
+*.tgz
+aliyun*
+memory-backup*/
+ICP备案/
+信息安全保护/
