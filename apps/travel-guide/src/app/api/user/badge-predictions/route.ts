@@ -7,7 +7,6 @@
 // 输出：最多 5 条预测，按置信度降序
 
 import { NextRequest, NextResponse } from "next/server";
-import prisma from "@/lib/prisma";
 import { predictBadgesFor } from "@/lib/badge-predictor";
 
 export const dynamic = "force-dynamic";

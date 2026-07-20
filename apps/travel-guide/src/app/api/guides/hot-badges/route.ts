@@ -3,12 +3,12 @@
 //
 // 返回本周获得最多的勋章列表，用于 feed 顶端展示
 
-import { NextRequest, NextResponse } from "next/server";
+import { NextResponse } from "next/server";
 import prisma from "@/lib/prisma";
 
 export const dynamic = "force-dynamic";
 
-export async function GET(req: NextRequest) {
+export async function GET() {
   // 计算本周开始时间
   const now = new Date();
   const weekStart = new Date(now);

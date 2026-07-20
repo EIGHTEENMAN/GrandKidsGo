@@ -41,7 +41,6 @@ export async function GET(req: NextRequest) {
         status: "published",
         OR: [
           { title: { contains: q, mode: "insensitive" } },
-          { tags: { has: q } },
           { contentHtml: { contains: q, mode: "insensitive" } },
         ],
       },
@@ -63,7 +62,6 @@ export async function GET(req: NextRequest) {
         subtitle: `${g.city?.name ?? ""}${g.days ? ` · ${g.days} 天` : ""}`,
         matchScore:
           g.title.includes(q) ? 3
-          : g.tags?.includes?.(q) ? 2
           : 1,
       });
     }

@@ -41,7 +41,7 @@ function getDb(): any {
 export function batchFetchUsers(ids: string[]): Map<string, UserInfo> {
   const db = getDb();
   if (!db || !ids.length) return new Map();
-  const deduped = [...new Set(ids)];
+  const deduped = Array.from(new Set(ids));
   const placeholders = deduped.map(() => '?').join(',');
   try {
     const rows = db

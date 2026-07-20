@@ -36,6 +36,7 @@ export async function POST(req: NextRequest) {
   const guide = await prisma.guide.findUnique({
     where: { id: parsed.data.sourceGuideId },
     select: {
+      id: true,
       cityId: true,
       childAges: true,
       days: true,
