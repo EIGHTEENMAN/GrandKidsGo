@@ -52,46 +52,44 @@ interface LeaderboardEntry {
   score: number;
 }
 
+// 真实亲子旅行照片（来自 Unsplash）
+// 每张都是真实孩子在旅行中开心玩耍的照片
 const CAROUSEL_SLIDES = [
   {
     id: 1,
-    image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1600&q=85',
+    image: 'https://images.unsplash.com/photo-1602002418082-a4443e081dd1?w=1600&q=85',
     eyebrow: '走遍宝宝的世界',
     title: '13 类亲子地点 · 真实妈妈打分',
     subtitle: '大人 + 孩子双维度评分 · 看真实评价再决定去哪儿',
     cta: '探索宝典',
     href: '/places',
-    accent: 'from-green-700/80 to-emerald-900/80',
   },
   {
     id: 2,
-    image: 'https://images.unsplash.com/photo-1530789253388-582c481c54b0?w=1600&q=85',
+    image: 'https://images.unsplash.com/photo-1511895426328-dc8714191300?w=1600&q=85',
     eyebrow: '真实妈妈的攻略',
     title: '孩子说好才是真的好',
     subtitle: '基于孩子真实感受数据排序 · 看到喜欢的可以一键做成自己的计划',
     cta: '看看别人怎么玩',
     href: '/guides',
-    accent: 'from-amber-600/80 to-orange-800/80',
   },
   {
     id: 3,
-    image: 'https://images.unsplash.com/photo-1542038784456-1ea8e935640e?w=1600&q=85',
+    image: 'https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?w=1600&q=85',
     eyebrow: '孩子真实感受驱动',
     title: '妈妈榜 · 你的下一站在哪？',
     subtitle: '4 类榜单 × 3 时间维度 · 看妈妈们带娃玩过的好地方',
     cta: '查看妈妈榜',
     href: '/leaderboard',
-    accent: 'from-pink-600/80 to-purple-900/80',
   },
   {
     id: 4,
-    image: 'https://images.unsplash.com/photo-1473625247510-8ceb1760943f?w=1600&q=85',
+    image: 'https://images.unsplash.com/photo-1559131397-f94da358f7ca?w=1600&q=85',
     eyebrow: '智能攻略',
     title: '不用从零开始 · 也不用硬塞',
     subtitle: '推荐相似行程真实攻略 · 一键 fork · 不满意再重新生成',
     cta: '试试智能攻略',
     href: '/wizard',
-    accent: 'from-blue-600/80 to-cyan-900/80',
   },
 ];
 
@@ -134,8 +132,9 @@ export default function TravelHome() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-green-50 via-white to-amber-50">
-      {/* ===== Hero 轮播相册 ===== */}
-      <header className="relative h-[480px] md:h-[560px] overflow-hidden">
+      {/* ===== Hero 轮播相册（真实亲子照片 + 右侧文字） ===== */}
+      <header className="relative h-[480px] md:h-[560px] overflow-hidden bg-gray-100">
+        {/* 真实照片 */}
         <div className="absolute inset-0">
           {CAROUSEL_SLIDES.map((s, i) => (
             <div
@@ -146,25 +145,30 @@ export default function TravelHome() {
               style={{ backgroundImage: `url(${s.image})` }}
             />
           ))}
-          <div className={`absolute inset-0 bg-gradient-to-br ${slide.accent}`} />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/30" />
         </div>
 
+        {/* 右侧文字区（无全屏蒙版，文字下方加白色阴影保证可读） */}
         <Link
           href={slide.href}
-          className="absolute inset-0 flex items-center justify-center z-10"
+          className="absolute inset-0 flex items-center justify-end z-10"
         >
-          <div className="text-center text-white px-6 max-w-3xl">
-            <div className="inline-flex items-center gap-2 px-4 py-1 bg-white/20 backdrop-blur-sm rounded-full text-sm font-medium mb-4">
+          <div className="text-right px-8 md:px-16 max-w-2xl mr-4 md:mr-12">
+            <div className="inline-block px-4 py-1.5 bg-white/90 backdrop-blur-sm rounded-full text-sm font-medium mb-4 text-gray-700 shadow-md">
               ✈️ {slide.eyebrow}
             </div>
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold mb-4 tracking-tight drop-shadow-lg">
+            <h1
+              className="text-3xl md:text-5xl lg:text-6xl font-extrabold mb-4 tracking-tight text-white"
+              style={{ textShadow: '0 2px 12px rgba(0,0,0,0.5), 0 1px 3px rgba(0,0,0,0.3)' }}
+            >
               {slide.title}
             </h1>
-            <p className="text-base md:text-lg text-white/90 mb-6 leading-relaxed drop-shadow">
+            <p
+              className="text-base md:text-lg text-white mb-6 leading-relaxed"
+              style={{ textShadow: '0 1px 6px rgba(0,0,0,0.6)' }}
+            >
               {slide.subtitle}
             </p>
-            <span className="inline-block px-6 py-3 bg-white text-gray-900 font-bold rounded-full shadow-lg">
+            <span className="inline-block px-7 py-3 bg-white text-gray-900 font-bold rounded-full shadow-xl hover:scale-105 transition-transform">
               {slide.cta} →
             </span>
           </div>
@@ -172,14 +176,14 @@ export default function TravelHome() {
 
         <button
           onClick={() => setCarouselIdx((i) => (i - 1 + CAROUSEL_SLIDES.length) % CAROUSEL_SLIDES.length)}
-          className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/20 backdrop-blur-sm text-white hover:bg-white/40 transition z-20 flex items-center justify-center text-xl"
+          className="absolute left-4 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-white/80 backdrop-blur-sm text-gray-700 hover:bg-white transition z-20 flex items-center justify-center text-2xl shadow-lg"
           aria-label="上一张"
         >
           ‹
         </button>
         <button
           onClick={() => setCarouselIdx((i) => (i + 1) % CAROUSEL_SLIDES.length)}
-          className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/20 backdrop-blur-sm text-white hover:bg-white/40 transition z-20 flex items-center justify-center text-xl"
+          className="absolute right-4 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-white/80 backdrop-blur-sm text-gray-700 hover:bg-white transition z-20 flex items-center justify-center text-2xl shadow-lg"
           aria-label="下一张"
         >
           ›
@@ -190,8 +194,8 @@ export default function TravelHome() {
             <button
               key={i}
               onClick={() => setCarouselIdx(i)}
-              className={`h-2 rounded-full transition-all ${
-                i === carouselIdx ? 'w-8 bg-white' : 'w-2 bg-white/40 hover:bg-white/60'
+              className={`h-2.5 rounded-full transition-all ${
+                i === carouselIdx ? 'w-10 bg-white shadow-lg' : 'w-2.5 bg-white/50 hover:bg-white/80'
               }`}
               aria-label={`跳到第 ${i + 1} 张`}
             />
