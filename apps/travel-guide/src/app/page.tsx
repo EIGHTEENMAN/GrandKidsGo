@@ -59,8 +59,9 @@ const CAROUSEL_SLIDES = [
     id: 1,
     image: 'https://images.unsplash.com/photo-1602002418082-a4443e081dd1?w=1600&q=85',
     eyebrow: '走遍宝宝的世界',
-    title: '13 类亲子地点 · 真实妈妈打分',
-    subtitle: '大人 + 孩子双维度评分 · 看真实评价再决定去哪儿',
+    title: '13 类亲子地点',
+    titleLine2: '真实妈妈打分',
+    subtitle: '大人孩子双维度评分 · 看真实评价再出发',
     cta: '探索宝典',
     href: '/places',
   },
@@ -68,8 +69,9 @@ const CAROUSEL_SLIDES = [
     id: 2,
     image: 'https://images.unsplash.com/photo-1511895426328-dc8714191300?w=1600&q=85',
     eyebrow: '真实妈妈的攻略',
-    title: '孩子说好才是真的好',
-    subtitle: '基于孩子真实感受数据排序 · 看到喜欢的可以一键做成自己的计划',
+    title: '孩子说好',
+    titleLine2: '才是真的好',
+    subtitle: '基于孩子真实感受数据 · 看到喜欢就一键 fork',
     cta: '看看别人怎么玩',
     href: '/guides',
   },
@@ -77,8 +79,9 @@ const CAROUSEL_SLIDES = [
     id: 3,
     image: 'https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?w=1600&q=85',
     eyebrow: '孩子真实感受驱动',
-    title: '妈妈榜 · 你的下一站在哪？',
-    subtitle: '4 类榜单 × 3 时间维度 · 看妈妈们带娃玩过的好地方',
+    title: '妈妈榜',
+    titleLine2: '你的下一站在哪',
+    subtitle: '4 类榜单 × 3 时间维度 · 看妈妈带娃去的好地方',
     cta: '查看妈妈榜',
     href: '/leaderboard',
   },
@@ -86,8 +89,9 @@ const CAROUSEL_SLIDES = [
     id: 4,
     image: 'https://images.unsplash.com/photo-1559131397-f94da358f7ca?w=1600&q=85',
     eyebrow: '智能攻略',
-    title: '不用从零开始 · 也不用硬塞',
-    subtitle: '推荐相似行程真实攻略 · 一键 fork · 不满意再重新生成',
+    title: '不用从零开始',
+    titleLine2: '也不用硬塞',
+    subtitle: '推荐相似行程 · 一键 fork · 不满意再生成',
     cta: '试试智能攻略',
     href: '/wizard',
   },
@@ -153,23 +157,32 @@ export default function TravelHome() {
           className="absolute inset-0 flex items-center justify-end z-10"
         >
           <div className="text-right px-8 md:px-16 max-w-2xl mr-4 md:mr-12">
-            <div className="inline-block px-4 py-1.5 bg-white/90 backdrop-blur-sm rounded-full text-sm font-medium mb-4 text-gray-700 shadow-md">
-              ✈️ {slide.eyebrow}
+            {/* eyebrow chip - 单行不换行 */}
+            <div className="inline-block mb-4">
+              <span className="inline-block whitespace-nowrap px-4 py-1.5 bg-white/90 backdrop-blur-sm rounded-full text-sm font-medium text-gray-700 shadow-md">
+                ✈️ {slide.eyebrow}
+              </span>
             </div>
+            {/* 标题 — 故意分两行，避免自动断行难看 */}
             <h1
-              className="text-3xl md:text-5xl lg:text-6xl font-extrabold mb-4 tracking-tight text-white"
+              className="text-3xl md:text-5xl lg:text-6xl font-extrabold mb-4 tracking-tight text-white leading-tight"
               style={{ textShadow: '0 2px 12px rgba(0,0,0,0.5), 0 1px 3px rgba(0,0,0,0.3)' }}
             >
               {slide.title}
+              <br />
+              {slide.titleLine2}
             </h1>
+            {/* 副标题 - text-balance 自动平衡，避免单字成行 */}
             <p
-              className="text-base md:text-lg text-white mb-6 leading-relaxed"
+              className="text-base md:text-lg text-white mb-6 leading-relaxed text-balance"
               style={{ textShadow: '0 1px 6px rgba(0,0,0,0.6)' }}
             >
               {slide.subtitle}
             </p>
-            <span className="inline-block px-7 py-3 bg-white text-gray-900 font-bold rounded-full shadow-xl hover:scale-105 transition-transform">
-              {slide.cta} →
+            {/* CTA 按钮 - inline-flex 保持单行 */}
+            <span className="inline-flex items-center gap-2 px-7 py-3 bg-white text-gray-900 font-bold rounded-full shadow-xl hover:scale-105 transition-transform whitespace-nowrap">
+              {slide.cta}
+              <span className="text-xl">→</span>
             </span>
           </div>
         </Link>
