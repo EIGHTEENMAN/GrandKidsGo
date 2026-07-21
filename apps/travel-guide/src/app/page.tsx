@@ -265,31 +265,87 @@ export default function TravelHome() {
       </header>
 
       <main className="max-w-6xl mx-auto px-6 py-12">
-        {/* ===== 板块 1: 亲子宝典（13 类地点） ===== */}
+        {/* ===== 板块 1: 亲子宝典（标签 → 城市 → 地点 三层） ===== */}
         <section className="mb-16">
           <div className="flex items-center justify-between mb-4">
             <h2 className="text-2xl font-bold text-gray-900 flex items-center gap-2">
               📚 亲子宝典
-              <span className="text-sm font-normal text-gray-500">13 类亲子地点 · 大人孩子双维度评分</span>
+              <span className="text-sm font-normal text-gray-500">先选主题，再选城市，找到你想去的地方</span>
             </h2>
             <Link href="/places" className="text-green-600 hover:text-green-700 text-sm font-medium">
-              搜索全部地点 →
+              搜索全部 →
             </Link>
           </div>
-          <p className="text-sm text-gray-500 mb-4">
-            上千个真实亲子地点 · 看真实评价再决定去哪儿
+          <p className="text-sm text-gray-500 mb-5">
+            玩水 / 海边 / 研学 / 露营 · 上千个真实亲子地点 · 大人孩子双维度评分
           </p>
-          <div className="grid grid-cols-4 md:grid-cols-7 gap-3">
-            {PLACE_CATEGORIES.slice(0, 7).map((c) => (
-              <Link
-                key={c.key}
-                href={`/places?category=${c.key}`}
-                className="bg-white rounded-xl p-4 text-center shadow-sm hover:shadow-md transition border border-gray-100"
-              >
-                <div className="text-3xl mb-1">{c.emoji}</div>
-                <div className="text-sm font-medium text-gray-700">{c.label}</div>
-              </Link>
-            ))}
+
+          {/* 第一层：热门标签 chip（横滑） */}
+          <div className="mb-5">
+            <div className="flex items-center gap-2 mb-2">
+              <span className="text-xs font-semibold text-gray-600 whitespace-nowrap">🏷️ 热门主题</span>
+              <div className="flex-1 h-px bg-gray-100" />
+              <Link href="/places" className="text-xs text-gray-500 hover:text-gray-700 whitespace-nowrap">全部 →</Link>
+            </div>
+            <div className="flex gap-2 overflow-x-auto pb-2 -mx-1 px-1">
+              {[
+                { id: '玩水', emoji: '💦' }, { id: '海边', emoji: '🏖️' },
+                { id: '爬山', emoji: '⛰️' }, { id: '研学', emoji: '📖' },
+                { id: '动物', emoji: '🦁' }, { id: '采摘', emoji: '🍎' },
+                { id: '露营', emoji: '🏕️' }, { id: '历史', emoji: '🏛️' },
+                { id: '主题乐园', emoji: '🎡' }, { id: '博物馆', emoji: '🏛️' },
+                { id: '滑雪', emoji: '⛷️' }, { id: '观星', emoji: '🌌' },
+                { id: '漂流', emoji: '🛶' }, { id: '游船', emoji: '⛵' },
+              ].map((t) => (
+                <Link
+                  key={t.id}
+                  href={`/places?tag=${encodeURIComponent(t.id)}`}
+                  className="flex-shrink-0 px-4 py-2 bg-gradient-to-r from-green-50 to-emerald-50 hover:from-green-100 hover:to-emerald-100 rounded-full text-sm font-medium text-gray-700 border border-green-200 transition whitespace-nowrap"
+                >
+                  {t.emoji} {t.id}
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          {/* 第二层：13 类别 */}
+          <div className="mb-4">
+            <div className="flex items-center gap-2 mb-2">
+              <span className="text-xs font-semibold text-gray-600 whitespace-nowrap">📋 地点类别</span>
+              <div className="flex-1 h-px bg-gray-100" />
+            </div>
+            <div className="grid grid-cols-4 md:grid-cols-7 gap-3">
+              {PLACE_CATEGORIES.slice(0, 7).map((c) => (
+                <Link
+                  key={c.key}
+                  href={`/places?category=${c.key}`}
+                  className="bg-white rounded-xl p-4 text-center shadow-sm hover:shadow-md transition border border-gray-100"
+                >
+                  <div className="text-3xl mb-1">{c.emoji}</div>
+                  <div className="text-sm font-medium text-gray-700">{c.label}</div>
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          {/* 第三层：选城市 */}
+          <div>
+            <div className="flex items-center gap-2 mb-2">
+              <span className="text-xs font-semibold text-gray-600 whitespace-nowrap">📍 热门城市</span>
+              <div className="flex-1 h-px bg-gray-100" />
+              <Link href="/places" className="text-xs text-gray-500 hover:text-gray-700 whitespace-nowrap">全部 →</Link>
+            </div>
+            <div className="flex gap-2 flex-wrap">
+              {['北京', '上海', '杭州', '成都', '广州', '西安', '南京', '厦门', '苏州', '青岛'].map((city) => (
+                <Link
+                  key={city}
+                  href={`/places?cityName=${encodeURIComponent(city)}`}
+                  className="px-3 py-1.5 bg-white hover:bg-blue-50 border border-gray-200 hover:border-blue-300 rounded-full text-sm text-gray-700 transition"
+                >
+                  {city}
+                </Link>
+              ))}
+            </div>
           </div>
         </section>
 

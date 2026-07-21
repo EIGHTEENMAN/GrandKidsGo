@@ -61,6 +61,7 @@ function PlacesContent() {
   const searchParams = useSearchParams();
   const [q, setQ] = useState(searchParams.get('q') ?? '');
   const [category, setCategory] = useState(searchParams.get('category') ?? '');
+  const [tag, setTag] = useState(searchParams.get('tag') ?? '');
   const [items, setItems] = useState<Place[]>([]);
   const [cities, setCities] = useState<{ id: string; name: string }[]>([]);
   const [cityId, setCityId] = useState(searchParams.get('cityId') ?? '');
@@ -75,6 +76,19 @@ function PlacesContent() {
 
   useEffect(() => {
     setLoading(true);
+    // 优先用 tag API（标签优先路径）
+    if (tag) {
+      const params = new URLSearchParams();
+      params.set('tag', tag);
+      if (cityId) params.set('cityId', cityId);
+      fetch(`${TRAVEL_API}/api/places/by-tag?${params}`)
+        .then((r) => r.json())
+        .then((d) => setItems(d.data?.items ?? []))
+        .catch(console.error)
+        .finally(() => setLoading(false));
+      return;
+    }
+    // 普通搜索
     const params = new URLSearchParams();
     if (q) params.set('q', q);
     if (category) params.set('category', category);
@@ -87,7 +101,7 @@ function PlacesContent() {
         .finally(() => setLoading(false));
     }, 200);
     return () => clearTimeout(t);
-  }, [q, category, cityId]);
+  }, [q, category, cityId, tag]);
 
   return (
     <main className="min-h-screen bg-gradient-to-b from-amber-50 to-white">
@@ -100,6 +114,53 @@ function PlacesContent() {
       </header>
 
       <div className="max-w-6xl mx-auto px-6 py-8">
+        {/* 当前标签高亮 */}
+        {tag && (
+          <div className="bg-gradient-to-r from-green-50 to-emerald-50 border border-green-200 rounded-xl p-4 mb-4 flex items-center gap-3">
+            <span className="text-2xl">🏷️</span>
+            <div className="flex-1">
+              <div className="text-xs text-gray-500">正在筛选主题</div>
+              <div className="text-lg font-bold text-gray-900">{tag}</div>
+            </div>
+            <button
+              onClick={() => setTag('')}
+              className="px-3 py-1.5 bg-white border border-gray-200 rounded-full text-sm text-gray-600 hover:bg-gray-50"
+            >
+              ✕ 清除
+            </button>
+          </div>
+        )}
+
+        {/* 标签横滑 chip 行 */}
+        <div className="mb-4">
+          <div className="flex items-center gap-2 mb-2">
+            <span className="text-xs font-semibold text-gray-600">🏷️ 按主题筛选</span>
+            <div className="flex-1 h-px bg-gray-100" />
+          </div>
+          <div className="flex gap-2 overflow-x-auto pb-2 -mx-1 px-1">
+            {[
+              { id: '玩水', emoji: '💦' }, { id: '海边', emoji: '🏖️' },
+              { id: '爬山', emoji: '⛰️' }, { id: '研学', emoji: '📖' },
+              { id: '动物', emoji: '🦁' }, { id: '采摘', emoji: '🍎' },
+              { id: '露营', emoji: '🏕️' }, { id: '历史', emoji: '🏛️' },
+              { id: '主题乐园', emoji: '🎡' }, { id: '博物馆', emoji: '🏛️' },
+              { id: '滑雪', emoji: '⛷️' }, { id: '观星', emoji: '🌌' },
+            ].map((t) => (
+              <button
+                key={t.id}
+                onClick={() => setTag(t.id === tag ? '' : t.id)}
+                className={`flex-shrink-0 px-4 py-2 rounded-full text-sm font-medium transition whitespace-nowrap ${
+                  tag === t.id
+                    ? 'bg-green-600 text-white shadow-md'
+                    : 'bg-white text-gray-700 border border-gray-200 hover:border-green-300'
+                }`}
+              >
+                {t.emoji} {t.id}
+              </button>
+            ))}
+          </div>
+        </div>
+
         {/* 搜索框 */}
         <div className="bg-white rounded-2xl shadow-sm p-4 mb-6">
           <input
