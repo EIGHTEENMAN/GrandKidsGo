@@ -1,9 +1,10 @@
-// 走天下首页 - PC 端（v3.1 轮播 + 三板块）
-// 详见 项目建设方案/走天下实施方案-v3.1.md
+// 走天下首页 - PC 端（v3.2 上下板块 + 小红书瀑布流）
+// 详见 项目建设方案/走天下实施方案-v3.2.md
 //
-// v3.1 调整：
-// - 顶部 hero 改为可滑动图片相册（点击图片跳转内容）
-// - 下方三个并排板块：热门攻略 / 排行榜 / 智能攻略
+// v3.2 调整：
+// - Hero 仍是可滑动图片相册
+// - 三板块上下排列（不是并排）
+// - 热门攻略改成小红书瀑布流（大图卡片）
 
 'use client';
 
@@ -34,6 +35,7 @@ interface Guide {
   cityName: string | null;
   days: number | null;
   childAges: number[];
+  coverImages?: string[];
   stats: { view: number; save: number; like: number };
   author: { nickname: string; avatar: string | null };
 }
@@ -50,7 +52,6 @@ interface LeaderboardEntry {
   score: number;
 }
 
-// 轮播图（点击图片跳转不同类型内容）
 const CAROUSEL_SLIDES = [
   {
     id: 1,
@@ -94,6 +95,9 @@ const CAROUSEL_SLIDES = [
   },
 ];
 
+// 瀑布流卡片高度变体（小红书风格）
+const MASONRY_HEIGHTS = ['h-64', 'h-80', 'h-72', 'h-60', 'h-72', 'h-64', 'h-80', 'h-60'];
+
 export default function TravelHome() {
   const [guides, setGuides] = useState<Guide[]>([]);
   const [hotGuides, setHotGuides] = useState<Guide[]>([]);
@@ -101,7 +105,6 @@ export default function TravelHome() {
   const [loaded, setLoaded] = useState(false);
   const [carouselIdx, setCarouselIdx] = useState(0);
 
-  // 轮播自动切换
   useEffect(() => {
     const t = setInterval(() => {
       setCarouselIdx((i) => (i + 1) % CAROUSEL_SLIDES.length);
@@ -109,7 +112,6 @@ export default function TravelHome() {
     return () => clearInterval(t);
   }, []);
 
-  // 拉数据
   useEffect(() => {
     Promise.all([
       fetch(`${TRAVEL_API}/api/guides/feed`).then((r) => r.json()),
@@ -118,12 +120,11 @@ export default function TravelHome() {
       .then(([feedData, lbData]) => {
         const allGuides: Guide[] = feedData.items ?? [];
         setGuides(allGuides);
-        // 热门攻略：按 like + save 排序
+        // 热门攻略：按 like + save 排序，取 12 个瀑布用
         setHotGuides(
-          [...allGuides].sort((a, b) => (b.stats.like + b.stats.save * 2) - (a.stats.like + a.stats.save * 2)).slice(0, 5),
+          [...allGuides].sort((a, b) => (b.stats.like + b.stats.save * 2) - (a.stats.like + a.stats.save * 2)).slice(0, 12),
         );
-        // 妈妈榜 Top 5
-        setTopUsers((lbData.items ?? []).slice(0, 5));
+        setTopUsers((lbData.items ?? []).slice(0, 8));
       })
       .catch(console.error)
       .finally(() => setLoaded(true));
@@ -133,9 +134,8 @@ export default function TravelHome() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-green-50 via-white to-amber-50">
-      {/* ===== 轮播相册 ===== */}
+      {/* ===== Hero 轮播相册 ===== */}
       <header className="relative h-[480px] md:h-[560px] overflow-hidden">
-        {/* 背景图 */}
         <div className="absolute inset-0">
           {CAROUSEL_SLIDES.map((s, i) => (
             <div
@@ -150,7 +150,6 @@ export default function TravelHome() {
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/30" />
         </div>
 
-        {/* 文案 */}
         <Link
           href={slide.href}
           className="absolute inset-0 flex items-center justify-center z-10"
@@ -171,7 +170,6 @@ export default function TravelHome() {
           </div>
         </Link>
 
-        {/* 左右切换按钮 */}
         <button
           onClick={() => setCarouselIdx((i) => (i - 1 + CAROUSEL_SLIDES.length) % CAROUSEL_SLIDES.length)}
           className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/20 backdrop-blur-sm text-white hover:bg-white/40 transition z-20 flex items-center justify-center text-xl"
@@ -187,7 +185,6 @@ export default function TravelHome() {
           ›
         </button>
 
-        {/* 指示点 */}
         <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2 z-20">
           {CAROUSEL_SLIDES.map((_, i) => (
             <button
@@ -203,149 +200,232 @@ export default function TravelHome() {
       </header>
 
       <main className="max-w-6xl mx-auto px-6 py-12">
-        {/* ===== 三个并排板块 ===== */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-12">
-          {/* 板块 1: 热门攻略 */}
-          <section className="bg-white rounded-2xl shadow-sm overflow-hidden border border-orange-100">
-            <div className="bg-gradient-to-r from-orange-500 to-amber-500 px-5 py-4 flex items-center justify-between">
-              <div className="flex items-center gap-2 text-white">
-                <span className="text-2xl">🔥</span>
-                <h2 className="font-bold text-lg">热门攻略</h2>
+        {/* ===== 板块 1: 热门攻略（小红书瀑布流） ===== */}
+        <section className="mb-16">
+          <div className="flex items-center justify-between mb-6">
+            <h2 className="text-2xl font-bold text-gray-900 flex items-center gap-2">
+              🔥 热门攻略
+              <span className="text-sm font-normal text-gray-500">本周点赞收藏最多的真实旅行</span>
+            </h2>
+            <Link href="/guides" className="text-orange-600 hover:text-orange-700 text-sm font-medium">
+              更多攻略 →
+            </Link>
+          </div>
+
+          {!loaded && (
+            <div className="text-center py-12 text-gray-400">加载中…</div>
+          )}
+
+          {loaded && hotGuides.length === 0 && (
+            <div className="bg-white rounded-2xl p-12 text-center border border-dashed border-gray-200">
+              <div className="text-4xl mb-3">📝</div>
+              <div className="text-gray-500 mb-1">还没有发布的攻略</div>
+              <div className="text-sm text-gray-400">
+                妈妈完成一次出行 + 发布一篇攻略，就会出现在这里
               </div>
-              <Link href="/guides" className="text-xs text-white/80 hover:text-white">
-                更多 →
-              </Link>
             </div>
-            <div className="divide-y divide-gray-100">
-              {!loaded && (
-                <div className="p-6 text-center text-sm text-gray-400">加载中…</div>
-              )}
-              {loaded && hotGuides.length === 0 && (
-                <div className="p-6 text-center text-sm text-gray-400">还没有攻略</div>
-              )}
-              {hotGuides.map((g, i) => (
+          )}
+
+          {/* 小红书风格瀑布流 - 2 列错落 */}
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            {hotGuides.map((g, i) => {
+              // 瀑布流风格：不同高度 + 第一张大图
+              const isFeatured = i === 0;
+              const heightClass = isFeatured ? 'h-96' : MASONRY_HEIGHTS[i % MASONRY_HEIGHTS.length];
+              const coverGradient = COVER_GRADIENTS[i % COVER_GRADIENTS.length];
+              const coverImage = g.coverImages?.[0];
+              return (
                 <Link
                   key={g.id}
                   href={`/guide/${g.id}`}
-                  className="flex items-start gap-3 p-4 hover:bg-orange-50 transition"
+                  className={`group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all ${isFeatured ? 'col-span-2 md:col-span-2 row-span-2' : ''}`}
                 >
-                  <span className={`flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold text-white ${
-                    i === 0 ? 'bg-red-500' : i === 1 ? 'bg-orange-400' : i === 2 ? 'bg-amber-400' : 'bg-gray-300'
-                  }`}>
-                    {i + 1}
-                  </span>
-                  <div className="flex-1 min-w-0">
-                    <div className="font-medium text-gray-900 line-clamp-2 text-sm mb-1 hover:text-orange-600">
-                      {g.title}
+                  <div className={`relative ${heightClass} overflow-hidden`}>
+                    {coverImage ? (
+                      /* eslint-disable-next-line @next/next/no-img-element */
+                      <img
+                        src={coverImage}
+                        alt={g.title}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
+                    ) : (
+                      <div className={`w-full h-full ${coverGradient} flex items-center justify-center relative`}>
+                        <span className="text-6xl opacity-50">🗺️</span>
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
+                      </div>
+                    )}
+                    {/* 标签 */}
+                    <div className="absolute top-3 left-3 flex flex-col gap-1.5">
+                      {g.cityName && (
+                        <span className="px-2.5 py-1 bg-white/90 backdrop-blur-sm rounded-full text-xs font-medium text-gray-700 shadow-sm">
+                          📍 {g.cityName}
+                        </span>
+                      )}
+                      {g.days && (
+                        <span className="px-2.5 py-1 bg-black/40 backdrop-blur-sm text-white rounded-full text-xs font-medium">
+                          {g.days} 天
+                        </span>
+                      )}
                     </div>
-                    <div className="flex items-center gap-2 text-xs text-gray-500">
-                      <span>📍 {g.cityName ?? '未选'}</span>
-                      {g.days && <span>· {g.days} 天</span>}
-                      <span>· 👍 {g.stats.like}</span>
+                    {/* 底部渐变 + 标题 */}
+                    <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 via-black/40 to-transparent">
+                      {isFeatured && (
+                        <div className="text-xs text-yellow-300 font-bold mb-1">⭐ 本周最热</div>
+                      )}
+                      <h3 className={`font-bold text-white line-clamp-2 ${isFeatured ? 'text-lg' : 'text-sm'}`}>
+                        {g.title}
+                      </h3>
+                    </div>
+                  </div>
+                  <div className="p-3">
+                    <div className="flex items-center justify-between text-xs">
+                      <span className="flex items-center gap-1 text-gray-600 truncate">
+                        <span className="w-5 h-5 rounded-full bg-gradient-to-br from-pink-400 to-red-400 flex items-center justify-center text-white text-[10px] flex-shrink-0">
+                          {g.author.nickname?.[0] ?? '?'}
+                        </span>
+                        <span className="truncate">{g.author.nickname}</span>
+                      </span>
+                      <span className="text-gray-400 whitespace-nowrap">
+                        👍 {g.stats.like}
+                      </span>
                     </div>
                   </div>
                 </Link>
-              ))}
-            </div>
-          </section>
+              );
+            })}
+          </div>
+        </section>
 
-          {/* 板块 2: 排行榜 */}
-          <section className="bg-white rounded-2xl shadow-sm overflow-hidden border border-yellow-100">
-            <div className="bg-gradient-to-r from-yellow-500 to-amber-500 px-5 py-4 flex items-center justify-between">
-              <div className="flex items-center gap-2 text-white">
-                <span className="text-2xl">🏆</span>
-                <h2 className="font-bold text-lg">排行榜</h2>
-              </div>
-              <Link href="/leaderboard" className="text-xs text-white/80 hover:text-white">
-                更多 →
-              </Link>
-            </div>
-            <div className="divide-y divide-gray-100">
-              {!loaded && (
-                <div className="p-6 text-center text-sm text-gray-400">加载中…</div>
-              )}
-              {loaded && topUsers.length === 0 && (
-                <div className="p-6 text-center text-sm text-gray-400">暂无榜单数据</div>
-              )}
-              {topUsers.map((u, i) => (
-                <Link
-                  key={u.userId}
-                  href="/leaderboard"
-                  className="flex items-center gap-3 p-4 hover:bg-yellow-50 transition"
-                >
-                  <span className={`flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold ${
-                    i === 0 ? 'bg-yellow-400 text-yellow-900' : i === 1 ? 'bg-gray-300 text-gray-700' : i === 2 ? 'bg-orange-300 text-orange-900' : 'bg-gray-100 text-gray-600'
-                  }`}>
-                    {i + 1}
-                  </span>
-                  <div className="flex-1 min-w-0">
-                    <div className="font-medium text-gray-900 text-sm truncate">
-                      {u.childLabel || u.nickname || '匿名妈妈'}
-                    </div>
-                    <div className="text-xs text-gray-500">
-                      ⭐ 真实感受 {u.feelingScoreAvg.toFixed(1)} / 5 · 🏅 {u.badgeCount}
-                    </div>
-                  </div>
-                  <span className="text-sm font-bold text-amber-600">{u.score.toFixed(1)}</span>
-                </Link>
-              ))}
-            </div>
-          </section>
+        {/* ===== 板块 2: 排行榜 ===== */}
+        <section className="mb-16">
+          <div className="flex items-center justify-between mb-6">
+            <h2 className="text-2xl font-bold text-gray-900 flex items-center gap-2">
+              🏆 排行榜
+              <span className="text-sm font-normal text-gray-500">妈妈榜本周 Top 8</span>
+            </h2>
+            <Link href="/leaderboard" className="text-amber-600 hover:text-amber-700 text-sm font-medium">
+              完整榜单 →
+            </Link>
+          </div>
 
-          {/* 板块 3: 智能攻略 */}
-          <section className="bg-white rounded-2xl shadow-sm overflow-hidden border border-blue-100">
-            <div className="bg-gradient-to-r from-blue-500 to-cyan-500 px-5 py-4 flex items-center justify-between">
-              <div className="flex items-center gap-2 text-white">
-                <span className="text-2xl">🪄</span>
-                <h2 className="font-bold text-lg">智能攻略</h2>
+          <div className="bg-white rounded-2xl shadow-sm overflow-hidden border border-amber-100">
+            {!loaded && (
+              <div className="p-12 text-center text-sm text-gray-400">加载中…</div>
+            )}
+            {loaded && topUsers.length === 0 && (
+              <div className="p-12 text-center text-sm text-gray-400">
+                暂无榜单数据 · 每日 02:00 跑批生成
               </div>
-              <Link href="/wizard" className="text-xs text-white/80 hover:text-white">
-                试试 →
-              </Link>
-            </div>
-            <div className="p-5">
-              <p className="text-sm text-gray-600 mb-4 leading-relaxed">
-                先看真实攻略里的孩子感受数据，<br />
-                看到喜欢的 → 一键 fork · 不喜欢 → 重新生成
-              </p>
-              <div className="space-y-2 mb-5">
-                {[
-                  { e: '🏙️', t: '1. 告诉走天下你的情况' },
-                  { e: '🔍', t: '2. 推荐相似行程真实攻略' },
-                  { e: '✨', t: '3. 一键 fork 或重新生成' },
-                ].map((s) => (
-                  <div key={s.t} className="flex items-center gap-2 text-sm text-gray-700">
-                    <span className="w-7 text-center text-lg">{s.e}</span>
-                    <span>{s.t}</span>
-                  </div>
+            )}
+            {topUsers.length > 0 && (
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 p-4">
+                {topUsers.map((u, i) => (
+                  <Link
+                    key={u.userId}
+                    href="/leaderboard"
+                    className="flex items-center gap-3 p-3 rounded-xl hover:bg-amber-50 transition border border-transparent hover:border-amber-200"
+                  >
+                    <div className="relative flex-shrink-0">
+                      <div className="w-12 h-12 rounded-full bg-gradient-to-br from-amber-300 to-orange-400 flex items-center justify-center text-white text-lg font-bold shadow-md">
+                        {i + 1}
+                      </div>
+                      {i < 3 && (
+                        <span className="absolute -top-1 -right-1 text-xs">
+                          {i === 0 ? '👑' : i === 1 ? '🥈' : '🥉'}
+                        </span>
+                      )}
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <div className="font-medium text-gray-900 text-sm truncate">
+                        {u.childLabel || u.nickname || '匿名妈妈'}
+                      </div>
+                      <div className="text-xs text-gray-500 mt-0.5">
+                        ⭐ {u.feelingScoreAvg.toFixed(1)} · 🏅 {u.badgeCount} · 📖 {u.guideCount}
+                      </div>
+                    </div>
+                  </Link>
                 ))}
               </div>
-              <Link
-                href="/wizard"
-                className="block text-center w-full py-3 bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-bold rounded-xl shadow-md hover:shadow-lg transition"
-              >
-                开始智能规划 →
-              </Link>
-              <p className="text-xs text-gray-400 mt-3 text-center">
-                移动端可编辑完整计划
-              </p>
-            </div>
-          </section>
-        </div>
+            )}
+          </div>
+        </section>
 
-        {/* ===== 13 类地点库入口 ===== */}
+        {/* ===== 板块 3: 智能攻略 ===== */}
         <section className="mb-12">
-          <div className="flex items-center justify-between mb-4">
+          <div className="flex items-center justify-between mb-6">
             <h2 className="text-2xl font-bold text-gray-900 flex items-center gap-2">
-              📚 宝典：13 类亲子地点
+              🪄 智能攻略
+              <span className="text-sm font-normal text-gray-500">推荐相似行程，一键 fork 或重新生成</span>
+            </h2>
+            <Link href="/wizard" className="text-blue-600 hover:text-blue-700 text-sm font-medium">
+              立即试用 →
+            </Link>
+          </div>
+
+          <div className="bg-gradient-to-br from-blue-500 via-cyan-500 to-teal-500 rounded-2xl shadow-lg overflow-hidden text-white">
+            <div className="grid grid-cols-1 md:grid-cols-5 gap-6 p-8">
+              <div className="md:col-span-3">
+                <h3 className="text-2xl font-bold mb-3">先看别人怎么玩，再决定怎么玩</h3>
+                <p className="text-blue-50 leading-relaxed mb-6">
+                  基于孩子画像（城市/天数/月龄/风格）推荐相似行程的真实攻略，看到喜欢的可以一键做成自己的计划，不用从零开始。
+                </p>
+                <div className="space-y-3 mb-6">
+                  {[
+                    { e: '🏙️', t: '1. 告诉走天下你的情况（城市 / 天数 / 孩子月龄）' },
+                    { e: '🔍', t: '2. 推荐相似行程真实攻略（带相似度评分）' },
+                    { e: '✨', t: '3. 一键 fork 成你的计划 或 重新生成' },
+                  ].map((s) => (
+                    <div key={s.t} className="flex items-center gap-3 text-sm">
+                      <span className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center text-lg flex-shrink-0">
+                        {s.e}
+                      </span>
+                      <span className="text-white">{s.t}</span>
+                    </div>
+                  ))}
+                </div>
+                <Link
+                  href="/wizard"
+                  className="inline-block px-8 py-3 bg-white text-blue-600 font-bold rounded-full shadow-lg hover:shadow-xl transition hover:scale-105"
+                >
+                  开始智能规划 →
+                </Link>
+              </div>
+
+              {/* 右侧 mock 流程图 */}
+              <div className="md:col-span-2 flex items-center justify-center">
+                <div className="space-y-3 w-full">
+                  {[
+                    { e: '🌆', t: '北京 · 3 天 · 3 岁 · 平衡' },
+                    { e: '🔍', t: '找到 4 篇相似攻略' },
+                    { e: '✨', t: '一键 fork → 我的计划' },
+                  ].map((step, i) => (
+                    <div
+                      key={i}
+                      className="bg-white/15 backdrop-blur-sm rounded-xl p-3 flex items-center gap-3 border border-white/20"
+                    >
+                      <span className="text-2xl">{step.e}</span>
+                      <span className="text-sm text-white">{step.t}</span>
+                    </div>
+                  ))}
+                  <div className="text-center text-xs text-blue-100 mt-2">
+                    👆 真实的智能攻略体验
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ===== 13 类地点库入口（辅助） ===== */}
+        <section className="mb-8">
+          <div className="flex items-center justify-between mb-4">
+            <h2 className="text-xl font-bold text-gray-900 flex items-center gap-2">
+              📚 13 类亲子地点
             </h2>
             <Link href="/places" className="text-green-600 hover:text-green-700 text-sm font-medium">
               搜索全部地点 →
             </Link>
           </div>
-          <p className="text-sm text-gray-500 mb-4">
-            上千个真实亲子地点 · 大人和孩子双维度评分 · 看真实评价再决定去哪儿
-          </p>
           <div className="grid grid-cols-4 md:grid-cols-7 gap-3">
             {PLACE_CATEGORIES.slice(0, 7).map((c) => (
               <Link
@@ -367,3 +447,15 @@ export default function TravelHome() {
     </div>
   );
 }
+
+// 瀑布流卡片背景渐变
+const COVER_GRADIENTS = [
+  'bg-gradient-to-br from-green-300 via-emerald-400 to-teal-500',
+  'bg-gradient-to-br from-pink-300 via-rose-400 to-red-500',
+  'bg-gradient-to-br from-amber-300 via-orange-400 to-red-400',
+  'bg-gradient-to-br from-blue-300 via-cyan-400 to-teal-500',
+  'bg-gradient-to-br from-purple-300 via-violet-400 to-indigo-500',
+  'bg-gradient-to-br from-yellow-300 via-amber-400 to-orange-500',
+  'bg-gradient-to-br from-emerald-300 via-green-400 to-lime-500',
+  'bg-gradient-to-br from-rose-300 via-pink-400 to-fuchsia-500',
+];
