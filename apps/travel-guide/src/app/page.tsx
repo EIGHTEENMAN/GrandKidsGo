@@ -217,7 +217,35 @@ export default function TravelHome() {
       </header>
 
       <main className="max-w-6xl mx-auto px-6 py-12">
-        {/* ===== 板块 1: 热门攻略（小红书瀑布流） ===== */}
+        {/* ===== 板块 1: 亲子宝典（13 类地点） ===== */}
+        <section className="mb-16">
+          <div className="flex items-center justify-between mb-4">
+            <h2 className="text-2xl font-bold text-gray-900 flex items-center gap-2">
+              📚 亲子宝典
+              <span className="text-sm font-normal text-gray-500">13 类亲子地点 · 大人孩子双维度评分</span>
+            </h2>
+            <Link href="/places" className="text-green-600 hover:text-green-700 text-sm font-medium">
+              搜索全部地点 →
+            </Link>
+          </div>
+          <p className="text-sm text-gray-500 mb-4">
+            上千个真实亲子地点 · 看真实评价再决定去哪儿
+          </p>
+          <div className="grid grid-cols-4 md:grid-cols-7 gap-3">
+            {PLACE_CATEGORIES.slice(0, 7).map((c) => (
+              <Link
+                key={c.key}
+                href={`/places?category=${c.key}`}
+                className="bg-white rounded-xl p-4 text-center shadow-sm hover:shadow-md transition border border-gray-100"
+              >
+                <div className="text-3xl mb-1">{c.emoji}</div>
+                <div className="text-sm font-medium text-gray-700">{c.label}</div>
+              </Link>
+            ))}
+          </div>
+        </section>
+
+        {/* ===== 板块 2: 热门攻略（小红书瀑布流） ===== */}
         <section className="mb-16">
           <div className="flex items-center justify-between mb-6">
             <h2 className="text-2xl font-bold text-gray-900 flex items-center gap-2">
@@ -313,7 +341,7 @@ export default function TravelHome() {
           </div>
         </section>
 
-        {/* ===== 板块 2: 排行榜 ===== */}
+        {/* ===== 板块 3: 排行榜 ===== */}
         <section className="mb-16">
           <div className="flex items-center justify-between mb-6">
             <h2 className="text-2xl font-bold text-gray-900 flex items-center gap-2">
@@ -367,7 +395,7 @@ export default function TravelHome() {
           </div>
         </section>
 
-        {/* ===== 板块 3: 智能攻略 ===== */}
+        {/* ===== 板块 4: 智能攻略 ===== */}
         <section className="mb-12">
           <div className="flex items-center justify-between mb-6">
             <h2 className="text-2xl font-bold text-gray-900 flex items-center gap-2">
@@ -430,30 +458,6 @@ export default function TravelHome() {
                 </div>
               </div>
             </div>
-          </div>
-        </section>
-
-        {/* ===== 13 类地点库入口（辅助） ===== */}
-        <section className="mb-8">
-          <div className="flex items-center justify-between mb-4">
-            <h2 className="text-xl font-bold text-gray-900 flex items-center gap-2">
-              📚 13 类亲子地点
-            </h2>
-            <Link href="/places" className="text-green-600 hover:text-green-700 text-sm font-medium">
-              搜索全部地点 →
-            </Link>
-          </div>
-          <div className="grid grid-cols-4 md:grid-cols-7 gap-3">
-            {PLACE_CATEGORIES.slice(0, 7).map((c) => (
-              <Link
-                key={c.key}
-                href={`/places?category=${c.key}`}
-                className="bg-white rounded-xl p-4 text-center shadow-sm hover:shadow-md transition border border-gray-100"
-              >
-                <div className="text-3xl mb-1">{c.emoji}</div>
-                <div className="text-sm font-medium text-gray-700">{c.label}</div>
-              </Link>
-            ))}
           </div>
         </section>
       </main>
