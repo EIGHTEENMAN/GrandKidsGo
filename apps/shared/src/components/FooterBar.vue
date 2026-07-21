@@ -5,7 +5,7 @@
       <a href="https://grandand.com/legal">服务条款</a>
       <a href="https://grandand.com/legal">隐私政策</a>
     </div>
-    <p>&copy; 2026 童慧行 &mdash; 儿童免费学习乐园</p>
+    <p>&copy; 2026 童慧行 &mdash; 亲子学习旅行平台</p>
   </footer>
 </template>
 

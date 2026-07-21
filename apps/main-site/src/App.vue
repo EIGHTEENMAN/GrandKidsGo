@@ -363,7 +363,7 @@ const stats = [
         <a href="/legal">隐私政策</a>
       </div>
       <p class="footer-icp"><a href="https://beian.miit.gov.cn" target="_blank" rel="noopener noreferrer">京ICP备XXXXXXXX号-X</a> <span class="footer-sep">|</span> 京公网安备 XXXXXXXXXX号</p>
-      <p class="footer-copy">&copy; 2026 童慧行 &mdash; 儿童免费学习乐园 <span class="footer-ai">· AI辅助</span></p>
+      <p class="footer-copy">&copy; 2026 童慧行 &mdash; 亲子学习旅行平台 <span class="footer-ai">· AI辅助</span></p>
     </footer>
 
     <!-- Auth Modal -->

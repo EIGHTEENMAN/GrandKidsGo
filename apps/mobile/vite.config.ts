@@ -16,7 +16,7 @@ export default defineConfig({
       manifest: {
         name: '童慧行',
         short_name: '童慧行',
-        description: '童慧行儿童免费学习乐园 - 读万卷书，行万里路',
+        description: '童慧行亲子学习旅行平台 - 读万卷书，行万里路',
         theme_color: '#2563eb',
         background_color: '#f8fafc',
         display: 'standalone',

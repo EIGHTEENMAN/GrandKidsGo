@@ -327,7 +327,7 @@ function scrollTo(id: string) {
 
         <!-- Footer -->
         <footer class="legal-footer">
-          <p>&copy; 2026 童慧行 &mdash; 儿童免费学习乐园</p>
+          <p>&copy; 2026 童慧行 &mdash; 亲子学习旅行平台</p>
         </footer>
       </main>
     </div>
