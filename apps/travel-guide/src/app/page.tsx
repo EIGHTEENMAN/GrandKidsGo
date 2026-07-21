@@ -52,6 +52,44 @@ interface LeaderboardEntry {
   score: number;
 }
 
+interface CityLbEntry {
+  rank: number;
+  cityId: string;
+  cityName: string;
+  tripCount: number;
+  feelingAvg: number;
+  score: number;
+}
+
+interface PlaceLbEntry {
+  rank: number;
+  placeId: string;
+  placeName: string;
+  adultAvg: number;
+  childAvg: number | null;
+  reviewCount: number;
+  childReviewed: number;
+  score: number;
+}
+
+interface BadgeLbEntry {
+  rank: number;
+  badgeDefId: string;
+  name: string;
+  icon: string;
+  rarity: string;
+  category: string;
+  description: string;
+  unlockCount: number;
+}
+
+const RARITY_LABEL: Record<string, string> = {
+  bronze: '铜',
+  silver: '银',
+  gold: '金',
+  diamond: '钻',
+};
+
 // 真实亲子旅行照片（来自 Unsplash）
 // 每张都是真实孩子在旅行中开心玩耍的照片
 const CAROUSEL_SLIDES = [
@@ -104,8 +142,12 @@ export default function TravelHome() {
   const [guides, setGuides] = useState<Guide[]>([]);
   const [hotGuides, setHotGuides] = useState<Guide[]>([]);
   const [topUsers, setTopUsers] = useState<LeaderboardEntry[]>([]);
+  const [cityLb, setCityLb] = useState<CityLbEntry[]>([]);
+  const [placeLb, setPlaceLb] = useState<PlaceLbEntry[]>([]);
+  const [badgeLb, setBadgeLb] = useState<BadgeLbEntry[]>([]);
   const [loaded, setLoaded] = useState(false);
   const [carouselIdx, setCarouselIdx] = useState(0);
+  const [lbTab, setLbTab] = useState<'mom' | 'city' | 'place' | 'badge'>('mom');
 
   useEffect(() => {
     const t = setInterval(() => {
@@ -118,8 +160,11 @@ export default function TravelHome() {
     Promise.all([
       fetch(`${TRAVEL_API}/api/guides/feed`).then((r) => r.json()),
       fetch(`${TRAVEL_API}/api/leaderboard/mom?period=week`).then((r) => r.json()),
+      fetch(`${TRAVEL_API}/api/leaderboard/city?period=week`).then((r) => r.json()),
+      fetch(`${TRAVEL_API}/api/leaderboard/place-hot?period=week`).then((r) => r.json()),
+      fetch(`${TRAVEL_API}/api/leaderboard/badge-hot?period=week`).then((r) => r.json()),
     ])
-      .then(([feedData, lbData]) => {
+      .then(([feedData, lbData, cityData, placeData, badgeData]) => {
         const allGuides: Guide[] = feedData.items ?? [];
         setGuides(allGuides);
         // 热门攻略：按 like + save 排序，取 12 个瀑布用
@@ -127,6 +172,9 @@ export default function TravelHome() {
           [...allGuides].sort((a, b) => (b.stats.like + b.stats.save * 2) - (a.stats.like + a.stats.save * 2)).slice(0, 12),
         );
         setTopUsers((lbData.items ?? []).slice(0, 8));
+        setCityLb((cityData.items ?? []).slice(0, 5));
+        setPlaceLb((placeData.items ?? []).slice(0, 5));
+        setBadgeLb((badgeData.items ?? []).slice(0, 4));
       })
       .catch(console.error)
       .finally(() => setLoaded(true));
@@ -341,57 +389,192 @@ export default function TravelHome() {
           </div>
         </section>
 
-        {/* ===== 板块 3: 排行榜 ===== */}
+        {/* ===== 板块 3: 排行榜（4 个 Tab） ===== */}
         <section className="mb-16">
           <div className="flex items-center justify-between mb-6">
             <h2 className="text-2xl font-bold text-gray-900 flex items-center gap-2">
               🏆 排行榜
-              <span className="text-sm font-normal text-gray-500">妈妈榜本周 Top 8</span>
+              <span className="text-sm font-normal text-gray-500">看看妈妈们带娃玩过的好地方</span>
             </h2>
             <Link href="/leaderboard" className="text-amber-600 hover:text-amber-700 text-sm font-medium">
               完整榜单 →
             </Link>
           </div>
 
+          {/* Tab 切换 */}
           <div className="bg-white rounded-2xl shadow-sm overflow-hidden border border-amber-100">
-            {!loaded && (
-              <div className="p-12 text-center text-sm text-gray-400">加载中…</div>
-            )}
-            {loaded && topUsers.length === 0 && (
-              <div className="p-12 text-center text-sm text-gray-400">
-                暂无榜单数据 · 每日 02:00 跑批生成
-              </div>
-            )}
-            {topUsers.length > 0 && (
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 p-4">
-                {topUsers.map((u, i) => (
-                  <Link
-                    key={u.userId}
-                    href="/leaderboard"
-                    className="flex items-center gap-3 p-3 rounded-xl hover:bg-amber-50 transition border border-transparent hover:border-amber-200"
-                  >
-                    <div className="relative flex-shrink-0">
-                      <div className="w-12 h-12 rounded-full bg-gradient-to-br from-amber-300 to-orange-400 flex items-center justify-center text-white text-lg font-bold shadow-md">
-                        {i + 1}
-                      </div>
-                      {i < 3 && (
-                        <span className="absolute -top-1 -right-1 text-xs">
-                          {i === 0 ? '👑' : i === 1 ? '🥈' : '🥉'}
-                        </span>
-                      )}
+            <div className="flex border-b border-gray-100 overflow-x-auto">
+              {[
+                { k: 'mom', l: '👩 妈妈榜', d: '按真实感受分排序' },
+                { k: 'city', l: '🏙️ 热门城市', d: '妈妈们最爱去' },
+                { k: 'place', l: '🎯 热门景点', d: '孩子评分最高' },
+                { k: 'badge', l: '🏅 热门勋章', d: '大家都在解锁' },
+              ].map((t) => (
+                <button
+                  key={t.k}
+                  onClick={() => setLbTab(t.k as any)}
+                  className={`flex-1 min-w-[120px] px-4 py-3 text-sm font-medium transition whitespace-nowrap ${
+                    lbTab === t.k
+                      ? 'bg-amber-50 text-amber-700 border-b-2 border-amber-500'
+                      : 'text-gray-500 hover:text-gray-700 hover:bg-gray-50'
+                  }`}
+                >
+                  <div className="font-bold">{t.l}</div>
+                  <div className="text-xs text-gray-400 mt-0.5">{t.d}</div>
+                </button>
+              ))}
+            </div>
+
+            <div className="p-4">
+              {/* 妈妈榜 */}
+              {lbTab === 'mom' && (
+                <>
+                  {!loaded && <div className="p-8 text-center text-sm text-gray-400">加载中…</div>}
+                  {loaded && topUsers.length === 0 && (
+                    <div className="p-8 text-center text-sm text-gray-400">暂无榜单数据</div>
+                  )}
+                  {topUsers.length > 0 && (
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
+                      {topUsers.map((u, i) => (
+                        <Link
+                          key={u.userId}
+                          href="/leaderboard"
+                          className="flex items-center gap-3 p-3 rounded-xl hover:bg-amber-50 transition border border-transparent hover:border-amber-200"
+                        >
+                          <div className="relative flex-shrink-0">
+                            <div className="w-12 h-12 rounded-full bg-gradient-to-br from-amber-300 to-orange-400 flex items-center justify-center text-white text-lg font-bold shadow-md">
+                              {i + 1}
+                            </div>
+                            {i < 3 && (
+                              <span className="absolute -top-1 -right-1 text-xs">
+                                {i === 0 ? '👑' : i === 1 ? '🥈' : '🥉'}
+                              </span>
+                            )}
+                          </div>
+                          <div className="flex-1 min-w-0">
+                            <div className="font-medium text-gray-900 text-sm truncate">
+                              {u.childLabel || u.nickname || '匿名妈妈'}
+                            </div>
+                            <div className="text-xs text-gray-500 mt-0.5">
+                              ⭐ {u.feelingScoreAvg.toFixed(1)} · 🏅 {u.badgeCount} · 📖 {u.guideCount}
+                            </div>
+                          </div>
+                        </Link>
+                      ))}
                     </div>
-                    <div className="flex-1 min-w-0">
-                      <div className="font-medium text-gray-900 text-sm truncate">
-                        {u.childLabel || u.nickname || '匿名妈妈'}
-                      </div>
-                      <div className="text-xs text-gray-500 mt-0.5">
-                        ⭐ {u.feelingScoreAvg.toFixed(1)} · 🏅 {u.badgeCount} · 📖 {u.guideCount}
-                      </div>
+                  )}
+                </>
+              )}
+
+              {/* 热门城市榜 */}
+              {lbTab === 'city' && (
+                <>
+                  {!cityLb && <div className="p-8 text-center text-sm text-gray-400">加载中…</div>}
+                  {cityLb && cityLb.length === 0 && (
+                    <div className="p-8 text-center text-sm text-gray-400">还没有城市数据</div>
+                  )}
+                  {cityLb && cityLb.length > 0 && (
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-3">
+                      {cityLb.map((c, i) => (
+                        <Link
+                          key={c.cityId}
+                          href={`/places?cityId=${c.cityId}`}
+                          className="flex items-center gap-3 p-3 rounded-xl hover:bg-blue-50 transition border border-transparent hover:border-blue-200"
+                        >
+                          <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-400 to-cyan-400 flex items-center justify-center text-white text-lg font-bold shadow-md">
+                            {i + 1}
+                          </div>
+                          <div className="flex-1 min-w-0">
+                            <div className="font-medium text-gray-900 text-sm truncate">
+                              🏙️ {c.cityName}
+                            </div>
+                            <div className="text-xs text-gray-500 mt-0.5">
+                              📍 {c.tripCount} 次出行 · ⭐ {c.feelingAvg.toFixed(1)}
+                            </div>
+                          </div>
+                        </Link>
+                      ))}
                     </div>
-                  </Link>
-                ))}
-              </div>
-            )}
+                  )}
+                </>
+              )}
+
+              {/* 热门景点榜 */}
+              {lbTab === 'place' && (
+                <>
+                  {!placeLb && <div className="p-8 text-center text-sm text-gray-400">加载中…</div>}
+                  {placeLb && placeLb.length === 0 && (
+                    <div className="p-8 text-center text-sm text-gray-400">
+                      还没有景点评分 · <Link href="/places" className="text-amber-600">去宝典打分</Link>
+                    </div>
+                  )}
+                  {placeLb && placeLb.length > 0 && (
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                      {placeLb.map((p) => (
+                        <Link
+                          key={p.placeId}
+                          href={`/place/sight/${p.placeId}`}
+                          className="flex items-center gap-3 p-3 rounded-xl hover:bg-green-50 transition border border-transparent hover:border-green-200"
+                        >
+                          <div className="w-12 h-12 rounded-full bg-gradient-to-br from-green-400 to-emerald-400 flex items-center justify-center text-white text-lg font-bold shadow-md flex-shrink-0">
+                            {p.rank}
+                          </div>
+                          <div className="flex-1 min-w-0">
+                            <div className="font-medium text-gray-900 text-sm truncate">
+                              🎯 {p.placeName}
+                            </div>
+                            <div className="text-xs text-gray-500 mt-0.5 flex items-center gap-2">
+                              <span className="text-amber-600">👩 ⭐ {p.adultAvg}</span>
+                              {p.childAvg != null && (
+                                <span className="text-green-600">👶 ⭐ {p.childAvg}</span>
+                              )}
+                              <span className="text-gray-400">· {p.reviewCount} 条</span>
+                            </div>
+                          </div>
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </>
+              )}
+
+              {/* 热门勋章榜 */}
+              {lbTab === 'badge' && (
+                <>
+                  {!badgeLb && <div className="p-8 text-center text-sm text-gray-400">加载中…</div>}
+                  {badgeLb && badgeLb.length === 0 && (
+                    <div className="p-8 text-center text-sm text-gray-400">
+                      还没有勋章解锁记录
+                    </div>
+                  )}
+                  {badgeLb && badgeLb.length > 0 && (
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
+                      {badgeLb.map((b) => (
+                        <Link
+                          key={b.badgeDefId}
+                          href="/badges"
+                          className="flex items-center gap-3 p-3 rounded-xl hover:bg-yellow-50 transition border border-transparent hover:border-yellow-200"
+                        >
+                          <div className="relative flex-shrink-0">
+                            <div className="w-12 h-12 rounded-full bg-gradient-to-br from-yellow-300 to-amber-400 flex items-center justify-center text-2xl shadow-md">
+                              {b.icon}
+                            </div>
+                          </div>
+                          <div className="flex-1 min-w-0">
+                            <div className="font-medium text-gray-900 text-sm truncate">
+                              {b.name}
+                            </div>
+                            <div className="text-xs text-gray-500 mt-0.5">
+                              🏅 {b.unlockCount} 人已解锁 · {RARITY_LABEL[b.rarity] ?? b.rarity}
+                            </div>
+                          </div>
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </>
+              )}
+            </div>
           </div>
         </section>
 
