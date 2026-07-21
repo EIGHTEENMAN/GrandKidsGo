@@ -515,6 +515,97 @@ model SpotReview {
   @@map("spot_reviews")
 }
 
+// =============================================================================
+// 宝典系统 v3.0 — 13 类亲子地点库 + 大人孩子双维度评价
+// =============================================================================
+//
+// 解决"零启动用户没内容"问题：用户先搜索/评价这些地点，沉淀真实感受数据。
+// 13 类地点：景点 / 餐厅 / 酒店 / 交通 / 医疗 / 便利店 / 公园 / 商场 / 游乐场
+//          / 科技馆 / 图书馆 / 博物馆 / 海洋馆
+//
+// 地点分类：spotCategory 枚举（10 类核心）+ 衍生类目通过 tags 标注
+// 双维度评分：成人评分（实际体验）+ 孩子评分（孩子真实感受）
+
+// 地点类型常量（业务逻辑层，不在 Prisma schema 强约束）
+// spotType:
+//   'sight'       景点
+//   'restaurant'  餐厅
+//   'hotel'       酒店
+//   'transport'   交通
+//   'medical'     医疗
+//   'convenience' 便利店
+//   'park'        公园
+//   'mall'        商场
+//   'playground'  游乐场
+//   'science'     科技馆
+//   'library'     图书馆
+//   'museum'      博物馆
+//   'aquarium'    海洋馆
+
+model PlaceReview {
+  id            String   @id @default(uuid())
+  // 关联地点（用字符串存 spotId；可以是 Spot / Restaurant / Hotel / Transport / 等任意地点类型）
+  placeId       String   @map("place_id")
+  placeType     String   @map("place_type") // 'sight' | 'restaurant' | 'hotel' | ...
+  placeName     String?  @map("place_name") // 反范式存地点名（地点删除也不影响评价历史）
+  cityId        String?  @map("city_id")
+  userId        String   @map("user_id")
+  // 双维度评分：成人 + 孩子
+  adultRating   Int      @map("adult_rating")   // 1-5 大人评分（实际体验）
+  childRating   Int?     @map("child_rating")   // 1-5 孩子评分（真实感受，可空）
+  childAgeMonths Int?    @map("child_age_months") // 评分时孩子的月龄
+  text          String?
+  tags          String[] // "无障碍" / "有停车场" / "需排队" 等
+  visitDate     DateTime? @map("visit_date")
+  // 反馈维度
+  hasParking    Boolean   @default(false) @map("has_parking")
+  hasHighChair  Boolean   @default(false) @map("has_high_chair")  // 餐厅
+  hasNapRoom    Boolean   @default(false) @map("has_nap_room")    // 母婴室
+  strollerOk    Boolean   @default(false) @map("stroller_ok")     // 婴儿车可达
+  kidFriendly   Int?      @map("kid_friendly")   // 1-5 友好度（综合）
+  status        String    @default("published") // pending | published | hidden
+  createdAt     DateTime  @default(now()) @map("created_at")
+
+  @@index([placeId, placeType])
+  @@index([cityId, createdAt(sort: Desc)])
+  @@index([userId])
+  @@index([status])
+  @@map("place_reviews")
+}
+
+// 地点浏览/搜索日志（用于热度排序）
+model PlaceViewLog {
+  id        String   @id @default(uuid())
+  placeId   String   @map("place_id")
+  placeType String   @map("place_type")
+  userId    String?  @map("user_id")
+  action    String   // 'search' | 'view' | 'save' | 'share'
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@index([placeId, placeType, createdAt(sort: Desc)])
+  @@index([action, createdAt(sort: Desc)])
+  @@map("place_view_logs")
+}
+
+// =============================================================================
+// 攻略 fork 关系（v3.0 智能攻略）
+// =============================================================================
+// 用户看到喜欢的攻略，可以一键 fork 成自己的出行计划
+model GuideFork {
+  id             String   @id @default(uuid())
+  sourceGuideId  String   @map("source_guide_id")
+  forkedByUserId String   @map("forked_by_user_id")
+  // fork 后的计划 ID
+  planRecordId   String?  @map("plan_record_id")
+  // fork 时是否做了修改
+  modified       Boolean  @default(false)
+  createdAt      DateTime @default(now()) @map("created_at")
+
+  @@index([sourceGuideId])
+  @@index([forkedByUserId, createdAt(sort: Desc)])
+  @@map("guide_forks")
+}
+
 model TravelRecord {
   id           String   @id @default(uuid())
   userId       String   @map("user_id")
