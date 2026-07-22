@@ -309,15 +309,15 @@ export default function TravelHome() {
             玩水 / 海边 / 研学 / 露营 · 上千个真实亲子地点 · 大人孩子双维度评分
           </p>
 
-          {/* 第一层：热门主题（grid 卡片） */}
+          {/* 第一层：热门主题（横滑 chip） */}
           <div className="mb-4">
-            <div className="flex items-center gap-2 mb-3">
+            <div className="flex items-center gap-2 mb-2">
               <span className="text-xs font-semibold text-gray-600 whitespace-nowrap inline-flex items-center gap-1.5">
                 <SparklesIcon size={14} className="text-blue-500" /> 热门主题
               </span>
               <div className="flex-1 h-px bg-gray-100" />
             </div>
-            <div className="grid grid-cols-5 md:grid-cols-8 lg:grid-cols-10 gap-2">
+            <div className="flex gap-2 overflow-x-auto pb-1 -mx-1 px-1">
               {[
                 { id: '玩水' }, { id: '海边' },
                 { id: '爬山' }, { id: '研学' },
@@ -326,16 +326,13 @@ export default function TravelHome() {
                 { id: '主题乐园' }, { id: '博物馆' },
                 { id: '滑雪' }, { id: '观星' },
                 { id: '漂流' }, { id: '游船' },
-              ].slice(0, 7).map((t) => (
+              ].map((t) => (
                 <Link
                   key={t.id}
                   href={`/places?tag=${encodeURIComponent(t.id)}`}
-                  className="group bg-white rounded-lg p-2.5 text-center shadow-sm hover:shadow-md transition border border-gray-100 hover:border-blue-200"
+                  className="flex-shrink-0 inline-flex items-center gap-1 px-3 py-1.5 rounded-full text-xs font-medium transition border whitespace-nowrap bg-white text-gray-700 border-gray-200 hover:border-blue-300 hover:text-blue-600"
                 >
-                  <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-blue-50 text-blue-600 mb-1.5 group-hover:bg-blue-100 transition">
-                    {TAG_SVG[t.id]}
-                  </span>
-                  <div className="text-xs font-medium text-gray-700">{t.id}</div>
+                  <span className="text-blue-500">{TAG_SVG[t.id]}</span> {t.id}
                 </Link>
               ))}
             </div>
@@ -362,27 +359,24 @@ export default function TravelHome() {
             </div>
           </div>
 
-          {/* 第三层：地点类别（grid 卡片） */}
+          {/* 第三层：地点类别（横滑 chip） */}
           <div>
-            <div className="flex items-center gap-2 mb-3">
+            <div className="flex items-center gap-2 mb-2">
               <span className="text-xs font-semibold text-gray-600 whitespace-nowrap inline-flex items-center gap-1.5">
                 <MapPinIcon size={14} className="text-blue-500" /> 地点类别
               </span>
               <div className="flex-1 h-px bg-gray-100" />
             </div>
-            <div className="grid grid-cols-5 md:grid-cols-8 lg:grid-cols-10 gap-2">
+            <div className="flex gap-2 overflow-x-auto pb-1 -mx-1 px-1">
               {PLACE_CATEGORIES.slice(0, 7).map((c) => {
                 const Icon = c.Icon;
                 return (
                   <Link
                     key={c.key}
                     href={`/places?category=${c.key}`}
-                    className="group bg-white rounded-lg p-2.5 text-center shadow-sm hover:shadow-md transition border border-gray-100 hover:border-blue-200"
+                    className="flex-shrink-0 inline-flex items-center gap-1 px-3 py-1.5 rounded-full text-xs font-medium transition border whitespace-nowrap bg-white text-gray-700 border-gray-200 hover:border-blue-300 hover:text-blue-600"
                   >
-                    <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-blue-50 text-blue-600 mb-1.5 group-hover:bg-blue-100 transition">
-                      <Icon size={16} />
-                    </span>
-                    <div className="text-xs font-medium text-gray-700">{c.label}</div>
+                    <span className="text-blue-500"><Icon size={12} /></span> {c.label}
                   </Link>
                 );
               })}
