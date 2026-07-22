@@ -74,6 +74,56 @@ const CHIP_CLASS = "flex-shrink-0 inline-flex items-center gap-1 px-3 py-1.5 rou
 const CHIP_BASE = `${CHIP_CLASS} bg-white text-gray-700 border-gray-200 hover:border-blue-300 hover:text-blue-600`;
 const CHIP_ACTIVE = `${CHIP_CLASS} bg-gradient-to-r from-blue-500 to-cyan-500 text-white border-blue-500 shadow-sm`;
 
+// 1 行 12 个热门亲子城市（一二线 + 强亲子）
+const TOP_CITIES = ['北京', '上海', '广州', '深圳', '成都', '杭州', '西安', '南京', '厦门', '苏州', '重庆', '武汉'];
+
+// 拼音首字母映射（51 个城市全覆盖；查不到走 'Z' 兜底）
+const PINYIN_LETTER: Record<string, string> = {
+  // B
+  '北京': 'B', '北戴河': 'B',
+  // C
+  '成都': 'C', '重庆': 'C', '长沙': 'C', '长春': 'C',
+  // D
+  '大连': 'D', '东莞': 'D', '大理': 'D',
+  // E
+  '峨眉山': 'E',
+  // F
+  '福州': 'F', '佛山': 'F',
+  // G
+  '广州': 'G',
+  // H
+  '杭州': 'H', '合肥': 'H', '海口': 'H', '哈尔滨': 'H', '黄山': 'H',
+  // J
+  '济南': 'J',
+  // K
+  '昆明': 'K', '开封': 'K',
+  // L
+  '丽江': 'L', '兰州': 'L', '拉萨': 'L', '洛阳': 'L',
+  // N
+  '南京': 'N', '南宁': 'N', '南昌': 'N', '宁波': 'N',
+  // Q
+  '青岛': 'Q', '秦皇岛': 'Q',
+  // S
+  '上海': 'S', '深圳': 'S', '苏州': 'S', '三亚': 'S',
+  '沈阳': 'S', '汕头': 'S', '石家庄': 'S',
+  // T
+  '天津': 'T', '太原': 'T', '台北': 'T',
+  // W
+  '武汉': 'W', '温州': 'W',
+  // X
+  '西安': 'X', '厦门': 'X', '西双版纳': 'X', '西宁': 'X', '香港': 'X',
+  // Y
+  '宜昌': 'Y',
+  // Z
+  '郑州': 'Z', '珠海': 'Z',
+};
+function getPinyinLetter(name: string): string {
+  // 英文开头直接取
+  if (/[A-Za-z]/.test(name[0])) return name[0].toUpperCase();
+  // 中文查映射表
+  return PINYIN_LETTER[name] ?? 'Z';
+}
+
 // 类别 icon SVG 映射（卡片无封面时的兜底）
 function CategoryIcon({ type, className }: { type: string; className?: string }) {
   const cat = PLACE_CATEGORIES.find((c) => c.key === type);
@@ -257,8 +307,8 @@ function PlacesContent() {
               >
                 <CloseIcon size={12} /> 全部
               </button>
-              {/* 一二线城市硬编码（1 行 9 个） */}
-              {['北京', '上海', '广州', '深圳', '成都', '杭州', '西安', '南京', '厦门'].map((name) => {
+              {/* 1 行 12 个一二线热门亲子城市 */}
+              {TOP_CITIES.map((name) => {
                 const city = cities.find((c) => c.name === name);
                 if (!city) return null;
                 const active = cityId === city.id;
@@ -286,18 +336,18 @@ function PlacesContent() {
                       className="flex-1 text-sm border-0 focus:outline-none"
                     />
                   </div>
-                  {/* 按首字母分组 */}
+                  {/* 按拼音首字母 A-Z 分组 */}
                   <div className="space-y-3">
                     {Object.entries(
                       cities
                         .filter((c) => c.name.includes(cityQuery))
                         .reduce((groups: Record<string, typeof cities>, c) => {
-                          const letter = /[A-Za-z]/.test(c.name[0]) ? c.name[0].toUpperCase() : '#';
+                          const letter = getPinyinLetter(c.name);
                           (groups[letter] ||= []).push(c);
                           return groups;
                         }, {})
                     )
-                      .sort(([a], [b]) => (a === '#' ? 1 : b === '#' ? -1 : a.localeCompare(b)))
+                      .sort(([a], [b]) => a.localeCompare(b))
                       .map(([letter, group]) => (
                         <div key={letter}>
                           <div className="text-xs font-bold text-blue-600 mb-1.5">{letter}</div>
