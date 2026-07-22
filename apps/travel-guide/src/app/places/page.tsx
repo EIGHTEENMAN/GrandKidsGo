@@ -235,7 +235,7 @@ function PlacesContent() {
           </div>
         </div>
 
-        {/* 城市筛选 — 2 行 grid + 更多城市下拉 */}
+        {/* 城市筛选 — 2 行 chip + 更多城市按首字母下拉 */}
         {cities.length > 0 && (
           <div className="mb-4">
             <div className="flex items-center gap-2 mb-2">
@@ -243,16 +243,21 @@ function PlacesContent() {
                 <CityIcon size={14} className="text-blue-500" /> 城市
               </span>
               <div className="flex-1 h-px bg-gray-100" />
+              {cities.length > 19 && (
+                <button
+                  onClick={() => setCityPopoverOpen((v) => !v)}
+                  className="inline-flex items-center gap-1 text-xs text-blue-600 hover:text-blue-700 font-medium whitespace-nowrap"
+                >
+                  更多城市 <ChevronDown size={12} />
+                </button>
+              )}
             </div>
-            <div className="grid grid-cols-5 md:grid-cols-8 lg:grid-cols-10 gap-2">
+            <div className="flex gap-2 flex-wrap">
               <button
                 onClick={() => setCityId('')}
-                className={!cityId ? CARD_ACTIVE_CLASS : CARD_CLASS}
+                className={!cityId ? CHIP_ACTIVE : CHIP_BASE}
               >
-                <span className={`inline-flex items-center justify-center w-7 h-7 rounded-full mb-1 transition ${!cityId ? 'bg-white/20' : 'bg-blue-50 group-hover:bg-blue-100'}`}>
-                  <CityIcon size={14} className={!cityId ? 'text-white' : 'text-blue-600'} />
-                </span>
-                <div className="text-xs font-medium">全部</div>
+                <CloseIcon size={12} /> 全部
               </button>
               {cities.slice(0, 19).map((c) => {
                 const active = cityId === c.id;
@@ -260,43 +265,43 @@ function PlacesContent() {
                   <button
                     key={c.id}
                     onClick={() => setCityId(active ? '' : c.id)}
-                    className={active ? CARD_ACTIVE_CLASS : CARD_CLASS}
+                    className={active ? CHIP_ACTIVE : CHIP_BASE}
                   >
-                    <span className={`inline-flex items-center justify-center w-7 h-7 rounded-full mb-1 transition ${active ? 'bg-white/20' : 'bg-blue-50 group-hover:bg-blue-100'}`}>
-                      <CityIcon size={14} className={active ? 'text-white' : 'text-blue-600'} />
-                    </span>
-                    <div className="text-xs font-medium">{c.name}</div>
+                    {c.name}
                   </button>
                 );
               })}
-              {cities.length > 19 && (
-                <div className="relative">
-                  <button
-                    onClick={() => setCityPopoverOpen((v) => !v)}
-                    className="w-full bg-white rounded-lg p-2 text-center shadow-sm hover:shadow-md transition border border-gray-100 hover:border-blue-200 text-blue-600"
-                  >
-                    <span className="inline-flex items-center justify-center w-7 h-7 rounded-full mb-1 bg-blue-50 group-hover:bg-blue-100 transition">
-                      <ChevronDown size={14} />
-                    </span>
-                    <div className="text-xs font-medium">更多</div>
-                  </button>
-                  {cityPopoverOpen && (
-                    <>
-                      <div className="fixed inset-0 z-30" onClick={() => setCityPopoverOpen(false)} />
-                      <div className="absolute right-0 top-full mt-1 z-40 w-64 bg-white rounded-xl shadow-lg border border-gray-100 p-3">
-                        <div className="flex items-center gap-2 mb-2 pb-2 border-b border-gray-100">
-                          <SearchIcon size={14} className="text-blue-500" />
-                          <input
-                            value={cityQuery}
-                            onChange={(e) => setCityQuery(e.target.value)}
-                            placeholder="搜索城市..."
-                            className="flex-1 text-xs border-0 focus:outline-none"
-                          />
-                        </div>
-                        <div className="max-h-60 overflow-y-auto flex flex-wrap gap-1.5">
-                          {cities
-                            .filter((c) => c.name.includes(cityQuery))
-                            .map((c) => {
+            </div>
+            {cityPopoverOpen && (
+              <>
+                <div className="fixed inset-0 z-30" onClick={() => setCityPopoverOpen(false)} />
+                <div className="relative z-40 mt-2 bg-white rounded-xl shadow-lg border border-gray-100 p-4 max-h-96 overflow-y-auto">
+                  <div className="flex items-center gap-2 mb-3 pb-2 border-b border-gray-100">
+                    <SearchIcon size={14} className="text-blue-500" />
+                    <input
+                      value={cityQuery}
+                      onChange={(e) => setCityQuery(e.target.value)}
+                      placeholder="搜索城市..."
+                      className="flex-1 text-sm border-0 focus:outline-none"
+                    />
+                  </div>
+                  {/* 按首字母分组 */}
+                  <div className="space-y-3">
+                    {Object.entries(
+                      cities
+                        .filter((c) => c.name.includes(cityQuery))
+                        .reduce((groups: Record<string, typeof cities>, c) => {
+                          const letter = /[A-Za-z]/.test(c.name[0]) ? c.name[0].toUpperCase() : '#';
+                          (groups[letter] ||= []).push(c);
+                          return groups;
+                        }, {})
+                    )
+                      .sort(([a], [b]) => (a === '#' ? 1 : b === '#' ? -1 : a.localeCompare(b)))
+                      .map(([letter, group]) => (
+                        <div key={letter}>
+                          <div className="text-xs font-bold text-blue-600 mb-1.5">{letter}</div>
+                          <div className="flex flex-wrap gap-1.5">
+                            {group.map((c) => {
                               const active = cityId === c.id;
                               return (
                                 <button
@@ -308,13 +313,13 @@ function PlacesContent() {
                                 </button>
                               );
                             })}
+                          </div>
                         </div>
-                      </div>
-                    </>
-                  )}
+                      ))}
+                  </div>
                 </div>
-              )}
-            </div>
+              </>
+            )}
           </div>
         )}
 
