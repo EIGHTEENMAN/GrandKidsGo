@@ -16,7 +16,7 @@ export default function AboutPage() {
         </div>
       </header>
 
-      <article className="max-w-3xl mx-auto px-6 py-12">
+      <article className="max-w-6xl mx-auto px-6 py-12">
         <div className="bg-white rounded-2xl shadow-sm p-8 md:p-12 leading-relaxed text-gray-800">
           <p className="text-lg mb-6 font-medium text-gray-900">
             童慧行走天下是一个专为亲子家庭打造的旅行攻略平台。
@@ -49,7 +49,7 @@ export default function AboutPage() {
             从海边挖沙到草原追星，从博物馆探宝到山野徒步，每一次出行都有真实的经验可循。因为我们深知，好的亲子旅行，不是去了多远的地方，而是孩子笑了，一家人就都笑了。
           </p>
 
-          <p className="text-2xl font-extrabold text-green-700 text-center py-6 border-t border-b border-green-100">
+          <p className="text-2xl font-extrabold text-blue-700 text-center py-6 border-t border-b border-blue-100">
             童慧行走天下，孩子说好才是真的好。
           </p>
         </div>
