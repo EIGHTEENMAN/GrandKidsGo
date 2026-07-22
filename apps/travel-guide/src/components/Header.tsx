@@ -85,14 +85,14 @@ export default function Header() {
   return (
     <>
       <header className="sticky top-0 z-50 bg-white shadow-sm border-b">
-        <div className="max-w-7xl mx-auto px-4 h-14 flex items-center gap-4">
+        <div className="max-w-6xl mx-auto px-6 h-14 flex items-center gap-4">
           {/* Logo */}
           <Link
             href="/"
             className="text-[32px] font-extrabold text-green-600 leading-none whitespace-nowrap flex-shrink-0"
             style={{ fontWeight: 800 }}
           >
-            童慧行走天下
+            走天下
           </Link>
 
           {/* 导航 */}
