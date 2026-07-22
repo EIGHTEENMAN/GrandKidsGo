@@ -59,18 +59,18 @@ export default function GuidesPage() {
   };
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-green-50 to-white">
-      <header className="bg-gradient-to-r from-green-600 to-emerald-600 text-white">
-        <div className="max-w-6xl mx-auto px-6 py-8">
-          <Link href="/" className="text-green-100 text-sm hover:text-white">← 返回首页</Link>
-          <h1 className="text-3xl md:text-4xl font-extrabold mt-2">📖 别人家怎么玩的</h1>
-          <p className="text-green-100 mt-1">真实妈妈的亲子旅行 · 看到喜欢的可以一键做成自己的计划</p>
-          <div className="mt-4 flex gap-3">
+    <main className="min-h-screen bg-gradient-to-b from-blue-50 via-white to-cyan-50">
+      <header className="bg-gradient-to-r from-blue-600 via-cyan-600 to-teal-600 text-white">
+        <div className="max-w-6xl mx-auto px-6 py-10">
+          <Link href="/" className="text-blue-100 text-sm hover:text-white">← 返回首页</Link>
+          <h1 className="text-3xl md:text-4xl font-extrabold mt-3">别人家怎么玩的</h1>
+          <p className="text-blue-100 mt-2 text-sm md:text-base">真实妈妈的亲子旅行 · 看到喜欢的可以一键做成自己的计划</p>
+          <div className="mt-5 flex gap-3">
             <Link
               href="/wizard"
-              className="px-5 py-2 bg-white text-green-700 font-semibold rounded-full text-sm hover:bg-green-50 transition shadow-md"
+              className="px-5 py-2.5 bg-white text-blue-700 font-semibold rounded-full text-sm hover:bg-blue-50 transition shadow-md"
             >
-              🪄 不想 fork？重新生成
+              不想 fork？重新生成
             </Link>
           </div>
         </div>

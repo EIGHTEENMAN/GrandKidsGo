@@ -104,12 +104,12 @@ function PlacesContent() {
   }, [q, category, cityId, tag]);
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-amber-50 to-white">
-      <header className="bg-gradient-to-r from-amber-500 to-orange-500 text-white">
-        <div className="max-w-6xl mx-auto px-6 py-8">
-          <Link href="/" className="text-amber-100 text-sm hover:text-white">← 返回首页</Link>
-          <h1 className="text-3xl md:text-4xl font-extrabold mt-2">📚 走遍宝宝的世界</h1>
-          <p className="text-amber-100 mt-1">13 类亲子地点 · 大人孩子双维度评分 · 看真实评价再决定</p>
+    <main className="min-h-screen bg-gradient-to-b from-blue-50 via-white to-cyan-50">
+      <header className="bg-gradient-to-r from-blue-600 via-cyan-600 to-teal-600 text-white">
+        <div className="max-w-6xl mx-auto px-6 py-10">
+          <Link href="/" className="text-blue-100 text-sm hover:text-white">← 返回首页</Link>
+          <h1 className="text-3xl md:text-4xl font-extrabold mt-3">走遍宝宝的世界</h1>
+          <p className="text-blue-100 mt-2 text-sm md:text-base">13 类亲子地点 · 大人孩子双维度评分 · 看真实评价再决定</p>
         </div>
       </header>
 
