@@ -1,32 +1,59 @@
-// 走天下首页 - PC 端（v3.2 上下板块 + 小红书瀑布流）
-// 详见 项目建设方案/走天下实施方案-v3.2.md
+// 走天下首页 - PC 端（v4.0 全站 UI 优化）
+// 详见 项目建设方案/走天下实施方案-v4.0.md
 //
-// v3.2 调整：
-// - Hero 仍是可滑动图片相册
-// - 三板块上下排列（不是并排）
-// - 热门攻略改成小红书瀑布流（大图卡片）
+// v4.0 调整（基于用户提供的设计图）：
+// - 配色：浅蓝→青色 渐变（from-blue-400 via-cyan-500 to-teal-500）
+// - 图标：全部用 SVG（替换 emoji）
+// - 智能攻略板块：保持原状不动
+// - 其他板块：套用蓝青配色 + 真实 SVG 图标
 
 'use client';
 
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
+import {
+  BookIcon, CityIcon, MapPinIcon, GuidebookIcon, SparklesIcon,
+  TrophyIcon, AwardIcon, ForkIcon,
+  BeachIcon, MountainIcon, WaterIcon, LeafIcon, ParkIcon, CampIcon,
+  SearchIcon, ClockIcon, StarIcon, UserIcon,
+  FireIcon, HandPointUpIcon, PlaneIcon,
+  CrownIcon, MedalIcon, ThumbsUpIcon, BabyIcon,
+} from '@/components/Icons';
 
 const TRAVEL_API = (process.env.NEXT_PUBLIC_TRAVEL_API as string) || 'https://travel.grandand.com';
 
+// SVG 标签（替代 emoji 字典）
+const TAG_SVG: Record<string, JSX.Element> = {
+  '玩水': <WaterIcon size={14} />,
+  '海边': <BeachIcon size={14} />,
+  '爬山': <MountainIcon size={14} />,
+  '研学': <BookIcon size={14} />,
+  '动物': <SparklesIcon size={14} />,
+  '采摘': <LeafIcon size={14} />,
+  '露营': <CampIcon size={14} />,
+  '历史': <BookIcon size={14} />,
+  '主题乐园': <SparklesIcon size={14} />,
+  '博物馆': <BookIcon size={14} />,
+  '滑雪': <MountainIcon size={14} />,
+  '观星': <StarIcon size={14} />,
+  '漂流': <WaterIcon size={14} />,
+  '游船': <WaterIcon size={14} />,
+};
+
 const PLACE_CATEGORIES = [
-  { key: 'sight', emoji: '🏛️', label: '景点' },
-  { key: 'restaurant', emoji: '🍽️', label: '餐厅' },
-  { key: 'hotel', emoji: '🏨', label: '酒店' },
-  { key: 'park', emoji: '🌳', label: '公园' },
-  { key: 'playground', emoji: '🎠', label: '游乐场' },
-  { key: 'museum', emoji: '🏛️', label: '博物馆' },
-  { key: 'science', emoji: '🔬', label: '科技馆' },
-  { key: 'library', emoji: '📚', label: '图书馆' },
-  { key: 'aquarium', emoji: '🐠', label: '海洋馆' },
-  { key: 'mall', emoji: '🛍️', label: '商场' },
-  { key: 'medical', emoji: '🏥', label: '医疗' },
-  { key: 'transport', emoji: '🚇', label: '交通' },
-  { key: 'convenience', emoji: '🏪', label: '便利店' },
+  { key: 'sight', label: '景点', Icon: MapPinIcon },
+  { key: 'restaurant', label: '餐厅', Icon: BookIcon },
+  { key: 'hotel', label: '酒店', Icon: CityIcon },
+  { key: 'park', label: '公园', Icon: ParkIcon },
+  { key: 'playground', label: '游乐场', Icon: SparklesIcon },
+  { key: 'museum', label: '博物馆', Icon: BookIcon },
+  { key: 'science', label: '科技馆', Icon: SparklesIcon },
+  { key: 'library', label: '图书馆', Icon: BookIcon },
+  { key: 'aquarium', label: '海洋馆', Icon: WaterIcon },
+  { key: 'mall', label: '商场', Icon: CityIcon },
+  { key: 'medical', label: '医疗', Icon: BookIcon },
+  { key: 'transport', label: '交通', Icon: CityIcon },
+  { key: 'convenience', label: '便利店', Icon: CityIcon },
 ];
 
 interface Guide {
@@ -139,7 +166,6 @@ const CAROUSEL_SLIDES = [
 const MASONRY_HEIGHTS = ['h-64', 'h-80', 'h-72', 'h-60', 'h-72', 'h-64', 'h-80', 'h-60'];
 
 export default function TravelHome() {
-  const [guides, setGuides] = useState<Guide[]>([]);
   const [hotGuides, setHotGuides] = useState<Guide[]>([]);
   const [topUsers, setTopUsers] = useState<LeaderboardEntry[]>([]);
   const [cityLb, setCityLb] = useState<CityLbEntry[]>([]);
@@ -166,7 +192,6 @@ export default function TravelHome() {
     ])
       .then(([feedData, lbData, cityData, placeData, badgeData]) => {
         const allGuides: Guide[] = feedData.items ?? [];
-        setGuides(allGuides);
         // 热门攻略：按 like + save 排序，取 12 个瀑布用
         setHotGuides(
           [...allGuides].sort((a, b) => (b.stats.like + b.stats.save * 2) - (a.stats.like + a.stats.save * 2)).slice(0, 12),
@@ -183,7 +208,7 @@ export default function TravelHome() {
   const slide = CAROUSEL_SLIDES[carouselIdx];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-green-50 via-white to-amber-50">
+    <div className="min-h-screen bg-gradient-to-b from-blue-50 via-white to-cyan-50">
       {/* ===== Hero 轮播相册（真实亲子照片 + 右侧文字） ===== */}
       <header className="relative h-[480px] md:h-[560px] overflow-hidden bg-gray-100">
         {/* 真实照片 */}
@@ -207,8 +232,8 @@ export default function TravelHome() {
           <div className="text-right px-8 md:px-16 max-w-2xl mr-4 md:mr-12">
             {/* eyebrow chip - 单行不换行 */}
             <div className="inline-block mb-4">
-              <span className="inline-block whitespace-nowrap px-4 py-1.5 bg-white/90 backdrop-blur-sm rounded-full text-sm font-medium text-gray-700 shadow-md">
-                ✈️ {slide.eyebrow}
+              <span className="inline-flex items-center gap-1.5 whitespace-nowrap px-4 py-1.5 bg-white/90 backdrop-blur-sm rounded-full text-sm font-medium text-gray-700 shadow-md">
+                <PlaneIcon size={14} className="text-blue-600" /> {slide.eyebrow}
               </span>
             </div>
             {/* 标题 — 故意分两行，避免自动断行难看 */}
@@ -269,7 +294,8 @@ export default function TravelHome() {
         <section className="mb-16">
           <div className="flex items-center justify-between mb-4">
             <h2 className="text-2xl font-bold text-gray-900 flex items-center gap-2">
-              📚 亲子宝典
+              <span className="text-blue-600"><BookIcon size={26} /></span>
+              亲子宝典
               <span className="text-sm font-normal text-gray-500">先选主题，再选城市，找到你想去的地方</span>
             </h2>
             <Link href="/places" className="text-green-600 hover:text-green-700 text-sm font-medium">
@@ -283,26 +309,26 @@ export default function TravelHome() {
           {/* 第一层：热门主题 chip（横滑） */}
           <div className="mb-5">
             <div className="flex items-center gap-2 mb-2">
-              <span className="text-xs font-semibold text-gray-600 whitespace-nowrap">🏷️ 热门主题</span>
+              <span className="text-xs font-semibold text-gray-600 whitespace-nowrap"><span className="flex items-center gap-1.5"><SparklesIcon size={14} className="text-blue-500" /> 热门主题</span></span>
               <div className="flex-1 h-px bg-gray-100" />
               <Link href="/places" className="text-xs text-gray-500 hover:text-gray-700 whitespace-nowrap">全部 →</Link>
             </div>
             <div className="flex gap-2 overflow-x-auto pb-2 -mx-1 px-1">
               {[
-                { id: '玩水', emoji: '💦' }, { id: '海边', emoji: '🏖️' },
-                { id: '爬山', emoji: '⛰️' }, { id: '研学', emoji: '📖' },
-                { id: '动物', emoji: '🦁' }, { id: '采摘', emoji: '🍎' },
-                { id: '露营', emoji: '🏕️' }, { id: '历史', emoji: '🏛️' },
-                { id: '主题乐园', emoji: '🎡' }, { id: '博物馆', emoji: '🏛️' },
-                { id: '滑雪', emoji: '⛷️' }, { id: '观星', emoji: '🌌' },
-                { id: '漂流', emoji: '🛶' }, { id: '游船', emoji: '⛵' },
+                { id: '玩水' }, { id: '海边' },
+                { id: '爬山' }, { id: '研学' },
+                { id: '动物' }, { id: '采摘' },
+                { id: '露营' }, { id: '历史' },
+                { id: '主题乐园' }, { id: '博物馆' },
+                { id: '滑雪' }, { id: '观星' },
+                { id: '漂流' }, { id: '游船' },
               ].map((t) => (
                 <Link
                   key={t.id}
                   href={`/places?tag=${encodeURIComponent(t.id)}`}
                   className="flex-shrink-0 px-4 py-2 bg-gradient-to-r from-green-50 to-emerald-50 hover:from-green-100 hover:to-emerald-100 rounded-full text-sm font-medium text-gray-700 border border-green-200 transition whitespace-nowrap"
                 >
-                  {t.emoji} {t.id}
+                  <span className="text-blue-600">{TAG_SVG[t.id]}</span> {t.id}
                 </Link>
               ))}
             </div>
@@ -311,7 +337,7 @@ export default function TravelHome() {
           {/* 第二层：热门城市 */}
           <div className="mb-5">
             <div className="flex items-center gap-2 mb-2">
-              <span className="text-xs font-semibold text-gray-600 whitespace-nowrap">📍 热门城市</span>
+              <span className="text-xs font-semibold text-gray-600 whitespace-nowrap"><span className="flex items-center gap-1.5"><CityIcon size={14} className="text-blue-500" /> 热门城市</span></span>
               <div className="flex-1 h-px bg-gray-100" />
               <Link href="/places" className="text-xs text-gray-500 hover:text-gray-700 whitespace-nowrap">全部 →</Link>
             </div>
@@ -331,20 +357,23 @@ export default function TravelHome() {
           {/* 第三层：地点类别 */}
           <div>
             <div className="flex items-center gap-2 mb-2">
-              <span className="text-xs font-semibold text-gray-600 whitespace-nowrap">📋 地点类别</span>
+              <span className="text-xs font-semibold text-gray-600 whitespace-nowrap"><span className="flex items-center gap-1.5"><MapPinIcon size={14} className="text-blue-500" /> 地点类别</span></span>
               <div className="flex-1 h-px bg-gray-100" />
             </div>
             <div className="grid grid-cols-4 md:grid-cols-7 gap-3">
-              {PLACE_CATEGORIES.slice(0, 7).map((c) => (
-                <Link
-                  key={c.key}
-                  href={`/places?category=${c.key}`}
-                  className="bg-white rounded-xl p-4 text-center shadow-sm hover:shadow-md transition border border-gray-100"
-                >
-                  <div className="text-3xl mb-1">{c.emoji}</div>
-                  <div className="text-sm font-medium text-gray-700">{c.label}</div>
-                </Link>
-              ))}
+              {PLACE_CATEGORIES.slice(0, 7).map((c) => {
+                const Icon = c.Icon;
+                return (
+                  <Link
+                    key={c.key}
+                    href={`/places?category=${c.key}`}
+                    className="bg-white rounded-xl p-4 text-center shadow-sm hover:shadow-md transition border border-gray-100"
+                  >
+                    <Icon size={28} className="mx-auto text-blue-600" />
+                    <div className="text-sm font-medium text-gray-700">{c.label}</div>
+                  </Link>
+                );
+              })}
             </div>
           </div>
         </section>
@@ -353,7 +382,8 @@ export default function TravelHome() {
         <section className="mb-16">
           <div className="flex items-center justify-between mb-6">
             <h2 className="text-2xl font-bold text-gray-900 flex items-center gap-2">
-              🔥 热门攻略
+              <span className="text-blue-600"><FireIcon size={26} /></span>
+              热门攻略
               <span className="text-sm font-normal text-gray-500">本周点赞收藏最多的真实旅行</span>
             </h2>
             <Link href="/guides" className="text-orange-600 hover:text-orange-700 text-sm font-medium">
@@ -367,7 +397,9 @@ export default function TravelHome() {
 
           {loaded && hotGuides.length === 0 && (
             <div className="bg-white rounded-2xl p-12 text-center border border-dashed border-gray-200">
-              <div className="text-4xl mb-3">📝</div>
+              <div className="w-14 h-14 mx-auto mb-3 rounded-full bg-blue-50 flex items-center justify-center">
+                <GuidebookIcon size={28} className="text-blue-500" />
+              </div>
               <div className="text-gray-500 mb-1">还没有发布的攻略</div>
               <div className="text-sm text-gray-400">
                 妈妈完成一次出行 + 发布一篇攻略，就会出现在这里
@@ -399,27 +431,29 @@ export default function TravelHome() {
                       />
                     ) : (
                       <div className={`w-full h-full ${coverGradient} flex items-center justify-center relative`}>
-                        <span className="text-6xl opacity-50">🗺️</span>
+                        <MapPinIcon size={56} className="opacity-50 text-white" />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
                       </div>
                     )}
                     {/* 标签 */}
                     <div className="absolute top-3 left-3 flex flex-col gap-1.5">
                       {g.cityName && (
-                        <span className="px-2.5 py-1 bg-white/90 backdrop-blur-sm rounded-full text-xs font-medium text-gray-700 shadow-sm">
-                          📍 {g.cityName}
+                        <span className="inline-flex items-center gap-1 px-2.5 py-1 bg-white/90 backdrop-blur-sm rounded-full text-xs font-medium text-gray-700 shadow-sm">
+                          <MapPinIcon size={12} className="text-blue-600" /> {g.cityName}
                         </span>
                       )}
                       {g.days && (
-                        <span className="px-2.5 py-1 bg-black/40 backdrop-blur-sm text-white rounded-full text-xs font-medium">
-                          {g.days} 天
+                        <span className="inline-flex items-center gap-1 px-2.5 py-1 bg-black/40 backdrop-blur-sm text-white rounded-full text-xs font-medium">
+                          <ClockIcon size={12} /> {g.days} 天
                         </span>
                       )}
                     </div>
                     {/* 底部渐变 + 标题 */}
                     <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 via-black/40 to-transparent">
                       {isFeatured && (
-                        <div className="text-xs text-yellow-300 font-bold mb-1">⭐ 本周最热</div>
+                        <div className="inline-flex items-center gap-1 text-xs text-yellow-300 font-bold mb-1">
+                          <FireIcon size={12} /> 本周最热
+                        </div>
                       )}
                       <h3 className={`font-bold text-white line-clamp-2 ${isFeatured ? 'text-lg' : 'text-sm'}`}>
                         {g.title}
@@ -429,13 +463,13 @@ export default function TravelHome() {
                   <div className="p-3">
                     <div className="flex items-center justify-between text-xs">
                       <span className="flex items-center gap-1 text-gray-600 truncate">
-                        <span className="w-5 h-5 rounded-full bg-gradient-to-br from-pink-400 to-red-400 flex items-center justify-center text-white text-[10px] flex-shrink-0">
+                        <span className="w-5 h-5 rounded-full bg-gradient-to-br from-blue-400 to-cyan-400 flex items-center justify-center text-white text-[10px] flex-shrink-0">
                           {g.author.nickname?.[0] ?? '?'}
                         </span>
                         <span className="truncate">{g.author.nickname}</span>
                       </span>
-                      <span className="text-gray-400 whitespace-nowrap">
-                        👍 {g.stats.like}
+                      <span className="inline-flex items-center gap-1 text-gray-400 whitespace-nowrap">
+                        <ThumbsUpIcon size={12} /> {g.stats.like}
                       </span>
                     </div>
                   </div>
@@ -449,7 +483,8 @@ export default function TravelHome() {
         <section className="mb-16">
           <div className="flex items-center justify-between mb-6">
             <h2 className="text-2xl font-bold text-gray-900 flex items-center gap-2">
-              🏆 排行榜
+              <span className="text-blue-600"><TrophyIcon size={26} /></span>
+              排行榜
               <span className="text-sm font-normal text-gray-500">看看妈妈们带娃玩过的好地方</span>
             </h2>
             <Link href="/leaderboard" className="text-amber-600 hover:text-amber-700 text-sm font-medium">
@@ -458,27 +493,33 @@ export default function TravelHome() {
           </div>
 
           {/* Tab 切换 */}
-          <div className="bg-white rounded-2xl shadow-sm overflow-hidden border border-amber-100">
+          <div className="bg-white rounded-2xl shadow-sm overflow-hidden border border-blue-100">
             <div className="flex border-b border-gray-100 overflow-x-auto">
               {[
-                { k: 'mom', l: '👩 妈妈榜', d: '按真实感受分排序' },
-                { k: 'city', l: '🏙️ 热门城市', d: '妈妈们最爱去' },
-                { k: 'place', l: '🎯 热门景点', d: '孩子评分最高' },
-                { k: 'badge', l: '🏅 热门勋章', d: '大家都在解锁' },
-              ].map((t) => (
-                <button
-                  key={t.k}
-                  onClick={() => setLbTab(t.k as any)}
-                  className={`flex-1 min-w-[120px] px-4 py-3 text-sm font-medium transition whitespace-nowrap ${
-                    lbTab === t.k
-                      ? 'bg-amber-50 text-amber-700 border-b-2 border-amber-500'
-                      : 'text-gray-500 hover:text-gray-700 hover:bg-gray-50'
-                  }`}
-                >
-                  <div className="font-bold">{t.l}</div>
-                  <div className="text-xs text-gray-400 mt-0.5">{t.d}</div>
-                </button>
-              ))}
+                { k: 'mom', l: '妈妈榜', d: '按真实感受分排序', Icon: UserIcon },
+                { k: 'city', l: '热门城市', d: '妈妈们最爱去', Icon: CityIcon },
+                { k: 'place', l: '热门景点', d: '孩子评分最高', Icon: MapPinIcon },
+                { k: 'badge', l: '热门勋章', d: '大家都在解锁', Icon: AwardIcon },
+              ].map((t) => {
+                const Icon = t.Icon;
+                return (
+                  <button
+                    key={t.k}
+                    onClick={() => setLbTab(t.k as any)}
+                    className={`flex-1 min-w-[120px] px-4 py-3 text-sm font-medium transition whitespace-nowrap ${
+                      lbTab === t.k
+                        ? 'bg-blue-50 text-blue-700 border-b-2 border-blue-500'
+                        : 'text-gray-500 hover:text-gray-700 hover:bg-gray-50'
+                    }`}
+                  >
+                    <div className="flex items-center justify-center gap-1.5 font-bold">
+                      <Icon size={16} className={lbTab === t.k ? 'text-blue-600' : 'text-gray-400'} />
+                      {t.l}
+                    </div>
+                    <div className="text-xs text-gray-400 mt-0.5">{t.d}</div>
+                  </button>
+                );
+              })}
             </div>
 
             <div className="p-4">
@@ -495,15 +536,15 @@ export default function TravelHome() {
                         <Link
                           key={u.userId}
                           href="/leaderboard"
-                          className="flex items-center gap-3 p-3 rounded-xl hover:bg-amber-50 transition border border-transparent hover:border-amber-200"
+                          className="flex items-center gap-3 p-3 rounded-xl hover:bg-blue-50 transition border border-transparent hover:border-blue-200"
                         >
                           <div className="relative flex-shrink-0">
-                            <div className="w-12 h-12 rounded-full bg-gradient-to-br from-amber-300 to-orange-400 flex items-center justify-center text-white text-lg font-bold shadow-md">
+                            <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-400 to-cyan-400 flex items-center justify-center text-white text-lg font-bold shadow-md">
                               {i + 1}
                             </div>
                             {i < 3 && (
-                              <span className="absolute -top-1 -right-1 text-xs">
-                                {i === 0 ? '👑' : i === 1 ? '🥈' : '🥉'}
+                              <span className="absolute -top-1 -right-1 inline-flex items-center justify-center w-5 h-5 rounded-full bg-white shadow text-amber-500">
+                                {i === 0 ? <CrownIcon size={12} className="text-amber-500" /> : i === 1 ? <MedalIcon size={12} className="text-slate-400" /> : <MedalIcon size={12} className="text-orange-500" />}
                               </span>
                             )}
                           </div>
@@ -512,7 +553,7 @@ export default function TravelHome() {
                               {u.childLabel || u.nickname || '匿名妈妈'}
                             </div>
                             <div className="text-xs text-gray-500 mt-0.5">
-                              ⭐ {u.feelingScoreAvg.toFixed(1)} · 🏅 {u.badgeCount} · 📖 {u.guideCount}
+                              <span className="flex items-center gap-1"><StarIcon size={12} className="text-amber-500 inline" />{u.feelingScoreAvg.toFixed(1)}</span> · <span className="flex items-center gap-1"><AwardIcon size={12} className="inline" />{u.badgeCount}</span> · <span className="flex items-center gap-1"><GuidebookIcon size={12} className="inline" />{u.guideCount}</span>
                             </div>
                           </div>
                         </Link>
@@ -541,11 +582,12 @@ export default function TravelHome() {
                             {i + 1}
                           </div>
                           <div className="flex-1 min-w-0">
-                            <div className="font-medium text-gray-900 text-sm truncate">
-                              🏙️ {c.cityName}
+                            <div className="font-medium text-gray-900 text-sm truncate flex items-center gap-1">
+                              <CityIcon size={14} className="text-blue-500 flex-shrink-0" /> {c.cityName}
                             </div>
-                            <div className="text-xs text-gray-500 mt-0.5">
-                              📍 {c.tripCount} 次出行 · ⭐ {c.feelingAvg.toFixed(1)}
+                            <div className="text-xs text-gray-500 mt-0.5 flex items-center gap-2">
+                              <span className="inline-flex items-center gap-1"><MapPinIcon size={12} />{c.tripCount} 次出行</span>
+                              <span className="inline-flex items-center gap-1"><StarIcon size={12} className="text-amber-500" />{c.feelingAvg.toFixed(1)}</span>
                             </div>
                           </div>
                         </Link>
@@ -576,13 +618,17 @@ export default function TravelHome() {
                             {p.rank}
                           </div>
                           <div className="flex-1 min-w-0">
-                            <div className="font-medium text-gray-900 text-sm truncate">
-                              🎯 {p.placeName}
+                            <div className="font-medium text-gray-900 text-sm truncate flex items-center gap-1">
+                              <MapPinIcon size={14} className="text-green-600 flex-shrink-0" /> {p.placeName}
                             </div>
                             <div className="text-xs text-gray-500 mt-0.5 flex items-center gap-2">
-                              <span className="text-amber-600">👩 ⭐ {p.adultAvg}</span>
+                              <span className="inline-flex items-center gap-1 text-amber-600">
+                                <UserIcon size={12} /><StarIcon size={12} className="text-amber-500" />{p.adultAvg}
+                              </span>
                               {p.childAvg != null && (
-                                <span className="text-green-600">👶 ⭐ {p.childAvg}</span>
+                                <span className="inline-flex items-center gap-1 text-green-600">
+                                  <BabyIcon size={12} /><StarIcon size={12} className="text-amber-500" />{p.childAvg}
+                                </span>
                               )}
                               <span className="text-gray-400">· {p.reviewCount} 条</span>
                             </div>
@@ -620,8 +666,8 @@ export default function TravelHome() {
                             <div className="font-medium text-gray-900 text-sm truncate">
                               {b.name}
                             </div>
-                            <div className="text-xs text-gray-500 mt-0.5">
-                              🏅 {b.unlockCount} 人已解锁 · {RARITY_LABEL[b.rarity] ?? b.rarity}
+                            <div className="text-xs text-gray-500 mt-0.5 flex items-center gap-1">
+                              <AwardIcon size={12} className="text-amber-500" /> {b.unlockCount} 人已解锁 · {RARITY_LABEL[b.rarity] ?? b.rarity}
                             </div>
                           </div>
                         </Link>
@@ -638,7 +684,8 @@ export default function TravelHome() {
         <section className="mb-12">
           <div className="flex items-center justify-between mb-6">
             <h2 className="text-2xl font-bold text-gray-900 flex items-center gap-2">
-              🪄 智能攻略
+              <span className="text-blue-600"><SparklesIcon size={26} /></span>
+              智能攻略
               <span className="text-sm font-normal text-gray-500">推荐相似行程，一键 fork 或重新生成</span>
             </h2>
             <Link href="/wizard" className="text-blue-600 hover:text-blue-700 text-sm font-medium">
@@ -655,17 +702,20 @@ export default function TravelHome() {
                 </p>
                 <div className="space-y-3 mb-6">
                   {[
-                    { e: '🏙️', t: '1. 告诉走天下你的情况（城市 / 天数 / 孩子月龄）' },
-                    { e: '🔍', t: '2. 推荐相似行程真实攻略（带相似度评分）' },
-                    { e: '✨', t: '3. 一键 fork 成你的计划 或 重新生成' },
-                  ].map((s) => (
-                    <div key={s.t} className="flex items-center gap-3 text-sm">
-                      <span className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center text-lg flex-shrink-0">
-                        {s.e}
-                      </span>
-                      <span className="text-white">{s.t}</span>
-                    </div>
-                  ))}
+                    { Icon: CityIcon, t: '1. 告诉走天下你的情况（城市 / 天数 / 孩子月龄）' },
+                    { Icon: SearchIcon, t: '2. 推荐相似行程真实攻略（带相似度评分）' },
+                    { Icon: ForkIcon, t: '3. 一键 fork 成你的计划 或 重新生成' },
+                  ].map((s) => {
+                    const Icon = s.Icon;
+                    return (
+                      <div key={s.t} className="flex items-center gap-3 text-sm">
+                        <span className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0">
+                          <Icon size={18} className="text-white" />
+                        </span>
+                        <span className="text-white">{s.t}</span>
+                      </div>
+                    );
+                  })}
                 </div>
                 <Link
                   href="/wizard"
@@ -679,20 +729,25 @@ export default function TravelHome() {
               <div className="md:col-span-2 flex items-center justify-center">
                 <div className="space-y-3 w-full">
                   {[
-                    { e: '🌆', t: '北京 · 3 天 · 3 岁 · 平衡' },
-                    { e: '🔍', t: '找到 4 篇相似攻略' },
-                    { e: '✨', t: '一键 fork → 我的计划' },
-                  ].map((step, i) => (
-                    <div
-                      key={i}
-                      className="bg-white/15 backdrop-blur-sm rounded-xl p-3 flex items-center gap-3 border border-white/20"
-                    >
-                      <span className="text-2xl">{step.e}</span>
-                      <span className="text-sm text-white">{step.t}</span>
-                    </div>
-                  ))}
-                  <div className="text-center text-xs text-blue-100 mt-2">
-                    👆 真实的智能攻略体验
+                    { Icon: CityIcon, t: '北京 · 3 天 · 3 岁 · 平衡' },
+                    { Icon: SearchIcon, t: '找到 4 篇相似攻略' },
+                    { Icon: SparklesIcon, t: '一键 fork → 我的计划' },
+                  ].map((step, i) => {
+                    const Icon = step.Icon;
+                    return (
+                      <div
+                        key={i}
+                        className="bg-white/15 backdrop-blur-sm rounded-xl p-3 flex items-center gap-3 border border-white/20"
+                      >
+                        <span className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0">
+                          <Icon size={16} className="text-white" />
+                        </span>
+                        <span className="text-sm text-white">{step.t}</span>
+                      </div>
+                    );
+                  })}
+                  <div className="flex items-center justify-center gap-1.5 text-xs text-blue-100 mt-2">
+                    <HandPointUpIcon size={12} /> 真实的智能攻略体验
                   </div>
                 </div>
               </div>
