@@ -257,8 +257,8 @@ function PlacesContent() {
               >
                 <CloseIcon size={12} /> 全部
               </button>
-              {/* 一二线城市硬编码（1 行 8 个） */}
-              {['北京', '上海', '广州', '深圳', '成都', '杭州', '西安', '南京'].map((name) => {
+              {/* 一二线城市硬编码（1 行 9 个） */}
+              {['北京', '上海', '广州', '深圳', '成都', '杭州', '西安', '南京', '厦门'].map((name) => {
                 const city = cities.find((c) => c.name === name);
                 if (!city) return null;
                 const active = cityId === city.id;
