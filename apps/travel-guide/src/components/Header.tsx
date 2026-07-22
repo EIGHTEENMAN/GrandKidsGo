@@ -84,7 +84,7 @@ export default function Header() {
 
   return (
     <>
-      <header className="bg-white shadow-sm border-b">
+      <header className="sticky top-0 z-50 bg-white shadow-sm border-b">
         <div className="max-w-7xl mx-auto px-4 h-14 flex items-center gap-4">
           {/* Logo */}
           <Link
