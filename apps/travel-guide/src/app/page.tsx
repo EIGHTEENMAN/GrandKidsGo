@@ -265,12 +265,12 @@ export default function TravelHome() {
       </header>
 
       <main className="max-w-6xl mx-auto px-6 py-12">
-        {/* ===== 板块 1: 亲子宝典（标签 → 城市 → 地点 三层） ===== */}
+        {/* ===== 板块 1: 亲子宝典（主题 → 城市 → 景点 三层） ===== */}
         <section className="mb-16">
           <div className="flex items-center justify-between mb-4">
             <h2 className="text-2xl font-bold text-gray-900 flex items-center gap-2">
               📚 亲子宝典
-              <span className="text-sm font-normal text-gray-500">先选主题，再选城市，找到你想去的地方</span>
+              <span className="text-sm font-normal text-gray-500">先选主题 → 选城市 → 看景点</span>
             </h2>
             <Link href="/places" className="text-green-600 hover:text-green-700 text-sm font-medium">
               搜索全部 →
@@ -280,10 +280,10 @@ export default function TravelHome() {
             玩水 / 海边 / 研学 / 露营 · 上千个真实亲子地点 · 大人孩子双维度评分
           </p>
 
-          {/* 第一层：热门标签 chip（横滑） */}
+          {/* 第一层：主题（标签） — 横滑 chip */}
           <div className="mb-5">
             <div className="flex items-center gap-2 mb-2">
-              <span className="text-xs font-semibold text-gray-600 whitespace-nowrap">🏷️ 热门主题</span>
+              <span className="text-xs font-semibold text-gray-600 whitespace-nowrap">🏷️ 主题</span>
               <div className="flex-1 h-px bg-gray-100" />
               <Link href="/places" className="text-xs text-gray-500 hover:text-gray-700 whitespace-nowrap">全部 →</Link>
             </div>
@@ -308,30 +308,10 @@ export default function TravelHome() {
             </div>
           </div>
 
-          {/* 第二层：13 类别 */}
-          <div className="mb-4">
+          {/* 第二层：城市 — 10 个热门城市 chip */}
+          <div className="mb-5">
             <div className="flex items-center gap-2 mb-2">
-              <span className="text-xs font-semibold text-gray-600 whitespace-nowrap">📋 地点类别</span>
-              <div className="flex-1 h-px bg-gray-100" />
-            </div>
-            <div className="grid grid-cols-4 md:grid-cols-7 gap-3">
-              {PLACE_CATEGORIES.slice(0, 7).map((c) => (
-                <Link
-                  key={c.key}
-                  href={`/places?category=${c.key}`}
-                  className="bg-white rounded-xl p-4 text-center shadow-sm hover:shadow-md transition border border-gray-100"
-                >
-                  <div className="text-3xl mb-1">{c.emoji}</div>
-                  <div className="text-sm font-medium text-gray-700">{c.label}</div>
-                </Link>
-              ))}
-            </div>
-          </div>
-
-          {/* 第三层：选城市 */}
-          <div>
-            <div className="flex items-center gap-2 mb-2">
-              <span className="text-xs font-semibold text-gray-600 whitespace-nowrap">📍 热门城市</span>
+              <span className="text-xs font-semibold text-gray-600 whitespace-nowrap">🏙️ 城市</span>
               <div className="flex-1 h-px bg-gray-100" />
               <Link href="/places" className="text-xs text-gray-500 hover:text-gray-700 whitespace-nowrap">全部 →</Link>
             </div>
@@ -343,6 +323,26 @@ export default function TravelHome() {
                   className="px-3 py-1.5 bg-white hover:bg-blue-50 border border-gray-200 hover:border-blue-300 rounded-full text-sm text-gray-700 transition"
                 >
                   {city}
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          {/* 第三层：景点（13 类）— 大卡片 */}
+          <div>
+            <div className="flex items-center gap-2 mb-2">
+              <span className="text-xs font-semibold text-gray-600 whitespace-nowrap">🎯 景点</span>
+              <div className="flex-1 h-px bg-gray-100" />
+            </div>
+            <div className="grid grid-cols-4 md:grid-cols-7 gap-3">
+              {PLACE_CATEGORIES.slice(0, 7).map((c) => (
+                <Link
+                  key={c.key}
+                  href={`/places?category=${c.key}`}
+                  className="bg-white rounded-xl p-4 text-center shadow-sm hover:shadow-md transition border border-gray-100"
+                >
+                  <div className="text-3xl mb-1">{c.emoji}</div>
+                  <div className="text-sm font-medium text-gray-700">{c.label}</div>
                 </Link>
               ))}
             </div>
