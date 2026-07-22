@@ -106,8 +106,9 @@ export default function Header() {
 
           {/* 导航 */}
           <nav className="hidden lg:flex items-center gap-5 text-sm flex-shrink-0">
-            <Link href="/guides" className="text-gray-600 hover:text-green-600 whitespace-nowrap">攻略列表</Link>
-            <Link href="/guides/create" className="text-gray-600 hover:text-green-600 whitespace-nowrap">发布攻略</Link>
+            <Link href="/places" className="text-gray-600 hover:text-green-600 whitespace-nowrap">亲子宝典</Link>
+            <Link href="/guides" className="text-gray-600 hover:text-green-600 whitespace-nowrap">攻略浏览</Link>
+            <Link href="/about" className="text-gray-600 hover:text-green-600 whitespace-nowrap">关于我们</Link>
             <Link href="/faq" className="text-gray-600 hover:text-green-600 whitespace-nowrap">常见问题</Link>
           </nav>
 

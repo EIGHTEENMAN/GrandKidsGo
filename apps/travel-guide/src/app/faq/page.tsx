@@ -16,13 +16,38 @@ export default function FAQPage() {
     { q: '如何联系管理员？', a: '如有任何问题或建议，请在游记详情页留言，或通过管理员后台联系我们。' },
   ];
 
+  // 免责声明（重要提示）
+  const disclaimers = [
+    {
+      title: '⚠️ 内容仅供参考',
+      content: '童慧行走天下所有攻略、评价、推荐内容均由用户发布，仅供家长参考。每个孩子的年龄、体质、兴趣不同，请家长结合自家情况做判断。',
+    },
+    {
+      title: '⚠️ 实地安全自负',
+      content: '平台不保证所有地点信息的实时准确性（开放时间、票价、设施变动等）。出行前请务必核实官方信息，注意孩子安全，对自己的孩子负责。',
+    },
+    {
+      title: '⚠️ 隐私保护',
+      content: '我们严格遵守《个人信息保护法》和《儿童个人信息网络保护规定》。孩子照片发布需监护人同意，您发布的任何内容均可随时撤回。',
+    },
+    {
+      title: '⚠️ 商业免责',
+      content: '平台为亲子旅行社区，不承担因第三方服务商、商家、景点变更等带来的任何损失。请在预订和消费前自行核实。',
+    },
+  ];
+
   return (
     <main className="min-h-screen bg-gray-50">
       <div className="max-w-3xl mx-auto px-4 py-8">
         <Link href="/" className="text-green-600 hover:text-green-800 text-sm mb-6 block">← 返回首页</Link>
         <h1 className="text-2xl font-bold text-gray-900 mb-2">常见问题</h1>
         <p className="text-gray-500 mb-8">关于童慧行走天下的常见问题解答</p>
-        <div className="space-y-3">
+
+        {/* 常见问题 */}
+        <h2 className="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
+          <span>💬</span> 常见问题
+        </h2>
+        <div className="space-y-3 mb-10">
           {faqs.map((faq, i) => (
             <details key={i} className="bg-white rounded-xl shadow-sm overflow-hidden">
               <summary className="px-5 py-4 cursor-pointer font-medium text-gray-900 hover:bg-gray-50 transition-colors">
@@ -30,6 +55,19 @@ export default function FAQPage() {
               </summary>
               <div className="px-5 pb-4 text-sm text-gray-600 leading-relaxed">{faq.a}</div>
             </details>
+          ))}
+        </div>
+
+        {/* 免责声明 */}
+        <h2 className="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
+          <span>📋</span> 免责声明
+        </h2>
+        <div className="space-y-3">
+          {disclaimers.map((d, i) => (
+            <div key={i} className="bg-amber-50 border border-amber-200 rounded-xl p-4">
+              <h3 className="font-bold text-amber-900 mb-2 text-sm">{d.title}</h3>
+              <p className="text-sm text-amber-800 leading-relaxed">{d.content}</p>
+            </div>
           ))}
         </div>
       </div>
