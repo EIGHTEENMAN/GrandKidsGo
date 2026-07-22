@@ -60,9 +60,9 @@ export default function FAQPage() {
         <h2 className="text-lg font-bold text-gray-900 mb-3">免责声明</h2>
         <div className="space-y-3">
           {disclaimers.map((d, i) => (
-            <div key={i} className="bg-amber-50 border border-amber-200 rounded-xl p-4">
-              <h3 className="font-bold text-amber-900 mb-2 text-sm">{d.title}</h3>
-              <p className="text-sm text-amber-800 leading-relaxed">{d.content}</p>
+            <div key={i} className="bg-blue-50 border border-blue-200 rounded-xl p-4">
+              <h3 className="font-bold text-blue-900 mb-2 text-sm">{d.title}</h3>
+              <p className="text-sm text-blue-800 leading-relaxed">{d.content}</p>
             </div>
           ))}
         </div>
