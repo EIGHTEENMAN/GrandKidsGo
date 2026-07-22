@@ -85,53 +85,71 @@ export default function Header() {
   return (
     <>
       <header className="bg-white shadow-sm border-b">
-        <div className="max-w-7xl mx-auto px-4 h-14 flex items-center justify-between">
-          <div className="flex items-center gap-6">
-            <Link href="/" className="font-bold text-lg text-green-600">
-              童慧行走天下
-            </Link>
-            <nav className="hidden md:flex items-center gap-4 text-sm">
-              <Link href="/guides" className="text-gray-600 hover:text-green-600">攻略列表</Link>
-              <Link href="/guides/create" className="text-gray-600 hover:text-green-600">发布攻略</Link>
-              <Link href="/faq" className="text-gray-600 hover:text-green-600">常见问题</Link>
-            </nav>
-          </div>
-          <form onSubmit={handleSearch} className="hidden sm:flex items-center">
-            <div className="relative">
+        <div className="max-w-7xl mx-auto px-4 h-14 flex items-center gap-4">
+          {/* 返回主站按钮 */}
+          <a
+            href="https://grandand.com"
+            className="hidden md:flex items-center gap-1 px-3 py-1.5 text-sm text-gray-600 hover:text-green-600 border border-gray-200 hover:border-green-300 rounded-lg transition-colors flex-shrink-0"
+          >
+            <span>←</span>
+            <span>主站</span>
+          </a>
+
+          {/* Logo */}
+          <Link
+            href="/"
+            className="text-[32px] font-extrabold text-green-600 leading-none whitespace-nowrap flex-shrink-0"
+            style={{ fontWeight: 800 }}
+          >
+            童慧行走天下
+          </Link>
+
+          {/* 导航 */}
+          <nav className="hidden lg:flex items-center gap-5 text-sm flex-shrink-0">
+            <Link href="/guides" className="text-gray-600 hover:text-green-600 whitespace-nowrap">攻略列表</Link>
+            <Link href="/guides/create" className="text-gray-600 hover:text-green-600 whitespace-nowrap">发布攻略</Link>
+            <Link href="/faq" className="text-gray-600 hover:text-green-600 whitespace-nowrap">常见问题</Link>
+          </nav>
+
+          {/* 搜索框（占满中间剩余位置） */}
+          <form onSubmit={handleSearch} className="flex-1 min-w-0 flex items-center">
+            <div className="relative w-full">
               <input
                 type="text"
                 value={searchQuery}
                 onChange={e => setSearchQuery(e.target.value)}
                 placeholder="搜索攻略..."
-                className="w-44 lg:w-56 pl-9 pr-3 py-1.5 text-sm bg-gray-100 border border-transparent rounded-lg focus:bg-white focus:border-green-400 focus:ring-1 focus:ring-green-400 outline-none transition-all placeholder-gray-400"
+                className="w-full pl-9 pr-3 py-1.5 text-sm bg-gray-100 border border-transparent rounded-lg focus:bg-white focus:border-green-400 focus:ring-1 focus:ring-green-400 outline-none transition-all placeholder-gray-400"
               />
               <svg className="absolute left-2.5 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
               </svg>
             </div>
           </form>
-          <div className="flex items-center gap-3 text-sm">
+
+          {/* 登录/注册 */}
+          <div className="flex items-center gap-3 text-sm flex-shrink-0">
             {user ? (
               <>
-                <span className="flex items-center gap-1.5 text-gray-700">
+                <span className="hidden sm:flex items-center gap-1.5 text-gray-700 whitespace-nowrap">
                   {user.avatar && <span className="text-lg">{user.avatar}</span>}
                   <span>{user.nickname || user.username}</span>
                 </span>
-                <button onClick={handleLogout} className="text-gray-400 hover:text-red-500 transition-colors">
+                <button onClick={handleLogout} className="text-gray-400 hover:text-red-500 transition-colors whitespace-nowrap">
                   退出
                 </button>
               </>
             ) : isSearchPage ? (
               <a
                 href="/"
-                className="px-4 py-1.5 bg-green-600 text-white rounded-lg text-sm font-medium hover:bg-green-700 transition-all shadow-sm"
+                className="px-4 py-1.5 bg-green-600 text-white rounded-lg text-sm font-medium hover:bg-green-700 transition-all shadow-sm whitespace-nowrap"
               >
                 首页
               </a>
             ) : (
               <button
                 onClick={() => setShowAuth(true)}
-                className="px-4 py-1.5 bg-green-600 text-white rounded-lg text-sm font-medium hover:bg-green-700 transition-all shadow-sm"
+                className="px-4 py-1.5 bg-green-600 text-white rounded-lg text-sm font-medium hover:bg-green-700 transition-all shadow-sm whitespace-nowrap"
               >
                 登录 / 注册
               </button>
