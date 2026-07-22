@@ -369,7 +369,7 @@ export default function GuidesPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {filtered.map((g) => (
             <article key={g.id} className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all group">
-              <Link href={`/guide/${g.id}`} className="block">
+              <Link href={`/guides/${g.id}`} className="block">
                 <div className={`relative ${CARD_HEIGHT} overflow-hidden bg-gradient-to-br from-blue-100 to-cyan-100`}>
                   {g.coverImage ? (
                     /* eslint-disable-next-line @next/next/no-img-element */
@@ -404,7 +404,7 @@ export default function GuidesPage() {
                 </div>
               </Link>
               <div className="p-4">
-                <Link href={`/guide/${g.id}`}>
+                <Link href={`/guides/${g.id}`}>
                   <h3 className="font-bold text-gray-900 line-clamp-2 mb-2 hover:text-blue-600 transition">
                     {g.title}
                   </h3>

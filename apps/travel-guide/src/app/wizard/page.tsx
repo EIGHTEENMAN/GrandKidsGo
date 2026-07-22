@@ -285,7 +285,7 @@ export default function SmartGuideLanding() {
                     </div>
                     <div className="flex gap-2 mt-4 pt-4 border-t border-gray-100">
                       <Link
-                        href={`/guide/${g.id}`}
+                        href={`/guides/${g.id}`}
                         className="flex-1 text-center py-2 bg-gray-100 text-gray-700 rounded-lg text-sm font-medium hover:bg-gray-200"
                       >
                         👀 看真实评价

@@ -433,7 +433,7 @@ export default function TravelHome() {
               return (
                 <Link
                   key={g.id}
-                  href={`/guide/${g.id}`}
+                  href={`/guides/${g.id}`}
                   className={`group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all ${isFeatured ? 'col-span-2 md:col-span-2 row-span-2' : ''}`}
                 >
                   <div className={`relative ${heightClass} overflow-hidden`}>
