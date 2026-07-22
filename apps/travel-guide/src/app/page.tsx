@@ -317,7 +317,7 @@ export default function TravelHome() {
               </span>
               <div className="flex-1 h-px bg-gray-100" />
             </div>
-            <div className="grid grid-cols-4 md:grid-cols-7 gap-3">
+            <div className="grid grid-cols-5 md:grid-cols-8 lg:grid-cols-10 gap-2">
               {[
                 { id: '玩水' }, { id: '海边' },
                 { id: '爬山' }, { id: '研学' },
@@ -330,12 +330,12 @@ export default function TravelHome() {
                 <Link
                   key={t.id}
                   href={`/places?tag=${encodeURIComponent(t.id)}`}
-                  className="group bg-white rounded-xl p-4 text-center shadow-sm hover:shadow-md transition border border-gray-100 hover:border-blue-200"
+                  className="group bg-white rounded-lg p-2.5 text-center shadow-sm hover:shadow-md transition border border-gray-100 hover:border-blue-200"
                 >
-                  <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-blue-50 text-blue-600 mb-2 group-hover:bg-blue-100 transition">
+                  <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-blue-50 text-blue-600 mb-1.5 group-hover:bg-blue-100 transition">
                     {TAG_SVG[t.id]}
                   </span>
-                  <div className="text-sm font-medium text-gray-700">{t.id}</div>
+                  <div className="text-xs font-medium text-gray-700">{t.id}</div>
                 </Link>
               ))}
             </div>
@@ -349,17 +349,17 @@ export default function TravelHome() {
               </span>
               <div className="flex-1 h-px bg-gray-100" />
             </div>
-            <div className="grid grid-cols-4 md:grid-cols-7 gap-3">
+            <div className="grid grid-cols-5 md:grid-cols-8 lg:grid-cols-10 gap-2">
               {['北京', '上海', '杭州', '成都', '广州', '西安', '厦门'].map((city) => (
                 <Link
                   key={city}
                   href={`/places?cityName=${encodeURIComponent(city)}`}
-                  className="group bg-white rounded-xl p-4 text-center shadow-sm hover:shadow-md transition border border-gray-100 hover:border-blue-200"
+                  className="group bg-white rounded-lg p-2.5 text-center shadow-sm hover:shadow-md transition border border-gray-100 hover:border-blue-200"
                 >
-                  <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-blue-50 text-blue-600 mb-2 group-hover:bg-blue-100 transition">
-                    <CityIcon size={20} />
+                  <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-blue-50 text-blue-600 mb-1.5 group-hover:bg-blue-100 transition">
+                    <CityIcon size={16} />
                   </span>
-                  <div className="text-sm font-medium text-gray-700">{city}</div>
+                  <div className="text-xs font-medium text-gray-700">{city}</div>
                 </Link>
               ))}
             </div>
@@ -373,19 +373,19 @@ export default function TravelHome() {
               </span>
               <div className="flex-1 h-px bg-gray-100" />
             </div>
-            <div className="grid grid-cols-4 md:grid-cols-7 gap-3">
+            <div className="grid grid-cols-5 md:grid-cols-8 lg:grid-cols-10 gap-2">
               {PLACE_CATEGORIES.slice(0, 7).map((c) => {
                 const Icon = c.Icon;
                 return (
                   <Link
                     key={c.key}
                     href={`/places?category=${c.key}`}
-                    className="group bg-white rounded-xl p-4 text-center shadow-sm hover:shadow-md transition border border-gray-100 hover:border-blue-200"
+                    className="group bg-white rounded-lg p-2.5 text-center shadow-sm hover:shadow-md transition border border-gray-100 hover:border-blue-200"
                   >
-                    <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-blue-50 text-blue-600 mb-2 group-hover:bg-blue-100 transition">
-                      <Icon size={20} />
+                    <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-blue-50 text-blue-600 mb-1.5 group-hover:bg-blue-100 transition">
+                      <Icon size={16} />
                     </span>
-                    <div className="text-sm font-medium text-gray-700">{c.label}</div>
+                    <div className="text-xs font-medium text-gray-700">{c.label}</div>
                   </Link>
                 );
               })}

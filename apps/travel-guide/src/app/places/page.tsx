@@ -65,8 +65,8 @@ const TAG_SVG: Record<string, any> = {
 };
 
 // 卡片容器统一样式
-const CARD_CLASS = "group bg-white rounded-xl p-4 text-center shadow-sm hover:shadow-md transition border border-gray-100 hover:border-blue-200";
-const CARD_ACTIVE_CLASS = "bg-gradient-to-br from-blue-500 to-cyan-500 text-white rounded-xl p-4 text-center shadow-md hover:shadow-lg transition border border-blue-500";
+const CARD_CLASS = "group bg-white rounded-lg p-2.5 text-center shadow-sm hover:shadow-md transition border border-gray-100 hover:border-blue-200";
+const CARD_ACTIVE_CLASS = "bg-gradient-to-br from-blue-500 to-cyan-500 text-white rounded-lg p-2.5 text-center shadow-md hover:shadow-lg transition border border-blue-500";
 
 // 类别 icon SVG 映射（卡片无封面时的兜底）
 function CategoryIcon({ type, className }: { type: string; className?: string }) {
@@ -136,7 +136,7 @@ function PlacesContent() {
         {tag && (
           <div className="bg-gradient-to-r from-blue-50 to-cyan-50 border border-blue-200 rounded-xl p-4 mb-6 flex items-center gap-3">
             <span className="w-10 h-10 rounded-full bg-blue-100 text-blue-600 inline-flex items-center justify-center">
-              <SparklesIcon size={18} />
+              <SparklesIcon size={16} />
             </span>
             <div className="flex-1">
               <div className="text-xs text-gray-500">正在筛选主题</div>
@@ -170,15 +170,15 @@ function PlacesContent() {
             </span>
             <div className="flex-1 h-px bg-gray-100" />
           </div>
-          <div className="grid grid-cols-4 md:grid-cols-7 gap-3">
+          <div className="grid grid-cols-5 md:grid-cols-8 lg:grid-cols-10 gap-2">
             <button
               onClick={() => setTag('')}
               className={tag === '' ? CARD_ACTIVE_CLASS : CARD_CLASS}
             >
-              <span className={`inline-flex items-center justify-center w-10 h-10 rounded-full mb-2 transition ${tag === '' ? 'bg-white/20' : 'bg-blue-50 group-hover:bg-blue-100'}`}>
-                <CloseIcon size={18} className={tag === '' ? 'text-white' : 'text-blue-600'} />
+              <span className={`inline-flex items-center justify-center w-8 h-8 rounded-full mb-1.5 transition ${tag === '' ? 'bg-white/20' : 'bg-blue-50 group-hover:bg-blue-100'}`}>
+                <CloseIcon size={16} className={tag === '' ? 'text-white' : 'text-blue-600'} />
               </span>
-              <div className="text-sm font-medium">全部</div>
+              <div className="text-xs font-medium">全部</div>
             </button>
             {[
               '玩水', '海边', '爬山', '研学', '动物', '采摘', '露营',
@@ -192,10 +192,10 @@ function PlacesContent() {
                   onClick={() => setTag(active ? '' : tid)}
                   className={active ? CARD_ACTIVE_CLASS : CARD_CLASS}
                 >
-                  <span className={`inline-flex items-center justify-center w-10 h-10 rounded-full mb-2 transition ${active ? 'bg-white/20' : 'bg-blue-50 group-hover:bg-blue-100'}`}>
-                    <Icon size={18} className={active ? 'text-white' : 'text-blue-600'} />
+                  <span className={`inline-flex items-center justify-center w-8 h-8 rounded-full mb-1.5 transition ${active ? 'bg-white/20' : 'bg-blue-50 group-hover:bg-blue-100'}`}>
+                    <Icon size={16} className={active ? 'text-white' : 'text-blue-600'} />
                   </span>
-                  <div className="text-sm font-medium">{tid}</div>
+                  <div className="text-xs font-medium">{tid}</div>
                 </button>
               );
             })}
@@ -210,15 +210,15 @@ function PlacesContent() {
             </span>
             <div className="flex-1 h-px bg-gray-100" />
           </div>
-          <div className="grid grid-cols-4 md:grid-cols-7 gap-3">
+          <div className="grid grid-cols-5 md:grid-cols-8 lg:grid-cols-10 gap-2">
             <button
               onClick={() => setCategory('')}
               className={!category ? CARD_ACTIVE_CLASS : CARD_CLASS}
             >
-              <span className={`inline-flex items-center justify-center w-10 h-10 rounded-full mb-2 transition ${!category ? 'bg-white/20' : 'bg-blue-50 group-hover:bg-blue-100'}`}>
-                <MapPinIcon size={18} className={!category ? 'text-white' : 'text-blue-600'} />
+              <span className={`inline-flex items-center justify-center w-8 h-8 rounded-full mb-1.5 transition ${!category ? 'bg-white/20' : 'bg-blue-50 group-hover:bg-blue-100'}`}>
+                <MapPinIcon size={16} className={!category ? 'text-white' : 'text-blue-600'} />
               </span>
-              <div className="text-sm font-medium">全部</div>
+              <div className="text-xs font-medium">全部</div>
             </button>
             {PLACE_CATEGORIES.map((c) => {
               const Icon = c.Icon;
@@ -229,10 +229,10 @@ function PlacesContent() {
                   onClick={() => setCategory(active ? '' : c.key)}
                   className={active ? CARD_ACTIVE_CLASS : CARD_CLASS}
                 >
-                  <span className={`inline-flex items-center justify-center w-10 h-10 rounded-full mb-2 transition ${active ? 'bg-white/20' : 'bg-blue-50 group-hover:bg-blue-100'}`}>
-                    <Icon size={18} className={active ? 'text-white' : 'text-blue-600'} />
+                  <span className={`inline-flex items-center justify-center w-8 h-8 rounded-full mb-1.5 transition ${active ? 'bg-white/20' : 'bg-blue-50 group-hover:bg-blue-100'}`}>
+                    <Icon size={16} className={active ? 'text-white' : 'text-blue-600'} />
                   </span>
-                  <div className="text-sm font-medium">{c.label}</div>
+                  <div className="text-xs font-medium">{c.label}</div>
                 </button>
               );
             })}
@@ -248,15 +248,15 @@ function PlacesContent() {
               </span>
               <div className="flex-1 h-px bg-gray-100" />
             </div>
-            <div className="grid grid-cols-4 md:grid-cols-7 gap-3">
+            <div className="grid grid-cols-5 md:grid-cols-8 lg:grid-cols-10 gap-2">
               <button
                 onClick={() => setCityId('')}
                 className={!cityId ? CARD_ACTIVE_CLASS : CARD_CLASS}
               >
-                <span className={`inline-flex items-center justify-center w-10 h-10 rounded-full mb-2 transition ${!cityId ? 'bg-white/20' : 'bg-blue-50 group-hover:bg-blue-100'}`}>
-                  <CityIcon size={18} className={!cityId ? 'text-white' : 'text-blue-600'} />
+                <span className={`inline-flex items-center justify-center w-8 h-8 rounded-full mb-1.5 transition ${!cityId ? 'bg-white/20' : 'bg-blue-50 group-hover:bg-blue-100'}`}>
+                  <CityIcon size={16} className={!cityId ? 'text-white' : 'text-blue-600'} />
                 </span>
-                <div className="text-sm font-medium">全部城市</div>
+                <div className="text-xs font-medium">全部城市</div>
               </button>
               {cities.slice(0, 13).map((c) => {
                 const active = cityId === c.id;
@@ -266,10 +266,10 @@ function PlacesContent() {
                     onClick={() => setCityId(active ? '' : c.id)}
                     className={active ? CARD_ACTIVE_CLASS : CARD_CLASS}
                   >
-                    <span className={`inline-flex items-center justify-center w-10 h-10 rounded-full mb-2 transition ${active ? 'bg-white/20' : 'bg-blue-50 group-hover:bg-blue-100'}`}>
-                      <CityIcon size={18} className={active ? 'text-white' : 'text-blue-600'} />
+                    <span className={`inline-flex items-center justify-center w-8 h-8 rounded-full mb-1.5 transition ${active ? 'bg-white/20' : 'bg-blue-50 group-hover:bg-blue-100'}`}>
+                      <CityIcon size={16} className={active ? 'text-white' : 'text-blue-600'} />
                     </span>
-                    <div className="text-sm font-medium">{c.name}</div>
+                    <div className="text-xs font-medium">{c.name}</div>
                   </button>
                 );
               })}
