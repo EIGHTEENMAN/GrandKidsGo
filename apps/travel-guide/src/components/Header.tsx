@@ -86,15 +86,6 @@ export default function Header() {
     <>
       <header className="bg-white shadow-sm border-b">
         <div className="max-w-7xl mx-auto px-4 h-14 flex items-center gap-4">
-          {/* 返回主站按钮 */}
-          <a
-            href="https://grandand.com"
-            className="hidden md:flex items-center gap-1 px-3 py-1.5 text-sm text-gray-600 hover:text-green-600 border border-gray-200 hover:border-green-300 rounded-lg transition-colors flex-shrink-0"
-          >
-            <span>←</span>
-            <span>主站</span>
-          </a>
-
           {/* Logo */}
           <Link
             href="/"
@@ -128,8 +119,17 @@ export default function Header() {
             </div>
           </form>
 
-          {/* 登录/注册 */}
+          {/* 登录/注册 + 返回童慧行 */}
           <div className="flex items-center gap-3 text-sm flex-shrink-0">
+            {/* 返回童慧行主站按钮 - 在登录按钮左边 */}
+            <a
+              href="https://grandand.com"
+              className="hidden md:flex items-center gap-1 px-3 py-1.5 text-sm text-gray-600 hover:text-green-600 border border-gray-200 hover:border-green-300 rounded-lg transition-colors whitespace-nowrap"
+            >
+              <span>←</span>
+              <span>返回童慧行</span>
+            </a>
+
             {user ? (
               <>
                 <span className="hidden sm:flex items-center gap-1.5 text-gray-700 whitespace-nowrap">
