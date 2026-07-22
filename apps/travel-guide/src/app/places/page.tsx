@@ -235,7 +235,7 @@ function PlacesContent() {
           </div>
         </div>
 
-        {/* 城市筛选 — 2 行 chip + 更多城市按首字母下拉 */}
+        {/* 城市筛选 — 1 行 chip（一二线）+ 更多城市按首字母下拉 */}
         {cities.length > 0 && (
           <div className="mb-4">
             <div className="flex items-center gap-2 mb-2">
@@ -243,14 +243,12 @@ function PlacesContent() {
                 <CityIcon size={14} className="text-blue-500" /> 城市
               </span>
               <div className="flex-1 h-px bg-gray-100" />
-              {cities.length > 19 && (
-                <button
-                  onClick={() => setCityPopoverOpen((v) => !v)}
-                  className="inline-flex items-center gap-1 text-xs text-blue-600 hover:text-blue-700 font-medium whitespace-nowrap"
-                >
-                  更多城市 <ChevronDown size={12} />
-                </button>
-              )}
+              <button
+                onClick={() => setCityPopoverOpen((v) => !v)}
+                className="inline-flex items-center gap-1 text-xs text-blue-600 hover:text-blue-700 font-medium whitespace-nowrap"
+              >
+                更多城市 <ChevronDown size={12} />
+              </button>
             </div>
             <div className="flex gap-2 flex-wrap">
               <button
@@ -259,15 +257,18 @@ function PlacesContent() {
               >
                 <CloseIcon size={12} /> 全部
               </button>
-              {cities.slice(0, 19).map((c) => {
-                const active = cityId === c.id;
+              {/* 一二线城市硬编码（1 行 8 个） */}
+              {['北京', '上海', '广州', '深圳', '成都', '杭州', '西安', '南京'].map((name) => {
+                const city = cities.find((c) => c.name === name);
+                if (!city) return null;
+                const active = cityId === city.id;
                 return (
                   <button
-                    key={c.id}
-                    onClick={() => setCityId(active ? '' : c.id)}
+                    key={city.id}
+                    onClick={() => setCityId(active ? '' : city.id)}
                     className={active ? CHIP_ACTIVE : CHIP_BASE}
                   >
-                    {c.name}
+                    {city.name}
                   </button>
                 );
               })}
