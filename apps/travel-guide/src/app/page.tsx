@@ -4,8 +4,11 @@
 // v4.0 调整（基于用户提供的设计图）：
 // - 配色：浅蓝→青色 渐变（from-blue-400 via-cyan-500 to-teal-500）
 // - 图标：全部用 SVG（替换 emoji）
-// - 智能攻略板块：保持原状不动
-// - 其他板块：套用蓝青配色 + 真实 SVG 图标
+// - 亲子宝典三板块：统一为 grid 卡片网格
+// - 全部/更多链接：统一为"查看全部 →" + text-blue-600
+// v4.1 文案调整：
+// - 智能攻略板块改名为"懒人规划"
+// - 主标题/介绍/三步骤文案改为"以孩子为核心"
 
 'use client';
 
@@ -153,11 +156,11 @@ const CAROUSEL_SLIDES = [
   {
     id: 4,
     image: 'https://images.unsplash.com/photo-1559131397-f94da358f7ca?w=1600&q=85',
-    eyebrow: '智能攻略',
+    eyebrow: '懒人规划',
     title: '不用从零开始',
     titleLine2: '也不用硬塞',
     subtitle: '推荐相似行程 · 一键 fork · 不满意再生成',
-    cta: '试试智能攻略',
+    cta: '试试懒人规划',
     href: '/wizard',
   },
 ];
@@ -692,12 +695,12 @@ export default function TravelHome() {
           </div>
         </section>
 
-        {/* ===== 板块 4: 智能攻略 ===== */}
+        {/* ===== 板块 4: 懒人规划 ===== */}
         <section className="mb-12">
           <div className="flex items-center justify-between mb-6">
             <h2 className="text-2xl font-bold text-gray-900 flex items-center gap-2">
               <span className="text-blue-600"><SparklesIcon size={26} /></span>
-              智能攻略
+              懒人规划
               <span className="text-sm font-normal text-gray-500">推荐相似行程，一键 fork 或重新生成</span>
             </h2>
             <Link href="/wizard" className="text-blue-600 hover:text-blue-700 text-sm font-medium">
@@ -708,15 +711,15 @@ export default function TravelHome() {
           <div className="bg-gradient-to-br from-blue-500 via-cyan-500 to-teal-500 rounded-2xl shadow-lg overflow-hidden text-white">
             <div className="grid grid-cols-1 md:grid-cols-5 gap-6 p-8">
               <div className="md:col-span-3">
-                <h3 className="text-2xl font-bold mb-3">先看别人怎么玩，再决定怎么玩</h3>
+                <h3 className="text-2xl font-bold mb-3">先看相似的行程，再决定怎么玩</h3>
                 <p className="text-blue-50 leading-relaxed mb-6">
-                  基于孩子画像（城市/天数/月龄/风格）推荐相似行程的真实攻略，看到喜欢的可以一键做成自己的计划，不用从零开始。
+                  以孩子的需求为核心，推荐和你家孩子情况相似的真实行程，看到喜欢的可以一键做成自己的计划，不用从零开始。
                 </p>
                 <div className="space-y-3 mb-6">
                   {[
-                    { Icon: CityIcon, t: '1. 告诉走天下你的情况（城市 / 天数 / 孩子月龄）' },
-                    { Icon: SearchIcon, t: '2. 推荐相似行程真实攻略（带相似度评分）' },
-                    { Icon: ForkIcon, t: '3. 一键 fork 成你的计划 或 重新生成' },
+                    { Icon: CityIcon, t: '1. 输入需求（以孩子为核心）' },
+                    { Icon: SearchIcon, t: '2. 查看相似行程真实攻略（带相似度评分）' },
+                    { Icon: ForkIcon, t: '3. 一键 fork 成你的计划 或 单独生成' },
                   ].map((s) => {
                     const Icon = s.Icon;
                     return (
@@ -733,7 +736,7 @@ export default function TravelHome() {
                   href="/wizard"
                   className="inline-block px-8 py-3 bg-white text-blue-600 font-bold rounded-full shadow-lg hover:shadow-xl transition hover:scale-105"
                 >
-                  开始智能规划 →
+                  开始懒人规划 →
                 </Link>
               </div>
 
@@ -759,7 +762,7 @@ export default function TravelHome() {
                     );
                   })}
                   <div className="flex items-center justify-center gap-1.5 text-xs text-blue-100 mt-2">
-                    <HandPointUpIcon size={12} /> 真实的智能攻略体验
+                    <HandPointUpIcon size={12} /> 真实的懒人规划体验
                   </div>
                 </div>
               </div>
