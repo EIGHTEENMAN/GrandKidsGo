@@ -1,10 +1,11 @@
-// 攻略列表 - PC 端（v4.1 UI 重构）
+// 攻略列表 - PC 端（v4.2 UI 重构）
+// 借鉴 /places 筛选体系：搜索框 + 天数 chip + 城市 chip + 更多城市下拉
 // 用户先看真实攻略 → fork 到自己的计划 / 或一键生成新计划
 'use client';
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import { SparklesIcon, MapPinIcon, ClockIcon, HeartIcon, EyeIcon, ForkIcon, CloseIcon } from '@/components/Icons';
+import { SparklesIcon, MapPinIcon, ClockIcon, HeartIcon, EyeIcon, ForkIcon, CloseIcon, SearchIcon, ChevronDown } from '@/components/Icons';
 
 const TRAVEL_API = (process.env.NEXT_PUBLIC_TRAVEL_API as string) || 'https://travel.grandand.com';
 
@@ -61,37 +62,87 @@ const MOCK_GUIDES: Guide[] = [
     coverImage: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=80', isMock: true },
 ];
 
-// 统一高度（不瀑布流错落，避免视觉上"斜斜"）
+// 统一卡片高度
 const CARD_HEIGHT = 'h-72';
 
-// chip 样式
+// chip 样式（与 /places 完全同款）
 const CHIP_BASE = "flex-shrink-0 inline-flex items-center gap-1 px-3 py-1.5 rounded-full text-xs font-medium transition border whitespace-nowrap bg-white text-gray-700 border-gray-200 hover:border-blue-300 hover:text-blue-600";
 const CHIP_ACTIVE = "flex-shrink-0 inline-flex items-center gap-1 px-3 py-1.5 rounded-full text-xs font-medium transition border whitespace-nowrap bg-gradient-to-r from-blue-500 to-cyan-500 text-white border-blue-500 shadow-sm";
 
-// 筛选维度
+// 1 行 12 个热门亲子城市（与 /places 同款）
 const TOP_CITIES = ['北京', '上海', '广州', '深圳', '成都', '杭州', '西安', '南京', '厦门', '苏州', '重庆', '武汉'];
+
+// 天数 chip（替代 /places 的主题/类别，更贴合攻略维度）
+const DAY_OPTIONS = [
+  { label: '周末游', days: [1, 2] },
+  { label: '小长假', days: [3, 4] },
+  { label: '长假', days: [5, 7] },
+  { label: '深度游', days: [8, 99] },
+];
+
+// 风格 chip
 const TRAVEL_STYLES = ['平衡', '慢游', '主题乐园', '度假', '自然', '研学', '历史'];
+
+// 拼音首字母映射（51 城全覆盖；查不到走 'Z' 兜底）
+const PINYIN_LETTER: Record<string, string> = {
+  '北京': 'B', '北戴河': 'B',
+  '成都': 'C', '重庆': 'C', '长沙': 'C', '长春': 'C',
+  '大连': 'D', '东莞': 'D', '大理': 'D',
+  '峨眉山': 'E',
+  '福州': 'F', '佛山': 'F',
+  '广州': 'G',
+  '杭州': 'H', '合肥': 'H', '海口': 'H', '哈尔滨': 'H', '黄山': 'H',
+  '济南': 'J',
+  '昆明': 'K', '开封': 'K',
+  '丽江': 'L', '兰州': 'L', '拉萨': 'L', '洛阳': 'L',
+  '南京': 'N', '南宁': 'N', '南昌': 'N', '宁波': 'N',
+  '青岛': 'Q', '秦皇岛': 'Q',
+  '上海': 'S', '深圳': 'S', '苏州': 'S', '三亚': 'S',
+  '沈阳': 'S', '汕头': 'S', '石家庄': 'S',
+  '天津': 'T', '太原': 'T', '台北': 'T',
+  '武汉': 'W', '温州': 'W',
+  '西安': 'X', '厦门': 'X', '西双版纳': 'X', '西宁': 'X', '香港': 'X',
+  '宜昌': 'Y',
+  '郑州': 'Z', '珠海': 'Z',
+};
+function getPinyinLetter(name: string): string {
+  if (/[A-Za-z]/.test(name[0])) return name[0].toUpperCase();
+  return PINYIN_LETTER[name] ?? 'Z';
+}
 
 export default function GuidesPage() {
   const router = useRouter();
   const [guides, setGuides] = useState<Guide[]>([]);
+  const [cities, setCities] = useState<{ id: string; name: string }[]>([]);
   const [loading, setLoading] = useState(true);
   const [forkingId, setForkingId] = useState<string | null>(null);
-  const [cityFilter, setCityFilter] = useState<string>('');
+
+  // 筛选状态（与 /places 一致）
+  const [q, setQ] = useState('');
+  const [dayFilter, setDayFilter] = useState<string>('');  // 选中的天数标签
   const [styleFilter, setStyleFilter] = useState<string>('');
+  const [cityFilter, setCityFilter] = useState<string>('');
+  const [cityPopoverOpen, setCityPopoverOpen] = useState(false);
+  const [cityQuery, setCityQuery] = useState('');
 
   useEffect(() => {
+    // 加载城市（与 /places 同样来源）
+    fetch(`${TRAVEL_API}/api/cities`)
+      .then((r) => r.json())
+      .then((d) => setCities(d.data ?? d.cities ?? []))
+      .catch(console.error);
+
+    // 加载攻略
     fetch(`${TRAVEL_API}/api/guides/feed`)
       .then((r) => r.json())
       .then((d) => {
         const apiGuides: Guide[] = (d.items ?? []).map((g: Guide) => ({ ...g, isMock: false }));
-        // API < 12 时用模拟补足
         const merged = apiGuides.length >= 12
           ? apiGuides
           : [...apiGuides, ...MOCK_GUIDES.slice(0, 12 - apiGuides.length)];
         setGuides(merged);
       })
-      .catch(() => setGuides(MOCK_GUIDES)) // 接口挂了直接用模拟
+      .catch(() => setGuides(MOCK_GUIDES))
       .finally(() => setLoading(false));
   }, []);
 
@@ -125,6 +176,31 @@ export default function GuidesPage() {
     }
   };
 
+  // 计算 dayFilter 对应的天数集合
+  const dayMatch = (g: Guide): boolean => {
+    if (!dayFilter) return true;
+    const opt = DAY_OPTIONS.find((d) => d.label === dayFilter);
+    if (!opt || !g.days) return false;
+    return g.days >= opt.days[0] && g.days <= opt.days[1];
+  };
+
+  // 计算搜索关键词（标题/城市/作者）
+  const searchMatch = (g: Guide): boolean => {
+    if (!q.trim()) return true;
+    const k = q.trim().toLowerCase();
+    return (
+      g.title.toLowerCase().includes(k) ||
+      (g.cityName ?? '').toLowerCase().includes(k) ||
+      g.author.nickname.toLowerCase().includes(k)
+    );
+  };
+
+  const filtered = guides
+    .filter(searchMatch)
+    .filter(dayMatch)
+    .filter((g) => !styleFilter || g.travelStyle === styleFilter)
+    .filter((g) => !cityFilter || g.cityName === cityFilter);
+
   return (
     <main className="min-h-screen bg-gradient-to-b from-blue-50 via-white to-cyan-50">
       <header className="bg-gradient-to-r from-blue-600 via-cyan-600 to-teal-600 text-white">
@@ -147,27 +223,40 @@ export default function GuidesPage() {
       </header>
 
       <div className="max-w-6xl mx-auto px-6 py-8">
-        {/* 筛选条 */}
-        <div className="mb-5 space-y-3">
-          {/* 城市 chip */}
-          <div className="flex items-center gap-2">
+        {/* 搜索框（与 /places 完全同款） */}
+        <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-4 mb-6 flex items-center gap-3">
+          <SearchIcon size={20} className="text-blue-500 flex-shrink-0" />
+          <input
+            value={q}
+            onChange={(e) => setQ(e.target.value)}
+            placeholder="搜攻略（按标题 / 城市 / 作者，如：上海迪士尼 / 厦门 / 甜豆妈妈）"
+            className="flex-1 px-2 py-2 text-lg border-0 focus:outline-none bg-transparent"
+          />
+        </div>
+
+        {/* 天数 chip（替代 /places 的主题筛选） */}
+        <div className="mb-4">
+          <div className="flex items-center gap-2 mb-2">
             <span className="text-xs font-semibold text-gray-600 whitespace-nowrap inline-flex items-center gap-1.5">
-              <MapPinIcon size={14} className="text-blue-500" /> 城市
+              <ClockIcon size={14} className="text-blue-500" /> 天数
             </span>
             <div className="flex-1 h-px bg-gray-100" />
           </div>
           <div className="flex gap-2 overflow-x-auto pb-1 -mx-1 px-1">
-            <button onClick={() => setCityFilter('')} className={cityFilter === '' ? CHIP_ACTIVE : CHIP_BASE}>
+            <button onClick={() => setDayFilter('')} className={dayFilter === '' ? CHIP_ACTIVE : CHIP_BASE}>
               <CloseIcon size={12} /> 全部
             </button>
-            {TOP_CITIES.map((name) => (
-              <button key={name} onClick={() => setCityFilter(cityFilter === name ? '' : name)} className={cityFilter === name ? CHIP_ACTIVE : CHIP_BASE}>
-                {name}
+            {DAY_OPTIONS.map((d) => (
+              <button key={d.label} onClick={() => setDayFilter(dayFilter === d.label ? '' : d.label)} className={dayFilter === d.label ? CHIP_ACTIVE : CHIP_BASE}>
+                {d.label}
               </button>
             ))}
           </div>
-          {/* 风格 chip */}
-          <div className="flex items-center gap-2">
+        </div>
+
+        {/* 风格 chip（替代 /places 的类别筛选） */}
+        <div className="mb-4">
+          <div className="flex items-center gap-2 mb-2">
             <span className="text-xs font-semibold text-gray-600 whitespace-nowrap inline-flex items-center gap-1.5">
               <SparklesIcon size={14} className="text-blue-500" /> 风格
             </span>
@@ -185,6 +274,85 @@ export default function GuidesPage() {
           </div>
         </div>
 
+        {/* 城市 chip（与 /places 完全同款：1 行 12 个 + 更多入口） */}
+        {cities.length > 0 && (
+          <div className="mb-4">
+            <div className="flex items-center gap-2 mb-2">
+              <span className="text-xs font-semibold text-gray-600 whitespace-nowrap inline-flex items-center gap-1.5">
+                <MapPinIcon size={14} className="text-blue-500" /> 城市
+              </span>
+              <div className="flex-1 h-px bg-gray-100" />
+              <button
+                onClick={() => setCityPopoverOpen((v) => !v)}
+                className="inline-flex items-center gap-1 text-xs text-blue-600 hover:text-blue-700 font-medium whitespace-nowrap"
+              >
+                更多城市 <ChevronDown size={12} />
+              </button>
+            </div>
+            <div className="flex gap-2 flex-wrap">
+              <button onClick={() => setCityFilter('')} className={cityFilter === '' ? CHIP_ACTIVE : CHIP_BASE}>
+                <CloseIcon size={12} /> 全部
+              </button>
+              {TOP_CITIES.map((name) => {
+                if (!cities.find((c) => c.name === name)) return null;
+                const active = cityFilter === name;
+                return (
+                  <button key={name} onClick={() => setCityFilter(active ? '' : name)} className={active ? CHIP_ACTIVE : CHIP_BASE}>
+                    {name}
+                  </button>
+                );
+              })}
+            </div>
+            {cityPopoverOpen && (
+              <>
+                <div className="fixed inset-0 z-30" onClick={() => setCityPopoverOpen(false)} />
+                <div className="relative z-40 mt-2 bg-white rounded-xl shadow-lg border border-gray-100 p-4 max-h-96 overflow-y-auto">
+                  <div className="flex items-center gap-2 mb-3 pb-2 border-b border-gray-100">
+                    <SearchIcon size={14} className="text-blue-500" />
+                    <input
+                      value={cityQuery}
+                      onChange={(e) => setCityQuery(e.target.value)}
+                      placeholder="搜索城市..."
+                      className="flex-1 text-sm border-0 focus:outline-none"
+                    />
+                  </div>
+                  <div className="space-y-3">
+                    {Object.entries(
+                      cities
+                        .filter((c) => c.name.includes(cityQuery))
+                        .reduce((groups: Record<string, typeof cities>, c) => {
+                          const letter = getPinyinLetter(c.name);
+                          (groups[letter] ||= []).push(c);
+                          return groups;
+                        }, {})
+                    )
+                      .sort(([a], [b]) => a.localeCompare(b))
+                      .map(([letter, group]) => (
+                        <div key={letter}>
+                          <div className="text-xs font-bold text-blue-600 mb-1.5">{letter}</div>
+                          <div className="flex flex-wrap gap-1.5">
+                            {group.map((c) => {
+                              const active = cityFilter === c.name;
+                              return (
+                                <button
+                                  key={c.id}
+                                  onClick={() => { setCityFilter(active ? '' : c.name); setCityPopoverOpen(false); setCityQuery(''); }}
+                                  className={`px-2.5 py-1 rounded-full text-xs transition ${active ? 'bg-gradient-to-r from-blue-500 to-cyan-500 text-white' : 'bg-gray-100 text-gray-700 hover:bg-blue-50'}`}
+                                >
+                                  {c.name}
+                                </button>
+                              );
+                            })}
+                          </div>
+                        </div>
+                      ))}
+                  </div>
+                </div>
+              </>
+            )}
+          </div>
+        )}
+
         {loading && <div className="text-center py-12 text-gray-400">加载攻略中…</div>}
 
         {!loading && guides.length === 0 && (
@@ -197,83 +365,79 @@ export default function GuidesPage() {
           </div>
         )}
 
-        {/* 3 列等高卡片（统一 h-72，不再错落） */}
+        {/* 3 列等高卡片（统一 h-72） */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {guides
-            .filter((g) => !cityFilter || g.cityName === cityFilter)
-            .filter((g) => !styleFilter || g.travelStyle === styleFilter)
-            .map((g) => (
-              <article key={g.id} className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all group">
-                <Link href={`/guide/${g.id}`} className="block">
-                  <div className={`relative ${CARD_HEIGHT} overflow-hidden bg-gradient-to-br from-blue-100 to-cyan-100`}>
-                    {g.coverImage ? (
-                      /* eslint-disable-next-line @next/next/no-img-element */
-                      <img
-                        src={g.coverImage}
-                        alt={g.title}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                      />
-                    ) : (
-                      <div className="w-full h-full flex items-center justify-center">
-                        <MapPinIcon size={48} className="text-blue-300" />
-                      </div>
-                    )}
-                    {/* 顶部标签 */}
-                    <div className="absolute top-3 left-3 flex flex-col gap-1.5">
-                      {g.cityName && (
-                        <span className="inline-flex items-center gap-1 px-2.5 py-1 bg-white/90 backdrop-blur-sm rounded-full text-xs font-medium text-gray-700 shadow-sm">
-                          <MapPinIcon size={10} className="text-blue-600" /> {g.cityName}
-                        </span>
-                      )}
-                      {g.days && (
-                        <span className="inline-flex items-center gap-1 px-2.5 py-1 bg-black/40 backdrop-blur-sm text-white rounded-full text-xs font-medium">
-                          <ClockIcon size={10} /> {g.days} 天
-                        </span>
-                      )}
+          {filtered.map((g) => (
+            <article key={g.id} className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all group">
+              <Link href={`/guide/${g.id}`} className="block">
+                <div className={`relative ${CARD_HEIGHT} overflow-hidden bg-gradient-to-br from-blue-100 to-cyan-100`}>
+                  {g.coverImage ? (
+                    /* eslint-disable-next-line @next/next/no-img-element */
+                    <img
+                      src={g.coverImage}
+                      alt={g.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                  ) : (
+                    <div className="w-full h-full flex items-center justify-center">
+                      <MapPinIcon size={48} className="text-blue-300" />
                     </div>
-                    {g.isMock && (
-                      <div className="absolute top-3 right-3 px-2 py-0.5 bg-amber-400/90 backdrop-blur-sm text-white rounded-full text-xs font-medium shadow-sm">
-                        示意
-                      </div>
-                    )}
-                    <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/60 via-black/20 to-transparent pointer-events-none" />
-                  </div>
-                </Link>
-                <div className="p-4">
-                  <Link href={`/guide/${g.id}`}>
-                    <h3 className="font-bold text-gray-900 line-clamp-2 mb-2 hover:text-blue-600 transition">
-                      {g.title}
-                    </h3>
-                  </Link>
-                  <div className="flex items-center justify-between text-xs text-gray-500 mb-3">
-                    <span className="inline-flex items-center gap-1.5 truncate">
-                      <span className="w-5 h-5 rounded-full bg-gradient-to-br from-blue-400 to-cyan-400 flex items-center justify-center text-white text-[10px] flex-shrink-0">
-                        {g.author.nickname?.[0] ?? '?'}
+                  )}
+                  <div className="absolute top-3 left-3 flex flex-col gap-1.5">
+                    {g.cityName && (
+                      <span className="inline-flex items-center gap-1 px-2.5 py-1 bg-white/90 backdrop-blur-sm rounded-full text-xs font-medium text-gray-700 shadow-sm">
+                        <MapPinIcon size={10} className="text-blue-600" /> {g.cityName}
                       </span>
-                      <span className="truncate">{g.author.nickname}</span>
-                    </span>
-                    <span className="inline-flex items-center gap-2 whitespace-nowrap">
-                      <span className="inline-flex items-center gap-0.5"><EyeIcon size={11} />{g.stats.view}</span>
-                      <span className="inline-flex items-center gap-0.5"><HeartIcon size={11} className="text-pink-500" />{g.stats.like}</span>
-                      <span className="inline-flex items-center gap-0.5"><ForkIcon size={11} className="text-blue-500" />{g.stats.save}</span>
-                    </span>
+                    )}
+                    {g.days && (
+                      <span className="inline-flex items-center gap-1 px-2.5 py-1 bg-black/40 backdrop-blur-sm text-white rounded-full text-xs font-medium">
+                        <ClockIcon size={10} /> {g.days} 天
+                      </span>
+                    )}
                   </div>
-                  <button
-                    onClick={() => forkGuide(g.id)}
-                    disabled={forkingId === g.id}
-                    className="w-full py-2 bg-gradient-to-r from-blue-500 to-cyan-500 text-white rounded-lg text-xs font-bold disabled:opacity-50 hover:shadow-md transition flex items-center justify-center gap-1"
-                  >
-                    <ForkIcon size={12} />
-                    {forkingId === g.id ? '生成中…' : '做成我的计划'}
-                  </button>
+                  {g.isMock && (
+                    <div className="absolute top-3 right-3 px-2 py-0.5 bg-amber-400/90 backdrop-blur-sm text-white rounded-full text-xs font-medium shadow-sm">
+                      示意
+                    </div>
+                  )}
+                  <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/60 via-black/20 to-transparent pointer-events-none" />
                 </div>
-              </article>
-            ))}
+              </Link>
+              <div className="p-4">
+                <Link href={`/guide/${g.id}`}>
+                  <h3 className="font-bold text-gray-900 line-clamp-2 mb-2 hover:text-blue-600 transition">
+                    {g.title}
+                  </h3>
+                </Link>
+                <div className="flex items-center justify-between text-xs text-gray-500 mb-3">
+                  <span className="inline-flex items-center gap-1.5 truncate">
+                    <span className="w-5 h-5 rounded-full bg-gradient-to-br from-blue-400 to-cyan-400 flex items-center justify-center text-white text-[10px] flex-shrink-0">
+                      {g.author.nickname?.[0] ?? '?'}
+                    </span>
+                    <span className="truncate">{g.author.nickname}</span>
+                  </span>
+                  <span className="inline-flex items-center gap-2 whitespace-nowrap">
+                    <span className="inline-flex items-center gap-0.5"><EyeIcon size={11} />{g.stats.view}</span>
+                    <span className="inline-flex items-center gap-0.5"><HeartIcon size={11} className="text-pink-500" />{g.stats.like}</span>
+                    <span className="inline-flex items-center gap-0.5"><ForkIcon size={11} className="text-blue-500" />{g.stats.save}</span>
+                  </span>
+                </div>
+                <button
+                  onClick={() => forkGuide(g.id)}
+                  disabled={forkingId === g.id}
+                  className="w-full py-2 bg-gradient-to-r from-blue-500 to-cyan-500 text-white rounded-lg text-xs font-bold disabled:opacity-50 hover:shadow-md transition flex items-center justify-center gap-1"
+                >
+                  <ForkIcon size={12} />
+                  {forkingId === g.id ? '生成中…' : '做成我的计划'}
+                </button>
+              </div>
+            </article>
+          ))}
         </div>
 
-        {!loading && guides.filter((g) => (!cityFilter || g.cityName === cityFilter) && (!styleFilter || g.travelStyle === styleFilter)).length === 0 && guides.length > 0 && (
+        {!loading && filtered.length === 0 && guides.length > 0 && (
           <div className="text-center py-12 text-gray-400 text-sm">
-            当前筛选下没有匹配的攻略，<button onClick={() => { setCityFilter(''); setStyleFilter(''); }} className="text-blue-600 hover:underline">清除筛选</button>
+            当前筛选下没有匹配的攻略，<button onClick={() => { setQ(''); setDayFilter(''); setStyleFilter(''); setCityFilter(''); }} className="text-blue-600 hover:underline">清除筛选</button>
           </div>
         )}
       </div>
