@@ -37,20 +37,18 @@ export default function FAQPage() {
   ];
 
   return (
-    <main className="min-h-screen bg-gray-50">
-      <div className="max-w-3xl mx-auto px-4 py-8">
-        <Link href="/" className="text-green-600 hover:text-green-800 text-sm mb-6 block">← 返回首页</Link>
-        <h1 className="text-2xl font-bold text-gray-900 mb-2">常见问题</h1>
+    <main className="min-h-screen bg-gradient-to-b from-blue-50 via-white to-cyan-50">
+      <div className="max-w-6xl mx-auto px-6 py-10">
+        <Link href="/" className="text-blue-600 hover:text-blue-700 text-sm mb-6 block">← 返回首页</Link>
+        <h1 className="text-3xl font-extrabold text-gray-900 mb-2">常见问题</h1>
         <p className="text-gray-500 mb-8">关于童慧行走天下的常见问题解答</p>
 
         {/* 常见问题 */}
-        <h2 className="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
-          <span>💬</span> 常见问题
-        </h2>
+        <h2 className="text-lg font-bold text-gray-900 mb-3">常见问题</h2>
         <div className="space-y-3 mb-10">
           {faqs.map((faq, i) => (
             <details key={i} className="bg-white rounded-xl shadow-sm overflow-hidden">
-              <summary className="px-5 py-4 cursor-pointer font-medium text-gray-900 hover:bg-gray-50 transition-colors">
+              <summary className="px-5 py-4 cursor-pointer font-medium text-gray-900 hover:bg-blue-50 transition-colors">
                 {faq.q}
               </summary>
               <div className="px-5 pb-4 text-sm text-gray-600 leading-relaxed">{faq.a}</div>
@@ -59,9 +57,7 @@ export default function FAQPage() {
         </div>
 
         {/* 免责声明 */}
-        <h2 className="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
-          <span>📋</span> 免责声明
-        </h2>
+        <h2 className="text-lg font-bold text-gray-900 mb-3">免责声明</h2>
         <div className="space-y-3">
           {disclaimers.map((d, i) => (
             <div key={i} className="bg-amber-50 border border-amber-200 rounded-xl p-4">
