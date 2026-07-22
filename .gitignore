@@ -12,6 +12,10 @@ target/
 # macOS finder “冲撞解决”副本
 .!*
 
+# 本地工具（不应入库的二进制/CLI）
+aliyun
+*.exe
+
 # IDE/dev tool 缓存产物（不该入库）
 *.vue.snapshot
 *.log
