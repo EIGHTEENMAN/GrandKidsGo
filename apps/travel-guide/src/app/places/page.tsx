@@ -10,6 +10,7 @@ import {
   SearchIcon, StarIcon, UserIcon, BabyIcon, CloseIcon,
   ForkIcon, RestaurantIcon, HotelIcon, TransportIcon, MedicalIcon,
   StoreIcon, PlaygroundIcon, ScienceIcon, LibraryIcon, MuseumIcon, AquariumIcon,
+  ChevronDown,
 } from '@/components/Icons';
 
 const TRAVEL_API = (process.env.NEXT_PUBLIC_TRAVEL_API as string) || 'https://travel.grandand.com';
@@ -68,6 +69,11 @@ const TAG_SVG: Record<string, any> = {
 const CARD_CLASS = "group bg-white rounded-lg p-2.5 text-center shadow-sm hover:shadow-md transition border border-gray-100 hover:border-blue-200";
 const CARD_ACTIVE_CLASS = "bg-gradient-to-br from-blue-500 to-cyan-500 text-white rounded-lg p-2.5 text-center shadow-md hover:shadow-lg transition border border-blue-500";
 
+// 横滑 chip 样式（主题/类别用）
+const CHIP_CLASS = "flex-shrink-0 inline-flex items-center gap-1 px-3 py-1.5 rounded-full text-xs font-medium transition border whitespace-nowrap";
+const CHIP_BASE = `${CHIP_CLASS} bg-white text-gray-700 border-gray-200 hover:border-blue-300 hover:text-blue-600`;
+const CHIP_ACTIVE = `${CHIP_CLASS} bg-gradient-to-r from-blue-500 to-cyan-500 text-white border-blue-500 shadow-sm`;
+
 // 类别 icon SVG 映射（卡片无封面时的兜底）
 function CategoryIcon({ type, className }: { type: string; className?: string }) {
   const cat = PLACE_CATEGORIES.find((c) => c.key === type);
@@ -84,6 +90,8 @@ function PlacesContent() {
   const [cities, setCities] = useState<{ id: string; name: string }[]>([]);
   const [cityId, setCityId] = useState(searchParams.get('cityId') ?? '');
   const [loading, setLoading] = useState(false);
+  const [cityPopoverOpen, setCityPopoverOpen] = useState(false);
+  const [cityQuery, setCityQuery] = useState('');
 
   useEffect(() => {
     fetch(`${TRAVEL_API}/api/cities`)
@@ -162,23 +170,20 @@ function PlacesContent() {
           />
         </div>
 
-        {/* 按主题筛选 — grid 卡片 */}
-        <div className="mb-6">
-          <div className="flex items-center gap-2 mb-3">
+        {/* 按主题筛选 — 横滑 chip（一行） */}
+        <div className="mb-4">
+          <div className="flex items-center gap-2 mb-2">
             <span className="text-xs font-semibold text-gray-600 whitespace-nowrap inline-flex items-center gap-1.5">
-              <SparklesIcon size={14} className="text-blue-500" /> 按主题筛选
+              <SparklesIcon size={14} className="text-blue-500" /> 主题
             </span>
             <div className="flex-1 h-px bg-gray-100" />
           </div>
-          <div className="grid grid-cols-5 md:grid-cols-8 lg:grid-cols-10 gap-2">
+          <div className="flex gap-2 overflow-x-auto pb-1 -mx-1 px-1">
             <button
               onClick={() => setTag('')}
-              className={tag === '' ? CARD_ACTIVE_CLASS : CARD_CLASS}
+              className={tag === '' ? CHIP_ACTIVE : CHIP_BASE}
             >
-              <span className={`inline-flex items-center justify-center w-8 h-8 rounded-full mb-1.5 transition ${tag === '' ? 'bg-white/20' : 'bg-blue-50 group-hover:bg-blue-100'}`}>
-                <CloseIcon size={16} className={tag === '' ? 'text-white' : 'text-blue-600'} />
-              </span>
-              <div className="text-xs font-medium">全部</div>
+              <CloseIcon size={12} /> 全部
             </button>
             {[
               '玩水', '海边', '爬山', '研学', '动物', '采摘', '露营',
@@ -190,35 +195,29 @@ function PlacesContent() {
                 <button
                   key={tid}
                   onClick={() => setTag(active ? '' : tid)}
-                  className={active ? CARD_ACTIVE_CLASS : CARD_CLASS}
+                  className={active ? CHIP_ACTIVE : CHIP_BASE}
                 >
-                  <span className={`inline-flex items-center justify-center w-8 h-8 rounded-full mb-1.5 transition ${active ? 'bg-white/20' : 'bg-blue-50 group-hover:bg-blue-100'}`}>
-                    <Icon size={16} className={active ? 'text-white' : 'text-blue-600'} />
-                  </span>
-                  <div className="text-xs font-medium">{tid}</div>
+                  <Icon size={12} /> {tid}
                 </button>
               );
             })}
           </div>
         </div>
 
-        {/* 地点类别 — grid 卡片 */}
-        <div className="mb-6">
-          <div className="flex items-center gap-2 mb-3">
+        {/* 地点类别 — 横滑 chip（一行） */}
+        <div className="mb-4">
+          <div className="flex items-center gap-2 mb-2">
             <span className="text-xs font-semibold text-gray-600 whitespace-nowrap inline-flex items-center gap-1.5">
-              <MapPinIcon size={14} className="text-blue-500" /> 地点类别
+              <MapPinIcon size={14} className="text-blue-500" /> 类别
             </span>
             <div className="flex-1 h-px bg-gray-100" />
           </div>
-          <div className="grid grid-cols-5 md:grid-cols-8 lg:grid-cols-10 gap-2">
+          <div className="flex gap-2 overflow-x-auto pb-1 -mx-1 px-1">
             <button
               onClick={() => setCategory('')}
-              className={!category ? CARD_ACTIVE_CLASS : CARD_CLASS}
+              className={!category ? CHIP_ACTIVE : CHIP_BASE}
             >
-              <span className={`inline-flex items-center justify-center w-8 h-8 rounded-full mb-1.5 transition ${!category ? 'bg-white/20' : 'bg-blue-50 group-hover:bg-blue-100'}`}>
-                <MapPinIcon size={16} className={!category ? 'text-white' : 'text-blue-600'} />
-              </span>
-              <div className="text-xs font-medium">全部</div>
+              <MapPinIcon size={12} /> 全部
             </button>
             {PLACE_CATEGORIES.map((c) => {
               const Icon = c.Icon;
@@ -227,24 +226,21 @@ function PlacesContent() {
                 <button
                   key={c.key}
                   onClick={() => setCategory(active ? '' : c.key)}
-                  className={active ? CARD_ACTIVE_CLASS : CARD_CLASS}
+                  className={active ? CHIP_ACTIVE : CHIP_BASE}
                 >
-                  <span className={`inline-flex items-center justify-center w-8 h-8 rounded-full mb-1.5 transition ${active ? 'bg-white/20' : 'bg-blue-50 group-hover:bg-blue-100'}`}>
-                    <Icon size={16} className={active ? 'text-white' : 'text-blue-600'} />
-                  </span>
-                  <div className="text-xs font-medium">{c.label}</div>
+                  <Icon size={12} /> {c.label}
                 </button>
               );
             })}
           </div>
         </div>
 
-        {/* 城市筛选 — grid 卡片 */}
+        {/* 城市筛选 — 2 行 grid + 更多城市下拉 */}
         {cities.length > 0 && (
-          <div className="mb-6">
-            <div className="flex items-center gap-2 mb-3">
+          <div className="mb-4">
+            <div className="flex items-center gap-2 mb-2">
               <span className="text-xs font-semibold text-gray-600 whitespace-nowrap inline-flex items-center gap-1.5">
-                <CityIcon size={14} className="text-blue-500" /> 热门城市
+                <CityIcon size={14} className="text-blue-500" /> 城市
               </span>
               <div className="flex-1 h-px bg-gray-100" />
             </div>
@@ -253,12 +249,12 @@ function PlacesContent() {
                 onClick={() => setCityId('')}
                 className={!cityId ? CARD_ACTIVE_CLASS : CARD_CLASS}
               >
-                <span className={`inline-flex items-center justify-center w-8 h-8 rounded-full mb-1.5 transition ${!cityId ? 'bg-white/20' : 'bg-blue-50 group-hover:bg-blue-100'}`}>
-                  <CityIcon size={16} className={!cityId ? 'text-white' : 'text-blue-600'} />
+                <span className={`inline-flex items-center justify-center w-7 h-7 rounded-full mb-1 transition ${!cityId ? 'bg-white/20' : 'bg-blue-50 group-hover:bg-blue-100'}`}>
+                  <CityIcon size={14} className={!cityId ? 'text-white' : 'text-blue-600'} />
                 </span>
-                <div className="text-xs font-medium">全部城市</div>
+                <div className="text-xs font-medium">全部</div>
               </button>
-              {cities.slice(0, 13).map((c) => {
+              {cities.slice(0, 19).map((c) => {
                 const active = cityId === c.id;
                 return (
                   <button
@@ -266,13 +262,58 @@ function PlacesContent() {
                     onClick={() => setCityId(active ? '' : c.id)}
                     className={active ? CARD_ACTIVE_CLASS : CARD_CLASS}
                   >
-                    <span className={`inline-flex items-center justify-center w-8 h-8 rounded-full mb-1.5 transition ${active ? 'bg-white/20' : 'bg-blue-50 group-hover:bg-blue-100'}`}>
-                      <CityIcon size={16} className={active ? 'text-white' : 'text-blue-600'} />
+                    <span className={`inline-flex items-center justify-center w-7 h-7 rounded-full mb-1 transition ${active ? 'bg-white/20' : 'bg-blue-50 group-hover:bg-blue-100'}`}>
+                      <CityIcon size={14} className={active ? 'text-white' : 'text-blue-600'} />
                     </span>
                     <div className="text-xs font-medium">{c.name}</div>
                   </button>
                 );
               })}
+              {cities.length > 19 && (
+                <div className="relative">
+                  <button
+                    onClick={() => setCityPopoverOpen((v) => !v)}
+                    className="w-full bg-white rounded-lg p-2 text-center shadow-sm hover:shadow-md transition border border-gray-100 hover:border-blue-200 text-blue-600"
+                  >
+                    <span className="inline-flex items-center justify-center w-7 h-7 rounded-full mb-1 bg-blue-50 group-hover:bg-blue-100 transition">
+                      <ChevronDown size={14} />
+                    </span>
+                    <div className="text-xs font-medium">更多</div>
+                  </button>
+                  {cityPopoverOpen && (
+                    <>
+                      <div className="fixed inset-0 z-30" onClick={() => setCityPopoverOpen(false)} />
+                      <div className="absolute right-0 top-full mt-1 z-40 w-64 bg-white rounded-xl shadow-lg border border-gray-100 p-3">
+                        <div className="flex items-center gap-2 mb-2 pb-2 border-b border-gray-100">
+                          <SearchIcon size={14} className="text-blue-500" />
+                          <input
+                            value={cityQuery}
+                            onChange={(e) => setCityQuery(e.target.value)}
+                            placeholder="搜索城市..."
+                            className="flex-1 text-xs border-0 focus:outline-none"
+                          />
+                        </div>
+                        <div className="max-h-60 overflow-y-auto flex flex-wrap gap-1.5">
+                          {cities
+                            .filter((c) => c.name.includes(cityQuery))
+                            .map((c) => {
+                              const active = cityId === c.id;
+                              return (
+                                <button
+                                  key={c.id}
+                                  onClick={() => { setCityId(active ? '' : c.id); setCityPopoverOpen(false); setCityQuery(''); }}
+                                  className={`px-2.5 py-1 rounded-full text-xs transition ${active ? 'bg-gradient-to-r from-blue-500 to-cyan-500 text-white' : 'bg-gray-100 text-gray-700 hover:bg-blue-50'}`}
+                                >
+                                  {c.name}
+                                </button>
+                              );
+                            })}
+                        </div>
+                      </div>
+                    </>
+                  )}
+                </div>
+              )}
             </div>
           </div>
         )}

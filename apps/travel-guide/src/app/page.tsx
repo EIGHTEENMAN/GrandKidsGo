@@ -349,17 +349,14 @@ export default function TravelHome() {
               </span>
               <div className="flex-1 h-px bg-gray-100" />
             </div>
-            <div className="grid grid-cols-5 md:grid-cols-8 lg:grid-cols-10 gap-2">
-              {['北京', '上海', '杭州', '成都', '广州', '西安', '厦门'].map((city) => (
+            <div className="flex gap-2 overflow-x-auto pb-1 -mx-1 px-1">
+              {['北京', '上海', '杭州', '成都', '广州', '西安', '厦门', '南京', '苏州', '青岛'].map((city) => (
                 <Link
                   key={city}
                   href={`/places?cityName=${encodeURIComponent(city)}`}
-                  className="group bg-white rounded-lg p-2.5 text-center shadow-sm hover:shadow-md transition border border-gray-100 hover:border-blue-200"
+                  className="flex-shrink-0 inline-flex items-center gap-1 px-3 py-1.5 rounded-full text-xs font-medium transition border whitespace-nowrap bg-white text-gray-700 border-gray-200 hover:border-blue-300 hover:text-blue-600"
                 >
-                  <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-blue-50 text-blue-600 mb-1.5 group-hover:bg-blue-100 transition">
-                    <CityIcon size={16} />
-                  </span>
-                  <div className="text-xs font-medium text-gray-700">{city}</div>
+                  <CityIcon size={12} /> {city}
                 </Link>
               ))}
             </div>
