@@ -4,7 +4,7 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import { SparklesIcon, MapPinIcon, ClockIcon, HeartIcon, EyeIcon, ForkIcon } from '@/components/Icons';
+import { SparklesIcon, MapPinIcon, ClockIcon, HeartIcon, EyeIcon, ForkIcon, CloseIcon } from '@/components/Icons';
 
 const TRAVEL_API = (process.env.NEXT_PUBLIC_TRAVEL_API as string) || 'https://travel.grandand.com';
 
@@ -61,14 +61,24 @@ const MOCK_GUIDES: Guide[] = [
     coverImage: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=80', isMock: true },
 ];
 
-// 瀑布流大小变体（3 列）
-const MASONRY_HEIGHTS = ['h-64', 'h-72', 'h-80', 'h-60', 'h-72', 'h-80'];
+// 统一高度（不瀑布流错落，避免视觉上"斜斜"）
+const CARD_HEIGHT = 'h-72';
+
+// chip 样式
+const CHIP_BASE = "flex-shrink-0 inline-flex items-center gap-1 px-3 py-1.5 rounded-full text-xs font-medium transition border whitespace-nowrap bg-white text-gray-700 border-gray-200 hover:border-blue-300 hover:text-blue-600";
+const CHIP_ACTIVE = "flex-shrink-0 inline-flex items-center gap-1 px-3 py-1.5 rounded-full text-xs font-medium transition border whitespace-nowrap bg-gradient-to-r from-blue-500 to-cyan-500 text-white border-blue-500 shadow-sm";
+
+// 筛选维度
+const TOP_CITIES = ['北京', '上海', '广州', '深圳', '成都', '杭州', '西安', '南京', '厦门', '苏州', '重庆', '武汉'];
+const TRAVEL_STYLES = ['平衡', '慢游', '主题乐园', '度假', '自然', '研学', '历史'];
 
 export default function GuidesPage() {
   const router = useRouter();
   const [guides, setGuides] = useState<Guide[]>([]);
   const [loading, setLoading] = useState(true);
   const [forkingId, setForkingId] = useState<string | null>(null);
+  const [cityFilter, setCityFilter] = useState<string>('');
+  const [styleFilter, setStyleFilter] = useState<string>('');
 
   useEffect(() => {
     fetch(`${TRAVEL_API}/api/guides/feed`)
@@ -137,6 +147,44 @@ export default function GuidesPage() {
       </header>
 
       <div className="max-w-6xl mx-auto px-6 py-8">
+        {/* 筛选条 */}
+        <div className="mb-5 space-y-3">
+          {/* 城市 chip */}
+          <div className="flex items-center gap-2">
+            <span className="text-xs font-semibold text-gray-600 whitespace-nowrap inline-flex items-center gap-1.5">
+              <MapPinIcon size={14} className="text-blue-500" /> 城市
+            </span>
+            <div className="flex-1 h-px bg-gray-100" />
+          </div>
+          <div className="flex gap-2 overflow-x-auto pb-1 -mx-1 px-1">
+            <button onClick={() => setCityFilter('')} className={cityFilter === '' ? CHIP_ACTIVE : CHIP_BASE}>
+              <CloseIcon size={12} /> 全部
+            </button>
+            {TOP_CITIES.map((name) => (
+              <button key={name} onClick={() => setCityFilter(cityFilter === name ? '' : name)} className={cityFilter === name ? CHIP_ACTIVE : CHIP_BASE}>
+                {name}
+              </button>
+            ))}
+          </div>
+          {/* 风格 chip */}
+          <div className="flex items-center gap-2">
+            <span className="text-xs font-semibold text-gray-600 whitespace-nowrap inline-flex items-center gap-1.5">
+              <SparklesIcon size={14} className="text-blue-500" /> 风格
+            </span>
+            <div className="flex-1 h-px bg-gray-100" />
+          </div>
+          <div className="flex gap-2 overflow-x-auto pb-1 -mx-1 px-1">
+            <button onClick={() => setStyleFilter('')} className={styleFilter === '' ? CHIP_ACTIVE : CHIP_BASE}>
+              <CloseIcon size={12} /> 全部
+            </button>
+            {TRAVEL_STYLES.map((s) => (
+              <button key={s} onClick={() => setStyleFilter(styleFilter === s ? '' : s)} className={styleFilter === s ? CHIP_ACTIVE : CHIP_BASE}>
+                {s}
+              </button>
+            ))}
+          </div>
+        </div>
+
         {loading && <div className="text-center py-12 text-gray-400">加载攻略中…</div>}
 
         {!loading && guides.length === 0 && (
@@ -149,14 +197,15 @@ export default function GuidesPage() {
           </div>
         )}
 
-        {/* 小红书风格瀑布流 — 3 列大小混合 */}
+        {/* 3 列等高卡片（统一 h-72，不再错落） */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {guides.map((g, i) => {
-            const heightClass = MASONRY_HEIGHTS[i % MASONRY_HEIGHTS.length];
-            return (
+          {guides
+            .filter((g) => !cityFilter || g.cityName === cityFilter)
+            .filter((g) => !styleFilter || g.travelStyle === styleFilter)
+            .map((g) => (
               <article key={g.id} className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all group">
                 <Link href={`/guide/${g.id}`} className="block">
-                  <div className={`relative ${heightClass} overflow-hidden bg-gradient-to-br from-blue-100 to-cyan-100`}>
+                  <div className={`relative ${CARD_HEIGHT} overflow-hidden bg-gradient-to-br from-blue-100 to-cyan-100`}>
                     {g.coverImage ? (
                       /* eslint-disable-next-line @next/next/no-img-element */
                       <img
@@ -187,7 +236,6 @@ export default function GuidesPage() {
                         示意
                       </div>
                     )}
-                    {/* 底部渐变 */}
                     <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/60 via-black/20 to-transparent pointer-events-none" />
                   </div>
                 </Link>
@@ -220,9 +268,14 @@ export default function GuidesPage() {
                   </button>
                 </div>
               </article>
-            );
-          })}
+            ))}
         </div>
+
+        {!loading && guides.filter((g) => (!cityFilter || g.cityName === cityFilter) && (!styleFilter || g.travelStyle === styleFilter)).length === 0 && guides.length > 0 && (
+          <div className="text-center py-12 text-gray-400 text-sm">
+            当前筛选下没有匹配的攻略，<button onClick={() => { setCityFilter(''); setStyleFilter(''); }} className="text-blue-600 hover:underline">清除筛选</button>
+          </div>
+        )}
       </div>
     </main>
   );
