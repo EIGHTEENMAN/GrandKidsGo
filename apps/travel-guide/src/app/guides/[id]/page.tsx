@@ -1,166 +1,251 @@
+// 攻略详情页 — 走天下 PC 端（v4.1 蓝青 UI）
+// 数据源：/api/guides/[id]（contentHtml + stats + author + isLiked/isSaved）
+// 渲染：contentHtml 安全清洗 + like/save/fork 按钮 + 双维度评分 + 评论区
 'use client';
-
 import { useEffect, useState } from 'react';
-import { useParams } from 'next/navigation';
 import Link from 'next/link';
+import { useParams, useRouter } from 'next/navigation';
+import {
+  SparklesIcon, MapPinIcon, ClockIcon, BabyIcon, StarIcon, UserIcon, HeartIcon,
+  EyeIcon, ForkIcon, BookmarkIcon, GuidebookIcon, ChevronRight, CheckIcon,
+} from '@/components/Icons';
+import { sanitizeHtml } from '@/lib/sanitize';
 
-type GuideDetail = {
-  id: string; title: string; summary: string; destination: string; category: string;
-  coverImage: string; ageRange: string; days: number; budget: number; viewCount: number;
+const TRAVEL_API = (process.env.NEXT_PUBLIC_TRAVEL_API as string) || 'https://travel.grandand.com';
+
+const HERO_POOL = [
+  'photo-1602002418082-a4443e081dd1',
+  'photo-1511895426328-dc8714191300',
+  'photo-1502086223501-7ea6ecd79368',
+  'photo-1559131397-f94da358f7ca',
+  'photo-1545569310-c55b3c63b8c2',
+];
+
+interface GuideData {
+  id: string;
+  title: string;
+  coverImages: string[];
+  contentHtml: string;
+  city: { id: string; name: string; kidHook?: string; momHook?: string; dadHook?: string } | null;
+  days: number | null;
+  childAges: number[];
+  travelStyle: string | null;
+  season: string | null;
+  tags: string[];
+  publishedAt: string;
   createdAt: string;
-  author: { id: string; nickname: string; avatar: string };
-  sections: { id: string; title: string; content: string; order: number }[];
-  ratings: { score: number }[];
-  comments: { id: string; content: string; createdAt: string; user: { nickname: string } }[];
-};
+  stats: { view: number; save: number; like: number; avgAdultRating?: number | null; avgChildRating?: number | null; ratingCount?: number; commentCount?: number };
+  author: { id: string; nickname: string; avatar: string | null };
+  isLiked: boolean;
+  isSaved: boolean;
+}
+
+function timeAgo(iso: string): string {
+  const d = new Date(iso).getTime();
+  const now = Date.now();
+  const diff = Math.floor((now - d) / 86400000);
+  if (diff < 1) return '今天';
+  if (diff < 30) return `${diff} 天前`;
+  const months = Math.floor(diff / 30);
+  if (months < 12) return `${months} 个月前`;
+  return `${Math.floor(months / 12)} 年前`;
+}
 
 export default function GuideDetailPage() {
   const params = useParams();
-  const [guide, setGuide] = useState<GuideDetail | null>(null);
+  const router = useRouter();
+  const id = params.id as string;
+  const [data, setData] = useState<GuideData | null>(null);
   const [loading, setLoading] = useState(true);
+  const [liked, setLiked] = useState(false);
+  const [saved, setSaved] = useState(false);
   const [commentText, setCommentText] = useState('');
-  const [user, setUser] = useState<any>(null);
+
+  const token = typeof window !== 'undefined' ? sessionStorage.getItem('grandkidsgo_token') : null;
 
   useEffect(() => {
-    const token = localStorage.getItem('haodaer_token');
-    if (token) {
-      fetch('/api/auth/me', { headers: { authorization: `Bearer ${token}` } })
-        .then(r => r.json()).then(d => { if (d.code === 'OK') setUser(d.data); }).catch(() => {});
-    }
-  }, []);
-
-  useEffect(() => {
-    fetch(`/api/guides/${params.id}`)
-      .then(r => r.json()).then(d => { if (d.code === 'OK') setGuide(d.data); })
-      .catch(() => {})
+    fetch(`${TRAVEL_API}/api/guides/${id}`)
+      .then(r => r.json())
+      .then(d => {
+        if (d.code === 'OK' && d.data) {
+          setData(d.data);
+          setLiked(d.data.isLiked ?? false);
+          setSaved(d.data.isSaved ?? false);
+        }
+      })
+      .catch(console.error)
       .finally(() => setLoading(false));
-  }, [params.id]);
+  }, [id]);
 
-  const submitComment = async () => {
-    if (!commentText.trim() || !user) return;
-    const token = localStorage.getItem('haodaer_token');
-    const res = await fetch(`/api/guides/${params.id}/comments`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', authorization: `Bearer ${token}` },
-      body: JSON.stringify({ content: commentText, userId: user.id }),
-    });
+  const toggleLike = async () => {
+    if (!token) { router.push('/login'); return; }
+    const res = await fetch(`${TRAVEL_API}/api/guides/${id}/like`, { method: 'POST', headers: { Authorization: `Bearer ${token}` } });
     const d = await res.json();
     if (d.code === 'OK') {
-      setGuide(prev => prev ? {
-        ...prev,
-        comments: [...prev.comments, { id: d.data.id, content: d.data.content, createdAt: d.data.createdAt, user: { nickname: user.nickname || user.username } }]
-      } : prev);
-      setCommentText('');
+      setLiked(d.data.isLiked);
+      setData(prev => prev ? { ...prev, stats: { ...prev.stats, like: prev.stats.like + (d.data.isLiked ? 1 : -1) } } : prev);
     }
   };
 
-  const submitRating = async (score: number) => {
-    if (!user) return alert('请先登录');
-    const token = localStorage.getItem('haodaer_token');
-    const res = await fetch(`/api/guides/${params.id}/ratings`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', authorization: `Bearer ${token}` },
-      body: JSON.stringify({ score, userId: user.id }),
-    });
+  const toggleSave = async () => {
+    if (!token) { router.push('/login'); return; }
+    const res = await fetch(`${TRAVEL_API}/api/guides/${id}/save`, { method: 'POST', headers: { Authorization: `Bearer ${token}` } });
     const d = await res.json();
-    if (d.code === 'OK') alert('评分成功');
-    else alert(d.message || '评分失败');
+    if (d.code === 'OK') {
+      setSaved(d.data.isSaved);
+      setData(prev => prev ? { ...prev, stats: { ...prev.stats, save: prev.stats.save + (d.data.isSaved ? 1 : -1) } } : prev);
+    }
   };
 
-  if (loading) return <div className="min-h-screen flex items-center justify-center text-gray-400">加载中...</div>;
-  if (!guide) return <div className="min-h-screen flex items-center justify-center text-gray-400">攻略不存在</div>;
+  const forkGuide = async () => {
+    if (!token) { router.push('/login'); return; }
+    const res = await fetch(`${TRAVEL_API}/api/guides/fork`, {
+      method: 'POST', headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` },
+      body: JSON.stringify({ sourceGuideId: id }),
+    });
+    const d = await res.json();
+    if (d.code === 'OK' && d.data?.planRecordId) router.push(`/plan/${d.data.planRecordId}`);
+    else alert(d.error?.message ?? 'fork 失败');
+  };
 
-  const avgRating = guide.ratings.length > 0
-    ? (guide.ratings.reduce((a: number, r: any) => a + r.score, 0) / guide.ratings.length).toFixed(1)
-    : '暂无';
+  const submitComment = async () => {
+    if (!commentText.trim() || !token) return;
+    const res = await fetch(`${TRAVEL_API}/api/guides/${id}/comments`, {
+      method: 'POST', headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` },
+      body: JSON.stringify({ content: commentText }),
+    });
+    const d = await res.json();
+    if (d.code === 'OK') { setCommentText(''); /* reload to show new comment */ location.reload(); }
+    else alert(d.error?.message ?? '评论失败');
+  };
+
+  if (loading) return <div className="min-h-screen flex items-center justify-center text-gray-400">加载中…</div>;
+  if (!data) return <div className="min-h-screen flex items-center justify-center text-gray-500">攻略不存在或已删除</div>;
+
+  const heroImg = data.coverImages?.[0]
+    ? data.coverImages[0]
+    : `https://images.unsplash.com/${HERO_POOL[Math.abs(data.id.split('').reduce((a, c) => a + c.charCodeAt(0), 0)) % HERO_POOL.length]}?w=1600&q=85`;
+  const safeHtml = sanitizeHtml(data.contentHtml);
 
   return (
-    <main className="min-h-screen bg-gray-50">
-      <header className="bg-white shadow-sm">
-        <div className="max-w-4xl mx-auto px-4 py-4 flex items-center gap-4">
-          <Link href="/" className="text-green-600 hover:text-green-800 text-sm">← 返回首页</Link>
-          <span className="text-gray-300">|</span>
-          <Link href="/guides/create" className="text-green-600 hover:text-green-800 text-sm">发布攻略</Link>
+    <main className="min-h-screen bg-gradient-to-b from-blue-50 via-white to-cyan-50 pb-24">
+      {/* ============ ① Hero ============ */}
+      <header className="relative h-[380px] md:h-[440px] overflow-hidden bg-gray-100">
+        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${heroImg})` }} />
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-600/50 via-cyan-600/30 to-teal-600/60" />
+        <div className="absolute inset-0 flex flex-col justify-between p-6 md:p-10 z-10">
+          <Link href="/guides" className="text-white/80 hover:text-white text-sm inline-flex items-center gap-1 self-start">
+            <span>←</span> 返回攻略
+          </Link>
+          <div>
+            {data.city?.name && (
+              <span className="inline-flex items-center gap-1 px-3 py-1 bg-white/20 backdrop-blur-sm rounded-full text-xs font-medium text-white border border-white/30 mb-3">
+                <MapPinIcon size={12} /> {data.city.name}
+              </span>
+            )}
+            <h1 className="text-3xl md:text-5xl font-extrabold text-white mb-4 leading-tight">{data.title}</h1>
+            <div className="flex flex-wrap gap-2">
+              {data.days && (
+                <span className="inline-flex items-center gap-1 px-3 py-1 bg-white/20 backdrop-blur-sm rounded-full text-xs font-medium text-white border border-white/30">
+                  <ClockIcon size={12} /> {data.days} 天
+                </span>
+              )}
+              {data.childAges?.length > 0 && (
+                <span className="inline-flex items-center gap-1 px-3 py-1 bg-white/20 backdrop-blur-sm rounded-full text-xs font-medium text-white border border-white/30">
+                  <BabyIcon size={12} /> {data.childAges.join(', ')} 岁
+                </span>
+              )}
+              {data.travelStyle && (
+                <span className="inline-flex items-center gap-1 px-3 py-1 bg-white/20 backdrop-blur-sm rounded-full text-xs font-medium text-white border border-white/30">
+                  <SparklesIcon size={12} /> {data.travelStyle}
+                </span>
+              )}
+            </div>
+          </div>
         </div>
       </header>
 
-      <div className="max-w-4xl mx-auto px-4 py-6">
-        {/* 标题区 */}
-        <div className="bg-white rounded-xl shadow-sm overflow-hidden mb-6">
-          <div className="h-48 bg-gradient-to-br from-green-400 to-emerald-500 flex items-center justify-center text-white text-3xl font-bold">
-            {guide.destination}
-          </div>
-          <div className="p-6">
-            <div className="flex items-center gap-2 mb-3">
-              <span className="bg-green-50 text-green-600 text-xs px-2 py-0.5 rounded">{guide.category}</span>
-              {guide.ageRange && <span className="bg-green-50 text-green-600 text-xs px-2 py-0.5 rounded">{guide.ageRange}</span>}
-              {guide.days > 0 && <span className="bg-purple-50 text-purple-600 text-xs px-2 py-0.5 rounded">{guide.days}天</span>}
+      <div className="max-w-6xl mx-auto px-6 py-8">
+        {/* ============ ② 攻略正文 ============ */}
+        <section className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-8 mb-8">
+          <div
+            className="prose max-w-none text-gray-800 leading-relaxed [&_h2]:text-xl [&_h2]:font-bold [&_h2]:text-gray-900 [&_h2]:mt-8 [&_h2]:mb-4 [&_h3]:text-lg [&_h3]:font-semibold [&_h3]:text-gray-900 [&_h3]:mt-6 [&_h3]:mb-3 [&_a]:text-blue-600 [&_a]:underline [&_a:hover]:text-blue-700 [&_img]:rounded-xl [&_img]:max-w-full [&_ul]:list-disc [&_ul]:pl-5 [&_ol]:list-decimal [&_ol]:pl-5 [&_blockquote]:border-l-4 [&_blockquote]:border-blue-200 [&_blockquote]:bg-blue-50 [&_blockquote]:rounded-r-xl [&_blockquote]:p-4 [&_blockquote]:italic"
+            dangerouslySetInnerHTML={{ __html: safeHtml }}
+          />
+        </section>
+
+        {/* ============ ③ 作者信息 + 互动 ============ */}
+        <section className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 mb-8">
+          <div className="flex items-center gap-4 mb-4">
+            <span className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-400 to-cyan-400 flex items-center justify-center text-white text-lg font-bold shadow-md flex-shrink-0">
+              {data.author.nickname?.[0] ?? '?'}
+            </span>
+            <div className="flex-1 min-w-0">
+              <div className="font-medium text-gray-900 truncate">{data.author.nickname || '匿名妈妈'}</div>
+              <div className="text-xs text-gray-500">{timeAgo(data.publishedAt || data.createdAt)} · {data.stats.view ?? 0} 次浏览</div>
             </div>
-            <h1 className="text-2xl font-bold text-gray-900 mb-2">{guide.title}</h1>
-            <p className="text-gray-600 mb-4">{guide.summary}</p>
-            <div className="flex items-center justify-between text-sm text-gray-500">
-              <span>作者：{guide.author?.nickname || '匿名'}</span>
-              <div className="flex items-center gap-4">
-                <span>评分：{avgRating}</span>
-                <span>浏览：{guide.viewCount}</span>
-                <span>{new Date(guide.createdAt).toLocaleDateString('zh-CN')}</span>
+          </div>
+          <div className="flex gap-3 flex-wrap">
+            <button onClick={toggleLike} className={`inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-medium border transition ${liked ? 'bg-pink-50 border-pink-200 text-pink-600' : 'bg-white border-gray-200 text-gray-600 hover:border-pink-200'}`}>
+              <HeartIcon size={16} className={liked ? 'text-pink-500' : ''} />
+              {data.stats.like}
+            </button>
+            <button onClick={toggleSave} className={`inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-medium border transition ${saved ? 'bg-amber-50 border-amber-200 text-amber-600' : 'bg-white border-gray-200 text-gray-600 hover:border-amber-200'}`}>
+              <StarIcon size={16} />
+              收藏 {data.stats.save}
+            </button>
+            <button onClick={forkGuide} className="inline-flex items-center gap-1.5 px-5 py-2 bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-bold rounded-full text-sm hover:shadow-lg transition">
+              <ForkIcon size={14} />
+              做成我的计划
+            </button>
+          </div>
+        </section>
+
+        {/* ============ ④ 双维度评分（P1 接 GuideReview） ============ */}
+        <section className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 mb-8">
+          <h2 className="text-lg font-bold text-gray-900 mb-4 inline-flex items-center gap-2">
+            <StarIcon size={18} className="text-amber-500" /> 妈妈们如何评价这篇攻略（{data.stats.ratingCount ?? 0} 条）
+          </h2>
+          <div className="grid grid-cols-2 gap-6 text-center mb-4">
+            <div>
+              <div className="text-xs text-gray-500 mb-1 inline-flex items-center gap-1"><UserIcon size={12} /> 大人评分</div>
+              <div className="text-3xl font-extrabold text-blue-600">
+                {data.stats.avgAdultRating != null ? data.stats.avgAdultRating.toFixed(1) : '—'}
+                <span className="text-sm font-normal text-gray-400 ml-1">/ 5</span>
               </div>
             </div>
-
-            {/* 评分 */}
-            <div className="mt-4 pt-4 border-t flex items-center gap-2">
-              <span className="text-sm text-gray-500">评分：</span>
-              {[1, 2, 3, 4, 5].map(s => (
-                <button key={s} onClick={() => submitRating(s)}
-                  className="text-2xl hover:scale-110 transition-transform">⭐</button>
-              ))}
+            <div>
+              <div className="text-xs text-gray-500 mb-1 inline-flex items-center gap-1"><BabyIcon size={12} /> 孩子评分</div>
+              <div className="text-3xl font-extrabold text-pink-600">
+                {data.stats.avgChildRating != null ? data.stats.avgChildRating.toFixed(1) : '—'}
+                <span className="text-sm font-normal text-gray-400 ml-1">/ 5</span>
+              </div>
             </div>
           </div>
-        </div>
+          <p className="text-xs text-gray-400 text-center mt-2">P1 接入 GuideReview 后展示完整评价列表</p>
+        </section>
 
-        {/* 正文 */}
-        <div className="space-y-4 mb-6">
-          {guide.sections.sort((a, b) => a.order - b.order).map(sec => (
-            <div key={sec.id} className="bg-white rounded-xl shadow-sm p-6">
-              {sec.title && <h2 className="text-xl font-bold text-gray-900 mb-4">{sec.title}</h2>}
-              <div className="prose prose-green max-w-none" dangerouslySetInnerHTML={{ __html: sec.content }} />
-            </div>
-          ))}
-        </div>
-
-        {/* 评论 */}
-        <div className="bg-white rounded-xl shadow-sm p-6">
-          <h2 className="text-lg font-bold text-gray-900 mb-4">评论 ({guide.comments.length})</h2>
-
-          {user ? (
+        {/* ============ ⑤ 评论区（P1 接 GuideComment API） ============ */}
+        <section className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
+          <h2 className="text-lg font-bold text-gray-900 mb-4 inline-flex items-center gap-2">
+            <GuidebookIcon size={18} className="text-blue-600" /> 评论（{data.stats.commentCount ?? 0}）
+          </h2>
+          {token ? (
             <div className="flex gap-3 mb-6">
               <textarea value={commentText} onChange={e => setCommentText(e.target.value)}
-                className="flex-1 px-3 py-2 border rounded-lg text-sm focus:ring-2 focus:ring-green-500" rows={2} placeholder="写评论..." />
+                className="flex-1 px-4 py-3 border border-gray-200 rounded-xl text-sm focus:ring-2 focus:ring-blue-500 bg-white" rows={2} placeholder="说点什么吧..." />
               <button onClick={submitComment} disabled={!commentText.trim()}
-                className="px-4 py-2 bg-green-600 text-white rounded-lg text-sm hover:bg-green-700 disabled:opacity-50 self-end">
+                className="px-5 py-2 bg-gradient-to-r from-blue-500 to-cyan-500 text-white rounded-full text-sm font-bold disabled:opacity-50 self-end hover:shadow-md transition">
                 发表
               </button>
             </div>
           ) : (
-            <p className="text-sm text-gray-400 mb-6"><Link href={`/login?redirect=/guides/${params.id}`} className="text-green-600">登录</Link>后可以评论</p>
+            <p className="text-sm text-gray-400 mb-6">
+              <Link href={`/login?redirect=/guides/${id}`} className="text-blue-600 hover:underline">登录</Link>后可以评论
+            </p>
           )}
-
-          {guide.comments.length === 0 ? (
-            <p className="text-gray-400 text-sm">暂无评论</p>
-          ) : (
-            <div className="space-y-3">
-              {guide.comments.map(c => (
-                <div key={c.id} className="border-b border-gray-100 pb-3 last:border-0">
-                  <div className="flex items-center gap-2 mb-1">
-                    <span className="font-medium text-sm text-gray-700">{c.user.nickname}</span>
-                    <span className="text-xs text-gray-400">{new Date(c.createdAt).toLocaleDateString('zh-CN')}</span>
-                  </div>
-                  <p className="text-sm text-gray-600">{c.content}</p>
-                </div>
-              ))}
-            </div>
-          )}
-        </div>
+          <p className="text-xs text-gray-400 text-center">P1 接入 GuideComment API 后展示具体评论列表</p>
+        </section>
       </div>
     </main>
   );
