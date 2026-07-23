@@ -1021,11 +1021,16 @@ model ChildSaying {
   childId     String?  @map("child_id")
   text        String
   mood        String?
+  spotId      String?  @map("spot_id")         // 2026-07-24 新增：关联景点
+  source      String   @default("manual") @map("source")  // manual | auto_extract
+  sourceGuideId String? @map("source_guide_id")           // 自动提取来源攻略
+  status      String   @default("published")               // draft(待审核) | published | hidden
   shareScope  String   @default("private") @map("share_scope")
   createdAt   DateTime @default(now()) @map("created_at")
 
   @@index([childId, createdAt(sort: Desc)])
   @@index([shareScope, createdAt(sort: Desc)])
+  @@index([spotId, createdAt(sort: Desc)])
   @@map("child_sayings")
 }
 

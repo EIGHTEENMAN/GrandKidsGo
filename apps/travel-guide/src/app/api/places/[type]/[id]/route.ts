@@ -116,6 +116,8 @@ export async function GET(
       leaderboard: await fetchLeaderboard(type, id),
       // 关联古诗词（"古诗在此"板块 — 走天下×学诗词）
       poems: await fetchPoems(type, id, place.city?.id),
+      // 孩子说（按 spotId 过滤已公开的）
+      childSayings: await fetchChildSayingsForPlace(type, id),
       reviews: reviews.map((r) => ({
         id: r.id,
         adultRating: r.adultRating,
@@ -206,4 +208,16 @@ async function fetchPoems(type: string, id: string, cityId: string | null | unde
     linkType: r.linkType, verseLine: r.verseLine, confidence: r.confidence,
     url: `https://xueshici.grandand.com/#reader/${r.poemId}-1`,
   }));
+}
+
+// 孩子说：按 placeId 过滤公开记录（取最近 5 条）
+async function fetchChildSayingsForPlace(type: string, id: string) {
+  if (type !== "sight") return [];
+  const rows = await prisma.childSaying.findMany({
+    where: { spotId: id, status: "published" },
+    orderBy: { createdAt: "desc" },
+    take: 5,
+    select: { id: true, text: true, mood: true, childId: true, createdAt: true },
+  });
+  return rows;
 }

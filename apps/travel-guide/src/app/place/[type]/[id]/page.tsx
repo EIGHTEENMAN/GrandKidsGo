@@ -495,6 +495,26 @@ export default function PlaceDetailPage() {
       </section>
     </div>
 
+        {/* ============ ④.5 孩子们怎么说（按 spotId 匹配） ============ */}
+        {data.childSayings && data.childSayings.length > 0 && (
+          <section className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 mb-8">
+            <h2 className="text-xl font-bold text-gray-900 mb-4 inline-flex items-center gap-2">
+              <BabyIcon size={18} className="text-pink-500" /> 孩子们怎么说
+            </h2>
+            <div className="space-y-3">
+              {data.childSayings.map((s: any) => (
+                <div key={s.id} className="bg-pink-50 rounded-2xl p-4">
+                  <p className="text-gray-900 text-lg leading-relaxed mb-1">"{s.text}"</p>
+                  <div className="flex items-center gap-2 text-xs text-gray-500">
+                    {s.mood && <span className="px-2 py-0.5 bg-pink-100 text-pink-700 rounded-full">{s.mood}</span>}
+                    <span>{new Date(s.createdAt).toLocaleDateString('zh-CN')}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
+
         {/* ============ ④ 古诗在此（走天下×学诗词） ============ */}
         {data.poems && data.poems.length > 0 && (
           <section className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 mb-8">
