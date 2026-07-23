@@ -9,8 +9,8 @@ export default function CreateGuidePage() {
   const [user, setUser] = useState<any>(null);
   const [loading, setLoading] = useState(true);
   const [form, setForm] = useState({
-    title: '', summary: '', destination: '', category: '', coverImage: '',
-    ageRange: '', days: 0, budget: 0, sections: [{ title: '', content: '' }],
+    title: '', destination: '', category: '', coverImage: '',
+    ageRange: '', days: 0, childAges: '', contentHtml: '',
   });
   const [saving, setSaving] = useState(false);
 
@@ -36,13 +36,23 @@ export default function CreateGuidePage() {
 
   const submit = async () => {
     if (!form.title || !form.destination) return alert('标题和目的地不能为空');
+    if (!form.contentHtml) return alert('攻略内容不能为空');
     setSaving(true);
     try {
-      const token = localStorage.getItem('haodaer_token');
+      const token = sessionStorage.getItem('grandkidsgo_token') || localStorage.getItem('haodaer_token');
       const res = await fetch('/api/guides', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', authorization: `Bearer ${token}` },
-        body: JSON.stringify({ ...form, authorId: user.id, days: form.days || undefined, budget: form.budget || undefined }),
+        body: JSON.stringify({
+          title: form.title,
+          contentHtml: form.contentHtml,
+          cityId: null, // P4 接 city 选择器
+          days: form.days || undefined,
+          childAges: form.childAges ? form.childAges.split(',').map(Number).filter(Boolean) : [],
+          travelStyle: form.category || undefined,
+          coverImages: form.coverImage ? [form.coverImage] : [],
+          tags: [form.category, form.ageRange].filter(Boolean),
+        }),
       });
       const d = await res.json();
       if (d.code === 'OK') router.push(`/guides/${d.data.id}`);
@@ -54,91 +64,70 @@ export default function CreateGuidePage() {
   if (loading) return <div className="min-h-screen flex items-center justify-center text-gray-400">加载中...</div>;
 
   return (
-    <main className="min-h-screen bg-gray-50">
-      <header className="bg-white shadow-sm">
-        <div className="max-w-4xl mx-auto px-4 py-4 flex items-center justify-between">
-          <h1 className="text-xl font-bold text-gray-900">发布攻略</h1>
-          <div className="flex gap-3">
-            <button onClick={() => router.back()} className="px-4 py-2 text-sm text-gray-600 hover:text-gray-900">取消</button>
-            <button onClick={submit} disabled={saving}
-              className="px-6 py-2 text-sm bg-green-600 text-white rounded-lg hover:bg-green-700 disabled:opacity-50 transition-colors">
-              {saving ? '发布中...' : '发布'}
-            </button>
-          </div>
+    <main className="min-h-screen bg-gradient-to-b from-blue-50 via-white to-cyan-50">
+      <header className="bg-gradient-to-r from-blue-600 via-cyan-600 to-teal-600 text-white">
+        <div className="max-w-6xl mx-auto px-6 py-10">
+          <Link href="/" className="text-blue-100 text-sm hover:text-white">← 返回首页</Link>
+          <h1 className="text-3xl font-extrabold mt-3">发布攻略</h1>
+          <p className="text-blue-100 mt-1 text-sm">分享你的亲子旅行经验</p>
         </div>
       </header>
 
-      <div className="max-w-4xl mx-auto px-4 py-6 space-y-6">
+      <div className="max-w-6xl mx-auto px-6 py-8 space-y-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div>
+          <div className="md:col-span-2">
             <label className="block text-sm font-medium text-gray-700 mb-1">标题 *</label>
             <input value={form.title} onChange={e => setForm({ ...form, title: e.target.value })}
-              className="w-full px-3 py-2 border rounded-lg text-sm focus:ring-2 focus:ring-green-500 focus:border-green-500" placeholder="如：带娃游三亚攻略" />
+              className="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm focus:ring-2 focus:ring-blue-500 bg-white" placeholder="如：带娃游三亚攻略" />
           </div>
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">目的地 *</label>
+            <label className="block text-sm font-medium text-gray-700 mb-1">目的地</label>
             <input value={form.destination} onChange={e => setForm({ ...form, destination: e.target.value })}
-              className="w-full px-3 py-2 border rounded-lg text-sm focus:ring-2 focus:ring-green-500 focus:border-green-500" placeholder="如：三亚" />
-          </div>
-          <div className="md:col-span-2">
-            <label className="block text-sm font-medium text-gray-700 mb-1">摘要</label>
-            <textarea value={form.summary} onChange={e => setForm({ ...form, summary: e.target.value })}
-              className="w-full px-3 py-2 border rounded-lg text-sm focus:ring-2 focus:ring-green-500 focus:border-green-500" rows={2} placeholder="简短描述这篇攻略" />
+              className="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm focus:ring-2 focus:ring-blue-500 bg-white" placeholder="如：三亚" />
           </div>
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">分类</label>
+            <label className="block text-sm font-medium text-gray-700 mb-1">旅行风格</label>
             <select value={form.category} onChange={e => setForm({ ...form, category: e.target.value })}
-              className="w-full px-3 py-2 border rounded-lg text-sm">
-              <option value="">选择分类</option>
-              <option value="海滨度假">海滨度假</option>
-              <option value="城市探索">城市探索</option>
-              <option value="自然风光">自然风光</option>
+              className="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm bg-white">
+              <option value="">选择风格</option>
+              <option value="平衡">平衡</option>
+              <option value="慢游">慢游</option>
               <option value="主题乐园">主题乐园</option>
-              <option value="文化历史">文化历史</option>
-              <option value="乡村田园">乡村田园</option>
+              <option value="度假">度假</option>
+              <option value="自然">自然</option>
+              <option value="研学">研学</option>
+              <option value="历史">历史</option>
             </select>
           </div>
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">适合年龄</label>
-            <input value={form.ageRange} onChange={e => setForm({ ...form, ageRange: e.target.value })}
-              className="w-full px-3 py-2 border rounded-lg text-sm" placeholder="如：3-6岁" />
+            <label className="block text-sm font-medium text-gray-700 mb-1">孩子年龄（逗号分隔）</label>
+            <input value={form.childAges} onChange={e => setForm({ ...form, childAges: e.target.value })}
+              className="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm bg-white" placeholder="如：3,6" />
           </div>
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1">天数</label>
             <input type="number" value={form.days || ''} onChange={e => setForm({ ...form, days: parseInt(e.target.value) || 0 })}
-              className="w-full px-3 py-2 border rounded-lg text-sm" placeholder="如：5" />
-          </div>
-          <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">预算(元)</label>
-            <input type="number" value={form.budget || ''} onChange={e => setForm({ ...form, budget: parseInt(e.target.value) || 0 })}
-              className="w-full px-3 py-2 border rounded-lg text-sm" placeholder="如：5000" />
+              className="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm bg-white" placeholder="如：5" />
           </div>
         </div>
 
         <div>
-          <div className="flex items-center justify-between mb-3">
-            <h2 className="text-lg font-semibold text-gray-800">攻略内容</h2>
-            <button onClick={addSection} className="text-sm text-green-600 hover:text-green-800">+ 添加段落</button>
+          <h2 className="text-lg font-bold text-gray-900 mb-3">攻略内容</h2>
+          <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
+            <TipTapEditor
+              content={form.contentHtml}
+              onChange={(html) => setForm({ ...form, contentHtml: html })}
+              placeholder="写攻略正文..."
+            />
           </div>
-          <div className="space-y-6">
-            {form.sections.map((sec, i) => (
-              <div key={i} className="bg-white border rounded-xl p-4">
-                <div className="flex items-center justify-between mb-2">
-                  <input value={sec.title} onChange={e => updateSection(i, 'title', e.target.value)}
-                    className="flex-1 text-base font-medium border-none focus:outline-none focus:ring-0 placeholder-gray-400"
-                    placeholder={`段落 ${i + 1} 标题（可选）`} />
-                  {form.sections.length > 1 && (
-                    <button onClick={() => removeSection(i)} className="text-red-400 hover:text-red-600 text-sm ml-2">删除</button>
-                  )}
-                </div>
-                <TipTapEditor
-                  content={sec.content}
-                  onChange={(html) => updateSection(i, 'content', html)}
-                  placeholder={`开始写第 ${i + 1} 段的内容...`}
-                />
-              </div>
-            ))}
-          </div>
+        </div>
+
+        <div className="flex gap-3 justify-end">
+          <button onClick={() => router.back()} className="px-6 py-3 text-sm text-gray-600 hover:text-gray-900 border border-gray-200 rounded-full transition">取消</button>
+          <button onClick={submit} disabled={saving}
+            className="px-8 py-3 text-sm bg-gradient-to-r from-blue-500 to-cyan-500 text-white rounded-full hover:shadow-lg disabled:opacity-50 transition font-bold">
+            {saving ? '发布中...' : '发布攻略'}
+          </button>
         </div>
       </div>
     </main>
