@@ -263,285 +263,218 @@ export default function PlaceDetailPage() {
       </header>
 
       <div className="max-w-6xl mx-auto px-6 py-8">
-        {/* ============ ② 核心信息 ============ */}
-        <section className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 mb-8">
-          <h2 className="text-lg font-bold text-gray-900 mb-4 inline-flex items-center gap-2">
-            <GuidebookIcon size={18} className="text-blue-600" /> 核心信息
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4 text-sm">
-            {place.address && (
+        {/* ============ ② 核心信息（左）+ 双维度评分卡（右）并排 ============ */}
+        <section className="grid grid-cols-1 md:grid-cols-5 gap-6 mb-8">
+          {/* 左：核心信息 3/5 */}
+          <div className="md:col-span-3 bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
+            <h2 className="text-lg font-bold text-gray-900 mb-4 inline-flex items-center gap-2">
+              <GuidebookIcon size={18} className="text-blue-600" /> 核心信息
+            </h2>
+            <div className="grid grid-cols-1 gap-y-4 text-sm">
               <div className="flex gap-3">
                 <MapPinIcon size={16} className="text-blue-500 flex-shrink-0 mt-0.5" />
-                <div>
-                  <div className="text-xs text-gray-500">地址</div>
-                  <div className="text-gray-900">{place.address}</div>
+                <div className="flex-1">
+                  <div className="text-xs text-gray-500">地点</div>
+                  <div className="text-gray-900">{place.name}{place.city?.name ? `（${place.city.name}）` : ''}</div>
                 </div>
               </div>
-            )}
-            {place.openHours && (
+              <div className="flex gap-3">
+                <MapPinIcon size={16} className="text-blue-500 flex-shrink-0 mt-0.5" />
+                <div className="flex-1">
+                  <div className="text-xs text-gray-500">地址</div>
+                  <div className="text-gray-900">{place.address || '暂无数据'}</div>
+                </div>
+              </div>
               <div className="flex gap-3">
                 <ClockIcon size={16} className="text-blue-500 flex-shrink-0 mt-0.5" />
-                <div>
+                <div className="flex-1">
                   <div className="text-xs text-gray-500">营业时间</div>
-                  <div className="text-gray-900">{place.openHours}</div>
+                  <div className="text-gray-900">{place.openHours || '暂无数据'}</div>
                 </div>
               </div>
-            )}
-            {place.ticketPrice && (
               <div className="flex gap-3">
                 <SparklesIcon size={16} className="text-blue-500 flex-shrink-0 mt-0.5" />
-                <div>
+                <div className="flex-1">
                   <div className="text-xs text-gray-500">门票</div>
-                  <div className="text-gray-900">{place.ticketPrice}</div>
+                  <div className="text-gray-900">{place.ticketPrice || '暂无数据'}</div>
                 </div>
               </div>
-            )}
-            {place.phone && (
               <div className="flex gap-3">
                 <PhoneIcon size={16} className="text-blue-500 flex-shrink-0 mt-0.5" />
-                <div>
+                <div className="flex-1">
                   <div className="text-xs text-gray-500">电话</div>
-                  <div className="text-gray-900">{place.phone}</div>
+                  <div className="text-gray-900">{place.phone || '暂无数据'}</div>
                 </div>
               </div>
-            )}
-            {place.officialSite && (
-              <div className="flex gap-3 md:col-span-2">
-                <GuidebookIcon size={16} className="text-blue-500 flex-shrink-0 mt-0.5" />
-                <div>
-                  <div className="text-xs text-gray-500">官网</div>
-                  <a href={place.officialSite} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700 break-all">
-                    {place.officialSite}
-                  </a>
+              {place.officialSite && (
+                <div className="flex gap-3">
+                  <GuidebookIcon size={16} className="text-blue-500 flex-shrink-0 mt-0.5" />
+                  <div className="flex-1">
+                    <div className="text-xs text-gray-500">官网</div>
+                    <a href={place.officialSite} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700 break-all">{place.officialSite}</a>
+                  </div>
                 </div>
+              )}
+            </div>
+          </div>
+          {/* 右：双维度评分卡 2/5 */}
+          <div className="md:col-span-2 bg-white rounded-2xl shadow-sm border border-gray-100 p-6 flex flex-col justify-center">
+            <h2 className="text-lg font-bold text-gray-900 mb-4 inline-flex items-center gap-2">
+              <StarIcon size={18} className="text-amber-500" /> 评分
+            </h2>
+            <div className="grid grid-cols-2 gap-6 text-center mb-4">
+              <div>
+                <div className="text-xs text-gray-500 mb-1 inline-flex items-center gap-1"><UserIcon size={12} /> 大人</div>
+                <div className="text-3xl font-extrabold text-blue-600">
+                  {stats.adultAvg ? stats.adultAvg.toFixed(1) : '—'}
+                  <span className="text-sm font-normal text-gray-400 ml-1">/ 5</span>
+                </div>
+                <div className="text-xs text-gray-400 mt-1">{stats.reviewCount} 条</div>
               </div>
-            )}
+              <div>
+                <div className="text-xs text-gray-500 mb-1 inline-flex items-center gap-1"><BabyIcon size={12} /> 孩子</div>
+                <div className="text-3xl font-extrabold text-pink-600">
+                  {stats.childAvg ? stats.childAvg.toFixed(1) : '—'}
+                  <span className="text-sm font-normal text-gray-400 ml-1">/ 5</span>
+                </div>
+                <div className="text-xs text-gray-400 mt-1">{stats.withChildRating} 条</div>
+              </div>
+            </div>
+            <button
+              onClick={() => setShowReviewForm(!showReviewForm)}
+              className="block w-full py-2.5 bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white font-bold rounded-xl text-sm shadow-md transition"
+            >
+              {showReviewForm ? '收起' : '为这个地方打分'}
+            </button>
+            {showReviewForm && <ReviewForm type={type} placeId={id} placeName={place.name} />}
           </div>
         </section>
 
-        {/* ============ ③ 孩子需求三大视角 ============ */}
-        <section className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
-          {place.kidHighlights && (
-            <div className="bg-gradient-to-br from-pink-50 to-pink-100/50 rounded-2xl p-5 border border-pink-200">
-              <div className="inline-flex items-center gap-1.5 text-xs font-bold text-pink-600 mb-2">
-                <BabyIcon size={14} /> 孩子视角
-              </div>
-              <p className="text-sm text-gray-800 leading-relaxed">{place.kidHighlights}</p>
+        {/* ============ ③ 周边便利（孩子视角）与真实评价左右并行 ============ */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+          {/* 左：周边便利（交通为第一个模块） */}
+          <section className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
+            <div className="flex items-center justify-between px-5 py-4 border-b border-gray-100">
+              <h2 className="text-lg font-bold text-gray-900 inline-flex items-center gap-2">
+                <MapPinIcon size={18} className="text-blue-600" /> 周边便利（孩子视角）
+              </h2>
+              <span className="text-xs text-gray-400">.6</span>
             </div>
-          )}
-          {place.momHighlights && (
-            <div className="bg-gradient-to-br from-cyan-50 to-cyan-100/50 rounded-2xl p-5 border border-cyan-200">
-              <div className="inline-flex items-center gap-1.5 text-xs font-bold text-cyan-600 mb-2">
-                <HeartIcon size={14} /> 妈妈视角
-              </div>
-              <p className="text-sm text-gray-800 leading-relaxed">{place.momHighlights}</p>
-            </div>
-          )}
-          {place.dadHighlights && (
-            <div className="bg-gradient-to-br from-slate-100 to-slate-200/50 rounded-2xl p-5 border border-slate-300">
-              <div className="inline-flex items-center gap-1.5 text-xs font-bold text-slate-600 mb-2">
-                <UserIcon size={14} /> 爸爸视角
-              </div>
-              <p className="text-sm text-gray-800 leading-relaxed">{place.dadHighlights}</p>
-            </div>
-          )}
-        </section>
-
-        {/* ============ ④ Tips & Pitfalls ============ */}
-        {(place.tips || place.pitfalls) && (
-          <section className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-            {place.tips && (
-              <div className="bg-blue-50 rounded-2xl p-5 border border-blue-200">
-                <h3 className="font-bold text-blue-900 mb-2 inline-flex items-center gap-2">
-                  <CheckIcon size={16} /> 小贴士
-                </h3>
-                <p className="text-sm text-blue-800 leading-relaxed whitespace-pre-line">{place.tips}</p>
-              </div>
-            )}
-            {place.pitfalls && (
-              <div className="bg-amber-50 rounded-2xl p-5 border border-amber-200">
-                <h3 className="font-bold text-amber-900 mb-2 inline-flex items-center gap-2">
-                  <SparklesIcon size={16} /> 避坑提醒
-                </h3>
-                <p className="text-sm text-amber-800 leading-relaxed whitespace-pre-line">{place.pitfalls}</p>
-              </div>
-            )}
-          </section>
-        )}
-
-        {/* ============ ⑤ 榜单位置（如本地点在热门景点榜 top N） ============ */}
-        {data.leaderboard && data.leaderboard.rank != null && (
-          <Link
-            href="/leaderboard"
-            className="block bg-gradient-to-r from-amber-50 to-orange-50 border-2 border-amber-200 rounded-2xl p-6 mb-8 hover:shadow-lg transition group"
-          >
-            <div className="flex items-center gap-4">
-              <span className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-gradient-to-br from-amber-400 to-orange-500 text-white shadow-lg flex-shrink-0">
-                <TrophyIcon size={28} />
-              </span>
-              <div className="flex-1 min-w-0">
-                <div className="text-xs text-amber-700 font-medium mb-1">全平台热门景点榜 · 本周</div>
-                <div className="text-3xl font-extrabold text-amber-900 leading-tight">
-                  第 {data.leaderboard.rank} 名
-                </div>
-                <div className="text-xs text-amber-600 mt-1">
-                  共 {data.leaderboard.total} 个景点上榜
-                </div>
-              </div>
-              <ChevronRight size={20} className="text-amber-400 group-hover:translate-x-1 transition-transform" />
-            </div>
-          </Link>
-        )}
-
-        {/* ============ ⑥ 交通信息（4 块） ============ */}
-        <section className="mb-8">
-          <h2 className="text-xl font-bold text-gray-900 mb-4 inline-flex items-center gap-2">
-            <BusIcon size={18} className="text-blue-600" /> 交通信息
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <TransportBlock Icon={SubwayIcon} title="地铁站" tone="text-blue-600 bg-blue-50"
-              items={[
-                { name: `1 号线 · ${place.city?.name ?? '市中心'}站`, line: '1 号线', distance: '约 800 米', detail: 'B 口出有电梯 · 母婴友好' },
-                { name: `2 号线 · ${place.city?.name ?? '中心广场'}站`, line: '2 号线', distance: '约 1.2 公里', detail: 'A 口出可换乘公交' },
-              ]}
-            />
-            <TransportBlock Icon={BusIcon} title="公交站" tone="text-cyan-600 bg-cyan-50"
-              items={[
-                { name: `${place.city?.name ?? '本景点'}公交站`, line: '5 条线路', distance: '约 200 米', detail: 'K12 路 / 305 路 / 特 4 路' },
-                { name: '西门公交枢纽', line: '12 条线路', distance: '约 500 米', detail: '夜班线末班车 23:30' },
-              ]}
-            />
-            <TransportBlock Icon={ParkingIcon} title="停车场" tone="text-indigo-600 bg-indigo-50"
-              items={[
-                { name: 'P1 地面停车场', line: '120 车位', distance: '约 80 米', detail: '有婴儿车装卸区 · 5 元/小时' },
-                { name: 'P2 地下停车场', line: '300 车位', distance: '约 200 米', detail: '电梯直达主入口' },
-              ]}
-            />
-            <TransportBlock Icon={PlaneTravelIcon} title="机场 / 火车站" tone="text-emerald-600 bg-emerald-50"
-              items={[
-                { name: `${place.city?.name ?? ''}国际机场`, line: '机场大巴 5 号线', distance: '约 28 公里', detail: '大巴每 30 分钟一班 · 1 小时直达' },
-                { name: `${place.city?.name ?? ''}南站（高铁）`, line: '地铁 1 号线直达', distance: '约 12 公里', detail: '出租车约 30 分钟 · 80 元' },
-              ]}
-            />
-          </div>
-          <div className="text-xs text-gray-400 mt-2 px-1">
-            提示：交通信息为示意（P4 接高德/12306 真实数据后自动更新）
-          </div>
-        </section>
-
-        // ============ ⑦ 双维度评分卡 ============
-        <section className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 mb-8">
-          <h2 className="text-lg font-bold text-gray-900 mb-4 inline-flex items-center gap-2">
-            <StarIcon size={18} className="text-amber-500" /> 双维度评分
-          </h2>
-          <div className="grid grid-cols-2 gap-6 text-center mb-4">
-            <div>
-              <div className="text-xs text-gray-500 mb-1 inline-flex items-center gap-1">
-                <UserIcon size={12} /> 大人评分
-              </div>
-              <div className="text-3xl font-extrabold text-blue-600">
-                {stats.adultAvg ? stats.adultAvg.toFixed(1) : '—'}
-                <span className="text-sm font-normal text-gray-400 ml-1">/ 5</span>
-              </div>
-              <div className="text-xs text-gray-400 mt-1">{stats.reviewCount} 条评价</div>
-            </div>
-            <div>
-              <div className="text-xs text-gray-500 mb-1 inline-flex items-center gap-1">
-                <BabyIcon size={12} /> 孩子评分
-              </div>
-              <div className="text-3xl font-extrabold text-pink-600">
-                {stats.childAvg ? stats.childAvg.toFixed(1) : '—'}
-                <span className="text-sm font-normal text-gray-400 ml-1">/ 5</span>
-              </div>
-              <div className="text-xs text-gray-400 mt-1">{stats.withChildRating} 条孩子评分</div>
-            </div>
-          </div>
-          <button
-            onClick={() => setShowReviewForm(!showReviewForm)}
-            className="block w-full bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white font-bold py-3 rounded-2xl shadow-md transition"
-          >
-            {showReviewForm ? '收起评价表单' : '为这个地方打分（大人 + 孩子双维度）'}
-          </button>
-          {showReviewForm && <ReviewForm type={type} placeId={id} placeName={place.name} />}
-        </section>
-
-        {/* ============ ⑧ 真实妈妈评价 ============ */}
-        <section className="mb-8">
-          <h2 className="text-xl font-bold text-gray-900 mb-4 inline-flex items-center gap-2">
-            <HeartIcon size={18} className="text-pink-500" /> 真实妈妈的评价（{reviews.length}）
-          </h2>
-          {reviews.length === 0 && (
-            <div className="bg-white rounded-2xl p-8 text-center border border-dashed border-gray-200 text-gray-500">
-              还没有人评价 · 成为第一个分享感受的妈妈
-            </div>
-          )}
-          <div className="space-y-3">
-            {reviews.map((r) => (
-              <article key={r.id} className="bg-white rounded-2xl p-5 shadow-sm border border-gray-100">
-                <div className="flex items-center justify-between mb-3">
-                  <div className="flex items-center gap-3">
-                    <div className="flex items-center gap-1 px-2 py-1 bg-blue-50 rounded text-sm">
-                      <UserIcon size={12} className="text-blue-600" />
-                      <span className="font-bold text-blue-700 inline-flex items-center gap-0.5">
-                        <StarIcon size={12} className="text-amber-500" /> {r.adultRating}
-                      </span>
-                    </div>
-                    {r.childRating && (
-                      <div className="flex items-center gap-1 px-2 py-1 bg-pink-50 rounded text-sm">
-                        <BabyIcon size={12} className="text-pink-600" />
-                        <span className="font-bold text-pink-700 inline-flex items-center gap-0.5">
-                          <StarIcon size={12} className="text-amber-500" /> {r.childRating}
-                        </span>
-                        {r.childAgeMonths != null && (
-                          <span className="text-xs text-gray-500 ml-1">
-                            {Math.floor(r.childAgeMonths / 12)} 岁
-                          </span>
-                        )}
+            <div className="divide-y divide-gray-100">
+              {/* 交通信息模块（作为周边第一个子模块） */}
+              <details className="group" open>
+                <summary className="px-5 py-4 cursor-pointer flex items-center gap-3 hover:bg-blue-50/50 transition-colors">
+                  <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-blue-50 text-blue-600">
+                    <SubwayIcon size={18} />
+                  </span>
+                  <span className="flex-1 font-medium text-gray-900">交通出行</span>
+                  <span className="text-xs text-gray-500">4 项</span>
+                  <ChevronDown size={16} className="text-gray-400 group-open:rotate-180 transition-transform" />
+                </summary>
+                <div className="border-t border-gray-100 divide-y divide-gray-100">
+                  {[
+                    { name: `${'1 号线 · ' + (place.city?.name ?? '市中心')}站`, detail: '约 800 米', sub: 'B 口出有电梯 · 母婴友好', line: '1 号线' },
+                    { name: `${place.city?.name ?? ''}国际机场`, detail: '约 28 公里', sub: '机场大巴每 30 分钟一班 · 1 小时直达', line: '机场大巴 5 号线' },
+                    { name: `${place.city?.name ?? ''}南站（高铁）`, detail: '约 12 公里', sub: '出租车约 30 分钟 · 约 80 元', line: '地铁 1 号线直达' },
+                    { name: `P1 地面停车场`, detail: '约 80 米', sub: '婴儿车装卸区 · 5 元/小时', line: '120 车位' },
+                  ].map((it, i) => (
+                    <div key={i} className="px-5 py-3 flex items-start gap-3">
+                      <MapPinIcon size={14} className="text-blue-500 mt-1 flex-shrink-0" />
+                      <div className="flex-1 min-w-0">
+                        <div className="text-sm font-medium text-gray-900 truncate">{it.name}</div>
+                        <span className="inline-block px-1.5 py-0.5 bg-blue-50 text-blue-700 rounded text-xs mr-1.5">{it.line}</span>
+                        {it.sub && <span className="text-xs text-gray-400">{it.sub}</span>}
                       </div>
-                    )}
-                  </div>
-                  <span className="text-xs text-gray-400">{timeAgo(r.createdAt)}</span>
+                      <div className="text-xs text-blue-600 font-medium flex-shrink-0">{it.detail}</div>
+                    </div>
+                  ))}
                 </div>
-                {r.text && (
-                  <p className="text-gray-700 text-sm leading-relaxed mb-2">{r.text}</p>
-                )}
-                {(r.hasParking || r.hasHighChair || r.hasNapRoom || r.strollerOk) && (
-                  <div className="flex flex-wrap gap-1.5 mt-2">
-                    {r.hasParking && (
-                      <span className="text-xs px-2 py-0.5 bg-blue-50 text-blue-700 rounded inline-flex items-center gap-1">
-                        <SparklesIcon size={10} /> 有停车
+              </details>
+              {/* 13 类周边 POI */}
+              {NEARBY_CATEGORIES.filter((c) => data.nearby?.[c.key]?.length).map((c) => {
+                const items = data.nearby![c.key]!;
+                const Icon = c.Icon;
+                return (
+                  <details key={c.key} className="group">
+                    <summary className="px-5 py-4 cursor-pointer flex items-center gap-3 hover:bg-blue-50/50 transition-colors">
+                      <span className={`inline-flex items-center justify-center w-10 h-10 rounded-full ${c.tone}`}>
+                        <Icon size={18} />
                       </span>
-                    )}
-                    {r.hasHighChair && (
-                      <span className="text-xs px-2 py-0.5 bg-pink-50 text-pink-700 rounded inline-flex items-center gap-1">
-                        <ForkIcon size={10} /> 宝宝椅
-                      </span>
-                    )}
-                    {r.hasNapRoom && (
-                      <span className="text-xs px-2 py-0.5 bg-purple-50 text-purple-700 rounded inline-flex items-center gap-1">
-                        <BabyIcon size={10} /> 母婴室
-                      </span>
-                    )}
-                    {r.strollerOk && (
-                      <span className="text-xs px-2 py-0.5 bg-cyan-50 text-cyan-700 rounded inline-flex items-center gap-1">
-                        <ThumbsUpIcon size={10} /> 婴儿车友好
-                      </span>
-                    )}
-                  </div>
-                )}
-                {r.tags && r.tags.length > 0 && (
-                  <div className="flex flex-wrap gap-1.5 mt-2">
-                    {r.tags.map((t) => (
-                      <span key={t} className="text-xs px-2 py-0.5 bg-gray-100 text-gray-600 rounded">#{t}</span>
-                    ))}
-                  </div>
-                )}
-              </article>
-            ))}
-          </div>
-        </section>
+                      <span className="flex-1 font-medium text-gray-900">{c.label}</span>
+                      <span className="text-xs text-gray-500">{items.length} 处</span>
+                      <ChevronDown size={16} className="text-gray-400 group-open:rotate-180 transition-transform" />
+                    </summary>
+                    <div className="border-t border-gray-100 divide-y divide-gray-100">
+                      {items.map((it, i) => (
+                        <div key={i} className="px-5 py-3 flex items-start gap-3">
+                          <MapPinIcon size={14} className="text-blue-500 mt-1 flex-shrink-0" />
+                          <div className="flex-1 min-w-0">
+                            <div className="text-sm font-medium text-gray-900 truncate">{it.name}</div>
+                            {Object.keys(it.extra).length > 0 && (
+                              <div className="text-xs text-gray-500 mt-0.5 truncate">
+                                {Object.entries(it.extra).slice(0, 2).map(([k, v]) => {
+                                  const lm: Record<string, string> = { hasKidsMenu: '儿童菜单', avgPrice: '人均', isFree: '免费', hasHotWater: '热水', hasRamp: '无障碍', hasKidsPool: '儿童泳池', hasKidsBreakfast: '儿童早餐', hasFamilyRoom: '家庭房', hasLego: '乐高', hasPopMart: '泡泡玛特', hasMilkPowder: '奶粉', hasDiapers: '尿不湿', hasChildMedicine: '儿童用药', hasER: '急诊', hasPlayArea: '儿童乐园', notes: '备注' };
+                                  const d = lm[k] ?? k;
+                                  return `${d}：${typeof v === 'boolean' ? (v ? '✓' : '✗') : v}`;
+                                }).join(' · ')}
+                              </div>
+                            )}
+                          </div>
+                          {it.distanceMeters != null && (
+                            <div className="text-xs text-blue-600 font-medium flex-shrink-0">
+                              {it.distanceMeters < 1000 ? `${it.distanceMeters} 米` : `${(it.distanceMeters / 1000).toFixed(1)} 公里`}
+                            </div>
+                          )}
+                        </div>
+                      ))}
+                    </div>
+                  </details>
+                );
+              })}
+            </div>
+            <div className="text-xs text-gray-400 px-5 py-3 border-t border-gray-100">
+              周边 + 交通数据为示意（P4 接高德真实 POI 后自动更新）
+            </div>
+          </section>
 
-        {/* ============ ⑨.5 古诗在此（走天下×学诗词） ============ */}
+          {/* 右：真实妈妈评价 */}
+          <section className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
+            <h2 className="text-lg font-bold text-gray-900 mb-4 inline-flex items-center gap-2">
+              <HeartIcon size={18} className="text-pink-500" /> 真实妈妈的评价（{reviews.length}）
+            </h2>
+            {reviews.length === 0 && (
+              <div className="py-12 text-center border border-dashed border-gray-200 rounded-xl text-gray-500">
+                还没有人评价 · 成为第一个分享感受的妈妈
+              </div>
+            )}
+            <div className="space-y-3 max-h-[600px] overflow-y-auto">
+              {reviews.map((r) => (
+                <article key={r.id} className="bg-gray-50 rounded-xl p-4">
+                  <div className="flex items-center justify-between mb-2">
+                    <div className="flex items-center gap-2">
+                      <span className="inline-flex items-center gap-1 px-2 py-0.5 bg-blue-50 rounded text-xs">
+                        <UserIcon size={10} className="text-blue-600" /><StarIcon size={10} className="text-amber-500" />{r.adultRating}
+                      </span>
+                      {r.childRating && (
+                        <span className="inline-flex items-center gap-1 px-2 py-0.5 bg-pink-50 rounded text-xs">
+                          <BabyIcon size={10} className="text-pink-600" /><StarIcon size={10} className="text-amber-500" />{r.childRating}
+                        </span>
+                      )}
+                    </div>
+                    <span className="text-xs text-gray-400">{timeAgo(r.createdAt)}</span>
+                  </div>
+                  {r.text && <p className="text-gray-700 text-sm mb-1">{r.text}</p>}
+                  {r.hasParking && <span className="text-xs bg-blue-50 text-blue-700 px-1.5 py-0.5 rounded mr-1">停车场</span>}
+                  {r.hasHighChair && <span className="text-xs bg-pink-50 text-pink-700 px-1.5 py-0.5 rounded mr-1">宝宝椅</span>}
+                  {r.hasNapRoom && <span className="text-xs bg-purple-50 text-purple-700 px-1.5 py-0.5 rounded mr-1">母婴室</span>}
+                  {r.strollerOk && <span className="text-xs bg-cyan-50 text-cyan-700 px-1.5 py-0.5 rounded">婴儿车友好</span>}
+                </article>
+              ))}
+            </div>
+          </section>
+        </div>
+
+        {/* ============ ④ 古诗在此（走天下×学诗词） ============ */}
         {data.poems && data.poems.length > 0 && (
           <section className="mb-8">
             <h2 className="text-xl font-bold text-gray-900 mb-4 inline-flex items-center gap-2">
@@ -569,88 +502,53 @@ export default function PlaceDetailPage() {
           </section>
         )}
 
-        {/* ============ ⑨ 周边便利（13 类孩子需求折叠面板） ============ */}
-        {data.nearby && Object.keys(data.nearby).length > 0 && (
-          <section className="mb-8">
-            <h2 className="text-xl font-bold text-gray-900 mb-4 inline-flex items-center gap-2">
-              <MapPinIcon size={18} className="text-blue-600" /> 周边便利（孩子视角）
-            </h2>
-            <div className="space-y-2">
-              {NEARBY_CATEGORIES.filter((c) => data.nearby?.[c.key]?.length).map((c) => {
-                const items = data.nearby![c.key]!;
-                const Icon = c.Icon;
-                return (
-                  <details
-                    key={c.key}
-                    className="group bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden"
-                    open={c.key === 'KID_RESTAURANT'}
-                  >
-                    <summary className="px-5 py-4 cursor-pointer flex items-center gap-3 hover:bg-blue-50/50 transition-colors">
-                      <span className={`inline-flex items-center justify-center w-10 h-10 rounded-full ${c.tone}`}>
-                        <Icon size={18} />
-                      </span>
-                      <span className="flex-1 font-medium text-gray-900">{c.label}</span>
-                      <span className="text-xs text-gray-500">{items.length} 处</span>
-                      <ChevronDown size={16} className="text-gray-400 group-open:rotate-180 transition-transform" />
-                    </summary>
-                    <div className="border-t border-gray-100 divide-y divide-gray-100">
-                      {items.map((it, i) => (
-                        <div key={i} className="px-5 py-3 flex items-start gap-3">
-                          <MapPinIcon size={14} className="text-blue-500 mt-1 flex-shrink-0" />
-                          <div className="flex-1 min-w-0">
-                            <div className="text-sm font-medium text-gray-900 truncate">{it.name}</div>
-                            {Object.keys(it.extra).length > 0 && (
-                              <div className="text-xs text-gray-500 mt-0.5">
-                                {Object.entries(it.extra).slice(0, 3).map(([k, v]) => {
-                                  const labelMap: Record<string, string> = {
-                                    hasKidsMenu: '儿童菜单', avgPrice: '人均', walkInOk: '可现场取号',
-                                    isFree: '免费', hasHotWater: '热水', hasRamp: '无障碍坡道', hasElevator: '电梯',
-                                    hasKidsPool: '儿童泳池', hasKidsBreakfast: '儿童早餐', hasFamilyRoom: '家庭房', hasCrib: '婴儿床',
-                                    hasLego: '乐高', hasPopMart: '泡泡玛特', hasKidsSection: '儿童区',
-                                    hasMilkPowder: '奶粉', hasDiapers: '尿不湿', hasChildMedicine: '儿童用药',
-                                    hasPediatrics: '儿科', hasER: '急诊', hasPlayArea: '儿童乐园',
-                                    ageRange: '适龄', hasQueue: '排队区', notes: '备注',
-                                  };
-                                  const display = labelMap[k] ?? k;
-                                  const value = typeof v === 'boolean' ? (v ? '✓' : '✗') : v;
-                                  return `${display}：${value}`;
-                                }).join(' · ')}
-                              </div>
-                            )}
-                          </div>
-                          {it.distanceMeters != null && (
-                            <div className="text-xs text-blue-600 font-medium flex-shrink-0">
-                              {it.distanceMeters < 1000 ? `${it.distanceMeters} 米` : `${(it.distanceMeters / 1000).toFixed(1)} 公里`}
-                            </div>
-                          )}
-                        </div>
-                      ))}
-                    </div>
-                  </details>
-                );
-              })}
-              {/* mock 数据 banner（P4 真数据后移除） */}
-              <div className="text-xs text-gray-400 mt-2 px-1">
-                提示：周边数据为示意（P4 接高德真实 POI 后自动更新）
+        {/* ============ ⑤ 榜单位置 ============ */}
+        {data.leaderboard && data.leaderboard.rank != null && (
+          <Link
+            href="/leaderboard"
+            className="block bg-gradient-to-r from-amber-50 to-orange-50 border-2 border-amber-200 rounded-2xl p-6 mb-8 hover:shadow-lg transition group"
+          >
+            <div className="flex items-center gap-4">
+              <span className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-gradient-to-br from-amber-400 to-orange-500 text-white shadow-lg flex-shrink-0">
+                <TrophyIcon size={28} />
+              </span>
+              <div className="flex-1 min-w-0">
+                <div className="text-xs text-amber-700 font-medium mb-1">全平台热门景点榜 · 本周</div>
+                <div className="text-3xl font-extrabold text-amber-900 leading-tight">第 {data.leaderboard.rank} 名</div>
+                <div className="text-xs text-amber-600 mt-1">共 {data.leaderboard.total} 个景点上榜</div>
               </div>
+              <ChevronRight size={20} className="text-amber-400 group-hover:translate-x-1 transition-transform" />
             </div>
+          </Link>
+        )}
+
+        {/* ============ ⑥ Tips & Pitfalls ============ */}
+        {(place.tips || place.pitfalls) && (
+          <section className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+            {place.tips && (
+              <div className="bg-blue-50 rounded-2xl p-5 border border-blue-200">
+                <h3 className="font-bold text-blue-900 mb-2 inline-flex items-center gap-2"><CheckIcon size={16} /> 小贴士</h3>
+                <p className="text-sm text-blue-800 leading-relaxed whitespace-pre-line">{place.tips}</p>
+              </div>
+            )}
+            {place.pitfalls && (
+              <div className="bg-amber-50 rounded-2xl p-5 border border-amber-200">
+                <h3 className="font-bold text-amber-900 mb-2 inline-flex items-center gap-2"><SparklesIcon size={16} /> 避坑提醒</h3>
+                <p className="text-sm text-amber-800 leading-relaxed whitespace-pre-line">{place.pitfalls}</p>
+              </div>
+            )}
           </section>
         )}
 
-        {/* ============ ⑩ 相关攻略（占位跳转 /guides） ============ */}
-        <section className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 mb-8">
-          <h2 className="text-lg font-bold text-gray-900 mb-4 inline-flex items-center gap-2">
+        {/* ============ ⑦ 相关攻略（占位） ============ */}
+        <section className="mb-8">
+          <h2 className="text-xl font-bold text-gray-900 mb-4 inline-flex items-center gap-2">
             <GuidebookIcon size={18} className="text-blue-600" /> 妈妈们写的攻略
           </h2>
-          <p className="text-sm text-gray-500 mb-4">
-            基于城市匹配 — P2 接入 /api/guides/by-place 后这里会显示具体攻略列表
-          </p>
-          <Link
-            href={`/guides?city=${encodeURIComponent(place.city?.name ?? '')}`}
-            className="inline-flex items-center gap-1 text-blue-600 hover:text-blue-700 text-sm font-medium"
-          >
-            查看 {place.city?.name ?? ''} 的所有攻略
-            <ChevronRight size={14} />
+          <p className="text-sm text-gray-500 mb-4">基于城市匹配 — 显示相关攻略列表（P2 接入 /api/guides/by-place）</p>
+          <Link href={`/guides?city=${encodeURIComponent(place.city?.name ?? '')}`}
+            className="inline-flex items-center gap-1 text-blue-600 hover:text-blue-700 text-sm font-medium">
+            查看 {place.city?.name ?? ''} 的所有攻略 <ChevronRight size={14} />
           </Link>
         </section>
       </div>
