@@ -477,3 +477,46 @@ export const HotelRoomIcon = ({ size = 20, ...props }: IconProps) => (
     <path d="M9 11h.01M15 11h.01" />
   </svg>
 );
+
+// ===== 交通信息图标（v1.0 详情页） =====
+
+export const SubwayIcon = ({ size = 20, ...props }: IconProps) => (
+  <svg {...base(size, props)}>
+    <rect x="4" y="3" width="16" height="18" rx="3" />
+    <circle cx="9" cy="15" r="1" />
+    <circle cx="15" cy="15" r="1" />
+    <path d="M4 11h16M8 3l-2 4M16 3l2 4" />
+  </svg>
+);
+
+export const BusIcon = ({ size = 20, ...props }: IconProps) => (
+  <svg {...base(size, props)}>
+    <rect x="3" y="6" width="18" height="12" rx="2" />
+    <circle cx="7" cy="20" r="1.5" />
+    <circle cx="17" cy="20" r="1.5" />
+    <path d="M3 12h18M7 6V3h10v3" />
+  </svg>
+);
+
+export const ParkingIcon = ({ size = 20, ...props }: IconProps) => (
+  <svg {...base(size, props)}>
+    <rect x="3" y="3" width="18" height="18" rx="2" />
+    <path d="M10 17V7h4a3 3 0 0 1 0 6h-4" />
+  </svg>
+);
+
+export const PlaneTravelIcon = ({ size = 20, ...props }: IconProps) => (
+  <svg {...base(size, props)}>
+    <path d="M2 13l9-3 4-7 2 1-2 7 7 4-1 2-7-2-3 9-2-1 1-5-7-3z" />
+  </svg>
+);
+
+export const TrainIcon = ({ size = 20, ...props }: IconProps) => (
+  <svg {...base(size, props)}>
+    <rect x="5" y="3" width="14" height="14" rx="2" />
+    <path d="M5 10h14" />
+    <circle cx="9" cy="20" r="1.5" />
+    <circle cx="15" cy="20" r="1.5" />
+    <path d="M8 3l-1-2M16 3l1-2" />
+  </svg>
+);

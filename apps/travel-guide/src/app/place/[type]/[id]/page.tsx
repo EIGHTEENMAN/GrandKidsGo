@@ -12,6 +12,7 @@ import {
   CheckIcon, SunIcon, ChevronRight, ChevronDown,
   NursingIcon, WaterDropIcon, StoreIcon, PlaygroundIcon,
   HospitalIcon, PharmacyIcon, StrollerIcon, DiDiIcon, HotelRoomIcon,
+  SubwayIcon, BusIcon, ParkingIcon, PlaneTravelIcon, TrainIcon, TrophyIcon,
 } from '@/components/Icons';
 
 const TRAVEL_API = (process.env.NEXT_PUBLIC_TRAVEL_API as string) || 'https://travel.grandand.com';
@@ -54,6 +55,7 @@ interface PlaceData {
   type: string;
   typeLabel: string;
   nearby?: Record<string, NearbyItem[]>;
+  leaderboard?: { rank: number | null; total: number; scope: string; period: string } | null;
 }
 
 interface NearbyItem {
@@ -110,6 +112,40 @@ function timeAgo(iso: string): string {
   if (diff < 1) return '今天';
   if (diff < 30) return `${diff} 天前`;
   return `${Math.floor(diff / 30)} 个月前`;
+}
+
+// TransportBlock 子组件：交通 4 块（地铁/公交/停车场/机场火车站）
+function TransportBlock({ Icon, title, tone, items }: {
+  Icon: any;
+  title: string;
+  tone: string;
+  items: Array<{ name: string; line: string; distance: string; detail?: string }>;
+}) {
+  return (
+    <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-5">
+      <div className="flex items-center gap-2 mb-3">
+        <span className={`inline-flex items-center justify-center w-9 h-9 rounded-full ${tone}`}>
+          <Icon size={18} />
+        </span>
+        <h3 className="font-bold text-gray-900">{title}</h3>
+      </div>
+      <div className="space-y-2">
+        {items.map((it, i) => (
+          <div key={i} className="flex items-start gap-2 text-sm">
+            <span className="text-blue-500 flex-shrink-0 mt-0.5">·</span>
+            <div className="flex-1 min-w-0">
+              <div className="font-medium text-gray-900">{it.name}</div>
+              <div className="text-xs text-gray-500 mt-0.5">
+                <span className="inline-block px-1.5 py-0.5 bg-blue-50 text-blue-700 rounded mr-1.5">{it.line}</span>
+                {it.distance}
+                {it.detail && <span className="ml-1.5 text-gray-400">· {it.detail}</span>}
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 }
 
 export default function PlaceDetailPage() {
@@ -332,7 +368,67 @@ export default function PlaceDetailPage() {
           </section>
         )}
 
-        {/* ============ ⑤ 双维度评分卡 ============ */}
+        {/* ============ ⑤ 榜单位置（如本地点在热门景点榜 top N） ============ */}
+        {data.leaderboard && data.leaderboard.rank != null && (
+          <Link
+            href="/leaderboard"
+            className="block bg-gradient-to-r from-amber-50 to-orange-50 border-2 border-amber-200 rounded-2xl p-6 mb-8 hover:shadow-lg transition group"
+          >
+            <div className="flex items-center gap-4">
+              <span className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-gradient-to-br from-amber-400 to-orange-500 text-white shadow-lg flex-shrink-0">
+                <TrophyIcon size={28} />
+              </span>
+              <div className="flex-1 min-w-0">
+                <div className="text-xs text-amber-700 font-medium mb-1">全平台热门景点榜 · 本周</div>
+                <div className="text-3xl font-extrabold text-amber-900 leading-tight">
+                  第 {data.leaderboard.rank} 名
+                </div>
+                <div className="text-xs text-amber-600 mt-1">
+                  共 {data.leaderboard.total} 个景点上榜
+                </div>
+              </div>
+              <ChevronRight size={20} className="text-amber-400 group-hover:translate-x-1 transition-transform" />
+            </div>
+          </Link>
+        )}
+
+        {/* ============ ⑥ 交通信息（4 块） ============ */}
+        <section className="mb-8">
+          <h2 className="text-xl font-bold text-gray-900 mb-4 inline-flex items-center gap-2">
+            <BusIcon size={18} className="text-blue-600" /> 交通信息
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <TransportBlock Icon={SubwayIcon} title="地铁站" tone="text-blue-600 bg-blue-50"
+              items={[
+                { name: `1 号线 · ${place.city?.name ?? '市中心'}站`, line: '1 号线', distance: '约 800 米', detail: 'B 口出有电梯 · 母婴友好' },
+                { name: `2 号线 · ${place.city?.name ?? '中心广场'}站`, line: '2 号线', distance: '约 1.2 公里', detail: 'A 口出可换乘公交' },
+              ]}
+            />
+            <TransportBlock Icon={BusIcon} title="公交站" tone="text-cyan-600 bg-cyan-50"
+              items={[
+                { name: `${place.city?.name ?? '本景点'}公交站`, line: '5 条线路', distance: '约 200 米', detail: 'K12 路 / 305 路 / 特 4 路' },
+                { name: '西门公交枢纽', line: '12 条线路', distance: '约 500 米', detail: '夜班线末班车 23:30' },
+              ]}
+            />
+            <TransportBlock Icon={ParkingIcon} title="停车场" tone="text-indigo-600 bg-indigo-50"
+              items={[
+                { name: 'P1 地面停车场', line: '120 车位', distance: '约 80 米', detail: '有婴儿车装卸区 · 5 元/小时' },
+                { name: 'P2 地下停车场', line: '300 车位', distance: '约 200 米', detail: '电梯直达主入口' },
+              ]}
+            />
+            <TransportBlock Icon={PlaneTravelIcon} title="机场 / 火车站" tone="text-emerald-600 bg-emerald-50"
+              items={[
+                { name: `${place.city?.name ?? ''}国际机场`, line: '机场大巴 5 号线', distance: '约 28 公里', detail: '大巴每 30 分钟一班 · 1 小时直达' },
+                { name: `${place.city?.name ?? ''}南站（高铁）`, line: '地铁 1 号线直达', distance: '约 12 公里', detail: '出租车约 30 分钟 · 80 元' },
+              ]}
+            />
+          </div>
+          <div className="text-xs text-gray-400 mt-2 px-1">
+            提示：交通信息为示意（P4 接高德/12306 真实数据后自动更新）
+          </div>
+        </section>
+
+        // ============ ⑦ 双维度评分卡 ============
         <section className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 mb-8">
           <h2 className="text-lg font-bold text-gray-900 mb-4 inline-flex items-center gap-2">
             <StarIcon size={18} className="text-amber-500" /> 双维度评分
@@ -368,7 +464,7 @@ export default function PlaceDetailPage() {
           {showReviewForm && <ReviewForm type={type} placeId={id} placeName={place.name} />}
         </section>
 
-        {/* ============ ⑥ 真实妈妈评价 ============ */}
+        {/* ============ ⑧ 真实妈妈评价 ============ */}
         <section className="mb-8">
           <h2 className="text-xl font-bold text-gray-900 mb-4 inline-flex items-center gap-2">
             <HeartIcon size={18} className="text-pink-500" /> 真实妈妈的评价（{reviews.length}）
@@ -444,7 +540,7 @@ export default function PlaceDetailPage() {
           </div>
         </section>
 
-        {/* ============ ⑦ 周边便利（13 类孩子需求折叠面板） ============ */}
+        {/* ============ ⑨ 周边便利（13 类孩子需求折叠面板） ============ */}
         {data.nearby && Object.keys(data.nearby).length > 0 && (
           <section className="mb-8">
             <h2 className="text-xl font-bold text-gray-900 mb-4 inline-flex items-center gap-2">
@@ -511,6 +607,23 @@ export default function PlaceDetailPage() {
             </div>
           </section>
         )}
+
+        {/* ============ ⑩ 相关攻略（占位跳转 /guides） ============ */}
+        <section className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 mb-8">
+          <h2 className="text-lg font-bold text-gray-900 mb-4 inline-flex items-center gap-2">
+            <GuidebookIcon size={18} className="text-blue-600" /> 妈妈们写的攻略
+          </h2>
+          <p className="text-sm text-gray-500 mb-4">
+            基于城市匹配 — P2 接入 /api/guides/by-place 后这里会显示具体攻略列表
+          </p>
+          <Link
+            href={`/guides?city=${encodeURIComponent(place.city?.name ?? '')}`}
+            className="inline-flex items-center gap-1 text-blue-600 hover:text-blue-700 text-sm font-medium"
+          >
+            查看 {place.city?.name ?? ''} 的所有攻略
+            <ChevronRight size={14} />
+          </Link>
+        </section>
       </div>
     </main>
   );

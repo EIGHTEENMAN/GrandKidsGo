@@ -112,6 +112,8 @@ export async function GET(
       },
       // 周边 POI（按 category group 返回）
       nearby: await fetchNearby(type, id),
+      // 榜单（热门景点榜本周排名）
+      leaderboard: await fetchLeaderboard(type, id),
       reviews: reviews.map((r) => ({
         id: r.id,
         adultRating: r.adultRating,
@@ -138,7 +140,6 @@ async function fetchNearby(type: string, id: string) {
     orderBy: [{ distanceMeters: "asc" }],
     take: 100,
   });
-  // 按 category group（保持 enum 顺序）
   const groups: Record<string, Array<{
     name: string;
     distanceMeters: number | null;
@@ -155,10 +156,40 @@ async function fetchNearby(type: string, id: string) {
       isVerified: r.isVerified,
     });
   }
-  // 按 enum 顺序输出
   const ordered: Record<string, unknown> = {};
   for (const cat of Object.values(PlaceNearbyCategory)) {
     if (groups[cat]) ordered[cat] = groups[cat];
   }
   return ordered;
+}
+
+// 榜单：本地点在"热门景点榜（本周）"的排名（实时查 place-hot）
+async function fetchLeaderboard(type: string, id: string) {
+  if (type !== "sight") return null; // 仅景点有 place-hot
+  const cutoff = new Date(Date.now() - 7 * 86400000);
+  const reviews = await prisma.placeReview.findMany({
+    where: { placeType: "sight", status: "published", createdAt: { gte: cutoff } },
+    select: { placeId: true, adultRating: true, childRating: true },
+  });
+  const byPlace = new Map<string, { count: number; adultSum: number; childSum: number; childCount: number }>();
+  for (const r of reviews) {
+    const v = byPlace.get(r.placeId) ?? { count: 0, adultSum: 0, childSum: 0, childCount: 0 };
+    v.count += 1;
+    v.adultSum += r.adultRating;
+    if (r.childRating != null) { v.childSum += r.childRating; v.childCount += 1; }
+    byPlace.set(r.placeId, v);
+  }
+  const ranked = Array.from(byPlace.entries()).map(([pid, v]) => {
+    const adultAvg = v.adultSum / v.count;
+    const childAvg = v.childCount > 0 ? v.childSum / v.childCount : null;
+    const composite = childAvg != null ? adultAvg * 0.4 + childAvg * 0.6 : adultAvg * 0.8;
+    return { placeId: pid, score: composite };
+  }).sort((a, b) => b.score - a.score);
+  const idx = ranked.findIndex((r) => r.placeId === id);
+  return {
+    scope: "place-hot",
+    period: "week",
+    rank: idx === -1 ? null : idx + 1,
+    total: ranked.length,
+  };
 }
