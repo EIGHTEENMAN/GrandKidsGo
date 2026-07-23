@@ -351,7 +351,7 @@ export default function PlaceDetailPage() {
         </section>
 
         {/* ============ ③ 周边便利（孩子视角）与真实评价左右并行 ============ */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8 px-0">
           {/* 左：周边便利（交通为第一个模块） */}
           <section className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
             <div className="flex items-center justify-between px-5 py-4 border-b border-gray-100">
@@ -415,7 +415,7 @@ export default function PlaceDetailPage() {
                                 {Object.entries(it.extra).slice(0, 2).map(([k, v]) => {
                                   const lm: Record<string, string> = { hasKidsMenu: '儿童菜单', avgPrice: '人均', isFree: '免费', hasHotWater: '热水', hasRamp: '无障碍', hasKidsPool: '儿童泳池', hasKidsBreakfast: '儿童早餐', hasFamilyRoom: '家庭房', hasLego: '乐高', hasPopMart: '泡泡玛特', hasMilkPowder: '奶粉', hasDiapers: '尿不湿', hasChildMedicine: '儿童用药', hasER: '急诊', hasPlayArea: '儿童乐园', notes: '备注' };
                                   const d = lm[k] ?? k;
-                                  return `${d}：${typeof v === 'boolean' ? (v ? '✓' : '✗') : v}`;
+                                  return `${d}：${typeof v === 'boolean' ? (v ? '有' : '无') : v}`;
                                 }).join(' · ')}
                               </div>
                             )}
@@ -474,9 +474,9 @@ export default function PlaceDetailPage() {
           </section>
         </div>
 
-        {/* ============ ④ 古诗在此（走天下×学诗词） ============ */}
+        {/* ============ ④ 古诗在此（走天下×学诗词） — 宽度与上方板块对齐 ============ */}
         {data.poems && data.poems.length > 0 && (
-          <section className="mb-8">
+          <section className="mb-8 px-0">
             <h2 className="text-xl font-bold text-gray-900 mb-4 inline-flex items-center gap-2">
               <GuidebookIcon size={18} className="text-amber-600" /> 古诗在此
             </h2>
@@ -502,9 +502,9 @@ export default function PlaceDetailPage() {
           </section>
         )}
 
-        {/* ============ ⑤ 榜单位置 ============ */}
+        {/* ============ ⑤ 榜单位置 — 宽度对齐 ============ */}
         {data.leaderboard && data.leaderboard.rank != null && (
-          <Link
+          <div className="mb-8 px-0">
             href="/leaderboard"
             className="block bg-gradient-to-r from-amber-50 to-orange-50 border-2 border-amber-200 rounded-2xl p-6 mb-8 hover:shadow-lg transition group"
           >
@@ -519,12 +519,12 @@ export default function PlaceDetailPage() {
               </div>
               <ChevronRight size={20} className="text-amber-400 group-hover:translate-x-1 transition-transform" />
             </div>
-          </Link>
+          </div>
         )}
 
-        {/* ============ ⑥ Tips & Pitfalls ============ */}
+        {/* ============ ⑥ Tips & Pitfalls — 宽度对齐 ============ */}
         {(place.tips || place.pitfalls) && (
-          <section className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+          <section className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8 px-0">
             {place.tips && (
               <div className="bg-blue-50 rounded-2xl p-5 border border-blue-200">
                 <h3 className="font-bold text-blue-900 mb-2 inline-flex items-center gap-2"><CheckIcon size={16} /> 小贴士</h3>
@@ -540,8 +540,8 @@ export default function PlaceDetailPage() {
           </section>
         )}
 
-        {/* ============ ⑦ 相关攻略（占位） ============ */}
-        <section className="mb-8">
+        {/* ============ ⑦ 相关攻略（占位） — 宽度对齐 ============ */}
+        <section className="mb-8 px-0">
           <h2 className="text-xl font-bold text-gray-900 mb-4 inline-flex items-center gap-2">
             <GuidebookIcon size={18} className="text-blue-600" /> 妈妈们写的攻略
           </h2>
