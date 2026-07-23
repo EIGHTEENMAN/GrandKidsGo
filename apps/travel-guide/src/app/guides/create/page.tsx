@@ -1,9 +1,9 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { useRouter } from 'next/navigation';
 import TipTapEditor from '@/components/TipTapEditor';
-import { BabyIcon } from '@/components/Icons';
+import { BabyIcon, CheckIcon } from '@/components/Icons';
 
 export default function CreateGuidePage() {
   const router = useRouter();
@@ -184,11 +184,40 @@ export default function CreateGuidePage() {
                         {m}
                       </button>
                     ))}
-                    <button onClick={() => {
-                      // 录音预留接口（P2 接入 MediaRecorder）
-                      alert('录音功能 P2 接入');
-                    }} className="ml-auto px-2 py-0.5 text-xs text-blue-600 hover:text-blue-700 border border-blue-200 rounded-full">
-                      🎤 录音
+                    <button onClick={async () => {
+                      if (!navigator.mediaDevices?.getUserMedia) {
+                        alert('当前浏览器不支持录音功能，建议使用 Chrome');
+                        return;
+                      }
+                      try {
+                        const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+                        const mediaRecorder = new MediaRecorder(stream);
+                        const chunks: Blob[] = [];
+                        mediaRecorder.ondataavailable = (e) => chunks.push(e.data);
+                        mediaRecorder.onstop = () => {
+                          const blob = new Blob(chunks, { type: 'audio/webm' });
+                          const url = URL.createObjectURL(blob);
+                          // 临时提示转文字（P2 接语音识别后自动填充 text）
+                          const text = prompt('录音完成，请输入识别结果（或手动填写）:', '');
+                          if (text && text.trim()) {
+                            const next = [...childSayings];
+                            next[i].text = text.trim();
+                            setChildSayings(next);
+                          }
+                          stream.getTracks().forEach(t => t.stop());
+                        };
+                        mediaRecorder.start();
+                        alert('录音中…点击确定结束录音');
+                        setTimeout(() => {
+                          if (mediaRecorder.state === 'recording') {
+                            mediaRecorder.stop();
+                          }
+                        }, 30000);
+                      } catch {
+                        alert('录音权限被拒绝，请在浏览器设置中允许麦克风');
+                      }
+                    }} className="ml-auto inline-flex items-center gap-1 px-2 py-0.5 text-xs text-blue-600 hover:text-blue-700 border border-blue-200 rounded-full">
+                      <span>🎤</span> 录音
                     </button>
                   </div>
                 </div>

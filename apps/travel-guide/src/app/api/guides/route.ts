@@ -2,6 +2,7 @@
 // 修复 create 页死链：表单提交 contentHtml（HTML 字符串，TipTap 产出）+ 元数据
 import { NextRequest, NextResponse } from "next/server";
 import prisma from "@/lib/prisma";
+import { extractChildSayingsFromHtml } from "@/lib/extract-child-sayings";
 
 export const dynamic = "force-dynamic";
 
@@ -44,22 +45,37 @@ export async function POST(req: NextRequest) {
       },
     });
 
-    // 孩子说：创建 childSaying 记录（绑定 spotId 自动关联地点页面）
-    if (Array.isArray(childSayings)) {
-      for (const s of childSayings) {
-        const text = (s.text ?? "").trim().slice(0, 200);
-        if (!text) continue;
-        await prisma.childSaying.create({
-          data: {
-            userId,
-            childId: null,
-            text,
-            mood: s.mood ?? null,
-            spotId: s.spotId ?? spotId ?? null,
-            shareScope: "private",
-          },
-        });
-      }
+    // 自动提取：从 contentHtml 中识别孩子说的话
+    const autoExtracted = extractChildSayingsFromHtml(contentHtml);
+
+    // 孩子说：创建 childSaying 记录（手动录入 + 自动提取）
+    const allSayings = [
+      ...(Array.isArray(childSayings) ? childSayings.map((s: any) => ({
+        text: s.text, mood: s.mood, spotId: s.spotId ?? spotId,
+        source: 'manual' as const, status: 'published' as const,
+      })) : []),
+      ...autoExtracted.map((s) => ({
+        text: s.text, mood: null, spotId: spotId ?? null,
+        source: s.source, status: s.status,
+      })),
+    ];
+
+    for (const s of allSayings) {
+      const text = (s.text ?? "").trim().slice(0, 200);
+      if (!text) continue;
+      await prisma.childSaying.create({
+        data: {
+          userId,
+          childId: null,
+          text,
+          mood: s.mood ?? null,
+          spotId: s.spotId ?? null,
+          source: s.source ?? "manual",
+          status: s.status ?? "published",
+          sourceGuideId: s.source === "auto_extract" ? guide.id : null,
+          shareScope: "private",
+        },
+      });
     }
 
     return NextResponse.json({
