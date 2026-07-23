@@ -441,17 +441,26 @@ export default function PlaceDetailPage() {
           </section>
 
           {/* 右：真实妈妈评价 */}
-          <section className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
-            <h2 className="text-lg font-bold text-gray-900 mb-4 inline-flex items-center gap-2">
-              <HeartIcon size={18} className="text-pink-500" /> 真实妈妈的评价（{reviews.length}）
-            </h2>
+          <section className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 flex flex-col">
+            <div className="flex items-center justify-between mb-4">
+              <h2 className="text-lg font-bold text-gray-900 inline-flex items-center gap-2">
+                <HeartIcon size={18} className="text-pink-500" /> 真实妈妈的评价（{reviews.length}）
+              </h2>
+              {reviews.length > 0 && (
+                <Link href={`/place/${type}/${id}/reviews`} className="text-sm text-blue-600 hover:text-blue-700 font-medium whitespace-nowrap">
+                  查看全部 →
+                </Link>
+              )}
+            </div>
             {reviews.length === 0 && (
-              <div className="py-12 text-center border border-dashed border-gray-200 rounded-xl text-gray-500">
+              <div className="py-12 text-center border border-dashed border-gray-200 rounded-xl text-gray-500 flex-1 flex items-center justify-center">
                 还没有人评价 · 成为第一个分享感受的妈妈
               </div>
             )}
-            <div className="space-y-3 max-h-[600px] overflow-y-auto">
-              {reviews.map((r) => (
+            {reviews.length > 0 && (
+              <div className="flex-1 flex flex-col">
+                <div className="space-y-3 overflow-y-auto flex-1" style={{ maxHeight: '500px' }}>
+                  {reviews.slice(0, 10).map((r) => (
                 <article key={r.id} className="bg-gray-50 rounded-xl p-4">
                   <div className="flex items-center justify-between mb-2">
                     <div className="flex items-center gap-2">
@@ -474,8 +483,17 @@ export default function PlaceDetailPage() {
                 </article>
               ))}
             </div>
-          </section>
-        </div>
+            {reviews.length > 10 && (
+              <div className="mt-4 text-center">
+                <Link href={`/place/${type}/${id}/reviews`} className="inline-block px-5 py-2 border border-gray-200 rounded-full text-sm text-gray-600 hover:bg-gray-50 hover:text-blue-600 transition">
+                  查看全部评价（{reviews.length - 10} 条）→
+                </Link>
+              </div>
+            )}
+          </div>
+        )}
+      </section>
+    </div>
 
         {/* ============ ④ 古诗在此（走天下×学诗词） ============ */}
         {data.poems && data.poems.length > 0 && (
