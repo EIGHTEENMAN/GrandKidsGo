@@ -132,11 +132,17 @@ export default function Header() {
 
             {user ? (
               <>
-                <span className="hidden sm:flex items-center gap-1.5 text-gray-700 whitespace-nowrap">
-                  {user.avatar && <span className="text-lg">{user.avatar}</span>}
-                  <span>{user.nickname || user.username}</span>
-                </span>
-                <button onClick={handleLogout} className="text-gray-400 hover:text-red-500 transition-colors whitespace-nowrap">
+                <Link href="/profile" className="hidden sm:flex items-center gap-1.5 text-gray-700 hover:text-blue-600 whitespace-nowrap transition-colors">
+                  {user.avatar ? (
+                    <img src={user.avatar} alt="" className="w-6 h-6 rounded-full" />
+                  ) : (
+                    <span className="w-6 h-6 rounded-full bg-gradient-to-br from-blue-400 to-cyan-400 flex items-center justify-center text-white text-xs font-bold">
+                      {(user.nickname || user.username)?.[0] ?? '?'}
+                    </span>
+                  )}
+                  <span className="text-sm font-medium">{user.nickname || user.username}</span>
+                </Link>
+                <button onClick={handleLogout} className="text-gray-400 hover:text-red-500 transition-colors whitespace-nowrap text-sm">
                   退出
                 </button>
               </>
