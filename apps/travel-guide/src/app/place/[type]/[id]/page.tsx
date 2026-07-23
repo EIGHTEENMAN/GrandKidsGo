@@ -476,7 +476,7 @@ export default function PlaceDetailPage() {
 
         {/* ============ ④ 古诗在此（走天下×学诗词） ============ */}
         {data.poems && data.poems.length > 0 && (
-          <section className="mb-8">
+          <section className="mb-8 px-6">
             <h2 className="text-xl font-bold text-gray-900 mb-4 inline-flex items-center gap-2">
               <GuidebookIcon size={18} className="text-amber-600" /> 古诗在此
             </h2>
@@ -504,7 +504,7 @@ export default function PlaceDetailPage() {
 
         {/* ============ ⑤ 榜单位置 ============ */}
         {data.leaderboard && data.leaderboard.rank != null && (
-          <div className="mb-8">
+          <div className="mb-8 px-6">
             href="/leaderboard"
             className="block bg-gradient-to-r from-amber-50 to-orange-50 border-2 border-amber-200 rounded-2xl p-6 mb-8 hover:shadow-lg transition group"
           >
@@ -524,7 +524,7 @@ export default function PlaceDetailPage() {
 
         {/* ============ ⑥ Tips & Pitfalls ============ */}
         {(place.tips || place.pitfalls) && (
-          <section className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+          <section className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8 px-6">
             {place.tips && (
               <div className="bg-blue-50 rounded-2xl p-5 border border-blue-200">
                 <h3 className="font-bold text-blue-900 mb-2 inline-flex items-center gap-2"><CheckIcon size={16} /> 小贴士</h3>
@@ -541,7 +541,7 @@ export default function PlaceDetailPage() {
         )}
 
         {/* ============ ⑦ 相关攻略（占位） ============ */}
-        <section className="mb-8">
+        <section className="mb-8 px-6">
           <h2 className="text-xl font-bold text-gray-900 mb-4 inline-flex items-center gap-2">
             <GuidebookIcon size={18} className="text-blue-600" /> 妈妈们写的攻略
           </h2>
