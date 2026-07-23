@@ -56,6 +56,7 @@ interface PlaceData {
   typeLabel: string;
   nearby?: Record<string, NearbyItem[]>;
   leaderboard?: { rank: number | null; total: number; scope: string; period: string } | null;
+  poems?: Array<{ poemId: number; poemTitle: string; poemAuthor: string; linkType: string; verseLine: string | null; confidence: number; url: string }>;
 }
 
 interface NearbyItem {
@@ -539,6 +540,34 @@ export default function PlaceDetailPage() {
             ))}
           </div>
         </section>
+
+        {/* ============ ⑨.5 古诗在此（走天下×学诗词） ============ */}
+        {data.poems && data.poems.length > 0 && (
+          <section className="mb-8">
+            <h2 className="text-xl font-bold text-gray-900 mb-4 inline-flex items-center gap-2">
+              <GuidebookIcon size={18} className="text-amber-600" /> 古诗在此
+            </h2>
+            <div className="bg-gradient-to-br from-amber-50 to-orange-50 border border-amber-200 rounded-2xl p-6 space-y-4">
+              {data.poems.map((p, i) => (
+                <div key={`${p.poemId}-${i}`} className="group">
+                  <p className="text-gray-800 italic text-lg leading-relaxed mb-1">
+                    "{p.verseLine ?? p.poemTitle}"
+                  </p>
+                  <p className="text-sm text-amber-700 inline-flex items-center gap-1">
+                    ── {p.poemAuthor}《{p.poemTitle}》
+                    <a href={p.url} target="_blank" rel="noopener noreferrer"
+                      className="ml-2 text-xs text-amber-600 hover:text-amber-800 inline-flex items-center gap-0.5 opacity-0 group-hover:opacity-100 transition">
+                      读全诗 →
+                    </a>
+                  </p>
+                </div>
+              ))}
+              <div className="text-xs text-amber-600/70 mt-3">
+                关联置信度基于诗人籍贯/游历地/诗中场景 · 跳转学诗词站
+              </div>
+            </div>
+          </section>
+        )}
 
         {/* ============ ⑨ 周边便利（13 类孩子需求折叠面板） ============ */}
         {data.nearby && Object.keys(data.nearby).length > 0 && (

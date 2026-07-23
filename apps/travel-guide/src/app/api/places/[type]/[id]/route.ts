@@ -114,6 +114,8 @@ export async function GET(
       nearby: await fetchNearby(type, id),
       // 榜单（热门景点榜本周排名）
       leaderboard: await fetchLeaderboard(type, id),
+      // 关联古诗词（"古诗在此"板块 — 走天下×学诗词）
+      poems: await fetchPoems(type, id, place.city?.id),
       reviews: reviews.map((r) => ({
         id: r.id,
         adultRating: r.adultRating,
@@ -192,4 +194,16 @@ async function fetchLeaderboard(type: string, id: string) {
     rank: idx === -1 ? null : idx + 1,
     total: ranked.length,
   };
+}
+
+// 关联古诗词：基于 PoemLocation 表
+async function fetchPoems(type: string, id: string, cityId: string | null | undefined) {
+  const where: Record<string, unknown> = { OR: [{ placeType: type, placeId: id }] };
+  if (cityId) (where.OR as unknown[]).push({ cityId });
+  const rows = await prisma.poemLocation.findMany({ where: where as any, orderBy: { confidence: "desc" }, take: 8 });
+  return rows.map((r) => ({
+    poemId: r.poemId, poemTitle: r.poemTitle, poemAuthor: r.poemAuthor,
+    linkType: r.linkType, verseLine: r.verseLine, confidence: r.confidence,
+    url: `https://xueshici.grandand.com/#reader/${r.poemId}-1`,
+  }));
 }

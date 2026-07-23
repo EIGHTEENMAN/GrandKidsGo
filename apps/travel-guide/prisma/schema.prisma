@@ -1028,3 +1028,37 @@ model ChildSaying {
   @@index([shareScope, createdAt(sort: Desc)])
   @@map("child_sayings")
 }
+
+// =============================================================================
+// 走天下×学诗词 双向往返关联
+// =============================================================================
+
+enum PoemLinkType {
+  EXACT_CITY       // 精确城市（如"姑苏"→苏州）
+  LANDMARK         // 地标/景点（如"黄鹤楼"→武汉黄鹤楼）
+  AUTHOR_HOMETOWN  // 作者籍贯（如"杜甫"→河南巩义）
+  AUTHOR_POSTING   // 作者任职/游历地
+  SCENE            // 场景地点（如"浔阳江头"→九江）
+}
+
+model PoemLocation {
+  id          String      @id @default(uuid())
+  poemId      Int                                  // 学诗词 poem.id
+  poemTitle   String      @map("poem_title")
+  poemAuthor  String      @map("poem_author")
+  linkType    PoemLinkType @map("link_type")
+  placeType   String      @map("place_type")      // 'sight' | 'city'
+  placeId     String      @map("place_id")
+  placeName   String      @map("place_name")
+  cityId      String?     @map("city_id")
+  verseLine   String?     @map("verse_line")
+  confidence  Int         @default(3)
+  source      String      @default("ai_draft")
+  createdAt   DateTime    @default(now()) @map("created_at")
+
+  @@unique([poemId, linkType, placeType, placeId])
+  @@index([poemId])
+  @@index([placeType, placeId])
+  @@index([cityId])
+  @@map("poem_locations")
+}
