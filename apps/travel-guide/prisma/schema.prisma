@@ -318,6 +318,8 @@ model PlanMedia {
   spotId          String?   @map("spot_id")
   timelineBlockId String?   @map("timeline_block_id")
   caption         String?
+  childId         String?   @map("child_id")           // 2026-07-23 新增：儿童画廊绑定
+  sourceType      String    @default("plan") @map("source_type") // plan | gallery | footprint
   orderIndex      Int       @default(0) @map("order_index")
   visibilityLevel String    @default("private") @map("visibility_level")
   createdAt       DateTime  @default(now()) @map("created_at")
@@ -973,4 +975,38 @@ model PlaceNearby {
   @@index([placeId, placeType, category])
   @@index([category])
   @@map("place_nearby")
+}
+
+// =============================================================================
+// v1.0 攻略详情页：双维度评分 + 评论
+// =============================================================================
+
+model GuideReview {
+  id             String   @id @default(uuid())
+  guideId        String   @map("guide_id")
+  userId         String   @map("user_id")
+  adultRating    Int      @map("adult_rating")
+  childRating    Int?     @map("child_rating")
+  childAgeMonths Int?     @map("child_age_months")
+  text           String?
+  tags           String[]
+  visitDate      DateTime? @map("visit_date")
+  status         String   @default("published")
+  createdAt      DateTime @default(now()) @map("created_at")
+
+  @@index([guideId, createdAt(sort: Desc)])
+  @@index([status])
+  @@map("guide_reviews")
+}
+
+model GuideComment {
+  id        String   @id @default(uuid())
+  guideId   String   @map("guide_id")
+  userId    String   @map("user_id")
+  content   String
+  status    String   @default("published")
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@index([guideId, createdAt(sort: Desc)])
+  @@map("guide_comments")
 }
