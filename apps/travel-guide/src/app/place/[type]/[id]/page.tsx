@@ -264,9 +264,9 @@ export default function PlaceDetailPage() {
 
       <div className="max-w-6xl mx-auto px-6 py-8">
         {/* ============ ② 核心信息（左）+ 双维度评分卡（右）并排 ============ */}
-        <section className="grid grid-cols-1 md:grid-cols-5 gap-6 mb-8">
+        <section className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
           {/* 左：核心信息 3/5 */}
-          <div className="md:col-span-3 bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
+          <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
             <h2 className="text-lg font-bold text-gray-900 mb-4 inline-flex items-center gap-2">
               <GuidebookIcon size={18} className="text-blue-600" /> 核心信息
             </h2>
@@ -318,7 +318,7 @@ export default function PlaceDetailPage() {
             </div>
           </div>
           {/* 右：双维度评分卡 2/5 */}
-          <div className="md:col-span-2 bg-white rounded-2xl shadow-sm border border-gray-100 p-6 flex flex-col justify-center">
+          <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 flex flex-col justify-center">
             <h2 className="text-lg font-bold text-gray-900 mb-4 inline-flex items-center gap-2">
               <StarIcon size={18} className="text-amber-500" /> 评分
             </h2>
