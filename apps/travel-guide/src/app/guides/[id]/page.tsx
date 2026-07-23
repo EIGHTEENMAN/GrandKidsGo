@@ -10,6 +10,7 @@ import {
   EyeIcon, ForkIcon, BookmarkIcon, GuidebookIcon, ChevronRight, CheckIcon,
 } from '@/components/Icons';
 import { sanitizeHtml } from '@/lib/sanitize';
+import { GuideReviewForm, GuideComments } from '@/components/guide/GuideReviewForm';
 
 const TRAVEL_API = (process.env.NEXT_PUBLIC_TRAVEL_API as string) || 'https://travel.grandand.com';
 
@@ -60,6 +61,7 @@ export default function GuideDetailPage() {
   const [liked, setLiked] = useState(false);
   const [saved, setSaved] = useState(false);
   const [commentText, setCommentText] = useState('');
+  const [showReviewForm, setShowReviewForm] = useState(false);
 
   const token = typeof window !== 'undefined' ? sessionStorage.getItem('grandkidsgo_token') : null;
 
@@ -201,10 +203,10 @@ export default function GuideDetailPage() {
           </div>
         </section>
 
-        {/* ============ ④ 双维度评分（P1 接 GuideReview） ============ */}
+        {/* ============ ④ 双维度评分 ============ */}
         <section className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 mb-8">
           <h2 className="text-lg font-bold text-gray-900 mb-4 inline-flex items-center gap-2">
-            <StarIcon size={18} className="text-amber-500" /> 妈妈们如何评价这篇攻略（{data.stats.ratingCount ?? 0} 条）
+            <StarIcon size={18} className="text-amber-500" /> 妈妈们如何评价（{data.stats.ratingCount ?? 0} 条）
           </h2>
           <div className="grid grid-cols-2 gap-6 text-center mb-4">
             <div>
@@ -222,29 +224,27 @@ export default function GuideDetailPage() {
               </div>
             </div>
           </div>
-          <p className="text-xs text-gray-400 text-center mt-2">P1 接入 GuideReview 后展示完整评价列表</p>
+          <button onClick={() => setShowReviewForm(v => !v)}
+            className="block w-full py-2.5 bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-bold rounded-xl text-sm hover:shadow-md transition">
+            {showReviewForm ? '收起' : '📝 我也要评分（大人 + 孩子双维度）'}
+          </button>
+          {showReviewForm && (
+            <GuideReviewForm guideId={data.id} guideTitle={data.title} onSubmitted={() => {}} />
+          )}
         </section>
 
-        {/* ============ ⑤ 评论区（P1 接 GuideComment API） ============ */}
+        {/* ============ ⑤ 评论区 ============ */}
         <section className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
           <h2 className="text-lg font-bold text-gray-900 mb-4 inline-flex items-center gap-2">
             <GuidebookIcon size={18} className="text-blue-600" /> 评论（{data.stats.commentCount ?? 0}）
           </h2>
           {token ? (
-            <div className="flex gap-3 mb-6">
-              <textarea value={commentText} onChange={e => setCommentText(e.target.value)}
-                className="flex-1 px-4 py-3 border border-gray-200 rounded-xl text-sm focus:ring-2 focus:ring-blue-500 bg-white" rows={2} placeholder="说点什么吧..." />
-              <button onClick={submitComment} disabled={!commentText.trim()}
-                className="px-5 py-2 bg-gradient-to-r from-blue-500 to-cyan-500 text-white rounded-full text-sm font-bold disabled:opacity-50 self-end hover:shadow-md transition">
-                发表
-              </button>
-            </div>
+            <GuideComments guideId={data.id} initialItems={[]} initialCount={0} />
           ) : (
             <p className="text-sm text-gray-400 mb-6">
               <Link href={`/login?redirect=/guides/${id}`} className="text-blue-600 hover:underline">登录</Link>后可以评论
             </p>
           )}
-          <p className="text-xs text-gray-400 text-center">P1 接入 GuideComment API 后展示具体评论列表</p>
         </section>
       </div>
     </main>
