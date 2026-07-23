@@ -1010,3 +1010,21 @@ model GuideComment {
   @@index([guideId, createdAt(sort: Desc)])
   @@map("guide_comments")
 }
+
+// =============================================================================
+// v1.0 三大用户功能：孩子说（童言趣语）
+// =============================================================================
+
+model ChildSaying {
+  id          String   @id @default(uuid())
+  userId      String   @map("user_id")
+  childId     String?  @map("child_id")
+  text        String
+  mood        String?
+  shareScope  String   @default("private") @map("share_scope")
+  createdAt   DateTime @default(now()) @map("created_at")
+
+  @@index([childId, createdAt(sort: Desc)])
+  @@index([shareScope, createdAt(sort: Desc)])
+  @@map("child_sayings")
+}
