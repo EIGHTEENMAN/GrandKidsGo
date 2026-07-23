@@ -14,7 +14,7 @@ export async function POST(req: NextRequest) {
     }
 
     const body = await req.json();
-    const { title, contentHtml, cityId, days, childAges, travelStyle, coverImages } = body;
+    const { title, contentHtml, cityId, days, childAges, travelStyle, coverImages, childSayings } = body;
 
     if (!title || !contentHtml) {
       return NextResponse.json({ code: "VALIDATION_ERROR", message: "标题和内容不能为空" }, { status: 400 });
@@ -43,6 +43,23 @@ export async function POST(req: NextRequest) {
         tags: body.tags ?? [],
       },
     });
+
+    // 孩子说：创建 childSaying 记录
+    if (Array.isArray(childSayings)) {
+      for (const s of childSayings) {
+        const text = (s.text ?? "").trim().slice(0, 200);
+        if (!text) continue;
+        await prisma.childSaying.create({
+          data: {
+            userId,
+            childId: null,
+            text,
+            mood: s.mood ?? null,
+            shareScope: "private",
+          },
+        });
+      }
+    }
 
     return NextResponse.json({
       code: "OK",
