@@ -935,3 +935,42 @@ model DailySnapshot {
   @@index([snapshotDate])
   @@map("daily_snapshots")
 }
+
+// =============================================================================
+// v1.0 详情页补强：周边 POI（13 类孩子需求维度）
+// =============================================================================
+
+enum PlaceNearbyCategory {
+  KID_RESTAURANT       // 亲子餐厅（宝宝椅/儿童菜单）
+  NURSING_ROOM         // 母婴室/哺乳室
+  TAP_WATER            // 直饮水点
+  CONVENIENCE          // 便利店（奶粉/尿不湿/儿童零食）
+  TOY_STORE            // 乐高/反斗城/泡泡玛特
+  BOOKSTORE            // 儿童书店/绘本馆
+  KIDS_HOSPITAL        // 儿童医院/儿科诊所
+  PHARMACY             // 药店
+  MATERNITY_STORE      // 母婴店
+  DIDI_PICKUP          // 网约车上下车点
+  TAXI_STAND           // 出租车候车区
+  KID_HOTEL            // 亲子酒店（家庭房/儿童泳池/儿童早餐）
+  STROLLER_FRIENDLY    // 婴儿车可达路径标记
+}
+
+model PlaceNearby {
+  id             String              @id @default(uuid())
+  placeId        String              @map("place_id")
+  placeType      String              @map("place_type")
+  category       PlaceNearbyCategory
+  name           String
+  lat            Float?
+  lng            Float?
+  distanceMeters Int?                @map("distance_meters")
+  extra          Json                @default("{}")
+  source         String              @default("mock")
+  isVerified     Boolean             @default(false) @map("is_verified")
+  createdAt      DateTime            @default(now()) @map("created_at")
+
+  @@index([placeId, placeType, category])
+  @@index([category])
+  @@map("place_nearby")
+}

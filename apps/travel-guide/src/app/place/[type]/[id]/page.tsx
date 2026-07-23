@@ -9,7 +9,9 @@ import { useParams } from 'next/navigation';
 import {
   MapPinIcon, ClockIcon, PhoneIcon, GuidebookIcon, SparklesIcon,
   StarIcon, UserIcon, BabyIcon, ForkIcon, HeartIcon, EyeIcon, ThumbsUpIcon,
-  CheckIcon, SunIcon, ChevronRight,
+  CheckIcon, SunIcon, ChevronRight, ChevronDown,
+  NursingIcon, WaterDropIcon, StoreIcon, PlaygroundIcon,
+  HospitalIcon, PharmacyIcon, StrollerIcon, DiDiIcon, HotelRoomIcon,
 } from '@/components/Icons';
 
 const TRAVEL_API = (process.env.NEXT_PUBLIC_TRAVEL_API as string) || 'https://travel.grandand.com';
@@ -51,7 +53,32 @@ interface PlaceData {
   reviews: Review[];
   type: string;
   typeLabel: string;
+  nearby?: Record<string, NearbyItem[]>;
 }
+
+interface NearbyItem {
+  name: string;
+  distanceMeters: number | null;
+  extra: Record<string, unknown>;
+  isVerified: boolean;
+}
+
+// 13 类周边 POI 显示配置
+const NEARBY_CATEGORIES: Array<{ key: string; label: string; Icon: any; tone: string }> = [
+  { key: 'KID_RESTAURANT', label: '亲子餐厅', Icon: ForkIcon, tone: 'text-pink-600 bg-pink-50' },
+  { key: 'NURSING_ROOM', label: '母婴室', Icon: NursingIcon, tone: 'text-pink-500 bg-pink-50' },
+  { key: 'TAP_WATER', label: '直饮水点', Icon: WaterDropIcon, tone: 'text-cyan-600 bg-cyan-50' },
+  { key: 'CONVENIENCE', label: '便利店', Icon: StoreIcon, tone: 'text-blue-600 bg-blue-50' },
+  { key: 'TOY_STORE', label: '玩具书店（乐高/泡泡玛特/绘本）', Icon: SparklesIcon, tone: 'text-purple-600 bg-purple-50' },
+  { key: 'BOOKSTORE', label: '儿童书店/绘本馆', Icon: GuidebookIcon, tone: 'text-amber-600 bg-amber-50' },
+  { key: 'KIDS_HOSPITAL', label: '儿童医院', Icon: HospitalIcon, tone: 'text-red-600 bg-red-50' },
+  { key: 'PHARMACY', label: '药店', Icon: PharmacyIcon, tone: 'text-emerald-600 bg-emerald-50' },
+  { key: 'MATERNITY_STORE', label: '母婴店', Icon: BabyIcon, tone: 'text-pink-600 bg-pink-50' },
+  { key: 'DIDI_PICKUP', label: '网约车点', Icon: DiDiIcon, tone: 'text-blue-600 bg-blue-50' },
+  { key: 'TAXI_STAND', label: '出租车候车区', Icon: StoreIcon, tone: 'text-slate-600 bg-slate-50' },
+  { key: 'KID_HOTEL', label: '亲子酒店', Icon: HotelRoomIcon, tone: 'text-indigo-600 bg-indigo-50' },
+  { key: 'STROLLER_FRIENDLY', label: '婴儿车可达路径', Icon: StrollerIcon, tone: 'text-teal-600 bg-teal-50' },
+];
 
 const MONTH_NAMES = ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'];
 
@@ -417,20 +444,73 @@ export default function PlaceDetailPage() {
           </div>
         </section>
 
-        {/* ============ ⑦ 相关攻略（占位，P2 接 /api/guides/by-place） ============ */}
-        <section className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
-          <h2 className="text-lg font-bold text-gray-900 mb-4 inline-flex items-center gap-2">
-            <GuidebookIcon size={18} className="text-blue-600" /> 妈妈们写的攻略
-          </h2>
-          <p className="text-sm text-gray-500 mb-4">基于城市匹配，P2 接入 /api/guides/by-place</p>
-          <Link
-            href={`/guides?city=${encodeURIComponent(place.city?.name ?? '')}`}
-            className="inline-flex items-center gap-1 text-blue-600 hover:text-blue-700 text-sm font-medium"
-          >
-            查看 {place.city?.name ?? ''} 的所有攻略
-            <ChevronRight size={14} />
-          </Link>
-        </section>
+        {/* ============ ⑦ 周边便利（13 类孩子需求折叠面板） ============ */}
+        {data.nearby && Object.keys(data.nearby).length > 0 && (
+          <section className="mb-8">
+            <h2 className="text-xl font-bold text-gray-900 mb-4 inline-flex items-center gap-2">
+              <MapPinIcon size={18} className="text-blue-600" /> 周边便利（孩子视角）
+            </h2>
+            <div className="space-y-2">
+              {NEARBY_CATEGORIES.filter((c) => data.nearby?.[c.key]?.length).map((c) => {
+                const items = data.nearby![c.key]!;
+                const Icon = c.Icon;
+                return (
+                  <details
+                    key={c.key}
+                    className="group bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden"
+                    open={c.key === 'KID_RESTAURANT'}
+                  >
+                    <summary className="px-5 py-4 cursor-pointer flex items-center gap-3 hover:bg-blue-50/50 transition-colors">
+                      <span className={`inline-flex items-center justify-center w-10 h-10 rounded-full ${c.tone}`}>
+                        <Icon size={18} />
+                      </span>
+                      <span className="flex-1 font-medium text-gray-900">{c.label}</span>
+                      <span className="text-xs text-gray-500">{items.length} 处</span>
+                      <ChevronDown size={16} className="text-gray-400 group-open:rotate-180 transition-transform" />
+                    </summary>
+                    <div className="border-t border-gray-100 divide-y divide-gray-100">
+                      {items.map((it, i) => (
+                        <div key={i} className="px-5 py-3 flex items-start gap-3">
+                          <MapPinIcon size={14} className="text-blue-500 mt-1 flex-shrink-0" />
+                          <div className="flex-1 min-w-0">
+                            <div className="text-sm font-medium text-gray-900 truncate">{it.name}</div>
+                            {Object.keys(it.extra).length > 0 && (
+                              <div className="text-xs text-gray-500 mt-0.5">
+                                {Object.entries(it.extra).slice(0, 3).map(([k, v]) => {
+                                  const labelMap: Record<string, string> = {
+                                    hasKidsMenu: '儿童菜单', avgPrice: '人均', walkInOk: '可现场取号',
+                                    isFree: '免费', hasHotWater: '热水', hasRamp: '无障碍坡道', hasElevator: '电梯',
+                                    hasKidsPool: '儿童泳池', hasKidsBreakfast: '儿童早餐', hasFamilyRoom: '家庭房', hasCrib: '婴儿床',
+                                    hasLego: '乐高', hasPopMart: '泡泡玛特', hasKidsSection: '儿童区',
+                                    hasMilkPowder: '奶粉', hasDiapers: '尿不湿', hasChildMedicine: '儿童用药',
+                                    hasPediatrics: '儿科', hasER: '急诊', hasPlayArea: '儿童乐园',
+                                    ageRange: '适龄', hasQueue: '排队区', notes: '备注',
+                                  };
+                                  const display = labelMap[k] ?? k;
+                                  const value = typeof v === 'boolean' ? (v ? '✓' : '✗') : v;
+                                  return `${display}：${value}`;
+                                }).join(' · ')}
+                              </div>
+                            )}
+                          </div>
+                          {it.distanceMeters != null && (
+                            <div className="text-xs text-blue-600 font-medium flex-shrink-0">
+                              {it.distanceMeters < 1000 ? `${it.distanceMeters} 米` : `${(it.distanceMeters / 1000).toFixed(1)} 公里`}
+                            </div>
+                          )}
+                        </div>
+                      ))}
+                    </div>
+                  </details>
+                );
+              })}
+              {/* mock 数据 banner（P4 真数据后移除） */}
+              <div className="text-xs text-gray-400 mt-2 px-1">
+                提示：周边数据为示意（P4 接高德真实 POI 后自动更新）
+              </div>
+            </div>
+          </section>
+        )}
       </div>
     </main>
   );

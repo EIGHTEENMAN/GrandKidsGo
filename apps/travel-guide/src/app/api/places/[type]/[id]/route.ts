@@ -1,7 +1,8 @@
-// GET /api/places/[type]/[id] — 地点详情 + 真实评价
+// GET /api/places/[type]/[id] — 地点详情 + 真实评价 + 周边 POI
 // POST /api/places/[type]/[id]/review — 提交评价（双维度）
 
 import { NextRequest, NextResponse } from "next/server";
+import { PlaceNearbyCategory } from "@prisma/client";
 import prisma from "@/lib/prisma";
 
 export const dynamic = "force-dynamic";
@@ -107,9 +108,10 @@ export async function GET(
       stats: {
         adultAvg: adultAvg ? Math.round(adultAvg * 10) / 10 : null,
         childAvg: childAvg ? Math.round(childAvg * 10) / 10 : null,
-        reviewCount: reviews.length,
         withChildRating: childReviews.length,
       },
+      // 周边 POI（按 category group 返回）
+      nearby: await fetchNearby(type, id),
       reviews: reviews.map((r) => ({
         id: r.id,
         adultRating: r.adultRating,
@@ -127,4 +129,36 @@ export async function GET(
       })),
     },
   });
+}
+
+// 周边 POI：按 category 分组返回
+async function fetchNearby(type: string, id: string) {
+  const rows = await prisma.placeNearby.findMany({
+    where: { placeId: id, placeType: type },
+    orderBy: [{ distanceMeters: "asc" }],
+    take: 100,
+  });
+  // 按 category group（保持 enum 顺序）
+  const groups: Record<string, Array<{
+    name: string;
+    distanceMeters: number | null;
+    extra: Record<string, unknown>;
+    isVerified: boolean;
+  }>> = {};
+  for (const r of rows) {
+    const k = r.category as string;
+    if (!groups[k]) groups[k] = [];
+    groups[k].push({
+      name: r.name,
+      distanceMeters: r.distanceMeters,
+      extra: (r.extra ?? {}) as Record<string, unknown>,
+      isVerified: r.isVerified,
+    });
+  }
+  // 按 enum 顺序输出
+  const ordered: Record<string, unknown> = {};
+  for (const cat of Object.values(PlaceNearbyCategory)) {
+    if (groups[cat]) ordered[cat] = groups[cat];
+  }
+  return ordered;
 }

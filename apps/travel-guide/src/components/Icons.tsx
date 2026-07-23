@@ -420,3 +420,60 @@ export const AquariumIcon = ({ size = 20, ...props }: IconProps) => (
     <circle cx="18" cy="10" r="0.6" fill="currentColor" />
   </svg>
 );
+
+// ===== 周边便利图标（v1.0 详情页） =====
+
+export const NursingIcon = ({ size = 20, ...props }: IconProps) => (
+  <svg {...base(size, props)}>
+    <circle cx="12" cy="7" r="3" />
+    <path d="M5 21v-1a7 7 0 0 1 14 0v1" />
+  </svg>
+);
+
+export const WaterDropIcon = ({ size = 20, ...props }: IconProps) => (
+  <svg {...base(size, props)}>
+    <path d="M12 3c-3 4-5 7-5 10a5 5 0 0 0 10 0c0-3-2-6-5-10z" />
+  </svg>
+);
+
+export const HospitalIcon = ({ size = 20, ...props }: IconProps) => (
+  <svg {...base(size, props)}>
+    <rect x="4" y="6" width="16" height="14" rx="2" />
+    <path d="M12 10v6M9 13h6" />
+  </svg>
+);
+
+export const PharmacyIcon = ({ size = 20, ...props }: IconProps) => (
+  <svg {...base(size, props)}>
+    <rect x="4" y="6" width="16" height="14" rx="2" />
+    <path d="M8 8h2M8 11h2M10 11v-3" />
+    <circle cx="13" cy="11" r="1" />
+    <path d="M11 14l4-4M15 14l-4-4" />
+  </svg>
+);
+
+export const StrollerIcon = ({ size = 20, ...props }: IconProps) => (
+  <svg {...base(size, props)}>
+    <circle cx="7" cy="18" r="2" />
+    <circle cx="15" cy="18" r="2" />
+    <path d="M5 6h4l3 8h4" />
+    <path d="M9 6V4h3l2 5" />
+  </svg>
+);
+
+export const DiDiIcon = ({ size = 20, ...props }: IconProps) => (
+  <svg {...base(size, props)}>
+    <rect x="3" y="11" width="18" height="6" rx="2" />
+    <circle cx="7" cy="19" r="1.5" />
+    <circle cx="17" cy="19" r="1.5" />
+    <path d="M3 11l2-5h14l2 5" />
+  </svg>
+);
+
+export const HotelRoomIcon = ({ size = 20, ...props }: IconProps) => (
+  <svg {...base(size, props)}>
+    <path d="M3 21V8l9-5 9 5v13" />
+    <path d="M9 21v-7h6v7" />
+    <path d="M9 11h.01M15 11h.01" />
+  </svg>
+);
