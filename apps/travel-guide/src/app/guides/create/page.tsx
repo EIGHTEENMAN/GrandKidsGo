@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import TipTapEditor from '@/components/TipTapEditor';
+import { BabyIcon } from '@/components/Icons';
 
 export default function CreateGuidePage() {
   const router = useRouter();
@@ -13,6 +14,7 @@ export default function CreateGuidePage() {
     ageRange: '', days: 0, childAges: '', contentHtml: '',
   });
   const [saving, setSaving] = useState(false);
+  const [childSayings, setChildSayings] = useState<Array<{ text: string; mood: string }>>([]);
 
   useEffect(() => {
     const token = localStorage.getItem('haodaer_token');
@@ -46,12 +48,14 @@ export default function CreateGuidePage() {
         body: JSON.stringify({
           title: form.title,
           contentHtml: form.contentHtml,
-          cityId: null, // P4 接 city 选择器
+          cityId: null,
           days: form.days || undefined,
           childAges: form.childAges ? form.childAges.split(',').map(Number).filter(Boolean) : [],
           travelStyle: form.category || undefined,
           coverImages: form.coverImage ? [form.coverImage] : [],
           tags: [form.category, form.ageRange].filter(Boolean),
+          // 同时提交孩子说记录（有内容时才发）
+          childSayings: childSayings.filter(s => s.text.trim()).map(s => ({ text: s.text.trim(), mood: s.mood || null })),
         }),
       });
       const d = await res.json();
@@ -120,6 +124,55 @@ export default function CreateGuidePage() {
               placeholder="写攻略正文..."
             />
           </div>
+        </div>
+
+        {/* ============ 孩子说记录区 — 同时提交攻略和孩子说 ============ */}
+        <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
+          <h2 className="text-lg font-bold text-gray-900 mb-1 inline-flex items-center gap-2">
+            <BabyIcon size={18} className="text-pink-500" /> 孩子说
+          </h2>
+          <p className="text-xs text-gray-500 mb-4">记录旅行中孩子的童言趣语 · 提交攻略时会同时保存</p>
+
+          {/* 孩子说记录列表（在正文编辑下方添加） */}
+          <div className="space-y-3 mb-4">
+            {childSayings.map((s, i) => (
+              <div key={i} className="flex items-start gap-3 bg-pink-50 rounded-xl p-3">
+                <div className="flex-1 min-w-0">
+                  <textarea value={s.text} onChange={e => {
+                    const next = [...childSayings];
+                    next[i].text = e.target.value;
+                    setChildSayings(next);
+                  }}
+                    className="w-full bg-transparent border-0 focus:outline-none resize-none text-sm font-medium text-gray-900"
+                    rows={1} placeholder="输入孩子说的话..." />
+                  <div className="flex items-center gap-2 mt-1">
+                    {['开心', '困惑', '惊讶', '生气', '困了'].map(m => (
+                      <button key={m} onClick={() => {
+                        const next = [...childSayings];
+                        next[i].mood = next[i].mood === m ? '' : m;
+                        setChildSayings(next);
+                      }}
+                        className={`px-2 py-0.5 rounded-full text-xs border transition ${s.mood === m ? 'bg-pink-100 border-pink-300 text-pink-700' : 'bg-white border-gray-200 text-gray-500 hover:border-pink-200'}`}>
+                        {m}
+                      </button>
+                    ))}
+                    <button onClick={() => {
+                      // 录音预留接口（P2 接入 MediaRecorder）
+                      alert('录音功能 P2 接入');
+                    }} className="ml-auto px-2 py-0.5 text-xs text-blue-600 hover:text-blue-700 border border-blue-200 rounded-full">
+                      🎤 录音
+                    </button>
+                  </div>
+                </div>
+                <button onClick={() => setChildSayings(childSayings.filter((_, idx) => idx !== i))}
+                  className="text-gray-400 hover:text-red-500 text-sm flex-shrink-0">✕</button>
+              </div>
+            ))}
+          </div>
+          <button onClick={() => setChildSayings([...childSayings, { text: '', mood: '' }])}
+            className="text-sm text-pink-600 hover:text-pink-700 font-medium">
+            + 添加一句
+          </button>
         </div>
 
         <div className="flex gap-3 justify-end">
