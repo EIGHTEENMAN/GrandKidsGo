@@ -390,9 +390,10 @@ export default function PlaceDetailPage() {
                   ))}
                 </div>
               </details>
-              {/* 13 类周边 POI */}
-              {NEARBY_CATEGORIES.filter((c) => data.nearby?.[c.key]?.length).map((c) => {
-                const items = data.nearby![c.key]!;
+              {/* 13 类周边 POI — 固定展示全部 13 类，无数据显空 */}
+              {NEARBY_CATEGORIES.map((c) => {
+                const items = data.nearby?.[c.key];
+                const itemCount = items?.length ?? 0;
                 const Icon = c.Icon;
                 return (
                   <details key={c.key} className="group">
@@ -401,18 +402,18 @@ export default function PlaceDetailPage() {
                         <Icon size={18} />
                       </span>
                       <span className="flex-1 font-medium text-gray-900">{c.label}</span>
-                      <span className="text-xs text-gray-500">{items.length} 处</span>
+                      <span className="text-xs text-gray-500">{itemCount > 0 ? `${itemCount} 处` : '-'}</span>
                       <ChevronDown size={16} className="text-gray-400 group-open:rotate-180 transition-transform" />
                     </summary>
                     <div className="border-t border-gray-100 divide-y divide-gray-100">
-                      {items.map((it, i) => (
+                      {itemCount > 0 ? items!.slice(0, 5).map((it: Record<string, unknown>, i: number) => (
                         <div key={i} className="px-5 py-3 flex items-start gap-3">
                           <MapPinIcon size={14} className="text-blue-500 mt-1 flex-shrink-0" />
                           <div className="flex-1 min-w-0">
-                            <div className="text-sm font-medium text-gray-900 truncate">{it.name}</div>
-                            {Object.keys(it.extra).length > 0 && (
+                            <div className="text-sm font-medium text-gray-900 truncate">{it.name as string}</div>
+                            {it.extra && Object.keys(it.extra as Record<string, unknown>).length > 0 && (
                               <div className="text-xs text-gray-500 mt-0.5 truncate">
-                                {Object.entries(it.extra).slice(0, 2).map(([k, v]) => {
+                                {Object.entries(it.extra as Record<string, unknown>).slice(0, 2).map(([k, v]) => {
                                   const lm: Record<string, string> = { hasKidsMenu: '儿童菜单', avgPrice: '人均', isFree: '免费', hasHotWater: '热水', hasRamp: '无障碍', hasKidsPool: '儿童泳池', hasKidsBreakfast: '儿童早餐', hasFamilyRoom: '家庭房', hasLego: '乐高', hasPopMart: '泡泡玛特', hasMilkPowder: '奶粉', hasDiapers: '尿不湿', hasChildMedicine: '儿童用药', hasER: '急诊', hasPlayArea: '儿童乐园', notes: '备注' };
                                   const d = lm[k] ?? k;
                                   return `${d}：${typeof v === 'boolean' ? (v ? '有' : '无') : v}`;
@@ -420,13 +421,15 @@ export default function PlaceDetailPage() {
                               </div>
                             )}
                           </div>
-                          {it.distanceMeters != null && (
+                          {(it.distanceMeters as number) != null && (
                             <div className="text-xs text-blue-600 font-medium flex-shrink-0">
-                              {it.distanceMeters < 1000 ? `${it.distanceMeters} 米` : `${(it.distanceMeters / 1000).toFixed(1)} 公里`}
+                              {(it.distanceMeters as number) < 1000 ? `${it.distanceMeters} 米` : `${((it.distanceMeters as number) / 1000).toFixed(1)} 公里`}
                             </div>
                           )}
                         </div>
-                      ))}
+                      )) : (
+                        <div className="px-5 py-3 text-sm text-gray-400">暂无数据</div>
+                      )}
                     </div>
                   </details>
                 );
