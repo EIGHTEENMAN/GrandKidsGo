@@ -468,6 +468,7 @@ model Guide {
   coverImages        String[]  @map("cover_images")
   contentHtml        String    @map("content_html")
   cityId             String?   @map("city_id")
+  spotId             String?   @map("spot_id")          // 2026-07-24 新增：关联景点
   days               Int?
   childAges          Int[]     @map("child_ages")
   travelStyle        String?   @map("travel_style")

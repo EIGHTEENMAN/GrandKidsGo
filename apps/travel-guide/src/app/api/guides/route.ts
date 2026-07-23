@@ -14,7 +14,7 @@ export async function POST(req: NextRequest) {
     }
 
     const body = await req.json();
-    const { title, contentHtml, cityId, days, childAges, travelStyle, coverImages, childSayings } = body;
+    const { title, contentHtml, cityId, spotId, days, childAges, travelStyle, coverImages, childSayings } = body;
 
     if (!title || !contentHtml) {
       return NextResponse.json({ code: "VALIDATION_ERROR", message: "标题和内容不能为空" }, { status: 400 });
@@ -44,7 +44,7 @@ export async function POST(req: NextRequest) {
       },
     });
 
-    // 孩子说：创建 childSaying 记录
+    // 孩子说：创建 childSaying 记录（绑定 spotId 自动关联地点页面）
     if (Array.isArray(childSayings)) {
       for (const s of childSayings) {
         const text = (s.text ?? "").trim().slice(0, 200);
@@ -55,6 +55,7 @@ export async function POST(req: NextRequest) {
             childId: null,
             text,
             mood: s.mood ?? null,
+            spotId: s.spotId ?? spotId ?? null,
             shareScope: "private",
           },
         });

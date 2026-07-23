@@ -9,9 +9,12 @@ export default function CreateGuidePage() {
   const router = useRouter();
   const [user, setUser] = useState<any>(null);
   const [loading, setLoading] = useState(true);
+  const [cities, setCities] = useState<Array<{ id: string; name: string }>>([]);
+  const [spots, setSpots] = useState<Array<{ id: string; name: string; cityId: string }>>([]);
   const [form, setForm] = useState({
     title: '', destination: '', category: '', coverImage: '',
     ageRange: '', days: 0, childAges: '', contentHtml: '',
+    cityId: '', spotId: '',
   });
   const [saving, setSaving] = useState(false);
   const [childSayings, setChildSayings] = useState<Array<{ text: string; mood: string }>>([]);
@@ -25,6 +28,15 @@ export default function CreateGuidePage() {
       .finally(() => setLoading(false));
   }, [router]);
 
+  // 加载城市 + 景点列表
+  useEffect(() => {
+    fetch('/api/cities').then(r => r.json()).then(d => setCities(d.data?.items ?? d.cities ?? d.data ?? [])).catch(() => {});
+  }, []);
+  useEffect(() => {
+    if (!form.cityId) { setSpots([]); return; }
+    fetch(`/api/places?cityId=${form.cityId}`).then(r => r.json()).then(d => setSpots(d.data?.items ?? d.items ?? [])).catch(() => {});
+  }, [form.cityId]);
+
   const updateSection = (i: number, field: string, value: any) => {
     const s = [...form.sections];
     (s[i] as any)[field] = value;
@@ -37,7 +49,7 @@ export default function CreateGuidePage() {
   };
 
   const submit = async () => {
-    if (!form.title || !form.destination) return alert('标题和目的地不能为空');
+    if (!form.title || !form.cityId) return alert('标题和目的地不能为空');
     if (!form.contentHtml) return alert('攻略内容不能为空');
     setSaving(true);
     try {
@@ -48,14 +60,19 @@ export default function CreateGuidePage() {
         body: JSON.stringify({
           title: form.title,
           contentHtml: form.contentHtml,
-          cityId: null,
+          cityId: form.cityId || null,
+          spotId: form.spotId || null,
           days: form.days || undefined,
           childAges: form.childAges ? form.childAges.split(',').map(Number).filter(Boolean) : [],
           travelStyle: form.category || undefined,
           coverImages: form.coverImage ? [form.coverImage] : [],
           tags: [form.category, form.ageRange].filter(Boolean),
-          // 同时提交孩子说记录（有内容时才发）
-          childSayings: childSayings.filter(s => s.text.trim()).map(s => ({ text: s.text.trim(), mood: s.mood || null })),
+          // 同时提交孩子说记录（绑定 spotId 自动关联地点页面）
+          childSayings: childSayings.filter(s => s.text.trim()).map(s => ({
+            text: s.text.trim(),
+            mood: s.mood || null,
+            spotId: form.spotId || null,
+          })),
         }),
       });
       const d = await res.json();
@@ -85,9 +102,20 @@ export default function CreateGuidePage() {
               className="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm focus:ring-2 focus:ring-blue-500 bg-white" placeholder="如：带娃游三亚攻略" />
           </div>
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">目的地</label>
-            <input value={form.destination} onChange={e => setForm({ ...form, destination: e.target.value })}
-              className="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm focus:ring-2 focus:ring-blue-500 bg-white" placeholder="如：三亚" />
+            <label className="block text-sm font-medium text-gray-700 mb-1">目的地（城市）</label>
+            <select value={form.cityId} onChange={e => setForm({ ...form, cityId: e.target.value, spotId: '' })}
+              className="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm bg-white focus:ring-2 focus:ring-blue-500">
+              <option value="">选择城市（必填）</option>
+              {cities.map(c => <option key={c.id} value={c.id}>{c.name}</option>)}
+            </select>
+          </div>
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">关联景点（可选，关联后孩子说会显示在该地点页面）</label>
+            <select value={form.spotId} onChange={e => setForm({ ...form, spotId: e.target.value })}
+              className="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm bg-white focus:ring-2 focus:ring-blue-500">
+              <option value="">不关联</option>
+              {spots.map(s => <option key={s.id} value={s.id}>{s.name}</option>)}
+            </select>
           </div>
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1">旅行风格</label>
