@@ -65,6 +65,12 @@ model Spot {
   lat               Float?
   lng               Float?
   spotType          String?  @map("spot_type")
+  address           String?  @map("address")
+  phone             String?  @map("phone")
+  officialSite      String?  @map("official_site")
+  openHours         String?  @map("open_hours")
+  ticketPrice       String?  @map("ticket_price")
+  coverImages       String[] @default([]) @map("cover_images")
   createdAt         DateTime @default(now()) @map("created_at")
 
   city         City               @relation(fields: [cityId], references: [id], onDelete: Cascade)
@@ -92,6 +98,11 @@ model Restaurant {
   tags              String[]
   lat               Float?
   lng               Float?
+  address           String?  @map("address")
+  phone             String?  @map("phone")
+  officialSite      String?  @map("official_site")
+  openHours         String?  @map("open_hours")
+  coverImages       String[] @default([]) @map("cover_images")
   createdAt         DateTime @default(now()) @map("created_at")
 
   city City @relation(fields: [cityId], references: [id], onDelete: Cascade)
@@ -112,6 +123,11 @@ model Hotel {
   tags             String[]
   lat              Float?
   lng              Float?
+  address          String?  @map("address")
+  phone            String?  @map("phone")
+  officialSite     String?  @map("official_site")
+  openHours        String?  @map("open_hours")
+  coverImages      String[] @default([]) @map("cover_images")
   createdAt        DateTime @default(now()) @map("created_at")
 
   city City @relation(fields: [cityId], references: [id], onDelete: Cascade)
@@ -147,6 +163,11 @@ model Park {
   tags            String[]
   lat             Float?
   lng             Float?
+  address         String?  @map("address")
+  phone           String?  @map("phone")
+  officialSite    String?  @map("official_site")
+  openHours       String?  @map("open_hours")
+  coverImages     String[] @default([]) @map("cover_images")
   createdAt       DateTime @default(now()) @map("created_at")
 
   city City @relation(fields: [cityId], references: [id], onDelete: Cascade)
@@ -165,6 +186,11 @@ model Playground {
   tags            String[]
   lat             Float?
   lng             Float?
+  address         String?  @map("address")
+  phone           String?  @map("phone")
+  officialSite    String?  @map("official_site")
+  openHours       String?  @map("open_hours")
+  coverImages     String[] @default([]) @map("cover_images")
   createdAt       DateTime @default(now()) @map("created_at")
 
   city City @relation(fields: [cityId], references: [id], onDelete: Cascade)
@@ -181,6 +207,11 @@ model Mall {
   tags            String[]
   lat             Float?
   lng             Float?
+  address         String?  @map("address")
+  phone           String?  @map("phone")
+  officialSite    String?  @map("official_site")
+  openHours       String?  @map("open_hours")
+  coverImages     String[] @default([]) @map("cover_images")
   createdAt       DateTime @default(now()) @map("created_at")
 
   city City @relation(fields: [cityId], references: [id], onDelete: Cascade)
@@ -196,8 +227,11 @@ model Hospital {
   hasPediatrics Boolean  @default(false) @map("has_pediatrics")
   address       String?
   phone         String?
+  officialSite  String?  @map("official_site")
+  openHours     String?  @map("open_hours")
   lat           Float?
   lng           Float?
+  coverImages   String[] @default([]) @map("cover_images")
   createdAt     DateTime @default(now()) @map("created_at")
 
   city City @relation(fields: [cityId], references: [id], onDelete: Cascade)
