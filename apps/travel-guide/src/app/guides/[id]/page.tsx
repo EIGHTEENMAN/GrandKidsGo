@@ -7,7 +7,7 @@ import Link from 'next/link';
 import { useParams, useRouter } from 'next/navigation';
 import {
   SparklesIcon, MapPinIcon, ClockIcon, BabyIcon, StarIcon, UserIcon, HeartIcon,
-  EyeIcon, ForkIcon, BookmarkIcon, GuidebookIcon, ChevronRight, CheckIcon,
+  EyeIcon, ForkIcon, BookmarkIcon, GuidebookIcon, ChevronRight, CheckIcon, ChevronDown,
 } from '@/components/Icons';
 import { sanitizeHtml } from '@/lib/sanitize';
 import { GuideReviewForm, GuideComments } from '@/components/guide/GuideReviewForm';
@@ -245,6 +245,17 @@ export default function GuideDetailPage() {
               <Link href={`/login?redirect=/guides/${id}`} className="text-blue-600 hover:underline">登录</Link>后可以评论
             </p>
           )}
+        </section>
+
+        {/* ============ ⑥ 相关攻略 ============ */}
+        <section className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 mb-8">
+          <h2 className="text-lg font-bold text-gray-900 mb-4 inline-flex items-center gap-2">
+            <SparklesIcon size={18} className="text-blue-600" /> 相关攻略
+          </h2>
+          <div className="text-xs text-gray-400">P2 接入 /api/guides/[id]/related 后展示</div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mt-3">
+            <p className="text-sm text-gray-500">基于同作者 + 同城市匹配</p>
+          </div>
         </section>
       </div>
     </main>
