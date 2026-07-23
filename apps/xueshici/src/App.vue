@@ -99,6 +99,19 @@ watch(currentView, (newView, oldView) => {
 
 // Favorites
 const favoriteIds = ref<string[]>(JSON.parse(localStorage.getItem('grandkidsgo_shici_fav') || '[]'))
+const relatedPlaces = ref<Array<{ placeId: string; placeName: string; url: string }>>([])
+
+// 加载关联地点（走天下联动）
+async function loadRelatedPlaces(poemId: number) {
+  try {
+    const res = await fetch(`https://travel.grandand.com/api/poems/by-poem?poemId=${poemId}`, { signal: AbortSignal.timeout(5000) })
+    if (!res.ok) return
+    const d = await res.json()
+    if (d.data?.length) relatedPlaces.value = d.data.map((p: any) => ({
+      placeId: p.placeId, placeName: p.placeName, url: p.url
+    }))
+  } catch {}
+}
 function toggleFavorite(id: string) {
   const i = favoriteIds.value.indexOf(id)
   i >= 0 ? favoriteIds.value.splice(i, 1) : favoriteIds.value.push(id)
@@ -546,6 +559,9 @@ function injectJsonLd(data: object) {
 
 // 首页结构化数据
 watch([() => currentView.value, () => currentPoem.value], () => {
+  // 走天下联动：加载关联地点（有 poemId 时）
+  if (currentPoem.value?.id) loadRelatedPlaces(currentPoem.value.id)
+  else relatedPlaces.value = []
   if (currentView.value === 'home' || !currentPoem.value) {
     injectJsonLd({
       '@context': 'https://schema.org',
@@ -785,6 +801,17 @@ watch([() => currentView.value, () => currentPoem.value], () => {
               </button>
             </div>
             <p class="sc-translation-text sc-interpretation-text">{{ currentSection.interpretation }} <span class="sc-ai-badge">AI</span></p>
+          </div>
+        </div>
+
+        <!-- 也在这个地方 — 走天下联动 -->
+        <div v-if="relatedPlaces.length > 0" class="sc-related-places">
+          <div class="sc-related-places-title">🏛 也在这个地方</div>
+          <div class="sc-related-places-list">
+            <a v-for="p in relatedPlaces" :key="p.placeId" :href="p.url" target="_blank" class="sc-related-place-item">
+              <span class="sc-related-place-name">{{ p.placeName }}</span>
+              <span class="sc-related-place-arrow">→</span>
+            </a>
           </div>
         </div>
       </div>
