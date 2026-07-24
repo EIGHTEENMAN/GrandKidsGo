@@ -397,107 +397,6 @@ export default function TravelHome() {
         <section className="mb-16">
           <div className="flex items-center justify-between mb-6">
             <h2 className="text-2xl font-bold text-gray-900 flex items-center gap-2">
-              <span className="text-blue-600"><FireIcon size={26} /></span>
-              热门攻略
-              <span className="text-sm font-normal text-gray-500">本周点赞收藏最多的真实旅行</span>
-            </h2>
-            <Link href="/guides" className="text-blue-600 hover:text-blue-700 text-sm font-medium whitespace-nowrap">
-              查看全部 →
-            </Link>
-          </div>
-
-          {!loaded && (
-            <div className="text-center py-12 text-gray-400">加载中…</div>
-          )}
-
-          {loaded && hotGuides.length === 0 && (
-            <div className="bg-white rounded-2xl p-12 text-center border border-dashed border-gray-200">
-              <div className="w-14 h-14 mx-auto mb-3 rounded-full bg-blue-50 flex items-center justify-center">
-                <GuidebookIcon size={28} className="text-blue-500" />
-              </div>
-              <div className="text-gray-500 mb-1">还没有发布的攻略</div>
-              <div className="text-sm text-gray-400">
-                家长完成一次出行 + 发布一篇攻略，就会出现在这里
-              </div>
-            </div>
-          )}
-
-          {/* 小红书风格瀑布流 - 2 列错落 */}
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            {hotGuides.map((g, i) => {
-              // 瀑布流风格：不同高度 + 第一张大图
-              const isFeatured = i === 0;
-              const heightClass = isFeatured ? 'h-96' : MASONRY_HEIGHTS[i % MASONRY_HEIGHTS.length];
-              const coverGradient = COVER_GRADIENTS[i % COVER_GRADIENTS.length];
-              const coverImage = g.coverImages?.[0];
-              return (
-                <Link
-                  key={g.id}
-                  href={`/guides/${g.id}`}
-                  className={`group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all ${isFeatured ? 'col-span-2 md:col-span-2 row-span-2' : ''}`}
-                >
-                  <div className={`relative ${heightClass} overflow-hidden`}>
-                    {coverImage ? (
-                      /* eslint-disable-next-line @next/next/no-img-element */
-                      <img
-                        src={coverImage}
-                        alt={g.title}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                      />
-                    ) : (
-                      <div className={`w-full h-full ${coverGradient} flex items-center justify-center relative`}>
-                        <MapPinIcon size={56} className="opacity-50 text-white" />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
-                      </div>
-                    )}
-                    {/* 标签 */}
-                    <div className="absolute top-3 left-3 flex flex-col gap-1.5">
-                      {g.cityName && (
-                        <span className="inline-flex items-center gap-1 px-2.5 py-1 bg-white/90 backdrop-blur-sm rounded-full text-xs font-medium text-gray-700 shadow-sm">
-                          <MapPinIcon size={12} className="text-blue-600" /> {g.cityName}
-                        </span>
-                      )}
-                      {g.days && (
-                        <span className="inline-flex items-center gap-1 px-2.5 py-1 bg-black/40 backdrop-blur-sm text-white rounded-full text-xs font-medium">
-                          <ClockIcon size={12} /> {g.days} 天
-                        </span>
-                      )}
-                    </div>
-                    {/* 底部渐变 + 标题 */}
-                    <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 via-black/40 to-transparent">
-                      {isFeatured && (
-                        <div className="inline-flex items-center gap-1 text-xs text-yellow-300 font-bold mb-1">
-                          <FireIcon size={12} /> 本周最热
-                        </div>
-                      )}
-                      <h3 className={`font-bold text-white line-clamp-2 ${isFeatured ? 'text-lg' : 'text-sm'}`}>
-                        {g.title}
-                      </h3>
-                    </div>
-                  </div>
-                  <div className="p-3">
-                    <div className="flex items-center justify-between text-xs">
-                      <span className="flex items-center gap-1 text-gray-600 truncate">
-                        <span className="w-5 h-5 rounded-full bg-gradient-to-br from-blue-400 to-cyan-400 flex items-center justify-center text-white text-[10px] flex-shrink-0">
-                          {g.author.nickname?.[0] ?? '?'}
-                        </span>
-                        <span className="truncate">{g.author.nickname}</span>
-                      </span>
-                      <span className="inline-flex items-center gap-1 text-gray-400 whitespace-nowrap">
-                        <ThumbsUpIcon size={12} /> {g.stats.like}
-                      </span>
-                    </div>
-                  </div>
-                </Link>
-              );
-            })}
-          </div>
-        </section>
-
-        {/* ===== 板块 3: 排行榜（4 个 Tab） ===== */}
-        <section className="mb-16">
-          <div className="flex items-center justify-between mb-6">
-            <h2 className="text-2xl font-bold text-gray-900 flex items-center gap-2">
               <span className="text-blue-600"><TrophyIcon size={26} /></span>
               排行榜
               <span className="text-sm font-normal text-gray-500">看看家长们带娃玩过的好地方</span>
@@ -696,6 +595,107 @@ export default function TravelHome() {
         </section>
 
         {/* ===== 板块 4: 懒人规划 ===== */}
+        <section className="mb-16">
+          <div className="flex items-center justify-between mb-6">
+            <h2 className="text-2xl font-bold text-gray-900 flex items-center gap-2">
+              <span className="text-blue-600"><FireIcon size={26} /></span>
+              热门攻略
+              <span className="text-sm font-normal text-gray-500">本周点赞收藏最多的真实旅行</span>
+            </h2>
+            <Link href="/guides" className="text-blue-600 hover:text-blue-700 text-sm font-medium whitespace-nowrap">
+              查看全部 →
+            </Link>
+          </div>
+
+          {!loaded && (
+            <div className="text-center py-12 text-gray-400">加载中…</div>
+          )}
+
+          {loaded && hotGuides.length === 0 && (
+            <div className="bg-white rounded-2xl p-12 text-center border border-dashed border-gray-200">
+              <div className="w-14 h-14 mx-auto mb-3 rounded-full bg-blue-50 flex items-center justify-center">
+                <GuidebookIcon size={28} className="text-blue-500" />
+              </div>
+              <div className="text-gray-500 mb-1">还没有发布的攻略</div>
+              <div className="text-sm text-gray-400">
+                家长完成一次出行 + 发布一篇攻略，就会出现在这里
+              </div>
+            </div>
+          )}
+
+          {/* 小红书风格瀑布流 - 2 列错落 */}
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            {hotGuides.map((g, i) => {
+              // 瀑布流风格：不同高度 + 第一张大图
+              const isFeatured = i === 0;
+              const heightClass = isFeatured ? 'h-96' : MASONRY_HEIGHTS[i % MASONRY_HEIGHTS.length];
+              const coverGradient = COVER_GRADIENTS[i % COVER_GRADIENTS.length];
+              const coverImage = g.coverImages?.[0];
+              return (
+                <Link
+                  key={g.id}
+                  href={`/guides/${g.id}`}
+                  className={`group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all ${isFeatured ? 'col-span-2 md:col-span-2 row-span-2' : ''}`}
+                >
+                  <div className={`relative ${heightClass} overflow-hidden`}>
+                    {coverImage ? (
+                      /* eslint-disable-next-line @next/next/no-img-element */
+                      <img
+                        src={coverImage}
+                        alt={g.title}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
+                    ) : (
+                      <div className={`w-full h-full ${coverGradient} flex items-center justify-center relative`}>
+                        <MapPinIcon size={56} className="opacity-50 text-white" />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
+                      </div>
+                    )}
+                    {/* 标签 */}
+                    <div className="absolute top-3 left-3 flex flex-col gap-1.5">
+                      {g.cityName && (
+                        <span className="inline-flex items-center gap-1 px-2.5 py-1 bg-white/90 backdrop-blur-sm rounded-full text-xs font-medium text-gray-700 shadow-sm">
+                          <MapPinIcon size={12} className="text-blue-600" /> {g.cityName}
+                        </span>
+                      )}
+                      {g.days && (
+                        <span className="inline-flex items-center gap-1 px-2.5 py-1 bg-black/40 backdrop-blur-sm text-white rounded-full text-xs font-medium">
+                          <ClockIcon size={12} /> {g.days} 天
+                        </span>
+                      )}
+                    </div>
+                    {/* 底部渐变 + 标题 */}
+                    <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 via-black/40 to-transparent">
+                      {isFeatured && (
+                        <div className="inline-flex items-center gap-1 text-xs text-yellow-300 font-bold mb-1">
+                          <FireIcon size={12} /> 本周最热
+                        </div>
+                      )}
+                      <h3 className={`font-bold text-white line-clamp-2 ${isFeatured ? 'text-lg' : 'text-sm'}`}>
+                        {g.title}
+                      </h3>
+                    </div>
+                  </div>
+                  <div className="p-3">
+                    <div className="flex items-center justify-between text-xs">
+                      <span className="flex items-center gap-1 text-gray-600 truncate">
+                        <span className="w-5 h-5 rounded-full bg-gradient-to-br from-blue-400 to-cyan-400 flex items-center justify-center text-white text-[10px] flex-shrink-0">
+                          {g.author.nickname?.[0] ?? '?'}
+                        </span>
+                        <span className="truncate">{g.author.nickname}</span>
+                      </span>
+                      <span className="inline-flex items-center gap-1 text-gray-400 whitespace-nowrap">
+                        <ThumbsUpIcon size={12} /> {g.stats.like}
+                      </span>
+                    </div>
+                  </div>
+                </Link>
+              );
+            })}
+          </div>
+        </section>
+
+        {/* ===== 板块 3: 排行榜（4 个 Tab） ===== */}
         <section className="mb-12">
           <div className="flex items-center justify-between mb-6">
             <h2 className="text-2xl font-bold text-gray-900 flex items-center gap-2">
