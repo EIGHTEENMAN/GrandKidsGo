@@ -293,107 +293,7 @@ export default function TravelHome() {
       </header>
 
       <main className="max-w-6xl mx-auto px-6 py-12">
-        {/* ===== 板块 1: 亲子宝典（主题 → 城市 → 景点 三层） ===== */}
-        <section className="mb-16">
-          <div className="flex items-center justify-between mb-4">
-            <h2 className="text-2xl font-bold text-gray-900 flex items-center gap-2">
-              <span className="text-blue-600"><BookIcon size={26} /></span>
-              亲子宝典
-              <span className="text-sm font-normal text-gray-500">先选主题，再选城市，找到你想去的地方</span>
-            </h2>
-            <Link href="/places" className="text-blue-600 hover:text-blue-700 text-sm font-medium whitespace-nowrap">
-              查看全部 →
-            </Link>
-          </div>
-          <p className="text-sm text-gray-500 mb-5">
-            玩水 / 海边 / 研学 / 露营 · 上千个真实亲子地点 · 大人孩子双维度评分
-          </p>
-
-          {/* 第一层：热门主题（grid 卡片） */}
-          <div className="mb-4">
-            <div className="flex items-center gap-2 mb-3">
-              <span className="text-xs font-semibold text-gray-600 whitespace-nowrap inline-flex items-center gap-1.5">
-                <SparklesIcon size={14} className="text-blue-500" /> 热门主题
-              </span>
-              <div className="flex-1 h-px bg-gray-100" />
-            </div>
-            <div className="grid grid-cols-4 md:grid-cols-7 gap-3">
-              {[
-                { id: '玩水' }, { id: '海边' },
-                { id: '爬山' }, { id: '研学' },
-                { id: '动物' }, { id: '采摘' },
-                { id: '露营' }, { id: '历史' },
-                { id: '主题乐园' }, { id: '博物馆' },
-                { id: '滑雪' }, { id: '观星' },
-                { id: '漂流' }, { id: '游船' },
-              ].slice(0, 7).map((t) => (
-                <Link
-                  key={t.id}
-                  href={`/places?tag=${encodeURIComponent(t.id)}`}
-                  className="group bg-white rounded-xl p-4 text-center shadow-sm hover:shadow-md transition border border-gray-100 hover:border-blue-200"
-                >
-                  <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-blue-50 text-blue-600 mb-2 group-hover:bg-blue-100 transition">
-                    {TAG_SVG[t.id]}
-                  </span>
-                  <div className="text-sm font-medium text-gray-700">{t.id}</div>
-                </Link>
-              ))}
-            </div>
-          </div>
-
-          {/* 第二层：热门城市（grid 卡片） */}
-          <div className="mb-4">
-            <div className="flex items-center gap-2 mb-3">
-              <span className="text-xs font-semibold text-gray-600 whitespace-nowrap inline-flex items-center gap-1.5">
-                <CityIcon size={14} className="text-blue-500" /> 热门城市
-              </span>
-              <div className="flex-1 h-px bg-gray-100" />
-            </div>
-            <div className="grid grid-cols-4 md:grid-cols-7 gap-3">
-              {['北京', '上海', '杭州', '成都', '广州', '西安', '厦门'].map((city) => (
-                <Link
-                  key={city}
-                  href={`/places?cityName=${encodeURIComponent(city)}`}
-                  className="group bg-white rounded-xl p-4 text-center shadow-sm hover:shadow-md transition border border-gray-100 hover:border-blue-200"
-                >
-                  <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-blue-50 text-blue-600 mb-2 group-hover:bg-blue-100 transition">
-                    <CityIcon size={20} />
-                  </span>
-                  <div className="text-sm font-medium text-gray-700">{city}</div>
-                </Link>
-              ))}
-            </div>
-          </div>
-
-          {/* 第三层：地点类别（grid 卡片） */}
-          <div>
-            <div className="flex items-center gap-2 mb-3">
-              <span className="text-xs font-semibold text-gray-600 whitespace-nowrap inline-flex items-center gap-1.5">
-                <MapPinIcon size={14} className="text-blue-500" /> 地点类别
-              </span>
-              <div className="flex-1 h-px bg-gray-100" />
-            </div>
-            <div className="grid grid-cols-4 md:grid-cols-7 gap-3">
-              {PLACE_CATEGORIES.slice(0, 7).map((c) => {
-                const Icon = c.Icon;
-                return (
-                  <Link
-                    key={c.key}
-                    href={`/places?category=${c.key}`}
-                    className="group bg-white rounded-xl p-4 text-center shadow-sm hover:shadow-md transition border border-gray-100 hover:border-blue-200"
-                  >
-                    <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-blue-50 text-blue-600 mb-2 group-hover:bg-blue-100 transition">
-                      <Icon size={20} />
-                    </span>
-                    <div className="text-sm font-medium text-gray-700">{c.label}</div>
-                  </Link>
-                );
-              })}
-            </div>
-          </div>
-        </section>
-
-        {/* ===== 板块 2: 排行榜（4 个 Tab） ===== */}
+        {/* ===== 板块 1: 排行榜（4 个 Tab） ===== */}
         <section className="mb-16">
           <div className="flex items-center justify-between mb-6">
             <h2 className="text-2xl font-bold text-gray-900 flex items-center gap-2">
@@ -594,7 +494,7 @@ export default function TravelHome() {
           </div>
         </section>
 
-        {/* ===== 板块 4: 懒人规划 ===== */}
+        {/* ===== 板块 2: 热门攻略（小红书瀑布流） ===== */}
         <section className="mb-16">
           <div className="flex items-center justify-between mb-6">
             <h2 className="text-2xl font-bold text-gray-900 flex items-center gap-2">
@@ -695,7 +595,107 @@ export default function TravelHome() {
           </div>
         </section>
 
-        {/* ===== 板块 3: 热门攻略（小红书瀑布流） ===== */}
+        {/* ===== 板块 3: 亲子宝典（主题 → 城市 → 景点 三层） ===== */}
+        <section className="mb-16">
+          <div className="flex items-center justify-between mb-4">
+            <h2 className="text-2xl font-bold text-gray-900 flex items-center gap-2">
+              <span className="text-blue-600"><BookIcon size={26} /></span>
+              亲子宝典
+              <span className="text-sm font-normal text-gray-500">先选主题，再选城市，找到你想去的地方</span>
+            </h2>
+            <Link href="/places" className="text-blue-600 hover:text-blue-700 text-sm font-medium whitespace-nowrap">
+              查看全部 →
+            </Link>
+          </div>
+          <p className="text-sm text-gray-500 mb-5">
+            玩水 / 海边 / 研学 / 露营 · 上千个真实亲子地点 · 大人孩子双维度评分
+          </p>
+
+          {/* 第一层：热门主题（grid 卡片） */}
+          <div className="mb-4">
+            <div className="flex items-center gap-2 mb-3">
+              <span className="text-xs font-semibold text-gray-600 whitespace-nowrap inline-flex items-center gap-1.5">
+                <SparklesIcon size={14} className="text-blue-500" /> 热门主题
+              </span>
+              <div className="flex-1 h-px bg-gray-100" />
+            </div>
+            <div className="grid grid-cols-4 md:grid-cols-7 gap-3">
+              {[
+                { id: '玩水' }, { id: '海边' },
+                { id: '爬山' }, { id: '研学' },
+                { id: '动物' }, { id: '采摘' },
+                { id: '露营' }, { id: '历史' },
+                { id: '主题乐园' }, { id: '博物馆' },
+                { id: '滑雪' }, { id: '观星' },
+                { id: '漂流' }, { id: '游船' },
+              ].slice(0, 7).map((t) => (
+                <Link
+                  key={t.id}
+                  href={`/places?tag=${encodeURIComponent(t.id)}`}
+                  className="group bg-white rounded-xl p-4 text-center shadow-sm hover:shadow-md transition border border-gray-100 hover:border-blue-200"
+                >
+                  <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-blue-50 text-blue-600 mb-2 group-hover:bg-blue-100 transition">
+                    {TAG_SVG[t.id]}
+                  </span>
+                  <div className="text-sm font-medium text-gray-700">{t.id}</div>
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          {/* 第二层：热门城市（grid 卡片） */}
+          <div className="mb-4">
+            <div className="flex items-center gap-2 mb-3">
+              <span className="text-xs font-semibold text-gray-600 whitespace-nowrap inline-flex items-center gap-1.5">
+                <CityIcon size={14} className="text-blue-500" /> 热门城市
+              </span>
+              <div className="flex-1 h-px bg-gray-100" />
+            </div>
+            <div className="grid grid-cols-4 md:grid-cols-7 gap-3">
+              {['北京', '上海', '杭州', '成都', '广州', '西安', '厦门'].map((city) => (
+                <Link
+                  key={city}
+                  href={`/places?cityName=${encodeURIComponent(city)}`}
+                  className="group bg-white rounded-xl p-4 text-center shadow-sm hover:shadow-md transition border border-gray-100 hover:border-blue-200"
+                >
+                  <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-blue-50 text-blue-600 mb-2 group-hover:bg-blue-100 transition">
+                    <CityIcon size={20} />
+                  </span>
+                  <div className="text-sm font-medium text-gray-700">{city}</div>
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          {/* 第三层：地点类别（grid 卡片） */}
+          <div>
+            <div className="flex items-center gap-2 mb-3">
+              <span className="text-xs font-semibold text-gray-600 whitespace-nowrap inline-flex items-center gap-1.5">
+                <MapPinIcon size={14} className="text-blue-500" /> 地点类别
+              </span>
+              <div className="flex-1 h-px bg-gray-100" />
+            </div>
+            <div className="grid grid-cols-4 md:grid-cols-7 gap-3">
+              {PLACE_CATEGORIES.slice(0, 7).map((c) => {
+                const Icon = c.Icon;
+                return (
+                  <Link
+                    key={c.key}
+                    href={`/places?category=${c.key}`}
+                    className="group bg-white rounded-xl p-4 text-center shadow-sm hover:shadow-md transition border border-gray-100 hover:border-blue-200"
+                  >
+                    <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-blue-50 text-blue-600 mb-2 group-hover:bg-blue-100 transition">
+                      <Icon size={20} />
+                    </span>
+                    <div className="text-sm font-medium text-gray-700">{c.label}</div>
+                  </Link>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+
+        {/* ===== 板块 4: 懒人规划 ===== */}
         <section className="mb-12">
           <div className="flex items-center justify-between mb-6">
             <h2 className="text-2xl font-bold text-gray-900 flex items-center gap-2">
