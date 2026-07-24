@@ -393,7 +393,7 @@ export default function TravelHome() {
           </div>
         </section>
 
-        {/* ===== 板块 2: 热门攻略（小红书瀑布流） ===== */}
+        {/* ===== 板块 2: 排行榜（4 个 Tab） ===== */}
         <section className="mb-16">
           <div className="flex items-center justify-between mb-6">
             <h2 className="text-2xl font-bold text-gray-900 flex items-center gap-2">
@@ -695,7 +695,7 @@ export default function TravelHome() {
           </div>
         </section>
 
-        {/* ===== 板块 3: 排行榜（4 个 Tab） ===== */}
+        {/* ===== 板块 3: 热门攻略（小红书瀑布流） ===== */}
         <section className="mb-12">
           <div className="flex items-center justify-between mb-6">
             <h2 className="text-2xl font-bold text-gray-900 flex items-center gap-2">
