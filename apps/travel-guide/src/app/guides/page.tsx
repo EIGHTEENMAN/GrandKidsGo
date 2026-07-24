@@ -274,8 +274,7 @@ export default function GuidesPage() {
           </div>
         </div>
 
-        {/* 城市 chip（与 /places 完全同款：1 行 12 个 + 更多入口） */}
-        {cities.length > 0 && (
+        {/* 城市 chip — UI 固定（标题/全部按钮/更多入口），城市名数据来自 API */}
           <div className="mb-4">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-xs font-semibold text-gray-600 whitespace-nowrap inline-flex items-center gap-1.5">
@@ -294,7 +293,7 @@ export default function GuidesPage() {
                 <CloseIcon size={12} /> 全部
               </button>
               {TOP_CITIES.map((name) => {
-                if (!cities.find((c) => c.name === name)) return null;
+                if (!Array.isArray(cities) || !cities.find((c) => c.name === name)) return null;
                 const active = cityFilter === name;
                 return (
                   <button key={name} onClick={() => setCityFilter(active ? '' : name)} className={active ? CHIP_ACTIVE : CHIP_BASE}>

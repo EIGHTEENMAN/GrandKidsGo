@@ -286,7 +286,6 @@ function PlacesContent() {
         </div>
 
         {/* 城市筛选 — 1 行 chip（一二线）+ 更多城市按首字母下拉 */}
-        {cities.length > 0 && (
           <div className="mb-4">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-xs font-semibold text-gray-600 whitespace-nowrap inline-flex items-center gap-1.5">
@@ -309,7 +308,7 @@ function PlacesContent() {
               </button>
               {/* 1 行 12 个一二线热门亲子城市 */}
               {TOP_CITIES.map((name) => {
-                const city = cities.find((c) => c.name === name);
+                const city = Array.isArray(cities) ? cities.find((c) => c.name === name) : null;
                 if (!city) return null;
                 const active = cityId === city.id;
                 return (
