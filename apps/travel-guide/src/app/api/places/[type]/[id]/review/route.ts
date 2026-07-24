@@ -13,6 +13,7 @@
 
 import { NextRequest, NextResponse } from "next/server";
 import prisma from "@/lib/prisma";
+import { recomputePlaceAggregate } from "@/lib/place-aggregate";
 
 export const dynamic = "force-dynamic";
 
@@ -46,21 +47,27 @@ export async function POST(
 
   // 查地点（确保存在）
   let placeName: string | null = null;
+  let cityId: string | null = null;
   if (type === "sight") {
     const s = await prisma.spot.findUnique({ where: { id }, select: { name: true, cityId: true } });
     placeName = s?.name ?? null;
+    cityId = s?.cityId ?? null;
   } else if (type === "restaurant") {
     const r = await prisma.restaurant.findUnique({ where: { id }, select: { name: true, cityId: true } });
     placeName = r?.name ?? null;
+    cityId = r?.cityId ?? null;
   } else if (type === "hotel") {
     const h = await prisma.hotel.findUnique({ where: { id }, select: { name: true, cityId: true } });
     placeName = h?.name ?? null;
+    cityId = h?.cityId ?? null;
   } else if (type === "park") {
     const p = await prisma.park.findUnique({ where: { id }, select: { name: true, cityId: true } });
     placeName = p?.name ?? null;
+    cityId = p?.cityId ?? null;
   } else if (type === "playground") {
     const p = await prisma.playground.findUnique({ where: { id }, select: { name: true, cityId: true } });
     placeName = p?.name ?? null;
+    cityId = p?.cityId ?? null;
   }
 
   if (!placeName) {
@@ -70,12 +77,48 @@ export async function POST(
     );
   }
 
-  const review = await prisma.placeReview.create({
-    data: {
+  // 2026-07-24 v1.0：尝试 fetch user 快照（gender + role）。不可用时降级为 null
+  let userGender: string | null = null;
+  let userRole: string | null = null;
+  try {
+    const { fetchUserGenderAndRole } = await import('@/lib/user-service');
+    const snap = fetchUserGenderAndRole(userId);
+    userGender = snap?.gender ?? null;
+    userRole = snap?.role ?? null;
+  } catch {
+    // user-service 不可用时不阻塞
+  }
+
+  // 2026-07-24 v1.0：upsert + 同步重算聚合
+  // - upsert 而非 create：用户改分时覆盖（schema 已有 @@unique 兜底）
+  // - 同步重算：让用户立刻看到新分（多 ~50ms）
+  const review = await prisma.placeReview.upsert({
+    where: { placeId_placeType_userId: { placeId: id, placeType: type, userId } },
+    create: {
       placeId: id,
       placeType: type,
       placeName,
+      cityId,
       userId,
+      userGender,
+      userRole,
+      adultRating: body.adultRating,
+      childRating: body.childRating ?? null,
+      childAgeMonths: body.childAgeMonths ?? null,
+      text: body.text ?? null,
+      tags: body.tags ?? [],
+      hasParking: !!body.hasParking,
+      hasHighChair: !!body.hasHighChair,
+      hasNapRoom: !!body.hasNapRoom,
+      strollerOk: !!body.strollerOk,
+      kidFriendly: body.kidFriendly ?? null,
+      visitDate: body.visitDate ? new Date(body.visitDate) : null,
+    },
+    update: {
+      placeName,
+      cityId,
+      userGender,
+      userRole,
       adultRating: body.adultRating,
       childRating: body.childRating ?? null,
       childAgeMonths: body.childAgeMonths ?? null,
@@ -90,5 +133,16 @@ export async function POST(
     },
   });
 
-  return NextResponse.json({ code: "OK", data: { id: review.id } });
+  // 触发聚合重算（同步，让用户立刻看到新分）
+  try {
+    await recomputePlaceAggregate(id, type);
+  } catch (e) {
+    console.error('[place-review] recomputePlaceAggregate failed', e);
+    // 不阻塞响应，cron 兜底
+  }
+
+  return NextResponse.json({
+    code: "OK",
+    data: { id: review.id, aggregateRecomputed: true },
+  });
 }

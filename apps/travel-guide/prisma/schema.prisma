@@ -589,6 +589,9 @@ model PlaceReview {
   placeName     String?  @map("place_name") // 反范式存地点名（地点删除也不影响评价历史）
   cityId        String?  @map("city_id")
   userId        String   @map("user_id")
+  // 2026-07-24 v1.0：用户角色快照（避免 user-service 不可用时聚合失败）
+  userGender    String?  @map("user_gender")          // 'male' | 'female' | null
+  userRole      String?  @map("user_role")            // 'mom' | 'dad' | 'grandparent' | 'other'
   // 双维度评分：成人 + 孩子
   adultRating   Int      @map("adult_rating")   // 1-5 大人评分（实际体验）
   childRating   Int?     @map("child_rating")   // 1-5 孩子评分（真实感受，可空）
@@ -605,11 +608,41 @@ model PlaceReview {
   status        String    @default("published") // pending | published | hidden
   createdAt     DateTime  @default(now()) @map("created_at")
 
+  // 2026-07-24 v1.0：同一用户对同一地点只能评一次（防刷分基础约束）
+  @@unique([placeId, placeType, userId])
   @@index([placeId, placeType])
   @@index([cityId, createdAt(sort: Desc)])
   @@index([userId])
   @@index([status])
   @@map("place_reviews")
+}
+
+// 2026-07-24 v1.0：地点评分聚合（PlaceReview 实时聚合 → 三视角徽章 + 周边便利）
+// 数据流：POST /api/places/[type]/[id]/review → 写 PlaceReview → 同步触发 recomputePlaceAggregate
+model PlaceAggregate {
+  placeId              String   @map("place_id")
+  placeType            String   @map("place_type")           // sight | restaurant | hotel | park | playground
+  // 三视角评分（0-5）
+  kidAvgScore          Float?   @map("kid_avg_score")        // 孩子评分聚合（childRating avg）
+  momAvgScore          Float?   @map("mom_avg_score")        // 妈妈评分聚合（v1.5 启用）
+  dadAvgScore          Float?   @map("dad_avg_score")        // 爸爸评分聚合（v1.5 启用）
+  // 评价总数
+  reviewCount          Int      @default(0) @map("review_count")
+  withChildRatingCount Int      @default(0) @map("with_child_rating_count")
+  // 便利设施聚合（最近 90 天，0-1 = true 占比；>=3 条评价才计算）
+  parkingRate          Float?   @map("parking_rate")
+  highChairRate        Float?   @map("high_chair_rate")
+  napRoomRate          Float?   @map("nap_room_rate")
+  strollerOkRate       Float?   @map("stroller_ok_rate")
+  kidFriendlyAvg       Float?   @map("kid_friendly_avg")
+  // 元信息
+  lastReviewedAt       DateTime? @map("last_reviewed_at")
+  recomputedAt         DateTime @default(now()) @map("recomputed_at")
+
+  @@id([placeId, placeType])
+  @@index([placeType, reviewCount(sort: Desc)])
+  @@index([placeType, kidAvgScore(sort: Desc)])
+  @@map("place_aggregates")
 }
 
 // 地点浏览/搜索日志（用于热度排序）

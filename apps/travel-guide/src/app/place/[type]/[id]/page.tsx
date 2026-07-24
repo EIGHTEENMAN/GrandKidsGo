@@ -50,7 +50,27 @@ interface Review {
 
 interface PlaceData {
   place: any;
-  stats: { adultAvg: number | null; childAvg: number | null; reviewCount: number; withChildRating: number };
+  stats: {
+    adultAvg: number | null;
+    childAvg: number | null;
+    reviewCount: number;
+    withChildRating: number;
+    distribution?: Record<1 | 2 | 3 | 4 | 5, number>;
+  };
+  // 2026-07-24 v1.0：聚合字段
+  aggregate?: {
+    kidAvgScore: number | null;
+    momAvgScore: number | null;
+    dadAvgScore: number | null;
+    reviewCount: number;
+    withChildRatingCount: number;
+    parkingRate: number | null;
+    highChairRate: number | null;
+    napRoomRate: number | null;
+    strollerOkRate: number | null;
+    kidFriendlyAvg: number | null;
+    lastReviewedAt: string | null;
+  } | null;
   reviews: Review[];
   type: string;
   typeLabel: string;
@@ -226,24 +246,48 @@ export default function PlaceDetailPage() {
             <h1 className="text-3xl md:text-5xl font-extrabold text-white mb-4 leading-tight">
               {place.name}
             </h1>
-            {/* 三视角评分徽章 — 接 kidScore/momScore/dadScore 字段 */}
-            {(place.kidScore || place.momScore || place.dadScore) && (
+            {/* 三视角评分徽章 — v1.0：优先读 aggregate，< 3 条 fallback 种子编辑分 */}
+            {(place.kidScore || place.momScore || place.dadScore || data.aggregate) && (
               <div className="flex flex-wrap gap-2">
-                {place.kidScore != null && (
-                  <span className="inline-flex items-center gap-1 px-3 py-1.5 bg-pink-500/90 backdrop-blur-sm rounded-full text-sm font-bold text-white">
-                    <BabyIcon size={14} /> 孩子 {place.kidScore.toFixed(1)}
-                  </span>
-                )}
-                {place.momScore != null && (
-                  <span className="inline-flex items-center gap-1 px-3 py-1.5 bg-cyan-500/90 backdrop-blur-sm rounded-full text-sm font-bold text-white">
-                    <HeartIcon size={14} /> 妈妈 {place.momScore.toFixed(1)}
-                  </span>
-                )}
-                {place.dadScore != null && (
-                  <span className="inline-flex items-center gap-1 px-3 py-1.5 bg-slate-600/90 backdrop-blur-sm rounded-full text-sm font-bold text-white">
-                    <UserIcon size={14} /> 爸爸 {place.dadScore.toFixed(1)}
-                  </span>
-                )}
+                {(() => {
+                  const agg = data.aggregate;
+                  const hasEnoughReviews = (agg?.reviewCount ?? 0) >= 3;
+                  // 孩子：优先聚合分，否则种子编辑分
+                  const kidScore = hasEnoughReviews && agg?.kidAvgScore != null
+                    ? agg.kidAvgScore
+                    : place.kidScore ?? null;
+                  // 妈妈：v1.0 暂未拆分，沿用 adultRating 聚合（用 stats.adultAvg 兜底）
+                  const momScore = hasEnoughReviews
+                    ? (agg?.momAvgScore ?? stats.adultAvg)
+                    : (place.momScore ?? stats.adultAvg);
+                  // 爸爸：同上
+                  const dadScore = hasEnoughReviews
+                    ? (agg?.dadAvgScore ?? stats.adultAvg)
+                    : (place.dadScore ?? stats.adultAvg);
+
+                  return (
+                    <>
+                      {kidScore != null && (
+                        <span className="inline-flex items-center gap-1 px-3 py-1.5 bg-pink-500/90 backdrop-blur-sm rounded-full text-sm font-bold text-white">
+                          <BabyIcon size={14} /> 孩子 {kidScore.toFixed(1)}
+                        </span>
+                      )}
+                      {momScore != null && (
+                        <span className="inline-flex items-center gap-1 px-3 py-1.5 bg-cyan-500/90 backdrop-blur-sm rounded-full text-sm font-bold text-white">
+                          <HeartIcon size={14} /> 妈妈 {momScore.toFixed(1)}
+                        </span>
+                      )}
+                      {dadScore != null && (
+                        <span className="inline-flex items-center gap-1 px-3 py-1.5 bg-slate-600/90 backdrop-blur-sm rounded-full text-sm font-bold text-white">
+                          <UserIcon size={14} /> 爸爸 {dadScore.toFixed(1)}
+                        </span>
+                      )}
+                      {!hasEnoughReviews && agg?.reviewCount != null && agg.reviewCount > 0 && (
+                        <span className="text-white/70 text-xs px-2">（仅 {agg.reviewCount} 条评价，再多一点会更准）</span>
+                      )}
+                    </>
+                  );
+                })()}
               </div>
             )}
           </div>
@@ -349,6 +393,45 @@ export default function PlaceDetailPage() {
             {showReviewForm && <ReviewForm type={type} placeId={id} placeName={place.name} />}
           </div>
         </section>
+
+        {/* ============ ②.5 便利设施（v1.0 聚合）— 母婴室/高脚椅/婴儿车/停车 ============ */}
+        {data.aggregate && (data.aggregate.parkingRate != null || data.aggregate.highChairRate != null || data.aggregate.napRoomRate != null || data.aggregate.strollerOkRate != null || data.aggregate.kidFriendlyAvg != null) && (
+          <section className="bg-white rounded-2xl shadow-sm border border-gray-100 p-5 mb-6">
+            <h2 className="text-lg font-bold text-gray-900 mb-3 inline-flex items-center gap-2">
+              <SparklesIcon size={18} className="text-emerald-600" /> 便利设施
+              <span className="text-xs font-normal text-gray-400 ml-2">基于 {data.aggregate.reviewCount} 条家庭评价</span>
+            </h2>
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
+              <FacilityCard
+                icon={<ParkingIcon size={18} className="text-blue-600" />}
+                label="有停车"
+                rate={data.aggregate.parkingRate}
+              />
+              <FacilityCard
+                icon={<NursingIcon size={18} className="text-pink-500" />}
+                label="有母婴室"
+                rate={data.aggregate.napRoomRate}
+              />
+              <FacilityCard
+                icon={<ForkIcon size={18} className="text-amber-600" />}
+                label="有宝宝椅"
+                rate={data.aggregate.highChairRate}
+              />
+              <FacilityCard
+                icon={<StrollerIcon size={18} className="text-teal-600" />}
+                label="婴儿车可达"
+                rate={data.aggregate.strollerOkRate}
+              />
+              {data.aggregate.kidFriendlyAvg != null && (
+                <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-xl p-3 text-center">
+                  <div className="text-xs text-gray-600 mb-1">综合亲子友好</div>
+                  <div className="text-xl font-extrabold text-amber-700">{data.aggregate.kidFriendlyAvg.toFixed(1)}</div>
+                  <div className="text-[10px] text-gray-500">/ 5</div>
+                </div>
+              )}
+            </div>
+          </section>
+        )}
 
         {/* ============ ③ 周边便利（孩子视角）与真实评价左右并行 ============ */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
@@ -602,6 +685,7 @@ function ReviewForm({ type, placeId, placeName }: { type: string; placeId: strin
   const [childRating, setChildRating] = useState(5);
   const [childAgeMonths, setChildAgeMonths] = useState(36);
   const [text, setText] = useState('');
+  const [visitDate, setVisitDate] = useState('');  // 2026-07-24 v1.0：去过凭证（可选）
   const [hasParking, setHasParking] = useState(false);
   const [hasHighChair, setHasHighChair] = useState(false);
   const [hasNapRoom, setHasNapRoom] = useState(false);
@@ -627,6 +711,7 @@ function ReviewForm({ type, placeId, placeName }: { type: string; placeId: strin
           childRating,
           childAgeMonths,
           text: text || null,
+          visitDate: visitDate || null,
           hasParking,
           hasHighChair: isRestaurant ? hasHighChair : undefined,
           hasNapRoom,
@@ -636,7 +721,7 @@ function ReviewForm({ type, placeId, placeName }: { type: string; placeId: strin
       const d = await res.json();
       if (d.code === 'OK') {
         setSubmitted(true);
-        setTimeout(() => location.reload(), 1000);
+        setTimeout(() => location.reload(), 1500);  // 1.5s 等重算聚合
       } else {
         alert(d.error?.message ?? '提交失败');
       }
@@ -649,9 +734,10 @@ function ReviewForm({ type, placeId, placeName }: { type: string; placeId: strin
 
   if (submitted) {
     return (
-      <div className="bg-blue-50 border border-blue-200 rounded-2xl p-6 mt-4 text-center">
-        <CheckIcon size={32} className="text-blue-600 mx-auto mb-2" />
-        <div className="font-bold text-blue-900">评价已提交，感谢分享！</div>
+      <div className="bg-emerald-50 border border-emerald-200 rounded-2xl p-6 mt-4 text-center">
+        <CheckIcon size={32} className="text-emerald-600 mx-auto mb-2" />
+        <div className="font-bold text-emerald-900">评价已提交，三视角分数已更新！</div>
+        <div className="text-sm text-emerald-700 mt-1">感谢您的真实分享 🎉</div>
       </div>
     );
   }
@@ -680,8 +766,9 @@ function ReviewForm({ type, placeId, placeName }: { type: string; placeId: strin
 
       <div className="mb-4">
         <label className="block text-sm text-gray-600 mb-2 inline-flex items-center gap-1">
-          <BabyIcon size={14} /> 孩子评分（孩子真实感受）
+          <BabyIcon size={14} /> 孩子评分（您观察到孩子的反应）
         </label>
+        <p className="text-xs text-amber-600 mb-1">💡 孩子评分 = 家长代评，您观察到孩子当时的真实反应</p>
         <div className="flex gap-1">
           {[1, 2, 3, 4, 5].map((n) => (
             <button
@@ -696,22 +783,34 @@ function ReviewForm({ type, placeId, placeName }: { type: string; placeId: strin
         </div>
       </div>
 
-      <div className="mb-4">
-        <label className="block text-sm text-gray-600 mb-2">孩子当时多大？</label>
-        <select
-          value={childAgeMonths}
-          onChange={(e) => setChildAgeMonths(Number(e.target.value))}
-          className="px-4 py-2 border border-gray-300 rounded-lg bg-white"
-        >
-          <option value="12">1 岁</option>
-          <option value="24">2 岁</option>
-          <option value="36">3 岁</option>
-          <option value="48">4 岁</option>
-          <option value="60">5 岁</option>
-          <option value="72">6 岁</option>
-          <option value="96">8 岁</option>
-          <option value="120">10 岁+</option>
-        </select>
+      <div className="mb-4 grid grid-cols-2 gap-4">
+        <div>
+          <label className="block text-sm text-gray-600 mb-2">孩子当时多大？</label>
+          <select
+            value={childAgeMonths}
+            onChange={(e) => setChildAgeMonths(Number(e.target.value))}
+            className="w-full px-4 py-2 border border-gray-300 rounded-lg bg-white"
+          >
+            <option value="12">1 岁</option>
+            <option value="24">2 岁</option>
+            <option value="36">3 岁</option>
+            <option value="48">4 岁</option>
+            <option value="60">5 岁</option>
+            <option value="72">6 岁</option>
+            <option value="96">8 岁</option>
+            <option value="120">10 岁+</option>
+          </select>
+        </div>
+        <div>
+          <label className="block text-sm text-gray-600 mb-2">去过时间</label>
+          <input
+            type="date"
+            value={visitDate}
+            max={new Date().toISOString().slice(0, 10)}
+            onChange={(e) => setVisitDate(e.target.value)}
+            className="w-full px-4 py-2 border border-gray-300 rounded-lg bg-white"
+          />
+        </div>
       </div>
 
       <textarea
@@ -750,6 +849,20 @@ function ReviewForm({ type, placeId, placeName }: { type: string; placeId: strin
       >
         {submitting ? '提交中…' : '提交评价'}
       </button>
+    </div>
+  );
+}
+
+/** 便利设施卡片（v1.0）：显示 X% 家庭确认 */
+function FacilityCard({ icon, label, rate }: { icon: React.ReactNode; label: string; rate: number | null }) {
+  if (rate == null) return null;
+  const pct = Math.round(rate * 100);
+  return (
+    <div className="bg-gray-50 rounded-xl p-3 text-center">
+      <div className="flex items-center justify-center mb-1">{icon}</div>
+      <div className="text-xs text-gray-700 mb-0.5">{label}</div>
+      <div className="text-lg font-extrabold text-gray-900">{pct}%</div>
+      <div className="text-[10px] text-gray-500">家庭确认</div>
     </div>
   );
 }

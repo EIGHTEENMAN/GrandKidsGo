@@ -86,6 +86,15 @@ export async function GET(
     ? childReviews.reduce((s, r) => s + (r.childRating ?? 0), 0) / childReviews.length
     : null;
 
+  // 评价分布（1-5 星各占多少）
+  const distribution: Record<1 | 2 | 3 | 4 | 5, number> = { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0 };
+  for (const r of reviews) distribution[r.adultRating as 1 | 2 | 3 | 4 | 5]++;
+
+  // 2026-07-24 v1.0：拉 PlaceAggregate（三视角 + 便利聚合）
+  const aggregate = await prisma.placeAggregate.findUnique({
+    where: { placeId_placeType: { placeId: id, placeType: type } },
+  });
+
   // 记录浏览
   const userId = req.headers.get("x-debug-user-id");
   if (userId) {
@@ -109,7 +118,25 @@ export async function GET(
         adultAvg: adultAvg ? Math.round(adultAvg * 10) / 10 : null,
         childAvg: childAvg ? Math.round(childAvg * 10) / 10 : null,
         withChildRating: childReviews.length,
+        reviewCount: reviews.length,
+        distribution,
       },
+      // 2026-07-24 v1.0：聚合数据（三视角 + 便利设施）
+      aggregate: aggregate
+        ? {
+            kidAvgScore: aggregate.kidAvgScore,
+            momAvgScore: aggregate.momAvgScore,        // v1.5 启用
+            dadAvgScore: aggregate.dadAvgScore,        // v1.5 启用
+            reviewCount: aggregate.reviewCount,
+            withChildRatingCount: aggregate.withChildRatingCount,
+            parkingRate: aggregate.parkingRate,
+            highChairRate: aggregate.highChairRate,
+            napRoomRate: aggregate.napRoomRate,
+            strollerOkRate: aggregate.strollerOkRate,
+            kidFriendlyAvg: aggregate.kidFriendlyAvg,
+            lastReviewedAt: aggregate.lastReviewedAt,
+          }
+        : null,
       // 周边 POI（按 category group 返回）
       nearby: await fetchNearby(type, id),
       // 榜单（热门景点榜本周排名）
