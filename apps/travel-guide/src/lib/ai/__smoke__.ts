@@ -9,7 +9,7 @@ async function streamDemo(provider: AiProvider, label: string) {
   const messages = [
     {
       role: "system" as const,
-      content: "你是走天下的 AI 助手，负责帮妈妈起草亲子景点的护城河文案。",
+      content: "你是走天下的 AI 助手，负责帮家长起草亲子景点的护城河文案。",
     },
     { role: "user" as const, content: "景点：北京自然博物馆" },
   ];

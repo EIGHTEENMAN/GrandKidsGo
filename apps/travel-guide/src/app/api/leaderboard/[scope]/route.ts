@@ -61,7 +61,7 @@ export async function GET(
       // 仅保留自己 + 脱敏其他用户
       items = items.map((it: any) => {
         if (it.userId === userId) return it;
-        return { ...it, nickname: "某位妈妈", avatar: null, userId: "hidden" };
+        return { ...it, nickname: "某位家长", avatar: null, userId: "hidden" };
       });
     }
   }

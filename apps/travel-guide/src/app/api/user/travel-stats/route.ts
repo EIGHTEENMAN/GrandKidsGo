@@ -42,7 +42,7 @@ export async function GET(req: NextRequest) {
       orderBy: { createdAt: "desc" },
       take: 3,
     }),
-    // 本周妈妈榜快照，拿到个人排名
+    // 本周人气榜快照，拿到个人排名
     prisma.travelLeaderboardSnapshot.findFirst({
       where: { scope: "mom", period: "week" },
       orderBy: { capturedAt: "desc" },

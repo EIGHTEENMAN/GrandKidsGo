@@ -51,7 +51,7 @@ export default function BadgesPage() {
         <div className="max-w-6xl mx-auto px-6 py-8">
           <Link href="/" className="text-yellow-100 text-sm hover:text-white">← 返回首页</Link>
           <h1 className="text-3xl md:text-4xl font-extrabold mt-2">🏅 我的勋章</h1>
-          <p className="text-yellow-100 mt-1">妈妈视角的亲子出行勋章墙</p>
+          <p className="text-yellow-100 mt-1">家长视角的亲子出行勋章墙</p>
         </div>
       </header>
 

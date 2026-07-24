@@ -20,7 +20,7 @@ function isGuardianPrompt(messages: ChatMessage[]): boolean {
 function mockGuardianText(spotName: string, kind: "spot" | "restaurant" | "hotel" | "park"): string {
   switch (kind) {
     case "spot":
-      return `${spotName}（AI 起草 v1，占位）孩子亮点需由 KOL 妈妈复评，建议先带孩子实地探访一次再下结论。`;
+      return `${spotName}（AI 起草 v1，占位）孩子亮点需由 KOL 家长复评，建议先带孩子实地探访一次再下结论。`;
     case "restaurant":
       return `${spotName}（AI 起草 v1，占位）是否有儿童餐椅建议现场确认；菜品辣度可提前电话询问。`;
     case "hotel":

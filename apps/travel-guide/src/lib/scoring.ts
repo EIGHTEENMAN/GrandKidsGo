@@ -52,7 +52,7 @@ async function feelingScore(userId: string): Promise<{ avg: number; lastAt: Date
 export interface LeaderboardEntry {
   rank: number;
   userId: string;
-  nickname: string;        // 脱敏后：真实昵称或"妈妈"/"宝宝 {N} 月"
+  nickname: string;        // 脱敏后：真实昵称或"家长"/"宝宝 {N} 月"
   avatar: string | null;
   cityName: string | null;
   feelingScoreAvg: number;
@@ -84,7 +84,7 @@ async function antiCheatFactor(userId: string, periodStart: Date): Promise<numbe
 }
 
 /**
- * 妈妈榜综合得分
+ * 人气榜综合得分
  * score = (0.5 * feeling + 0.2 * weightedBadge + 0.15 * guide + 0.15 * city) * decay
  */
 async function scoreMama(userId: string): Promise<{

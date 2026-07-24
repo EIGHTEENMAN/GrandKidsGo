@@ -128,7 +128,7 @@ const CAROUSEL_SLIDES = [
     image: 'https://images.unsplash.com/photo-1602002418082-a4443e081dd1?w=1600&q=85',
     eyebrow: '走遍宝宝的世界',
     title: '13 类亲子地点',
-    titleLine2: '真实妈妈打分',
+    titleLine2: '真实家长打分',
     subtitle: '大人孩子双维度评分 · 看真实评价再出发',
     cta: '探索宝典',
     href: '/places',
@@ -136,7 +136,7 @@ const CAROUSEL_SLIDES = [
   {
     id: 2,
     image: 'https://images.unsplash.com/photo-1511895426328-dc8714191300?w=1600&q=85',
-    eyebrow: '真实妈妈的攻略',
+    eyebrow: '真实家长的攻略',
     title: '孩子说好',
     titleLine2: '才是真的好',
     subtitle: '基于孩子真实感受数据 · 看到喜欢就一键 fork',
@@ -147,10 +147,10 @@ const CAROUSEL_SLIDES = [
     id: 3,
     image: 'https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?w=1600&q=85',
     eyebrow: '孩子真实感受驱动',
-    title: '妈妈榜',
+    title: '人气榜',
     titleLine2: '你的下一站在哪',
-    subtitle: '4 类榜单 × 3 时间维度 · 看妈妈带娃去的好地方',
-    cta: '查看妈妈榜',
+    subtitle: '4 类榜单 × 3 时间维度 · 看家长带娃去的好地方',
+    cta: '查看人气榜',
     href: '/leaderboard',
   },
   {
@@ -417,7 +417,7 @@ export default function TravelHome() {
               </div>
               <div className="text-gray-500 mb-1">还没有发布的攻略</div>
               <div className="text-sm text-gray-400">
-                妈妈完成一次出行 + 发布一篇攻略，就会出现在这里
+                家长完成一次出行 + 发布一篇攻略，就会出现在这里
               </div>
             </div>
           )}
@@ -500,7 +500,7 @@ export default function TravelHome() {
             <h2 className="text-2xl font-bold text-gray-900 flex items-center gap-2">
               <span className="text-blue-600"><TrophyIcon size={26} /></span>
               排行榜
-              <span className="text-sm font-normal text-gray-500">看看妈妈们带娃玩过的好地方</span>
+              <span className="text-sm font-normal text-gray-500">看看家长们带娃玩过的好地方</span>
             </h2>
             <Link href="/leaderboard" className="text-blue-600 hover:text-blue-700 text-sm font-medium whitespace-nowrap">
               查看全部 →
@@ -511,8 +511,8 @@ export default function TravelHome() {
           <div className="bg-white rounded-2xl shadow-sm overflow-hidden border border-blue-100">
             <div className="flex border-b border-gray-100 overflow-x-auto">
               {[
-                { k: 'mom', l: '妈妈榜', d: '按真实感受分排序', Icon: UserIcon },
-                { k: 'city', l: '热门城市', d: '妈妈们最爱去', Icon: CityIcon },
+                 { k: 'mom', l: '人气榜', d: '按真实感受分排序', Icon: UserIcon },
+                { k: 'city', l: '热门城市', d: '家长们最爱去', Icon: CityIcon },
                 { k: 'place', l: '热门景点', d: '孩子评分最高', Icon: MapPinIcon },
                 { k: 'badge', l: '热门勋章', d: '大家都在解锁', Icon: AwardIcon },
               ].map((t) => {
@@ -538,7 +538,7 @@ export default function TravelHome() {
             </div>
 
             <div className="p-4">
-              {/* 妈妈榜 */}
+              {/* 人气榜 */}
               {lbTab === 'mom' && (
                 <>
                   {!loaded && <div className="p-8 text-center text-sm text-gray-400">加载中…</div>}
@@ -565,7 +565,7 @@ export default function TravelHome() {
                           </div>
                           <div className="flex-1 min-w-0">
                             <div className="font-medium text-gray-900 text-sm truncate">
-                              {u.childLabel || u.nickname || '匿名妈妈'}
+                              {u.childLabel || u.nickname || '匿名用户'}
                             </div>
                             <div className="text-xs text-gray-500 mt-0.5">
                               <span className="flex items-center gap-1"><StarIcon size={12} className="text-amber-500 inline" />{u.feelingScoreAvg.toFixed(1)}</span> · <span className="flex items-center gap-1"><AwardIcon size={12} className="inline" />{u.badgeCount}</span> · <span className="flex items-center gap-1"><GuidebookIcon size={12} className="inline" />{u.guideCount}</span>

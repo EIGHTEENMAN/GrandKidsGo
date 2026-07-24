@@ -183,7 +183,7 @@ export default function GuideDetailPage() {
               {data.author.nickname?.[0] ?? '?'}
             </span>
             <div className="flex-1 min-w-0">
-              <div className="font-medium text-gray-900 truncate">{data.author.nickname || '匿名妈妈'}</div>
+              <div className="font-medium text-gray-900 truncate">{data.author.nickname || '匿名用户'}</div>
               <div className="text-xs text-gray-500">{timeAgo(data.publishedAt || data.createdAt)} · {data.stats.view ?? 0} 次浏览</div>
             </div>
           </div>
@@ -206,7 +206,7 @@ export default function GuideDetailPage() {
         {/* ============ ④ 双维度评分 ============ */}
         <section className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 mb-8">
           <h2 className="text-lg font-bold text-gray-900 mb-4 inline-flex items-center gap-2">
-            <StarIcon size={18} className="text-amber-500" /> 妈妈们如何评价（{data.stats.ratingCount ?? 0} 条）
+            <StarIcon size={18} className="text-amber-500" /> 家长们如何评价（{data.stats.ratingCount ?? 0} 条）
           </h2>
           <div className="grid grid-cols-2 gap-6 text-center mb-4">
             <div>

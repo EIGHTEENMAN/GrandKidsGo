@@ -1,4 +1,4 @@
-// 妈妈榜 - PC 端
+// 人气榜 - PC 端
 // 详见 项目建设方案/走天下实施方案-v2.0.md 第九节 B
 'use client';
 import { useEffect, useState } from 'react';
@@ -51,7 +51,7 @@ export default function LeaderboardPage() {
       <header className="bg-gradient-to-r from-amber-500 to-orange-500 text-white">
         <div className="max-w-6xl mx-auto px-6 py-8">
           <Link href="/" className="text-amber-100 text-sm hover:text-white">← 返回首页</Link>
-          <h1 className="text-3xl md:text-4xl font-extrabold mt-2">🏆 妈妈榜</h1>
+          <h1 className="text-3xl md:text-4xl font-extrabold mt-2">🏆 人气榜</h1>
           <p className="text-amber-100 mt-1">孩子真实感受数据驱动的亲子旅行榜单</p>
         </div>
       </header>
@@ -60,7 +60,7 @@ export default function LeaderboardPage() {
         {/* 筛选 */}
         <div className="flex flex-wrap gap-3 mb-6">
           {[
-            { k: 'mom', l: '👩 妈妈榜' },
+            { k: 'mom', l: '👤 人气榜' },
             { k: 'child', l: '👶 孩子榜' },
             { k: 'city', l: '🏙️ 城市榜' },
             { k: 'guide', l: '📖 攻略榜' },
@@ -129,7 +129,7 @@ export default function LeaderboardPage() {
                   </td>
                   <td className="px-6 py-4">
                     <div className="font-medium text-gray-900">
-                      {it.childLabel || it.nickname || '匿名妈妈'}
+                      {it.childLabel || it.nickname || '匿名用户'}
                     </div>
                   </td>
                   {scope !== 'city' && scope !== 'guide' && (

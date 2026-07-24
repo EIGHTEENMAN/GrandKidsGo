@@ -258,7 +258,7 @@ export const TRAVEL_BADGES: BadgeDef[] = [
   // v2.0 新增
   {
     name: "新人引导员",
-    description: "回复新妈妈 10 个提问",
+    description: "回复新用户 10 个提问",
     icon: "🤝",
     category: "社交影响",
     rarity: "silver",
@@ -307,7 +307,7 @@ export const TRAVEL_BADGES: BadgeDef[] = [
   },
   {
     name: "节奏掌握者",
-    description: "5 次行程被其他妈妈 fork",
+    description: "5 次行程被其他家长 fork",
     icon: "🎼",
     category: "父母成长",
     rarity: "gold",

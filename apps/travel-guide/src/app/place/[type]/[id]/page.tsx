@@ -512,11 +512,11 @@ export default function PlaceDetailPage() {
             </div>
           </section>
 
-          {/* 右：真实妈妈评价 */}
+          {/* 右：真实家长评价 */}
           <section className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 flex flex-col">
             <div className="flex items-center justify-between mb-4">
               <h2 className="text-lg font-bold text-gray-900 inline-flex items-center gap-2">
-                <HeartIcon size={18} className="text-pink-500" /> 真实妈妈的评价（{reviews.length}）
+                <HeartIcon size={18} className="text-pink-500" /> 真实家长的评价（{reviews.length}）
               </h2>
               {reviews.length > 0 && (
                 <Link href={`/place/${type}/${id}/reviews`} className="text-sm text-blue-600 hover:text-blue-700 font-medium whitespace-nowrap">
@@ -526,7 +526,7 @@ export default function PlaceDetailPage() {
             </div>
             {reviews.length === 0 && (
               <div className="py-12 text-center border border-dashed border-gray-200 rounded-xl text-gray-500 flex-1 flex items-center justify-center">
-                还没有人评价 · 成为第一个分享感受的妈妈
+                还没有人评价 · 成为第一个评价的人
               </div>
             )}
             {reviews.length > 0 && (
@@ -656,7 +656,7 @@ export default function PlaceDetailPage() {
         {/* ============ ⑦ 相关攻略（占位） ============ */}
         <section className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 mb-8">
           <h2 className="text-xl font-bold text-gray-900 mb-4 inline-flex items-center gap-2">
-            <GuidebookIcon size={18} className="text-blue-600" /> 妈妈们写的攻略
+            <GuidebookIcon size={18} className="text-blue-600" /> 家长们写的攻略
           </h2>
           <p className="text-sm text-gray-500 mb-4">基于城市匹配 — 显示相关攻略列表（P2 接入 /api/guides/by-place）</p>
           <Link href={`/guides?city=${encodeURIComponent(place.city?.name ?? '')}`}
