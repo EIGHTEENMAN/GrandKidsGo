@@ -4,6 +4,7 @@ import { useState, useEffect, useCallback } from 'react';
 import { useRouter } from 'next/navigation';
 import TipTapEditor from '@/components/TipTapEditor';
 import { BabyIcon, CheckIcon } from '@/components/Icons';
+import { getToken, authedFetch } from '@/lib/auth';
 
 export default function CreateGuidePage() {
   const router = useRouter();
@@ -20,7 +21,7 @@ export default function CreateGuidePage() {
   const [childSayings, setChildSayings] = useState<Array<{ text: string; mood: string }>>([]);
 
   useEffect(() => {
-    const token = localStorage.getItem('haodaer_token');
+    const token = getToken();
     if (!token) { router.push('/login?redirect=/guides/create'); return; }
     fetch('/api/auth/me', { headers: { authorization: `Bearer ${token}` } })
       .then(r => r.json()).then(d => { if (d.code === 'OK') setUser(d.data); else router.push('/login?redirect=/guides/create'); })
@@ -53,7 +54,7 @@ export default function CreateGuidePage() {
     if (!form.contentHtml) return alert('攻略内容不能为空');
     setSaving(true);
     try {
-      const token = sessionStorage.getItem('grandkidsgo_token') || localStorage.getItem('haodaer_token');
+      const token = getToken();
       const res = await fetch('/api/guides', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', authorization: `Bearer ${token}` },

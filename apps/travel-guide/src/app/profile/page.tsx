@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import ProfileSidebar from '@/components/profile/ProfileSidebar';
 import { HeartIcon, BabyIcon, MapPinIcon, GuidebookIcon, SparklesIcon, TrophyIcon } from '@/components/Icons';
+import { getToken, authedFetch } from '@/lib/auth';
 
 const TRAVEL_API = (process.env.NEXT_PUBLIC_TRAVEL_API as string) || 'https://travel.grandand.com';
 
@@ -24,13 +25,11 @@ export default function ProfileOverview() {
   const [data, setData] = useState<ProfileData | null>(null);
   const [loading, setLoading] = useState(true);
 
-  const token = typeof window !== 'undefined'
-    ? sessionStorage.getItem('grandkidsgo_token') || localStorage.getItem('haodaer_token')
-    : null;
+  const token = typeof window !== 'undefined' ? getToken() : null;
 
   useEffect(() => {
     if (!token) { router.push('/login?redirect=/profile'); return; }
-    fetch('/api/auth/me', { headers: { authorization: `Bearer ${token}` } })
+    authedFetch('/api/auth/me')
       .then(r => r.json())
       .then(async (userData) => {
         const user = userData?.data ?? userData?.user ?? userData;
@@ -42,11 +41,11 @@ export default function ProfileOverview() {
             .then(r => r.json().catch(() => ({ data: { items: [], total: 0 } }))),
           fetch(`${TRAVEL_API}/api/gallery?limit=1`)
             .then(r => r.json().catch(() => ({ data: { items: [], total: 0 } }))),
-          fetch(`/api/user/travel-stats`, { headers: { 'x-debug-user-id': user.id } })
+          authedFetch(`/api/user/travel-stats`, { userId: user.id })
             .then(r => r.json().catch(() => null)),
-          fetch(`/api/user/travel-badges`, { headers: { 'x-debug-user-id': user.id } })
+          authedFetch(`/api/user/travel-badges`, { userId: user.id })
             .then(r => r.json().catch(() => null)),
-          fetch(`/api/user/children?userId=${user.id}`, { headers: { 'x-debug-user-id': user.id } })
+          authedFetch(`/api/user/children?userId=${user.id}`, { userId: user.id })
             .then(r => r.json().catch(() => null)),
         ]);
 

@@ -350,7 +350,6 @@ export default function GuidesPage() {
               </>
             )}
           </div>
-        )}
 
         {loading && <div className="text-center py-12 text-gray-400">加载攻略中…</div>}
 

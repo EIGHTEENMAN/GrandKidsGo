@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { isLoggedIn, getUser, logout, setUser } from '@/lib/auth';
+import { isLoggedIn, getUser, logout, setUser, getToken } from '@/lib/auth';
 import AuthModal from './AuthModal';
 import ProfileSetup from './ProfileSetup';
 
@@ -22,24 +22,9 @@ export default function Header() {
   useEffect(() => {
     refreshUser();
 
-    // Cross-domain auth sync: check cookie if no localStorage token
+    // 兼容旧 haodaer_token cookie：走天下切换到主站 token 命名时仍有旧用户
     if (!isLoggedIn()) {
-      const match = document.cookie.match(new RegExp('(^| )haodaer_token=([^;]+)'));
-      if (match) {
-        const cookieToken = decodeURIComponent(match[2]);
-        sessionStorage.setItem('haodaer_token', cookieToken);
-        fetch('/api/auth/me', {
-          headers: { Authorization: 'Bearer ' + cookieToken }
-        })
-        .then(r => r.json())
-        .then(d => {
-          if (d.code === 'OK') {
-            sessionStorage.setItem('haodaer_user', JSON.stringify(d.data));
-            setLocalUser(d.data);
-          }
-        })
-        .catch(() => {});
-      }
+      getToken(); // 触发 auth.ts 内的 cookie→sessionStorage 迁移
     }
 
     window.addEventListener('storage', refreshUser);
@@ -51,8 +36,9 @@ export default function Header() {
   }, []);
 
   const handleLogin = (u: any) => {
+    setShowAuth(false);
     refreshUser();
-    const isNew = localStorage.getItem('haodaer_isNewUser') === 'true';
+    const isNew = localStorage.getItem('grandkidsgo_isNewUser') === 'true';
     if (isNew && (!u.nickname || u.nickname.startsWith('user_'))) {
       setShowSetup(true);
     }
@@ -65,8 +51,10 @@ export default function Header() {
 
   const handleSetupComplete = () => {
     setShowSetup(false);
+    setShowAuth(false);
+    const token = getToken();
     fetch('/api/auth/me', {
-      headers: { Authorization: `Bearer ${sessionStorage.getItem('haodaer_token')}` },
+      headers: { Authorization: `Bearer ${token}` },
     }).then(r => r.json()).then(d => {
       if (d.code === 'OK') {
         setUser(d.data);
@@ -123,7 +111,7 @@ export default function Header() {
           <div className="flex items-center gap-3 text-sm flex-shrink-0">
             {/* 返回童慧行主站按钮 - 在登录按钮左边 */}
             <a
-              href="https://grandand.com"
+              href="https://grandand.com/personal-center"
               className="hidden md:flex items-center gap-1 px-3 py-1.5 text-sm text-gray-600 hover:text-green-600 border border-gray-200 hover:border-green-300 rounded-lg transition-colors whitespace-nowrap"
             >
               <span>←</span>

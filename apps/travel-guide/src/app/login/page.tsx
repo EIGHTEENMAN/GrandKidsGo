@@ -1,8 +1,10 @@
+// /login — 登录页（用户名密码 + 手机号 + 微信）
 'use client';
 
 import { Suspense, useState } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import Link from 'next/link';
+import { setToken, setUser, setIsNewUser } from '@/lib/auth';
 
 function LoginForm() {
   const router = useRouter();
@@ -26,9 +28,9 @@ function LoginForm() {
       });
       const d = await res.json();
       if (d.code === 'OK') {
-        sessionStorage.setItem('haodaer_token', d.data.token);
-        sessionStorage.setItem('haodaer_user', JSON.stringify(d.data.user));
-        document.cookie = 'haodaer_token=' + encodeURIComponent(d.data.token) + '; domain=.grandand.com; path=/; Secure; SameSite=Lax';
+        setToken(d.data.accessToken, d.data.syncToken);
+        setUser(d.data.user);
+        setIsNewUser(false);
         router.push(redirect);
       } else {
         setError(d.message || '登录失败');

@@ -6,6 +6,7 @@ import { useRouter } from 'next/navigation';
 import ProfileSidebar from '@/components/profile/ProfileSidebar';
 import VoiceRecorder from '@/components/VoiceRecorder';
 import { BabyIcon, SparklesIcon, PlayIcon } from '@/components/Icons';
+import { getToken, authedFetch } from '@/lib/auth';
 
 const TRAVEL_API = (process.env.NEXT_PUBLIC_TRAVEL_API as string) || 'https://travel.grandand.com';
 
@@ -51,13 +52,11 @@ export default function MyChildSayingsPage() {
   const [user, setUser] = useState<{ id: string; nickname: string; avatar: string | null } | null>(null);
   const [showRecorder, setShowRecorder] = useState(false);
 
-  const token = typeof window !== 'undefined'
-    ? sessionStorage.getItem('grandkidsgo_token') || localStorage.getItem('haodaer_token')
-    : null;
+  const token = typeof window !== 'undefined' ? getToken() : null;
 
   useEffect(() => {
     if (!token) { router.push('/login?redirect=/profile/sayings'); return; }
-    fetch('/api/auth/me', { headers: { authorization: `Bearer ${token}` } })
+    authedFetch('/api/auth/me')
       .then(r => r.json())
       .then(d => setUser(d?.data ?? d?.user ?? d))
       .catch(() => {});
@@ -67,8 +66,8 @@ export default function MyChildSayingsPage() {
     if (!user?.id) return;
     setLoading(true);
     Promise.all([
-      fetch(`/api/child-sayings`, { headers: { 'x-debug-user-id': user.id } }).then(r => r.json()),
-      fetch(`/api/user/children?userId=${user.id}`, { headers: { 'x-debug-user-id': user.id } }).then(r => r.json()),
+      authedFetch(`/api/child-sayings`, { userId: user.id }).then(r => r.json()),
+      authedFetch(`/api/user/children?userId=${user.id}`, { userId: user.id }).then(r => r.json()),
     ]).then(([sj, cj]) => {
       setSayings(sj?.data?.items ?? []);
       setChildren(cj?.data?.items ?? cj?.items ?? []);
@@ -119,7 +118,7 @@ export default function MyChildSayingsPage() {
             <div className="mb-4">
               <VoiceRecorder
                 onUploaded={() => {
-                  fetch(`/api/child-sayings`, { headers: { 'x-debug-user-id': user!.id } })
+                  authedFetch(`/api/child-sayings`, { userId: user!.id })
                     .then(r => r.json())
                     .then(j => setSayings(j?.data?.items ?? []))
                     .catch(() => {});

@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import ProfileSidebar from '@/components/profile/ProfileSidebar';
 import { CheckIcon, AlertIcon } from '@/components/Icons';
+import { getToken, authedFetch } from '@/lib/auth';
 
 const TABS = [
   { key: 'profile', label: '资料' },
@@ -30,14 +31,12 @@ export default function SettingsPage() {
   const [loading, setLoading] = useState(true);
   const [toast, setToast] = useState<{ ok: boolean; text: string } | null>(null);
 
-  const token = typeof window !== 'undefined'
-    ? sessionStorage.getItem('grandkidsgo_token') || localStorage.getItem('haodaer_token')
-    : null;
+  const token = typeof window !== 'undefined' ? getToken() : null;
 
   useEffect(() => {
     if (!token) { router.push('/login?redirect=/profile/settings'); return; }
     setLoading(true);
-    fetch('/api/auth/me', { headers: { authorization: `Bearer ${token}` } })
+    authedFetch('/api/auth/me')
       .then(r => r.json())
       .then(d => setUser(d?.data ?? d?.user ?? d))
       .catch(() => {})
@@ -113,7 +112,7 @@ function ProfileTab({ user, onSaved }: { user: User; onSaved: (msg: string) => v
     setSaving(true);
     try {
       // 资料 Tab 写 auth-service
-      const token = sessionStorage.getItem('grandkidsgo_token') ?? localStorage.getItem('haodaer_token');
+      const token = getToken();
       const res = await fetch('https://grandand.com/api/user/profile', {
         method: 'PUT',
         headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
@@ -169,8 +168,10 @@ function PrivacyTab({ userId, onSaved, onError }: { userId: string; onSaved: (ms
   const [loading, setLoading] = useState(true);
   const [saving, setSaving] = useState(false);
 
+  const token = typeof window !== 'undefined' ? getToken() : null;
+
   useEffect(() => {
-    fetch('/api/user/privacy-settings', { headers: { 'x-debug-user-id': userId } })
+    authedFetch('/api/user/privacy-settings')
       .then(r => r.json())
       .then(j => {
         const d = j?.data ?? j;
@@ -185,9 +186,9 @@ function PrivacyTab({ userId, onSaved, onError }: { userId: string; onSaved: (ms
   async function save() {
     setSaving(true);
     try {
-      const res = await fetch('/api/user/privacy-settings', {
+      const res = await authedFetch('/api/user/privacy-settings', {
         method: 'PUT',
-        headers: { 'x-debug-user-id': userId, 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           allowLeaderboardPublic: allowLeaderboard,
           allowCommunityFeed: allowFeed,

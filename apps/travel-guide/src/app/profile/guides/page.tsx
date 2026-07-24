@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import ProfileSidebar from '@/components/profile/ProfileSidebar';
 import { GuidebookIcon, EyeIcon, ThumbsUpIcon, BookmarkIcon } from '@/components/Icons';
+import { getToken, authedFetch } from '@/lib/auth';
 
 type Tab = 'published' | 'drafts' | 'saved';
 type GuideItem = {
@@ -37,13 +38,11 @@ export default function MyGuidesPage() {
   const [loading, setLoading] = useState(true);
   const [user, setUser] = useState<{ id: string; nickname: string; avatar: string | null } | null>(null);
 
-  const token = typeof window !== 'undefined'
-    ? sessionStorage.getItem('grandkidsgo_token') || localStorage.getItem('haodaer_token')
-    : null;
+  const token = typeof window !== 'undefined' ? getToken() : null;
 
   useEffect(() => {
     if (!token) { router.push('/login?redirect=/profile/guides'); return; }
-    fetch('/api/auth/me', { headers: { authorization: `Bearer ${token}` } })
+    authedFetch('/api/auth/me')
       .then(r => r.json())
       .then(d => setUser(d?.data ?? d?.user ?? d))
       .catch(() => {});
@@ -52,11 +51,10 @@ export default function MyGuidesPage() {
   useEffect(() => {
     if (!user?.id) return;
     setLoading(true);
-    const headers = { 'x-debug-user-id': user.id };
     Promise.all([
-      fetch('/api/guides/mine?type=published', { headers }).then(r => r.json()),
-      fetch('/api/guides/mine?type=drafts', { headers }).then(r => r.json()),
-      fetch('/api/guides/mine?type=saved', { headers }).then(r => r.json()),
+      authedFetch('/api/guides/mine?type=published', { userId: user.id }).then(r => r.json()),
+      authedFetch('/api/guides/mine?type=drafts', { userId: user.id }).then(r => r.json()),
+      authedFetch('/api/guides/mine?type=saved', { userId: user.id }).then(r => r.json()),
     ]).then(([p, d, s]) => {
       setCounts({
         published: p?.items?.length ?? 0,
@@ -69,7 +67,7 @@ export default function MyGuidesPage() {
   useEffect(() => {
     if (!user?.id) return;
     setLoading(true);
-    fetch(`/api/guides/mine?type=${tab}`, { headers: { 'x-debug-user-id': user.id } })
+    authedFetch(`/api/guides/mine?type=${tab}`, { userId: user.id })
       .then(r => r.json())
       .then(j => setItems(j?.items ?? []))
       .catch(console.error)

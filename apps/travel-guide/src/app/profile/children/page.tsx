@@ -1,10 +1,12 @@
 // /profile/children — 孩子档案管理（多孩切换 + 基础/扩展分离）
 'use client';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useCallback } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import ProfileSidebar from '@/components/profile/ProfileSidebar';
-import { BabyIcon, SparklesIcon, ClockIcon, AlertIcon, ThumbsUpIcon } from '@/components/Icons';
+import { BabyIcon, SparklesIcon, ClockIcon, AlertIcon, ThumbsUpIcon, CloseIcon } from '@/components/Icons';
+import { getToken, authedFetch } from '@/lib/auth';
+import { createChildSSOT } from '@/lib/child-sync';
 
 type Child = {
   childId: string;
@@ -41,43 +43,86 @@ export default function MyChildrenPage() {
   const [loading, setLoading] = useState(true);
   const [user, setUser] = useState<{ id: string; nickname: string; avatar: string | null } | null>(null);
 
-  const token = typeof window !== 'undefined'
-    ? sessionStorage.getItem('grandkidsgo_token') || localStorage.getItem('haodaer_token')
-    : null;
+  const [showAdd, setShowAdd] = useState(false);
+  const [addForm, setAddForm] = useState({ nickname: '', gender: '', birthday: '' });
+  const [addSaving, setAddSaving] = useState(false);
+  const [addError, setAddError] = useState('');
+
+  const token = typeof window !== 'undefined' ? getToken() : null;
 
   useEffect(() => {
     if (!token) { router.push('/login?redirect=/profile/children'); return; }
-    fetch('/api/auth/me', { headers: { authorization: `Bearer ${token}` } })
+    authedFetch('/api/auth/me')
       .then(r => r.json())
       .then(d => setUser(d?.data ?? d?.user ?? d))
       .catch(() => {});
   }, [router, token]);
 
-  useEffect(() => {
-    if (!user?.id) return;
+  const loadChildren = useCallback(async (uid: string) => {
     setLoading(true);
-    fetch(`/api/user/children?userId=${user.id}`, { headers: { 'x-debug-user-id': user.id } })
-      .then(r => r.json())
-      .then(async (j) => {
-        const items: Child[] = j?.data?.items ?? j?.items ?? [];
-        setChildren(items);
-        if (items.length && !activeId) setActiveId(items[0].childId);
-        // 拉所有孩子的感受画像
-        const feelingMap: Record<string, Feeling> = {};
-        await Promise.all(items.map(async c => {
-          try {
-            const r = await fetch(`/api/user/children/${c.childId}/feeling`, { headers: { 'x-debug-user-id': user.id } });
-            if (r.ok) {
-              const fj = await r.json();
-              feelingMap[c.childId] = fj?.data ?? fj;
-            }
-          } catch { /* skip */ }
-        }));
-        setFeelings(feelingMap);
-      })
-      .catch(console.error)
-      .finally(() => setLoading(false));
-  }, [user?.id]);
+    try {
+      const r = await authedFetch(`/api/user/children?userId=${uid}`, { userId: uid });
+      const j = await r.json();
+      const items: Child[] = j?.data?.items ?? j?.items ?? [];
+      setChildren(items);
+      if (items.length && !activeId) setActiveId(items[0].childId);
+      // 拉所有孩子的感受画像
+      const feelingMap: Record<string, Feeling> = {};
+      await Promise.all(items.map(async c => {
+        try {
+          const fr = await authedFetch(`/api/user/children/${c.childId}/feeling`, { userId: uid });
+          if (fr.ok) {
+            const fj = await fr.json();
+            feelingMap[c.childId] = fj?.data ?? fj;
+          }
+        } catch { /* skip */ }
+      }));
+      setFeelings(feelingMap);
+    } catch (e) {
+      console.error(e);
+    } finally {
+      setLoading(false);
+    }
+  }, [token, activeId]);
+
+  useEffect(() => {
+    if (user?.id && token) loadChildren(user.id);
+  }, [user?.id, token, loadChildren]);
+
+  const openAdd = () => {
+    setAddForm({ nickname: '', gender: '', birthday: '' });
+    setAddError('');
+    setShowAdd(true);
+  };
+
+  const submitAdd = async () => {
+    if (!addForm.nickname.trim()) {
+      setAddError('请填写孩子昵称');
+      return;
+    }
+    if (!token) {
+      setAddError('登录已过期，请重新登录');
+      return;
+    }
+    setAddSaving(true);
+    setAddError('');
+    try {
+      await createChildSSOT(
+        {
+          nickname: addForm.nickname.trim(),
+          gender: addForm.gender || undefined,
+          birthday: addForm.birthday || undefined,
+        },
+        token,
+      );
+      setShowAdd(false);
+      if (user?.id) await loadChildren(user.id);
+    } catch (e: any) {
+      setAddError(e?.message || '添加失败，请稍后重试');
+    } finally {
+      setAddSaving(false);
+    }
+  };
 
   const active = children.find(c => c.childId === activeId);
 
@@ -93,9 +138,12 @@ export default function MyChildrenPage() {
         <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-4">
           <div className="flex items-center justify-between mb-3">
             <h1 className="text-xl font-extrabold text-gray-900">孩子档案</h1>
-            <Link href="/profile/children?action=add" className="text-sm px-3 py-1.5 bg-gradient-to-r from-blue-500 to-cyan-500 text-white rounded-full font-medium">
+            <button
+              onClick={openAdd}
+              className="text-sm px-3 py-1.5 bg-gradient-to-r from-blue-500 to-cyan-500 text-white rounded-full font-medium"
+            >
               + 添加孩子
-            </Link>
+            </button>
           </div>
           {loading ? (
             <p className="text-gray-400 py-8 text-center">加载中…</p>
@@ -129,6 +177,122 @@ export default function MyChildrenPage() {
         </div>
 
         {active && <ChildDetail child={active} feeling={feelings[active.childId]} />}
+
+        {showAdd && (
+          <AddChildModal
+            form={addForm}
+            setForm={setAddForm}
+            saving={addSaving}
+            error={addError}
+            onClose={() => setShowAdd(false)}
+            onSubmit={submitAdd}
+          />
+        )}
+      </div>
+    </div>
+  );
+}
+
+function AddChildModal({
+  form,
+  setForm,
+  saving,
+  error,
+  onClose,
+  onSubmit,
+}: {
+  form: { nickname: string; gender: string; birthday: string };
+  setForm: (f: { nickname: string; gender: string; birthday: string }) => void;
+  saving: boolean;
+  error: string;
+  onClose: () => void;
+  onSubmit: () => void;
+}) {
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 px-4" onClick={onClose}>
+      <div
+        className="bg-white rounded-2xl shadow-xl w-full max-w-md p-6 relative"
+        onClick={(e) => e.stopPropagation()}
+      >
+        <button
+          onClick={onClose}
+          className="absolute top-3 right-3 p-1.5 text-gray-400 hover:text-gray-700 hover:bg-gray-100 rounded-full"
+          aria-label="关闭"
+        >
+          <CloseIcon size={18} />
+        </button>
+        <h2 className="text-lg font-extrabold text-gray-900 mb-1">添加孩子</h2>
+        <p className="text-xs text-gray-500 mb-4">基础信息会同步到主站童慧行账号，两边都能用</p>
+
+        <div className="space-y-3">
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">
+              昵称 <span className="text-red-500">*</span>
+            </label>
+            <input
+              type="text"
+              value={form.nickname}
+              onChange={(e) => setForm({ ...form, nickname: e.target.value })}
+              placeholder="如：朵朵、小宝"
+              className="w-full px-3 py-2 border border-gray-200 rounded-lg text-sm focus:outline-none focus:border-blue-500"
+              maxLength={20}
+            />
+          </div>
+
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">性别</label>
+            <div className="flex gap-2">
+              {[
+                { v: 'male', label: '男宝' },
+                { v: 'female', label: '女宝' },
+              ].map(opt => (
+                <button
+                  key={opt.v}
+                  type="button"
+                  onClick={() => setForm({ ...form, gender: form.gender === opt.v ? '' : opt.v })}
+                  className={`flex-1 py-2 rounded-lg text-sm font-medium border transition ${
+                    form.gender === opt.v
+                      ? 'bg-blue-50 border-blue-500 text-blue-700'
+                      : 'bg-white border-gray-200 text-gray-700 hover:border-gray-300'
+                  }`}
+                >
+                  {opt.label}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">生日</label>
+            <input
+              type="date"
+              value={form.birthday}
+              onChange={(e) => setForm({ ...form, birthday: e.target.value })}
+              className="w-full px-3 py-2 border border-gray-200 rounded-lg text-sm focus:outline-none focus:border-blue-500"
+            />
+          </div>
+        </div>
+
+        {error && (
+          <p className="mt-3 text-xs text-red-600 bg-red-50 border border-red-100 rounded-lg px-3 py-2">{error}</p>
+        )}
+
+        <div className="mt-5 flex gap-2">
+          <button
+            onClick={onClose}
+            disabled={saving}
+            className="flex-1 py-2.5 rounded-lg text-sm font-medium border border-gray-200 text-gray-700 hover:bg-gray-50 disabled:opacity-50"
+          >
+            取消
+          </button>
+          <button
+            onClick={onSubmit}
+            disabled={saving || !form.nickname.trim()}
+            className="flex-1 py-2.5 rounded-lg text-sm font-bold bg-gradient-to-r from-blue-500 to-cyan-500 text-white disabled:opacity-50"
+          >
+            {saving ? '保存中…' : '保存'}
+          </button>
+        </div>
       </div>
     </div>
   );
@@ -140,9 +304,10 @@ function EmptyChildren() {
       <BabyIcon size={40} className="mx-auto text-gray-300 mb-3" />
       <p className="text-gray-700 font-medium">还没有添加孩子</p>
       <p className="text-sm text-gray-400 mt-1 mb-4">孩子档案会同步到主站童慧行账号</p>
-      <a href="https://grandand.com/profile" target="_blank" rel="noopener" className="inline-block px-5 py-2 bg-gradient-to-r from-blue-500 to-cyan-500 text-white rounded-full text-sm font-bold">
+      <a href="https://grandand.com/personal-center" target="_blank" rel="noopener" className="inline-block px-5 py-2 bg-gradient-to-r from-blue-500 to-cyan-500 text-white rounded-full text-sm font-bold">
         去主站添加
       </a>
+      <p className="text-xs text-gray-400 mt-3">或在上方直接点击"+ 添加孩子"在线添加</p>
     </div>
   );
 }

@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import ProfileSidebar from '@/components/profile/ProfileSidebar';
 import { TrophyIcon, AwardIcon, CrownIcon, MedalIcon } from '@/components/Icons';
+import { getToken, authedFetch } from '@/lib/auth';
 
 const RARITY_LABEL: Record<string, string> = { bronze: '铜', silver: '银', gold: '金', diamond: '钻石' };
 const RARITY_COLOR: Record<string, string> = {
@@ -49,13 +50,11 @@ export default function MyBadgesPage() {
   const [loading, setLoading] = useState(true);
   const [user, setUser] = useState<{ id: string; nickname: string; avatar: string | null } | null>(null);
 
-  const token = typeof window !== 'undefined'
-    ? sessionStorage.getItem('grandkidsgo_token') || localStorage.getItem('haodaer_token')
-    : null;
+  const token = typeof window !== 'undefined' ? getToken() : null;
 
   useEffect(() => {
     if (!token) { router.push('/login?redirect=/profile/badges'); return; }
-    fetch('/api/auth/me', { headers: { authorization: `Bearer ${token}` } })
+    authedFetch('/api/auth/me')
       .then(r => r.json())
       .then(d => setUser(d?.data ?? d?.user ?? d))
       .catch(() => {});
@@ -65,7 +64,7 @@ export default function MyBadgesPage() {
     if (!user?.id) return;
     setLoading(true);
     Promise.all([
-      fetch('/api/user/travel-badges', { headers: { 'x-debug-user-id': user.id } }).then(r => r.json()),
+      authedFetch('/api/user/travel-badges', { userId: user.id }).then(r => r.json()),
       fetch('/api/badges/all-defs').then(r => r.json()),
     ]).then(([ej, dj]) => {
       setEarned(ej?.items ?? []);

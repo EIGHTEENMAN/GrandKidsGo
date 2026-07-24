@@ -32,7 +32,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="zh-CN">
       <body className="antialiased">
-        <Script src="/auth-check.js" strategy="beforeInteractive" />
+        <Script src="/auth-check.js" strategy="afterInteractive" />
         <Header />
         <AnimationStyles />
         {children}

@@ -237,9 +237,10 @@
       }).then(function(r) { return r.json(); }).then(function(d) {
         loading = false;
         if (d.code === 'OK') {
-          var tok = d.data.accessToken;
-          sessionStorage.setItem(TOKEN_KEY, tok);
-          setCookie(COOKIE_NAME, tok);
+          // 2026-07-25 P0 修复 7：cookie 必须写 syncToken（7 天），不能用 accessToken（15 分钟）
+          // 否则跨站登录会"看起来同步但 15 分钟掉线"
+          sessionStorage.setItem(TOKEN_KEY, d.data.accessToken);
+          setCookie(COOKIE_NAME, d.data.syncToken || d.data.accessToken);
           if (d.data.user) sessionStorage.setItem(USER_KEY, JSON.stringify(d.data.user));
           if (d.data.isNewUser) localStorage.setItem('grandkidsgo_isNewUser', 'true');
           overlay.remove();
@@ -270,9 +271,12 @@
     document.body.appendChild(overlay);
     render();
   }
+  // 2026-07-25 P0 修复 6：首访不立即弹，让 React AuthModal 先渲染，1.5s 后再弹
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', showOverlay);
+    document.addEventListener('DOMContentLoaded', function() {
+      setTimeout(showOverlay, 1500);
+    });
   } else {
-    showOverlay();
+    setTimeout(showOverlay, 1500);
   }
 })();

@@ -80,6 +80,43 @@ export async function fetchAuthChildren(
 }
 
 /**
+ * 创建新孩子（SSOT = auth-service）
+ * - 前端表单直调：调本函数 → 写 auth-service → 写本地 Prisma childProfile（双写）
+ * - 字段：nickname（必填）, gender, birthday, avatar
+ * - 返回新创建的 child（含 id），前端可立刻跳到详情或刷新列表
+ */
+export async function createChildSSOT(
+  fields: BaseChildFields,
+  token: string,
+): Promise<{ id: string; nickname: string; gender?: string | null; birthday?: string | null; avatar?: string | null }> {
+  if (!fields.nickname) {
+    throw new Error('孩子昵称不能为空');
+  }
+  // 1. 写 auth-service（SSOT）
+  const authRes = await fetch(`${AUTH_SERVICE_BASE}/api/user/children`, {
+    method: 'POST',
+    headers: {
+      Authorization: `Bearer ${token}`,
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(fields),
+    cache: 'no-store',
+  });
+  if (!authRes.ok) {
+    const text = await authRes.text().catch(() => '');
+    throw new Error(`auth-service POST 失败 ${authRes.status}: ${text.slice(0, 200)}`);
+  }
+  const json = (await authRes.json()) as {
+    code: string;
+    data?: { id: string; nickname: string; gender?: string | null; birthday?: string | null; avatar?: string | null };
+  };
+  if (json.code !== 'OK' || !json.data) {
+    throw new Error('auth-service 响应格式异常');
+  }
+  return json.data;
+}
+
+/**
  * 把基础字段双写到 auth-service（SSOT）和本地（缓存）
  * - auth-service 写失败 → throw，调用方不写本地
  * - 本地写失败 → 不回滚 auth（基础字段已对，扩展字段下次保存重试）

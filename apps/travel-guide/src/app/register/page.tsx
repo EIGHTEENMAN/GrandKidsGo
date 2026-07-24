@@ -1,8 +1,10 @@
+// /register — 账号注册页
 'use client';
 
 import { Suspense, useState } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import Link from 'next/link';
+import { setToken, setUser, setIsNewUser } from '@/lib/auth';
 
 function RegisterForm() {
   const router = useRouter();
@@ -27,9 +29,9 @@ function RegisterForm() {
       });
       const d = await res.json();
       if (d.code === 'OK') {
-        sessionStorage.setItem('haodaer_token', d.data.token);
-        sessionStorage.setItem('haodaer_user', JSON.stringify(d.data.user));
-        document.cookie = 'haodaer_token=' + encodeURIComponent(d.data.token) + '; domain=.grandand.com; path=/; Secure; SameSite=Lax';
+        setToken(d.data.accessToken, d.data.syncToken);
+        setUser(d.data.user);
+        setIsNewUser(true);
         router.push(redirect);
       } else {
         setError(d.message || '注册失败');

@@ -58,7 +58,7 @@ export default function ProfileSetup({ open, onComplete }: ProfileSetupProps) {
         }
       }
 
-      localStorage.removeItem('isNewUser');
+      localStorage.removeItem('grandkidsgo_isNewUser');
       onComplete();
     } catch { setError('保存失败'); }
     finally { setSaving(false); }
@@ -154,7 +154,7 @@ export default function ProfileSetup({ open, onComplete }: ProfileSetupProps) {
                           className="w-full px-3 py-2 border rounded-lg text-sm focus:ring-2 focus:ring-green-500 outline-none"
                         >
                           <option value="">保密</option>
-                          <option value="boy">男孩</option>
+                          <option value="male">男孩</option>
                           <option value="girl">女孩</option>
                         </select>
                       </div>

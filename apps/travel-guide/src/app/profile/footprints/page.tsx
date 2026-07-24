@@ -4,15 +4,14 @@ import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import ProfileSidebar from '@/components/profile/ProfileSidebar';
 import { MapPinIcon, AlertIcon, CheckIcon } from '@/components/Icons';
+import { getToken } from '@/lib/auth';
 
 export default function FootprintsPage() {
   const router = useRouter();
   const [user, setUser] = useState<{ id: string; nickname: string; avatar: string | null } | null>(null);
 
   useEffect(() => {
-    const token = typeof window !== 'undefined'
-      ? sessionStorage.getItem('grandkidsgo_token') || localStorage.getItem('haodaer_token')
-      : null;
+    const token = getToken();
     if (!token) { router.push('/login?redirect=/profile/footprints'); return; }
     fetch('/api/auth/me', { headers: { authorization: `Bearer ${token}` } })
       .then(r => r.json())

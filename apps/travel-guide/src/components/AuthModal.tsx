@@ -69,6 +69,7 @@ export default function AuthModal({ open, onClose, onLogin, force }: AuthModalPr
         if (d.data.isNewUser) setIsNewUser(true);
         else setIsNewUser(false);
         onLogin(d.data.user);
+        onClose();
       } else {
         setError(d.message || '登录失败');
       }
@@ -92,6 +93,7 @@ export default function AuthModal({ open, onClose, onLogin, force }: AuthModalPr
         setUser(d.data.user);
         setIsNewUser(false);
         onLogin(d.data.user);
+        onClose();
       } else {
         setError(d.message || '登录失败');
       }
@@ -118,6 +120,7 @@ export default function AuthModal({ open, onClose, onLogin, force }: AuthModalPr
         setUser(d.data.user);
         setIsNewUser(true);
         onLogin(d.data.user);
+        onClose();
       } else {
         setError(d.message || '注册失败');
       }
