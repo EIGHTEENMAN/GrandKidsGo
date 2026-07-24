@@ -68,36 +68,3 @@ export function fetchUser(userId: string): UserInfo | null {
 export function fallbackUser(userId: string): UserInfo {
   return { id: userId, nickname: '童慧行用户', avatar: null };
 }
-
-/** 2026-07-24 v1.0：拉用户性别 + 角色快照（用于 PlaceReview 聚合 mom/dad 拆分）
- *  - gender：male | female | null
- *  - role：mom | dad | grandparent | other | null（基于 travel-guide 内置的 user_meta 表，暂无则降级为 gender 推断）
- */
-export interface UserSnapshot {
-  gender: 'male' | 'female' | null;
-  role: 'mom' | 'dad' | 'grandparent' | 'other' | null;
-}
-
-export function fetchUserGenderAndRole(userId: string): UserSnapshot | null {
-  const db = getDb();
-  if (!db) return null;
-  try {
-    // auth-service 的 users 表当前只有 role（user/admin），没有 gender
-    // v1.0：尝试拉 gender 字段（如有），role 默认从 gender 推断
-    const row = db
-      .prepare(
-        `SELECT id, COALESCE(role, 'user') AS role FROM users WHERE id = ?`,
-      )
-      .get(userId) as { id: string; role: string } | undefined;
-    if (!row) return null;
-
-    // v1.0 简化：role 字段是 'user' 或 'admin'，没有 mom/dad 区分
-    // 把 admin 排除，普通用户 gender 字段未来才有 → 暂时 role=null
-    return {
-      gender: null,  // 待 auth-service users 表加 gender 列
-      role: null,
-    };
-  } catch {
-    return null;
-  }
-}

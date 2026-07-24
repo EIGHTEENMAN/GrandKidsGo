@@ -1,10 +1,11 @@
-// /profile/sayings — 孩子说（按孩子分组 + mood 统计）
+// /profile/sayings — 孩子说（按孩子分组 + mood 统计 + 时间线 + 录音入口）
 'use client';
 import { useEffect, useMemo, useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import ProfileSidebar from '@/components/profile/ProfileSidebar';
-import { BabyIcon, SparklesIcon } from '@/components/Icons';
+import VoiceRecorder from '@/components/VoiceRecorder';
+import { BabyIcon, SparklesIcon, PlayIcon } from '@/components/Icons';
 
 const TRAVEL_API = (process.env.NEXT_PUBLIC_TRAVEL_API as string) || 'https://travel.grandand.com';
 
@@ -28,6 +29,10 @@ type Saying = {
   createdAt: string;
   childId: string | null;
   spotId: string | null;
+  status: string;
+  voiceOssKey?: string | null;
+  voiceDuration?: number | null;
+  voiceRejectReason?: string | null;
 };
 
 type Child = {
@@ -44,6 +49,7 @@ export default function MyChildSayingsPage() {
   const [filterChild, setFilterChild] = useState<string>('all');
   const [loading, setLoading] = useState(true);
   const [user, setUser] = useState<{ id: string; nickname: string; avatar: string | null } | null>(null);
+  const [showRecorder, setShowRecorder] = useState(false);
 
   const token = typeof window !== 'undefined'
     ? sessionStorage.getItem('grandkidsgo_token') || localStorage.getItem('haodaer_token')
@@ -97,8 +103,31 @@ export default function MyChildSayingsPage() {
         <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-4">
           <div className="flex items-center justify-between mb-3">
             <h1 className="text-xl font-extrabold text-gray-900">孩子说</h1>
-            <Link href="/child-sayings" className="text-sm text-blue-600 hover:text-blue-700">+ 记录新语录</Link>
+            <div className="flex items-center gap-2">
+              <button
+                onClick={() => setShowRecorder(s => !s)}
+                className="text-sm px-3 py-1.5 bg-gradient-to-r from-blue-500 to-cyan-500 text-white rounded-full font-medium"
+              >
+                🎤 {showRecorder ? '收起' : '录音'}
+              </button>
+              <Link href="/child-sayings" className="text-sm text-blue-600 hover:text-blue-700">+ 文字</Link>
+            </div>
           </div>
+
+          {/* 录音区 */}
+          {showRecorder && (
+            <div className="mb-4">
+              <VoiceRecorder
+                onUploaded={() => {
+                  fetch(`/api/child-sayings`, { headers: { 'x-debug-user-id': user!.id } })
+                    .then(r => r.json())
+                    .then(j => setSayings(j?.data?.items ?? []))
+                    .catch(() => {});
+                  setShowRecorder(false);
+                }}
+              />
+            </div>
+          )}
 
           {loading ? (
             <p className="text-gray-400 py-8 text-center">加载中…</p>
@@ -106,7 +135,6 @@ export default function MyChildSayingsPage() {
             <EmptySayings />
           ) : (
             <>
-              {/* 孩子切换器 */}
               <div className="flex gap-2 overflow-x-auto pb-2">
                 <ChildChip active={filterChild === 'all'} onClick={() => setFilterChild('all')} label="全部" count={sayings.length} />
                 {children.map(c => (
@@ -121,7 +149,6 @@ export default function MyChildSayingsPage() {
                 ))}
               </div>
 
-              {/* mood 统计 */}
               {totalForMood > 0 && (
                 <div className="mt-4">
                   <p className="text-xs text-gray-500 mb-2">心情分布</p>
@@ -147,6 +174,9 @@ export default function MyChildSayingsPage() {
           <div className="space-y-3">
             {filtered.map(s => {
               const child = children.find(c => c.childId === s.childId);
+              const hasVoice = !!s.voiceOssKey;
+              const reviewing = s.status === 'auditing';
+              const rejected = s.status === 'rejected';
               return (
                 <div key={s.id} className="bg-white rounded-2xl shadow-sm border border-gray-100 p-5">
                   <div className="flex items-start gap-3">
@@ -157,12 +187,48 @@ export default function MyChildSayingsPage() {
                     </span>
                     <div className="flex-1 min-w-0">
                       <p className="text-gray-900 text-lg leading-relaxed mb-2">"{s.text}"</p>
-                      <div className="flex items-center gap-2 text-xs text-gray-500">
+
+                      {/* 录音播放条 */}
+                      {hasVoice && !rejected && (
+                        <div className="flex items-center gap-2 mt-2 mb-2 px-3 py-1.5 bg-gray-50 rounded-full w-fit max-w-xs">
+                          <button
+                            onClick={() => {
+                              const a = new Audio(`${TRAVEL_API}/api/child-sayings/${s.id}/voice`);
+                              a.play().catch(() => {});
+                            }}
+                            className="w-7 h-7 rounded-full bg-blue-500 text-white flex items-center justify-center hover:bg-blue-600 flex-shrink-0"
+                            aria-label="播放录音"
+                          >
+                            <PlayIcon size={12} />
+                          </button>
+                          <div className="flex-1 min-w-0">
+                            <div className="h-1 bg-gray-300 rounded-full overflow-hidden">
+                              <div className="h-full w-0 bg-gradient-to-r from-blue-500 to-cyan-500" />
+                            </div>
+                            <div className="flex items-center justify-between mt-0.5">
+                              <span className="text-xs text-gray-500">录音</span>
+                              <span className="text-xs text-gray-500">{s.voiceDuration ?? '?'}s</span>
+                            </div>
+                          </div>
+                        </div>
+                      )}
+
+                      <div className="flex items-center gap-2 text-xs text-gray-500 flex-wrap">
                         {child?.nickname && <span className="font-medium text-gray-700">{child.nickname}</span>}
                         {s.mood && <span className={`px-2 py-0.5 rounded-full ${MOOD_COLOR[s.mood]}`}>{MOOD_LABEL[s.mood] ?? s.mood}</span>}
                         <span className="text-gray-400">{new Date(s.createdAt).toLocaleDateString('zh-CN')}</span>
                         {s.shareScope !== 'private' && <span className="text-gray-400">· {s.shareScope === 'public' ? '公开' : '社区'}</span>}
                         {s.spotId && <span className="text-blue-500">· 关联景点</span>}
+                        {reviewing && (
+                          <span className="px-2 py-0.5 bg-amber-50 text-amber-700 rounded-full inline-flex items-center gap-1">
+                            <SparklesIcon size={10} /> 审核中
+                          </span>
+                        )}
+                        {rejected && (
+                          <span className="px-2 py-0.5 bg-red-50 text-red-700 rounded-full">
+                            未通过{s.voiceRejectReason ? ` · ${s.voiceRejectReason}` : ''}
+                          </span>
+                        )}
                       </div>
                     </div>
                   </div>
@@ -204,7 +270,7 @@ function EmptySayings() {
       <p className="text-gray-700 font-medium">还没有童言趣语</p>
       <p className="text-sm text-gray-400 mt-1 mb-4">孩子的金句值得被记住</p>
       <Link href="/child-sayings" className="inline-block px-5 py-2 bg-gradient-to-r from-blue-500 to-cyan-500 text-white rounded-full text-sm font-bold">
-        记录第一条
+        文字记录
       </Link>
     </div>
   );

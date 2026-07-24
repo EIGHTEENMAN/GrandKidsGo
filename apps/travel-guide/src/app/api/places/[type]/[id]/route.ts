@@ -124,9 +124,8 @@ export async function GET(
       // 2026-07-24 v1.0：聚合数据（三视角 + 便利设施）
       aggregate: aggregate
         ? {
+            adultAvgScore: aggregate.adultAvgScore,
             kidAvgScore: aggregate.kidAvgScore,
-            momAvgScore: aggregate.momAvgScore,        // v1.5 启用
-            dadAvgScore: aggregate.dadAvgScore,        // v1.5 启用
             reviewCount: aggregate.reviewCount,
             withChildRatingCount: aggregate.withChildRatingCount,
             parkingRate: aggregate.parkingRate,

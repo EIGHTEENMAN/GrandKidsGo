@@ -55,13 +55,11 @@ interface PlaceData {
     childAvg: number | null;
     reviewCount: number;
     withChildRating: number;
-    distribution?: Record<1 | 2 | 3 | 4 | 5, number>;
+    distribution?: Record<number, number>;
   };
-  // 2026-07-24 v1.0：聚合字段
   aggregate?: {
+    adultAvgScore: number | null;
     kidAvgScore: number | null;
-    momAvgScore: number | null;
-    dadAvgScore: number | null;
     reviewCount: number;
     withChildRatingCount: number;
     parkingRate: number | null;
@@ -246,44 +244,35 @@ export default function PlaceDetailPage() {
             <h1 className="text-3xl md:text-5xl font-extrabold text-white mb-4 leading-tight">
               {place.name}
             </h1>
-            {/* 三视角评分徽章 — v1.0：优先读 aggregate，< 3 条 fallback 种子编辑分 */}
-            {(place.kidScore || place.momScore || place.dadScore || data.aggregate) && (
+            {/* 二维评分徽章 — 大人 + 孩子 */}
+            {(place.kidScore || stats.adultAvg || data.aggregate) && (
               <div className="flex flex-wrap gap-2">
                 {(() => {
                   const agg = data.aggregate;
-                  const hasEnoughReviews = (agg?.reviewCount ?? 0) >= 3;
-                  // 孩子：优先聚合分，否则种子编辑分
-                  const kidScore = hasEnoughReviews && agg?.kidAvgScore != null
+                  const hasEnough = (agg?.reviewCount ?? 0) >= 3;
+                  // 大人：优先聚合分，<3 条用种子编辑分兜底
+                  const adultScore = hasEnough && agg?.adultAvgScore != null
+                    ? agg.adultAvgScore
+                    : (stats.adultAvg ?? place.momScore ?? null);
+                  // 孩子：优先聚合分，<3 条用种子编辑分兜底
+                  const kidScore = hasEnough && agg?.kidAvgScore != null
                     ? agg.kidAvgScore
-                    : place.kidScore ?? null;
-                  // 妈妈：v1.0 暂未拆分，沿用 adultRating 聚合（用 stats.adultAvg 兜底）
-                  const momScore = hasEnoughReviews
-                    ? (agg?.momAvgScore ?? stats.adultAvg)
-                    : (place.momScore ?? stats.adultAvg);
-                  // 爸爸：同上
-                  const dadScore = hasEnoughReviews
-                    ? (agg?.dadAvgScore ?? stats.adultAvg)
-                    : (place.dadScore ?? stats.adultAvg);
+                    : (place.kidScore ?? null);
 
                   return (
                     <>
+                      {adultScore != null && (
+                        <span className="inline-flex items-center gap-1 px-3 py-1.5 bg-cyan-500/90 backdrop-blur-sm rounded-full text-sm font-bold text-white">
+                          <UserIcon size={14} /> 大人 {adultScore.toFixed(1)}
+                        </span>
+                      )}
                       {kidScore != null && (
                         <span className="inline-flex items-center gap-1 px-3 py-1.5 bg-pink-500/90 backdrop-blur-sm rounded-full text-sm font-bold text-white">
                           <BabyIcon size={14} /> 孩子 {kidScore.toFixed(1)}
                         </span>
                       )}
-                      {momScore != null && (
-                        <span className="inline-flex items-center gap-1 px-3 py-1.5 bg-cyan-500/90 backdrop-blur-sm rounded-full text-sm font-bold text-white">
-                          <HeartIcon size={14} /> 妈妈 {momScore.toFixed(1)}
-                        </span>
-                      )}
-                      {dadScore != null && (
-                        <span className="inline-flex items-center gap-1 px-3 py-1.5 bg-slate-600/90 backdrop-blur-sm rounded-full text-sm font-bold text-white">
-                          <UserIcon size={14} /> 爸爸 {dadScore.toFixed(1)}
-                        </span>
-                      )}
-                      {!hasEnoughReviews && agg?.reviewCount != null && agg.reviewCount > 0 && (
-                        <span className="text-white/70 text-xs px-2">（仅 {agg.reviewCount} 条评价，再多一点会更准）</span>
+                      {!hasEnough && agg?.reviewCount != null && agg.reviewCount > 0 && (
+                        <span className="text-white/70 text-xs px-2">（{agg.reviewCount} 条评价）</span>
                       )}
                     </>
                   );

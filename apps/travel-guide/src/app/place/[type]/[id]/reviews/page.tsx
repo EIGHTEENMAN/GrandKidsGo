@@ -90,22 +90,16 @@ export default function PlaceReviewsPage() {
               {/* 三视角 */}
               <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-4">
                 <h2 className="font-bold text-gray-900 mb-3">评分总览</h2>
+                              {aggregate?.adultAvgScore != null && (
+                  <div className="flex items-center justify-between py-2 border-b border-gray-100 last:border-0">
+                    <span className="flex items-center gap-1.5 text-sm"><UserIcon size={14} className="text-cyan-500" /> 大人</span>
+                    <span className="font-bold text-cyan-600">{aggregate.adultAvgScore.toFixed(1)}</span>
+                  </div>
+                )}
                 {aggregate?.kidAvgScore != null && (
                   <div className="flex items-center justify-between py-2 border-b border-gray-100 last:border-0">
                     <span className="flex items-center gap-1.5 text-sm"><BabyIcon size={14} className="text-pink-500" /> 孩子</span>
                     <span className="font-bold text-pink-600">{aggregate.kidAvgScore.toFixed(1)}</span>
-                  </div>
-                )}
-                {aggregate?.momAvgScore != null && (
-                  <div className="flex items-center justify-between py-2 border-b border-gray-100 last:border-0">
-                    <span className="flex items-center gap-1.5 text-sm"><UserIcon size={14} className="text-cyan-500" /> 妈妈</span>
-                    <span className="font-bold text-cyan-600">{aggregate.momAvgScore.toFixed(1)}</span>
-                  </div>
-                )}
-                {aggregate?.dadAvgScore != null && (
-                  <div className="flex items-center justify-between py-2 border-b border-gray-100 last:border-0">
-                    <span className="flex items-center gap-1.5 text-sm"><UserIcon size={14} className="text-slate-500" /> 爸爸</span>
-                    <span className="font-bold text-slate-600">{aggregate.dadAvgScore.toFixed(1)}</span>
                   </div>
                 )}
                 <div className="mt-2 text-xs text-gray-500">
