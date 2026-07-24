@@ -1027,13 +1027,20 @@ model ChildSaying {
   spotId      String?  @map("spot_id")         // 2026-07-24 新增：关联景点
   source      String   @default("manual") @map("source")  // manual | auto_extract
   sourceGuideId String? @map("source_guide_id")           // 自动提取来源攻略
-  status      String   @default("published")               // draft(待审核) | published | hidden
+  status      String   @default("published")               // draft(待审核) | published | hidden | auditing(录音审核中) | rejected(录音审核未过)
   shareScope  String   @default("private") @map("share_scope")
+  // 录音字段（2026-07-24 新增）：完整流程 = 录制 → 试听确认 → 上传 → 自动审查
+  voiceOssKey   String?  @map("voice_oss_key")           // 录音 OSS key（阿里云 OSS）
+  voiceDuration Int?     @map("voice_duration")          // 录音时长（秒）
+  voiceMime     String?  @map("voice_mime")              // 录音 MIME（如 audio/webm）
+  voiceReviewedAt DateTime? @map("voice_reviewed_at")    // 审核完成时间
+  voiceRejectReason String? @map("voice_reject_reason")  // 审核未过原因
   createdAt   DateTime @default(now()) @map("created_at")
 
   @@index([childId, createdAt(sort: Desc)])
   @@index([shareScope, createdAt(sort: Desc)])
   @@index([spotId, createdAt(sort: Desc)])
+  @@index([status, createdAt(sort: Desc)])  // 录音审核状态查询
   @@map("child_sayings")
 }
 

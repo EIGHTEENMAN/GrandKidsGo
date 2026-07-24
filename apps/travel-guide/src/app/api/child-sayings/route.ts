@@ -24,7 +24,8 @@ export async function GET(req: NextRequest) {
     take: limit,
     select: {
       id: true, text: true, mood: true, shareScope: true,
-      createdAt: true, childId: true, spotId: true, source: true,
+      createdAt: true, childId: true, spotId: true, source: true, status: true,
+      voiceOssKey: true, voiceDuration: true, voiceRejectReason: true,
     },
   });
 
