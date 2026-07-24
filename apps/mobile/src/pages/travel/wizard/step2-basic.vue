@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, reactive } from 'vue'
+import { ref, reactive, onMounted } from 'vue'
 import { saveDraft, type WizardDraft } from '@/utils/wizard-state'
 import type { ChildProfileInput } from '@/utils/travel-api'
 import { track, TRACK } from '@/utils/analytics'
@@ -8,7 +8,43 @@ const LIKE_OPTIONS = ['动物', '车辆', '恐龙', '海洋', '公主', '太空'
 const ACTIVITY_OPTIONS = ['户外', '室内', '表演', '互动', '静态参观']
 const DISLIKE_OPTIONS = ['黑暗', '高处', '噪音', '陌生动物', '排队']
 
-const name = ref('')
+// S-1: 从主站 auth-service 拉真实孩子列表（SSoT = grandand.com）
+interface AuthChild {
+  id: string
+  nickname: string
+  gender?: string | null
+  birthday?: string | null
+  avatar?: string | null
+}
+const children = ref<AuthChild[]>([])
+const selectedChildId = ref<string>('')
+const loadingChildren = ref(true)
+
+async function fetchChildren() {
+  try {
+    const res = await uni.request({
+      url: 'https://grandand.com/api/user/children',
+      method: 'GET',
+      header: {
+        Authorization: `Bearer ${uni.getStorageSync('grandkidsgo_token') ?? ''}`,
+      },
+    })
+    const data = res.data as any
+    if (data?.code === 'OK' && Array.isArray(data.data)) {
+      children.value = data.data
+    }
+  } catch (e) {
+    console.error('[wizard] fetchChildren failed', e)
+  } finally {
+    loadingChildren.value = false
+  }
+}
+
+onMounted(() => {
+  fetchChildren()
+})
+
+// 扩展字段（仅 travel-guide 本地维护）
 const ageMonths = ref<number>(36)
 const needNap = ref<'required' | 'optional' | 'none'>('optional')
 const earlyOrLate = ref<'early_bird' | 'night_owl'>('early_bird')
@@ -34,17 +70,43 @@ function birthDateFromMonths(months: number): string {
   return d.toISOString().slice(0, 10)
 }
 
+function goCreateChild() {
+  // 无孩子时引导去主站建
+  uni.showModal({
+    title: '先去主站建孩子档案',
+    content: '走天下的孩子档案与主站共享。先去 grandand.com 建一个，再回来选。',
+    confirmText: '去主站',
+    success: (r) => {
+      if (r.confirm) {
+        // #ifdef H5
+        window.location.href = 'https://grandand.com/profile'
+        // #endif
+        // #ifdef MP-WEIXIN
+        uni.setStorageSync('grandkidsgo_redirect_after_login', '/pages/travel/wizard/step2')
+        uni.switchTab({ url: '/pages/index/index' })
+        // #endif
+      }
+    },
+  })
+}
+
 function prev() { uni.navigateBack() }
 
 function next() {
-  if (!name.value.trim()) {
-    uni.showToast({ title: '请填孩子昵称', icon: 'none' })
+  if (!selectedChildId.value) {
+    uni.showToast({ title: children.value.length ? '请选孩子' : '主站还没有孩子档案', icon: 'none' })
+    return
+  }
+  const picked = children.value.find(c => c.id === selectedChildId.value)
+  if (!picked) {
+    uni.showToast({ title: '孩子数据异常', icon: 'none' })
     return
   }
   const profile: ChildProfileInput = {
-    childId: `child-${Date.now()}`,
-    name: name.value.trim(),
-    birthDate: birthDateFromMonths(ageMonths.value),
+    // S-1: childId 用主站真实 UUID（auth-service 命名空间）
+    childId: picked.id,
+    name: picked.nickname,
+    birthDate: picked.birthday || birthDateFromMonths(ageMonths.value),
     likes: likes.value,
     activities: activities.value,
     dislikes: dislikes.value,
@@ -58,6 +120,7 @@ function next() {
   saveDraft({ childProfile: profile })
   track(TRACK.WIZARD_STEP_COMPLETED, {
     step: 2,
+    childId: picked.id,
     childAgeMonths: ageMonths.value,
     likes: likes.value,
     needNap: needNap.value,
@@ -74,21 +137,45 @@ function next() {
       <text class="hero-sub">走天下的硬步骤，没画像就不出方案</text>
     </view>
 
+    <!-- S-1: 孩子选择（从主站拉） -->
     <view class="card">
-      <text class="card-title">基本信息</text>
-      <view class="form-row">
-        <text class="form-label">昵称</text>
-        <input v-model="name" placeholder="如 小可乐 / 果果" class="form-input" />
+      <text class="card-title">选孩子</text>
+      <view v-if="loadingChildren" class="empty-hint">加载中…</view>
+      <view v-else-if="!children.length" class="empty-block">
+        <text class="empty-text">主站还没有孩子档案</text>
+        <button class="btn-link" @click="goCreateChild">去主站建一个 →</button>
       </view>
+      <view v-else class="child-grid">
+        <view
+          v-for="c in children"
+          :key="c.id"
+          :class="['child-card', selectedChildId === c.id ? 'child-card-on' : '']"
+          @click="selectedChildId = c.id"
+        >
+          <view class="child-avatar">
+            <text v-if="!c.avatar">{{ c.nickname?.[0] ?? '宝' }}</text>
+          </view>
+          <text class="child-name">{{ c.nickname }}</text>
+          <text v-if="c.birthday" class="child-meta">{{ c.birthday }}</text>
+        </view>
+      </view>
+    </view>
+
+    <!-- 扩展字段（仅 travel-guide 维护） -->
+    <view class="card">
+      <text class="card-title">月龄参考</text>
       <view class="form-row">
-        <text class="form-label">月龄</text>
         <view class="age-row">
           <input v-model.number="ageMonths" type="number" class="form-input age-input" />
           <text class="age-hint">月（3 岁 = 36）</text>
         </view>
       </view>
+    </view>
+
+    <view class="card">
+      <text class="card-title">作息</text>
       <view class="form-row">
-        <text class="form-label">作息</text>
+        <text class="form-label">是否午休</text>
         <view class="chip-row">
           <view :class="['chip', needNap === 'required' ? 'chip-on' : '']" @click="needNap = 'required'">必须午休</view>
           <view :class="['chip', needNap === 'optional' ? 'chip-on' : '']" @click="needNap = 'optional'">可午休</view>
@@ -162,6 +249,16 @@ function next() {
 .hero-sub { display: block; font-size: 24rpx; color: #64748b; margin-top: 8rpx; }
 .card { background: #fff; border-radius: 20rpx; padding: 28rpx; margin-bottom: 20rpx; border: 1rpx solid #e2e8f0; }
 .card-title { display: block; font-size: 30rpx; font-weight: 600; color: #0f172a; margin-bottom: 20rpx; }
+.empty-hint { color: #94a3b8; font-size: 26rpx; padding: 24rpx 0; }
+.empty-block { display: flex; flex-direction: column; align-items: center; padding: 32rpx 0; gap: 16rpx; }
+.empty-text { color: #64748b; font-size: 28rpx; }
+.btn-link { background: transparent; color: #16a34a; border: none; font-size: 28rpx; }
+.child-grid { display: flex; flex-wrap: wrap; gap: 16rpx; }
+.child-card { width: 200rpx; padding: 20rpx 16rpx; border: 2rpx solid #e2e8f0; border-radius: 16rpx; display: flex; flex-direction: column; align-items: center; gap: 8rpx; }
+.child-card-on { border-color: #16a34a; background: #f0fdf4; }
+.child-avatar { width: 80rpx; height: 80rpx; border-radius: 50%; background: linear-gradient(135deg, #fbcfe8, #fde68a); display: flex; align-items: center; justify-content: center; font-size: 36rpx; font-weight: 700; color: #0f172a; }
+.child-name { font-size: 28rpx; font-weight: 600; color: #0f172a; }
+.child-meta { font-size: 22rpx; color: #94a3b8; }
 .form-row { margin-bottom: 24rpx; }
 .form-label { display: block; font-size: 26rpx; color: #475569; margin-bottom: 12rpx; }
 .form-input { background: #f8fafc; border: 1rpx solid #e2e8f0; border-radius: 12rpx; padding: 18rpx 20rpx; font-size: 28rpx; }

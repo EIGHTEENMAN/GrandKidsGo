@@ -413,10 +413,12 @@ model ChildExpectation {
 }
 
 // 孩子基础画像（v1.5 ChildFeelingProfile 的输入）
+// S-3: 基础字段（nickname/gender/birthDate/avatar）在 auth-service 是 SSOT，
+// 本表只缓存 + 扩展字段。name/nickname 改为可选，未填时由 GET 合并 auth 字段返回。
 model ChildProfile {
   childId            String    @id @map("child_id")
   userId             String    @map("user_id")
-  name               String
+  name               String?
   nickname           String?
   avatar             String?
   gender             String?

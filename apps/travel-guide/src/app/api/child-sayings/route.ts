@@ -10,9 +10,11 @@ export async function GET(req: NextRequest) {
   const url = new URL(req.url);
   const childId = url.searchParams.get("childId");
   const shareScope = url.searchParams.get("shareScope");
+  const userId = req.headers.get("x-debug-user-id");  // P0-4: 个人中心孩子说按用户过滤
   const limit = Math.min(Number(url.searchParams.get("limit") ?? 50), 200);
 
   const where: Record<string, unknown> = {};
+  if (userId) where.userId = userId;
   if (childId) where.childId = childId;
   if (shareScope) where.shareScope = shareScope;
 
@@ -20,7 +22,10 @@ export async function GET(req: NextRequest) {
     where,
     orderBy: { createdAt: "desc" },
     take: limit,
-    select: { id: true, text: true, mood: true, shareScope: true, createdAt: true, childId: true },
+    select: {
+      id: true, text: true, mood: true, shareScope: true,
+      createdAt: true, childId: true, spotId: true, source: true,
+    },
   });
 
   return NextResponse.json({ code: "OK", data: { items } });

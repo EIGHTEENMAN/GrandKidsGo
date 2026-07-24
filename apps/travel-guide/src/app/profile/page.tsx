@@ -1,10 +1,10 @@
-// 个人中心 — 走天下 PC 端（v1.0）
-// 用户功能入口：儿童画廊 | 孩子说 | 足迹地图（等 key）
+// 个人中心 — 总览（/profile 主页 + layout 共享 Header）
 'use client';
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import { HeartIcon, UserIcon, MapPinIcon, BabyIcon, StarIcon, SparklesIcon, GuidebookIcon } from '@/components/Icons';
+import ProfileSidebar from '@/components/profile/ProfileSidebar';
+import { HeartIcon, BabyIcon, MapPinIcon, GuidebookIcon, SparklesIcon, TrophyIcon } from '@/components/Icons';
 
 const TRAVEL_API = (process.env.NEXT_PUBLIC_TRAVEL_API as string) || 'https://travel.grandand.com';
 
@@ -15,9 +15,11 @@ interface ProfileData {
   guideCount: number;
   totalViews: number;
   totalLikes: number;
+  badgeCount: number;
+  childrenCount: number;
 }
 
-export default function ProfilePage() {
+export default function ProfileOverview() {
   const router = useRouter();
   const [data, setData] = useState<ProfileData | null>(null);
   const [loading, setLoading] = useState(true);
@@ -28,118 +30,124 @@ export default function ProfilePage() {
 
   useEffect(() => {
     if (!token) { router.push('/login?redirect=/profile'); return; }
-    // 同时查用户信息 + 统计数据
-    Promise.all([
-      fetch('/api/auth/me', { headers: { authorization: `Bearer ${token}` } }).then(r => r.json()),
-      fetch(`${TRAVEL_API}/api/child-sayings`).then(r => r.json()).catch(() => ({ data: { items: [] } })),
-      fetch(`${TRAVEL_API}/api/gallery`).then(r => r.json()).catch(() => ({ data: { items: [] } })),
-    ])
-      .then(([userData, sayingData, galleryData]) => {
-        const user = userData.data ?? userData;
-        const sayingCount = sayingData.data?.items?.length ?? 0;
-        const galleryCount = galleryData.data?.items?.length ?? 0;
-        setData({ user, childSayingCount: sayingCount, galleryCount, guideCount: 0, totalViews: 0, totalLikes: 0 });
+    fetch('/api/auth/me', { headers: { authorization: `Bearer ${token}` } })
+      .then(r => r.json())
+      .then(async (userData) => {
+        const user = userData?.data ?? userData?.user ?? userData;
+        if (!user?.id) { router.push('/login?redirect=/profile'); return; }
+
+        // 并行拉所有统计
+        const [sayings, gallery, stats, badges, children] = await Promise.all([
+          fetch(`${TRAVEL_API}/api/child-sayings?shareScope=public,private,community&limit=1`)
+            .then(r => r.json().catch(() => ({ data: { items: [], total: 0 } }))),
+          fetch(`${TRAVEL_API}/api/gallery?limit=1`)
+            .then(r => r.json().catch(() => ({ data: { items: [], total: 0 } }))),
+          fetch(`/api/user/travel-stats`, { headers: { 'x-debug-user-id': user.id } })
+            .then(r => r.json().catch(() => null)),
+          fetch(`/api/user/travel-badges`, { headers: { 'x-debug-user-id': user.id } })
+            .then(r => r.json().catch(() => null)),
+          fetch(`/api/user/children?userId=${user.id}`, { headers: { 'x-debug-user-id': user.id } })
+            .then(r => r.json().catch(() => null)),
+        ]);
+
+        const sayingCount = sayings?.data?.total ?? sayings?.data?.items?.length ?? 0;
+        const galleryCount = gallery?.data?.total ?? gallery?.data?.items?.length ?? 0;
+        const statData = stats?.data ?? stats ?? {};
+        const badgeArr = badges?.data ?? [];
+        const childArr = children?.data?.items ?? children?.items ?? [];
+
+        setData({
+          user,
+          childSayingCount: sayingCount,
+          galleryCount,
+          guideCount: statData.guideCount ?? statData.publishedCount ?? 0,
+          totalViews: statData.totalViews ?? 0,
+          totalLikes: statData.totalLikes ?? 0,
+          badgeCount: Array.isArray(badgeArr) ? badgeArr.length : 0,
+          childrenCount: Array.isArray(childArr) ? childArr.length : 0,
+        });
       })
       .catch(console.error)
       .finally(() => setLoading(false));
   }, [router, token]);
 
-  if (loading) return <div className="min-h-screen flex items-center justify-center text-gray-400">加载中…</div>;
-  if (!data) return <div className="min-h-screen flex items-center justify-center text-gray-500">请先登录</div>;
+  if (loading) return <div className="min-h-[60vh] flex items-center justify-center text-gray-400">加载中…</div>;
+  if (!data) return <div className="min-h-[60vh] flex items-center justify-center text-gray-500">请先登录</div>;
 
   const { user } = data;
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-blue-50 via-white to-cyan-50">
-      <header className="bg-gradient-to-r from-blue-600 via-cyan-600 to-teal-600 text-white">
-        <div className="max-w-6xl mx-auto px-6 py-10">
-          <Link href="/" className="text-blue-100 text-sm hover:text-white">← 返回首页</Link>
-          <div className="mt-6 flex items-center gap-5">
-            <span className="w-16 h-16 rounded-full bg-white/20 flex items-center justify-center text-white text-2xl font-bold border-2 border-white/30 flex-shrink-0">
-              {(user.nickname || user.username)?.[0] ?? '?'}
-            </span>
-            <div>
-              <h1 className="text-3xl font-extrabold">我的</h1>
-              <p className="text-blue-100 text-sm mt-1">{user.nickname || user.username || '走天下用户'}</p>
-            </div>
-          </div>
-        </div>
-      </header>
+    <div className="grid grid-cols-1 lg:grid-cols-[260px_1fr] gap-6">
+      <ProfileSidebar
+        user={user}
+        counts={{
+          guides: data.guideCount,
+          children: data.childrenCount,
+          sayings: data.childSayingCount,
+          badges: data.badgeCount,
+        }}
+      />
 
-      <div className="max-w-6xl mx-auto px-6 py-8">
-        {/* 功能入口卡片 */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
-          {/* 儿童画廊 */}
-          <Link href="/gallery" className="bg-white rounded-2xl shadow-sm border border-gray-100 p-5 hover:shadow-lg transition group">
-            <div className="flex items-center gap-4 mb-3">
-              <span className="w-12 h-12 rounded-2xl bg-gradient-to-br from-pink-400 to-rose-500 flex items-center justify-center shadow-md">
-                <HeartIcon size={22} className="text-white" />
-              </span>
-              <div className="flex-1 min-w-0">
-                <h3 className="font-bold text-gray-900 truncate group-hover:text-pink-600 transition">儿童画廊</h3>
-                <p className="text-xs text-gray-500">{data.galleryCount} 张照片</p>
-              </div>
-              <span className="text-gray-300 group-hover:text-pink-400 transition">→</span>
-            </div>
-            <p className="text-sm text-gray-600">孩子旅行中拍下的照片</p>
-          </Link>
-
-          {/* 孩子说 */}
-          <Link href="/child-sayings" className="bg-white rounded-2xl shadow-sm border border-gray-100 p-5 hover:shadow-lg transition group">
-            <div className="flex items-center gap-4 mb-3">
-              <span className="w-12 h-12 rounded-2xl bg-gradient-to-br from-amber-400 to-orange-500 flex items-center justify-center shadow-md">
-                <BabyIcon size={22} className="text-white" />
-              </span>
-              <div className="flex-1 min-w-0">
-                <h3 className="font-bold text-gray-900 truncate group-hover:text-amber-600 transition">孩子说</h3>
-                <p className="text-xs text-gray-500">{data.childSayingCount} 条语录</p>
-              </div>
-              <span className="text-gray-300 group-hover:text-amber-400 transition">→</span>
-            </div>
-            <p className="text-sm text-gray-600">记录孩子的童言趣语</p>
-          </Link>
-
-          {/* 足迹地图（阻塞于 AMAP_API_KEY） */}
-          <div className="bg-gray-50 rounded-2xl border border-gray-200 p-5 opacity-60 cursor-not-allowed">
-            <div className="flex items-center gap-4 mb-3">
-              <span className="w-12 h-12 rounded-2xl bg-gradient-to-br from-slate-400 to-slate-500 flex items-center justify-center shadow-md">
-                <MapPinIcon size={22} className="text-white" />
-              </span>
-              <div className="flex-1 min-w-0">
-                <h3 className="font-bold text-gray-500 truncate">足迹地图</h3>
-                <p className="text-xs text-gray-400">即将上线</p>
-              </div>
-            </div>
-            <p className="text-sm text-gray-400">收集孩子的旅行足迹（等待 AMAP 地图配置）</p>
-          </div>
-        </div>
-
-        {/* 攻略统计 */}
-        <section className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 mb-8">
+      <div className="space-y-6 min-w-0">
+        {/* 数据看板 */}
+        <section className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
           <h2 className="text-lg font-bold text-gray-900 mb-4 inline-flex items-center gap-2">
-            <GuidebookIcon size={18} className="text-blue-600" /> 我的攻略
+            <SparklesIcon size={18} className="text-blue-600" /> 我的数据
           </h2>
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
-            <div>
-              <div className="text-2xl font-extrabold text-blue-600">{data.guideCount}</div>
-              <div className="text-xs text-gray-500 mt-1">发布攻略</div>
-            </div>
-            <div>
-              <div className="text-2xl font-extrabold text-blue-600">{data.totalViews}</div>
-              <div className="text-xs text-gray-500 mt-1">浏览</div>
-            </div>
-            <div>
-              <div className="text-2xl font-extrabold text-pink-600">{data.totalLikes}</div>
-              <div className="text-xs text-gray-500 mt-1">点赞</div>
-            </div>
-            <div>
-              <Link href="/guides/create" className="inline-block mt-2 px-4 py-2 bg-gradient-to-r from-blue-500 to-cyan-500 text-white rounded-full text-xs font-bold hover:shadow-md transition">
-                发布新攻略
-              </Link>
-            </div>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            <StatCard icon={<GuidebookIcon size={16} className="text-blue-600" />} label="已发攻略" value={data.guideCount} />
+            <StatCard icon={<BabyIcon size={16} className="text-amber-600" />} label="童言趣语" value={data.childSayingCount} />
+            <StatCard icon={<HeartIcon size={16} className="text-pink-600" />} label="儿童画廊" value={data.galleryCount} />
+            <StatCard icon={<TrophyIcon size={16} className="text-yellow-600" />} label="已获勋章" value={data.badgeCount} />
+            <StatCard icon={<span className="text-blue-600">👁</span>} label="总浏览" value={data.totalViews} />
+            <StatCard icon={<span className="text-pink-600">♥</span>} label="总点赞" value={data.totalLikes} />
+          </div>
+        </section>
+
+        {/* 快捷入口 */}
+        <section className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
+          <h2 className="text-lg font-bold text-gray-900 mb-4">快捷入口</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <Link href="/guides/create" className="flex items-center gap-3 p-3 rounded-xl bg-gradient-to-r from-blue-50 to-cyan-50 hover:from-blue-100 hover:to-cyan-100 transition">
+              <span className="w-10 h-10 rounded-xl bg-gradient-to-r from-blue-500 to-cyan-500 flex items-center justify-center text-white font-bold">+</span>
+              <div>
+                <p className="font-bold text-gray-900">发布新攻略</p>
+                <p className="text-xs text-gray-500">分享你和孩子的旅行故事</p>
+              </div>
+            </Link>
+            <Link href="/child-sayings" className="flex items-center gap-3 p-3 rounded-xl bg-gradient-to-r from-amber-50 to-orange-50 hover:from-amber-100 hover:to-orange-100 transition">
+              <BabyIcon size={20} className="text-amber-600" />
+              <div>
+                <p className="font-bold text-gray-900">记录童言趣语</p>
+                <p className="text-xs text-gray-500">孩子的金句值得被记住</p>
+              </div>
+            </Link>
+            <Link href="/gallery" className="flex items-center gap-3 p-3 rounded-xl bg-gradient-to-r from-pink-50 to-rose-50 hover:from-pink-100 hover:to-rose-100 transition">
+              <HeartIcon size={20} className="text-pink-600" />
+              <div>
+                <p className="font-bold text-gray-900">上传旅行照片</p>
+                <p className="text-xs text-gray-500">孩子的旅行画廊</p>
+              </div>
+            </Link>
+            <Link href="/places" className="flex items-center gap-3 p-3 rounded-xl bg-gradient-to-r from-emerald-50 to-green-50 hover:from-emerald-100 hover:to-green-100 transition">
+              <MapPinIcon size={20} className="text-emerald-600" />
+              <div>
+                <p className="font-bold text-gray-900">找亲子景点</p>
+                <p className="text-xs text-gray-500">13 类亲子宝典</p>
+              </div>
+            </Link>
           </div>
         </section>
       </div>
-    </main>
+    </div>
+  );
+}
+
+function StatCard({ icon, label, value }: { icon: React.ReactNode; label: string; value: number }) {
+  return (
+    <div className="bg-gray-50 rounded-xl p-4 text-center">
+      <div className="flex items-center justify-center gap-1.5 mb-1 text-xs text-gray-500">{icon}<span>{label}</span></div>
+      <div className="text-2xl font-extrabold text-gray-900">{value}</div>
+    </div>
   );
 }
