@@ -1,6 +1,18 @@
 (function() {
   'use strict';
 
+  // 废弃 PWA Service Worker 注销（清除旧版 PWA 缓存干扰）
+  if (typeof navigator !== 'undefined' && 'serviceWorker' in navigator) {
+    navigator.serviceWorker.getRegistrations().then(function(regs) {
+      for (var i = 0; i < regs.length; i++) regs[i].unregister();
+    });
+    if (typeof caches !== 'undefined') {
+      caches.keys().then(function(names) {
+        for (var i = 0; i < names.length; i++) caches.delete(names[i]);
+      });
+    }
+  }
+
   var TOKEN_KEY = 'grandkidsgo_token';
   var USER_KEY = 'grandkidsgo_user';
   var COOKIE_NAME = 'grandkidsgo_token';
