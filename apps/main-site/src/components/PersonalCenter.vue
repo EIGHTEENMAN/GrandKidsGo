@@ -430,9 +430,8 @@ const ageOptions = Array.from({ length: 18 }, (_, i) => i + 1)
       </div>
     </div>
 
-    <div v-if="loading && !user" class="pc-loading">加载中...</div>
-
-    <div v-else-if="!user" class="pc-body">
+    <!-- 未登录时直接显示提示 -->
+    <div v-if="!user" class="pc-guest">
       <div class="pc-hero">
         <div class="pc-hero-text">
           <h1 class="pc-hero-title">个人中心</h1>
