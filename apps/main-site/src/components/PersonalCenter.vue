@@ -116,7 +116,7 @@ async function loadData() {
   }
 }
 
-onMounted(() => { if (props.open) loadData() })
+onMounted(() => { loadData() })
 
 // ─── Header Search ──────────────────────────────────────────
 function doSearch() {
