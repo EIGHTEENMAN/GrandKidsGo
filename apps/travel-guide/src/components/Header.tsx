@@ -50,6 +50,8 @@ export default function Header() {
   const handleLogin = (u: any) => {
     setShowAuth(false);
     refreshUser();
+    // 登录成功后立即同步 cookie→sessionStorage
+    getToken();
     const isNew = localStorage.getItem('grandkidsgo_isNewUser') === 'true';
     if (isNew && (!u.nickname || u.nickname.startsWith('user_'))) {
       setShowSetup(true);

@@ -97,11 +97,15 @@ function checkParentConsent(user: any) {
   if (user && user.requiresParentConsent) {
     pendingConsentUserId.value = user.id
     showParentConsent.value = true
+    showAuth.value = true  // 确保弹窗显示（open 绑定 showAuth || showParentConsent）
+  } else {
+    showParentConsent.value = false
   }
 }
 
 async function onParentConsentComplete() {
   showParentConsent.value = false
+  showAuth.value = false
   // 重新拉取用户,requiresParentConsent 应已变 false
   await auth.refreshUser()
   if (auth.user) {
@@ -155,6 +159,7 @@ onMounted(() => {
 
 function handleLogin(user: any) {
   showAuth.value = false
+  showParentConsent.value = false
   refreshUser()
   const isNew = getIsNewUser()
   if (isNew && (!user.nickname || user.nickname.startsWith('user_'))) {
@@ -169,7 +174,7 @@ function handleLogout() {
 
 function handleCloseAuth() {
   showAuth.value = false
-  showParentConsent = false
+  showParentConsent.value = false
   localStorage.setItem('grandkidsgo_auth_prompted', '1')
   sessionStorage.setItem('grandkidsgo_auth_shown_once', '1')
 }
