@@ -12,11 +12,11 @@ const emit = defineEmits<{ close: []; logout: [] }>()
 
 // ─── State ──────────────────────────────────────────────────
 const user = ref<any>(getUser())
+const loading = ref(!user.value)
+const error = ref('')
 const children = ref<any[]>([])
 const points = ref(0)
 const learningSummary = ref<any[]>([])
-const loading = ref(true)
-const error = ref('')
 const viewMode = ref<'parent' | 'child'>('parent')
 const activeChild = ref<any>(null)
 const searchQuery = ref('')
