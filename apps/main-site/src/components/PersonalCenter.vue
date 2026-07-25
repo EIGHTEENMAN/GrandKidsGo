@@ -86,6 +86,11 @@ async function loadData() {
   try {
     const u = await fetchUser()
     if (u) user.value = u
+    else {
+      // 未登录：直接跳到未登录提示
+      loading.value = false
+      return
+    }
     const c = await getChildren()
     if (c.code === 'OK') children.value = c.data || []
 
