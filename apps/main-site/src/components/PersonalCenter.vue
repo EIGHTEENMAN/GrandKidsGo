@@ -427,6 +427,24 @@ const ageOptions = Array.from({ length: 18 }, (_, i) => i + 1)
 
     <div v-if="loading && !user" class="pc-loading">加载中...</div>
 
+    <div v-else-if="!user && !loading" class="pc-body">
+      <div class="pc-hero">
+        <div class="pc-hero-text">
+          <h1 class="pc-hero-title">个人中心</h1>
+          <p class="pc-hero-desc">请先登录，查看学习情况和孩子档案</p>
+        </div>
+      </div>
+      <div class="text-center py-12">
+        <p class="text-gray-500">您还未登录</p>
+        <button
+          @click="$emit('close')"
+          class="mt-4 px-6 py-3 bg-green-600 text-white rounded-xl text-sm font-bold hover:bg-green-700 transition-all inline-block"
+        >
+          返回首页登录
+        </button>
+      </div>
+    </div>
+
     <div v-else class="pc-body">
       <!-- ── Profile Switcher ─────────────────────────────── -->
       <div class="pc-switcher">

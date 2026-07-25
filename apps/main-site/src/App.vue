@@ -137,9 +137,11 @@ onMounted(() => {
     history.replaceState(null, '', window.location.pathname)
   }
   // Soft prompt: show auth modal once on first visit if not logged in
-  if (!isLoggedIn() && !localStorage.getItem('grandkidsgo_auth_prompted')) {
+  // 只在非 /personal-center 页面弹（用户已知道要登录去个人中心，不用再提示）
+  if (!isLoggedIn() && !localStorage.getItem('grandkidsgo_auth_prompted') && !sessionStorage.getItem('grandkidsgo_auth_shown_once')) {
     setTimeout(() => {
       showAuth.value = true
+      sessionStorage.setItem('grandkidsgo_auth_shown_once', '1')
     }, 500)
   }
   // Check for new user setup — redirect to full page
@@ -167,7 +169,9 @@ function handleLogout() {
 
 function handleCloseAuth() {
   showAuth.value = false
+  showParentConsent = false
   localStorage.setItem('grandkidsgo_auth_prompted', '1')
+  sessionStorage.setItem('grandkidsgo_auth_shown_once', '1')
 }
 
 async function handleSetupComplete() {
@@ -372,7 +376,7 @@ const stats = [
       :force="showParentConsent"
       :force-consent="showParentConsent"
       :force-consent-user-id="pendingConsentUserId"
-      @close="showParentConsent ? null : handleCloseAuth()"
+      @close="handleCloseAuth()"
       @login="handleLogin"
       @consent-complete="onParentConsentComplete"
     />
