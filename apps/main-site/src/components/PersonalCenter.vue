@@ -427,11 +427,11 @@ const ageOptions = Array.from({ length: 18 }, (_, i) => i + 1)
 
     <div v-if="loading && !user" class="pc-loading">加载中...</div>
 
-    <div v-else-if="!user && !loading" class="pc-body">
+    <div v-else-if="!user" class="pc-body">
       <div class="pc-hero">
         <div class="pc-hero-text">
           <h1 class="pc-hero-title">个人中心</h1>
-          <p class="pc-hero-desc">请先登录，查看学习情况和孩子档案</p>
+          <p class="pc-hero-desc">{{ error || '请先登录，查看学习情况和孩子档案' }}</p>
         </div>
       </div>
       <div class="text-center py-12">
