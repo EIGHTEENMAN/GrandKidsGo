@@ -144,9 +144,12 @@ onMounted(() => {
   // 只在非 /personal-center 页面弹（用户已知道要登录去个人中心，不用再提示）
   if (!isLoggedIn() && !localStorage.getItem('grandkidsgo_auth_prompted') && !sessionStorage.getItem('grandkidsgo_auth_shown_once')) {
     setTimeout(() => {
-      showAuth.value = true
+      // 再次确认用户仍未登录（可能中间已通过手动登录按钮完成）
+      if (!isLoggedIn()) {
+        showAuth.value = true
+      }
       sessionStorage.setItem('grandkidsgo_auth_shown_once', '1')
-    }, 500)
+    }, 800)
   }
   // Check for new user setup — redirect to full page
   if (isLoggedIn() && getIsNewUser() && !window.location.pathname.startsWith('/profile-setup')) {
