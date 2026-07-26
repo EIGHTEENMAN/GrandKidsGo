@@ -171,7 +171,7 @@ onMounted(load)
             class="tp-rarity-pill"
             :style="{ background: RARITY_META[r].color + '15', color: RARITY_META[r].color }">
             <span class="tp-rarity-emoji">{{ RARITY_META[r].emoji }}</span>
-            <span class="tp-rarity-num">{{ summary.byRarity[r] || 0 }}</span>
+            <span class="tp-rarity-num">{{ (summary.byRarity as Record<string, number>)[r] || 0 }}</span>
             <span class="tp-rarity-label">{{ RARITY_META[r].label }}</span>
           </div>
         </div>

@@ -30,8 +30,8 @@ function updateChild(idx: number, field: string, value: string) {
   children.value[idx] = { ...children.value[idx], [field]: value }
 }
 
-function addChild() {
-  children.value.push({ nickname: '', gender: '', birthday: '', avatar: '', phone: '' })
+function addNewChild() {
+  children.value.push({ nickname: '', gender: '', birthday: '', avatar: '', phone: '', password: '' })
 }
 
 function removeChild(idx: number) {
@@ -209,7 +209,7 @@ async function save() {
           </div>
         </div>
 
-        <button class="ps-btn ps-btn-dashed" @click="addChild">
+        <button class="ps-btn ps-btn-dashed" @click="addNewChild">
           + 添加另一个孩子
         </button>
 

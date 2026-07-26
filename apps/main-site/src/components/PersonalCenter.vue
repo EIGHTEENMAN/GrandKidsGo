@@ -6,6 +6,7 @@ import CategoryChart from '@shared/components/CategoryChart.vue'
 import AchievementWall from '@shared/components/AchievementWall.vue'
 import LearningPath from '@shared/components/LearningPath.vue'
 import TravelPanel from './TravelPanel.vue'
+import { navLinks } from '@shared/config/navLinks'
 
 const props = defineProps<{ open: boolean }>()
 const emit = defineEmits<{ close: []; logout: [] }>()

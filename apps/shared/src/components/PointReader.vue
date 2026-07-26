@@ -23,9 +23,10 @@ const segments = computed(() => {
 })
 
 function segmentGraphemes(text: string): string[] {
-  if (typeof Intl.Segmenter !== 'undefined') {
-    const seg = new Intl.Segmenter('zh-CN', { granularity: 'grapheme' })
-    return [...seg.segment(text)].map(s => s.segment)
+  const Segmenter = (Intl as any).Segmenter
+  if (typeof Segmenter !== 'undefined') {
+    const seg = new Segmenter('zh-CN', { granularity: 'grapheme' })
+    return [...seg.segment(text)].map((s: any) => s.segment)
   }
   return [...text]
 }

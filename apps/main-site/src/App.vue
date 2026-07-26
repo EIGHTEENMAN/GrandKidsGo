@@ -18,6 +18,7 @@ import FAQPage from '@/components/FAQPage.vue'
 import { navLinks } from '@shared/config/navLinks'
 
 const auth = useAuthStore()
+const goHome = () => { window.location.href = 'https://grandand.com' }
 const localUser = ref<any>(getUser())
 const showAuth = ref(false)
 const showSetup = ref(false)
@@ -407,8 +408,8 @@ const stats = [
   <PersonalCenter
     v-if="isPersonalCenterPage"
     :open="true"
-    @close="() => window.location.href = 'https://grandand.com'"
-    @logout="() => window.location.href = 'https://grandand.com'"
+    @close="goHome"
+    @logout="goHome"
   />
 
   <!-- Profile Setup Page (full page, not modal) -->

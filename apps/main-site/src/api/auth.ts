@@ -165,7 +165,7 @@ export async function fetchUser() {
   }
 }
 
-export async function saveProfile(data: { nickname: string; avatar?: string }) {
+export async function saveProfile(data: { nickname: string; avatar?: string; gender?: string; birthday?: string }) {
   const token = getToken()
   const res = await fetch('/api/user/profile', {
     method: 'PUT',

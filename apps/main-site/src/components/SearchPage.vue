@@ -224,7 +224,7 @@ onMounted(async () => {
               rel="noopener noreferrer"
               class="s-app-card"
             >
-              <div class="s-app-icon" :style="{ backgroundColor: app.color + '18' }">
+              <div class="s-app-icon" :style="{ backgroundColor: ((app as any).color || '#2563eb') + '18' }">
                 <span class="s-app-emoji">{{ app.icon }}</span>
               </div>
               <h4 class="s-app-name">{{ app.name }}</h4>
