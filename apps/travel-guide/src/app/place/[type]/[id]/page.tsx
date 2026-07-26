@@ -14,6 +14,7 @@ import {
   HospitalIcon, PharmacyIcon, StrollerIcon, DiDiIcon, HotelRoomIcon,
   SubwayIcon, BusIcon, ParkingIcon, PlaneTravelIcon, TrainIcon, TrophyIcon,
 } from '@/components/Icons';
+import { TAG_CATEGORIES } from '@/lib/tags';
 
 const TRAVEL_API = (process.env.NEXT_PUBLIC_TRAVEL_API as string) || 'https://travel.grandand.com';
 
@@ -679,6 +680,8 @@ function ReviewForm({ type, placeId, placeName }: { type: string; placeId: strin
   const [hasHighChair, setHasHighChair] = useState(false);
   const [hasNapRoom, setHasNapRoom] = useState(false);
   const [strollerOk, setStrollerOk] = useState(false);
+  const [kidFriendly, setKidFriendly] = useState(0);  // 0=不填
+  const [selectedTags, setSelectedTags] = useState<string[]>([]);
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
 
@@ -700,11 +703,13 @@ function ReviewForm({ type, placeId, placeName }: { type: string; placeId: strin
           childRating,
           childAgeMonths,
           text: text || null,
+          tags: selectedTags,
           visitDate: visitDate || null,
           hasParking,
           hasHighChair: isRestaurant ? hasHighChair : undefined,
           hasNapRoom,
           strollerOk,
+          kidFriendly: kidFriendly || null,
         }),
       });
       const d = await res.json();
@@ -725,7 +730,7 @@ function ReviewForm({ type, placeId, placeName }: { type: string; placeId: strin
     return (
       <div className="bg-emerald-50 border border-emerald-200 rounded-2xl p-6 mt-4 text-center">
         <CheckIcon size={32} className="text-emerald-600 mx-auto mb-2" />
-        <div className="font-bold text-emerald-900">评价已提交，三视角分数已更新！</div>
+        <div className="font-bold text-emerald-900">评价已提交，评分已更新！</div>
         <div className="text-sm text-emerald-700 mt-1">感谢您的真实分享 🎉</div>
       </div>
     );
@@ -829,6 +834,50 @@ function ReviewForm({ type, placeId, placeName }: { type: string; placeId: strin
           <input type="checkbox" checked={strollerOk} onChange={(e) => setStrollerOk(e.target.checked)} className="accent-blue-500" />
           <span className="inline-flex items-center gap-1"><ThumbsUpIcon size={12} /> 婴儿车友好</span>
         </label>
+      </div>
+
+      {/* 标签（多选，最多 5 个） */}
+      <div className="mb-4">
+        <label className="block text-sm text-gray-600 mb-2">标签（最多 5 个，可选）</label>
+        <div className="flex flex-wrap gap-1.5">
+          {TAG_CATEGORIES.flatMap(c => c.tags).map(t => {
+            const sel = selectedTags.includes(t.id);
+            const full = selectedTags.length >= 5 && !sel;
+            return (
+              <button
+                key={t.id}
+                type="button"
+                disabled={full}
+                onClick={() => {
+                  if (sel) setSelectedTags(selectedTags.filter(x => x !== t.id));
+                  else setSelectedTags([...selectedTags, t.id]);
+                }}
+                className={`px-2.5 py-1 rounded-full text-xs border transition ${sel ? 'bg-blue-500 text-white border-blue-500' : 'bg-white text-gray-600 border-gray-200 hover:border-blue-300'} ${full ? 'opacity-40 cursor-not-allowed' : ''}`}
+              >
+                {t.emoji} {t.label}
+              </button>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* 综合亲子友好度（可选） */}
+      <div className="mb-4">
+        <label className="block text-sm text-gray-600 mb-2">综合亲子友好度（可选）</label>
+        <div className="flex items-center gap-1">
+          {[1, 2, 3, 4, 5].map((n) => (
+            <button
+              key={n}
+              type="button"
+              onClick={() => setKidFriendly(kidFriendly === n ? 0 : n)}
+              className={`text-2xl transition ${n <= kidFriendly ? 'text-amber-500' : 'text-gray-200'}`}
+              aria-label={`${n} 星`}
+            >
+              <StarIcon size={24} />
+            </button>
+          ))}
+          {kidFriendly === 0 && <span className="text-xs text-gray-400 ml-2">不填</span>}
+        </div>
       </div>
 
       <button
