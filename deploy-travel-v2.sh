@@ -24,23 +24,12 @@ ssh "$SERVER" "cd $REMOTE && npm ci --omit=dev --ignore-scripts 2>&1 | tail -5"
 echo "=== 3. 生成 Prisma Client ==="
 ssh "$SERVER" "cd $REMOTE && npx prisma generate 2>&1 | tail -5"
 
-echo "=== 4. 备份旧数据 + 改名旧表 ==="
-ssh "$SERVER" "PGPASSWORD='HaodaerDB@2026' psql -h 127.0.0.1 -U haodaer -d travel_guide <<'SQL'
--- 备份：把旧表改名（保留数据）
-DO \$\$
-DECLARE
-  tbl text;
-BEGIN
-  FOR tbl IN SELECT tablename FROM pg_catalog.pg_tables WHERE schemaname='public' AND tablename NOT LIKE '\\_prisma%'
-  LOOP
-    EXECUTE format('ALTER TABLE IF EXISTS %I RENAME TO v1_%I', tbl, tbl);
-  END LOOP;
-END \$\$;
-SQL
-"
+echo "=== 4. 清空旧数据（全量重建）==="
+# 注意：此步骤会清空 public schema 下所有表（含 _prisma_migrations），
+# 确保 prisma migrate deploy 从头建表。仅适用于无真实用户数据需保留的场景。
+ssh "$SERVER" "PGPASSWORD='HaodaerDB@2026' psql -h 127.0.0.1 -U haodaer -d travel_guide -c 'DROP SCHEMA public CASCADE; CREATE SCHEMA public; GRANT ALL ON SCHEMA public TO haodaer; GRANT ALL ON SCHEMA public TO public;'"
 
 echo "=== 5. 跑迁移 ==="
-# 先忽略 Pending 迁移，直接 apply
 ssh "$SERVER" "cd $REMOTE && npx prisma migrate deploy 2>&1 | tail -20"
 
 echo "=== 6. Seed 种子数据 ==="
@@ -49,7 +38,8 @@ ssh "$SERVER" "cd $REMOTE && npx tsx src/lib/data-pipeline/06-seed-badges.ts 2>&
 ssh "$SERVER" "cd $REMOTE && npx tsx src/lib/data-pipeline/08-snapshot-leaderboard.ts 2>&1 | tail -10"
 
 echo "=== 7. Build Next.js ==="
-ssh "$SERVER" "cd $REMOTE && npm run build 2>&1 | tail -10"
+# set -o pipefail 确保 build 失败时管道退出码非零，脚本会中断而不是继续重启 PM2
+ssh "$SERVER" "cd $REMOTE && set -o pipefail && npm run build 2>&1 | tail -20"
 
 echo "=== 8. 重启 PM2 ==="
 ssh "$SERVER" "pm2 restart travel-guide 2>&1"
