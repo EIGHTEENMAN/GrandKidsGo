@@ -61,6 +61,12 @@ export function setIsNewUser(val: boolean) {
 }
 
 export function logout() {
+  // 调 auth-service /logout 清共享 cookie（domain=.grandand.com），影响所有子站
+  fetch('/api/auth/logout', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({}),
+  }).catch(() => {})
   removeToken()
   removeUser()
   setIsNewUser(false)
@@ -131,6 +137,23 @@ export async function fetchUser() {
     const res = await fetch('/api/auth/me', {
       headers: { Authorization: `Bearer ${token}` },
     })
+    if (res.status === 401) {
+      // accessToken 过期，清 sessionStorage 让 getToken() fallback 读 cookie 的 syncToken（7d）
+      // syncToken 与 accessToken 的 JWT payload 相同、verifyAccessToken 不区分 type，可直接用于 /me
+      sessionStorage.removeItem(TOKEN_KEY)
+      const cookieToken = getCookie(TOKEN_KEY)
+      if (!cookieToken || cookieToken === token) return null
+      const retry = await fetch('/api/auth/me', {
+        headers: { Authorization: `Bearer ${cookieToken}` },
+      })
+      const d2 = await retry.json()
+      if (d2.code === 'OK') {
+        sessionStorage.setItem(TOKEN_KEY, cookieToken)
+        setUser(d2.data)
+        return d2.data
+      }
+      return null
+    }
     const d = await res.json()
     if (d.code === 'OK') {
       setUser(d.data)

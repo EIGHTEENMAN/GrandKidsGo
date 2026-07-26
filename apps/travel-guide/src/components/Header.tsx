@@ -22,28 +22,16 @@ export default function Header() {
   useEffect(() => {
     refreshUser();
 
-    const syncCookieToken = () => {
-      const hadToken = sessionStorage.getItem('grandkidsgo_token');
-      const cookieToken = getToken(); // 这个函数会 fallback 读 cookie
-      if (!hadToken && cookieToken) {
-        refreshUser();
-      }
-    };
-
-    // 兼容旧 haodaer_token cookie：走天下切换到主站 token 命名时仍有旧用户
+    // cookie→sessionStorage 一次性迁移（跨站首次访问时 syncToken 在 cookie 里）
     if (!isLoggedIn()) {
-      getToken(); // 触发 auth.ts 内的 cookie→sessionStorage 迁移
+      getToken();
+      refreshUser();
     }
 
+    // storage 事件：同源标签页间同步登录/登出状态
     window.addEventListener('storage', refreshUser);
-    // 间隔检查：主站可能在另一个标签页登录，写入 cookie，这里主动同步
-    const iv = setInterval(() => {
-      refreshUser();
-      syncCookieToken();
-    }, 2000);
     return () => {
       window.removeEventListener('storage', refreshUser);
-      clearInterval(iv);
     };
   }, []);
 
