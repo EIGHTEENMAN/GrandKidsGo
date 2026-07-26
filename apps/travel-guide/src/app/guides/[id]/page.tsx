@@ -179,9 +179,13 @@ export default function GuideDetailPage() {
         {/* ============ ③ 作者信息 + 互动 ============ */}
         <section className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 mb-8">
           <div className="flex items-center gap-4 mb-4">
-            <span className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-400 to-cyan-400 flex items-center justify-center text-white text-lg font-bold shadow-md flex-shrink-0">
-              {data.author.nickname?.[0] ?? '?'}
-            </span>
+            {data.author.avatar ? (
+              <img src={data.author.avatar} alt={data.author.nickname} className="w-12 h-12 rounded-full object-cover shadow-md flex-shrink-0" />
+            ) : (
+              <span className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-400 to-cyan-400 flex items-center justify-center text-white text-lg font-bold shadow-md flex-shrink-0">
+                {data.author.nickname?.[0] ?? '?'}
+              </span>
+            )}
             <div className="flex-1 min-w-0">
               <div className="font-medium text-gray-900 truncate">{data.author.nickname || '匿名用户'}</div>
               <div className="text-xs text-gray-500">{timeAgo(data.publishedAt || data.createdAt)} · {data.stats.view ?? 0} 次浏览</div>

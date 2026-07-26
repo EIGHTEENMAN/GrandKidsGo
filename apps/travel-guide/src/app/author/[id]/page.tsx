@@ -19,7 +19,7 @@ interface AuthorGuide {
 }
 
 interface AuthorData {
-  author: { id: string; nickname: string; guideCount: number; totalViews: number; totalLikes: number };
+  author: { id: string; nickname: string; avatar?: string | null; guideCount: number; totalViews: number; totalLikes: number };
   guides: AuthorGuide[];
 }
 
@@ -48,9 +48,13 @@ export default function AuthorPage() {
         <div className="max-w-6xl mx-auto px-6 py-10">
           <Link href="/" className="text-blue-100 text-sm hover:text-white">← 返回首页</Link>
           <div className="mt-6 flex items-center gap-5">
-            <span className="w-16 h-16 rounded-full bg-white/20 flex items-center justify-center text-white text-2xl font-bold border-2 border-white/30 flex-shrink-0">
-              {author.nickname[0] ?? '?'}
-            </span>
+            {author.avatar ? (
+              <img src={author.avatar} alt={author.nickname} className="w-16 h-16 rounded-full object-cover border-2 border-white/30 flex-shrink-0" />
+            ) : (
+              <span className="w-16 h-16 rounded-full bg-white/20 flex items-center justify-center text-white text-2xl font-bold border-2 border-white/30 flex-shrink-0">
+                {author.nickname[0] ?? '?'}
+              </span>
+            )}
             <div>
               <h1 className="text-3xl font-extrabold">{author.nickname}</h1>
               <div className="flex flex-wrap gap-3 mt-2 text-blue-100 text-sm">

@@ -2,6 +2,7 @@
 // 返回昵称/头像/攻略数/攻略列表
 import { NextResponse } from "next/server";
 import prisma from "@/lib/prisma";
+import { fetchUser, fallbackUser } from "@/lib/user-service";
 
 export const dynamic = "force-dynamic";
 
@@ -23,12 +24,16 @@ export async function GET(_req: Request, { params }: { params: { id: string } })
     totalLikes: acc.totalLikes + g.likeCount,
   }), { guideCount: 0, totalViews: 0, totalLikes: 0 });
 
+  // 跨服务拉取真实昵称/头像（DB 不可用时降级为占位）
+  const authorUser = fetchUser(params.id) ?? fallbackUser(params.id);
+
   return NextResponse.json({
     code: "OK",
     data: {
       author: {
         id: params.id,
-        nickname: "童慧行用户",
+        nickname: authorUser.nickname,
+        avatar: authorUser.avatar,
         ...totalStats,
       },
       guides: guides.map(g => ({
