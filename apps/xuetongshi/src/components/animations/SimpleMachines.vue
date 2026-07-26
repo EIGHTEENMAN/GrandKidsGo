@@ -3,7 +3,7 @@
  * SimpleMachines — 简单机械（4 种 Tab 切换）
  *   - 杠杆、滑轮、斜面、齿轮
  */
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
 
 type Mode = 'lever' | 'pulley' | 'incline' | 'gear'
 const mode = ref<Mode>('lever')

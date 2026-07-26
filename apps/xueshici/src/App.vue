@@ -2,7 +2,7 @@
 import { ref, computed, watch, onMounted, onUnmounted } from "vue"
 import { poemsIndex, categories, categoryColors, poetBios, type PoemMeta } from './data/poems-meta'
 import type { Poem, Section } from './data/poems'
-import { speak, stopSpeaking, playMp3, stopAll, selectBgm, detectMood } from './lib/audio'
+import { stopSpeaking, playMp3, stopAll, selectBgm, detectMood } from './lib/audio'
 import { loadPoem, loadPoemsByAuthor, loadAllPoems } from './lib/poem-loader'
 import { filterApps } from '@shared/composables/useSearch'
 import { reportLearningProgress, getActiveChildId } from '@shared/composables/useLearningProgress'
@@ -81,6 +81,7 @@ function goNextPoem() {
 }
 
 const { token, user } = useAuth()
+const userInfo = computed(() => user.value)
 const stats = useLearningStats('xueshici')
 
 watch(currentView, (newView, oldView) => {
@@ -134,7 +135,7 @@ const filteredPoems = computed(() => {
 // Poets grouped by dynasty (for home page)
 interface PoetGroup {
   name: string
-  poems: Poem[]
+  poems: PoemMeta[]
   count: number
 }
 interface DynastyGroup {
@@ -153,7 +154,7 @@ const poetsByDynasty = computed<DynastyGroup[]>(() => {
   const dynasties = activeDynasty.value === '全部' ? categories : [activeDynasty.value]
   return dynasties.map(dyn => {
     const dynPoems = base.filter(p => p.category === dyn)
-    const poetMap = new Map<string, Poem[]>()
+    const poetMap = new Map<string, PoemMeta[]>()
     dynPoems.forEach(p => {
       if (!poetMap.has(p.author)) poetMap.set(p.author, [])
       poetMap.get(p.author)!.push(p)
@@ -185,7 +186,7 @@ function openPoet(name: string) {
 
 function openDetail(p: Poem) {
   stopSpeaking()
-  stats.markRead(p.id)
+  stats.markRead(String(p.id))
   // 直接进 reader（详情页已合并），默认进入第一段
   if (!p.sections || p.sections.length === 0) return
   currentPoem.value = p
@@ -279,7 +280,7 @@ async function restoreFromHash() {
     if (poemId != null) {
       const p = await loadPoem(Number(poemId))
       if (p) {
-        const sec = p.sections.find(s => s.id == sectionId)
+        const sec = p.sections.find(s => String(s.id) === sectionId)
         if (sec) {
           currentPoem.value = p
           currentSection.value = sec
@@ -294,7 +295,7 @@ async function restoreFromHash() {
     if (!found && poemId == null) {
       const allPoems = await loadAllPoems()
       for (const p of allPoems) {
-        const sec = p.sections.find(s => s.id == id)
+        const sec = p.sections.find(s => String(s.id) === id)
         if (sec) {
           currentPoem.value = p
           currentSection.value = sec
@@ -507,7 +508,7 @@ function handleSearch(q: string) {
 
 function goToSection(poem: Poem, section: Section) {
   stopSpeaking()
-  stats.markRead(poem.id)
+  stats.markRead(String(poem.id))
   currentPoem.value = poem
   currentSection.value = section
   currentView.value = 'reader'
@@ -626,7 +627,7 @@ watch([() => currentView.value, () => currentPoem.value], () => {
       <!-- Learning Progress -->
       <div class="ls-bar animate-fadeIn">
         <template v-if="token && user">
-          <span class="ls-user">{{ user.nickname || user.username }}</span>
+          <span class="ls-user">{{ userInfo?.nickname || userInfo?.username }}</span>
           <span class="ls-dot"></span>
           <span>👤 已认识 {{ stats.openedCount }}/{{ totalPoets }} 位诗人</span>
           <span class="ls-dot"></span>

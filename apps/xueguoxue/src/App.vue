@@ -18,6 +18,7 @@ import PointReader from '@shared/components/PointReader.vue'
 
 // Auth state
 const { token, user } = useAuth()
+const userInfo = computed(() => user.value)
 
 // Learning stats
 const stats = useLearningStats('xueguoxue')
@@ -451,7 +452,7 @@ onUnmounted(() => {
       <!-- Learning Progress -->
       <div class="ls-bar animate-fadeIn">
         <template v-if="token && user">
-          <span class="ls-user">{{ user.nickname || user.username }}</span>
+          <span class="ls-user">{{ userInfo?.nickname || userInfo?.username }}</span>
           <span class="ls-dot"></span>
           <span>📖 已打开 {{ stats.openedCount }}/{{ totalBooks }} 本书</span>
           <span class="ls-dot"></span>

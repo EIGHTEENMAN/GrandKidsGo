@@ -50,6 +50,7 @@ function goNextSection() {
 const showChallenge = ref(false) // 答题功能暂时隐藏，待后续优化再启用
 const challengeSectionRef = ref('')
 const { token, user } = useAuth()
+const userInfo = computed(() => user.value)
 const stats = useLearningStats('xuetongshi')
 
 // Lazy-loaded full data (with section content)
@@ -390,7 +391,7 @@ onUnmounted(() => {
       <!-- Learning Progress -->
       <div class="ls-bar animate-fadeIn">
         <template v-if="token && user">
-          <span class="ls-user">{{ user.nickname || user.username }}</span>
+          <span class="ls-user">{{ userInfo?.nickname || userInfo?.username }}</span>
           <span class="ls-dot"></span>
           <span>🌍 已了解 {{ stats.openedCount }}/{{ categories.length }} 个领域</span>
           <span class="ls-dot"></span>

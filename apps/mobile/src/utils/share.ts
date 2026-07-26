@@ -46,7 +46,7 @@ export function shareToWeixinTimeline(payload: SharePayload): Promise<boolean> {
   return new Promise((resolve) => {
     // #ifdef MP-WEIXIN || APP-PLUS
     try {
-      uni.share({
+      (uni.share as any)({
         provider: 'weixin',
         scene: 'WXSenceTimeline',
         title: payload.title,

@@ -5,7 +5,7 @@
  *   - 数据包在网络中流动
  *   - 互联网架构图（终端→路由器→服务器）
  */
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
 
 // 4 状态：cpu / packet / network / binary
 const view = ref<'cpu' | 'packet' | 'network' | 'binary'>('cpu')

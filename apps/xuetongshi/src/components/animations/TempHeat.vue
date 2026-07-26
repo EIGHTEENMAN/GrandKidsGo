@@ -73,7 +73,7 @@ const stateLabel = computed(() => {
       <g transform="translate(80 -70)">
         <rect x="-2" y="-10" width="4" height="40" fill="#cbd5e1" rx="2" />
         <circle cx="0" cy="32" r="6" :fill="temperature < 0 ? '#3b82f6' : temperature < 100 ? '#dc2626' : '#f97316'" />
-        <rect x="-1" :y="(40 - (temperature.value ?? 0) / 5)" width="2" height="6" fill="#7f1d1d" />
+        <rect x="-1" :y="(40 - (temperature ?? 0) / 5)" width="2" height="6" fill="#7f1d1d" />
       </g>
 
       <text x="-100" y="-95" font-size="6" fill="#facc15" font-weight="700">🌡 温度与热量</text>
