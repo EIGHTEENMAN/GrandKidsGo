@@ -486,7 +486,7 @@ v1 不做自动打分系统，靠运营手动筛 + 双盲抽检。
 | 真实高德 POI 同步 | mock 数据阶段用了预置 16 个 POI；真实 key 上线后需重跑 01 | **P0** |
 | 真实 STS 签发 | 现接口返 mock；上线后写阿里云 STS 代码（见 src/app/api/upload/sts/route.ts 占位） | **P0** |
 | 真实 SiliconFlow 调用 | 现 mock 输出占位文字；上线后 AI 起草 kidHook/pitfalls 才有内容 | **P0** |
-| auth-service 联合 token 校验 | 当前用 `x-debug-user-id` header；上线后改 grandkidsgo_token 校验 | **P0** |
+| auth-service 联合 token 校验 | ✅ 已完成：25 处 API 鉴权从 `x-debug-user-id` 改为 `verifyAuth` JWT 本地校验（Bearer 优先 + cookie grandkidsgo_token fallback）；auth-service config.js 加固（生产无 JWT_SECRET 启动即 throw + CORS 非白名单 origin 拒绝） | **已完成** |
 | admin 后台 UI | 审核接口已通；apps/admin 还没"走天下审核" tab | **P1** |
 | travels/forum 跨产品数据共享 | 跨产品脱敏策略已定；实际数据流尚未打通 | **P2** |
 | 主站用户信息接口 | 攻略详情 author 当前用占位昵称；需跨 auth-service 拉真实 nickname/avatar | **P1** |

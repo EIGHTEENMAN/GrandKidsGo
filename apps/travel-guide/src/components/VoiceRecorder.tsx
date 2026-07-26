@@ -11,6 +11,7 @@
 'use client';
 import { useEffect, useRef, useState } from 'react';
 import { SparklesIcon, CheckIcon, AlertIcon, RefreshIcon, PlayIcon } from '@/components/Icons';
+import { authedFetch } from '@/lib/auth';
 
 interface VoiceRecorderProps {
   onUploaded?: (result: { id: string; status: string; reviewReason?: string | null }) => void;
@@ -156,10 +157,8 @@ export default function VoiceRecorder({ onUploaded, childId, mood, spotId, compa
 
       setPhase({ kind: 'reviewing' });
 
-      const userId = localStorage.getItem('haodaer_user_id') ?? '';  // 不敏感，前端仅用于显示
-      const res = await fetch('/api/child-sayings/voice-upload', {
+      const res = await authedFetch('/api/child-sayings/voice-upload', {
         method: 'POST',
-        headers: { 'x-debug-user-id': userId },
         body: form,
       });
       const json = await res.json();

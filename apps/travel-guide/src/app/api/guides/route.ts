@@ -3,16 +3,18 @@
 import { NextRequest, NextResponse } from "next/server";
 import prisma from "@/lib/prisma";
 import { extractChildSayingsFromHtml } from "@/lib/extract-child-sayings";
+import { verifyAuth } from "@/lib/verify-auth";
 
 export const dynamic = "force-dynamic";
 
 export async function POST(req: NextRequest) {
   try {
     // 鉴权
-    const userId = req.headers.get("x-debug-user-id");
-    if (!userId) {
+    const auth = await verifyAuth(req);
+    if (!auth) {
       return NextResponse.json({ code: "AUTH_REQUIRED", message: "请先登录" }, { status: 401 });
     }
+    const userId = auth.id;
 
     const body = await req.json();
     const { title, contentHtml, cityId, spotId, days, childAges, travelStyle, coverImages, childSayings } = body;

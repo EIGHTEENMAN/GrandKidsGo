@@ -6,6 +6,7 @@
 
 import { NextRequest, NextResponse } from "next/server";
 import prisma from "@/lib/prisma";
+import { verifyAuth } from "@/lib/verify-auth";
 
 export const dynamic = "force-dynamic";
 
@@ -50,7 +51,8 @@ export async function GET(
   }
 
   // 隐私：未授权的用户，过滤出榜
-  const userId = req.headers.get("x-debug-user-id");
+  const auth = await verifyAuth(req);
+  const userId = auth?.id ?? null;
   let items = (snapshot.payloadJson as any[]) ?? [];
   if (userId && scope !== "city") {
     // 用户自己永远可看（即使配置不允许）

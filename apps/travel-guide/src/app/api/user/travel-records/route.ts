@@ -3,17 +3,19 @@
 
 import { NextRequest, NextResponse } from "next/server";
 import prisma from "@/lib/prisma";
+import { verifyAuth } from "@/lib/verify-auth";
 
 export const dynamic = "force-dynamic";
 
 export async function GET(req: NextRequest) {
-  const userId = req.headers.get("x-debug-user-id");
-  if (!userId) {
+  const auth = await verifyAuth(req);
+  if (!auth) {
     return NextResponse.json(
       { error: { code: "USER_REQUIRED" } },
       { status: 401 },
     );
   }
+  const userId = auth.id;
   const items = await prisma.planRecord.findMany({
     where: { userId, status: { in: ["completed", "published"] } },
     orderBy: { startDate: "desc" },

@@ -3,6 +3,7 @@
 // GET /api/child-sayings/random — 随机金句
 import { NextRequest, NextResponse } from "next/server";
 import prisma from "@/lib/prisma";
+import { verifyAuth } from "@/lib/verify-auth";
 
 export const dynamic = "force-dynamic";
 
@@ -10,7 +11,8 @@ export async function GET(req: NextRequest) {
   const url = new URL(req.url);
   const childId = url.searchParams.get("childId");
   const shareScope = url.searchParams.get("shareScope");
-  const userId = req.headers.get("x-debug-user-id");  // P0-4: 个人中心孩子说按用户过滤
+  const auth = await verifyAuth(req);
+  const userId = auth?.id ?? null;  // P0-4: 个人中心孩子说按用户过滤
   const limit = Math.min(Number(url.searchParams.get("limit") ?? 50), 200);
 
   const where: Record<string, unknown> = {};
@@ -33,8 +35,9 @@ export async function GET(req: NextRequest) {
 }
 
 export async function POST(req: NextRequest) {
-  const userId = req.headers.get("x-debug-user-id");
-  if (!userId) return NextResponse.json({ code: "AUTH_REQUIRED", message: "请先登录" }, { status: 401 });
+  const auth = await verifyAuth(req);
+  if (!auth) return NextResponse.json({ code: "AUTH_REQUIRED", message: "请先登录" }, { status: 401 });
+  const userId = auth.id;
 
   const body = await req.json();
   const text = (body.text ?? "").trim().slice(0, 200);

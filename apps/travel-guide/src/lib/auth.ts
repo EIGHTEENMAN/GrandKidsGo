@@ -87,10 +87,10 @@ export function logout() {
 }
 
 /**
- * 走天下统一鉴权 fetch helper（批次1 P0 修复 2）
+ * 走天下统一鉴权 fetch helper
  * - 自动从 sessionStorage/cookie 取 Bearer token
- * - 同时附带 x-debug-user-id（向后兼容老 route 内部从 header 取 userId）
  * - 401 时自动清 token 并触发自定义事件，调用方可监听 'auth:logout' 跳登录
+ * - 后端用 verifyAuth(req) 验证 JWT 签名（src/lib/verify-auth.ts）
  */
 export interface AuthedFetchOptions extends RequestInit {
   userId?: string;
@@ -102,7 +102,6 @@ export async function authedFetch(url: string, opts: AuthedFetchOptions = {}): P
     ...(opts.headers as Record<string, string> | undefined),
   };
   if (token) headers['authorization'] = `Bearer ${token}`;
-  if (opts.userId) headers['x-debug-user-id'] = opts.userId;
   const res = await fetch(url, { ...opts, headers });
   if (res.status === 401 && typeof window !== 'undefined') {
     // 触发全局事件，Header/页面可监听跳转登录

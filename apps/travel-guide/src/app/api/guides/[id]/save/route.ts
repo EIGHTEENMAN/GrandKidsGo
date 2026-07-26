@@ -3,6 +3,7 @@
 
 import { NextRequest, NextResponse } from "next/server";
 import prisma from "@/lib/prisma";
+import { verifyAuth } from "@/lib/verify-auth";
 
 export const dynamic = "force-dynamic";
 
@@ -10,14 +11,14 @@ export async function POST(
   req: NextRequest,
   { params }: { params: { id: string } },
 ) {
-  // 简化：从 header 取 userId；生产用 grandkidsgo_token 校验
-  const userId = req.headers.get("x-debug-user-id") ?? `anon-${req.headers.get("x-forwarded-for") ?? "local"}`;
-  if (userId.startsWith("anon-")) {
+  const auth = await verifyAuth(req);
+  if (!auth) {
     return NextResponse.json(
       { error: { code: "LOGIN_REQUIRED", message: "需要登录" } },
       { status: 401 },
     );
   }
+  const userId = auth.id;
   const existing = await prisma.guideSave.findUnique({
     where: { userId_guideId: { userId, guideId: params.id } },
   });

@@ -6,6 +6,7 @@ import { NextRequest, NextResponse } from "next/server";
 import prisma from "@/lib/prisma";
 import { RARITY_EXCHANGE_POINTS } from "@/lib/badge-defs";
 import { addPoints } from "@/lib/service-client";
+import { verifyAuth } from "@/lib/verify-auth";
 
 export const dynamic = "force-dynamic";
 
@@ -15,10 +16,11 @@ export async function POST(
   req: NextRequest,
   { params }: { params: { badgeId: string } },
 ) {
-  const me = req.headers.get("x-debug-user-id");
-  if (!me) {
+  const auth = await verifyAuth(req);
+  if (!auth) {
     return NextResponse.json({ error: { code: "USER_REQUIRED", message: "需要登录" } }, { status: 401 });
   }
+  const me = auth.id;
 
   // params.badgeId 是 travel_badge.id（用户实际持有的那枚）
   const myBadge = await prisma.travelBadge.findUnique({
@@ -97,10 +99,11 @@ export async function GET(
   { params }: { params: { badgeId: string } },
 ) {
   // GET 列出可兑换的（用 me 自己的未兑换勋章）
-  const me = _req.headers.get("x-debug-user-id");
-  if (!me) {
+  const auth = await verifyAuth(_req);
+  if (!auth) {
     return NextResponse.json({ error: { code: "USER_REQUIRED", message: "需要登录" } }, { status: 401 });
   }
+  const me = auth.id;
   const badges = await prisma.travelBadge.findMany({
     where: { userId: me, exchanged: false },
     include: { badgeDef: { select: { name: true, icon: true, rarity: true, category: true } } },

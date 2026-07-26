@@ -4,6 +4,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { PlaceNearbyCategory } from "@prisma/client";
 import prisma from "@/lib/prisma";
+import { verifyAuth } from "@/lib/verify-auth";
 
 export const dynamic = "force-dynamic";
 
@@ -96,7 +97,8 @@ export async function GET(
   });
 
   // 记录浏览
-  const userId = req.headers.get("x-debug-user-id");
+  const auth = await verifyAuth(req);
+  const userId = auth?.id ?? null;
   if (userId) {
     await prisma.placeViewLog.create({
       data: {

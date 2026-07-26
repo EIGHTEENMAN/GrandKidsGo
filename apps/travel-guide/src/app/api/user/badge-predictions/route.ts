@@ -8,17 +8,19 @@
 
 import { NextRequest, NextResponse } from "next/server";
 import { predictBadgesFor } from "@/lib/badge-predictor";
+import { verifyAuth } from "@/lib/verify-auth";
 
 export const dynamic = "force-dynamic";
 
 export async function GET(req: NextRequest) {
-  const userId = req.headers.get("x-debug-user-id");
-  if (!userId) {
+  const auth = await verifyAuth(req);
+  if (!auth) {
     return NextResponse.json(
       { error: { code: "USER_REQUIRED", message: "需要登录" } },
       { status: 401 },
     );
   }
+  const userId = auth.id;
 
   try {
     const predictions = await predictBadgesFor(userId);

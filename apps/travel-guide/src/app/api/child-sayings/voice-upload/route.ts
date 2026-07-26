@@ -13,6 +13,7 @@ import crypto from "node:crypto";
 import prisma from "@/lib/prisma";
 import { moderateTravelText } from "@/lib/moderation";
 import { transcribeAudio } from "@/lib/voice-asr";
+import { verifyAuth } from "@/lib/verify-auth";
 
 export const dynamic = "force-dynamic";
 export const maxDuration = 30; // 上传限制 30 秒录音
@@ -21,10 +22,11 @@ const TMP_DIR = process.env.VOICE_TMP_DIR || "/tmp/travel-voice-uploads";
 const MAX_BYTES = 5 * 1024 * 1024; // 5 MB
 
 export async function POST(req: NextRequest) {
-  const userId = req.headers.get("x-debug-user-id");
-  if (!userId) {
+  const auth = await verifyAuth(req);
+  if (!auth) {
     return NextResponse.json({ error: { code: "AUTH_REQUIRED", message: "请先登录" } }, { status: 401 });
   }
+  const userId = auth.id;
 
   let form: FormData;
   try {

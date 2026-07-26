@@ -14,6 +14,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import prisma from "@/lib/prisma";
 import { recomputePlaceAggregate } from "@/lib/place-aggregate";
+import { verifyAuth } from "@/lib/verify-auth";
 
 export const dynamic = "force-dynamic";
 
@@ -21,13 +22,14 @@ export async function POST(
   req: NextRequest,
   { params }: { params: { type: string; id: string } },
 ) {
-  const userId = req.headers.get("x-debug-user-id");
-  if (!userId) {
+  const auth = await verifyAuth(req);
+  if (!auth) {
     return NextResponse.json(
       { error: { code: "USER_REQUIRED", message: "请先登录" } },
       { status: 401 },
     );
   }
+  const userId = auth.id;
 
   const { type, id } = params;
   const body = await req.json().catch(() => ({}));
@@ -74,6 +76,18 @@ export async function POST(
     return NextResponse.json(
       { error: { code: "PLACE_NOT_FOUND", message: "地点不存在" } },
       { status: 404 },
+    );
+  }
+
+  // 频次检测：同 userId 近 5 分钟提交 >= 10 条 → 拒（防多地点刷分）
+  const recentReviews = await prisma.placeReview.findMany({
+    where: { userId, createdAt: { gte: new Date(Date.now() - 5 * 60_000) } },
+    select: { id: true },
+  });
+  if (recentReviews.length >= 10) {
+    return NextResponse.json(
+      { error: { code: "RATE_LIMIT", message: "提交过于频繁，请 5 分钟后再试" } },
+      { status: 429 },
     );
   }
 
