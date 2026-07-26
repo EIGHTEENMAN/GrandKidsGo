@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
-import { SpanIcon, UserIcon, EyeIcon, HeartIcon, ClockIcon, MapPinIcon, GuidebookIcon } from '@/components/Icons';
+import { EyeIcon, HeartIcon, ClockIcon, MapPinIcon, GuidebookIcon } from '@/components/Icons';
 
 const TRAVEL_API = (process.env.NEXT_PUBLIC_TRAVEL_API as string) || 'https://travel.grandand.com';
 

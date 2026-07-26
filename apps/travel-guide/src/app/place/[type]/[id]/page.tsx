@@ -76,6 +76,7 @@ interface PlaceData {
   nearby?: Record<string, NearbyItem[]>;
   leaderboard?: { rank: number | null; total: number; scope: string; period: string } | null;
   poems?: Array<{ poemId: number; poemTitle: string; poemAuthor: string; linkType: string; verseLine: string | null; confidence: number; url: string }>;
+  childSayings?: Array<{ id: string; text: string; mood: string | null; childId: string | null; createdAt: string }>;
 }
 
 interface NearbyItem {
@@ -479,7 +480,7 @@ export default function PlaceDetailPage() {
                       <ChevronDown size={16} className="text-gray-400 group-open:rotate-180 transition-transform" />
                     </summary>
                     <div className="border-t border-gray-100 divide-y divide-gray-100">
-                      {itemCount > 0 ? items!.slice(0, 5).map((it: Record<string, unknown>, i: number) => (
+                      {itemCount > 0 ? items!.slice(0, 5).map((it: NearbyItem, i: number) => (
                         <div key={i} className="px-5 py-3 flex items-start gap-3">
                           <MapPinIcon size={14} className="text-blue-500 mt-1 flex-shrink-0" />
                           <div className="flex-1 min-w-0">

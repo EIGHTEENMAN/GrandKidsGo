@@ -1,15 +1,17 @@
 // PlaceNearby mock seed — 程序化生成 13 类周边 POI（孩子需求维度）
 // 运行：DATABASE_URL=postgresql://... npx tsx prisma/seed-place-nearby.ts
-import { PrismaClient, PlaceNearbyCategory } from '@prisma/client';
+import { PrismaClient, PlaceNearbyCategory, Prisma } from '@prisma/client';
 
 const prisma = new PrismaClient();
 
-// 13 类周边的程序化模板
-const CATEGORY_TEMPLATES: Record<PlaceNearbyCategory, (cityName: string, placeName: string) => Array<{
+type NearbyGen = (cityName: string, placeName: string) => Array<{
   name: string;
   distance: number;
   extra: Record<string, unknown>;
-}>> = {
+}>;
+
+// 13 类周边的程序化模板
+const CATEGORY_TEMPLATES: Record<PlaceNearbyCategory, NearbyGen> = {
   KID_RESTAURANT: (c, p) => [
     { name: `${c}海底捞(${p}店)`, distance: 380, extra: { hasKidsMenu: true, avgPrice: 120 } },
     { name: `${c}外婆家(${p}店)`, distance: 520, extra: { hasKidsMenu: true, avgPrice: 80, walkInOk: true } },
@@ -77,7 +79,7 @@ async function main() {
   let count = 0;
   for (const spot of spots) {
     const cityName = spot.city.name;
-    for (const [category, gen] of Object.entries(CATEGORY_TEMPLATES) as [PlaceNearbyCategory, ReturnType<typeof CATEGORY_TEMPLATES[PlaceNearbyCategory]>][]) {
+    for (const [category, gen] of Object.entries(CATEGORY_TEMPLATES) as [PlaceNearbyCategory, NearbyGen][]) {
       const items = gen(cityName, spot.name);
       for (const it of items) {
         await prisma.placeNearby.upsert({
@@ -89,7 +91,7 @@ async function main() {
             category,
             name: it.name,
             distanceMeters: it.distance,
-            extra: it.extra,
+            extra: it.extra as Prisma.InputJsonValue,
             source: 'mock',
             isVerified: false,
           },

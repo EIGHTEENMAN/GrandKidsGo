@@ -24,6 +24,7 @@ export async function GET(
       tags: true,
       status: true,
       publishedAt: true,
+      createdAt: true,
       viewCount: true,
       saveCount: true,
       likeCount: true,

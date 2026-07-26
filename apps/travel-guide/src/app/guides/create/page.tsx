@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect, useCallback } from 'react';
+import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import TipTapEditor from '@/components/TipTapEditor';
 import { BabyIcon, CheckIcon } from '@/components/Icons';
@@ -37,17 +38,6 @@ export default function CreateGuidePage() {
     if (!form.cityId) { setSpots([]); return; }
     fetch(`/api/places?cityId=${form.cityId}`).then(r => r.json()).then(d => setSpots(d.data?.items ?? d.items ?? [])).catch(() => {});
   }, [form.cityId]);
-
-  const updateSection = (i: number, field: string, value: any) => {
-    const s = [...form.sections];
-    (s[i] as any)[field] = value;
-    setForm({ ...form, sections: s });
-  };
-
-  const addSection = () => setForm({ ...form, sections: [...form.sections, { title: '', content: '' }] });
-  const removeSection = (i: number) => {
-    if (form.sections.length > 1) setForm({ ...form, sections: form.sections.filter((_, idx) => idx !== i) });
-  };
 
   const submit = async () => {
     if (!form.title || !form.cityId) return alert('标题和目的地不能为空');

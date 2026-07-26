@@ -28,7 +28,7 @@ export function sanitizeHtml(input: string): string {
       if (close) return `</${t}>`;
       // extract allowed attributes only
       const attrs: string[] = [];
-      for (const attr of match.matchAll(/(\w+)=["']([^"']*)["']/g)) {
+      for (const attr of Array.from(match.matchAll(/(\w+)=["']([^"']*)["']/g))) {
         const name = attr[1].toLowerCase();
         const val = attr[2].slice(0, 500);
         if (ALLOWED_ATTRS.has(name)) {
