@@ -3,6 +3,7 @@
 
 import { NextRequest, NextResponse } from "next/server";
 import prisma from "@/lib/prisma";
+import { recomputeChildFeelingProfile } from "@/lib/child-profile-aggregate";
 
 export const dynamic = "force-dynamic";
 
@@ -80,5 +81,10 @@ export async function POST(
     },
     select: { id: true },
   });
+
+  // 同步重算感受画像聚合
+  try { await recomputeChildFeelingProfile(body.childId); }
+  catch (e) { console.error('[ratings] recompute profile failed', e); }
+
   return NextResponse.json({ id: created.id });
 }

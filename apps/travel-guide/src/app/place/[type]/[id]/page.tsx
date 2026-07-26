@@ -199,6 +199,11 @@ export default function PlaceDetailPage() {
 
   const { place, stats, reviews, typeLabel } = data;
   const heroImages = buildHeroImages(place);
+  // 统一数据源：优先 PlaceAggregate（全量聚合），降级 stats（最近 30 条内存计算）
+  const ratingAdult = data.aggregate?.adultAvgScore ?? stats.adultAvg;
+  const ratingChild = data.aggregate?.kidAvgScore ?? stats.childAvg;
+  const ratingCount = data.aggregate?.reviewCount ?? stats.reviewCount;
+  const ratingWithChild = data.aggregate?.withChildRatingCount ?? stats.withChildRating;
 
   return (
     <main className="min-h-screen bg-gradient-to-b from-blue-50 via-white to-cyan-50 pb-12">
@@ -361,18 +366,18 @@ export default function PlaceDetailPage() {
               <div>
                 <div className="text-xs text-gray-500 mb-1 inline-flex items-center gap-1"><UserIcon size={12} /> 大人</div>
                 <div className="text-3xl font-extrabold text-blue-600">
-                  {stats.adultAvg ? stats.adultAvg.toFixed(1) : '—'}
+                  {ratingAdult != null ? ratingAdult.toFixed(1) : '—'}
                   <span className="text-sm font-normal text-gray-400 ml-1">/ 5</span>
                 </div>
-                <div className="text-xs text-gray-400 mt-1">{stats.reviewCount} 条</div>
+                <div className="text-xs text-gray-400 mt-1">{ratingCount} 条</div>
               </div>
               <div>
                 <div className="text-xs text-gray-500 mb-1 inline-flex items-center gap-1"><BabyIcon size={12} /> 孩子</div>
                 <div className="text-3xl font-extrabold text-pink-600">
-                  {stats.childAvg ? stats.childAvg.toFixed(1) : '—'}
+                  {ratingChild != null ? ratingChild.toFixed(1) : '—'}
                   <span className="text-sm font-normal text-gray-400 ml-1">/ 5</span>
                 </div>
-                <div className="text-xs text-gray-400 mt-1">{stats.withChildRating} 条</div>
+                <div className="text-xs text-gray-400 mt-1">{ratingWithChild} 条</div>
               </div>
             </div>
             <button
