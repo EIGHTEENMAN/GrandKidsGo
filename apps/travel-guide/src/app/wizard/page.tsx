@@ -9,10 +9,10 @@
 //    b) 不满意 → 重新生成（引擎 A 拼装）
 
 'use client';
-import { useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import { getToken } from '@/lib/auth';
+import { getToken, authedFetch } from '@/lib/auth';
 
 const TRAVEL_API = (process.env.NEXT_PUBLIC_TRAVEL_API as string) || 'https://travel.grandand.com';
 
@@ -30,6 +30,17 @@ interface SimilarGuide {
   matchReason: string;
 }
 
+// 从个人中心拉取的孩子档案（结构同 apps/travel-guide/src/lib/child-sync-client.ts）
+interface WizardChild {
+  childId: string;
+  nickname?: string | null;
+  name?: string | null;
+  gender?: string | null;
+  birthDate?: string | null;
+  avatar?: string | null;
+  likes?: string[];
+}
+
 const CITY_OPTIONS = ['北京', '上海', '广州'];
 
 export default function SmartGuideLanding() {
@@ -42,6 +53,73 @@ export default function SmartGuideLanding() {
   const [guides, setGuides] = useState<SimilarGuide[]>([]);
   const [loading, setLoading] = useState(false);
   const [forkingId, setForkingId] = useState<string | null>(null);
+  const [directLoading, setDirectLoading] = useState(false);
+
+  // 真实孩子档案（从 /api/user/children 拉）
+  const [authReady, setAuthReady] = useState(false);
+  const [userChildren, setUserChildren] = useState<WizardChild[]>([]);
+  const [childrenLoading, setChildrenLoading] = useState(false);
+  const [selectedChildIds, setSelectedChildIds] = useState<Set<string>>(new Set());
+  const hasUserChildren = !childrenLoading && authReady && userChildren.length > 0;
+
+  useEffect(() => {
+    // 加载个人中心孩子档案；失败/未登录 → fallback 到月龄胶囊
+    const token = typeof window !== 'undefined' ? getToken() : null;
+    if (!token) {
+      setAuthReady(true);
+      return;
+    }
+    setChildrenLoading(true);
+    (async () => {
+      try {
+        const meRes = await authedFetch('/api/auth/me');
+        const me = await meRes.json().catch(() => null);
+        const uid: string | undefined = me?.data?.id ?? me?.user?.id ?? me?.id;
+        if (!uid) {
+          setAuthReady(true);
+          return;
+        }
+        const r = await authedFetch(`/api/user/children?userId=${uid}`);
+        if (!r.ok) return;
+        const j = await r.json().catch(() => null);
+        const items: WizardChild[] = j?.data?.items ?? j?.items ?? [];
+        setUserChildren(items);
+        // 默认勾选第一个（若有）
+        if (items.length > 0) {
+          setSelectedChildIds(new Set([items[0].childId]));
+        }
+      } catch {
+        // swallow: fallback 路径自动生效
+      } finally {
+        setChildrenLoading(false);
+        setAuthReady(true);
+      }
+    })();
+  }, []);
+
+  // 派生代表月龄（多孩取均值，单孩直接给），fallback 用 childAgeMonths
+  const monthsFromBirth = (b: string | null | undefined): number | null => {
+    if (!b) return null;
+    const dt = new Date(b);
+    if (isNaN(dt.getTime())) return null;
+    const now = new Date();
+    let m = (now.getFullYear() - dt.getFullYear()) * 12 + (now.getMonth() - dt.getMonth());
+    if (now.getDate() < dt.getDate()) m -= 1;
+    return Math.max(0, m);
+  };
+  const selectedMonths = useMemo(
+    () =>
+      Array.from(selectedChildIds)
+        .map((id) => userChildren.find((c) => c.childId === id))
+        .map((c) => monthsFromBirth(c?.birthDate))
+        .filter((n): n is number => n !== null),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [selectedChildIds, userChildren],
+  );
+  const representativeMonths = selectedMonths.length
+    ? Math.round(selectedMonths.reduce((a, b) => a + b, 0) / selectedMonths.length)
+    : childAgeMonths;
+  const canSubmit = !loading && !directLoading && (hasUserChildren ? selectedChildIds.size > 0 : true);
 
   const searchSimilar = async () => {
     setLoading(true);
@@ -74,7 +152,7 @@ export default function SmartGuideLanding() {
             reasons.push(`天数相近（${g.days} 天）`);
           }
           if (g.childAges?.length) {
-            const ageDiff = Math.min(...g.childAges.map((a: number) => Math.abs(a - childAgeMonths)));
+            const ageDiff = Math.min(...g.childAges.map((a: number) => Math.abs(a - representativeMonths)));
             if (ageDiff <= 12) {
               score += 25;
               reasons.push(`孩子月龄相近（${Math.floor(Math.min(...g.childAges)/12)} 岁）`);
@@ -132,8 +210,6 @@ export default function SmartGuideLanding() {
     }
   };
 
-  const [directLoading, setDirectLoading] = useState(false);
-
   const regenerate = () => {
     router.push('/wizard/step1-city');
   };
@@ -149,7 +225,7 @@ export default function SmartGuideLanding() {
     const qs = new URLSearchParams({
       cityName,
       days: String(days),
-      childAgeMonths: String(childAgeMonths),
+      childAgeMonths: String(representativeMonths),
       travelStyle,
     });
     router.push(`/wizard/step1-city?${qs.toString()}`);
@@ -205,30 +281,128 @@ export default function SmartGuideLanding() {
                 </div>
               </div>
 
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">孩子当时多大？</label>
-                <div className="flex flex-wrap gap-2">
-                  {[
-                    { m: 12, l: '1 岁' },
-                    { m: 24, l: '2 岁' },
-                    { m: 36, l: '3 岁' },
-                    { m: 48, l: '4 岁' },
-                    { m: 60, l: '5 岁' },
-                    { m: 72, l: '6 岁' },
-                    { m: 96, l: '8 岁' },
-                  ].map((a) => (
-                    <button
-                      key={a.m}
-                      onClick={() => setChildAgeMonths(a.m)}
-                      className={`px-4 py-2 rounded-full text-sm transition ${
-                        childAgeMonths === a.m ? 'bg-blue-600 text-white' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
-                      }`}
+              {hasUserChildren ? (
+                <div>
+                  <div className="flex items-baseline justify-between mb-2">
+                    <label className="block text-sm font-medium text-gray-700">这次出行带哪个孩子？（可多选）</label>
+                    <Link
+                      href="/profile/children"
+                      className="text-xs text-blue-600 hover:text-blue-700 underline"
                     >
-                      {a.l}
-                    </button>
-                  ))}
+                      去个人中心管理 →
+                    </Link>
+                  </div>
+                  <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+                    {userChildren.map((c) => {
+                      const months = monthsFromBirth(c.birthDate);
+                      const ageText = months == null
+                        ? null
+                        : months < 24
+                          ? `${months} 月`
+                          : (() => {
+                              const y = Math.floor(months / 12);
+                              const r = months % 12;
+                              return r === 0 ? `${y} 岁` : `${y} 岁 ${r} 月`;
+                            })();
+                      const initials = (c.nickname ?? c.name ?? '宝')[0];
+                      const checked = selectedChildIds.has(c.childId);
+                      return (
+                        <button
+                          key={c.childId}
+                          type="button"
+                          onClick={() => {
+                            const next = new Set(selectedChildIds);
+                            if (next.has(c.childId)) next.delete(c.childId);
+                            else next.add(c.childId);
+                            setSelectedChildIds(next);
+                          }}
+                          className={`text-left bg-white rounded-2xl p-3 transition border-2 relative ${
+                            checked
+                              ? 'border-blue-500 ring-4 ring-blue-100 shadow-md'
+                              : 'border-gray-200 hover:border-gray-300'
+                          }`}
+                        >
+                          <span
+                            aria-hidden
+                            className={`absolute top-2 right-2 w-5 h-5 rounded-full flex items-center justify-center text-[10px] font-bold ${
+                              checked
+                                ? 'bg-blue-600 text-white'
+                                : 'bg-gray-100 text-gray-400 border border-gray-200'
+                            }`}
+                          >
+                            {checked ? '✓' : ''}
+                          </span>
+                          <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center text-white text-lg font-bold overflow-hidden mb-2">
+                            {c.avatar
+                              ? <img src={c.avatar} alt="" className="w-12 h-12 object-cover" />
+                              : initials}
+                          </div>
+                          <div className="font-bold text-gray-900 text-sm truncate">
+                            {c.nickname ?? c.name ?? '未命名'}
+                            {c.gender === 'male' && <span className="ml-1 text-blue-600">♂</span>}
+                            {c.gender === 'female' && <span className="ml-1 text-pink-500">♀</span>}
+                          </div>
+                          <div className="text-xs text-gray-500 mt-0.5">{ageText ?? '未填生日'}</div>
+                          {c.likes && c.likes.length > 0 && (
+                            <div className="text-[11px] text-gray-400 mt-1 truncate">
+                              喜欢：{c.likes.slice(0, 2).join('、')}
+                            </div>
+                          )}
+                        </button>
+                      );
+                    })}
+                  </div>
+                  {selectedChildIds.size === 0 && (
+                    <p className="mt-2 text-xs text-amber-700 bg-amber-50 border border-amber-100 rounded-lg px-3 py-2">
+                      请至少勾选一个孩子，两个按钮才会激活。
+                    </p>
+                  )}
                 </div>
-              </div>
+              ) : (
+                <div>
+                  <div className="flex items-baseline justify-between mb-2">
+                    <label className="block text-sm font-medium text-gray-700">孩子当时多大？（月龄估算）</label>
+                    {authReady && (
+                      <Link
+                        href="/profile/children"
+                        className="text-xs text-blue-600 hover:text-blue-700 underline"
+                      >
+                        去个人中心添加真实孩子 →
+                      </Link>
+                    )}
+                  </div>
+                  {!authReady || childrenLoading ? (
+                    <p className="text-xs text-gray-400">正在读取个人中心的孩子档案…</p>
+                  ) : (
+                    <>
+                      <div className="mb-2 text-xs text-gray-500 bg-blue-50 border border-blue-100 rounded-lg px-3 py-2">
+                        💡 还没添加孩子？先去<a href="/profile/children" className="text-blue-600 underline mx-1">个人中心</a>添加，wizard 会自动按孩子真实月龄匹配行程。
+                      </div>
+                      <div className="flex flex-wrap gap-2">
+                        {[
+                          { m: 12, l: '1 岁' },
+                          { m: 24, l: '2 岁' },
+                          { m: 36, l: '3 岁' },
+                          { m: 48, l: '4 岁' },
+                          { m: 60, l: '5 岁' },
+                          { m: 72, l: '6 岁' },
+                          { m: 96, l: '8 岁' },
+                        ].map((a) => (
+                          <button
+                            key={a.m}
+                            onClick={() => setChildAgeMonths(a.m)}
+                            className={`px-4 py-2 rounded-full text-sm transition ${
+                              childAgeMonths === a.m ? 'bg-blue-600 text-white' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                            }`}
+                          >
+                            {a.l}
+                          </button>
+                        ))}
+                      </div>
+                    </>
+                  )}
+                </div>
+              )}
 
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">想要什么风格？</label>
@@ -255,7 +429,7 @@ export default function SmartGuideLanding() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-6">
                 <button
                   onClick={searchSimilar}
-                  disabled={loading || directLoading}
+                  disabled={!canSubmit}
                   className="w-full bg-gradient-to-r from-blue-600 to-cyan-600 text-white font-bold py-4 rounded-xl disabled:opacity-50 shadow-md inline-flex items-center justify-center gap-2"
                 >
                   <span aria-hidden>🤝</span>
@@ -263,7 +437,7 @@ export default function SmartGuideLanding() {
                 </button>
                 <button
                   onClick={directGenerate}
-                  disabled={loading || directLoading}
+                  disabled={!canSubmit}
                   className="w-full bg-white text-blue-700 font-bold py-4 rounded-xl border-2 border-blue-200 hover:border-blue-400 hover:bg-blue-50 transition disabled:opacity-50 inline-flex items-center justify-center gap-2"
                 >
                   <span aria-hidden>✨</span>
