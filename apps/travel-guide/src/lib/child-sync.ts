@@ -80,10 +80,12 @@ export async function fetchAuthChildren(
 }
 
 /**
- * 创建新孩子（SSOT = auth-service）
- * - 前端表单直调：调本函数 → 写 auth-service → 写本地 Prisma childProfile（双写）
+ * 创建新孩子（SSOT = auth-service）- 服务器内部调用
+ * - 适用于 Next.js Route Handler（如 PUT /api/user/children），
+ *   可直接读到 process.env.AUTH_SERVICE_URL
+ * - 浏览器侧请走 createChildFromClient → /api/auth/children-create 同源代理
  * - 字段：nickname（必填）, gender, birthday, avatar
- * - 返回新创建的 child（含 id），前端可立刻跳到详情或刷新列表
+ * - 返回新创建的 child（含 id），调用方可用 id 写本地 Prisma 扩展字段
  */
 export async function createChildSSOT(
   fields: BaseChildFields,

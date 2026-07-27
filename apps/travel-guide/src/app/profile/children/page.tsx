@@ -6,7 +6,7 @@ import { useRouter } from 'next/navigation';
 import ProfileSidebar from '@/components/profile/ProfileSidebar';
 import { BabyIcon, SparklesIcon, ClockIcon, AlertIcon, ThumbsUpIcon, CloseIcon } from '@/components/Icons';
 import { getToken, authedFetch } from '@/lib/auth';
-import { createChildSSOT } from '@/lib/child-sync';
+import { createChildFromClient } from '@/lib/child-sync-client';
 
 type Child = {
   childId: string;
@@ -107,14 +107,11 @@ export default function MyChildrenPage() {
     setAddSaving(true);
     setAddError('');
     try {
-      await createChildSSOT(
-        {
-          nickname: addForm.nickname.trim(),
-          gender: addForm.gender || undefined,
-          birthday: addForm.birthday || undefined,
-        },
-        token,
-      );
+      await createChildFromClient({
+        nickname: addForm.nickname.trim(),
+        gender: addForm.gender || undefined,
+        birthday: addForm.birthday || undefined,
+      });
       setShowAdd(false);
       if (user?.id) await loadChildren(user.id);
     } catch (e: any) {
