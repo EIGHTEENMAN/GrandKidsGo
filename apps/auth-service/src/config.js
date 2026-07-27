@@ -36,7 +36,7 @@ const config = {
       }
     },
   },
-  cookieDomain: process.env.COOKIE_DOMAIN || (IS_PROD ? '.grandand.com' : ''),
+  cookieDomain: process.env.COOKIE_DOMAIN || '.grandand.com',
 };
 
 // 生产环境必须配置 JWT_SECRET，启动即失败（不静默 fallback 到公开 dev secret）

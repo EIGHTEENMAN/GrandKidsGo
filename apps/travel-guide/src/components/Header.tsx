@@ -23,8 +23,22 @@ export default function Header() {
     refreshUser();
 
     // cookie→sessionStorage 一次性迁移（跨站首次访问时 syncToken 在 cookie 里）
-    if (!isLoggedIn()) {
-      getToken();
+    // 跨子域访问修复：token 从 cookie 恢复了，但 user 数据不在 sessionStorage
+    // 主动调 /api/auth/me 恢复 user，避免走天下显示未登录
+    const token = getToken();
+    if (token && !getUser()) {
+      fetch('/api/auth/me', {
+        headers: { Authorization: `Bearer ${token}` },
+      })
+        .then(r => r.json())
+        .then(d => {
+          if (d.code === 'OK') {
+            setUser(d.data);
+            setLocalUser(d.data);
+          }
+        })
+        .catch(() => {});
+    } else if (!token) {
       refreshUser();
     }
 
@@ -113,7 +127,7 @@ export default function Header() {
           <div className="flex items-center gap-3 text-sm flex-shrink-0">
             {/* 返回童慧行主站按钮 - 在登录按钮左边 */}
             <a
-              href="https://grandand.com/personal-center"
+              href="https://grandand.com"
               className="hidden md:flex items-center gap-1 px-3 py-1.5 text-sm text-gray-600 hover:text-green-600 border border-gray-200 hover:border-green-300 rounded-lg transition-colors whitespace-nowrap"
             >
               <span>←</span>
