@@ -249,7 +249,13 @@ export default function SmartGuideLanding() {
   };
 
   const regenerate = () => {
-    router.push('/wizard/step1-city');
+    const qs = new URLSearchParams({
+      cityName,
+      days: String(days),
+      childAgeMonths: String(representativeMonths),
+      travelStyle,
+    });
+    router.push(`/wizard/generate?${qs.toString()}`);
   };
 
   const directGenerate = () => {
@@ -266,7 +272,7 @@ export default function SmartGuideLanding() {
       childAgeMonths: String(representativeMonths),
       travelStyle,
     });
-    router.push(`/wizard/step1-city?${qs.toString()}`);
+    router.push(`/wizard/generate?${qs.toString()}`);
   };
 
   return (
