@@ -5,6 +5,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { PrismaClient } from "@prisma/client";
 import { reviewGuide } from "@/lib/moderation";
 import { recordOperation } from "@/lib/operation-log";
+import { track, TRACK } from "@/lib/analytics";
 
 const prisma = new PrismaClient();
 
@@ -53,6 +54,13 @@ export async function POST(
       { status: 404 },
     );
   }
+
+  // 埋点：用户发起发布
+  track({
+    eventName: TRACK.GUIDE_PUBLISH_STARTED,
+    userId: plan.userId,
+    properties: { planId, cityName: plan.city?.name ?? null },
+  });
 
   let body: Body = {};
   try {
@@ -128,6 +136,12 @@ export async function POST(
   // 跑 DFA 审核
   const result = await reviewGuide({ guideId: guide.id, text: contentHtml });
   if (result.hardRejection) {
+    // 埋点：发布被 DFA 机审拦截
+    track({
+      eventName: TRACK.GUIDE_PUBLISH_SUBMITTED,
+      userId: plan.userId,
+      properties: { guideId: guide.id, planId, status: "rejected", reason: result.reasons.join("; ") },
+    });
     await recordOperation({
       actorId: plan.userId,
       action: "guide_reject",
@@ -144,6 +158,12 @@ export async function POST(
       { status: 200 },
     );
   }
+  // 埋点：发布提交成功，进入待审核
+  track({
+    eventName: TRACK.GUIDE_PUBLISH_SUBMITTED,
+    userId: plan.userId,
+    properties: { guideId: guide.id, planId, status: "pending_review" },
+  });
   await recordOperation({
     actorId: plan.userId,
     action: "guide_publish",

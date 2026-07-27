@@ -490,12 +490,12 @@ v1 不做自动打分系统，靠运营手动筛 + 双盲抽检。
 | admin 后台 UI | 审核接口已通；apps/admin 还没"走天下审核" tab | **P1** |
 | travels/forum 跨产品数据共享 | 跨产品脱敏策略已定；实际数据流尚未打通 | **P2** |
 | 主站用户信息接口 | 攻略详情 author 当前用占位昵称；需跨 auth-service 拉真实 nickname/avatar | **P1** |
-| 30+ 埋点事件实际触发 | 客户端 utils/analytics.ts 已写好；Wave C 已接入 8 个页面 17 事件，剩余可在运营期补 | **P1（已完成部分）** |
+| 30+ 埋点事件实际触发 | 客户端 utils/analytics.ts 已写好；Wave C 已接入 8 个页面 17 事件，剩余可在运营期补 | **P1（已完成全部 13 事件）** |
 | KOL 复评护城河字段 | 字段已含 `dataSource="ai_draft_v1"` 标记；运营后台分发 KOL 复评 UI 待建 | **P1** |
 | 攻略详情页"作者主页"+ 关注 | 表已建 + 接口在待办 (阶段 9 后续) | **P2** |
 | 撤回事件完成态流转 | `retraction_log.status` 留 `in_progress`，CDN 清缓存 / AI 向量 purge 完成态需异步回调 | **P2** |
 | KOL 复评后台 UI | admin 后台新增"护城河字段复评"模块 | **P2** |
-| ChildFeelingProfile 聚合 job | 每次写 ChildRating 后自动聚合到 ChildFeelingProfile；当前写完不聚合 | **P2** |
+| ChildFeelingProfile 聚合 job | ✅ 已完成：每次写 ChildRating 后同步调用 `recomputeChildFeelingProfile()`（src/lib/child-profile-aggregate.ts），支持全量对账 `recomputeAllChildProfiles()` | **已完成** |
 
 ---
 
