@@ -429,7 +429,7 @@ export default function PlaceDetailPage() {
           </section>
         )}
 
-        {/* ============ ③ 周边便利（孩子视角）与真实评价左右并行 ============ */}
+        {/* ============ ③ 周边便利（左）+ 评价&孩子说（右，上下平分） ============ */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
           {/* 左：周边便利（交通为第一个模块） */}
           <section className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
@@ -437,7 +437,6 @@ export default function PlaceDetailPage() {
               <h2 className="text-lg font-bold text-gray-900 inline-flex items-center gap-2">
                 <MapPinIcon size={18} className="text-blue-600" /> 周边便利（孩子视角）
               </h2>
-              <span className="text-xs text-gray-400">.6</span>
             </div>
             <div className="divide-y divide-gray-100">
               {/* 交通信息模块（作为周边第一个子模块） */}
@@ -519,80 +518,87 @@ export default function PlaceDetailPage() {
             </div>
           </section>
 
-          {/* 右：真实家长评价 */}
-          <section className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 flex flex-col">
-            <div className="flex items-center justify-between mb-4">
-              <h2 className="text-lg font-bold text-gray-900 inline-flex items-center gap-2">
-                <HeartIcon size={18} className="text-pink-500" /> 真实家长的评价（{reviews.length}）
-              </h2>
-              {reviews.length > 0 && (
-                <Link href={`/place/${type}/${id}/reviews`} className="text-sm text-blue-600 hover:text-blue-700 font-medium whitespace-nowrap">
-                  查看全部 →
-                </Link>
-              )}
-            </div>
-            {reviews.length === 0 && (
-              <div className="py-12 text-center border border-dashed border-gray-200 rounded-xl text-gray-500 flex-1 flex items-center justify-center">
-                还没有人评价 · 成为第一个评价的人
+          {/* 右：评价（上）+ 孩子说（下），高度平分 */}
+          <div className="flex flex-col gap-6">
+            {/* 评价 */}
+            <section className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 flex-1 flex flex-col">
+              <div className="flex items-center justify-between mb-4">
+                <h2 className="text-lg font-bold text-gray-900 inline-flex items-center gap-2">
+                  <HeartIcon size={18} className="text-pink-500" /> 真实家长的评价（{reviews.length}）
+                </h2>
+                {reviews.length > 0 && (
+                  <Link href={`/place/${type}/${id}/reviews`} className="text-sm text-blue-600 hover:text-blue-700 font-medium whitespace-nowrap">
+                    查看全部 →
+                  </Link>
+                )}
               </div>
-            )}
-            {reviews.length > 0 && (
-              <div className="flex-1 flex flex-col">
-                <div className="space-y-3 overflow-y-auto flex-1" style={{ maxHeight: '500px' }}>
-                  {reviews.slice(0, 10).map((r) => (
-                <article key={r.id} className="bg-gray-50 rounded-xl p-4">
-                  <div className="flex items-center justify-between mb-2">
-                    <div className="flex items-center gap-2">
-                      <span className="inline-flex items-center gap-1 px-2 py-0.5 bg-blue-50 rounded text-xs">
-                        <UserIcon size={10} className="text-blue-600" /><StarIcon size={10} className="text-amber-500" />{r.adultRating}
-                      </span>
-                      {r.childRating && (
-                        <span className="inline-flex items-center gap-1 px-2 py-0.5 bg-pink-50 rounded text-xs">
-                          <BabyIcon size={10} className="text-pink-600" /><StarIcon size={10} className="text-amber-500" />{r.childRating}
-                        </span>
-                      )}
-                    </div>
-                    <span className="text-xs text-gray-400">{timeAgo(r.createdAt)}</span>
-                  </div>
-                  {r.text && <p className="text-gray-700 text-sm mb-1">{r.text}</p>}
-                  {r.hasParking && <span className="text-xs bg-blue-50 text-blue-700 px-1.5 py-0.5 rounded mr-1">停车场</span>}
-                  {r.hasHighChair && <span className="text-xs bg-pink-50 text-pink-700 px-1.5 py-0.5 rounded mr-1">宝宝椅</span>}
-                  {r.hasNapRoom && <span className="text-xs bg-purple-50 text-purple-700 px-1.5 py-0.5 rounded mr-1">母婴室</span>}
-                  {r.strollerOk && <span className="text-xs bg-cyan-50 text-cyan-700 px-1.5 py-0.5 rounded">婴儿车友好</span>}
-                </article>
-              ))}
-            </div>
-            {reviews.length > 10 && (
-              <div className="mt-4 text-center">
-                <Link href={`/place/${type}/${id}/reviews`} className="inline-block px-5 py-2 border border-gray-200 rounded-full text-sm text-gray-600 hover:bg-gray-50 hover:text-blue-600 transition">
-                  查看全部评价（{reviews.length - 10} 条）→
-                </Link>
-              </div>
-            )}
-          </div>
-        )}
-      </section>
-    </div>
-
-        {/* ============ ④.5 孩子们怎么说（按 spotId 匹配） ============ */}
-        {data.childSayings && data.childSayings.length > 0 && (
-          <section className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 mb-8">
-            <h2 className="text-xl font-bold text-gray-900 mb-4 inline-flex items-center gap-2">
-              <BabyIcon size={18} className="text-pink-500" /> 孩子们怎么说
-            </h2>
-            <div className="space-y-3">
-              {data.childSayings.map((s: any) => (
-                <div key={s.id} className="bg-pink-50 rounded-2xl p-4">
-                  <p className="text-gray-900 text-lg leading-relaxed mb-1">"{s.text}"</p>
-                  <div className="flex items-center gap-2 text-xs text-gray-500">
-                    {s.mood && <span className="px-2 py-0.5 bg-pink-100 text-pink-700 rounded-full">{s.mood}</span>}
-                    <span>{new Date(s.createdAt).toLocaleDateString('zh-CN')}</span>
-                  </div>
+              {reviews.length === 0 && (
+                <div className="py-8 text-center border border-dashed border-gray-200 rounded-xl text-gray-500 flex-1 flex items-center justify-center">
+                  还没有人评价 · 成为第一个评价的人
                 </div>
-              ))}
-            </div>
-          </section>
-        )}
+              )}
+              {reviews.length > 0 && (
+                <div className="flex-1 flex flex-col">
+                  <div className="space-y-3 overflow-y-auto flex-1">
+                    {reviews.slice(0, 10).map((r) => (
+                      <article key={r.id} className="bg-gray-50 rounded-xl p-4">
+                        <div className="flex items-center justify-between mb-2">
+                          <div className="flex items-center gap-2">
+                            <span className="inline-flex items-center gap-1 px-2 py-0.5 bg-blue-50 rounded text-xs">
+                              <UserIcon size={10} className="text-blue-600" /><StarIcon size={10} className="text-amber-500" />{r.adultRating}
+                            </span>
+                            {r.childRating && (
+                              <span className="inline-flex items-center gap-1 px-2 py-0.5 bg-pink-50 rounded text-xs">
+                                <BabyIcon size={10} className="text-pink-600" /><StarIcon size={10} className="text-amber-500" />{r.childRating}
+                              </span>
+                            )}
+                          </div>
+                          <span className="text-xs text-gray-400">{timeAgo(r.createdAt)}</span>
+                        </div>
+                        {r.text && <p className="text-gray-700 text-sm mb-1">{r.text}</p>}
+                        {r.hasParking && <span className="text-xs bg-blue-50 text-blue-700 px-1.5 py-0.5 rounded mr-1">停车场</span>}
+                        {r.hasHighChair && <span className="text-xs bg-pink-50 text-pink-700 px-1.5 py-0.5 rounded mr-1">宝宝椅</span>}
+                        {r.hasNapRoom && <span className="text-xs bg-purple-50 text-purple-700 px-1.5 py-0.5 rounded mr-1">母婴室</span>}
+                        {r.strollerOk && <span className="text-xs bg-cyan-50 text-cyan-700 px-1.5 py-0.5 rounded">婴儿车友好</span>}
+                      </article>
+                    ))}
+                  </div>
+                  {reviews.length > 10 && (
+                    <div className="mt-4 text-center">
+                      <Link href={`/place/${type}/${id}/reviews`} className="inline-block px-5 py-2 border border-gray-200 rounded-full text-sm text-gray-600 hover:bg-gray-50 hover:text-blue-600 transition">
+                        查看全部评价（{reviews.length - 10} 条）→
+                      </Link>
+                    </div>
+                  )}
+                </div>
+              )}
+            </section>
+
+            {/* 孩子说 */}
+            <section className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 flex-1 flex flex-col">
+              <h2 className="text-lg font-bold text-gray-900 mb-4 inline-flex items-center gap-2">
+                <BabyIcon size={18} className="text-pink-500" /> 孩子们怎么说
+              </h2>
+              {data.childSayings && data.childSayings.length > 0 ? (
+                <div className="space-y-3 flex-1 overflow-y-auto">
+                  {data.childSayings.map((s: any) => (
+                    <div key={s.id} className="bg-pink-50 rounded-2xl p-4">
+                      <p className="text-gray-900 text-base leading-relaxed mb-1">"{s.text}"</p>
+                      <div className="flex items-center gap-2 text-xs text-gray-500">
+                        {s.mood && <span className="px-2 py-0.5 bg-pink-100 text-pink-700 rounded-full">{s.mood}</span>}
+                        <span>{new Date(s.createdAt).toLocaleDateString('zh-CN')}</span>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                <div className="py-8 text-center border border-dashed border-gray-200 rounded-xl text-gray-500 flex-1 flex items-center justify-center">
+                  还没有孩子说 · 带孩子来体验后记录 TA 的真实感受
+                </div>
+              )}
+            </section>
+          </div>
+        </div>
 
         {/* ============ ④ 古诗在此（走天下×学诗词） ============ */}
         {data.poems && data.poems.length > 0 && (
