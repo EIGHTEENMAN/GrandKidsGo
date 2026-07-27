@@ -54,17 +54,71 @@ const DAY_PRESETS = [2, 3, 5, 7, 10, 14];
 const DAY_MIN = 1;
 const DAY_MAX = 30;
 
+// 主题（与 /places 一致）
+const THEMES: { key: string; label: string }[] = [
+  { key: 'sight', label: '景点' },
+  { key: 'restaurant', label: '餐厅' },
+  { key: 'hotel', label: '酒店' },
+  { key: 'transport', label: '交通' },
+  { key: 'medical', label: '医疗' },
+  { key: 'convenience', label: '便利店' },
+  { key: 'park', label: '公园' },
+  { key: 'mall', label: '商场' },
+  { key: 'playground', label: '游乐场' },
+  { key: 'science', label: '科技馆' },
+  { key: 'library', label: '图书馆' },
+  { key: 'museum', label: '博物馆' },
+  { key: 'aquarium', label: '海洋馆' },
+];
+
+// 风格偏好 4 维 0–10（替代单一 4 选 1）
+type PrefKey = 'timeSaver' | 'moneySaver' | 'comfort' | 'uniqueness';
+interface StylePrefs { timeSaver: number; moneySaver: number; comfort: number; uniqueness: number }
+const PREF_DEFS: { key: PrefKey; label: string; desc: string }[] = [
+  { key: 'timeSaver', label: '⚡ 省时', desc: '想少排点路、少等等' },
+  { key: 'moneySaver', label: '💰 省钱', desc: '门票餐饮便宜一些' },
+  { key: 'comfort', label: '🛋️ 舒服', desc: '午休连续、母婴室齐备' },
+  { key: 'uniqueness', label: '⭐ 独特', desc: '避开热门，去人少的好去处' },
+];
+
+// 单城市下的简版 POI（用于展开面板选景点）
+interface WizardSpot {
+  id: string;
+  name: string;
+  type: string;
+  typeLabel: string;
+  rating: number;
+}
+
+// 高德 IP 定位（暂未启用 — 等 AMAP_API_KEY + 新增 /api/geo/ip-city 路由后接入）
+// 当前版本：从浏览器 localStorage 读上次选择；都没有就空。
+function loadLastFromCity(): string {
+  if (typeof window === 'undefined') return '';
+  return localStorage.getItem('wizard:lastFromCity') ?? '';
+}
+
 export default function SmartGuideLanding() {
   const router = useRouter();
   const [step, setStep] = useState<'input' | 'results'>('input');
-  const [cityName, setCityName] = useState('北京');
   const [days, setDays] = useState(3);
   const [childAgeMonths, setChildAgeMonths] = useState(36);
-  const [travelStyle, setTravelStyle] = useState('balanced');
   const [guides, setGuides] = useState<SimilarGuide[]>([]);
   const [loading, setLoading] = useState(false);
   const [forkingId, setForkingId] = useState<string | null>(null);
   const [directLoading, setDirectLoading] = useState(false);
+
+  // 旧版输入页所需状态（6 区块重构未完成，这些仍被引用）
+  const [cityName, setCityName] = useState(CITY_FALLBACK);
+  const [travelStyle, setTravelStyle] = useState('balanced');
+
+  // 6 区块状态
+  const [theme, setTheme] = useState<string>('');
+  const [fromCity, setFromCity] = useState<string>('');
+  const [fromCityQuery, setFromCityQuery] = useState<string>('');
+  const [destinationCityIds, setDestinationCityIds] = useState<Set<string>>(new Set());
+  const [openSpotPickerCityId, setOpenSpotPickerCityId] = useState<string>('');
+  const [pickedSpotsByCity, setPickedSpotsByCity] = useState<Record<string, Set<string>>>({});
+  const [preferences, setPreferences] = useState<StylePrefs>({ timeSaver: 5, moneySaver: 5, comfort: 5, uniqueness: 5 });
 
   // 真实孩子档案（从 /api/user/children 拉）
   const [authReady, setAuthReady] = useState(false);
