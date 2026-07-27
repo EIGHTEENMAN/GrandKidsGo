@@ -67,17 +67,17 @@ function ageBucket(ages: number[]): string {
   return '学龄'
 }
 
-const RARITY_META: Record<string, { label: string; emoji: string; color: string }> = {
-  bronze:  { label: '铜', emoji: '🥉', color: '#a16207' },
-  silver:  { label: '银', emoji: '🥈', color: '#475569' },
-  gold:    { label: '金', emoji: '🥇', color: '#ca8a04' },
-  diamond: { label: '钻', emoji: '💎', color: '#1e40af' },
+const RARITY_META: Record<string, { label: string; svg: string; color: string }> = {
+  bronze:  { label: '铜', svg: '<svg width="20" height="20" viewBox="0 0 24 24" fill="#a16207"><circle cx="12" cy="10" r="7"/><path d="M9 17l-2 5 5-3 5 3-2-5z" fill="#a16207"/></svg>', color: '#a16207' },
+  silver:  { label: '银', svg: '<svg width="20" height="20" viewBox="0 0 24 24" fill="#475569"><circle cx="12" cy="10" r="7"/><path d="M9 17l-2 5 5-3 5 3-2-5z" fill="#475569"/></svg>', color: '#475569' },
+  gold:    { label: '金', svg: '<svg width="20" height="20" viewBox="0 0 24 24" fill="#ca8a04"><circle cx="12" cy="10" r="7"/><path d="M9 17l-2 5 5-3 5 3-2-5z" fill="#ca8a04"/></svg>', color: '#ca8a04' },
+  diamond: { label: '钻', svg: '<svg width="20" height="20" viewBox="0 0 24 24" fill="#1e40af"><path d="M12 2l4 6-4 14-4-14z"/></svg>', color: '#1e40af' },
 }
 
-const ACTIVITY_META: Record<string, { emoji: string; label: string; color: string }> = {
-  badge_unlocked:  { emoji: '🏅', label: '勋章', color: '#f59e0b' },
-  guide_published: { emoji: '📝', label: '攻略', color: '#2563eb' },
-  trip_completed:  { emoji: '✈️', label: '出行', color: '#16a34a' },
+const ACTIVITY_META: Record<string, { svg: string; label: string; color: string }> = {
+  badge_unlocked:  { svg: '<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/></svg>', label: '勋章', color: '#f59e0b' },
+  guide_published: { svg: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>', label: '攻略', color: '#2563eb' },
+  trip_completed:  { svg: '<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5z"/></svg>', label: '出行', color: '#16a34a' },
 }
 
 // v2.0: 5 块卡（v1.5 4 块 + 等级分）
@@ -150,14 +150,18 @@ onMounted(load)
       <!-- 本周榜单（脱敏 Top 3） -->
       <div v-if="summary && summary.myRank !== null" class="tp-section tp-rank-section">
         <h3 class="tp-section-title">
-          <span>🏆 本周妈妈榜</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="#f59e0b"><path d="M6 4h12v3a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4V4z"/><path d="M4 5H2v1a3 3 0 0 0 3 3"/><path d="M20 5h2v1a3 3 0 0 1-3 3"/><path d="M10 12h4l-1 5h2v3H9v-3h2l-1-5z"/></svg>
+          <span>本周妈妈榜</span>
           <span class="tp-rank-me">你排名第 <strong>#{{ summary.myRank }}</strong></span>
         </h3>
         <p class="tp-rank-tip">数据来源：本周已发布攻略 + 孩子真实感受分均值</p>
         <a :href="`${TRAVEL_API}/leaderboard`" target="_blank" class="tp-link-btn">查看完整榜单 →</a>
       </div>
       <div v-else class="tp-section tp-rank-section">
-        <h3 class="tp-section-title">🏆 本周妈妈榜</h3>
+        <h3 class="tp-section-title">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="#f59e0b"><path d="M6 4h12v3a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4V4z"/><path d="M4 5H2v1a3 3 0 0 0 3 3"/><path d="M20 5h2v1a3 3 0 0 1-3 3"/><path d="M10 12h4l-1 5h2v3H9v-3h2l-1-5z"/></svg>
+          <span>本周妈妈榜</span>
+        </h3>
         <p class="tp-rank-tip">还没上榜 · 完成一次出行 + 发布攻略即可上榜</p>
       </div>
 
@@ -170,7 +174,7 @@ onMounted(load)
             :key="r"
             class="tp-rarity-pill"
             :style="{ background: RARITY_META[r].color + '15', color: RARITY_META[r].color }">
-            <span class="tp-rarity-emoji">{{ RARITY_META[r].emoji }}</span>
+            <span class="tp-rarity-emoji" v-html="RARITY_META[r].svg"></span>
             <span class="tp-rarity-num">{{ (summary.byRarity as Record<string, number>)[r] || 0 }}</span>
             <span class="tp-rarity-label">{{ RARITY_META[r].label }}</span>
           </div>
@@ -198,7 +202,8 @@ onMounted(load)
         <ul class="tp-activity-list">
           <li v-for="a in recentActivities" :key="a.id" class="tp-activity">
             <span class="tp-activity-tag" :style="{ background: ACTIVITY_META[a.type]?.color + '20', color: ACTIVITY_META[a.type]?.color }">
-              {{ ACTIVITY_META[a.type]?.emoji ?? '·' }} {{ ACTIVITY_META[a.type]?.label ?? a.type }}
+              <span class="tp-activity-icon" v-html="ACTIVITY_META[a.type]?.svg ?? ''"></span>
+              {{ ACTIVITY_META[a.type]?.label ?? a.type }}
             </span>
             <span class="tp-activity-text">{{ a.text }}</span>
             <span class="tp-activity-time">{{ timeAgo(a.createdAt) }}</span>
@@ -214,7 +219,7 @@ onMounted(load)
             <span class="tp-badge-icon">{{ b.icon }}</span>
             <span class="tp-badge-name">{{ b.name }}</span>
             <span class="tp-badge-rarity" :style="{ color: RARITY_META[b.rarity]?.color }">
-              {{ RARITY_META[b.rarity]?.emoji }}{{ RARITY_META[b.rarity]?.label }}
+              <span class="tp-badge-rarity-icon" v-html="RARITY_META[b.rarity]?.svg"></span>{{ RARITY_META[b.rarity]?.label }}
             </span>
           </li>
         </ul>
@@ -261,7 +266,7 @@ onMounted(load)
 /* 稀有度分布 */
 .tp-rarity-bar { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10rpx; }
 .tp-rarity-pill { display: flex; flex-direction: column; align-items: center; padding: 14rpx 8rpx; border-radius: 12rpx; }
-.tp-rarity-emoji { font-size: 32rpx; line-height: 1; }
+.tp-rarity-emoji { display: flex; align-items: center; justify-content: center; line-height: 1; }
 .tp-rarity-num { font-size: 28rpx; font-weight: 800; line-height: 1.1; margin-top: 4rpx; }
 .tp-rarity-label { font-size: 20rpx; margin-top: 2rpx; }
 
@@ -278,7 +283,8 @@ onMounted(load)
 .tp-activity-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 12rpx; }
 .tp-activity { display: flex; align-items: center; gap: 12rpx; padding: 12rpx 0; border-bottom: 1rpx solid #f1f5f9; }
 .tp-activity:last-child { border-bottom: 0; }
-.tp-activity-tag { font-size: 18rpx; padding: 4rpx 12rpx; border-radius: 8rpx; font-weight: 500; flex-shrink: 0; }
+.tp-activity-tag { font-size: 18rpx; padding: 4rpx 12rpx; border-radius: 8rpx; font-weight: 500; flex-shrink: 0; display: inline-flex; align-items: center; gap: 4rpx; }
+.tp-activity-icon { display: inline-flex; align-items: center; }
 .tp-activity-text { font-size: 24rpx; color: #475569; flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .tp-activity-time { font-size: 20rpx; color: #94a3b8; flex-shrink: 0; }
 
@@ -287,7 +293,8 @@ onMounted(load)
 .tp-badge { display: flex; flex-direction: column; align-items: center; gap: 4rpx; padding: 18rpx 10rpx; background: linear-gradient(135deg, #fef3c7, #fff); border-radius: 14rpx; border: 1rpx solid #fde68a; }
 .tp-badge-icon { font-size: 40rpx; }
 .tp-badge-name { font-size: 22rpx; font-weight: 700; color: #0f172a; text-align: center; }
-.tp-badge-rarity { font-size: 18rpx; font-weight: 700; }
+.tp-badge-rarity { font-size: 18rpx; font-weight: 700; display: inline-flex; align-items: center; gap: 2rpx; }
+.tp-badge-rarity-icon { display: inline-flex; align-items: center; }
 .tp-empty { font-size: 22rpx; color: #94a3b8; padding: 12rpx 0; }
 .tp-privacy-note { font-size: 18rpx; color: #94a3b8; margin-top: 14rpx; text-align: center; }
 </style>

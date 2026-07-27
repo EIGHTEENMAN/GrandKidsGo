@@ -258,6 +258,16 @@ function onWechatLogin() {
   error.value = '微信登录暂未开放,请使用手机号或用户名注册'
 }
 
+// SVG 图标（替代 emoji）
+const ICON_SVGS: Record<string, string> = {
+  phone: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>',
+  travel: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V4h12v5"/><path d="M6 9h12l-1 11H7L6 9z"/><path d="M9 13h6"/></svg>',
+  chat: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-9 8.5 8.5 8.5 0 0 1-3.7-.9L3 21l1.9-5.3A8.38 8.38 0 0 1 4 11.5a8.5 8.5 0 0 1 9-8.5 8.38 8.38 0 0 1 8 8.5z"/></svg>',
+}
+function methodIcon(key: string): string {
+  return ICON_SVGS[key] ?? ''
+}
+
 // ─── Parent Consent ─────────────────────────────────────────
 
 function isUnder14(birthYearVal: string): boolean {
@@ -351,18 +361,18 @@ async function submitParentConsent() {
             <h2 class="am-title">扫码登录</h2>
             <div class="am-qr">
               <div class="am-qr-inner">
-                <div class="am-qr-icon">📷</div>
+                <svg class="am-qr-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7V5a2 2 0 0 1 2-2h2"/><path d="M17 3h2a2 2 0 0 1 2 2v2"/><path d="M21 17v2a2 2 0 0 1-2 2h-2"/><path d="M7 21H5a2 2 0 0 1-2-2v-2"/><rect x="7" y="7" width="3" height="3" rx="0.5"/><rect x="14" y="7" width="3" height="3" rx="0.5"/><rect x="7" y="14" width="3" height="3" rx="0.5"/><path d="M14 14h3v3h-3z"/></svg>
                 <p class="am-qr-text">扫码登录</p>
               </div>
             </div>
             <p class="am-qr-hint">打开 App 或微信扫一扫</p>
             <div class="am-methods">
               <div class="am-method" v-for="m in [
-                { name: '童慧行 App', icon: '📱', desc: '打开童慧行 App 扫一扫' },
-                { name: '走天下 App', icon: '🧳', desc: '打开童慧行走天下 App 扫一扫' },
-                { name: '微信', icon: '💬', desc: '使用微信扫一扫' },
+                { name: '童慧行 App', icon: 'phone', desc: '打开童慧行 App 扫一扫' },
+                { name: '走天下 App', icon: 'travel', desc: '打开童慧行走天下 App 扫一扫' },
+                { name: '微信', icon: 'chat', desc: '使用微信扫一扫' },
               ]" :key="m.name">
-                <span class="am-method-icon">{{ m.icon }}</span>
+                <span class="am-method-icon" v-html="methodIcon(m.icon)"></span>
                 <div>
                   <p class="am-method-name">{{ m.name }}</p>
                   <p class="am-method-desc">{{ m.desc }}</p>
@@ -377,9 +387,9 @@ async function submitParentConsent() {
           <!-- Mobile: compact OAuth row -->
           <div class="am-mobile-oauth">
             <span class="amo-label">一键登录</span>
-            <button class="amo-btn amo-btn-wechat" @click="onWechatLogin" title="微信登录暂未开放">💬 微信</button>
-            <button class="amo-btn amo-btn-app">📱 童慧行 App</button>
-            <button class="amo-btn amo-btn-travel">🧳 走天下</button>
+            <button class="amo-btn amo-btn-wechat" @click="onWechatLogin" title="微信登录暂未开放">微信</button>
+            <button class="amo-btn amo-btn-app">童慧行 App</button>
+            <button class="amo-btn amo-btn-travel">走天下</button>
           </div>
           <!-- Tab Bar -->
           <div class="am-tabs">
@@ -657,7 +667,7 @@ async function submitParentConsent() {
   width: 100%; height: 100%; border: 2px dashed #d1d5db; border-radius: 8px;
   display: flex; flex-direction: column; align-items: center; justify-content: center;
 }
-.am-qr-icon { font-size: 40px; margin-bottom: 4px; }
+.am-qr-icon { margin-bottom: 4px; display: flex; align-items: center; justify-content: center; }
 .am-qr-text { font-size: 12px; color: #9ca3af; }
 .am-qr-hint { font-size: 14px; color: rgba(255,255,255,0.8); margin-bottom: 24px; }
 .am-methods { width: 100%; display: flex; flex-direction: column; gap: 12px; }
@@ -665,7 +675,7 @@ async function submitParentConsent() {
   display: flex; align-items: center; gap: 12px;
   background: rgba(255,255,255,0.1); border-radius: 8px; padding: 10px 16px;
 }
-.am-method-icon { font-size: 20px; }
+.am-method-icon { display: flex; align-items: center; color: rgba(255,255,255,0.9); }
 .am-method-name { font-size: 14px; font-weight: 500; }
 .am-method-desc { font-size: 12px; opacity: 0.6; }
 
