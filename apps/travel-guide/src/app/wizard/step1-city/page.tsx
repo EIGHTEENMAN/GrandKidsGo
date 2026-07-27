@@ -1,6 +1,6 @@
 // Wizard 步骤 1 — 选城市（PC 端）
 'use client';
-import { useEffect, useState } from 'react';
+import { Suspense, useEffect, useState } from 'react';
 import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
 
@@ -26,7 +26,16 @@ const STYLE_LABEL: Record<string, string> = {
   comfort: '舒服',
 };
 
-export default function WizardStep1() {
+// useSearchParams() 必须包一层 Suspense 才不会被 build 期 prerender 卡住
+export default function WizardStep1Page() {
+  return (
+    <Suspense fallback={<main className="min-h-screen bg-gradient-to-b from-blue-50 to-white" />}>
+      <WizardStep1 />
+    </Suspense>
+  );
+}
+
+function WizardStep1() {
   const searchParams = useSearchParams();
   const incomingCityName = searchParams.get('cityName') ?? '';
   const incomingDays = searchParams.get('days') ?? '';
