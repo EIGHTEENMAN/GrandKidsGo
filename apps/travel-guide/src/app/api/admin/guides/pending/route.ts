@@ -22,10 +22,11 @@ export async function GET(req: NextRequest) {
   const url = new URL(req.url);
   const page = Math.max(1, Number(url.searchParams.get("page") ?? 1));
   const pageSize = Math.min(50, Number(url.searchParams.get("pageSize") ?? 20));
+  const status = url.searchParams.get("status") ?? "pending_review";
 
   const [items, total] = await Promise.all([
     prisma.guide.findMany({
-      where: { status: "pending_review" },
+      where: { status },
       orderBy: { createdAt: "asc" },
       take: pageSize,
       skip: (page - 1) * pageSize,
@@ -42,7 +43,7 @@ export async function GET(req: NextRequest) {
         city: { select: { name: true } },
       },
     }),
-    prisma.guide.count({ where: { status: "pending_review" } }),
+    prisma.guide.count({ where: { status } }),
   ]);
 
   return NextResponse.json({
