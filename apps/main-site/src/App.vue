@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref, computed, onMounted } from 'vue'
 import { injectWebSite } from '@shared/composables/useGeoInjectLd'
-import { isLoggedIn, getUser, getIsNewUser, fetchUser, setUser, setToken, getActiveProfile, setActiveProfile, getToken } from '@/api/auth'
+import { isLoggedIn, getUser, getIsNewUser, fetchUser, setUser, setToken, getActiveProfile, setActiveProfile, getToken, checkAuthSync } from '@/api/auth'
 import { useAuthStore } from '@/stores/auth'
 import AuthModal from '@/components/AuthModal.vue'
 import ProfileSetup from '@/components/ProfileSetup.vue'
@@ -130,8 +130,8 @@ onMounted(() => {
     })
     document.addEventListener('click', () => { showChildSwitcher.value = false })
   } else if (isSearchPage.value) {
-    const params = new URLSearchParams(window.location.search)
-    const sq = params.get('q')
+    const sqParams = new URLSearchParams(window.location.search)
+    const sq = sqParams.get('q')
     if (sq) searchQuery.value = sq
   }
   // Check for login query param
@@ -159,6 +159,24 @@ onMounted(() => {
       window.location.href = '/profile-setup'
     }
   }
+
+  // 跨子域登出同步：页面重新可见时（从走天下返回/bfcache恢复），检测 cookie 是否还在
+  // 走天下退出会清共享 cookie，但本站 sessionStorage 可能还缓存着旧 token/user
+  const handleAuthSync = () => {
+    if (document.visibilityState === 'visible') {
+      const stillIn = checkAuthSync()
+      if (!stillIn) {
+        localUser.value = null
+      }
+    }
+  }
+  document.addEventListener('visibilitychange', handleAuthSync)
+  window.addEventListener('pageshow', (e: PageTransitionEvent) => {
+    if (e.persisted) handleAuthSync()
+  })
+  window.addEventListener('auth:sync-logout', () => {
+    localUser.value = null
+  })
 })
 
 function handleLogin(user: any) {
@@ -208,22 +226,42 @@ function trackApp(name: string) {
   } catch {}
 }
 
+const ICONS: Record<string, string> = {
+  book: '<path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>',
+  feather: '<path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"/><line x1="16" y1="8" x2="2" y2="22"/><line x1="17.5" y1="15" x2="9" y2="15"/>',
+  globe: '<circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>',
+  languages: '<path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/><path d="m22 22-5-10-5 10"/><path d="M14 18h6"/>',
+  zap: '<polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>',
+  plane: '<path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/>',
+  user: '<path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>',
+  baby: '<path d="M9 12h.01"/><path d="M15 12h.01"/><path d="M10 16c.5.3 1.2.5 2 .5s1.5-.2 2-.5"/><path d="M19 6.3a9 9 0 0 1 1.8 3.9 2 2 0 0 1 0 3.6 9 9 0 0 1-17.6 0 2 2 0 0 1 0-3.6A9 9 0 0 1 12 3c2 0 3.5 1.1 3.5 2.5s-.9 2.5-2 2.5c-.8 0-1.5-.4-1.5-1"/>',
+  chart: '<path d="M3 3v18h18"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/>',
+  star: '<polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>',
+  chevronUp: '<path d="m18 15-6-6-6 6"/>',
+  chevronDown: '<path d="m6 9 6 6 6-6"/>',
+}
+function svgIcon(name: string, size = 24): string {
+  const paths = ICONS[name]
+  if (!paths) return ''
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${paths}</svg>`
+}
+
 const apps = [
-  { name: '学国学', desc: '经典启蒙，明智修身', icon: '📚', href: 'https://xueguoxue.grandand.com', color: '#8b5cf6' },
-  { name: '学诗词', desc: '唐诗宋词，古韵童声', icon: '📜', href: 'https://xueshici.grandand.com', color: '#f59e0b' },
-  { name: '学通识', desc: '天文地理，万物百科', icon: '🔭', href: 'https://xuetongshi.grandand.com', color: '#06b6d4' },
-  { name: '学英语', desc: '趣味单词，自然拼读', icon: '🔤', href: 'https://english.grandand.com', color: '#ec4899' },
-  { name: '来挑战', desc: '答题对战，益智闯关', icon: '⚡', href: 'https://tiaozhan.grandand.com', color: '#ef4444' },
-  { name: '走天下', desc: '亲子旅行攻略分享', icon: '✈️', href: 'https://travel.grandand.com', color: '#22c55e' },
+  { name: '学国学', desc: '经典启蒙，明智修身', icon: 'book', href: 'https://xueguoxue.grandand.com', color: '#8b5cf6' },
+  { name: '学诗词', desc: '唐诗宋词，古韵童声', icon: 'feather', href: 'https://xueshici.grandand.com', color: '#f59e0b' },
+  { name: '学通识', desc: '天文地理，万物百科', icon: 'globe', href: 'https://xuetongshi.grandand.com', color: '#06b6d4' },
+  { name: '学英语', desc: '趣味单词，自然拼读', icon: 'languages', href: 'https://english.grandand.com', color: '#ec4899' },
+  { name: '来挑战', desc: '答题对战，益智闯关', icon: 'zap', href: 'https://tiaozhan.grandand.com', color: '#ef4444' },
+  { name: '走天下', desc: '亲子旅行攻略分享', icon: 'plane', href: 'https://travel.grandand.com', color: '#22c55e' },
 ]
 
 const stats = [
-  { label: '国学经典', count: '100+', unit: '部', icon: '📚', color: '#8b5cf6' },
-  { label: '唐诗宋词', count: '1000', unit: '首', icon: '📜', color: '#f59e0b' },
-  { label: '通识百科', count: '2000', unit: '篇', icon: '🔭', color: '#06b6d4' },
-  { label: '英语单词', count: '3000', unit: '词', icon: '🔤', color: '#ec4899' },
-  { label: '益智题目', count: '5000', unit: '道', icon: '⚡', color: '#ef4444' },
-  { label: '亲子攻略', count: '1000+', unit: '篇', icon: '✈️', color: '#22c55e' },
+  { label: '国学经典', count: '100+', unit: '部', icon: 'book', color: '#8b5cf6' },
+  { label: '唐诗宋词', count: '1000', unit: '首', icon: 'feather', color: '#f59e0b' },
+  { label: '通识百科', count: '2000', unit: '篇', icon: 'globe', color: '#06b6d4' },
+  { label: '英语单词', count: '3000', unit: '词', icon: 'languages', color: '#ec4899' },
+  { label: '益智题目', count: '5000', unit: '道', icon: 'zap', color: '#ef4444' },
+  { label: '亲子攻略', count: '1000+', unit: '篇', icon: 'plane', color: '#22c55e' },
 ]
 </script>
 
@@ -247,15 +285,16 @@ const stats = [
         </div>
         <div class="header-right">
           <div class="header-links">
-            <a v-for="link in navLinks.filter(l => !l.hidden)" :key="link.label" :href="link.href" class="header-link">{{ link.icon }} {{ link.label }}</a>
+            <a v-for="link in navLinks.filter(l => !l.hidden)" :key="link.label" :href="link.href" class="header-link">{{ link.label }}</a>
           </div>
           <div class="header-auth">
             <template v-if="localUser">
               <div class="header-switcher" @click.stop="showChildSwitcher = !showChildSwitcher">
                 <span class="header-switcher-trigger">
                   <span v-if="displayAvatar" class="header-avatar">{{ displayAvatar }}</span>
+                  <span v-else class="header-avatar" v-html="svgIcon('user', 20)"></span>
                   <span>{{ displayName }}</span>
-                  <span class="header-switcher-arrow">{{ showChildSwitcher ? '▲' : '▼' }}</span>
+                  <span class="header-switcher-arrow" v-html="showChildSwitcher ? svgIcon('chevronUp', 12) : svgIcon('chevronDown', 12)"></span>
                 </span>
                 <div class="header-switcher-dropdown" v-if="showChildSwitcher" @click.stop>
                   <div
@@ -263,7 +302,7 @@ const stats = [
                     :class="{ active: !activeProfile?.type || activeProfile.type === 'parent' }"
                     @click="switchProfile({ type: 'parent', id: localUser?.id, nickname: localUser?.nickname || localUser?.username })"
                   >
-                    <span class="hs-item-avatar">👤</span>
+                    <span class="hs-item-avatar" v-html="svgIcon('user', 18)"></span>
                     <span class="hs-item-name">{{ localUser?.nickname || localUser?.username || '家长' }}</span>
                     <span class="hs-item-label">全部</span>
                   </div>
@@ -274,12 +313,13 @@ const stats = [
                     :class="{ active: activeProfile?.id === c.id }"
                     @click="switchProfile({ type: 'child', id: c.id, nickname: c.nickname, avatar: c.avatar })"
                   >
-                    <span class="hs-item-avatar">{{ c.avatar || '👶' }}</span>
+                    <span class="hs-item-avatar" v-if="c.avatar">{{ c.avatar }}</span>
+                    <span class="hs-item-avatar" v-else v-html="svgIcon('baby', 18)"></span>
                     <span class="hs-item-name">{{ c.nickname }}</span>
                   </div>
                 </div>
               </div>
-              <button class="header-learning-btn" @click="showLearning = !showLearning">📊</button>
+              <button class="header-learning-btn" @click="showLearning = !showLearning" v-html="svgIcon('chart', 18)"></button>
               <a href="/personal-center" class="header-profile-btn">个人中心</a>
               <button class="header-logout" @click="handleLogout">退出</button>
             </template>
@@ -312,7 +352,8 @@ const stats = [
           <div v-if="localUser" class="hero-welcome animate-fadeInUp">
             <div class="welcome-card">
               <div class="welcome-header">
-                <span class="welcome-avatar">{{ displayAvatar || '👤' }}</span>
+                <span class="welcome-avatar" v-if="displayAvatar">{{ displayAvatar }}</span>
+                <span class="welcome-avatar" v-else v-html="svgIcon('user', 32)"></span>
                 <div>
                   <p class="welcome-greeting">欢迎回来</p>
                   <p class="welcome-name">{{ displayName }}</p>
@@ -324,7 +365,7 @@ const stats = [
                   <span class="ws-lbl">个孩子</span>
                 </div>
                 <div class="welcome-stat">
-                  <span class="ws-val">⭐</span>
+                  <span class="ws-val" v-html="svgIcon('star', 22)"></span>
                   <span class="ws-lbl">学习</span>
                 </div>
               </div>
@@ -339,7 +380,7 @@ const stats = [
     <section class="stats">
       <div class="stats-inner">
         <div v-for="(s, i) in stats" :key="s.label" class="stat-item animate-fadeInUp" :style="{ animationDelay: (i * 100) + 'ms' }">
-          <div class="stat-icon" :style="{ backgroundColor: s.color + '12' }">{{ s.icon }}</div>
+          <div class="stat-icon" :style="{ backgroundColor: s.color + '12', color: s.color }" v-html="svgIcon(s.icon, 22)"></div>
           <span class="stat-count" :style="{ color: s.color }">{{ s.count }}<span class="stat-unit">{{ s.unit }}</span></span>
           <span class="stat-label">{{ s.label }}</span>
         </div>
@@ -358,8 +399,8 @@ const stats = [
           rel="noopener noreferrer"
           class="app-card"
           @click="trackApp(app.name)">
-          <div class="app-icon" :style="{ backgroundColor: app.color + '18' }">
-            <span class="app-emoji">{{ app.icon }}</span>
+          <div class="app-icon" :style="{ backgroundColor: app.color + '18', color: app.color }">
+            <span class="app-emoji" v-html="svgIcon(app.icon, 36)"></span>
           </div>
           <h3 class="app-name">{{ app.name }}</h3>
           <p class="app-desc">{{ app.desc }}</p>
@@ -485,7 +526,7 @@ body {
   display: flex; align-items: center; gap: 6px;
   font-size: 14px; color: #374151; font-weight: 500;
 }
-.header-avatar { font-size: 18px; }
+.header-avatar { display: flex; align-items: center; justify-content: center; }
 .header-login {
   padding: 8px 20px; background: #2563eb; color: white; border: none;
   border-radius: 10px; font-size: 14px; font-weight: 500; cursor: pointer;
@@ -521,9 +562,8 @@ body {
 }
 .header-switcher-trigger:hover { background: #f1f5f9; }
 .header-switcher-arrow {
-  font-size: 8px;
-  color: #94a3b8;
-  margin-left: 2px;
+  display: flex; align-items: center;
+  color: #94a3b8; margin-left: 2px;
 }
 .header-switcher-dropdown {
   position: absolute;
@@ -555,7 +595,7 @@ body {
   color: #2563eb;
   font-weight: 600;
 }
-.hs-item-avatar { font-size: 18px; }
+.hs-item-avatar { display: flex; align-items: center; justify-content: center; }
 .hs-item-name { flex: 1; }
 .hs-item-label {
   font-size: 11px;
@@ -566,9 +606,10 @@ body {
 }
 
 .header-learning-btn {
-  padding: 6px 10px; border-radius: 8px; font-size: 16px;
+  padding: 6px 10px; border-radius: 8px;
   background: transparent; border: none; cursor: pointer;
-  transition: background 0.2s;
+  transition: background 0.2s; color: #64748b;
+  display: flex; align-items: center; justify-content: center;
 }
 .header-learning-btn:hover { background: #f1f5f9; }
 
@@ -627,14 +668,9 @@ body {
   margin-bottom: 20px;
 }
 .welcome-avatar {
-  font-size: 40px;
-  width: 56px;
-  height: 56px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #f0f9ff;
-  border-radius: 16px;
+  width: 56px; height: 56px;
+  display: flex; align-items: center; justify-content: center;
+  background: #f0f9ff; border-radius: 16px; color: #2563eb;
 }
 .welcome-greeting {
   font-size: 14px;
@@ -660,10 +696,8 @@ body {
   text-align: center;
 }
 .ws-val {
-  display: block;
-  font-size: 22px;
-  font-weight: 700;
-  color: #2563eb;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 22px; font-weight: 700; color: #2563eb;
 }
 .ws-lbl {
   display: block;
@@ -707,7 +741,7 @@ body {
 .stat-icon {
   width: 48px; height: 48px; border-radius: 14px;
   display: flex; align-items: center; justify-content: center;
-  font-size: 22px; margin-bottom: 2px;
+  margin-bottom: 2px;
 }
 .stat-count { font-size: 26px; font-weight: 800; }
 .stat-unit { font-size: 14px; color: #94a3b8; margin-left: 2px; font-weight: 400; }
@@ -728,7 +762,7 @@ body {
   width: 80px; height: 80px; border-radius: 22px;
   display: flex; align-items: center; justify-content: center; margin-bottom: 16px;
 }
-.app-emoji { font-size: 40px; }
+.app-emoji { display: flex; align-items: center; justify-content: center; }
 .app-name { font-size: 20px; font-weight: 700; margin-bottom: 8px; }
 .app-desc { font-size: 14px; color: #94a3b8; line-height: 1.5; }
 
@@ -762,7 +796,7 @@ body {
   .stats-inner { display: grid; grid-template-columns: repeat(2, 1fr); justify-items: center; gap: 12px; }
   .stat-item { max-width: none; }
   .stat-count { font-size: 22px; }
-  .stat-icon { width: 40px; height: 40px; font-size: 18px; }
+  .stat-icon { width: 40px; height: 40px; }
   .app-grid { grid-template-columns: 1fr; }
   .header-inner { padding: 10px 16px; }
   .header-links { display: none; }
@@ -771,11 +805,11 @@ body {
   .header-login { padding: 6px 14px; font-size: 13px; }
   .header-logout { display: none; }
   .header-profile-btn { display: none; }
-  .header-learning-btn { padding: 4px 6px; font-size: 14px; }
+  .header-learning-btn { padding: 4px 6px; }
   .header-switcher-trigger { padding: 4px 6px; font-size: 13px; }
   .section-title { font-size: 20px; }
   .app-card { padding: 24px 20px; }
-  .app-icon { width: 64px; height: 64px; font-size: 32px; }
+  .app-icon { width: 64px; height: 64px; }
   .app-name { font-size: 17px; }
   .hero-split .hero-text .hero-subtitle { font-size: 24px; }
 }
