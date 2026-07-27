@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { isLoggedIn, getUser, logout, setUser, getToken } from '@/lib/auth';
+import { isLoggedIn, getUser, logout, setUser, getToken, checkAuthSync } from '@/lib/auth';
 import AuthModal from './AuthModal';
 import ProfileSetup from './ProfileSetup';
 
@@ -44,8 +44,30 @@ export default function Header() {
 
     // storage 事件：同源标签页间同步登录/登出状态
     window.addEventListener('storage', refreshUser);
+
+    // 跨子域登出同步：页面重新可见时（从童慧行返回/bfcache恢复），检测 cookie 是否还在
+    // 童慧行退出会清共享 cookie，但本站 sessionStorage 可能还缓存着旧 token/user
+    const handleAuthSync = () => {
+      if (document.visibilityState === 'visible') {
+        const stillIn = checkAuthSync();
+        if (!stillIn) {
+          setLocalUser(null);
+        } else {
+          refreshUser();
+        }
+      }
+    };
+    document.addEventListener('visibilitychange', handleAuthSync);
+    const handlePageShow = (e: PageTransitionEvent) => {
+      if (e.persisted) handleAuthSync();
+    };
+    window.addEventListener('pageshow', handlePageShow);
+    window.addEventListener('auth:sync-logout', () => setLocalUser(null));
+
     return () => {
       window.removeEventListener('storage', refreshUser);
+      document.removeEventListener('visibilitychange', handleAuthSync);
+      window.removeEventListener('pageshow', handlePageShow);
     };
   }, []);
 

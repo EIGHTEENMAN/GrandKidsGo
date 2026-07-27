@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, onMounted, computed, watch } from 'vue'
+import { ref, onMounted, onUnmounted, computed, watch } from 'vue'
 import { getToken, fetchUser, saveProfile, getChildren, addChild, updateChild, deleteChild, logout, getUser, getActiveProfile, setActiveProfile, getLearningSummary, setUser, setChildPassword, deleteAccount } from '@/api/auth'
 import StudyCalendar from '@shared/components/StudyCalendar.vue'
 import CategoryChart from '@shared/components/CategoryChart.vue'
@@ -123,6 +123,17 @@ async function loadData() {
 }
 
 onMounted(() => { loadData() })
+
+// 跨子域登出同步：在别的子站退出后，本站需要更新 UI
+const handleSyncLogout = () => {
+  user.value = null
+  loading.value = false
+  children.value = []
+}
+window.addEventListener('auth:sync-logout', handleSyncLogout)
+onUnmounted(() => {
+  window.removeEventListener('auth:sync-logout', handleSyncLogout)
+})
 
 // ─── Header Search ──────────────────────────────────────────
 function doSearch() {

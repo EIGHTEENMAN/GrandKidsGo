@@ -11,13 +11,34 @@ function getCookie(name: string): string | null {
 
 export function getToken(): string | null {
   const t = sessionStorage.getItem(TOKEN_KEY)
-  if (t) return t
   const c = getCookie(TOKEN_KEY)
+  // 跨子域登出同步：sessionStorage 有 token 但共享 cookie 已被清除（在别的子站退出了）
+  if (t && !c) {
+    sessionStorage.removeItem(TOKEN_KEY)
+    sessionStorage.removeItem(USER_KEY)
+    return null
+  }
+  if (t) return t
   if (c) {
     sessionStorage.setItem(TOKEN_KEY, c)
     return c
   }
   return null
+}
+
+/**
+ * 检测跨子域登录态变化（在别的子站登出后，本站 cookie 被清但 sessionStorage 可能还有缓存）
+ * 在 visibilitychange / pageshow 时调用，返回当前是否仍登录。
+ * 如果检测到登出，会清理 sessionStorage 并派发 'auth:sync-logout' 事件供 UI 更新。
+ */
+export function checkAuthSync(): boolean {
+  const wasLoggedIn = !!sessionStorage.getItem(TOKEN_KEY)
+  const stillLoggedIn = !!getToken()
+  if (wasLoggedIn && !stillLoggedIn) {
+    sessionStorage.removeItem(USER_KEY)
+    window.dispatchEvent(new CustomEvent('auth:sync-logout'))
+  }
+  return stillLoggedIn
 }
 
 export function setToken(token: string, syncToken?: string) {
@@ -31,6 +52,11 @@ export function removeToken() {
 }
 
 export function getUser(): any | null {
+  // token 失效（cookie 被清）时 user 也应失效
+  if (!getToken()) {
+    sessionStorage.removeItem(USER_KEY)
+    return null
+  }
   try {
     const raw = sessionStorage.getItem(USER_KEY)
     return raw ? JSON.parse(raw) : null
