@@ -12,6 +12,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
+import { getToken } from '@/lib/auth';
 
 const TRAVEL_API = (process.env.NEXT_PUBLIC_TRAVEL_API as string) || 'https://travel.grandand.com';
 
@@ -131,24 +132,43 @@ export default function SmartGuideLanding() {
     }
   };
 
+  const [directLoading, setDirectLoading] = useState(false);
+
   const regenerate = () => {
     router.push('/wizard/step1-city');
+  };
+
+  const directGenerate = () => {
+    setDirectLoading(true);
+    const token = typeof window !== 'undefined' ? getToken() : null;
+    if (!token) {
+      // 未登录：跳登录，回跳时携带 fromIntent，让 login 页能记住意图
+      router.push('/login?redirect=/wizard&fromIntent=generate-plan');
+      return;
+    }
+    const qs = new URLSearchParams({
+      cityName,
+      days: String(days),
+      childAgeMonths: String(childAgeMonths),
+      travelStyle,
+    });
+    router.push(`/wizard/step1-city?${qs.toString()}`);
   };
 
   return (
     <main className="min-h-screen bg-gradient-to-b from-blue-50 via-white to-green-50">
       <header className="bg-gradient-to-r from-blue-600 to-cyan-600 text-white">
-        <div className="max-w-4xl mx-auto px-6 py-8">
+        <div className="max-w-6xl mx-auto px-6 py-8">
           <Link href="/" className="text-blue-100 text-sm hover:text-white">← 返回首页</Link>
           <h1 className="text-3xl md:text-4xl font-extrabold mt-2">🪄 智能攻略</h1>
-          <p className="text-blue-100 mt-1">先看别人怎么玩，再决定怎么玩</p>
+          <p className="text-blue-100 mt-1">看看大家怎么玩，或者直接交给走天下算</p>
         </div>
       </header>
 
-      <div className="max-w-4xl mx-auto px-6 py-10">
+      <div className="max-w-6xl mx-auto px-6 py-10">
         {step === 'input' && (
           <div className="bg-white rounded-2xl shadow-sm p-8">
-            <h2 className="text-xl font-bold text-gray-900 mb-6">📋 先告诉我你的情况</h2>
+            <h2 className="text-xl font-bold text-gray-900 mb-6">告诉我们您这次的出行偏好</h2>
 
             <div className="space-y-5">
               <div>
@@ -232,13 +252,27 @@ export default function SmartGuideLanding() {
                 </div>
               </div>
 
-              <button
-                onClick={searchSimilar}
-                disabled={loading}
-                className="w-full bg-gradient-to-r from-blue-600 to-cyan-600 text-white font-bold py-4 rounded-xl mt-6 disabled:opacity-50 shadow-md"
-              >
-                {loading ? '🔍 正在找相似行程…' : '🔍 看看别人怎么玩'}
-              </button>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-6">
+                <button
+                  onClick={searchSimilar}
+                  disabled={loading || directLoading}
+                  className="w-full bg-gradient-to-r from-blue-600 to-cyan-600 text-white font-bold py-4 rounded-xl disabled:opacity-50 shadow-md inline-flex items-center justify-center gap-2"
+                >
+                  <span aria-hidden>🤝</span>
+                  <span>{loading ? '正在找相似行程…' : '看看大家怎么玩'}</span>
+                </button>
+                <button
+                  onClick={directGenerate}
+                  disabled={loading || directLoading}
+                  className="w-full bg-white text-blue-700 font-bold py-4 rounded-xl border-2 border-blue-200 hover:border-blue-400 hover:bg-blue-50 transition disabled:opacity-50 inline-flex items-center justify-center gap-2"
+                >
+                  <span aria-hidden>✨</span>
+                  <span>{directLoading ? '准备中…' : '直接生成计划'}</span>
+                </button>
+              </div>
+              <p className="mt-3 text-xs text-gray-400 text-center">
+                「直接生成计划」需要先登录账号（走天下会自动保存您的出行方案）
+              </p>
             </div>
           </div>
         )}
@@ -309,7 +343,7 @@ export default function SmartGuideLanding() {
                 onClick={regenerate}
                 className="px-8 py-3 bg-white text-gray-700 font-bold rounded-full shadow border border-gray-200 hover:bg-gray-50 transition"
               >
-                🪄 重新生成我的方案
+                🪄 改一下再生成
               </button>
             </div>
           </div>
