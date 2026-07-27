@@ -41,7 +41,18 @@ interface WizardChild {
   likes?: string[];
 }
 
-const CITY_OPTIONS = ['北京', '上海', '广州'];
+// 从 /api/cities 拉到的真实城市（与亲子宝典同源）
+interface CityOption {
+  id: string;
+  name: string;
+  province: string | null;
+  kidHook?: string | null;
+}
+
+const CITY_FALLBACK = '北京'; // 首屏默认，城市列表还没加载时显示
+const DAY_PRESETS = [2, 3, 5, 7, 10, 14];
+const DAY_MIN = 1;
+const DAY_MAX = 30;
 
 export default function SmartGuideLanding() {
   const router = useRouter();
@@ -120,6 +131,31 @@ export default function SmartGuideLanding() {
     ? Math.round(selectedMonths.reduce((a, b) => a + b, 0) / selectedMonths.length)
     : childAgeMonths;
   const canSubmit = !loading && !directLoading && (hasUserChildren ? selectedChildIds.size > 0 : true);
+
+  // 真实城市列表（与 /places 同源 — /api/cities）
+  const [cities, setCities] = useState<CityOption[]>([]);
+  const [citiesLoading, setCitiesLoading] = useState(true);
+  useEffect(() => {
+    fetch(`${TRAVEL_API}/api/cities`)
+      .then((r) => r.json())
+      .then((d) => {
+        const list: CityOption[] = (d?.data ?? d?.cities ?? []) as CityOption[];
+        setCities(list);
+        // 默认选中：宝典里有北京 → 北京，否则第一个
+        if (list.length > 0) {
+          const beijing = list.find((c) => c.name === CITY_FALLBACK);
+          setCityName(beijing?.name ?? list[0].name);
+        }
+      })
+      .catch(console.error)
+      .finally(() => setCitiesLoading(false));
+  }, []);
+
+  const setDaysClamped = (n: number) => {
+    if (!Number.isFinite(n)) return;
+    const v = Math.max(DAY_MIN, Math.min(DAY_MAX, Math.round(n)));
+    setDays(v);
+  };
 
   const searchSimilar = async () => {
     setLoading(true);
@@ -248,30 +284,81 @@ export default function SmartGuideLanding() {
 
             <div className="space-y-5">
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">想去哪个城市？</label>
-                <div className="flex flex-wrap gap-2">
-                  {CITY_OPTIONS.map((c) => (
-                    <button
-                      key={c}
-                      onClick={() => setCityName(c)}
-                      className={`px-5 py-2 rounded-full text-sm font-medium transition ${
-                        cityName === c ? 'bg-blue-600 text-white' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
-                      }`}
-                    >
-                      {c}
-                    </button>
-                  ))}
+                <div className="flex items-baseline justify-between mb-2">
+                  <label className="block text-sm font-medium text-gray-700">想去哪个城市？</label>
+                  {citiesLoading && <span className="text-xs text-gray-400">正在读取亲子宝典…</span>}
                 </div>
+                {!citiesLoading && cities.length === 0 ? (
+                  <p className="text-sm text-amber-700 bg-amber-50 border border-amber-100 rounded-lg px-3 py-2">
+                    暂未加载到城市，请稍后再试。
+                  </p>
+                ) : (
+                  <div className="flex flex-wrap gap-2 max-h-44 overflow-y-auto pr-2">
+                    {cities.map((c) => {
+                      const label = c.province ? `${c.province} · ${c.name}` : c.name;
+                      return (
+                        <button
+                          key={c.id}
+                          type="button"
+                          title={c.kidHook ?? label}
+                          onClick={() => setCityName(c.name)}
+                          className={`px-3.5 py-1.5 rounded-full text-sm font-medium transition whitespace-nowrap ${
+                            cityName === c.name ? 'bg-blue-600 text-white' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                          }`}
+                        >
+                          {label}
+                        </button>
+                      );
+                    })}
+                  </div>
+                )}
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">玩几天？</label>
-                <div className="flex gap-2">
-                  {[2, 3, 4, 5, 7].map((d) => (
+                <label className="block text-sm font-medium text-gray-700 mb-2">
+                  玩几天？
+                  <span className="text-xs text-gray-400 ml-2 font-normal">{DAY_MIN}–{DAY_MAX} 天</span>
+                </label>
+                <div className="flex items-center gap-2">
+                  <button
+                    type="button"
+                    onClick={() => setDaysClamped(days - 1)}
+                    disabled={days <= DAY_MIN}
+                    aria-label="减少一天"
+                    className="w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-700 text-lg font-bold disabled:opacity-40 disabled:cursor-not-allowed"
+                  >
+                    −
+                  </button>
+                  <input
+                    type="number"
+                    min={DAY_MIN}
+                    max={DAY_MAX}
+                    value={days}
+                    onChange={(e) => {
+                      const n = Number(e.target.value);
+                      if (!Number.isNaN(n)) setDaysClamped(n);
+                    }}
+                    onBlur={(e) => setDaysClamped(Number(e.target.value))}
+                    className="w-20 text-center px-3 py-2 border border-gray-200 rounded-lg text-base font-bold focus:outline-none focus:border-blue-500"
+                  />
+                  <span className="text-gray-600 text-sm">天</span>
+                  <button
+                    type="button"
+                    onClick={() => setDaysClamped(days + 1)}
+                    disabled={days >= DAY_MAX}
+                    aria-label="增加一天"
+                    className="w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-700 text-lg font-bold disabled:opacity-40 disabled:cursor-not-allowed"
+                  >
+                    ＋
+                  </button>
+                </div>
+                <div className="flex flex-wrap gap-2 mt-3">
+                  {DAY_PRESETS.map((d) => (
                     <button
                       key={d}
+                      type="button"
                       onClick={() => setDays(d)}
-                      className={`px-5 py-2 rounded-full text-sm font-medium transition ${
+                      className={`px-4 py-1.5 rounded-full text-sm font-medium transition ${
                         days === d ? 'bg-blue-600 text-white' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
                       }`}
                     >
