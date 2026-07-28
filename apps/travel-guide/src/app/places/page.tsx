@@ -184,8 +184,19 @@ function PlacesContent() {
       <header className="bg-gradient-to-r from-blue-600 via-cyan-600 to-teal-600 text-white">
         <div className="max-w-6xl mx-auto px-6 py-10">
           <Link href="/" className="text-blue-100 text-sm hover:text-white">← 返回首页</Link>
-          <h1 className="text-3xl md:text-4xl font-extrabold mt-3">走遍宝宝的世界</h1>
-          <p className="text-blue-100 mt-2 text-sm md:text-base">13 类亲子地点 · 大人孩子双维度评分 · 看真实评价再决定</p>
+          <div className="mt-3 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            <div>
+              <h1 className="text-3xl md:text-4xl font-extrabold">走遍宝宝的世界</h1>
+              <p className="text-blue-100 mt-2 text-sm md:text-base">13 类亲子地点 · 大人孩子双维度评分 · 看真实评价再决定</p>
+            </div>
+            <Link
+              href="/wizard"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-white text-blue-700 font-semibold rounded-full text-sm hover:bg-blue-50 transition shadow-md whitespace-nowrap self-start md:self-auto"
+            >
+              <SparklesIcon size={16} />
+              一键生成出行计划
+            </Link>
+          </div>
         </div>
       </header>
 
