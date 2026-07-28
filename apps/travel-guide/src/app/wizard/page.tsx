@@ -216,8 +216,9 @@ export default function SmartGuideLanding() {
   const [childrenCount, setChildrenCount] = useState(1);
 
   // ---- Section 4: 景点 ----
-  const [places, setPlaces] = useState<PlaceOption[]>([]);
-  const [placesLoading, setPlacesLoading] = useState(false);
+  // 多城按选中顺序逐城显示；删城后该城景点段消失
+  const [placesByCity, setPlacesByCity] = useState<Record<string, PlaceOption[]>>({});
+  const [loadingByCity, setLoadingByCity] = useState<Record<string, boolean>>({});
   const [pickedSpotIds, setPickedSpotIds] = useState<Set<string>>(new Set());
   const [placeFilter, setPlaceFilter] = useState('');
 
@@ -317,23 +318,46 @@ export default function SmartGuideLanding() {
     try { localStorage.setItem('wizard:fromCity', v); } catch { /* ignore */ }
   };
 
-  // 选了目的地 → 按 primary city 拉景点
+  // 选了目的地 → 按 selectedCityIds 逐城拉景点（多城：每城一段独立）
   const primaryCityId = selectedCityIds[0] ?? '';
   useEffect(() => {
-    if (!primaryCityId) {
-      setPlaces([]);
+    if (selectedCityIds.length === 0) {
+      // 全部删空，清掉所有缓存
+      setPlacesByCity({});
+      setLoadingByCity({});
       return;
     }
-    setPlacesLoading(true);
-    fetch(`${TRAVEL_API}/api/places?cityId=${primaryCityId}&sort=popular`)
-      .then((r) => r.json())
-      .then((d) => {
-        const list: PlaceOption[] = (d?.data?.items ?? []) as PlaceOption[];
-        setPlaces(list);
-      })
-      .catch(console.error)
-      .finally(() => setPlacesLoading(false));
-  }, [primaryCityId]);
+    // 删城同步：placesByCity/loadingByCity 里多余 key 移除
+    setPlacesByCity((prev) => {
+      const next: Record<string, PlaceOption[]> = {};
+      for (const id of selectedCityIds) if (prev[id]) next[id] = prev[id];
+      if (Object.keys(next).length === Object.keys(prev).length) return prev;
+      return next;
+    });
+    setLoadingByCity((prev) => {
+      const next: Record<string, boolean> = {};
+      for (const id of selectedCityIds) if (prev[id]) next[id] = prev[id];
+      if (Object.keys(next).length === Object.keys(prev).length) return prev;
+      return next;
+    });
+    // 拉还没拉的城（cache：placesByCity 里已有就跳过）
+    for (const cityId of selectedCityIds) {
+      if (placesByCity[cityId]) continue; // 已加载过
+      setLoadingByCity((prev) => ({ ...prev, [cityId]: true }));
+      fetch(`${TRAVEL_API}/api/places?cityId=${cityId}&sort=popular`)
+        .then((r) => r.json())
+        .then((d) => {
+          const list: PlaceOption[] = (d?.data?.items ?? []) as PlaceOption[];
+          setPlacesByCity((prev) => ({ ...prev, [cityId]: list }));
+        })
+        .catch(console.error)
+        .finally(() =>
+          setLoadingByCity((prev) => ({ ...prev, [cityId]: false })),
+        );
+    }
+  // 只在 selectedCityIds 改变时触发；placesByCity 不进 deps（避免循环）
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [selectedCityIds.join(',')]);
 
   // ---------------------------------------------------------------------------
   // 派生量
@@ -366,33 +390,47 @@ export default function SmartGuideLanding() {
   // 自动推荐天数（占位：UI 只提示，不动后端逻辑；用户在 Section 3 自己改）
   const autoRecommendedDays = useMemo(() => {
     if (selectedCityIds.length === 0) return null;
+    const primarySpots = placesByCity[selectedCityIds[0]!]?.length ?? 0;
     const base = selectedCityIds.reduce((sum, id) => {
-      const spots = places.filter((p) => true).length; // 简化：用 primary 城 spots 数（每城 ≈ 同分布）
+      const spots = placesByCity[id]?.length ?? primarySpots;
       return sum + Math.max(2, Math.round(spots * 0.4 + 1));
     }, 0);
     const overhead = selectedCityIds.length > 1 ? Math.ceil(0.5 * (selectedCityIds.length - 1)) : 0;
     return clamp(DAY_MIN, DAY_MAX, base + overhead);
-  }, [selectedCityIds, places]);
+  }, [selectedCityIds, placesByCity]);
 
   // ---------------------------------------------------------------------------
   // 候选候选筛选 + 子集显示
   // ---------------------------------------------------------------------------
+  // 所有城景点拉平 → 用于 placeFilter 和 pickedSpotTypeKeywords 派生
+  const allLoadedPlaces = useMemo(
+    () => selectedCityIds.flatMap((id) => placesByCity[id] ?? []),
+    [selectedCityIds, placesByCity],
+  );
   const filteredPlaces = useMemo(() => {
-    if (!placeFilter) return places;
-    return places.filter((p) => (p.typeLabel ?? p.type).toLowerCase().includes(placeFilter.toLowerCase()));
-  }, [places, placeFilter]);
+    if (!placeFilter) return allLoadedPlaces;
+    return allLoadedPlaces.filter((p) =>
+      (p.typeLabel ?? p.type).toLowerCase().includes(placeFilter.toLowerCase()),
+    );
+  }, [allLoadedPlaces, placeFilter]);
 
-  // 已选 spot 对应的 type 关键词集合
+  // 已选 spot 对应的 type 关键词集合（跨城聚合）
   const pickedSpotTypeKeywords = useMemo(() => {
     const keywords = new Set<string>();
     Array.from(pickedSpotIds).forEach((id) => {
-      const p = places.find((x) => x.id === id);
+      const p = allLoadedPlaces.find((x) => x.id === id);
       if (!p) return;
       (SPOT_TYPE_KEYWORDS[p.type] ?? []).forEach((k) => keywords.add(k.toLowerCase()));
       (SPOT_TYPE_KEYWORDS[p.typeLabel] ?? []).forEach((k) => keywords.add(k.toLowerCase()));
     });
     return Array.from(keywords);
-  }, [pickedSpotIds, places]);
+  }, [pickedSpotIds, allLoadedPlaces]);
+
+  // 是否有任何城正在加载
+  const anyPlaceLoading = useMemo(
+    () => Object.values(loadingByCity).some(Boolean),
+    [loadingByCity],
+  );
 
   // ---------------------------------------------------------------------------
   // 行为：searchSimilar + fork + assemble + create plan
@@ -881,15 +919,9 @@ export default function SmartGuideLanding() {
         </Section>
 
         {/* ====================== Section 4 · 景点 ====================== */}
-        <Section title="④ 想去哪些景点" subtitle="可留空 · 已选会用于匹配相似攻略 · 完整跨城景点锁定 PR2 加入">
-          {!primaryCityId ? (
+        <Section title="④ 想去哪些景点" subtitle="按选中顺序逐城展示 · 已选会用于匹配相似攻略 · 完整跨城景点锁定 PR2 加入">
+          {selectedCityIds.length === 0 ? (
             <p className="text-sm text-gray-400">请先在第 ③ 项选目的地。</p>
-          ) : placesLoading ? (
-            <p className="text-xs text-gray-400">正在读取 {primaryCity?.name} 的景点…</p>
-          ) : places.length === 0 ? (
-            <p className="text-sm text-amber-700 bg-amber-50 border border-amber-100 rounded-lg px-3 py-2">
-              {primaryCity?.name} 暂无景点数据。
-            </p>
           ) : (
             <>
               <input
@@ -899,35 +931,84 @@ export default function SmartGuideLanding() {
                 placeholder="按类目筛选（如：景点、餐厅）…"
                 className="w-full sm:w-80 px-3 py-2 border border-gray-200 rounded-lg text-sm focus:outline-none focus:border-blue-500 mb-3"
               />
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 max-h-96 overflow-y-auto pr-2">
-                {filteredPlaces.map((p) => {
-                  const checked = pickedSpotIds.has(p.id);
+              <div className="space-y-4">
+                {selectedCityIds.map((cityId, idx) => {
+                  const city = cities.find((c) => c.id === cityId);
+                  const cityName = city?.name ?? cityId;
+                  const cityPlaces = placesByCity[cityId];
+                  const isLoading = loadingByCity[cityId];
                   return (
-                    <button
-                      key={p.id}
-                      type="button"
-                      onClick={() => togglePickSpot(p.id)}
-                      className={`text-left bg-white rounded-xl p-3 transition border-2 relative ${
-                        checked ? 'border-blue-500 ring-2 ring-blue-100 shadow-md' : 'border-gray-200 hover:border-gray-300'
-                      }`}
-                    >
-                      <span
-                        aria-hidden
-                        className={`absolute top-2 right-2 w-5 h-5 rounded-full flex items-center justify-center text-[10px] font-bold ${
-                          checked ? 'bg-blue-600 text-white' : 'bg-gray-100 text-gray-400 border border-gray-200'
-                        }`}
-                      >{checked ? '✓' : ''}</span>
-                      <div className="text-xs text-blue-600 font-medium mb-1">{p.typeLabel}</div>
-                      <div className="font-bold text-gray-900 text-sm truncate">{p.name}</div>
-                      {p.kidHighlights && (
-                        <div className="text-[11px] text-gray-500 mt-1 line-clamp-2">{p.kidHighlights}</div>
+                    <div key={cityId} className="bg-gray-50 rounded-2xl p-4">
+                      <div className="flex items-center justify-between mb-2">
+                        <h3 className="text-sm font-bold text-gray-900">
+                          <span className="inline-block w-6 h-6 mr-2 rounded-full bg-blue-600 text-white text-xs leading-6 text-center">
+                            {idx + 1}
+                          </span>
+                          {cityName} 景点
+                          {cityPlaces && (
+                            <span className="ml-2 text-xs font-normal text-gray-500">
+                              {cityPlaces.length} 个
+                            </span>
+                          )}
+                        </h3>
+                      </div>
+                      {isLoading ? (
+                        <p className="text-xs text-gray-400 py-4">正在读取 {cityName} 的景点…</p>
+                      ) : !cityPlaces ? (
+                        <p className="text-xs text-gray-400 py-4">点击此处上方 chip 触发加载</p>
+                      ) : cityPlaces.length === 0 ? (
+                        <p className="text-sm text-amber-700 bg-amber-50 border border-amber-100 rounded-lg px-3 py-2">
+                          {cityName} 暂无景点数据。
+                        </p>
+                      ) : (
+                        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
+                          {cityPlaces
+                            .filter((p) =>
+                              placeFilter
+                                ? (p.typeLabel ?? p.type)
+                                    .toLowerCase()
+                                    .includes(placeFilter.toLowerCase())
+                                : true,
+                            )
+                            .map((p) => {
+                              const checked = pickedSpotIds.has(p.id);
+                              return (
+                                <button
+                                  key={p.id}
+                                  type="button"
+                                  onClick={() => togglePickSpot(p.id)}
+                                  className={`text-left bg-white rounded-xl p-3 transition border-2 relative ${
+                                    checked
+                                      ? 'border-blue-500 ring-2 ring-blue-100 shadow-md'
+                                      : 'border-gray-200 hover:border-gray-300'
+                                  }`}
+                                >
+                                  <span
+                                    aria-hidden
+                                    className={`absolute top-2 right-2 w-5 h-5 rounded-full flex items-center justify-center text-[10px] font-bold ${
+                                      checked
+                                        ? 'bg-blue-600 text-white'
+                                        : 'bg-gray-100 text-gray-400 border border-gray-200'
+                                    }`}
+                                  >{checked ? '✓' : ''}</span>
+                                  <div className="text-xs text-blue-600 font-medium mb-1">{p.typeLabel}</div>
+                                  <div className="font-bold text-gray-900 text-sm truncate">{p.name}</div>
+                                  {p.kidHighlights && (
+                                    <div className="text-[11px] text-gray-500 mt-1 line-clamp-2">
+                                      {p.kidHighlights}
+                                    </div>
+                                  )}
+                                  <div className="text-[10px] text-amber-500 mt-1">★ {p.rating.toFixed(1)}</div>
+                                </button>
+                              );
+                            })}
+                        </div>
                       )}
-                      <div className="text-[10px] text-amber-500 mt-1">★ {p.rating.toFixed(1)}</div>
-                    </button>
+                    </div>
                   );
                 })}
               </div>
-              <p className="mt-2 text-xs text-gray-400">已选 {pickedSpotIds.size} 个</p>
+              <p className="mt-2 text-xs text-gray-400">已选 {pickedSpotIds.size} 个（跨城总计数）</p>
             </>
           )}
         </Section>
