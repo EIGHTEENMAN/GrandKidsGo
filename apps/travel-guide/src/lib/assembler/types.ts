@@ -56,6 +56,9 @@ export type TravelParams = z.infer<typeof TravelParamsSchema>;
 // ---------------------------------------------------------------------------
 export type TimeBlockKind = "spot" | "restaurant" | "park" | "playground" | "hotel" | "transit" | "rest";
 export type RestReason = "nap" | "late_arrival" | "early_departure" | "buffer";
+// v1: 跨城交通方式由距离启发式分配 (assembler/index.ts → getTransitModeAndMinutes)
+// PR2 起接入 AMAP/12306 真实数据
+export type TransitMode = "walk" | "drive" | "high_speed_rail" | "flight";
 
 export interface TimelineBlock {
   blockId: string;
@@ -79,6 +82,13 @@ export interface TimelineBlock {
     feelingMatch: number;
     composite: number;
   };
+  // ---- 多城拼接 (v1) ----
+  // 仅当 kind === "transit" 时填充；其他 block 这些字段全部 undefined
+  transitFromCityId?: string;                 // 出发城市 id
+  transitToCityId?: string;                   // 到达城市 id
+  transitMode?: TransitMode;                  // 由距离阈值启发分配
+  transitMinutes?: number;                    // 交通时长（分钟，估值 v1）
+  transitDistanceKm?: number;                 // 距离（km，haversine 算）
 }
 
 export interface TimelineDay {
@@ -107,8 +117,11 @@ export interface CandidateOutline {
 }
 
 export interface PlanOutline {
-  cityId: string;
-  cityName: string;
+  cityId: string;                             // 保留：primary 城市（首站）
+  cityName: string;                           // 保留：primary 城市名
+  // ---- 多城拼接 (v1) ----
+  cityIds: string[];                          // 全部被选城市，按顺序；单城时等于 [cityId]
+  cityNames: string[];                        // 对应城市名
   generatedAt: string;
   candidates: CandidateOutline[];
 }
