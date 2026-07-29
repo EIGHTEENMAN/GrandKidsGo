@@ -23,7 +23,9 @@ function auth(req, res, next) {
   const header = req.headers.authorization;
   if (!header?.startsWith('Bearer ')) return res.status(401).json({ error: '未登录' });
   try {
-    req.user = jwt.verify(header.slice(7), JWT_SECRET);
+    // JWT 标准字段是 sub；同时兼容旧版直接用 id 字段签的 token
+    const payload = jwt.verify(header.slice(7), JWT_SECRET);
+    req.user = { id: payload.sub ?? payload.id, role: payload.role };
     next();
   } catch { res.status(401).json({ error: '登录已过期' }); }
 }

@@ -62,25 +62,45 @@ export async function POST(
     );
   }
 
-  // 1. 转发到 moderation 服务（带用户 JWT）
+  // 1. 转发到 moderation 服务
+  // moderation 的 /api/moderation/report 用的是 auth middleware（用户 JWT），不是 serviceAuth；
+  // 转发时需要用 moderation 自己的 secret 重签用户 token。
+  // - 如果 MODERATION_JWT_SECRET 配了：用它重签转发（生产推荐，token 短时）
+  // - 否则 fallback：沿用用户的 Authorization header（仅当 secret 跨服务一致时可用）
   let moderationResponseId: string | null = null;
   let moderationError: string | null = null;
   try {
-    // 沿用用户当前请求的 Authorization header 给下游（同一用户身份）
     const authHeader = req.headers.get("authorization") || "";
     const cookieToken = req.cookies.get("grandkidsgo_token")?.value || "";
-    const userAuthHeader = authHeader.startsWith("Bearer ")
-      ? authHeader
-      : cookieToken
-        ? `Bearer ${cookieToken}`
-        : "";
+    let userToken = "";
+    if (authHeader.startsWith("Bearer ")) userToken = authHeader.slice(7);
+    else if (cookieToken) userToken = cookieToken;
+
+    const modSecret = process.env.MODERATION_JWT_SECRET || "grandkidsgo-moderation-dev";
+    const headers: Record<string, string> = { "Content-Type": "application/json" };
+
+    if (userToken && modSecret) {
+      // 用 moderation 的 secret 重签一份短时 token（5 分钟），保留 sub + role
+      try {
+        const jwt = await import("jsonwebtoken");
+        const payload = jwt.default.verify(userToken, process.env.AUTH_SERVICE_JWT_SECRET || process.env.JWT_SECRET || "grandkidsgo-jwt-secret-dev") as { sub?: string; id?: string; role?: string };
+        const modToken = jwt.default.sign(
+          { sub: payload.sub ?? payload.id, role: payload.role ?? "user" },
+          modSecret,
+          { expiresIn: "5m" },
+        );
+        headers.Authorization = `Bearer ${modToken}`;
+      } catch {
+        // 重签失败 → fallback 用原 token（仅当 secret 一致时才生效）
+        if (userToken) headers.Authorization = `Bearer ${userToken}`;
+      }
+    } else if (userToken) {
+      headers.Authorization = `Bearer ${userToken}`;
+    }
 
     const r = await fetch(`${MODERATION_URL}/api/moderation/report`, {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        ...(userAuthHeader ? { Authorization: userAuthHeader } : {}),
-      },
+      headers,
       body: JSON.stringify({
         targetType: "guide",
         targetId: guide.id,
@@ -88,11 +108,13 @@ export async function POST(
         contentSnippet: (body.contentSnippet ?? guide.title ?? "").slice(0, 500),
       }),
     });
+    // PR4 DEBUG：把 moderation 实际响应带回来便于排查转发问题
+    const rawText = await r.text().catch(() => "");
     if (r.ok) {
-      const data = await r.json().catch(() => ({}));
+      const data = JSON.parse(rawText || "{}");
       moderationResponseId = data?.id ?? null;
     } else {
-      moderationError = `moderation ${r.status}: ${await r.text().catch(() => "")}`;
+      moderationError = `moderation ${r.status}: hasAuthHeader=${!!headers.Authorization} first40=${rawText.slice(0, 80)}`;
     }
   } catch (e) {
     moderationError = `moderation unreachable: ${(e as Error).message}`;
