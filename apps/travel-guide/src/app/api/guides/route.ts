@@ -1,9 +1,19 @@
-// POST /api/guides — 发布攻略（v4.1）
-// 修复 create 页死链：表单提交 contentHtml（HTML 字符串，TipTap 产出）+ 元数据
+// POST /api/guides — 发布攻略（攻略体系 v1.0 PR1 + PR2 雏形）
+//
+// v1.0 决策：
+// - D2 手动发布也跑 L1 DFA（不再裸奔 published）
+// - hard 命中 → status=rejected，HTTP 200 但响应里带 rejectionReason
+// - soft 命中 → status=pending_review，HTTP 200 但响应里带 pendingReason
+// - clean       → status=published
+// - PR3 还会加 /api/guides/[id]/submit 重提；当前 POST 直接覆盖（v1 简化）
+//
+// 注：本端点仍保持"POST 即发布"的语义（autoCreate=true），未拆 draft+submit 两步，
+// PR3 落 /guides/[id]/edit 后再补 draft 分支。
 import { NextRequest, NextResponse } from "next/server";
 import prisma from "@/lib/prisma";
 import { extractChildSayingsFromHtml } from "@/lib/extract-child-sayings";
 import { verifyAuth } from "@/lib/verify-auth";
+import { moderateTravelText } from "@/lib/moderation";
 
 export const dynamic = "force-dynamic";
 
@@ -31,6 +41,8 @@ export async function POST(req: NextRequest) {
       .replace(/href=["']javascript:[^"']*["']/gi, 'href="#"')
       .slice(0, 50000);
 
+    // PR1：先创建 draft 行拿 ID，跑 DFA，再 update status。
+    // 一行 create+update 比三选一分支写更稳，便于埋点一致。
     const guide = await prisma.guide.create({
       data: {
         userId,
@@ -40,10 +52,24 @@ export async function POST(req: NextRequest) {
         days: days ?? null,
         childAges: childAges ?? [],
         travelStyle: travelStyle ?? null,
-        status: "published",
-        publishedAt: new Date(),
+        status: "draft", // 临时占位，下一步 DFA 后立即覆盖
+        publishedAt: null,
         coverImages: coverImages ?? [],
         tags: body.tags ?? [],
+      },
+    });
+
+    // PR1 L1 DFA：手动发布也必须过审（D2 决策）
+    const moderation = moderateTravelText(`${title}\n${safeHtml}`);
+    const finalStatus = moderation.nextStatus;
+    const finalPublishedAt = finalStatus === "published" ? new Date() : null;
+
+    await prisma.guide.update({
+      where: { id: guide.id },
+      data: {
+        status: finalStatus,
+        publishedAt: finalPublishedAt,
+        updatedAt: new Date(),
       },
     });
 
@@ -51,6 +77,7 @@ export async function POST(req: NextRequest) {
     const autoExtracted = extractChildSayingsFromHtml(contentHtml);
 
     // 孩子说：创建 childSaying 记录（手动录入 + 自动提取）
+    // 只在 hard 通过或 clean 时写入；soft pending_review 也写入（用户已发，作者可见但公开页隐藏）
     const allSayings = [
       ...(Array.isArray(childSayings) ? childSayings.map((s: any) => ({
         text: s.text, mood: s.mood, spotId: s.spotId ?? spotId,
@@ -80,9 +107,17 @@ export async function POST(req: NextRequest) {
       });
     }
 
+    // 响应：返回最终 status，前端按状态分支引导（v1 简化，PR3 在 /guides/[id]/edit 顶部 banner 处理）
     return NextResponse.json({
       code: "OK",
-      data: { id: guide.id, title: guide.title },
+      data: {
+        id: guide.id,
+        title: guide.title,
+        status: finalStatus,
+        sensitivity: moderation.sensitivity,
+        rejectionReason: moderation.hardRejection ? moderation.reasons.join("; ") : null,
+        pendingReason: moderation.softPending ? moderation.reasons.join("; ") : null,
+      },
     });
   } catch (e) {
     console.error("[POST /api/guides]", e);

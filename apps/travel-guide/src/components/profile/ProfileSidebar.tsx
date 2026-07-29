@@ -1,15 +1,16 @@
-// 个人中心左侧菜单（P0-1）
+// 个人中心左侧菜单（P0-1 + 攻略体系 v1.0 PR3）
 'use client';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import {
-  HomeIcon, GuidebookIcon, BabyIcon, MapPinIcon, TrophyIcon, SettingsIcon, SparklesIcon,
+  HomeIcon, GuidebookIcon, BabyIcon, MapPinIcon, TrophyIcon, SettingsIcon, SparklesIcon, PlanIcon,
 } from '@/components/Icons';
 
 interface ProfileSidebarProps {
   user: { nickname?: string; avatar?: string | null } | null;
   counts?: {
     guides?: number;
+    plans?: number;       // PR3：新增
     children?: number;
     sayings?: number;
     badges?: number;
@@ -18,6 +19,7 @@ interface ProfileSidebarProps {
 
 const ITEMS = [
   { href: '/profile', label: '总览', icon: HomeIcon, exact: true },
+  { href: '/profile/plans', label: '我的计划', icon: PlanIcon, countKey: 'plans' as const },
   { href: '/profile/guides', label: '我的攻略', icon: GuidebookIcon, countKey: 'guides' as const },
   { href: '/profile/children', label: '孩子档案', icon: BabyIcon, countKey: 'children' as const },
   { href: '/profile/sayings', label: '孩子说', icon: SparklesIcon, countKey: 'sayings' as const },

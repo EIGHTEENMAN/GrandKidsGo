@@ -8,6 +8,7 @@ import Users from './pages/Users.vue'
 // import Forum from './pages/Forum.vue'
 import Analytics from './pages/Analytics.vue'
 import TravelGuides from './pages/TravelGuides.vue'
+import GuideReports from './pages/GuideReports.vue'
 import KolReview from './pages/KolReview.vue'
 import LeaderboardReview from './pages/LeaderboardReview.vue'
 import ActivityReview from './pages/ActivityReview.vue'
@@ -22,6 +23,7 @@ const routes = [
   // { path: '/forum', name: 'forum', component: Forum, meta: { title: '论坛管理', requiresAuth: true } },
   { path: '/analytics', name: 'analytics', component: Analytics, meta: { title: '运营分析', requiresAuth: true } },
   { path: '/travel/guides', name: 'travel-guides', component: TravelGuides, meta: { title: '走天下攻略待审', requiresAuth: true } },
+  { path: '/travel/guide-reports', name: 'travel-guide-reports', component: GuideReports, meta: { title: '走天下攻略举报', requiresAuth: true } },
   { path: '/travel/kol-review', name: 'travel-kol-review', component: KolReview, meta: { title: '护城河字段复评', requiresAuth: true } },
   { path: '/travel/leaderboard-review', name: 'travel-leaderboard-review', component: LeaderboardReview, meta: { title: '排行榜审核', requiresAuth: true } },
   { path: '/travel/activity-review', name: 'travel-activity-review', component: ActivityReview, meta: { title: '动态审核', requiresAuth: true } },

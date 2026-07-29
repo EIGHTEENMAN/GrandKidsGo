@@ -8,9 +8,11 @@ import { useParams, useRouter } from 'next/navigation';
 import {
   SparklesIcon, MapPinIcon, ClockIcon, BabyIcon, StarIcon, UserIcon, HeartIcon,
   EyeIcon, ForkIcon, BookmarkIcon, GuidebookIcon, ChevronRight, CheckIcon, ChevronDown,
+  ShareIcon, EditIcon, ArchiveIcon, PlanIcon,
 } from '@/components/Icons';
 import { sanitizeHtml } from '@/lib/sanitize';
 import { GuideReviewForm, GuideComments } from '@/components/guide/GuideReviewForm';
+import { authedFetch } from '@/lib/auth';
 
 const TRAVEL_API = (process.env.NEXT_PUBLIC_TRAVEL_API as string) || 'https://travel.grandand.com';
 
@@ -33,12 +35,26 @@ interface GuideData {
   travelStyle: string | null;
   season: string | null;
   tags: string[];
+  status?: string;
   publishedAt: string;
   createdAt: string;
   stats: { view: number; save: number; like: number; avgAdultRating?: number | null; avgChildRating?: number | null; ratingCount?: number; commentCount?: number };
   author: { id: string; nickname: string; avatar: string | null };
   isLiked: boolean;
   isSaved: boolean;
+  // PR4 增强
+  isOwnable?: boolean;
+  permissions?: {
+    canEdit: boolean;
+    canSubmit: boolean;
+    canPublishDirect: boolean;
+    canArchive: boolean;
+    canUnarchive: boolean;
+    canWithdraw: boolean;
+    canReport: boolean;
+  };
+  sourcePlan?: { id: string; timelineBlocks?: { day: number; blocks: any[] }[]; childAges?: number[]; cityId?: string | null; days?: number } | null;
+  childSayings?: Array<{ id: string; text: string; mood?: string | null; spotId?: string | null; createdAt: string }>;
 }
 
 function timeAgo(iso: string): string {
@@ -62,6 +78,10 @@ export default function GuideDetailPage() {
   const [saved, setSaved] = useState(false);
   const [commentText, setCommentText] = useState('');
   const [showReviewForm, setShowReviewForm] = useState(false);
+  // PR4：举报 modal + 操作反馈
+  const [showReportModal, setShowReportModal] = useState(false);
+  const [reportReason, setReportReason] = useState('');
+  const [reportPending, setReportPending] = useState(false);
 
   const token = typeof window !== 'undefined' ? sessionStorage.getItem('grandkidsgo_token') : null;
 
@@ -121,6 +141,49 @@ export default function GuideDetailPage() {
     else alert(d.error?.message ?? '评论失败');
   };
 
+  // PR4：作者侧快捷操作（编辑/撤回/归档）
+  const authorAction = async (action: 'retract' | 'archive' | 'unarchive') => {
+    const confirmText = action === 'retract' ? '撤回这篇攻略？撤回后会变成草稿，可继续编辑。' :
+                        action === 'archive' ? '归档这篇攻略？归档后不再公开。' :
+                        '恢复这篇攻略？';
+    if (!confirm(confirmText)) return;
+    const r = await authedFetch(`/api/guides/${id}/${action}`, { method: 'POST' });
+    const d = await r.json().catch(() => null);
+    if (!r.ok) { alert(d?.error?.message ?? `${action} 失败`); return; }
+    alert(`${action} 成功`);
+    location.reload();
+  };
+
+  // PR4：分享（copy link）
+  const shareGuide = () => {
+    const url = typeof window !== 'undefined' ? window.location.href : '';
+    if (navigator.share) {
+      navigator.share({ title: data?.title, url }).catch(() => {});
+    } else {
+      navigator.clipboard?.writeText(url).then(() => alert('链接已复制'), () => alert('复制失败'));
+    }
+  };
+
+  // PR4：举报
+  const submitReport = async () => {
+    if (!reportReason.trim()) { alert('请填写举报原因'); return; }
+    setReportPending(true);
+    try {
+      const r = await authedFetch(`/api/guides/${id}/report`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ reason: reportReason }),
+      });
+      const d = await r.json().catch(() => null);
+      if (!r.ok) { alert(d?.error?.message ?? '举报失败'); return; }
+      alert(d?.code === 'PARTIAL' ? '举报已记录（审核服务暂不可达，管理员会人工处理）' : '举报已提交，感谢反馈');
+      setShowReportModal(false);
+      setReportReason('');
+    } finally {
+      setReportPending(false);
+    }
+  };
+
   if (loading) return <div className="min-h-screen flex items-center justify-center text-gray-400">加载中…</div>;
   if (!data) return <div className="min-h-screen flex items-center justify-center text-gray-500">攻略不存在或已删除</div>;
 
@@ -131,6 +194,65 @@ export default function GuideDetailPage() {
 
   return (
     <main className="min-h-screen bg-gradient-to-b from-blue-50 via-white to-cyan-50 pb-24">
+      {/* PR4：作者侧 action bar（仅自己可见） + 举报按钮（仅非作者可见） */}
+      {(data.isOwnable || data.permissions?.canReport) && (
+        <div className="sticky top-0 z-20 bg-white/95 backdrop-blur border-b border-gray-200">
+          <div className="max-w-3xl mx-auto px-6 py-2.5 flex items-center gap-2">
+            <span className="text-xs text-gray-500 mr-auto">
+              {data.isOwnable ? '作者视角' : '游客视角'}
+            </span>
+            {data.permissions?.canEdit && (
+              <Link
+                href={`/guides/${data.id}/edit`}
+                className="inline-flex items-center gap-1 text-xs px-3 py-1.5 bg-blue-50 text-blue-700 rounded-full hover:bg-blue-100 font-medium"
+              >
+                <EditIcon size={12} /> 编辑
+              </Link>
+            )}
+            {data.permissions?.canWithdraw && (
+              <button
+                onClick={() => authorAction('retract')}
+                className="text-xs px-3 py-1.5 bg-amber-50 text-amber-700 rounded-full hover:bg-amber-100 font-medium"
+              >
+                撤回
+              </button>
+            )}
+            {data.permissions?.canArchive && data.status === 'published' && (
+              <button
+                onClick={() => authorAction('archive')}
+                className="inline-flex items-center gap-1 text-xs px-3 py-1.5 bg-gray-100 text-gray-700 rounded-full hover:bg-gray-200 font-medium"
+              >
+                <ArchiveIcon size={12} /> 归档
+              </button>
+            )}
+            {data.permissions?.canUnarchive && (
+              <button
+                onClick={() => authorAction('unarchive')}
+                className="text-xs px-3 py-1.5 bg-emerald-50 text-emerald-700 rounded-full hover:bg-emerald-100 font-medium"
+              >
+                恢复
+              </button>
+            )}
+            {data.isOwnable && (
+              <button
+                onClick={shareGuide}
+                className="inline-flex items-center gap-1 text-xs px-3 py-1.5 bg-gray-100 text-gray-700 rounded-full hover:bg-gray-200 font-medium"
+              >
+                <ShareIcon size={12} /> 分享
+              </button>
+            )}
+            {data.permissions?.canReport && (
+              <button
+                onClick={() => setShowReportModal(true)}
+                className="text-xs px-3 py-1.5 bg-red-50 text-red-600 rounded-full hover:bg-red-100 font-medium"
+              >
+                举报
+              </button>
+            )}
+          </div>
+        </div>
+      )}
+
       {/* ============ ① Hero ============ */}
       <header className="relative h-[380px] md:h-[440px] overflow-hidden bg-gray-100">
         <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${heroImg})` }} />
@@ -237,6 +359,53 @@ export default function GuideDetailPage() {
           )}
         </section>
 
+        {/* PR4：来源计划时间表 */}
+        {data.sourcePlan && Array.isArray(data.sourcePlan.timelineBlocks) && data.sourcePlan.timelineBlocks.length > 0 && (
+          <section className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
+            <h2 className="text-lg font-bold text-gray-900 mb-4 inline-flex items-center gap-2">
+              <PlanIcon size={18} className="text-blue-600" /> 来源计划 · {data.sourcePlan.days ?? data.sourcePlan.timelineBlocks.length} 天行程
+            </h2>
+            <details className="border border-gray-100 rounded-xl">
+              <summary className="px-4 py-3 cursor-pointer hover:bg-gray-50 font-medium text-gray-700 flex items-center justify-between">
+                <span>展开 {data.sourcePlan.timelineBlocks.length} 天时间表</span>
+                <ChevronDown size={16} className="text-gray-400" />
+              </summary>
+              <div className="px-4 pb-3 space-y-3">
+                {data.sourcePlan.timelineBlocks.map((day) => (
+                  <div key={day.day} className="border-l-2 border-blue-200 pl-3">
+                    <div className="text-xs font-bold text-blue-600 mb-1">Day {day.day}</div>
+                    {(day.blocks ?? []).map((b: any, i: number) => (
+                      <div key={i} className="text-sm py-0.5">
+                        <span className="font-medium text-gray-800">{b.title ?? '未命名'}</span>
+                        {b.kidHook && <span className="text-xs text-blue-600 ml-1">· {b.kidHook}</span>}
+                      </div>
+                    ))}
+                  </div>
+                ))}
+              </div>
+            </details>
+          </section>
+        )}
+
+        {/* PR4：孩子们怎么说（来自 sourcePlan 关联的 ChildSaying） */}
+        {Array.isArray(data.childSayings) && data.childSayings.length > 0 && (
+          <section className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
+            <h2 className="text-lg font-bold text-gray-900 mb-4 inline-flex items-center gap-2">
+              <SparklesIcon size={18} className="text-amber-600" /> 孩子们怎么说
+            </h2>
+            <div className="space-y-3">
+              {data.childSayings.map(s => (
+                <div key={s.id} className="bg-amber-50 rounded-xl p-3 text-sm text-amber-900 border border-amber-100">
+                  <span className="text-amber-600 font-bold mr-1">"</span>
+                  {s.text}
+                  <span className="text-amber-600 font-bold ml-1">"</span>
+                  {s.mood && <span className="ml-2 text-xs text-amber-700">· {s.mood}</span>}
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
+
         {/* ============ ⑤ 评论区 ============ */}
         <section className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
           <h2 className="text-lg font-bold text-gray-900 mb-4 inline-flex items-center gap-2">
@@ -262,6 +431,39 @@ export default function GuideDetailPage() {
           </div>
         </section>
       </div>
+
+      {/* PR4：举报 modal */}
+      {showReportModal && (
+        <div className="fixed inset-0 z-30 bg-black/50 flex items-center justify-center p-4" onClick={() => !reportPending && setShowReportModal(false)}>
+          <div className="bg-white rounded-2xl p-6 max-w-md w-full" onClick={e => e.stopPropagation()}>
+            <h3 className="text-lg font-bold text-gray-900 mb-3">举报这篇攻略</h3>
+            <p className="text-xs text-gray-500 mb-3">我们会人工审核所有举报，违规内容会被下架。</p>
+            <textarea
+              value={reportReason}
+              onChange={e => setReportReason(e.target.value)}
+              placeholder="请说明举报原因（必填）"
+              rows={4}
+              className="w-full px-3 py-2 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-red-300 resize-none"
+            />
+            <div className="flex justify-end gap-2 mt-4">
+              <button
+                onClick={() => { setShowReportModal(false); setReportReason(''); }}
+                disabled={reportPending}
+                className="px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-full disabled:opacity-50"
+              >
+                取消
+              </button>
+              <button
+                onClick={submitReport}
+                disabled={reportPending || !reportReason.trim()}
+                className="px-4 py-2 text-sm bg-red-500 text-white rounded-full hover:bg-red-600 disabled:opacity-50 font-medium"
+              >
+                {reportPending ? '提交中…' : '提交举报'}
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </main>
   );
 }

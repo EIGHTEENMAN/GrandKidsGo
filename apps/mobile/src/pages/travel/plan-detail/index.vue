@@ -88,6 +88,61 @@ onMounted(() => {
   if (planId.value) loadPlan(planId.value)
 })
 
+// PR4：发布攻略按钮（攻略体系 v1.0）
+// mobile 调用 /api/guides/from-plan/[id]，后端会跑 L1 DFA：
+//   - clean → published
+//   - soft  → pending_review（人工审核）
+//   - hard  → rejected
+// 成功就跳 PC 详情页查看。
+const publishing = ref(false)
+async function goPublishGuide() {
+  if (!planId.value) {
+    uni.showToast({ title: '缺少 planId', icon: 'none' })
+    return
+  }
+  if (publishing.value) return
+  publishing.value = true
+  try {
+    const token = uni.getStorageSync('grandkidsgo_token') as string | undefined
+    if (!token) {
+      uni.showToast({ title: '请先登录', icon: 'none' })
+      return
+    }
+    track({ eventName: TRACK.GUIDE_PUBLISH_STARTED, userId: '', properties: { planId: planId.value, source: 'mobile' } })
+    const res = await uni.request({
+      url: `${TRAVEL_API_BASE}/api/guides/from-plan/${planId.value}`,
+      method: 'POST',
+      header: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` },
+      data: {},
+    })
+    const d = res.data as any
+    if (res.statusCode >= 200 && res.statusCode < 300 && d?.id) {
+      track({ eventName: TRACK.GUIDE_PUBLISH_SUBMITTED, userId: '', properties: { guideId: d.id, planId: planId.value, status: d.status, source: 'mobile' } })
+      uni.showToast({ title: d.status === 'published' ? '已发布！' : d.status === 'pending_review' ? '已提交审核' : '发布被拦截', icon: 'none' })
+      // 跳到 PC 端查看（攻略详情）
+      // 注意：mobile 是 uni-app，PC 端是 next.js，跳转通过外部链接
+      setTimeout(() => {
+        // #ifdef H5
+        window.location.href = `https://travel.grandand.com/guides/${d.id}`
+        // #endif
+        // #ifndef H5
+        uni.showModal({
+          title: '已生成攻略',
+          content: `请到 PC 端 travel.grandand.com/guides/${d.id} 查看`,
+          showCancel: false,
+        })
+        // #endif
+      }, 600)
+    } else {
+      uni.showToast({ title: d?.error?.message ?? '发布失败', icon: 'none' })
+    }
+  } catch (e: any) {
+    uni.showToast({ title: e?.message ?? '网络错误', icon: 'none' })
+  } finally {
+    publishing.value = false
+  }
+}
+
 function fmtTime(m: number): string {
   return `${Math.floor(m / 60).toString().padStart(2, '0')}:${(m % 60).toString().padStart(2, '0')}`
 }
@@ -206,8 +261,8 @@ const phaseLabel = computed(() => {
 
       <view class="footer-note">
         <text class="footer-note-text">完成出行后，点这里发布攻略，AI 会按孩子状态写（v1.5 第十五节）</text>
-        <button class="btn-primary" @click="uni.showToast({ title: '发布攻略路由待 #15 上线', icon: 'none' })">发布攻略</button>
-      </view>
+        <button class="btn-primary" @click="goPublishGuide">发布攻略</button>
+      </div>
     </template>
 
     <!-- v1.5 多维度结构化评分 modal -->

@@ -520,3 +520,45 @@ export const TrainIcon = ({ size = 20, ...props }: IconProps) => (
     <path d="M8 3l-1-2M16 3l1-2" />
   </svg>
 );
+
+// PR3：行程图标 — 日历 + 路线
+export const PlanIcon = ({ size = 20, ...props }: IconProps) => (
+  <svg {...base(size, props)}>
+    <rect x="3" y="5" width="18" height="16" rx="2" />
+    <path d="M3 9h18" />
+    <path d="M8 3v4M16 3v4" />
+    <path d="M9 14h6M9 17h4" />
+  </svg>
+);
+
+// PR3：编辑 / 归档 / 分享 / 铅笔 / Sparkles
+export const EditIcon = ({ size = 20, ...props }: IconProps) => (
+  <svg {...base(size, props)}>
+    <path d="M14 4l6 6-10 10H4v-6z" />
+    <path d="M13 5l6 6" />
+  </svg>
+);
+
+export const ArchiveIcon = ({ size = 20, ...props }: IconProps) => (
+  <svg {...base(size, props)}>
+    <rect x="3" y="4" width="18" height="4" rx="1" />
+    <path d="M5 8v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8" />
+    <path d="M9 12h6" />
+  </svg>
+);
+
+export const ShareIcon = ({ size = 20, ...props }: IconProps) => (
+  <svg {...base(size, props)}>
+    <circle cx="6" cy="12" r="2.5" />
+    <circle cx="18" cy="6" r="2.5" />
+    <circle cx="18" cy="18" r="2.5" />
+    <path d="M8.5 11l7-4M8.5 13l7 4" />
+  </svg>
+);
+
+export const PencilIcon = ({ size = 20, ...props }: IconProps) => (
+  <svg {...base(size, props)}>
+    <path d="M4 20l4-1 11-11-3-3L5 16z" />
+    <path d="M14 5l3 3" />
+  </svg>
+);

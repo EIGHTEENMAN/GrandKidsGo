@@ -9,6 +9,10 @@ type Action =
   | "guide_approve"
   | "guide_reject"
   | "guide_withdraw"
+  | "guide_pending"      // PR2 soft 命中进人工审核队列
+  | "guide_archive"      // PR2 作者归档
+  | "guide_unarchive"    // PR2 作者恢复归档
+  | "guide_report"       // PR2 用户举报
   | "consent_grant"
   | "consent_revoke"
   | "rating_create"

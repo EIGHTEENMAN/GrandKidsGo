@@ -1,11 +1,17 @@
 // POST /api/guides/from-plan/:planId
 // 详见 项目建设方案/走天下实施方案-v1.5.md 第十五节 + 附录 C GUIDE 类
+//
+// 攻略体系 v1.0 PR2 修复：
+// - 加 owner auth：必须 verifyAuth 命中且 plan.userId === auth.id（PR2 必做）
+// - DFA 走 dual threshold（PR1 已实现：reviewGuide 直接出 hard/soft）
+// - hard → status=rejected；soft → pending_review；clean → published（PR1 决策）
 
 import { NextRequest, NextResponse } from "next/server";
 import { PrismaClient } from "@prisma/client";
 import { reviewGuide } from "@/lib/moderation";
 import { recordOperation } from "@/lib/operation-log";
 import { track, TRACK } from "@/lib/analytics";
+import { verifyAuth } from "@/lib/verify-auth";
 
 const prisma = new PrismaClient();
 
@@ -27,6 +33,15 @@ export async function POST(
   req: NextRequest,
   { params }: { params: { planId: string } },
 ) {
+  // PR2: 必须登录才能 from-plan 发攻略
+  const auth = await verifyAuth(req);
+  if (!auth) {
+    return NextResponse.json(
+      { error: { code: "AUTH_REQUIRED", message: "请先登录" } },
+      { status: 401 },
+    );
+  }
+
   const planId = params.planId;
   if (!planId) {
     return NextResponse.json(
@@ -52,6 +67,14 @@ export async function POST(
     return NextResponse.json(
       { error: { code: "PLAN_NOT_FOUND", message: "planId 不存在" } },
       { status: 404 },
+    );
+  }
+
+  // PR2 必做：owner 校验（防越权代发）
+  if (plan.userId !== auth.id) {
+    return NextResponse.json(
+      { error: { code: "FORBIDDEN", message: "无权发布他人的计划" } },
+      { status: 403 },
     );
   }
 
@@ -133,45 +156,71 @@ export async function POST(
     select: { id: true },
   });
 
-  // 跑 DFA 审核
+  // 跑 DFA 审核（PR1 dual threshold）
   const result = await reviewGuide({ guideId: guide.id, text: contentHtml });
   if (result.hardRejection) {
     // 埋点：发布被 DFA 机审拦截
     track({
       eventName: TRACK.GUIDE_PUBLISH_SUBMITTED,
       userId: plan.userId,
-      properties: { guideId: guide.id, planId, status: "rejected", reason: result.reasons.join("; ") },
+      properties: { guideId: guide.id, planId, status: "rejected", sensitivity: result.sensitivity, reason: result.reasons.join("; ") },
     });
     await recordOperation({
       actorId: plan.userId,
       action: "guide_reject",
       targetType: "guide",
       targetId: guide.id,
-      after: { status: "rejected", reason: result.reasons },
+      after: { status: "rejected", sensitivity: result.sensitivity, reason: result.reasons },
     });
     return NextResponse.json(
       {
         id: guide.id,
         status: "rejected",
+        sensitivity: result.sensitivity,
         rejectionReason: result.reasons.join("; "),
       },
       { status: 200 },
     );
   }
-  // 埋点：发布提交成功，进入待审核
+  if (result.softPending) {
+    // soft 命中：进人工审核队列（PR1 新分支）
+    track({
+      eventName: TRACK.GUIDE_PUBLISH_SUBMITTED,
+      userId: plan.userId,
+      properties: { guideId: guide.id, planId, status: "pending_review", sensitivity: result.sensitivity },
+    });
+    await recordOperation({
+      actorId: plan.userId,
+      action: "guide_pending",
+      targetType: "guide",
+      targetId: guide.id,
+      after: { status: "pending_review", sensitivity: result.sensitivity, reason: result.reasons },
+    });
+    return NextResponse.json({
+      id: guide.id,
+      status: "pending_review",
+      sensitivity: result.sensitivity,
+      pendingReason: result.reasons.join("; "),
+    });
+  }
+  // clean：通过，直接 published（PR1 决策；作者可撤回 D6）
   track({
     eventName: TRACK.GUIDE_PUBLISH_SUBMITTED,
     userId: plan.userId,
-    properties: { guideId: guide.id, planId, status: "pending_review" },
+    properties: { guideId: guide.id, planId, status: "published", sensitivity: result.sensitivity },
   });
   await recordOperation({
     actorId: plan.userId,
     action: "guide_publish",
     targetType: "guide",
     targetId: guide.id,
-    after: { status: "pending_review" },
+    after: { status: "published", sensitivity: result.sensitivity },
   });
-  return NextResponse.json({ id: guide.id, status: "pending_review" });
+  return NextResponse.json({
+    id: guide.id,
+    status: "published",
+    sensitivity: result.sensitivity,
+  });
 }
 
 function escapeHtml(s: string): string {

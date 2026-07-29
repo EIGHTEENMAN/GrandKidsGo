@@ -1,14 +1,16 @@
 'use client';
 
 import { useState, useEffect, useCallback } from 'react';
+import { Suspense } from 'react';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
+import { useRouter, useSearchParams } from 'next/navigation';
 import TipTapEditor from '@/components/TipTapEditor';
 import { BabyIcon, CheckIcon } from '@/components/Icons';
 import { getToken, authedFetch } from '@/lib/auth';
 
-export default function CreateGuidePage() {
+function CreateGuideInner() {
   const router = useRouter();
+  const searchParams = useSearchParams();
   const [user, setUser] = useState<any>(null);
   const [loading, setLoading] = useState(true);
   const [cities, setCities] = useState<Array<{ id: string; name: string }>>([]);
@@ -20,6 +22,42 @@ export default function CreateGuidePage() {
   });
   const [saving, setSaving] = useState(false);
   const [childSayings, setChildSayings] = useState<Array<{ text: string; mood: string }>>([]);
+
+  // PR3：URL 参数预填（?source=plan&planId=X）
+  useEffect(() => {
+    const planId = searchParams?.get('planId');
+    if (!planId) return;
+    // 从 plan 拉数据预填（沿用 /api/plans/[id]，数据流不变）
+    fetch(`/api/plans/${planId}`)
+      .then(r => r.json())
+      .then(d => {
+        const p = d?.data ?? d;
+        if (!p?.id) return;
+        const tbs: any[] = Array.isArray(p.timelineBlocks) ? p.timelineBlocks : [];
+        const days = tbs.length || 0;
+        const cityName = p.city?.name ?? '';
+        const childAgeMonths = Array.isArray(p.childAges) && p.childAges[0] ? p.childAges[0] : null;
+        const childAgeText = childAgeMonths ? `${Math.floor(childAgeMonths / 12)}岁娃` : '亲子';
+        const title = p.title ?? `${cityName} ${days}天 · ${childAgeText}`;
+        // timelineBlocks → 极简 HTML 骨架（与 from-plan 默认骨架对齐）
+        let contentHtml = `<p>${title}</p>`;
+        for (let i = 0; i < tbs.length; i++) {
+          const day = tbs[i];
+          const blocks = Array.isArray(day?.blocks) ? day.blocks : [];
+          const lis = blocks.map((b: any) => `<li>${b.title ?? ''}${b.kidHook ? ` · ${b.kidHook}` : ''}</li>`).join('');
+          contentHtml += `<h3>Day ${i + 1}</h3><ul>${lis}</ul>`;
+        }
+        setForm(f => ({
+          ...f,
+          title,
+          cityId: p.cityId ?? '',
+          days,
+          contentHtml,
+          destination: cityName,
+        }));
+      })
+      .catch(() => {});
+  }, [searchParams]);
 
   useEffect(() => {
     const token = getToken();
@@ -232,5 +270,14 @@ export default function CreateGuidePage() {
         </div>
       </div>
     </main>
+  );
+}
+
+// PR3：导出预填版本（用 Suspense 包住 useSearchParams，符合 Next.js 13+ 要求）
+export default function CreateGuidePage() {
+  return (
+    <Suspense fallback={<div className="min-h-screen flex items-center justify-center text-gray-400">加载中…</div>}>
+      <CreateGuideInner />
+    </Suspense>
   );
 }
