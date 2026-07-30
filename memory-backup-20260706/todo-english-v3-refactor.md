@@ -10,7 +10,7 @@ metadata:
 # TODO: 学英语 apps/english 重构（v3）
 
 ## 状态
-**方案设计完毕，2026-06-25 用户拍板"先保存后面再做"**
+**已取消（2026-07-27 用户决定放弃此重构）。方案保留备查，但不再推进开发。**
 
 ## 方案位置
 memory: `session-2026-06-25-english-v3-architecture.md`
