@@ -55,6 +55,11 @@ export interface ModerationResult {
 
 /**
  * 把 (hard|soft|clean) 翻译成下游可写的 status。
+ *
+ * 用户答复 2026-07-29：DFA 自动审核为主。
+ * - hard  → rejected（机审自动拦截）
+ * - soft  → pending_review（机审标疑，进人工审核）
+ * - clean → published（DFA 通过，自动发布）
  */
 export function nextStatusFromModeration(r: Pick<ModerationResult, "hardRejection" | "softPending">): GuideStatus {
   if (r.hardRejection) return "rejected";
@@ -111,10 +116,10 @@ export function moderateTravelText(text: string): ModerationResult {
 }
 
 /**
- * 审核入口（PR1 向后兼容）：
- * - hard → status=rejected
- * - soft → status=pending_review
- * - clean → status=published（v1.0 决策；作者侧仍可撤回 D6）
+ * 审核入口（攻略体系 v1.0）：
+ * - hard → status=rejected（合规红线，机审自动拒）
+ * - soft → status=pending_review（疑似敏感词，进人工审核）
+ * - clean → status=published（DFA 通过，自动发布；用户答复 2026-07-29：DFA 自动审核为主，异常才进人工）
  *
  * 注意：reviewGuide 仅做审核 + status 写入。
  * 埋点 / 操作日志由调用方（PR2 的 /api/guides POST + from-plan）各自负责。

@@ -607,27 +607,83 @@ function batchFetchUsers(ids) {
   } catch { return {}; }
 }
 
-// 列出待审攻略
+// 列出待审攻略（用户答复 2026-07-29：admin 后台拆「自动审核队列」+「人工审核管理」）
+// ?type=auto    → DFA 标疑（soft 命中）的攻略 → 自动审核队列
+// ?type=manual  → 所有 status=pending_review 的攻略 → 人工审核管理
+// ?type=all     → 同 manual（默认）
 app.get('/api/travel/guides/pending', requireAdmin, (req, res) => {
   try {
-    const out = runPg(`
-      SELECT g.id, g.title, substring(g.content_html from 1 for 200) AS preview,
-             g.cover_images::text AS cover, g.city_id, g.child_ages::text AS child_ages,
-             g.days, g.user_id, g.created_at, c.name AS city_name,
-             (SELECT count(*) FROM guide_likes gl WHERE gl.guide_id = g.id) AS like_count,
-             (SELECT count(*) FROM guide_saves gs WHERE gs.guide_id = g.id) AS save_count
-      FROM guides g
-      LEFT JOIN cities c ON c.id = g.city_id
-      WHERE g.status = 'pending_review'
-      ORDER BY g.created_at ASC
-      LIMIT 50
-    `);
+    const type = String(req.query.type ?? 'all');
+    // auto 队列：从 OperationLog 拉最近一次审核 action 是 guide_pending（soft 命中）的攻略
+    // 因为 OperationLog.afterJson 是 JSONB，需要用 ::text 取出来再筛选
+    let out;
+    if (type === 'auto') {
+      // 方案：先拉所有 pending_review，然后 LEFT JOIN 操作日志取最近一条的 sensitivity=soft 的
+      // 用 Postgres 的 DISTINCT ON 拿每条 guide 的最新操作日志
+      out = runPg(`
+        SELECT g.id, g.title, substring(g.content_html from 1 for 200) AS preview,
+               g.cover_images::text AS cover, g.city_id, g.child_ages::text AS child_ages,
+               g.days, g.user_id, g.created_at, c.name AS city_name,
+               (SELECT count(*) FROM guide_likes gl WHERE gl.guide_id = g.id) AS like_count,
+               (SELECT count(*) FROM guide_saves gs WHERE gs.guide_id = g.id) AS save_count,
+               COALESCE(latest.after_json::text, '') AS op_after,
+               COALESCE(latest.created_at::text, '') AS op_at
+        FROM guides g
+        LEFT JOIN cities c ON c.id = g.city_id
+        LEFT JOIN LATERAL (
+          SELECT after_json, created_at FROM operation_logs
+          WHERE target_type='guide' AND target_id=g.id
+            AND action IN ('guide_pending','guide_reject')
+          ORDER BY created_at DESC LIMIT 1
+        ) latest ON true
+        WHERE g.status = 'pending_review'
+          AND latest.after_json IS NOT NULL
+          AND latest.after_json->>'sensitivity' = 'soft'
+        ORDER BY g.created_at ASC
+        LIMIT 50
+      `);
+    } else {
+      // manual / all：所有 pending_review
+      out = runPg(`
+        SELECT g.id, g.title, substring(g.content_html from 1 for 200) AS preview,
+               g.cover_images::text AS cover, g.city_id, g.child_ages::text AS child_ages,
+               g.days, g.user_id, g.created_at, c.name AS city_name,
+               (SELECT count(*) FROM guide_likes gl WHERE gl.guide_id = g.id) AS like_count,
+               (SELECT count(*) FROM guide_saves gs WHERE gs.guide_id = g.id) AS save_count,
+               COALESCE(latest.after_json::text, '') AS op_after,
+               COALESCE(latest.created_at::text, '') AS op_at
+        FROM guides g
+        LEFT JOIN cities c ON c.id = g.city_id
+        LEFT JOIN LATERAL (
+          SELECT after_json, created_at FROM operation_logs
+          WHERE target_type='guide' AND target_id=g.id
+            AND action IN ('guide_pending','guide_reject','guide_publish')
+          ORDER BY created_at DESC LIMIT 1
+        ) latest ON true
+        WHERE g.status = 'pending_review'
+        ORDER BY g.created_at ASC
+        LIMIT 50
+      `);
+    }
     const items = out
       .trim()
       .split('\n')
       .filter(Boolean)
       .map((line) => {
         const c = line.split('|');
+        // 解析 op_after JSON（pipe 已被 JSON 内容占用，分隔要谨慎）
+        // op_after 一定在末尾两个字段（safeParse 不再 split）
+        let sensitivity = null;
+        let reason = null;
+        if (c[12] && c[12] !== 'null' && c[12] !== '') {
+          try {
+            const obj = JSON.parse(c[12]);
+            sensitivity = obj.sensitivity ?? null;
+            // reason 可能是 array（多 soft 命中）
+            if (Array.isArray(obj.reason)) reason = obj.reason.join('; ');
+            else if (typeof obj.reason === 'string') reason = obj.reason;
+          } catch { /* ignore */ }
+        }
         return {
           id: c[0],
           title: c[1],
@@ -641,6 +697,9 @@ app.get('/api/travel/guides/pending', requireAdmin, (req, res) => {
           cityName: c[9],
           likeCount: Number(c[10] ?? 0),
           saveCount: Number(c[11] ?? 0),
+          sensitivity,
+          reason,
+          submittedAt: c[13] && c[13] !== 'null' ? c[13] : c[8], // fallback 到 createdAt
         };
       });
     // 批量补齐作者昵称/头像
@@ -651,7 +710,7 @@ app.get('/api/travel/guides/pending', requireAdmin, (req, res) => {
         ? { id: author.id, nickname: author.nickname, avatar: author.avatar }
         : { id: it.userId, nickname: '童慧行用户', avatar: null };
     }
-    res.json({ items });
+    res.json({ items, type });
   } catch (e) {
     res.status(500).json({ error: { code: 'QUERY_FAILED', message: e.message } });
   }
@@ -667,6 +726,16 @@ app.post('/api/travel/guides/:id/approve', requireAdmin, (req, res) => {
     runPg(
       `UPDATE guides SET status='published', published_at=NOW(), updated_at=NOW() WHERE id='${req.params.id}'`,
     );
+    // PR 后台审核：写 OperationLog 留痕
+    try {
+      const afterJson = JSON.stringify({ status: 'published', source: 'admin_approve' }).replace(/'/g, "''");
+      runPg(
+        `INSERT INTO operation_logs (id, actor_id, actor_role, action, target_type, target_id, after_json)
+         VALUES (gen_random_uuid()::text, '${req.admin?.id ?? 'admin'}', 'admin', 'guide_approve', 'guide', '${req.params.id}', '${afterJson}'::jsonb)`,
+      );
+    } catch (logErr) {
+      console.error('[admin approve] op-log write failed', logErr.message);
+    }
     res.json({ id: req.params.id, status: 'published' });
   } catch (e) {
     res.status(500).json({ error: { code: 'UPDATE_FAILED', message: e.message } });
@@ -680,6 +749,16 @@ app.post('/api/travel/guides/:id/reject', requireAdmin, (req, res) => {
     runPg(
       `UPDATE guides SET status='rejected', updated_at=NOW() WHERE id='${req.params.id}'`,
     );
+    // PR 后台审核：写 OperationLog 留痕（含 admin 拒绝原因，供前端展示）
+    try {
+      const afterJson = JSON.stringify({ status: 'rejected', reason, source: 'admin_reject' }).replace(/'/g, "''");
+      runPg(
+        `INSERT INTO operation_logs (id, actor_id, actor_role, action, target_type, target_id, after_json)
+         VALUES (gen_random_uuid()::text, '${req.admin?.id ?? 'admin'}', 'admin', 'guide_reject', 'guide', '${req.params.id}', '${afterJson}'::jsonb)`,
+      );
+    } catch (logErr) {
+      console.error('[admin reject] op-log write failed', logErr.message);
+    }
     res.json({ id: req.params.id, status: 'rejected', reason });
   } catch (e) {
     res.status(500).json({ error: { code: 'UPDATE_FAILED', message: e.message } });

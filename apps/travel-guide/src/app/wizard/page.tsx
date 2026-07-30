@@ -11,7 +11,7 @@
 //            transit 时长由 haversine + 距离阈值启发；hotel 按 kid-friendly 评分排序
 
 'use client';
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useState, useCallback } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { getToken, authedFetch } from '@/lib/auth';
@@ -259,37 +259,53 @@ export default function SmartGuideLanding() {
     setStartDate(tomorrowISO());
   }, []);
 
-  // 加载真实孩子档案
-  useEffect(() => {
+  // 加载真实孩子档案 + 监听 visibilitychange 重载
+  const loadUserData = useCallback(async () => {
     const token = typeof window !== 'undefined' ? getToken() : null;
-    if (!token) { setAuthReady(true); return; }
+    if (!token) { setUserId(''); setUserChildren([]); setAuthReady(true); return; }
     setChildrenLoading(true);
-    (async () => {
-      try {
-        const meRes = await authedFetch('/api/auth/me');
-        const me = await meRes.json().catch(() => null);
-        const uid: string | undefined = me?.data?.id ?? me?.user?.id ?? me?.id;
-        if (uid) {
-          setUserId(uid);
-          const r = await authedFetch(`/api/user/children?userId=${uid}`);
-          if (r.ok) {
-            const j = await r.json().catch(() => null);
-            const items: WizardChild[] = j?.data?.items ?? j?.items ?? [];
-            setUserChildren(items);
-            if (items.length > 0) {
-              setSelectedChildIds(new Set([items[0]!.childId]));
-              setChildrenCount(items.length);
-            }
+    try {
+      const meRes = await authedFetch('/api/auth/me');
+      const me = await meRes.json().catch(() => null);
+      const uid: string | undefined = me?.data?.id ?? me?.user?.id ?? me?.id;
+      if (uid) {
+        setUserId(uid);
+        const r = await authedFetch(`/api/user/children?userId=${uid}`);
+        if (r.ok) {
+          const j = await r.json().catch(() => null);
+          const items: WizardChild[] = j?.data?.items ?? j?.items ?? [];
+          setUserChildren(items);
+          if (items.length > 0 && selectedChildIds.size === 0) {
+            setSelectedChildIds(new Set([items[0]!.childId]));
+            setChildrenCount(items.length);
           }
         }
-      } catch {
-        // fallback
-      } finally {
-        setChildrenLoading(false);
-        setAuthReady(true);
+      } else {
+        setUserId('');
+        setUserChildren([]);
       }
-    })();
+    } catch {
+      // fallback
+    } finally {
+      setChildrenLoading(false);
+      setAuthReady(true);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  useEffect(() => {
+    loadUserData();
+
+    // P-bug-fix：用户从 /profile/children 添加孩子返回 wizard 后重新拉 user
+    const onFocus = () => loadUserData();
+    const onVisible = () => { if (!document.hidden) loadUserData(); };
+    window.addEventListener('focus', onFocus);
+    document.addEventListener('visibilitychange', onVisible);
+    return () => {
+      window.removeEventListener('focus', onFocus);
+      document.removeEventListener('visibilitychange', onVisible);
+    };
+  }, [loadUserData]);
 
   // 加载城市列表
   useEffect(() => {
@@ -573,30 +589,66 @@ export default function SmartGuideLanding() {
     setDirectLoading(true);
     setGenError('');
     setCandidates([]);
-    try {
-      const token = typeof window !== 'undefined' ? getToken() : null;
-      if (!token) {
-        router.push('/login?redirect=/wizard&fromIntent=generate-plan');
+
+    // P-bug-fix：未选孩子时给出友好引导，而不是默默用 guest 占位
+    const token = typeof window !== 'undefined' ? getToken() : null;
+    if (!token) {
+      // P-bug-fix：登录后跳回 wizard 继续填表
+      router.push('/login?redirect=' + encodeURIComponent('/wizard') + '&fromIntent=generate-plan');
+      return;
+    }
+    if (!userId || selectedChildIds.size === 0) {
+      const ok = window.confirm(
+        '这次出行还没选孩子。去「个人中心」添加孩子后，wizard 会按孩子真实月龄匹配更合适的行程。\n\n确定要去添加吗？'
+      );
+      if (ok) {
+        router.push('/profile/children?returnTo=/wizard');
+        setDirectLoading(false);
         return;
       }
+      // 用户取消 → 不生成
+      setDirectLoading(false);
+      return;
+    }
+
+    // P-bug-fix：提前检查所选城市是否都有景点
+    const citiesWithSpots = selectedCityIds.filter(
+      (id) => (placesByCity[id]?.length ?? 0) > 0
+    );
+    if (citiesWithSpots.length === 0) {
+      const cityNames = selectedCityIds
+        .map((id) => cities.find((c) => c.id === id)?.name ?? id)
+        .join('、');
+      setGenError(`所选城市「${cityNames}」暂无景点数据，请换一城（试试：北京 / 上海 / 广州）`);
+      setDirectLoading(false);
+      return;
+    }
+    // 把没数据的城踢掉
+    if (citiesWithSpots.length !== selectedCityIds.length) {
+      setSelectedCityIds(citiesWithSpots);
+    }
+
+    // childProfiles 从真实孩子档案映射（v1 简化：无孩子时用 guest 占位）
+    const childProfiles = selectedChildIds.size > 0
+      ? Array.from(selectedChildIds)
+        .map((id) => userChildren.find((c) => c.childId === id))
+        .filter((c): c is WizardChild => !!c)
+        .map((c) => ({
+          childId: c.childId,
+          name: c.nickname ?? c.name ?? '宝宝',
+          birthDate: c.birthDate ?? undefined,
+          likes: c.likes ?? [],
+        }))
+      : [{ childId: 'guest', name: '宝宝', likes: [] as string[] }];
+
+    try {
       // 没 userId 就用 'guest'（handler 不验）
       const finalUserId = userId || 'guest';
-      const childProfiles = selectedChildIds.size > 0
-        ? Array.from(selectedChildIds)
-          .map((id) => userChildren.find((c) => c.childId === id))
-          .filter((c): c is WizardChild => !!c)
-          .map((c) => ({
-            childId: c.childId,
-            name: c.nickname ?? c.name ?? '宝宝',
-            birthDate: c.birthDate ?? undefined,
-            likes: c.likes ?? [],
-          }))
-        : [{ childId: 'guest', name: '宝宝', likes: [] as string[] }];
-
+      // childProfiles 用筛选后的 citiesWithSpots 重发
       const payload = {
         userId: finalUserId,
-        cityId: primaryCityId,
-        cities: selectedCityIds,            // 多城：发给后端做拼接
+        cityId: citiesWithSpots[0],
+        cities: citiesWithSpots,            // 多城：发给后端做拼接
         startDate,
         endDate,
         travelers: { adults, children: childrenCount },
@@ -775,19 +827,27 @@ export default function SmartGuideLanding() {
                 {cities.map((c) => {
                   const checked = selectedCityIds.includes(c.id);
                   const idx = selectedCityIds.indexOf(c.id);
+                  // P-bug-fix：拉过景点且是 0 条 → 标注"暂无数据"
+                  const loaded = Object.prototype.hasOwnProperty.call(placesByCity, c.id);
+                  const spotCount = placesByCity[c.id]?.length ?? 0;
+                  const noData = loaded && spotCount === 0;
                   return (
                     <button
                       key={c.id}
                       type="button"
-                      onClick={() => toggleCity(c.id)}
-                      title={c.kidHook ?? c.name}
+                      disabled={noData}
+                      onClick={() => !noData && toggleCity(c.id)}
+                      title={noData ? `${c.name} 暂无景点数据` : (c.kidHook ?? c.name)}
                       className={`pl-3 pr-3 py-1.5 rounded-full text-sm font-medium transition whitespace-nowrap flex items-center gap-2 ${
-                        checked
-                          ? 'bg-blue-600 text-white shadow-md'
-                          : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                        noData
+                          ? 'bg-gray-50 text-gray-400 cursor-not-allowed'
+                          : checked
+                            ? 'bg-blue-600 text-white shadow-md'
+                            : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
                       }`}
                     >
                       <span>{c.province ? `${c.province} · ${c.name}` : c.name}</span>
+                      {noData && <span className="text-[10px] text-gray-400">暂无数据</span>}
                       {checked && (
                         <span className="ml-1 px-1.5 rounded-full bg-white/30 text-[10px] font-bold">
                           {idx + 1}
@@ -1073,7 +1133,7 @@ export default function SmartGuideLanding() {
               <div className="flex items-baseline justify-between mb-2">
                 <span className="text-xs text-gray-400">登录后可自动读取真实孩子档案</span>
                 {authReady && (
-                  <Link href="/profile/children" className="text-xs text-blue-600 hover:text-blue-700 underline">
+                  <Link href="/profile/children?returnTo=/wizard" className="text-xs text-blue-600 hover:text-blue-700 underline">
                     去个人中心添加真实孩子 →
                   </Link>
                 )}
@@ -1083,7 +1143,9 @@ export default function SmartGuideLanding() {
               ) : (
                 <>
                   <div className="mb-2 text-xs text-gray-500 bg-blue-50 border border-blue-100 rounded-lg px-3 py-2">
-                    💡 还没添加孩子？先去<a href="/profile/children" className="text-blue-600 underline mx-1">个人中心</a>添加，wizard 会自动按孩子真实月龄匹配行程。
+                    💡 还没添加孩子？先去
+                    <a href="/profile/children?returnTo=/wizard" className="text-blue-600 underline mx-1">个人中心</a>
+                    添加，wizard 会自动按孩子真实月龄匹配行程。
                   </div>
                   <div className="flex flex-wrap gap-2">
                     {[
@@ -1237,15 +1299,42 @@ export default function SmartGuideLanding() {
               {candidates.map((c, idx) => {
                 const checked = selectedCandidate === idx;
                 return (
-                  <button
+                  <div
                     key={`${c.style}-${c.rhythm}-${idx}`}
-                    type="button"
+                    role="button"
+                    tabIndex={0}
                     onClick={() => setSelectedCandidate(idx)}
-                    className={`w-full text-left bg-white rounded-2xl shadow-sm border-2 p-5 transition ${
+                    onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') setSelectedCandidate(idx); }}
+                    className={`relative bg-white rounded-2xl shadow-sm border-2 p-5 transition cursor-pointer ${
                       checked ? 'border-blue-500 ring-4 ring-blue-100 bg-blue-50/30' : 'border-gray-100 hover:border-gray-300'
                     }`}
                   >
-                    <div className="flex items-start justify-between gap-2 mb-2">
+                    {/* PR3 用户答复：候选加「查看详情」按钮跳到 /plan/preview
+                        P-bug-fix：c= 太长（base64 候选 JSON > 8KB）导致 414
+                        改用 sessionStorage 存候选（避免 URL 超长），仅传 idx 让 preview 读 storage */}
+                    <button
+                      type="button"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        try {
+                          sessionStorage.setItem(
+                            `wizard:candidate:${idx}`,
+                            JSON.stringify(c)
+                          );
+                        } catch (err) {
+                          // storage 满 / 不可用 → 走 URL fallback
+                          const encoded = btoa(unescape(encodeURIComponent(JSON.stringify(c))))
+                            .replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+                          window.location.href = `/plan/preview?c=${encoded}&i=${idx}`;
+                          return;
+                        }
+                        window.location.href = `/plan/preview?i=${idx}`;
+                      }}
+                      className="absolute top-3 right-3 inline-flex items-center gap-1.5 text-sm font-bold text-white bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 px-3.5 py-1.5 rounded-full shadow-md hover:shadow-lg transition"
+                    >
+                      👁 查看详情
+                    </button>
+                    <div className="flex items-start justify-between gap-2 mb-2 pr-24">
                       <div>
                         <h3 className="font-bold text-gray-900 text-base">{c.label}</h3>
                         <span className="mt-1 inline-block px-2 py-0.5 bg-blue-100 text-blue-700 text-xs rounded">{c.style}</span>
@@ -1311,7 +1400,7 @@ export default function SmartGuideLanding() {
                         ))}
                       </div>
                     </details>
-                  </button>
+                  </div>
                 );
               })}
             </div>

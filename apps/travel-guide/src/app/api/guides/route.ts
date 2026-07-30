@@ -14,6 +14,7 @@ import prisma from "@/lib/prisma";
 import { extractChildSayingsFromHtml } from "@/lib/extract-child-sayings";
 import { verifyAuth } from "@/lib/verify-auth";
 import { moderateTravelText } from "@/lib/moderation";
+import { recordOperation } from "@/lib/operation-log";
 
 export const dynamic = "force-dynamic";
 
@@ -108,6 +109,29 @@ export async function POST(req: NextRequest) {
     }
 
     // 响应：返回最终 status，前端按状态分支引导（v1 简化，PR3 在 /guides/[id]/edit 顶部 banner 处理）
+
+    // PR 后续：admin 审核拆分要求 OperationLog 含 sensitivity + reason
+    // - hard  → action=guide_reject
+    // - soft  → action=guide_pending
+    // - clean → action=guide_publish（自动通过，无需人工）
+    await recordOperation({
+      actorId: userId,
+      action:
+        finalStatus === "rejected"
+          ? "guide_reject"
+          : finalStatus === "pending_review"
+            ? "guide_pending"
+            : "guide_publish",
+      targetType: "guide",
+      targetId: guide.id,
+      after: {
+        status: finalStatus,
+        sensitivity: moderation.sensitivity,
+        source: finalStatus === "published" ? "publish_direct" : "submit",
+        reason: moderation.reasons,
+      },
+    });
+
     return NextResponse.json({
       code: "OK",
       data: {

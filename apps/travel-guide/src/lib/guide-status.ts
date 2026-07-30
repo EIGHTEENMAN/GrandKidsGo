@@ -69,7 +69,8 @@ export function statusInForTab(tab: MineTab): GuideStatus[] {
  */
 const TRANSITIONS: Record<GuideStatus, GuideStatus[]> = {
   draft: ["pending_review", "archived"],
-  pending_review: ["published", "rejected"],
+  // pending_review: published（人工放行）/ rejected（人工拒）/ draft（作者撤回编辑 — P0 感知）
+  pending_review: ["published", "rejected", "draft"],
   published: ["draft", "archived"],
   rejected: ["pending_review", "archived"],
   archived: ["published", "draft"],

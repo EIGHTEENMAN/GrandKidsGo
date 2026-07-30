@@ -20,9 +20,12 @@ export async function POST(
   const { guide, actor } = loaded;
 
   // 跑 L1 DFA（PR1 dual threshold）
+  // - hard → rejected（机审自动拦截）
+  // - soft → pending_review（进人工审核）
+  // - clean → published（DFA 通过，自动发布）
   const text = `${guide.title ?? ""}\n${guide.contentHtml ?? ""}`;
   const moderation: ModerationResult = moderateTravelText(text);
-  const finalStatus = moderation.nextStatus; // hard → rejected；soft → pending_review；clean → published
+  const finalStatus = moderation.nextStatus;
 
   await prisma.guide.update({
     where: { id: guide.id },

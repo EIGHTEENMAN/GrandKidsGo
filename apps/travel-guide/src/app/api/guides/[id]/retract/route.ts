@@ -15,7 +15,9 @@ export async function POST(
   req: NextRequest,
   { params }: { params: { id: string } },
 ) {
-  const loaded = await loadGuideForActor(req, params.id, ["published"], "draft");
+  // 攻略体系 v1.0 PR 后台审核拆分：作者可在审核中撤回编辑
+  // 兼容 D6（published 撤回）+ P0 用户感知（pending_review 作者主动撤回改）
+  const loaded = await loadGuideForActor(req, params.id, ["published", "pending_review"], "draft");
   if ("response" in loaded) return loaded.response;
   const { guide, actor } = loaded;
 

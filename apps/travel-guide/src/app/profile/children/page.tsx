@@ -1,8 +1,9 @@
 // /profile/children — 孩子档案管理（多孩切换 + 基础/扩展分离）
+// 攻略体系 v1.0 P-bug-fix：用户答复 2026-07-30 — 登录后 returnTo 回 wizard 继续
 'use client';
-import { useEffect, useState, useCallback } from 'react';
+import { useEffect, useState, useCallback, Suspense } from 'react';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
+import { useRouter, useSearchParams } from 'next/navigation';
 import ProfileSidebar from '@/components/profile/ProfileSidebar';
 import { BabyIcon, SparklesIcon, ClockIcon, AlertIcon, ThumbsUpIcon, CloseIcon } from '@/components/Icons';
 import { getToken, authedFetch } from '@/lib/auth';
@@ -36,7 +37,19 @@ type Feeling = {
 };
 
 export default function MyChildrenPage() {
+  return (
+    <Suspense fallback={<div className="min-h-screen flex items-center justify-center text-gray-400">加载中…</div>}>
+      <MyChildrenInner />
+    </Suspense>
+  );
+}
+
+function MyChildrenInner() {
   const router = useRouter();
+  const searchParams = useSearchParams();
+  // 用户答复 2026-07-30：从 /wizard 跳过来时带 returnTo=/wizard，登录后回到 wizard 继续
+  const returnTo = searchParams?.get('returnTo') ?? '';
+  const safeReturnTo = (returnTo.startsWith('/') && !returnTo.startsWith('//')) ? returnTo : '';
   const [children, setChildren] = useState<Child[]>([]);
   const [feelings, setFeelings] = useState<Record<string, Feeling>>({});
   const [activeId, setActiveId] = useState<string>('');
@@ -51,7 +64,13 @@ export default function MyChildrenPage() {
   const token = typeof window !== 'undefined' ? getToken() : null;
 
   useEffect(() => {
-    if (!token) { router.push('/login?redirect=/profile/children'); return; }
+    if (!token) {
+      const loginRedirect = safeReturnTo
+        ? `/login?redirect=${encodeURIComponent(safeReturnTo)}`
+        : '/login?redirect=/profile/children';
+      router.push(loginRedirect);
+      return;
+    }
     authedFetch('/api/auth/me')
       .then(r => r.json())
       .then(d => setUser(d?.data ?? d?.user ?? d))
@@ -114,6 +133,13 @@ export default function MyChildrenPage() {
       });
       setShowAdd(false);
       if (user?.id) await loadChildren(user.id);
+
+      // P-bug-fix：从 /wizard 跳过来时，添加完成后回到 wizard 继续填表
+      if (safeReturnTo) {
+        alert('添加成功，正在回到原来的页面继续操作');
+        router.push(safeReturnTo);
+        return;
+      }
     } catch (e: any) {
       setAddError(e?.message || '添加失败，请稍后重试');
     } finally {

@@ -1,6 +1,6 @@
-// /profile/guides — 我的攻略（攻略体系 v1.0 PR3 升级）
-// 5 状态 tabs + saved tab：drafts(草稿+审核中+退回) / published / rejected / archived / saved
-// 卡片按 status 显示不同操作（编辑/撤回/发布/删除/归档/分享）
+// /profile/guides — 我的攻略（攻略体系 v1.0 PR3 升级 + 用户答复 2026-07-29 待审核感知）
+// 6 状态 tabs + saved tab：pending_review(待审核) / drafts(草稿+退回) / published / rejected / archived / saved
+// 卡片按 status 显示不同操作（编辑/撤回/发布/删除/归档/分享）+ 展示 DFA reason（pending_review/rejected）
 
 'use client';
 import { useEffect, useState } from 'react';
@@ -8,12 +8,12 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import ProfileSidebar from '@/components/profile/ProfileSidebar';
 import {
-  GuidebookIcon, EyeIcon, ThumbsUpIcon, BookmarkIcon, ShareIcon, EditIcon, ArchiveIcon,
+  GuidebookIcon, EyeIcon, ThumbsUpIcon, BookmarkIcon, ShareIcon, EditIcon, ArchiveIcon, ClockIcon,
 } from '@/components/Icons';
 import { getToken, authedFetch } from '@/lib/auth';
 import { GUIDE_STATUS_LABEL } from '@/lib/guide-status';
 
-type Tab = 'drafts' | 'published' | 'rejected' | 'archived' | 'saved';
+type Tab = 'pending_review' | 'drafts' | 'published' | 'rejected' | 'archived' | 'saved';
 type GuideStatus = 'draft' | 'pending_review' | 'published' | 'rejected' | 'archived';
 
 interface GuideItem {
@@ -31,10 +31,15 @@ interface GuideItem {
   updatedAt?: string;
   mode?: string;
   rejectionReason?: string;
+  // PR 后台审核拆分 v1.0：从 OperationLog 拉的 DFA 审核信息
+  reviewReason?: string | null;
+  reviewSensitivity?: 'hard' | 'soft' | 'clean' | null;
+  reviewedAt?: string | null;
 }
 
-const TABS: Array<{ key: Tab; label: string; icon: React.ReactNode }> = [
-  { key: 'drafts',    label: '未发布',  icon: <BookmarkIcon size={14} /> },
+const TABS: Array<{ key: Tab; label: string; icon: React.ReactNode; accent?: string }> = [
+  { key: 'pending_review', label: '待审核',  icon: <ClockIcon size={14} />, accent: 'amber' },
+  { key: 'drafts',    label: '草稿/退回',  icon: <BookmarkIcon size={14} /> },
   { key: 'published', label: '已发布',  icon: <GuidebookIcon size={14} /> },
   { key: 'rejected',  label: '未通过',  icon: <GuidebookIcon size={14} /> },
   { key: 'archived',  label: '已归档',  icon: <ArchiveIcon size={14} /> },
@@ -51,9 +56,9 @@ const STATUS_BADGE: Record<GuideStatus, { tone: string; label: string }> = {
 
 export default function MyGuidesPage() {
   const router = useRouter();
-  const [tab, setTab] = useState<Tab>('drafts');
+  const [tab, setTab] = useState<Tab>('pending_review'); // 用户答复 2026-07-29：默认显示「待审核」
   const [items, setItems] = useState<GuideItem[]>([]);
-  const [counts, setCounts] = useState<Record<Tab, number>>({ drafts: 0, published: 0, rejected: 0, archived: 0, saved: 0 });
+  const [counts, setCounts] = useState<Record<Tab, number>>({ pending_review: 0, drafts: 0, published: 0, rejected: 0, archived: 0, saved: 0 });
   const [loading, setLoading] = useState(true);
   const [user, setUser] = useState<{ id: string; nickname: string; avatar: string | null } | null>(null);
   const [actionPending, setActionPending] = useState<string | null>(null);
@@ -68,26 +73,37 @@ export default function MyGuidesPage() {
       .catch(() => {});
   }, [router, token]);
 
+  // 一次拉全量，按 status 本地分桶（避免 4 次串行请求）
   useEffect(() => {
     if (!user?.id) return;
     setLoading(true);
     Promise.all([
-      authedFetch('/api/guides/mine?type=drafts', { userId: user.id }).then(r => r.json()),
-      authedFetch('/api/guides/mine?type=published', { userId: user.id }).then(r => r.json()),
-      authedFetch('/api/guides/mine?type=archived', { userId: user.id }).then(r => r.json()),
+      authedFetch('/api/guides/mine?type=all', { userId: user.id }).then(r => r.json()),
       authedFetch('/api/guides/mine?type=saved', { userId: user.id }).then(r => r.json()),
-    ]).then(([d, p, a, s]) => {
-      const all: GuideItem[] = (d?.items ?? []).concat(p?.items ?? [], a?.items ?? []);
-      const rejected = all.filter(g => g.status === 'rejected').length;
-      setCounts({
-        drafts: d?.items?.length ?? 0,
-        published: p?.items?.length ?? 0,
-        rejected,
-        archived: a?.items?.length ?? 0,
-        saved: s?.items?.length ?? 0,
-      });
+    ]).then(([all, saved]) => {
+      const list: GuideItem[] = all?.items ?? [];
+      const newCounts: Record<Tab, number> = {
+        pending_review: list.filter(g => g.status === 'pending_review').length,
+        drafts:    list.filter(g => g.status === 'draft' || g.status === 'rejected').length,
+        published: list.filter(g => g.status === 'published').length,
+        rejected:  list.filter(g => g.status === 'rejected').length,
+        archived:  list.filter(g => g.status === 'archived').length,
+        saved:     saved?.items?.length ?? 0,
+      };
+      setCounts(newCounts);
+      applyTab(list, 'pending_review', newCounts);
     }).catch(console.error).finally(() => setLoading(false));
   }, [user?.id]);
+
+  const applyTab = (list: GuideItem[], t: Tab, c: Record<Tab, number>) => {
+    setCounts(c);
+    const filtered = list.filter(g => {
+      if (t === 'drafts') return g.status === 'draft' || g.status === 'rejected';
+      if (t === 'pending_review') return g.status === 'pending_review';
+      return g.status === t;
+    });
+    setItems(filtered);
+  };
 
   useEffect(() => {
     if (!user?.id) return;
@@ -96,10 +112,8 @@ export default function MyGuidesPage() {
       .then(r => r.json())
       .then(j => {
         const all: GuideItem[] = j?.items ?? [];
-        // drafts tab 内部再细分（draft/pending_review/rejected）；但 mine API 已合并
-        if (tab === 'rejected') {
-          // drafts 合并数据中过滤 rejected
-          setItems(all.filter(g => g.status === 'rejected'));
+        if (tab === 'drafts') {
+          setItems(all.filter(g => g.status === 'draft' || g.status === 'rejected'));
         } else {
           setItems(all);
         }
@@ -117,27 +131,21 @@ export default function MyGuidesPage() {
         alert(actionRes?.error?.message ?? `${action} 失败`);
         return;
       }
-      // 刷新当前 tab
-      setTab(t => t); // trigger useEffect
-      // 简单刷新：直接 reload items
-      const j = await authedFetch(`/api/guides/mine?type=${tab}`, { userId: user!.id }).then(r => r.json());
-      const all = j?.items ?? [];
-      setItems(tab === 'rejected' ? all.filter((g: GuideItem) => g.status === 'rejected') : all);
-      // 刷新计数
-      const [drafts, published, archived, saved] = await Promise.all([
-        authedFetch('/api/guides/mine?type=drafts', { userId: user!.id }).then(r => r.json()),
-        authedFetch('/api/guides/mine?type=published', { userId: user!.id }).then(r => r.json()),
-        authedFetch('/api/guides/mine?type=archived', { userId: user!.id }).then(r => r.json()),
+      // 刷新当前 tab + 计数
+      const [all, saved] = await Promise.all([
+        authedFetch('/api/guides/mine?type=all', { userId: user!.id }).then(r => r.json()),
         authedFetch('/api/guides/mine?type=saved', { userId: user!.id }).then(r => r.json()),
       ]);
-      const allGuides: GuideItem[] = (drafts?.items ?? []).concat(published?.items ?? [], archived?.items ?? []);
-      setCounts({
-        drafts: drafts?.items?.length ?? 0,
-        published: published?.items?.length ?? 0,
-        rejected: allGuides.filter(g => g.status === 'rejected').length,
-        archived: archived?.items?.length ?? 0,
-        saved: saved?.items?.length ?? 0,
-      });
+      const list: GuideItem[] = all?.items ?? [];
+      const newCounts: Record<Tab, number> = {
+        pending_review: list.filter(g => g.status === 'pending_review').length,
+        drafts:    list.filter(g => g.status === 'draft' || g.status === 'rejected').length,
+        published: list.filter(g => g.status === 'published').length,
+        rejected:  list.filter(g => g.status === 'rejected').length,
+        archived:  list.filter(g => g.status === 'archived').length,
+        saved:     saved?.items?.length ?? 0,
+      };
+      applyTab(list, tab, newCounts);
     } finally {
       setActionPending(null);
     }
@@ -154,25 +162,37 @@ export default function MyGuidesPage() {
       }} />
       <div className="space-y-4 min-w-0">
         <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-4">
-          <h1 className="text-xl font-extrabold text-gray-900 mb-3">我的攻略</h1>
+          <div className="flex items-center justify-between mb-3">
+            <h1 className="text-xl font-extrabold text-gray-900">我的攻略</h1>
+            <span className="text-xs text-gray-400">DFA 自动审核 · 异常进人工</span>
+          </div>
           <div className="flex gap-2 overflow-x-auto">
-            {TABS.map(t => (
-              <button
-                key={t.key}
-                onClick={() => setTab(t.key)}
-                className={`flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition ${
-                  tab === t.key
-                    ? 'bg-gradient-to-r from-blue-500 to-cyan-500 text-white'
-                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-                }`}
-              >
-                {t.icon}
-                <span>{t.label}</span>
-                <span className={`text-xs px-1.5 py-0.5 rounded-full ${tab === t.key ? 'bg-white/20' : 'bg-gray-200 text-gray-600'}`}>
-                  {counts[t.key]}
-                </span>
-              </button>
-            ))}
+            {TABS.map(t => {
+              const isActive = tab === t.key;
+              const isPending = t.key === 'pending_review';
+              // 「待审核」tab 用橙色强调（区别于其他 tab）
+              const activeClass = isPending
+                ? 'bg-gradient-to-r from-amber-500 to-orange-500 text-white'
+                : 'bg-gradient-to-r from-blue-500 to-cyan-500 text-white';
+              const idleClass = isPending
+                ? 'bg-amber-50 text-amber-700 hover:bg-amber-100'
+                : 'bg-gray-100 text-gray-700 hover:bg-gray-200';
+              return (
+                <button
+                  key={t.key}
+                  onClick={() => setTab(t.key)}
+                  className={`flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition ${
+                    isActive ? activeClass : idleClass
+                  }`}
+                >
+                  {t.icon}
+                  <span>{t.label}</span>
+                  <span className={`text-xs px-1.5 py-0.5 rounded-full ${isActive ? 'bg-white/20' : isPending ? 'bg-amber-200 text-amber-800' : 'bg-gray-200 text-gray-600'}`}>
+                    {counts[t.key]}
+                  </span>
+                </button>
+              );
+            })}
           </div>
         </div>
 
@@ -231,8 +251,32 @@ function GuideRow({
                 {statusBadge.label}
               </span>
             )}
+            {/* PR 后台审核拆分：sensitivity 徽章让用户知道是机审还是人工待审 */}
+            {guide.reviewSensitivity && tab !== 'saved' && (
+              <span className={`flex-shrink-0 text-[10px] px-1.5 py-0.5 rounded-full font-medium ${
+                guide.reviewSensitivity === 'soft'
+                  ? 'bg-orange-50 text-orange-700 border border-orange-200'
+                  : guide.reviewSensitivity === 'hard'
+                    ? 'bg-red-50 text-red-700 border border-red-200'
+                    : 'bg-blue-50 text-blue-700 border border-blue-200'
+              }`}>
+                {guide.reviewSensitivity === 'soft' ? '⚠️ DFA 标疑' :
+                 guide.reviewSensitivity === 'hard' ? '🚨 硬命中' : '✅ DFA 通过'}
+              </span>
+            )}
           </div>
-          <div className="flex items-center gap-3 text-xs text-gray-500">
+          {/* PR 后台审核拆分：DFA 命中 reason 展示给用户 */}
+          {guide.reviewReason && tab !== 'saved' && (
+            <div className="mt-1.5 px-2 py-1 bg-amber-50 border border-amber-200 rounded text-[11px] text-amber-800 leading-relaxed">
+              <strong className="font-bold">DFA 审核：</strong>{guide.reviewReason}
+              {guide.reviewedAt && (
+                <span className="ml-2 text-amber-600">
+                  · {new Date(guide.reviewedAt).toLocaleString('zh-CN')}
+                </span>
+              )}
+            </div>
+          )}
+          <div className="flex items-center gap-3 text-xs text-gray-500 mt-1.5">
             {guide.cityId && <span className="px-1.5 py-0.5 bg-blue-50 text-blue-600 rounded">{guide.cityId}</span>}
             {guide.days && <span>{guide.days} 天</span>}
             <span>{date}</span>
@@ -284,6 +328,24 @@ function GuideRow({
         {tab === 'drafts' && guide.status === 'pending_review' && (
           <span className="text-xs text-amber-600">审核中…</span>
         )}
+        {/* PR 后台审核拆分：待审核 tab 操作 — 让用户能编辑/撤回进入审核的攻略 */}
+        {tab === 'pending_review' && (
+          <>
+            <Link
+              href={`/guides/${guide.id}/edit`}
+              className="text-xs px-2.5 py-1 bg-blue-50 text-blue-700 rounded-full hover:bg-blue-100"
+            >
+              编辑
+            </Link>
+            <button
+              onClick={() => onAction(guide.id, 'retract')}
+              disabled={pending}
+              className="text-xs px-2.5 py-1 bg-amber-50 text-amber-700 rounded-full hover:bg-amber-100 disabled:opacity-50"
+            >
+              撤回编辑
+            </button>
+          </>
+        )}
         {tab === 'drafts' && guide.status === 'draft' && (
           <button
             onClick={() => onAction(guide.id, 'publish')}
@@ -325,17 +387,29 @@ function GuideRow({
 }
 
 function EmptyState({ tab }: { tab: Tab }) {
-  const text = tab === 'drafts'    ? { t: '还没有未发布的攻略', s: '草稿 / 审核中 / 退回都会显示在这里' }
-    : tab === 'published'           ? { t: '还没有发布攻略', s: '把孩子的旅行故事写下来吧' }
-    : tab === 'rejected'            ? { t: '没有退回的攻略', s: '被 DFA 拒绝的攻略会出现在这里' }
-    : tab === 'archived'            ? { t: '没有归档的攻略', s: '归档的攻略不会出现在公开页面' }
+  // 用户答复 2026-07-29：「待审核」感知
+  const text = tab === 'pending_review' ? { t: '没有待审核的攻略', s: '你提交的攻略都会在这里显示审核进度', color: 'amber' }
+    : tab === 'drafts'    ? { t: '还没有草稿', s: '草稿 / 退回都会显示在这里（审核中的攻略在「待审核」tab）' }
+    : tab === 'published'  ? { t: '还没有发布攻略', s: '把孩子的旅行故事写下来吧' }
+    : tab === 'rejected'   ? { t: '没有退回的攻略', s: '被 DFA 拒绝的攻略会出现在这里（请查看 DFA 命中原因）' }
+    : tab === 'archived'   ? { t: '没有归档的攻略', s: '归档的攻略不会出现在公开页面' }
     : { t: '还没有收藏', s: '看到喜欢的攻略可以收藏起来' };
+  const accent = (text as any).color === 'amber' ? 'text-amber-600' : 'text-gray-300';
   return (
-    <div className="bg-white rounded-2xl border border-dashed border-gray-200 p-12 text-center">
-      <GuidebookIcon size={36} className="mx-auto text-gray-300 mb-3" />
+    <div className={`bg-white rounded-2xl border border-dashed p-12 text-center ${tab === 'pending_review' ? 'border-amber-200' : 'border-gray-200'}`}>
+      {tab === 'pending_review' ? (
+        <ClockIcon size={36} className={`mx-auto ${accent} mb-3`} />
+      ) : (
+        <GuidebookIcon size={36} className={`mx-auto ${accent} mb-3`} />
+      )}
       <p className="text-gray-700 font-medium">{text.t}</p>
       <p className="text-sm text-gray-400 mt-1">{text.s}</p>
-      {tab !== 'saved' && (
+      {tab === 'pending_review' && (
+        <p className="text-xs text-amber-700 mt-3 max-w-md mx-auto leading-relaxed">
+          ⚙️ <strong>审核流程：</strong>DFA 自动审为主（敏感词/手机号/孩子身份证等），合规则直接发布；触发软命中（色情/赌博/歧视等疑似敏感词）会进入人工审核队列
+        </p>
+      )}
+      {tab !== 'saved' && tab !== 'pending_review' && (
         <Link href="/guides/create" className="inline-block mt-4 px-5 py-2 bg-gradient-to-r from-blue-500 to-cyan-500 text-white rounded-full text-sm font-bold hover:shadow-md transition">
           写新攻略
         </Link>

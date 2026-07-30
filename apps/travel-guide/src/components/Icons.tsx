@@ -562,3 +562,19 @@ export const PencilIcon = ({ size = 20, ...props }: IconProps) => (
     <path d="M14 5l3 3" />
   </svg>
 );
+
+// P1：垃圾桶 / 加号
+export const TrashIcon = ({ size = 20, ...props }: IconProps) => (
+  <svg {...base(size, props)}>
+    <path d="M4 7h16" />
+    <path d="M9 7V5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2" />
+    <path d="M6 7l1 13a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2l1-13" />
+    <path d="M10 11v6M14 11v6" />
+  </svg>
+);
+
+export const PlusIcon = ({ size = 20, ...props }: IconProps) => (
+  <svg {...base(size, props)}>
+    <path d="M12 5v14M5 12h14" />
+  </svg>
+);

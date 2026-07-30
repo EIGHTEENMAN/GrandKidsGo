@@ -1,6 +1,7 @@
 // GET /api/guides/mine?type=drafts|published|archived|saved|all — 我的攻略列表
 // 详见 项目建设方案/走天下个人中心竞品调研-2026-07-24.md 第二节 P0-2
 // 攻略体系 v1.0 PR1：tab 字符串统一定义在 lib/guide-status.ts
+// 用户答复 2026-07-29：从 OperationLog 拉最近一次审核动作的 reason，让前端展示 DFA 命中详情
 
 import { NextRequest, NextResponse } from "next/server";
 import prisma from "@/lib/prisma";
@@ -16,6 +17,40 @@ const KNOWN_TYPES = new Set<MineTab | "saved">([
   "saved",
   "all",
 ]);
+
+/**
+ * 从 OperationLog 拉最近一次针对该 guide 的审核动作的 reason。
+ * - hard 拒 → action='guide_reject' 的 after.reason
+ * - soft pending → action='guide_pending' 或 'guide_reject'（PR1 dual threshold 用 guide_reject 也包含 soft）
+ *   实际 PR2 from-plan 中 hard→action=guide_reject，soft→action=guide_pending；/api/guides POST / submit 用同样的策略
+ */
+async function getLatestReviewReason(guideId: string, userId: string): Promise<{
+  reason: string | null;
+  sensitivity: string | null;
+  reviewedAt: string | null;
+} | null> {
+  const log = await prisma.operationLog.findFirst({
+    where: {
+      targetType: "guide",
+      targetId: guideId,
+      actorId: userId,
+      action: { in: ["guide_reject", "guide_pending", "guide_withdraw"] },
+    },
+    orderBy: { createdAt: "desc" },
+    select: { afterJson: true, createdAt: true },
+  });
+  if (!log) return null;
+  const after = (log.afterJson ?? {}) as Record<string, unknown>;
+  // reason 可能是 array（多 soft 命中）；join 成 string
+  let reason: string | null = null;
+  if (Array.isArray(after.reason)) reason = after.reason.join("; ");
+  else if (typeof after.reason === "string") reason = after.reason;
+  return {
+    reason,
+    sensitivity: (after.sensitivity as string) ?? null,
+    reviewedAt: log.createdAt?.toISOString() ?? null,
+  };
+}
 
 export async function GET(req: NextRequest) {
   const auth = await verifyAuth(req);
@@ -96,5 +131,17 @@ export async function GET(req: NextRequest) {
       updatedAt: true,
     },
   });
-  return NextResponse.json({ items, type });
+
+  // PR1 增强：从 OperationLog 拉每条的审核 reason（pending_review / rejected 的卡片需要展示）
+  const enriched = await Promise.all(items.map(async (g) => {
+    const meta = await getLatestReviewReason(g.id, userId);
+    return {
+      ...g,
+      reviewReason: meta?.reason ?? null,
+      reviewSensitivity: meta?.sensitivity ?? null,
+      reviewedAt: meta?.reviewedAt ?? null,
+    };
+  }));
+
+  return NextResponse.json({ items: enriched, type });
 }
