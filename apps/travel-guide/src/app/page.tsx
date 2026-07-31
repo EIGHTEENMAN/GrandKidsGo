@@ -65,7 +65,8 @@ interface Guide {
   cityName: string | null;
   days: number | null;
   childAges: number[];
-  coverImages?: string[];
+  coverImage?: string | null;   // Feed API 返回单数
+  coverImages?: string[];       // DB 直查返回数组
   stats: { view: number; save: number; like: number };
   author: { nickname: string; avatar: string | null };
 }
@@ -530,7 +531,7 @@ export default function TravelHome() {
               const isFeatured = i === 0;
               const heightClass = isFeatured ? 'h-96' : MASONRY_HEIGHTS[i % MASONRY_HEIGHTS.length];
               const coverGradient = COVER_GRADIENTS[i % COVER_GRADIENTS.length];
-              const coverImage = g.coverImages?.[0];
+              const coverImage = g.coverImage || g.coverImages?.[0];
               return (
                 <Link
                   key={g.id}
