@@ -13,6 +13,7 @@ import {
   NursingIcon, WaterDropIcon, StoreIcon, PlaygroundIcon,
   HospitalIcon, PharmacyIcon, StrollerIcon, DiDiIcon, HotelRoomIcon,
   SubwayIcon, BusIcon, ParkingIcon, PlaneTravelIcon, TrainIcon, TrophyIcon,
+  CloudIcon,
 } from '@/components/Icons';
 import { TAG_CATEGORIES } from '@/lib/tags';
 import ChildFearWarning from '@/components/ChildFearWarning';
@@ -107,6 +108,53 @@ const NEARBY_CATEGORIES: Array<{ key: string; label: string; Icon: any; tone: st
 ];
 
 const MONTH_NAMES = ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'];
+
+// 季节推导（从 recommendedMonths 推春/夏/秋/冬）
+// 3-5/9-11 → 秋（含春秋），6-8 → 夏，12/1/2 → 冬，全覆盖 → 春秋皆宜
+type Season = 'spring' | 'summer' | 'autumn' | 'winter' | 'all';
+function deriveSeason(months: number[] | null | undefined): Season | null {
+  if (!months || months.length === 0) return null;
+  if (months.length >= 10) return 'all';
+  const has = (m: number) => months.includes(m);
+  const isSummerOnly = [6, 7, 8].every(has) && months.every((m) => [6, 7, 8].includes(m));
+  const isWinterOnly = [12, 1, 2].every(has) && months.every((m) => [12, 1, 2].includes(m));
+  if (isSummerOnly) return 'summer';
+  if (isWinterOnly) return 'winter';
+  return 'autumn'; // 春/秋混合或部分覆盖，归为"春秋皆宜"
+}
+
+const SEASON_META: Record<Season, { label: string; tone: string }> = {
+  spring: { label: '春季推荐', tone: 'bg-emerald-500/90' },
+  summer: { label: '夏季推荐', tone: 'bg-cyan-500/90' },
+  autumn: { label: '春秋皆宜', tone: 'bg-amber-500/90' },
+  winter: { label: '冬季推荐', tone: 'bg-slate-500/90' },
+  all: { label: '四季皆宜', tone: 'bg-blue-500/90' },
+};
+
+// 雨天友好推导（基于 spotType — tags 当前为空数组，安全用 spotType 推）
+type RainStatus = 'friendly' | 'caution';
+function deriveRainStatus(spotType: string | null | undefined, tags: string[] | null | undefined): RainStatus | null {
+  const t = (tags ?? []).map((x) => x.toLowerCase());
+  if (t.some((x) => ['indoor', 'rain_friendly', '室内', 'covered', 'sheltered'].includes(x))) return 'friendly';
+  if (t.some((x) => ['outdoor', '户外'].includes(x))) return 'caution';
+  // 兜底：基于 spotType 推断
+  const indoorTypes = ['museum', 'library', 'science', 'mall', 'aquarium', 'restaurant', 'hotel', 'medical'];
+  const outdoorTypes = ['playground', 'park'];
+  if (spotType && indoorTypes.includes(spotType)) return 'friendly';
+  if (spotType && outdoorTypes.includes(spotType)) return 'caution';
+  return null;
+}
+
+const RAIN_META: Record<RainStatus, { label: string; tone: string; Icon: any }> = {
+  friendly: { label: '雨天友好', tone: 'bg-blue-500/90', Icon: CloudIcon },
+  caution: { label: '雨季慎选', tone: 'bg-orange-500/90', Icon: CloudIcon },
+};
+
+function scrollToFacility() {
+  if (typeof window === 'undefined') return;
+  const el = document.getElementById('facility-section');
+  el?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
 
 function formatRecommendedMonths(months: number[]): string {
   if (!months || months.length === 0) return '';
@@ -244,6 +292,33 @@ export default function PlaceDetailPage() {
                   <SunIcon size={12} /> 推荐 {formatRecommendedMonths(place.recommendedMonths)}
                 </span>
               )}
+              {/* 季节 chip — 从 recommendedMonths 推导（2026-07-31 v1.0 P2） */}
+              {(() => {
+                const season = deriveSeason(place.recommendedMonths);
+                if (!season) return null;
+                const meta = SEASON_META[season];
+                return (
+                  <span className={`px-3 py-1 ${meta.tone} backdrop-blur-sm rounded-full text-xs font-medium text-white border border-white/30 inline-flex items-center gap-1`}>
+                    <SunIcon size={12} /> {meta.label}
+                  </span>
+                );
+              })()}
+              {/* 雨天备选 chip — 基于 spotType/tags 推导，点击跳到便利设施 */}
+              {(() => {
+                const status = deriveRainStatus(place.spotType, place.tags);
+                if (!status) return null;
+                const meta = RAIN_META[status];
+                const Icon = meta.Icon;
+                return (
+                  <button
+                    onClick={scrollToFacility}
+                    aria-label={meta.label}
+                    className={`px-3 py-1 ${meta.tone} backdrop-blur-sm rounded-full text-xs font-medium text-white border border-white/30 inline-flex items-center gap-1 hover:opacity-90 transition cursor-pointer`}
+                  >
+                    <Icon size={12} /> {meta.label}
+                  </button>
+                );
+              })()}
               {/* 游玩时长 chip — 接 durationMinutes 字段 */}
               {place.durationMinutes && (
                 <span className="px-3 py-1 bg-white/20 backdrop-blur-sm rounded-full text-xs font-medium text-white border border-white/30 inline-flex items-center gap-1">
@@ -399,7 +474,7 @@ export default function PlaceDetailPage() {
 
         {/* ============ ②.5 便利设施（v1.0 聚合）— 母婴室/高脚椅/婴儿车/停车 ============ */}
         {data.aggregate && (data.aggregate.parkingRate != null || data.aggregate.highChairRate != null || data.aggregate.napRoomRate != null || data.aggregate.strollerOkRate != null || data.aggregate.kidFriendlyAvg != null) && (
-          <section className="bg-white rounded-2xl shadow-sm border border-gray-100 p-5 mb-6">
+          <section id="facility-section" className="bg-white rounded-2xl shadow-sm border border-gray-100 p-5 mb-6">
             <h2 className="text-lg font-bold text-gray-900 mb-3 inline-flex items-center gap-2">
               <SparklesIcon size={18} className="text-emerald-600" /> 便利设施
               <span className="text-xs font-normal text-gray-400 ml-2">基于 {data.aggregate.reviewCount} 条家庭评价</span>

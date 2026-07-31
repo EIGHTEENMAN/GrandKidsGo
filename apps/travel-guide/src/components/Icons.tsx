@@ -157,6 +157,13 @@ export const SunIcon = ({ size = 20, ...props }: IconProps) => (
   </svg>
 );
 
+export const CloudIcon = ({ size = 20, ...props }: IconProps) => (
+  <svg {...base(size, props)}>
+    <path d="M17.5 19a4.5 4.5 0 0 0 0-9 6 6 0 0 0-11.6 1.5A4 4 0 0 0 6.5 19h11z" />
+    <path d="M8 14v3M12 14v4M16 14v3" />
+  </svg>
+);
+
 export const HeartIcon = ({ size = 20, ...props }: IconProps) => (
   <svg {...base(size, props)}>
     <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z" />
