@@ -585,3 +585,23 @@ export const PlusIcon = ({ size = 20, ...props }: IconProps) => (
     <path d="M12 5v14M5 12h14" />
   </svg>
 );
+
+export const LoadingIcon = ({ size = 20, ...props }: IconProps) => (
+  <svg {...base(size, props)} className={`animate-spin ${props.className ?? ''}`}>
+    <circle cx="12" cy="12" r="9" strokeOpacity="0.25" />
+    <path d="M21 12a9 9 0 0 0-9-9" />
+  </svg>
+);
+
+export const ChevronLeft = ({ size = 20, ...props }: IconProps) => (
+  <svg {...base(size, props)}>
+    <path d="M15 18l-6-6 6-6" />
+  </svg>
+);
+
+export const CalendarIcon = ({ size = 20, ...props }: IconProps) => (
+  <svg {...base(size, props)}>
+    <rect x="3" y="4" width="18" height="18" rx="2" />
+    <path d="M16 2v4M8 2v4M3 10h18" />
+  </svg>
+);

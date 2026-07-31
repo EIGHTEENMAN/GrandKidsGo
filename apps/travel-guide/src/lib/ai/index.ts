@@ -10,3 +10,14 @@ export type {
   JsonOptions,
   ProviderConfig,
 } from "./types";
+
+// AI 攻略向导高层函数（2026-07-31）
+export {
+  generateGuideOutline,
+  generateGuideContent,
+} from "./travel-wizard";
+export type {
+  TravelWizardParams,
+  GuideOutline,
+  GuideOutlineSection,
+} from "./travel-wizard";

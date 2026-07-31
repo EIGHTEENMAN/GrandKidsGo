@@ -65,6 +65,36 @@ export class MockProvider implements AiProvider {
     const spotMatch = joined.match(/景点[:：]\s*([^\n]+)/);
     const spotName = spotMatch ? spotMatch[1].trim().split(/[,，。\s]/)[0] : "该地点";
     const kind = detectKind(spotName);
+
+    // AI 攻略向导场景：识别"出行"上下文 → 返回 Outline 形状
+    const isTravelWizard = /亲子旅行规划师|旅行大纲|攻略向导|亲子旅行攻略/i.test(joined);
+    if (isTravelWizard) {
+      const destMatch = joined.match(/目的地[：:]\s*([^\n]+)/);
+      const daysMatch = joined.match(/计划天数[：:]\s*(\d+)\s*天/);
+      const days = daysMatch ? Math.min(Math.max(parseInt(daysMatch[1], 10), 1), 7) : 3;
+      const destination = destMatch ? destMatch[1].trim() : "目的地";
+      const stub = {
+        title: `${destination}${days}日亲子游攻略（AI 起草 v1，占位）`,
+        summary: `这是一份由 AI 起草的占位攻略大纲。配置 SILICONFLOW_API_KEY 后将生成真实内容。当前 Mock 模式用于本地开发。`,
+        sections: Array.from({ length: days }, (_, i) => ({
+          day: i + 1,
+          theme: `第 ${i + 1} 天主题（占位）`,
+          activities: [
+            `上午：探索 ${destination} 的热门景点`,
+            `下午：亲子互动活动`,
+          ],
+          transport: "建议打车或公共交通（占位）",
+          accommodation: "亲子酒店或民宿（占位）",
+          tips: [
+            `适合 3-12 岁儿童`,
+            `记得带防晒和替换衣物`,
+          ],
+        })),
+      };
+      return opts.schema.parse(stub) as T;
+    }
+
+    // 默认 Guardian schema（02-ai-enrich 用）
     const stub = {
       kidHook: mockGuardianText(spotName, kind),
       momHook: `适合妈妈拍照打卡的 ${spotName}`,
