@@ -12,6 +12,7 @@ import {
   StoreIcon, PlaygroundIcon, ScienceIcon, LibraryIcon, MuseumIcon, AquariumIcon,
   ChevronDown,
 } from '@/components/Icons';
+import { ChildRecommendSection } from '@/components/ChildRecommendSection';
 
 const TRAVEL_API = (process.env.NEXT_PUBLIC_TRAVEL_API as string) || 'https://travel.grandand.com';
 
@@ -382,6 +383,9 @@ function PlacesContent() {
               </>
             )}
           </div>
+
+        {/* 2026-07-31 v1.0 Phase A：基于当前孩子画像的推荐 Section */}
+        <ChildRecommendSection cityId={cityId} />
 
         {loading && <div className="text-center py-12 text-gray-400">搜索中…</div>}
 

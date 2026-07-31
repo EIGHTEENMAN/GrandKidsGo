@@ -364,25 +364,34 @@ export function autoSuggestTotalDays(
 export function getTransitModeAndMinutes(
   from: { lat: number | null; lng: number | null; name?: string },
   to: { lat: number | null; lng: number | null; name?: string },
+  child?: { hasMotionSickness?: boolean },
 ): { mode: TransitMode; minutes: number; distanceKm: number } {
   if (from.lat == null || from.lng == null || to.lat == null || to.lng == null) {
     // 数据缺失：fallback 到 drive 中位估算
     return { mode: "drive", minutes: 180, distanceKm: 120 };
   }
   const dKm = haversineKm(from.lat, from.lng, to.lat, to.lng);
+  let mode: TransitMode;
+  let minutes: number;
   if (dKm < 2) {
-    return { mode: "walk", minutes: Math.max(10, Math.round((dKm / 5) * 60)), distanceKm: dKm };
+    mode = "walk";
+    minutes = Math.max(10, Math.round((dKm / 5) * 60));
+  } else if (dKm < 50) {
+    mode = "drive";
+    minutes = Math.max(15, Math.round((dKm / 60) * 60));
+  } else if (dKm < 300) {
+    mode = "high_speed_rail";
+    minutes = Math.round((dKm / 250) * 60) + 60;
+  } else {
+    mode = "flight";
+    minutes = Math.round((dKm / 600) * 60) + 180;
   }
-  if (dKm < 50) {
-    // drive：60 km/h 平均，含市内
-    return { mode: "drive", minutes: Math.max(15, Math.round((dKm / 60) * 60)), distanceKm: dKm };
+  // 2026-07-31 Phase A：晕车时 ≥50km 强制高铁
+  if (child?.hasMotionSickness && dKm >= 50 && mode !== "high_speed_rail") {
+    mode = "high_speed_rail";
+    minutes = Math.round((dKm / 250) * 60) + 60;
   }
-  if (dKm < 300) {
-    // high_speed_rail：250 km/h + 60 min 接驳
-    return { mode: "high_speed_rail", minutes: Math.round((dKm / 250) * 60) + 60, distanceKm: dKm };
-  }
-  // flight：600 km/h + 180 min 候机+登机
-  return { mode: "flight", minutes: Math.round((dKm / 600) * 60) + 180, distanceKm: dKm };
+  return { mode, minutes, distanceKm: dKm };
 }
 
 function haversineKm(lat1: number, lng1: number, lat2: number, lng2: number): number {
@@ -452,7 +461,8 @@ function buildMultiCityCandidate(
   allocation: CityAllocation[],
   transitPairs: TransitPair[],
 ): CandidateOutline {
-  const child = params.childProfiles[0]!;
+  // 2026-07-31 v1.0 Phase A：多孩合并（likes/activities/allergies 取并集，怕生取并集）
+  const child = mergeChildProfiles(params.childProfiles);
   const blocksPerDay = rhythm === "compact" ? 3 : 2;
   const timeBlocks: TimelineDay[] = [];
 
@@ -463,8 +473,11 @@ function buildMultiCityCandidate(
   // 选每个城一次 rankedSpots（同一个 candidate 内复用）
   const rankedByCity: Record<string, Array<LoadedSpot & { _score: number }>> = {};
   for (const a of allocation) {
+    const citySpots = data.spotsByCity[a.cityId] ?? [];
+    // 2026-07-31 Phase A：先按孩子性格过滤（怕生/怕动物）
+    const filteredSpots = filterSpotsByChildProfile(citySpots, child);
     rankedByCity[a.cityId] = rankSpotsForStyle(
-      data.spotsByCity[a.cityId] ?? [],
+      filteredSpots,
       child,
       style,
       rhythm,
@@ -482,17 +495,30 @@ function buildMultiCityCandidate(
     const cityData = rankedByCity[cityId]!;
     for (let d = 0; d < a.days; d++) {
       const dayBlocks: TimelineBlock[] = [];
-      let blockCursor = 9 * 60; // 09:00 出发
+      // 2026-07-31 Phase A：早/晚型影响 dayStart
+      const { startMin: dayStartMin } = computeDayStartEnd(child, rhythm);
+      let blockCursor = dayStartMin;
       let dayCost = 0;
 
-      // 午休块（非 compact 节奏 + 孩子需要午休）
-      if (child.needNap !== "none" && rhythm !== "compact") {
+      // 午休块：必午休（required）+ 非 compact 强制 12:30-14:00；其他可午休时软建议
+      if (child.needNap === "required" && rhythm !== "compact") {
         dayBlocks.push({
           blockId: `d${dayIndex}-nap`,
           kind: "rest",
           startMinutes: 12 * 60 + 30,
           endMinutes: 14 * 60,
           title: "午休 / 能量恢复",
+          cityId,
+          restReason: "nap",
+        });
+        blockCursor = 14 * 60 + 30;
+      } else if (child.needNap === "optional" && rhythm === "relaxed") {
+        dayBlocks.push({
+          blockId: `d${dayIndex}-nap`,
+          kind: "rest",
+          startMinutes: 13 * 60,
+          endMinutes: 14 * 60,
+          title: "午休（可选）",
           cityId,
           restReason: "nap",
         });
@@ -555,13 +581,17 @@ function buildMultiCityCandidate(
             composite: scores.composite,
           },
         });
+        // 2026-07-31 Phase A：票务 kidHook 注入（学生证/儿童票）
+        applyChildKidHooks(dayBlocks[dayBlocks.length - 1]!, child);
         blockCursor = end + 15;
         dayCost += inp.priceCents;
         totalActiveHours += dur / 60;
       }
 
-      // 餐厅块（中午）
-      const restaurant = pickRestaurant(data.restaurantsByCity[cityId] ?? [], dayIndex, style);
+      // 餐厅块（中午）— 2026-07-31 Phase A：按孩子过敏 + 饮食过滤 + 素食加权
+      const allRestaurants = data.restaurantsByCity[cityId] ?? [];
+      const filteredRestaurants = filterRestaurantsByChildProfile(allRestaurants, child);
+      const restaurant = pickRestaurant(filteredRestaurants, dayIndex, style);
       if (restaurant) {
         const tStart = rhythm === "compact" ? 12 * 60 : 11 * 60 + 30;
         const tEnd = tStart + 75;
@@ -607,8 +637,16 @@ function buildMultiCityCandidate(
 
     // 跨城段：在 last city 的最后一天尾部插 transit + hotel（仅在不是最后一城时）
     if (cityPos < allocation.length - 1) {
-      const transit = transitPairs[cityPos]!;
-      const toCityId = transit.toCityId;
+      const transitRaw = transitPairs[cityPos]!;
+      const toCityId = transitRaw.toCityId;
+      // 2026-07-31 Phase A：晕车时 ≥50km 强制高铁
+      const transit = child.hasMotionSickness && transitRaw.distanceKm >= 50 && transitRaw.mode !== "high_speed_rail"
+        ? {
+            ...transitRaw,
+            mode: "high_speed_rail" as TransitMode,
+            minutes: Math.round((transitRaw.distanceKm / 250) * 60) + 60,
+          }
+        : transitRaw;
       // 把 transit + hotel 加到上一段 day（最后一个 in-city day）的末尾
       const lastDay = timeBlocks[timeBlocks.length - 1]!;
       const baseStart = lastDay.blocks.length > 0
@@ -629,7 +667,7 @@ function buildMultiCityCandidate(
         transitMode: transit.mode,
         transitMinutes: transit.minutes,
         transitDistanceKm: transit.distanceKm,
-        kidHook: transit.mode === "flight" ? "时长含候机登机" : undefined,
+        kidHook: transit.mode === "flight" ? "时长含候机登机" : (child.hasMotionSickness && transit.mode === "high_speed_rail" ? "🚄 已选高铁防晕车" : undefined),
         notes: `v1 估算（${transit.distanceKm.toFixed(0)} km），PR2 起接入真实数据`,
       });
 
@@ -680,6 +718,8 @@ function buildMultiCityCandidate(
 
   // 多城标题
   const cityNames = allocation.map((a) => data.cityById[a.cityId]?.name ?? "").join(" → ");
+  // 2026-07-31 Phase A：拼装孩子画像提示（wizard 候选卡片展示用）
+  const spotCount = timeBlocks.reduce((sum, d) => sum + d.blocks.filter(b => b.kind === "spot").length, 0);
   return {
     style,
     rhythm,
@@ -689,6 +729,7 @@ function buildMultiCityCandidate(
     totalDays: dayIndex,
     totalActiveHours: Math.round(totalActiveHours * 10) / 10,
     days: timeBlocks,
+    childProfileHints: buildChildProfileHints(child, spotCount),
   };
 }
 
@@ -700,8 +741,16 @@ function rankSpotsForStyle(
   feelingMap: Map<string, { feelingMatch: number }>,
 ): Array<LoadedSpot & { _score: number }> {
   const childAgeMonths = approxChildAgeMonths(child);
+  // 2026-07-31 Phase A：activities 加权（与 likes 同权 1.3×）
+  const activitiesArr = child.activities ?? [];
   return spots
     .map((s) => {
+      const tags = (s as any).tags as string[] | undefined;
+      const activitiesMatch = (tags ?? []).filter((t: string) => activitiesArr.includes(t)).length;
+      const activitiesBonus = activitiesArr.length > 0 && activitiesMatch > 0
+        ? Math.min(0.3, activitiesMatch / activitiesArr.length * 0.3)
+        : 0;
+      const likesScore = matchLikes(tags ?? [], child.likes ?? []);
       const inp = {
         spotScore: s.kidScore ?? 4.0,
         sameDayBlocks: [],
@@ -710,7 +759,7 @@ function rankSpotsForStyle(
         priceCents: 10000,
         budgetLevel: "balanced" as const,
         ageFit: ageFitFromSpotType(s.spotType, childAgeMonths),
-        likesMatch: matchLikes(s.tags, child.likes),
+        likesMatch: Math.min(1, likesScore + activitiesBonus),
         timeFit: 0.85,
         feelingMatch: feelingMap.get(s.id)?.feelingMatch ?? 0,
         hasFeelingProfile: feelingMap.size > 0,
@@ -809,4 +858,228 @@ function spotHaversineMinutes(
   // 城内接驳用，30 km/h 假设
   const km = haversineKm(a.lat, a.lng, b.lat, b.lng);
   return Math.max(5, Math.round((km / 30) * 60));
+}
+
+// =============================================================================
+// 2026-07-31 v1.0 Phase A：多孩合并 + 8 个孩子画像接入函数
+// 详见 项目建设方案/亲子宝典数据闭环-v1.0.md §7
+// =============================================================================
+
+/**
+ * 多孩合并：把 wizard 选的多个孩子画像合并成一个 MergedChildProfile
+ * - 数组字段：likes/activities/dislikes/allergies/dietaryRestrictions 取并集去重
+ * - 布尔字段：任一 true 即 true（hasStudentCard/isShy/fearsAnimals/hasMotionSickness）
+ * - needsChildTicket：所有孩子都要才 true（避免漏标）
+ * - 数值字段：activeHoursPerDay 取最短；heightCm/weightKg/strollerWidthCm 取最大
+ * - needNap：任一 required 即 required
+ * - earlyOrLate：所有 night_owl 才 night_owl
+ * - name：所有名字用 "+" 连
+ */
+export function mergeChildProfiles(children: ChildProfile[]): ChildProfile {
+  if (!children || children.length === 0) {
+    return {
+      childId: "merged",
+      name: "孩子",
+      birthDate: undefined,
+      likes: [],
+      activities: [],
+      dislikes: [],
+      allergies: [],
+      activeHoursPerDay: 6,
+      needNap: "optional",
+      earlyOrLate: "early_bird",
+      hasMotionSickness: false,
+      isShyWithStrangers: false,
+      hasStudentCard: false,
+      needsChildTicket: true,
+      fearsAnimals: false,
+      dietaryRestrictions: [],
+    };
+  }
+  if (children.length === 1) return children[0]!;
+
+  const merged: ChildProfile = {
+    childId: children.map(c => c.childId).join("+"),
+    name: children.map(c => c.name).filter(Boolean).join("+") || "孩子",
+    birthDate: undefined,
+    likes: Array.from(new Set(children.flatMap(c => c.likes ?? []))),
+    activities: Array.from(new Set(children.flatMap(c => c.activities ?? []))),
+    dislikes: Array.from(new Set(children.flatMap(c => c.dislikes ?? []))),
+    allergies: Array.from(new Set(children.flatMap(c => c.allergies ?? []))),
+    activeHoursPerDay: Math.min(...children.map(c => c.activeHoursPerDay ?? 6)),
+    needNap: children.some(c => c.needNap === "required") ? "required" : "optional",
+    earlyOrLate: children.every(c => c.earlyOrLate === "night_owl") ? "night_owl" : "early_bird",
+    hasMotionSickness: children.some(c => c.hasMotionSickness),
+    isShyWithStrangers: children.some(c => c.isShyWithStrangers),
+    hasStudentCard: children.some(c => c.hasStudentCard),
+    idCardPrefix: children[0]?.idCardPrefix,
+    needsChildTicket: children.every(c => c.needsChildTicket),
+    strollerWidthCm: Math.max(...children.map(c => c.strollerWidthCm ?? 0).filter(x => x > 0)) || undefined,
+    comfortableTempC: children[0]?.comfortableTempC,
+    fearsAnimals: children.some(c => c.fearsAnimals),
+    dietaryRestrictions: Array.from(new Set(children.flatMap(c => c.dietaryRestrictions ?? []))),
+    heightCm: Math.max(...children.map(c => c.heightCm ?? 0).filter(x => x > 0)) || undefined,
+    weightKg: Math.max(...children.map(c => c.weightKg ?? 0).filter(x => x > 0)) || undefined,
+    healthNotes: children.map(c => c.healthNotes).filter(Boolean).join(" | ") || undefined,
+  };
+  return merged;
+}
+
+/**
+ * 早/晚型影响日程开始/结束时间
+ * - early_bird: 08:00-18:00（10h）
+ * - night_owl: 10:00-21:00（11h）
+ * - rhythm relaxed: 缩短 30min；compact: 延长 30min
+ */
+export function computeDayStartEnd(
+  child: ChildProfile,
+  rhythm: CandidateRhythm,
+): { startMin: number; endMin: number } {
+  const isEarly = child.earlyOrLate !== "night_owl";
+  let startMin = isEarly ? 8 * 60 : 10 * 60;
+  let endMin = isEarly ? 18 * 60 : 21 * 60;
+  if (rhythm === "relaxed") { startMin += 30; endMin -= 30; }
+  if (rhythm === "compact") { startMin -= 30; endMin += 30; }
+  return { startMin, endMin };
+}
+
+/**
+ * 按孩子性格/过敏过滤景点
+ * - isShyWithStrangers：排除"人群密集"类 tag
+ * - fearsAnimals：排除动物园/宠物类 tag + 海洋动物关键词
+ */
+export function filterSpotsByChildProfile(
+  spots: LoadedSpot[],
+  child: ChildProfile,
+): LoadedSpot[] {
+  const bannedTags = new Set<string>();
+  if (child.isShyWithStrangers) {
+    bannedTags.add("人群密集").add("排队严重").add("高峰").add("热门");
+  }
+  if (child.fearsAnimals) {
+    bannedTags.add("动物园").add("宠物").add("动物互动");
+  }
+  if (bannedTags.size === 0) return spots;
+  return spots.filter(s => {
+    const tags = (s as any).tags as string[] | undefined;
+    if (tags && tags.some(t => bannedTags.has(t))) return false;
+    if (child.fearsAnimals) {
+      const highlights = (s as any).kidHighlights as string | null;
+      if (highlights && /海豚|企鹅|鲨鱼|海洋动物/.test(highlights)) return false;
+    }
+    return true;
+  });
+}
+
+/**
+ * 按孩子过敏 + 饮食过滤餐厅 + 素食加权
+ */
+export function filterRestaurantsByChildProfile(
+  restaurants: LoadedRestaurant[],
+  child: ChildProfile,
+): Array<LoadedRestaurant & { _vegBonus?: number }> {
+  const allergyMap: Record<string, string[]> = {
+    "花生": ["花生", "坚果", "杏仁", "腰果"],
+    "海鲜": ["海鲜", "鱼", "虾", "蟹", "贝"],
+    "牛奶": ["奶", "芝士", "cheese", "乳"],
+    "鸡蛋": ["蛋", "egg"],
+    "麸质": ["面", "麦", "麸"],
+  };
+  const bannedKeywords = new Set<string>();
+  for (const allergy of (child.allergies ?? [])) {
+    for (const k of Object.keys(allergyMap)) {
+      if (allergy.includes(k)) allergyMap[k]!.forEach(w => bannedKeywords.add(w));
+    }
+  }
+  const wantsVeg = (child.dietaryRestrictions ?? []).some(r => r.includes("素") || r.toLowerCase().includes("veg"));
+  const bannedArr = Array.from(bannedKeywords);
+  return restaurants
+    .filter(r => {
+      const tags = (r as any).tags as string[] | undefined;
+      const text = `${r.name} ${(tags ?? []).join(" ")}`;
+      for (const kw of bannedArr) {
+        if (text.includes(kw)) return false;
+      }
+      return true;
+    })
+    .map(r => {
+      const tags = (r as any).tags as string[] | undefined;
+      const vegBonus = wantsVeg && (tags ?? []).some(t => /素|veg/i.test(t)) ? 0.3 : 0;
+      return { ...r, _vegBonus: vegBonus };
+    })
+    .sort((a, b) => (b._vegBonus ?? 0) - (a._vegBonus ?? 0));
+}
+
+/**
+ * 在 kidHook 上注入孩子票务提示文案
+ */
+export function applyChildKidHooks(
+  block: TimelineBlock,
+  child: ChildProfile,
+): void {
+  if (block.kind !== "spot") return;
+  const extras: string[] = [];
+  if (child.hasStudentCard) extras.push("🎓 学生证半价");
+  if (child.needsChildTicket) extras.push("🎫 儿童票适用");
+  if (extras.length === 0) return;
+  block.kidHook = [block.kidHook, ...extras].filter(Boolean).join(" · ");
+}
+
+/**
+ * 限定单块时长 ≤ activeHoursPerDay 分配额度
+ */
+export function capBlockDurationByActiveHours(
+  candidateMinutes: number | null,
+  child: ChildProfile,
+  blocksPerDay: number,
+): number {
+  const totalMinutes = (child.activeHoursPerDay ?? 6) * 60;
+  const perBlock = Math.floor(totalMinutes / Math.max(1, blocksPerDay));
+  return Math.min(candidateMinutes ?? 90, perBlock);
+}
+
+/**
+ * 拼装 childProfileHints（wizard 候选卡片显示用）
+ */
+export function buildChildProfileHints(
+  child: ChildProfile,
+  spotCount: number,
+): Array<{ type: 'customization' | 'warning' | 'info'; icon: '🎯' | '⚠️' | '📐'; text: string }> {
+  const hints: Array<{ type: 'customization' | 'warning' | 'info'; icon: '🎯' | '⚠️' | '📐'; text: string }> = [];
+  // customization
+  if (child.likes && child.likes.length > 0) {
+    hints.push({ type: "customization", icon: "🎯", text: `为 ${child.name} 匹配「${child.likes.slice(0, 2).join("」「")}」兴趣` });
+  }
+  if (child.activities && child.activities.length > 0) {
+    hints.push({ type: "customization", icon: "🎯", text: `推荐 ${child.activities[0]} 主题` });
+  }
+  // warning
+  if (child.isShyWithStrangers) {
+    hints.push({ type: "warning", icon: "⚠️", text: `${child.name} 怕生，已避开「人群密集」景点` });
+  }
+  if (child.fearsAnimals) {
+    hints.push({ type: "warning", icon: "⚠️", text: `${child.name} 怕动物，已避开动物园/宠物体验` });
+  }
+  if (child.allergies && child.allergies.length > 0) {
+    hints.push({ type: "warning", icon: "⚠️", text: `${child.name} 过敏「${child.allergies.slice(0, 2).join("」「")}」，已过滤含过敏源餐厅` });
+  }
+  if (child.hasMotionSickness) {
+    hints.push({ type: "warning", icon: "⚠️", text: `${child.name} 晕车，长途已优先高铁` });
+  }
+  // info
+  if (child.heightCm != null && child.heightCm < 120) {
+    hints.push({ type: "info", icon: "📐", text: `${child.name} 身高 ${child.heightCm}cm，全部门票免费` });
+  } else if (child.heightCm != null && child.heightCm < 150 && child.hasStudentCard) {
+    hints.push({ type: "info", icon: "📐", text: `${child.name} 身高 ${child.heightCm}cm + 学生证，门票半价` });
+  } else if (child.hasStudentCard) {
+    hints.push({ type: "info", icon: "📐", text: `${child.name} 有学生证，门票半价` });
+  }
+  if (child.needNap === "required") {
+    hints.push({ type: "info", icon: "📐", text: `${child.name} 必午休，已强制 12:30-14:00 休息` });
+  }
+  if (spotCount > 0) {
+    hints.push({ type: "info", icon: "📐", text: `共 ${spotCount} 个景点根据 ${child.name} 画像筛选` });
+  }
+  // 最多 5 条
+  return hints.slice(0, 5);
 }

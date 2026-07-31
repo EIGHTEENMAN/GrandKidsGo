@@ -15,7 +15,8 @@ import { useEffect, useMemo, useState, useCallback } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { getToken, authedFetch } from '@/lib/auth';
-import type { CandidateOutline, TimelineBlock, TimelineDay } from '@/lib/assembler/types';
+import type { CandidateOutline, TimelineBlock, TimelineDay, ChildProfileHint } from '@/lib/assembler/types';
+import { ChildProfileHints } from '@/components/ChildProfileHints';
 
 const TRAVEL_API = (process.env.NEXT_PUBLIC_TRAVEL_API as string) || 'https://travel.grandand.com';
 
@@ -113,6 +114,25 @@ interface WizardChild {
   birthDate?: string | null;
   avatar?: string | null;
   likes?: string[];
+  // 2026-07-31 v1.0 Phase A：24 字段透传（实际只透传到 assembler，按需消费）
+  activities?: string[];
+  dislikes?: string[];
+  allergies?: string[];
+  activeHoursPerDay?: number | null;
+  needNap?: string;
+  earlyOrLate?: string;
+  hasMotionSickness?: boolean;
+  isShyWithStrangers?: boolean;
+  healthNotes?: string | null;
+  hasStudentCard?: boolean;
+  idCardPrefix?: string | null;
+  needsChildTicket?: boolean;
+  strollerWidthCm?: number | null;
+  comfortableTempC?: string | null;
+  fearsAnimals?: boolean;
+  dietaryRestrictions?: string[];
+  heightCm?: number | null;
+  weightKg?: number | null;
 }
 
 interface SimilarGuide {
@@ -628,7 +648,7 @@ export default function SmartGuideLanding() {
       setSelectedCityIds(citiesWithSpots);
     }
 
-    // childProfiles 从真实孩子档案映射（v1 简化：无孩子时用 guest 占位）
+    // childProfiles 从真实孩子档案映射（v1.0 Phase A：22 字段全透传，无孩子时用 guest 占位）
     const childProfiles = selectedChildIds.size > 0
       ? Array.from(selectedChildIds)
         .map((id) => userChildren.find((c) => c.childId === id))
@@ -638,6 +658,24 @@ export default function SmartGuideLanding() {
           name: c.nickname ?? c.name ?? '宝宝',
           birthDate: c.birthDate ?? undefined,
           likes: c.likes ?? [],
+          activities: c.activities ?? [],
+          dislikes: c.dislikes ?? [],
+          allergies: c.allergies ?? [],
+          activeHoursPerDay: c.activeHoursPerDay ?? undefined,
+          needNap: c.needNap as any,
+          earlyOrLate: c.earlyOrLate as any,
+          hasMotionSickness: c.hasMotionSickness ?? false,
+          isShyWithStrangers: c.isShyWithStrangers ?? false,
+          healthNotes: c.healthNotes ?? undefined,
+          hasStudentCard: c.hasStudentCard ?? false,
+          idCardPrefix: c.idCardPrefix ?? undefined,
+          needsChildTicket: c.needsChildTicket ?? true,
+          strollerWidthCm: c.strollerWidthCm ?? undefined,
+          comfortableTempC: c.comfortableTempC ?? undefined,
+          fearsAnimals: c.fearsAnimals ?? false,
+          dietaryRestrictions: c.dietaryRestrictions ?? [],
+          heightCm: c.heightCm ?? undefined,
+          weightKg: c.weightKg ?? undefined,
         }))
       : [{ childId: 'guest', name: '宝宝', likes: [] as string[] }];
 
@@ -1342,7 +1380,9 @@ export default function SmartGuideLanding() {
                       {checked && <span className="text-blue-600 font-bold">✓ 已选</span>}
                     </div>
                     <p className="text-sm text-gray-600 mb-3">{c.whyThisPlan}</p>
-                    <div className="flex items-center gap-3 text-xs text-gray-500">
+                    {/* 2026-07-31 v1.0 Phase A：孩子画像定制提示 */}
+                    <ChildProfileHints hints={c.childProfileHints} max={4} />
+                    <div className="flex items-center gap-3 text-xs text-gray-500 mt-2">
                       <span>📅 {c.totalDays} 天</span>
                       <span>⏰ {c.totalActiveHours} 小时活动</span>
                       <span>💰 约 ¥{Math.round(c.totalCostCents / 100)}</span>

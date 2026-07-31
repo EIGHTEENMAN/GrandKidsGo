@@ -86,6 +86,11 @@ function makeParams(cityIds: string[], start: string, end: string) {
         allergies: [],
         isShyWithStrangers: false,
         birthDate: new Date(Date.now() - 36 * 30.44 * 86400000).toISOString(),
+        // 2026-07-31 v1.0 Phase A
+        hasStudentCard: false,
+        needsChildTicket: true,
+        fearsAnimals: false,
+        dietaryRestrictions: [],
       },
     ],
     budgetLevel: 'balanced' as const,

@@ -34,6 +34,14 @@ interface Body {
   allergies?: string[];
   isShyWithStrangers?: boolean;
   healthNotes?: string;
+  // 2026-07-31 v1.0 Phase A：扩展字段（票务/推车/饮食/怕动物/温度）
+  hasStudentCard?: boolean;
+  idCardPrefix?: string;
+  needsChildTicket?: boolean;
+  strollerWidthCm?: number;
+  comfortableTempC?: string;
+  fearsAnimals?: boolean;
+  dietaryRestrictions?: string[];
   // S-2: 双写控制
   syncBaseToAuth?: boolean;   // 默认 true（个人中心修改基础字段时）
 }
@@ -69,6 +77,14 @@ export async function POST(req: NextRequest) {
       allergies: body.allergies ?? [],
       isShyWithStrangers: body.isShyWithStrangers ?? false,
       healthNotes: body.healthNotes ?? null,
+      // 2026-07-31 v1.0 Phase A
+      hasStudentCard: body.hasStudentCard ?? false,
+      idCardPrefix: body.idCardPrefix ?? null,
+      needsChildTicket: body.needsChildTicket ?? true,
+      strollerWidthCm: body.strollerWidthCm ?? null,
+      comfortableTempC: body.comfortableTempC ?? null,
+      fearsAnimals: body.fearsAnimals ?? false,
+      dietaryRestrictions: body.dietaryRestrictions ?? [],
     },
     create: {
       childId,
@@ -90,6 +106,14 @@ export async function POST(req: NextRequest) {
       allergies: body.allergies ?? [],
       isShyWithStrangers: body.isShyWithStrangers ?? false,
       healthNotes: body.healthNotes ?? null,
+      // 2026-07-31 v1.0 Phase A
+      hasStudentCard: body.hasStudentCard ?? false,
+      idCardPrefix: body.idCardPrefix ?? null,
+      needsChildTicket: body.needsChildTicket ?? true,
+      strollerWidthCm: body.strollerWidthCm ?? null,
+      comfortableTempC: body.comfortableTempC ?? null,
+      fearsAnimals: body.fearsAnimals ?? false,
+      dietaryRestrictions: body.dietaryRestrictions ?? [],
     },
     select: { childId: true, name: true, updatedAt: true },
   });
@@ -150,6 +174,11 @@ export async function GET(req: NextRequest) {
       earlyOrLate: "early_bird",
       hasMotionSickness: false,
       isShyWithStrangers: false,
+      // 2026-07-31 v1.0 Phase A 默认值
+      hasStudentCard: false,
+      needsChildTicket: true,
+      fearsAnimals: false,
+      dietaryRestrictions: [],
     });
   }
   // 本地覆盖扩展字段（likes/needNap/晕车 等），基础字段保留 auth 的最新版
@@ -177,6 +206,14 @@ export async function GET(req: NextRequest) {
       hasMotionSickness: li.hasMotionSickness,
       isShyWithStrangers: li.isShyWithStrangers,
       healthNotes: li.healthNotes,
+      // 2026-07-31 v1.0 Phase A
+      hasStudentCard: li.hasStudentCard,
+      idCardPrefix: li.idCardPrefix,
+      needsChildTicket: li.needsChildTicket,
+      strollerWidthCm: li.strollerWidthCm,
+      comfortableTempC: li.comfortableTempC,
+      fearsAnimals: li.fearsAnimals,
+      dietaryRestrictions: li.dietaryRestrictions,
       createdAt: li.createdAt,
       updatedAt: li.updatedAt,
     });
@@ -240,6 +277,14 @@ export async function PUT(req: NextRequest) {
       allergies: body.allergies ?? undefined,
       isShyWithStrangers: body.isShyWithStrangers ?? undefined,
       healthNotes: body.healthNotes ?? undefined,
+      // 2026-07-31 v1.0 Phase A
+      hasStudentCard: body.hasStudentCard ?? undefined,
+      idCardPrefix: body.idCardPrefix ?? undefined,
+      needsChildTicket: body.needsChildTicket ?? undefined,
+      strollerWidthCm: body.strollerWidthCm ?? undefined,
+      comfortableTempC: body.comfortableTempC ?? undefined,
+      fearsAnimals: body.fearsAnimals ?? undefined,
+      dietaryRestrictions: body.dietaryRestrictions ?? undefined,
     },
     create: {
       userId: body.userId,
@@ -262,6 +307,14 @@ export async function PUT(req: NextRequest) {
       allergies: body.allergies ?? [],
       isShyWithStrangers: body.isShyWithStrangers ?? false,
       healthNotes: body.healthNotes ?? null,
+      // 2026-07-31 v1.0 Phase A
+      hasStudentCard: body.hasStudentCard ?? false,
+      idCardPrefix: body.idCardPrefix ?? null,
+      needsChildTicket: body.needsChildTicket ?? true,
+      strollerWidthCm: body.strollerWidthCm ?? null,
+      comfortableTempC: body.comfortableTempC ?? null,
+      fearsAnimals: body.fearsAnimals ?? false,
+      dietaryRestrictions: body.dietaryRestrictions ?? [],
     },
     select: { childId: true, name: true, nickname: true, updatedAt: true },
   });

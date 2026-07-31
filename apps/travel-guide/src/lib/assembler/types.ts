@@ -22,9 +22,25 @@ export const ChildProfileSchema = z.object({
   hasMotionSickness: z.boolean().default(false),
   allergies: z.array(z.string()).default([]),
   isShyWithStrangers: z.boolean().default(false),
+  // 2026-07-31 v1.0 Phase A：扩展字段（票务/推车/饮食/怕动物/温度）
+  hasStudentCard: z.boolean().default(false),
+  idCardPrefix: z.string().optional(),
+  needsChildTicket: z.boolean().default(true),
+  strollerWidthCm: z.number().int().min(20).max(120).optional(),
+  comfortableTempC: z.string().regex(/^\d{1,2}-\d{1,2}$/).optional(),
+  fearsAnimals: z.boolean().default(false),
+  dietaryRestrictions: z.array(z.string()).default([]),
+  // 票务/尺寸字段（wizard 透传，assembler 部分消费）
+  heightCm: z.number().optional(),
+  weightKg: z.number().optional(),
+  healthNotes: z.string().optional(),
 });
 
 export type ChildProfile = z.infer<typeof ChildProfileSchema>;
+
+// MergedChildProfile：多孩合并后的画像（v1 用，合并策略见 §C.2）
+// 类型上等于 ChildProfile，因为合并函数保留所有字段
+export type MergedChildProfile = ChildProfile;
 
 // ---------------------------------------------------------------------------
 // TravelParams（向导输入）
@@ -114,6 +130,24 @@ export interface CandidateOutline {
   totalDays: number;
   totalActiveHours: number;
   days: TimelineDay[];
+  // 2026-07-31 v1.0 Phase A：孩子画像定制的提示 chip 列表
+  childProfileHints?: ChildProfileHint[];
+  scoreDetail?: {
+    evaluation: number;
+    route: number;
+    cost: number;
+    time: number;
+    photoWorthy: number;
+    feelingMatch: number;
+    composite: number;
+  };
+}
+
+// 候选方案的孩子画像提示（wizard 候选卡片展示用）
+export interface ChildProfileHint {
+  type: 'customization' | 'warning' | 'info';
+  icon: '🎯' | '⚠️' | '📐';
+  text: string;
 }
 
 export interface PlanOutline {

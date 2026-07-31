@@ -10,10 +10,32 @@
 import { authedFetch } from './auth';
 
 export interface ClientChildFields {
+  // 基础（仍走 auth-service）
   nickname: string;
   gender?: string;
-  birthday?: string;
+  birthday?: string;     // ISO date
   avatar?: string;
+  // 扩展（Phase A：写本地 /api/user/children）
+  heightCm?: number;
+  weightKg?: number;
+  likes?: string[];
+  activities?: string[];
+  dislikes?: string[];
+  activeHoursPerDay?: number;
+  needNap?: 'required' | 'optional' | 'none';
+  earlyOrLate?: 'early_bird' | 'night_owl';
+  hasMotionSickness?: boolean;
+  allergies?: string[];
+  isShyWithStrangers?: boolean;
+  healthNotes?: string;
+  // 2026-07-31 v1.0 Phase A：票务/推车/饮食/怕动物/温度
+  hasStudentCard?: boolean;
+  idCardPrefix?: string;
+  needsChildTicket?: boolean;
+  strollerWidthCm?: number;
+  comfortableTempC?: string;
+  fearsAnimals?: boolean;
+  dietaryRestrictions?: string[];
 }
 
 export interface ClientChildCreated {
@@ -30,6 +52,7 @@ export async function createChildFromClient(
   if (!fields?.nickname) {
     throw new Error('孩子昵称不能为空');
   }
+  // Step 1: POST /api/travel/children-create → auth-service 拿 childId
   const res = await authedFetch('/api/travel/children-create', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
@@ -46,6 +69,46 @@ export async function createChildFromClient(
   if (!json || json.code !== 'OK' || !json.data) {
     const msg = json?.message ?? `HTTP ${res.status}`;
     throw new Error(`创建失败: ${msg}`);
+  }
+  const childId = json.data.id;
+  // Step 2: PUT /api/user/children 写扩展字段（Phase A：本地 17+7 字段）
+  //         失败不抛错（用户可稍后在 ChildDetail 补充）
+  try {
+    await authedFetch('/api/user/children', {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        childId,
+        nickname: fields.nickname,
+        gender: fields.gender,
+        birthDate: fields.birthday,
+        avatar: fields.avatar,
+        // 扩展字段
+        heightCm: fields.heightCm,
+        weightKg: fields.weightKg,
+        likes: fields.likes,
+        activities: fields.activities,
+        dislikes: fields.dislikes,
+        activeHoursPerDay: fields.activeHoursPerDay,
+        needNap: fields.needNap,
+        earlyOrLate: fields.earlyOrLate,
+        hasMotionSickness: fields.hasMotionSickness,
+        allergies: fields.allergies,
+        isShyWithStrangers: fields.isShyWithStrangers,
+        healthNotes: fields.healthNotes,
+        // Phase A 7 新字段
+        hasStudentCard: fields.hasStudentCard,
+        idCardPrefix: fields.idCardPrefix,
+        needsChildTicket: fields.needsChildTicket,
+        strollerWidthCm: fields.strollerWidthCm,
+        comfortableTempC: fields.comfortableTempC,
+        fearsAnimals: fields.fearsAnimals,
+        dietaryRestrictions: fields.dietaryRestrictions,
+        syncBaseToAuth: false, // 已在 children-create 写过 auth
+      }),
+    });
+  } catch (e) {
+    console.warn('[child-sync] PUT 扩展字段失败，用户可在 ChildDetail 补充:', e);
   }
   return json.data;
 }
