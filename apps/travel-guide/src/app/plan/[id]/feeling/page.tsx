@@ -1,10 +1,13 @@
 // /plan/[id]/feeling — 出行后感受打分（用户答复 2026-07-29：评价打分闭环）
-// 5 维度评分 + 孩子月份提交：
+// 2026-07-31 v1.0 Phase B：5 维度 + 4 新字段（孩子视角 + 父母视角 + 哭闹触发器）
 //   - physicalState（满电 / 正常 / 略疲 / 累趴）
 //   - emotionalPeak（兴奋 / 平静 / 无聊 / 烦躁 / 哭闹）
 //   - stayDurationMinutes（实际停留分钟）
 //   - willingnessToReturn（要求再来 / 可再来 / 不愿再来）
-//   - cryEpisodes（哭闹次数 JSON）
+//   - cryTriggers（9 标准触发器 tag 多选）
+//   - favoriteMoment（孩子最开心的瞬间，可选文本）
+//   - wishToReturn（孩子想不想再来）
+//   - parentJoy（父母满足度）
 // 写完后跳回 /plan/[id] 并展示"评分已沉淀为攻略素材"
 
 'use client';
@@ -30,17 +33,36 @@ interface BlockFeeling {
   spotId?: string;
   startMinutes?: number;
   endMinutes?: number;
-  // 五维度
+  // 5 维度（v1.5）
   physicalState: string;
   emotionalPeak: string;
   stayDurationMinutes: number;
   willingnessToReturn: string;
   cryEpisodes: number;
+  // 2026-07-31 v1.0 Phase B：4 新字段
+  cryTriggers: string[];       // 9 标准词典多选（每个 block 单独存）
+  favoriteMoment: string;      // 孩子最开心的瞬间
+  wishToReturn: string;        // 孩子想不想再来：想/不想/看情况
+  parentJoy: string;           // 父母满足度：满足/轻松/疲惫/焦虑/享受
 }
 
 const PHYSICAL_OPTIONS = ['满电', '正常', '略疲', '累趴'] as const;
 const EMOTION_OPTIONS = ['兴奋', '平静', '无聊', '烦躁', '哭闹'] as const;
 const RETURN_OPTIONS = ['要求再来', '可再来', '不愿再来'] as const;
+const WISH_OPTIONS = ['想再来', '不想再来', '看情况'] as const;
+const PARENT_JOY_OPTIONS = ['满足', '轻松', '享受', '疲惫', '焦虑'] as const;
+// 9 标准 cryTriggers 词典（详见 项目建设方案/亲子宝典数据闭环-v1.0.md §2.1）
+const CRY_TRIGGER_OPTIONS = [
+  { value: 'hungry', label: '饿了' },
+  { value: 'sleepy', label: '困了' },
+  { value: 'crowded', label: '人多' },
+  { value: 'queueing', label: '排队' },
+  { value: 'loud', label: '怕大声' },
+  { value: 'dark', label: '怕黑' },
+  { value: 'animal', label: '怕动物' },
+  { value: 'height', label: '怕高' },
+  { value: 'uncomfortable', label: '不舒服' },
+] as const;
 
 export default function PlanFeelingPage() {
   return (
@@ -85,6 +107,11 @@ function PlanFeelingInner() {
                 stayDurationMinutes: Math.max(0, (b.endMinutes ?? 0) - (b.startMinutes ?? 0)),
                 willingnessToReturn: '要求再来',
                 cryEpisodes: 0,
+                // 2026-07-31 v1.0 Phase B
+                cryTriggers: [],
+                favoriteMoment: '',
+                wishToReturn: '',
+                parentJoy: '',
               });
             }
           }
@@ -111,6 +138,10 @@ function PlanFeelingInner() {
       // 串行提交每条评分
       let ok = 0, fail = 0;
       for (const f of feelings) {
+        // cryTriggers 数组：仅在选过 trigger 时才提交
+        const cryTriggersPayload = f.cryTriggers.length > 0
+          ? f.cryTriggers.map(t => ({ trigger: t, atMinutes: 0, durationSeconds: 0 }))
+          : [];
         const r = await authedFetch(`/api/plans/${plan.id}/ratings`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
@@ -125,6 +156,11 @@ function PlanFeelingInner() {
               ? [{ atMinutes: 0, durationSeconds: f.cryEpisodes * 60 }]
               : [],
             childAgeAtVisit,
+            // 2026-07-31 v1.0 Phase B
+            cryTriggers: cryTriggersPayload.length > 0 ? cryTriggersPayload : null,
+            favoriteMoment: f.favoriteMoment.trim() || null,
+            wishToReturn: f.wishToReturn || null,
+            parentJoy: f.parentJoy || null,
           }),
         });
         if (r.ok) ok++; else fail++;
@@ -150,7 +186,7 @@ function PlanFeelingInner() {
             <h1 className="text-2xl md:text-3xl font-extrabold flex-1">出行后感受</h1>
           </div>
           <p className="text-pink-100 mt-2 text-sm leading-relaxed">
-            行程结束了吧？给我们 5 维度的真实反馈，沉淀为攻略素材，下次出行更顺手
+            行程结束了吧？给我们 9 维度的真实反馈（5 维度 + 4 个新维度），沉淀为攻略素材，下次出行更顺手
           </p>
         </div>
       </header>
@@ -190,7 +226,7 @@ function PlanFeelingInner() {
                   onChange={v => updateFeeling(idx, { emotionalPeak: v })}
                 />
                 <RadioRow
-                  label="🔄 重游意愿"
+                  label="🔄 重游意愿（家长）"
                   options={[...RETURN_OPTIONS]}
                   value={f.willingnessToReturn}
                   onChange={v => updateFeeling(idx, { willingnessToReturn: v })}
@@ -217,6 +253,60 @@ function PlanFeelingInner() {
                     className="w-24 px-2 py-1.5 border border-gray-200 rounded text-sm focus:outline-none focus:ring-2 focus:ring-pink-300"
                   />
                 </div>
+                {/* 2026-07-31 v1.0 Phase B：哭闹触发器 tag 多选 */}
+                <div>
+                  <label className="text-xs text-gray-600 mb-1.5 block">😢 哭闹原因（多选，选过次数&gt;0 才填）</label>
+                  <div className="flex flex-wrap gap-1.5">
+                    {CRY_TRIGGER_OPTIONS.map(opt => {
+                      const selected = f.cryTriggers.includes(opt.value);
+                      return (
+                        <button
+                          key={opt.value}
+                          type="button"
+                          onClick={() => {
+                            const next = selected
+                              ? f.cryTriggers.filter(v => v !== opt.value)
+                              : [...f.cryTriggers, opt.value];
+                            updateFeeling(idx, { cryTriggers: next });
+                          }}
+                          className={`text-xs px-2.5 py-1 rounded-full transition ${
+                            selected
+                              ? 'bg-orange-100 text-orange-700 border border-orange-300 font-medium'
+                              : 'bg-gray-50 text-gray-600 border border-gray-200 hover:border-orange-200'
+                          }`}
+                        >
+                          {selected ? '✓ ' : ''}{opt.label}
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
+                {/* 2026-07-31 v1.0 Phase B：孩子最开心的瞬间 */}
+                <div>
+                  <label className="text-xs text-gray-600 mb-1 block">🎉 孩子最开心的瞬间（选填）</label>
+                  <input
+                    type="text"
+                    value={f.favoriteMoment}
+                    onChange={e => updateFeeling(idx, { favoriteMoment: e.target.value })}
+                    maxLength={100}
+                    placeholder="如：看见海豚跳跃、喂了小兔子"
+                    className="w-full px-2.5 py-1.5 border border-gray-200 rounded text-sm focus:outline-none focus:ring-2 focus:ring-pink-300"
+                  />
+                </div>
+                {/* 2026-07-31 v1.0 Phase B：孩子想不想再来 */}
+                <RadioRow
+                  label="👶 孩子想不想再来"
+                  options={[...WISH_OPTIONS]}
+                  value={f.wishToReturn}
+                  onChange={v => updateFeeling(idx, { wishToReturn: v })}
+                />
+                {/* 2026-07-31 v1.0 Phase B：父母满足度 */}
+                <RadioRow
+                  label="💝 父母自己的感受"
+                  options={[...PARENT_JOY_OPTIONS]}
+                  value={f.parentJoy}
+                  onChange={v => updateFeeling(idx, { parentJoy: v })}
+                />
               </div>
             </div>
           ))

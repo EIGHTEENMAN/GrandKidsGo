@@ -364,6 +364,11 @@ model ChildRating {
   childAgeAtVisit     Int?     @map("child_age_at_visit")
   linkedMediaIds      String[] @map("linked_media_ids")
   recordedAt          DateTime @default(now()) @map("recorded_at")
+  // 2026-07-31 v1.0 Phase B：4 新字段（孩子视角 + 父母视角 + 升级哭闹触发器）
+  favoriteMoment      String?  @map("favorite_moment")
+  wishToReturn        String?  @map("wish_to_return")
+  parentJoy           String?  @map("parent_joy")
+  cryTriggers         Json?    @map("cry_triggers")
 
   planRecord PlanRecord          @relation(fields: [planRecordId], references: [id], onDelete: Cascade)
   spot       Spot?               @relation(fields: [spotId], references: [id])
@@ -387,6 +392,11 @@ model ChildFeelingProfile {
   lastUpdatedAt                    DateTime? @map("last_updated_at")
   createdAt                        DateTime  @default(now()) @map("created_at")
   privacyLevel                     String    @default("anonymized") @map("privacy_level")
+  // 2026-07-31 v1.0 Phase B：4 维新聚合
+  monthlyFeedback                  Json?     @map("monthly_feedback")
+  crossSpotPattern                 Json?     @map("cross_spot_pattern")
+  topEmotionTriggers               Json?     @map("top_emotion_triggers")
+  parentJoyByActivity              Json?     @map("parent_joy_by_activity")
 
   ratings ChildRating[]
 

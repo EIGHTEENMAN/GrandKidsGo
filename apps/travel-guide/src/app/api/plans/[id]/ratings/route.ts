@@ -1,5 +1,6 @@
 // POST /api/plans/:id/ratings — 写入 ChildRating
 // 详见 项目建设方案/走天下实施方案-v1.5.md 第十四节 第三段（v1.5 多维度结构化）
+// 2026-07-31 v1.0 Phase B：加 4 字段（favoriteMoment / wishToReturn / parentJoy / cryTriggers）
 
 import { NextRequest, NextResponse } from "next/server";
 import prisma from "@/lib/prisma";
@@ -18,6 +19,11 @@ interface Body {
   childAgeAtVisit?: number | null;
   linkedMediaIds?: string[];
   blockId?: string;
+  // 2026-07-31 v1.0 Phase B
+  favoriteMoment?: string | null;
+  wishToReturn?: string | null;
+  parentJoy?: string | null;
+  cryTriggers?: any[] | null;
 }
 
 export async function POST(
@@ -51,6 +57,7 @@ export async function POST(
 
   // v1.5：childId 外键到 ChildFeelingProfile（这个表也是 v1.5 新增的"感受画像"）。
   // 第一次写 rating 前，先建立画像空壳（不阻塞数据采集；后续每晚聚合填充）。
+  // v1.0 Phase B：空壳包含 4 个新聚合字段
   await prisma.childFeelingProfile.upsert({
     where: { childId: body.childId },
     update: {},
@@ -62,6 +69,10 @@ export async function POST(
       averageEmotionalPeakDistribution: {},
       totalDataPoints: 0,
       privacyLevel: "anonymized",
+      monthlyFeedback: {},
+      crossSpotPattern: {},
+      topEmotionTriggers: {},
+      parentJoyByActivity: {},
     },
   });
 
@@ -78,6 +89,11 @@ export async function POST(
       cryEpisodes: (body.cryEpisodes as any) ?? [],
       childAgeAtVisit: age,
       linkedMediaIds: body.linkedMediaIds ?? [],
+      // 2026-07-31 v1.0 Phase B
+      favoriteMoment: body.favoriteMoment ?? null,
+      wishToReturn: body.wishToReturn ?? null,
+      parentJoy: body.parentJoy ?? null,
+      cryTriggers: body.cryTriggers ? (body.cryTriggers as any) : null,
     },
     select: { id: true },
   });

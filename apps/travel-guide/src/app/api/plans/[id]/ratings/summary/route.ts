@@ -8,8 +8,9 @@
 // - willingnessToReturn  (string enum: eager/willing/neutral/unwilling)
 // - cryEpisodes          (json: [{atMinutes, durationSeconds}])
 //
-// 这里给前端聚合 5 维分布 + cryEpisodes 出现率 + 评价数。
-// 不破坏字段原始语义，前端按需映射展示。
+// 2026-07-31 v1.0 Phase B：加 4 字段 + 4 维聚合
+// - favoriteMoment / wishToReturn / parentJoy / cryTriggers
+// - monthlyFeedback / crossSpotPattern / topEmotionTriggers / parentJoyByActivity
 
 import { NextRequest, NextResponse } from "next/server";
 import prisma from "@/lib/prisma";
@@ -29,7 +30,12 @@ export async function GET(
       stayDurationMinutes: true,
       willingnessToReturn: true,
       cryEpisodes: true,
+      cryTriggers: true,
+      favoriteMoment: true,
+      wishToReturn: true,
+      parentJoy: true,
       childAgeAtVisit: true,
+      spotId: true,
     },
   });
 
@@ -61,7 +67,7 @@ export async function GET(
       })()
     : null;
 
-  // cryEpisodes 是 json 数组，统计出现哭闹的记录数 + 总次数
+  // cryEpisodes（兼容旧数据）
   let cryCount = 0;
   let cryTotal = 0;
   for (const r of ratings) {
@@ -70,7 +76,39 @@ export async function GET(
     cryTotal += arr.length;
   }
 
-  // childAgeAtVisit 分布（用于"X 岁娃在 Y 景点最开心"等洞察）
+  // 2026-07-31 v1.0 Phase B：cryTriggers 分布（优先新字段）
+  const cryTriggerDist: Record<string, number> = {};
+  for (const r of ratings) {
+    if (Array.isArray(r.cryTriggers)) {
+      for (const t of r.cryTriggers) {
+        const trig = (t as any)?.trigger;
+        if (typeof trig === 'string') cryTriggerDist[trig] = (cryTriggerDist[trig] ?? 0) + 1;
+      }
+    }
+  }
+
+  // 2026-07-31 v1.0 Phase B：favoriteMoment 列表（top 5）
+  const favoriteMoments = ratings
+    .filter(r => r.favoriteMoment && r.favoriteMoment.trim())
+    .slice(0, 5)
+    .map(r => ({
+      spotId: r.spotId,
+      text: r.favoriteMoment!.trim(),
+    }));
+
+  // 2026-07-31 v1.0 Phase B：wishToReturn 分布
+  const wishToReturnDist: Record<string, number> = {};
+  for (const r of ratings) {
+    if (r.wishToReturn) wishToReturnDist[r.wishToReturn] = (wishToReturnDist[r.wishToReturn] ?? 0) + 1;
+  }
+
+  // 2026-07-31 v1.0 Phase B：parentJoy 分布
+  const parentJoyDist: Record<string, number> = {};
+  for (const r of ratings) {
+    if (r.parentJoy) parentJoyDist[r.parentJoy] = (parentJoyDist[r.parentJoy] ?? 0) + 1;
+  }
+
+  // childAgeAtVisit 分布
   const ageMap = new Map<number, number>();
   for (const r of ratings) {
     const a = r.childAgeAtVisit;
@@ -92,6 +130,11 @@ export async function GET(
       stayDuration: { avgMinutes: avgStay, medianMinutes: medianStay, sample: stayDurations.length },
       cry: { recordsWithCry: cryCount, totalEpisodes: cryTotal, rate: total ? Math.round((cryCount / total) * 100) : 0 },
       childAgeDistribution: ageDistribution,
+      // 2026-07-31 v1.0 Phase B
+      cryTriggerDistribution: cryTriggerDist,
+      favoriteMoments,
+      wishToReturnDistribution: wishToReturnDist,
+      parentJoyDistribution: parentJoyDist,
     },
   });
 }
