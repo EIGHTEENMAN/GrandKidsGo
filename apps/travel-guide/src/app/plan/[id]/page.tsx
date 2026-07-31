@@ -57,6 +57,11 @@ interface RatingSummary {
   willingnessToReturn: Array<{ value: string; count: number }>;
   stayDuration: { avgMinutes: number | null; medianMinutes: number | null; sample: number };
   cry: { recordsWithCry: number; totalEpisodes: number; rate: number };
+  // 2026-07-31 v1.0 Phase B 新增
+  cryTriggerDistribution?: Record<string, number>;
+  favoriteMoments?: Array<{ spotId: string | null; text: string }>;
+  wishToReturnDistribution?: Record<string, number>;
+  parentJoyDistribution?: Record<string, number>;
 }
 
 interface SpotLite {
@@ -284,6 +289,11 @@ export default function PlanDetailPage() {
         {/* 出行后感受评分汇总（P4 评价打分闭环） */}
         {ratings && ratings.total > 0 && (
           <RatingsSummaryCard ratings={ratings} planId={plan.id} />
+        )}
+
+        {/* 2026-07-31 v1.0 Phase C：孩子真实记录板块 */}
+        {ratings && ratings.total > 0 && (
+          <ChildFeedbackSection ratings={ratings} planId={plan.id} />
         )}
       </div>
 
@@ -779,6 +789,85 @@ function SummaryCol({ label, top, total }: { label: string; top: { value: string
       <div className="text-base font-extrabold text-pink-700">{top.value}</div>
       <div className="text-[10px] text-gray-400 mt-0.5">{pct}%</div>
     </div>
+  );
+}
+
+// 2026-07-31 v1.0 Phase C：孩子真实记录板块
+// 数据源：/api/plans/[id]/ratings/summary 的 favoriteMoments / cryTriggerDistribution / parentJoyDistribution
+const TRIGGER_LABEL: Record<string, string> = {
+  hungry: '饿了', sleepy: '困了', crowded: '人多', queueing: '排队',
+  loud: '怕大声', dark: '怕黑', animal: '怕动物', height: '怕高', uncomfortable: '不舒服',
+};
+
+function ChildFeedbackSection({ ratings, planId }: { ratings: RatingSummary; planId: string }) {
+  const favorites = ratings.favoriteMoments ?? [];
+  const triggers = Object.entries(ratings.cryTriggerDistribution ?? {})
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 5);
+  const parentJoy = Object.entries(ratings.parentJoyDistribution ?? {}).sort((a, b) => b[1] - a[1]);
+  // 仅在有数据时显示（防御）
+  if (favorites.length === 0 && triggers.length === 0 && parentJoy.length === 0) return null;
+
+  return (
+    <section className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
+      <div className="flex items-center justify-between mb-4">
+        <h3 className="font-bold text-gray-900 inline-flex items-center gap-2 text-base">
+          <BabyIcon size={18} className="text-pink-500" />
+          孩子真实记录
+        </h3>
+        <Link
+          href={`/plan/${planId}/feeling`}
+          className="text-xs text-blue-600 hover:underline"
+        >
+          补充记录 →
+        </Link>
+      </div>
+
+      {/* 孩子最开心的瞬间 */}
+      {favorites.length > 0 && (
+        <div className="mb-4">
+          <h4 className="text-sm font-medium text-gray-700 mb-2">🎉 孩子最开心的瞬间</h4>
+          <ul className="space-y-1.5">
+            {favorites.map((m, i) => (
+              <li key={i} className="text-sm text-gray-700 bg-pink-50/60 border border-pink-100 rounded-lg px-3 py-2">
+                <span className="text-pink-600">"</span>
+                {m.text}
+                <span className="text-pink-600">"</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+
+      {/* 哭闹触发器 */}
+      {triggers.length > 0 && (
+        <div className="mb-4">
+          <h4 className="text-sm font-medium text-gray-700 mb-2">😢 孩子哭闹的常见原因</h4>
+          <div className="flex flex-wrap gap-1.5">
+            {triggers.map(([trigger, count]) => (
+              <span key={trigger} className="inline-flex items-center gap-1 text-xs px-2.5 py-1 bg-orange-50 text-orange-700 rounded-full border border-orange-200">
+                {TRIGGER_LABEL[trigger] ?? trigger}
+                <span className="text-orange-500">· {count} 次</span>
+              </span>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* 父母满足度 */}
+      {parentJoy.length > 0 && (
+        <div>
+          <h4 className="text-sm font-medium text-gray-700 mb-2">💝 父母自己的感受</h4>
+          <div className="flex flex-wrap gap-1.5">
+            {parentJoy.map(([joy, count]) => (
+              <span key={joy} className="text-xs px-2.5 py-1 bg-green-50 text-green-700 rounded-full border border-green-200">
+                {joy} · {count} 次
+              </span>
+            ))}
+          </div>
+        </div>
+      )}
+    </section>
   );
 }
 

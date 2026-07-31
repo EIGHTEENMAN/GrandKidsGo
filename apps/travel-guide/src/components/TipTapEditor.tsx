@@ -1,5 +1,6 @@
 'use client';
 
+import { forwardRef, useImperativeHandle } from 'react';
 import { useEditor, EditorContent } from '@tiptap/react';
 import StarterKit from '@tiptap/starter-kit';
 import Underline from '@tiptap/extension-underline';
@@ -12,7 +13,19 @@ type TipTapEditorProps = {
   placeholder?: string;
 };
 
-export default function TipTapEditor({ content, onChange, placeholder }: TipTapEditorProps) {
+// 2026-07-31 v1.0 Phase C：暴露给父组件的 imperative API
+// 用法：const ref = useRef<TipTapEditorHandle>(null);
+//       ref.current?.insertContent('<p>...</p>');
+export type TipTapEditorHandle = {
+  insertContent: (html: string) => void;
+  focus: () => void;
+  getHTML: () => string;
+};
+
+const TipTapEditor = forwardRef<TipTapEditorHandle, TipTapEditorProps>(function TipTapEditor(
+  { content, onChange, placeholder },
+  ref,
+) {
   const editor = useEditor({
     extensions: [
       StarterKit,
@@ -26,6 +39,17 @@ export default function TipTapEditor({ content, onChange, placeholder }: TipTapE
       attributes: { class: 'prose prose-sm max-w-none focus:outline-none min-h-[200px] px-4 py-3' },
     },
   });
+
+  useImperativeHandle(ref, () => ({
+    insertContent: (html: string) => {
+      if (!editor) return;
+      editor.chain().focus().insertContent(html).run();
+    },
+    focus: () => {
+      editor?.chain().focus().run();
+    },
+    getHTML: () => editor?.getHTML() ?? '',
+  }), [editor]);
 
   if (!editor) return null;
 
@@ -55,7 +79,9 @@ export default function TipTapEditor({ content, onChange, placeholder }: TipTapE
       <EditorContent editor={editor} />
     </div>
   );
-}
+});
+
+export default TipTapEditor;
 
 function ToolBtn({ onClick, active, label, className }: { onClick: () => void; active?: boolean; label: string; className?: string }) {
   return (

@@ -4,14 +4,16 @@
 // 表单复用 create 页模式；保存调 PUT /api/guides/[id]；状态流转调 /submit /publish /retract
 
 'use client';
-import { useEffect, useState, Suspense } from 'react';
+import { useEffect, useRef, useState, Suspense } from 'react';
 import Link from 'next/link';
 import { useParams, useRouter, useSearchParams } from 'next/navigation';
-import TipTapEditor from '@/components/TipTapEditor';
-import { BabyIcon, GuidebookIcon } from '@/components/Icons';
+import TipTapEditor, { type TipTapEditorHandle } from '@/components/TipTapEditor';
+import { BabyIcon, GuidebookIcon, SparklesIcon } from '@/components/Icons';
 import { getToken, authedFetch } from '@/lib/auth';
 import type { GuideStatus } from '@/lib/guide-status';
 import { GUIDE_STATUS_LABEL } from '@/lib/guide-status';
+
+const TRAVEL_API = (process.env.NEXT_PUBLIC_TRAVEL_API as string) || 'https://travel.grandand.com';
 
 const STATUS_TONE: Record<GuideStatus, string> = {
   draft: 'bg-gray-100 text-gray-700',
@@ -39,6 +41,9 @@ function EditGuideInner() {
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [status, setStatus] = useState<GuideStatus>('draft');
+  // 2026-07-31 v1.0 Phase C：编辑器 ref（插入孩子真实记录用）
+  const editorRef = useRef<TipTapEditorHandle>(null);
+  const [insertingFeedback, setInsertingFeedback] = useState(false);
   const [permissions, setPermissions] = useState<{
     canEdit: boolean;
     canSubmit: boolean;
@@ -112,6 +117,34 @@ function EditGuideInner() {
     if (!r.ok) { alert(d?.error?.message ?? `${action} 失败`); return; }
     alert(`${action} 成功`);
     router.push('/profile/guides');
+  };
+
+  // 2026-07-31 v1.0 Phase C：插入孩子真实记录
+  const insertChildFeedback = async () => {
+    if (insertingFeedback) return;
+    setInsertingFeedback(true);
+    try {
+      const r = await fetch(`${TRAVEL_API}/api/guides/${id}/auto-child-feedback`);
+      const j = await r.json().catch(() => null);
+      if (!r.ok || !j?.data?.html) {
+        alert(j?.message ?? '暂无孩子评价记录可插入（先在 /plan/[id] 提交评分）');
+        return;
+      }
+      editorRef.current?.insertContent(j.data.html);
+      // 滚动到编辑器位置
+      editorRef.current?.focus();
+      // 提示一下用户
+      const sections = j.data.sections ?? {};
+      const tips: string[] = [];
+      if (sections.favoriteMoments?.length) tips.push(`${sections.favoriteMoments.length} 条孩子最开心瞬间`);
+      if (sections.cryTriggers?.length) tips.push(`${sections.cryTriggers.length} 类哭闹原因`);
+      if (sections.ageFeedback) tips.push(`${sections.ageFeedback.ageBucket} 月龄参考`);
+      if (tips.length > 0) alert(`已插入：${tips.join('、')}`);
+    } catch (e: any) {
+      alert(e?.message ?? '插入失败');
+    } finally {
+      setInsertingFeedback(false);
+    }
   };
 
   if (loading) return <div className="min-h-screen flex items-center justify-center text-gray-400">加载中…</div>;
@@ -224,8 +257,25 @@ function EditGuideInner() {
         </div>
 
         <div>
-          <label className="block text-sm font-bold text-gray-700 mb-2">正文</label>
-          <TipTapEditor content={form.contentHtml} onChange={html => setForm(f => ({ ...f, contentHtml: html }))} />
+          <div className="flex items-center justify-between mb-2">
+            <label className="block text-sm font-bold text-gray-700">正文</label>
+            {/* 2026-07-31 v1.0 Phase C：一键插入孩子真实记录 */}
+            <button
+              type="button"
+              onClick={insertChildFeedback}
+              disabled={insertingFeedback}
+              className="flex items-center gap-1 text-xs px-2.5 py-1 bg-gradient-to-r from-pink-500 to-rose-500 text-white rounded-full font-medium hover:shadow-sm disabled:opacity-50"
+              title="从关联计划的所有评分中聚合孩子真实记录"
+            >
+              <SparklesIcon size={12} />
+              {insertingFeedback ? '插入中…' : '📝 插入孩子真实记录'}
+            </button>
+          </div>
+          <TipTapEditor
+            ref={editorRef}
+            content={form.contentHtml}
+            onChange={html => setForm(f => ({ ...f, contentHtml: html }))}
+          />
         </div>
       </div>
     </main>
