@@ -347,6 +347,28 @@ function computeParentJoyByActivity(
   return result;
 }
 
+/**
+ * Phase D：读取孩子的感受画像（供 searchSimilar / recommend 消费）。
+ * 无数据时返回 null，调用方优雅降级。
+ */
+export async function getChildFeelingProfile(childId: string) {
+  const profile = await prisma.childFeelingProfile.findUnique({
+    where: { childId },
+    select: {
+      childId: true,
+      totalDataPoints: true,
+      lastUpdatedAt: true,
+      spotTypePreferences: true,
+      cryingTriggers: true,
+      monthlyFeedback: true,
+      crossSpotPattern: true,
+      topEmotionTriggers: true,
+      parentJoyByActivity: true,
+    },
+  });
+  return profile ?? null;
+}
+
 /** 全量对账（定时任务 / 手动触发） */
 export async function recomputeAllChildProfiles(): Promise<{ updated: number; errors: number }> {
   const groups = await prisma.childRating.groupBy({

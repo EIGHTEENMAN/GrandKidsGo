@@ -5,6 +5,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { PlaceNearbyCategory } from "@prisma/client";
 import prisma from "@/lib/prisma";
 import { verifyAuth } from "@/lib/verify-auth";
+import { computeChildWarning } from "@/lib/compute-child-warnings";
 
 export const dynamic = "force-dynamic";
 
@@ -146,6 +147,10 @@ export async function GET(
       poems: await fetchPoems(type, id, place.city?.id),
       // 孩子说（按 spotId 过滤已公开的）
       childSayings: await fetchChildSayingsForPlace(type, id),
+      // 2026-07-31「孩子最怕」预警 — 基于 child_feeling_profiles 计算的哭闹率
+      childWarning: place.spotType
+        ? await computeChildWarning(place.spotType)
+        : null,
       reviews: reviews.map((r) => ({
         id: r.id,
         adultRating: r.adultRating,

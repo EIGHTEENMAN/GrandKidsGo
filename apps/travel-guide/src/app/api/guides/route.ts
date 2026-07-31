@@ -12,6 +12,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import prisma from "@/lib/prisma";
 import { extractChildSayingsFromHtml } from "@/lib/extract-child-sayings";
+import { extractImagesFromHtml } from "@/lib/extract-guide-images";
 import { verifyAuth } from "@/lib/verify-auth";
 import { moderateTravelText } from "@/lib/moderation";
 import { recordOperation } from "@/lib/operation-log";
@@ -106,6 +107,35 @@ export async function POST(req: NextRequest) {
           shareScope: "private",
         },
       });
+    }
+
+    // 自动提取：从 contentHtml 中提取图片 → 录入儿童画廊
+    // 仅在未被 hard reject 时执行（rejected 的攻略不提取）
+    if (finalStatus !== "rejected") {
+      const autoImages = extractImagesFromHtml(safeHtml);
+      for (const img of autoImages) {
+        // 通过 ossKey 去重：避免重复发布时重复插入
+        const existing = await prisma.planMedia.findFirst({
+          where: { ossKey: img.ossKey, sourceType: "gallery", sourceGuideId: guide.id },
+          select: { id: true },
+        });
+        if (existing) continue;
+
+        await prisma.planMedia.create({
+          data: {
+            planRecordId: "gallery",
+            type: "image",
+            ossKey: img.ossKey,
+            ossUrl: img.ossUrl,
+            caption: (img.caption || img.title || "").trim().slice(0, 300) || null,
+            childId: null,
+            spotId: spotId ?? null,
+            sourceType: "gallery",
+            sourceGuideId: guide.id,
+            visibilityLevel: "private",
+          },
+        });
+      }
     }
 
     // 响应：返回最终 status，前端按状态分支引导（v1 简化，PR3 在 /guides/[id]/edit 顶部 banner 处理）

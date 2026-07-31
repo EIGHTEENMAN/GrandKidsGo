@@ -1,11 +1,12 @@
 'use client';
 
-import { forwardRef, useImperativeHandle } from 'react';
+import { forwardRef, useImperativeHandle, useRef } from 'react';
 import { useEditor, EditorContent } from '@tiptap/react';
 import StarterKit from '@tiptap/starter-kit';
 import Underline from '@tiptap/extension-underline';
 import Link from '@tiptap/extension-link';
 import Placeholder from '@tiptap/extension-placeholder';
+import Image from '@tiptap/extension-image';
 
 type TipTapEditorProps = {
   content: string;
@@ -26,12 +27,19 @@ const TipTapEditor = forwardRef<TipTapEditorHandle, TipTapEditorProps>(function 
   { content, onChange, placeholder },
   ref,
 ) {
+  const fileInputRef = useRef<HTMLInputElement>(null);
+
   const editor = useEditor({
     extensions: [
       StarterKit,
       Underline,
       Link.configure({ openOnClick: false }),
       Placeholder.configure({ placeholder: placeholder || '开始写内容...' }),
+      Image.configure({
+        inline: false,
+        allowBase64: false,
+        HTMLAttributes: { class: 'max-w-full h-auto rounded-lg my-3' },
+      }),
     ],
     content,
     onUpdate: ({ editor }) => onChange(editor.getHTML()),
@@ -58,6 +66,42 @@ const TipTapEditor = forwardRef<TipTapEditorHandle, TipTapEditorProps>(function 
     if (url) editor.chain().focus().setLink({ href: url }).run();
   };
 
+  /** 通过 URL 插入图片（也可用于粘贴 OSS URL） */
+  const addImage = () => {
+    const url = prompt('输入图片链接地址:');
+    if (url && /^https?:\/\//.test(url)) {
+      editor.chain().focus().setImage({ src: url }).run();
+    } else if (url) {
+      alert('请输入有效的 https:// 开头的图片链接');
+    }
+  };
+
+  /** 通过本地文件选择 → 转 base64（轻量方案，后续可升级为 OSS 直传） */
+  const handleFilePick = () => {
+    fileInputRef.current?.click();
+  };
+
+  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+
+    // 仅允许图片
+    if (!file.type.startsWith('image/')) {
+      alert('请选择图片文件');
+      return;
+    }
+
+    const reader = new FileReader();
+    reader.onload = () => {
+      const base64 = reader.result as string;
+      editor?.chain().focus().setImage({ src: base64 }).run();
+    };
+    reader.readAsDataURL(file);
+
+    // 清掉 input 以便重复选同一文件
+    e.target.value = '';
+  };
+
   return (
     <div className="border rounded-xl overflow-hidden bg-white">
       <div className="flex flex-wrap gap-0.5 border-b bg-gray-50 px-2 py-1.5">
@@ -73,9 +117,20 @@ const TipTapEditor = forwardRef<TipTapEditorHandle, TipTapEditorProps>(function 
         <span className="w-px bg-gray-300 mx-1" />
         <ToolBtn onClick={() => editor.chain().focus().toggleBlockquote().run()} active={editor.isActive('blockquote')} label="引用" />
         <ToolBtn onClick={addLink} active={editor.isActive('link')} label="🔗链接" />
+        <span className="w-px bg-gray-300 mx-1" />
+        <ToolBtn onClick={addImage} label="🌄 URL图" />
+        <ToolBtn onClick={handleFilePick} label="📷 本地上传" />
+        <span className="w-px bg-gray-300 mx-1" />
         <ToolBtn onClick={() => editor.chain().focus().undo().run()} label="↩" />
         <ToolBtn onClick={() => editor.chain().focus().redo().run()} label="↪" />
       </div>
+      <input
+        ref={fileInputRef}
+        type="file"
+        accept="image/*"
+        className="hidden"
+        onChange={handleFileChange}
+      />
       <EditorContent editor={editor} />
     </div>
   );

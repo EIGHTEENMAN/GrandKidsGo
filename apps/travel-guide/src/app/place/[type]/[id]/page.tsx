@@ -15,6 +15,8 @@ import {
   SubwayIcon, BusIcon, ParkingIcon, PlaneTravelIcon, TrainIcon, TrophyIcon,
 } from '@/components/Icons';
 import { TAG_CATEGORIES } from '@/lib/tags';
+import ChildFearWarning from '@/components/ChildFearWarning';
+import type { ChildWarning } from '@/lib/compute-child-warnings';
 
 const TRAVEL_API = (process.env.NEXT_PUBLIC_TRAVEL_API as string) || 'https://travel.grandand.com';
 
@@ -77,6 +79,7 @@ interface PlaceData {
   leaderboard?: { rank: number | null; total: number; scope: string; period: string } | null;
   poems?: Array<{ poemId: number; poemTitle: string; poemAuthor: string; linkType: string; verseLine: string | null; confidence: number; url: string }>;
   childSayings?: Array<{ id: string; text: string; mood: string | null; childId: string | null; createdAt: string }>;
+  childWarning?: ChildWarning | null;
 }
 
 interface NearbyItem {
@@ -303,6 +306,10 @@ export default function PlaceDetailPage() {
       </header>
 
       <div className="max-w-6xl mx-auto px-6 py-8">
+        {/* ============ ①.5 「孩子最怕」预警横幅 ============ */}
+        {data?.childWarning && data.childWarning.warning && (
+          <ChildFearWarning data={data.childWarning} />
+        )}
         {/* ============ ② 核心信息（左）+ 双维度评分卡（右）并排 ============ */}
         <section className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
           {/* 左：核心信息 3/5 */}

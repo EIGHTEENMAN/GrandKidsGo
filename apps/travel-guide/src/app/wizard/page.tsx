@@ -17,6 +17,7 @@ import { useRouter } from 'next/navigation';
 import { getToken, authedFetch } from '@/lib/auth';
 import type { CandidateOutline, TimelineBlock, TimelineDay, ChildProfileHint } from '@/lib/assembler/types';
 import { ChildProfileHints } from '@/components/ChildProfileHints';
+import { getChildFeelingProfile } from '@/lib/child-profile-aggregate';
 
 const TRAVEL_API = (process.env.NEXT_PUBLIC_TRAVEL_API as string) || 'https://travel.grandand.com';
 
@@ -135,6 +136,12 @@ interface WizardChild {
   weightKg?: number | null;
 }
 
+interface MatchReason {
+  type: string;
+  text: string;
+  weight: number;
+}
+
 interface SimilarGuide {
   id: string;
   title: string;
@@ -145,7 +152,47 @@ interface SimilarGuide {
   stats: { view: number; save: number; like: number };
   author: { nickname: string; avatar: string | null };
   matchScore: number;
-  matchReason: string;
+  matchReasons: MatchReason[];
+}
+
+// 月龄 → monthlyFeedback 分桶 key（与 child-profile-aggregate.ts 对齐）
+function bucketAgeMonths(months: number): string {
+  if (months <= 6) return '0-6m';
+  if (months <= 12) return '7-12m';
+  if (months <= 24) return '13-24m';
+  if (months <= 36) return '25-36m';
+  if (months <= 60) return '37-60m';
+  if (months <= 84) return '61-84m';
+  if (months <= 120) return '85-120m';
+  return '121m+';
+}
+
+// 从 guide.tags 提取可能的 spotType 中文标签（用于匹配 monthlyFeedback 的 key）
+// monthlyFeedback key 示例：动物园、科技馆、博物馆、公园、游乐场、海洋馆 等
+const SPOT_TYPE_TAG_MAP: Record<string, string[]> = {
+  sight: ['景点', '名胜', '地标'],
+  park: ['公园', '绿地', '植物园'],
+  museum: ['博物馆', '科技馆'],
+  science: ['科技馆', '科学中心'],
+  aquarium: ['海洋馆', '水族馆', '动物园'],
+  library: ['图书', '图书馆'],
+  playground: ['游乐场', '主题公园'],
+  restaurant: ['美食', '餐厅'],
+  mall: ['商场', '购物'],
+  hotel: ['酒店'],
+};
+
+function inferSpotTypesFromTags(tags: string[]): string[] {
+  const tagSet = new Set(tags.map((t) => t.toLowerCase()));
+  const types: string[] = [];
+  for (const keywords of Object.values(SPOT_TYPE_TAG_MAP)) {
+    for (const kw of keywords) {
+      if (tagSet.has(kw.toLowerCase())) {
+        if (!types.includes(kw)) types.push(kw);
+      }
+    }
+  }
+  return types;
 }
 
 // ---------------------------------------------------------------------------
@@ -476,6 +523,23 @@ export default function SmartGuideLanding() {
     setLoading(true);
     setGuides([]);
     try {
+      // Phase D：预拉选中孩子的感受画像（用于 child_feeling 维度加权）
+      const selectedChildren = Array.from(selectedChildIds)
+        .map((id) => userChildren.find((c) => c.childId === id))
+        .filter(Boolean) as WizardChild[];
+      let childFeelingProfiles: Map<string, NonNullable<Awaited<ReturnType<typeof getChildFeelingProfile>>>> = new Map();
+      if (selectedChildren.length > 0) {
+        const results = await Promise.allSettled(
+          selectedChildren.map((c) => getChildFeelingProfile(c.childId)),
+        );
+        results.forEach((r, i) => {
+          if (r.status === 'fulfilled' && r.value && r.value.totalDataPoints > 0) {
+            childFeelingProfiles.set(selectedChildren[i]!.childId, r.value);
+          }
+        });
+      }
+      const hasFeelingData = childFeelingProfiles.size > 0;
+
       // 拉 1 页 50（最多）
       const r = await fetch(`${TRAVEL_API}/api/guides/feed?pageSize=50`);
       const d = await r.json();
@@ -492,30 +556,31 @@ export default function SmartGuideLanding() {
         }
       }
 
-      // 算分
+      // 算分 + Phase D child_feeling 维度
       const scored: SimilarGuide[] = filtered.map((g: any) => {
         let score = 0;
-        const reasons: string[] = [];
+        const reasons: MatchReason[] = [];
+
         if (!cityFallbackUsed && g.cityName === primaryCity.name) {
           score += 50;
-          reasons.push('同城市');
+          reasons.push({ type: 'city', text: '同城市', weight: 50 });
         }
         if (g.days && Math.abs(g.days - days) <= 1) {
           score += 25;
-          reasons.push(`天数相近（${g.days} 天）`);
+          reasons.push({ type: 'days', text: `天数相近（${g.days} 天）`, weight: 25 });
         }
         if (g.childAges?.length) {
           const ageDiff = Math.min(...g.childAges.map((a: number) => Math.abs(a - representativeMonths)));
           if (ageDiff <= 12) {
             score += 25;
-            reasons.push(`孩子月龄相近（${Math.floor(Math.min(...g.childAges) / 12)} 岁）`);
+            reasons.push({ type: 'childAges', text: `孩子月龄相近（${Math.floor(Math.min(...g.childAges) / 12)} 岁）`, weight: 25 });
           } else if (ageDiff <= 24) {
             score += 10;
           }
         }
         if (g.travelStyle === travelStyle) {
           score += 10;
-          reasons.push('旅行风格匹配');
+          reasons.push({ type: 'travelStyle', text: '旅行风格匹配', weight: 10 });
         }
         // 主题关键词命中 → +5/项，封顶 +20
         if (selectedThemes.size > 0 && Array.isArray(g.tags)) {
@@ -536,7 +601,7 @@ export default function SmartGuideLanding() {
           themeBonus = Math.min(themeBonus, 20);
           if (themeBonus > 0) {
             score += themeBonus;
-            reasons.push(`主题相似 · ${matchedTags.slice(0, 2).join('、')}`);
+            reasons.push({ type: 'theme', text: `主题相似 · ${matchedTags.slice(0, 2).join('、')}`, weight: themeBonus });
           }
         }
         // 已选景点 type 关键词 → +3/项，封顶 +15
@@ -553,9 +618,46 @@ export default function SmartGuideLanding() {
           }
           if (spotBonus > 0) {
             score += spotBonus;
-            reasons.push(`去过相似类 · ${matched.slice(0, 2).join('、')}`);
+            reasons.push({ type: 'spotType', text: `去过相似类 · ${matched.slice(0, 2).join('、')}`, weight: spotBonus });
           }
         }
+
+        // ---- Phase D：child_feeling_profile 维度 ----
+        if (hasFeelingData && Array.isArray(g.tags)) {
+          const guideSpotTypes = inferSpotTypesFromTags(g.tags);
+          let childFeelingBonus = 0;
+          const feelingReasons: string[] = [];
+          childFeelingProfiles.forEach((profile) => {
+            const childAgeBucket = bucketAgeMonths(representativeMonths);
+            const monthFeedback = (profile.monthlyFeedback as Record<string, any>) ?? {};
+            const bucketData = monthFeedback[childAgeBucket];
+            if (!bucketData) return;
+            // 统计 guide 中同月龄高评的 spotType 数量
+            const highRatedTypes: string[] = [];
+            for (const st of guideSpotTypes) {
+              const spotData = bucketData[st];
+              if (spotData && spotData.avgScore >= 3.5 && spotData.count >= 1) {
+                highRatedTypes.push(st);
+                childFeelingBonus += 8; // 每项 +8，合理的 bonus
+              }
+            }
+            childFeelingBonus = Math.min(childFeelingBonus, 30); // 封顶 30
+            if (highRatedTypes.length > 0) {
+              feelingReasons.push(
+                `${Math.floor(representativeMonths / 12)}岁孩子评 ${highRatedTypes.length} 类高分`,
+              );
+            }
+          });
+          if (childFeelingBonus > 0) {
+            score += childFeelingBonus;
+            reasons.push({
+              type: 'childFeeling',
+              text: feelingReasons.join('；'),
+              weight: childFeelingBonus,
+            });
+          }
+        }
+
         return {
           id: g.id,
           title: g.title,
@@ -566,7 +668,7 @@ export default function SmartGuideLanding() {
           stats: { view: g.stats?.view ?? 0, save: g.stats?.save ?? 0, like: g.stats?.like ?? 0 },
           author: { nickname: g.author?.nickname ?? '匿名', avatar: g.author?.avatar ?? null },
           matchScore: score,
-          matchReason: reasons.length ? reasons.join(' · ') : '弱匹配',
+          matchReasons: reasons.length ? reasons : [{ type: 'default', text: '弱匹配', weight: 0 }],
         };
       });
 
@@ -1275,7 +1377,7 @@ export default function SmartGuideLanding() {
 
         {/* ====================== 相似攻略结果面板 ====================== */}
         {(loading || guides.length > 0) && (
-          <Section title="🎯 相似攻略" subtitle="按 城市 · 天数 · 孩子月龄 · 主题关键词 · 风格 算分（来自 1 页 50 个候选）">
+          <Section title="🎯 相似攻略" subtitle="按 城市 · 天数 · 孩子月龄 · 主题关键词 · 风格 · 孩子感受画像 算分（来自 1 页 50 个候选）">
             {loading && <p className="text-sm text-gray-400">查找中…</p>}
             {!loading && guides.length === 0 && (
               <div className="bg-white rounded-2xl p-8 text-center border border-dashed">
@@ -1296,7 +1398,26 @@ export default function SmartGuideLanding() {
                           <span className="px-2 py-0.5 bg-green-50 text-green-700 rounded">🎯 {g.matchScore}% 匹配</span>
                         </div>
                         <h3 className="font-bold text-gray-900 text-base mb-1">{g.title}</h3>
-                        <p className="text-sm text-gray-500 mb-2">{g.matchReason}</p>
+                        <div className="flex flex-wrap gap-1 mb-2">
+                          {g.matchReasons.map((r, idx) => (
+                            <span
+                              key={idx}
+                              className={`inline-block text-xs px-2 py-0.5 rounded ${
+                                r.type === 'childFeeling'
+                                  ? 'bg-pink-50 text-pink-700'
+                                  : r.type === 'city'
+                                  ? 'bg-blue-50 text-blue-700'
+                                  : r.type === 'days' || r.type === 'childAges'
+                                  ? 'bg-green-50 text-green-700'
+                                  : r.type === 'theme' || r.type === 'spotType'
+                                  ? 'bg-purple-50 text-purple-700'
+                                  : 'bg-gray-50 text-gray-600'
+                              }`}
+                            >
+                              {r.text}
+                            </span>
+                          ))}
+                        </div>
                         <div className="flex items-center justify-between text-sm">
                           <span className="text-gray-500">👩 {g.author.nickname}</span>
                           <span className="text-gray-400 text-xs">👍 {g.stats.like} ⭐ {g.stats.save}</span>
