@@ -180,8 +180,8 @@ function PlanPreviewInner() {
     <main className="min-h-screen bg-gradient-to-b from-slate-50 to-white pb-32">
       <header className="bg-gradient-to-r from-blue-600 to-cyan-600 text-white">
         <div className="max-w-6xl mx-auto px-6 py-8">
-          {/* P-bug-fix：没 c= 时返回 /profile/plans；有 c= 时返回 /wizard（让用户能继续选） */}
-          <Link href={cParam ? "/wizard" : "/profile/plans"} className="text-blue-100 text-sm hover:text-white">← 返回</Link>
+          {/* P-bug-fix：没 c= 或 i= 时返回 /profile/plans；有任一时返回 /wizard（让用户能继续选） */}
+          <Link href={cParam || iParam ? "/wizard" : "/profile/plans"} className="text-blue-100 text-sm hover:text-white">← 返回</Link>
           <div className="flex items-start justify-between mt-2 gap-4">
             <div className="flex-1">
               <h1 className="text-2xl md:text-3xl font-extrabold">{candidate.label ?? '候选方案详情'}</h1>
