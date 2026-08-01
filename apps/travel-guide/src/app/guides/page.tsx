@@ -63,7 +63,8 @@ const MOCK_GUIDES: Guide[] = [
 ];
 
 // 统一卡片高度
-const CARD_HEIGHT = 'h-72';
+// 卡片图片容器：用 aspect-ratio 强制统一比例，避免图片高度不一致
+const CARD_IMG_CLASS = 'aspect-[4/3]';
 
 // chip 样式（与 /places 完全同款）
 const CHIP_BASE = "flex-shrink-0 inline-flex items-center gap-1 px-3 py-1.5 rounded-full text-xs font-medium transition border whitespace-nowrap bg-white text-gray-700 border-gray-200 hover:border-blue-300 hover:text-blue-600";
@@ -80,8 +81,27 @@ const DAY_OPTIONS = [
   { label: '深度游', days: [8, 99] },
 ];
 
-// 风格 chip
-const TRAVEL_STYLES = ['平衡', '慢游', '主题乐园', '度假', '自然', '研学', '历史'];
+// 主题 chip：与首页亲子宝典完全一致（统一体验）
+// 匹配策略：主题 → 关键词（含在标题/正文）OR travelStyle 同义词
+const TRAVEL_STYLES = ['玩水', '海边', '爬山', '研学', '动物', '采摘', '露营', '历史', '主题乐园', '博物馆', '滑雪', '观星', '漂流', '游船'];
+
+// 主题关键词映射：标题/正文/travelStyle 任一命中即匹配
+const STYLE_KEYWORDS: Record<string, string[]> = {
+  '玩水': ['玩水', '水世界', '水乐园', '水上', '游泳', '海岛', '水寨'],
+  '海边': ['海边', '海岛', '三亚', '青岛', '厦门', '海滨', '海滩', '海昌'],
+  '爬山': ['爬山', '山', '岳', '登山', '峨眉', '黄山', '莫高'],
+  '研学': ['研学', '博物馆', '科技馆', '文化', '历史', '兵马俑', '故宫', '研学'],
+  '动物': ['动物', '动物园', '海洋馆', '长隆', '海昌', '野生动物', '熊猫'],
+  '采摘': ['采摘', '果园', '草莓', '樱桃', '葡萄'],
+  '露营': ['露营', '帐篷', '营地', '户外', '夜宿'],
+  '历史': ['历史', '故宫', '兵马俑', '中山陵', '古城', '古镇', '文化'],
+  '主题乐园': ['主题乐园', '迪士尼', '长隆', '欢乐谷', '方特', '乐园'],
+  '博物馆': ['博物馆', '科技馆', '故宫', '兵马俑', '自然博物馆'],
+  '滑雪': ['滑雪', '雪场', '冰雪'],
+  '观星': ['观星', '星空', '天文'],
+  '漂流': ['漂流', '峡谷'],
+  '游船': ['游船', '邮轮', '游轮'],
+};
 
 // 拼音首字母映射（51 城全覆盖；查不到走 'Z' 兜底）
 const PINYIN_LETTER: Record<string, string> = {
@@ -198,7 +218,12 @@ export default function GuidesPage() {
   const filtered = guides
     .filter(searchMatch)
     .filter(dayMatch)
-    .filter((g) => !styleFilter || g.travelStyle === styleFilter)
+    .filter((g) => {
+      if (!styleFilter) return true;
+      const kws = STYLE_KEYWORDS[styleFilter] ?? [styleFilter];
+      const hay = `${g.title} ${g.travelStyle ?? ''}`.toLowerCase();
+      return kws.some((k) => hay.includes(k.toLowerCase()));
+    })
     .filter((g) => !cityFilter || g.cityName === cityFilter);
 
   return (
@@ -254,11 +279,11 @@ export default function GuidesPage() {
           </div>
         </div>
 
-        {/* 风格 chip（替代 /places 的类别筛选） */}
+        {/* 主题 chip：与首页亲子宝典完全一致 */}
         <div className="mb-4">
           <div className="flex items-center gap-2 mb-2">
             <span className="text-xs font-semibold text-gray-600 whitespace-nowrap inline-flex items-center gap-1.5">
-              <SparklesIcon size={14} className="text-blue-500" /> 风格
+              <SparklesIcon size={14} className="text-blue-500" /> 主题
             </span>
             <div className="flex-1 h-px bg-gray-100" />
           </div>
@@ -363,12 +388,12 @@ export default function GuidesPage() {
           </div>
         )}
 
-        {/* 3 列等高卡片（统一 h-72） */}
+        {/* 3 列等高卡片（grid + flex column 让标题/作者/按钮三排完美对齐） */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {filtered.map((g) => (
-            <article key={g.id} className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all group">
+            <article key={g.id} className="flex flex-col bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all group">
               <Link href={`/guides/${g.id}`} className="block">
-                <div className={`relative ${CARD_HEIGHT} overflow-hidden bg-gradient-to-br from-blue-100 to-cyan-100`}>
+                <div className={`relative ${CARD_IMG_CLASS} overflow-hidden bg-gradient-to-br from-blue-100 to-cyan-100`}>
                   {g.coverImage ? (
                     /* eslint-disable-next-line @next/next/no-img-element */
                     <img
@@ -401,13 +426,14 @@ export default function GuidesPage() {
                   <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/60 via-black/20 to-transparent pointer-events-none" />
                 </div>
               </Link>
-              <div className="p-4">
+              <div className="p-4 flex flex-col flex-1">
                 <Link href={`/guides/${g.id}`}>
-                  <h3 className="font-bold text-gray-900 line-clamp-2 mb-2 hover:text-blue-600 transition">
+                  <h3 className="font-bold text-gray-900 line-clamp-2 mb-2 hover:text-blue-600 transition min-h-[2.5rem]">
                     {g.title}
                   </h3>
                 </Link>
-                <div className="flex items-center justify-between text-xs text-gray-500 mb-3">
+                {/* mt-auto 把作者行推到卡片底部，按钮紧贴下方，所有卡片完美对齐 */}
+                <div className="mt-auto flex items-center justify-between text-xs text-gray-500 mb-3">
                   <span className="inline-flex items-center gap-1.5 truncate">
                     <span className="w-5 h-5 rounded-full bg-gradient-to-br from-blue-400 to-cyan-400 flex items-center justify-center text-white text-[10px] flex-shrink-0">
                       {g.author.nickname?.[0] ?? '?'}

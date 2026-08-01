@@ -167,7 +167,7 @@ const CAROUSEL_SLIDES = [
 ];
 
 // 瀑布流卡片高度变体（小红书风格）
-const MASONRY_HEIGHTS = ['h-64', 'h-80', 'h-72', 'h-60', 'h-72', 'h-64', 'h-80', 'h-60'];
+const MASONRY_HEIGHTS = ['h-64'];
 
 export default function TravelHome() {
   const [hotGuides, setHotGuides] = useState<Guide[]>([]);
@@ -524,19 +524,17 @@ export default function TravelHome() {
             </div>
           )}
 
-          {/* 小红书风格瀑布流 - 2 列错落 */}
+          {/* 标准统一网格 - 等高卡片 */}
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {hotGuides.map((g, i) => {
-              // 瀑布流风格：不同高度 + 第一张大图
-              const isFeatured = i === 0;
-              const heightClass = isFeatured ? 'h-96' : MASONRY_HEIGHTS[i % MASONRY_HEIGHTS.length];
+              const heightClass = MASONRY_HEIGHTS[i % MASONRY_HEIGHTS.length];
               const coverGradient = COVER_GRADIENTS[i % COVER_GRADIENTS.length];
               const coverImage = g.coverImage || g.coverImages?.[0];
               return (
                 <Link
                   key={g.id}
                   href={`/guides/${g.id}`}
-                  className={`group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all ${isFeatured ? 'col-span-2 md:col-span-2 row-span-2' : ''}`}
+                  className="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow"
                 >
                   <div className={`relative ${heightClass} overflow-hidden`}>
                     {coverImage ? (
@@ -567,12 +565,7 @@ export default function TravelHome() {
                     </div>
                     {/* 底部渐变 + 标题 */}
                     <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 via-black/40 to-transparent">
-                      {isFeatured && (
-                        <div className="inline-flex items-center gap-1 text-xs text-yellow-300 font-bold mb-1">
-                          <FireIcon size={12} /> 本周最热
-                        </div>
-                      )}
-                      <h3 className={`font-bold text-white line-clamp-2 ${isFeatured ? 'text-lg' : 'text-sm'}`}>
+                      <h3 className="font-bold text-white line-clamp-2 text-sm">
                         {g.title}
                       </h3>
                     </div>
