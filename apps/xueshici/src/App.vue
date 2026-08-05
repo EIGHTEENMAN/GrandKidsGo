@@ -741,6 +741,7 @@ watch([() => currentView.value, () => currentPoem.value], () => {
           :poemTitle="currentPoem.title"
           :poemAuthor="currentPoem.author"
           :poemDynasty="currentPoem.dynasty"
+          :poemTags="typeof currentPoem.tags === 'string' ? currentPoem.tags : (currentPoem.tags?.join(',') ?? '')"
           :color="categoryColors[currentPoem.category]"
         />
 

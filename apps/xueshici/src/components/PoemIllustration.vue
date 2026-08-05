@@ -1,8 +1,16 @@
 <script setup lang="ts">
 /**
- * PoemIllustration — 诗配画展示组件（2026-07-01 简化版）
+ * PoemIllustration — 诗配画展示组件
  *
- * 媒体回退链：.jpg → .svg → 文字占位（去掉 mp4 动画）
+ * 2026-08-05 智能裁切优化：
+ *   - 旧版用 object-fit: cover，1024×1024 方形图被压成长条 banner 时，
+ *     人像的脸/山水的主峰经常被裁出画面外
+ *   - 新版用 object-fit: cover + 智能 object-position：
+ *     · 检测诗标题/作者/tags 含人像关键词 → 脸上移（center 30%）
+ *     · 含山水/风景关键词 → 主景居中（center 45%）
+ *     · 都无 → 居中（center center）
+ *
+ * 媒体回退链：.jpg → .svg → 文字占位
  * 只显示静态图片，点击可全屏查看大图。
  */
 import { ref, computed } from 'vue'
@@ -12,6 +20,7 @@ const props = defineProps<{
   poemTitle: string
   poemAuthor: string
   poemDynasty: string
+  poemTags?: string                  // 2026-08-05 新增：用于识别主体类型
   color?: string
 }>()
 
@@ -37,6 +46,34 @@ const dynastyColorMap: Record<string, string> = {
 const accentColor = computed(() => props.color || dynastyColorMap[props.poemDynasty] || '#94a3b8')
 
 const mediaUrl = computed(() => `/images/poems/${props.poemId}.${stage.value}`)
+
+// ===== 智能 object-position（2026-08-05）=====
+// 优先级：山水 > 人像 > 通用
+// 理由：山水词（山/水/月/江...）比人像词（送/忆/思...）更明确；surname 王/李/赵 也可能误触人像词
+// 人像关键词：含"人/送/忆/别/思/乡/客/酒/宴/故人/翁/妇/将/军/臣"
+//   （注意：去掉了"游/王/女"等高歧义单字；改用"送别/思乡/故乡"等组合词更稳）
+const PORTRAIT_KEYWORDS = /[送忆别思乡酒宴故人翁妇将臣]|送别|思乡|友人|故人/u
+// 山水关键词：含"山/水/江/河/湖/海/月/云/松/石/雪/风/花/鸟/寺/塔/楼/桥/春/晓/夜色"
+const LANDSCAPE_KEYWORDS = /[山水江河湖海月云松石雪风花鸟寺塔楼桥春晓夜登]/u
+
+const subjectKind = computed<'portrait' | 'landscape' | 'generic'>(() => {
+  const text = `${props.poemTitle || ''} ${props.poemAuthor || ''} ${props.poemTags || ''}`
+  // 山水优先（更明确的视觉信号）
+  if (LANDSCAPE_KEYWORDS.test(text)) return 'landscape'
+  if (PORTRAIT_KEYWORDS.test(text)) return 'portrait'
+  return 'generic'
+})
+
+// 人像：脸上移到画面上部 30%（避免被顶部 banner 角标挡住）
+// 山水：主景稍偏上 45%（比 center 50% 略靠上，避免底部被压）
+// 通用：完全居中
+const objectPosition = computed(() => {
+  switch (subjectKind.value) {
+    case 'portrait': return 'center 30%'
+    case 'landscape': return 'center 45%'
+    default: return 'center center'
+  }
+})
 
 // ===== 加载处理 =====
 function handleImgLoad() {
@@ -90,6 +127,8 @@ onUnmounted(() => {
         :src="mediaUrl"
         :alt="`《${poemTitle}》${poemAuthor} · ${poemDynasty} 配图`"
         class="pi-image"
+        :class="`pi-image-${subjectKind}`"
+        :style="{ objectPosition }"
         @load="handleImgLoad"
         @error="handleImgError"
         loading="lazy"
@@ -114,6 +153,7 @@ onUnmounted(() => {
         <button class="pi-fullscreen-close" @click="closeFullscreen" aria-label="关闭全屏">✕</button>
         <div class="pi-fullscreen-content">
           <img :src="`/images/poems/${poemId}.jpg`" :alt="`《${poemTitle}》配图`" class="pi-fullscreen-img"
+            :style="{ objectPosition }"
             @error="(e) => ((e.target as HTMLImageElement).src = mediaUrl)" />
           <p class="pi-fullscreen-caption">
             《{{ poemTitle }}》 · {{ poemAuthor }}（{{ poemDynasty }}）
@@ -148,9 +188,10 @@ onUnmounted(() => {
 .pi-image {
   display: block;
   width: 100%;
-  height: auto;
+  height: 320px;       /* 2026-08-05：固定高度，让 object-position 真正起作用 */
   max-height: 320px;
   object-fit: cover;
+  /* object-position 由内联样式动态设置（人像/山水/通用） */
 }
 
 /* ===== 角标 ===== */
@@ -254,6 +295,7 @@ onUnmounted(() => {
   max-height: 80vh;
   border-radius: 8px;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  object-fit: contain;
 }
 
 .pi-fullscreen-caption {
@@ -269,6 +311,7 @@ onUnmounted(() => {
     max-height: 220px;
   }
   .pi-image {
+    height: 220px;
     max-height: 220px;
   }
   .pi-placeholder {
