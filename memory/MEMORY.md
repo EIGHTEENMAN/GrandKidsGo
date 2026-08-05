@@ -1,6 +1,7 @@
 # 童慧行项目记忆索引
 
 ## Session 记录
+- [Session 2026-08-05 xueshici 图片裁切](session-2026-08-05-xueshici-image-smartcrop.md) — PoemIllustration 智能 object-position（人像 30% / 山水 45% / 通用 center）；commit 37d43f0
 - [Session 2026-08-05 PR2-A](session-2026-08-05-pr2-a.md) — 多城天数 heuristic 升级 — 孩子画像驱动（likes/fearsAnimals/isShy）+ 缓冲日（v1.5 §5 规则五）；commit 65ea53b
 - [Session 2026-08-05 Hotel pipeline](session-2026-08-05-hotel-pipeline.md) — PR2-C 关键词+Mock+种子脚本+Hotels API+wizard chip + 修 assembler hasKidsBreakfast 漏选 bug；DB Hotel 0→16；commit e5f21a2
 - [Session 2026-07-31](session-2026-07-31-recap.md) — Phase D 搜相似增强 + 攻略图片自动提取 + 孩子最怕预警系统
@@ -18,6 +19,7 @@
 - 学诗词 ↔ 走天下联动
 - Hotel pipeline PR2-C（关键词+Mock+种子+Hotels API+wizard chip）commit e5f21a2
 - PR2-A 多城天数 heuristic 升级（孩子画像驱动 + 缓冲日）commit 65ea53b
+- xueshici 图片智能裁切（人像/山水/通用三档 object-position）commit 37d43f0
 
 ### 阻塞项
 - AMAP_API_KEY → 足迹地图全栈 + Wizard PR2-B 真交通数据 + 09-seed-hotels AMAP_LIVE=true
@@ -29,7 +31,7 @@
 - Plan 预算建议（需 spots 价格数据）
 
 ## 开发约定
-- commit 风格：`feat(travel): 中文描述`
+- commit 风格：`feat(travel): 中文描述` / `feat(xueshici): 中文描述`（按 app 分前缀）
 - DB migration drift 时用手动 SQL `npx prisma db execute --stdin`
 - 种子数据脚本放 `prisma/seed-*.ts` 或 `src/lib/data-pipeline/0N-*.ts`
 - 提取类工具函数放 `src/lib/extract-*.ts`
@@ -38,3 +40,8 @@
 - Hotel pipeline 切换真数据源：`AMAP_LIVE=true npx tsx src/lib/data-pipeline/09-seed-hotels.ts`
 - 多城算法：spots 权重压缩到 [1, 4] 让 child bias 浮出水面（PR2-A commit 65ea53b 验证后落地）
 - buffer day：v1.5 §5 规则五 —— 超过 5 天行程 +1 天缓冲
+- 图片裁切：xueshici 详情页 PoemIllustration 智能 object-position（commit 37d43f0）：
+  - 山水优先（关键词：山/水/江/河/湖/海/月/云/松/石/雪/风/花/鸟/寺/塔/楼/桥/春/晓/夜/登）→ center 45%
+  - 人像（关键词：送/忆/别/思/乡/酒/宴/故人/翁/妇/将/臣 + 组合词「送别/思乡/故人」）→ center 30%
+  - 通用 → center center
+  - height 必须固定 320px，否则 object-position 不生效
