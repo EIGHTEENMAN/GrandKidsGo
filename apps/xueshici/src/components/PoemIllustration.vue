@@ -64,13 +64,22 @@ const subjectKind = computed<'portrait' | 'landscape' | 'generic'>(() => {
   return 'generic'
 })
 
-// 人像：脸上移到画面上部 30%（避免被顶部 banner 角标挡住）
-// 山水：主景稍偏上 45%（比 center 50% 略靠上，避免底部被压）
-// 通用：完全居中
+// object-position 含义：图框相对图片的位置
+//   - `center top` (0%)：图框顶部对齐图片顶部 → 看到图片上方内容
+//   - `center 50%`：图框中心对齐图片中心 → 看到图片正中
+//   - `center 100%`：图框底部对齐图片底部 → 看到图片下方内容
+//
+// AI 配图人脸常位于图片**上方 1/4** → portrait 顶部对齐（甚至越过顶部，让下巴进入视图）
+// AI 配图山水主峰常在图片**正中**或略高 → landscape 50%/40%（居于中部）
+//
+// 当前策略：
+//   portrait:  'center 10%'    — 上移到 10%，人脸处于图框上半
+//   landscape: 'center 40%'    — 稍偏上（避开顶部角标、保留底部空间）
+//   generic:   'center center'
 const objectPosition = computed(() => {
   switch (subjectKind.value) {
-    case 'portrait': return 'center 30%'
-    case 'landscape': return 'center 45%'
+    case 'portrait': return 'center 10%'
+    case 'landscape': return 'center 40%'
     default: return 'center center'
   }
 })
