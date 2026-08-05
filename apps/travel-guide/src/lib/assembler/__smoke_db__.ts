@@ -123,6 +123,74 @@ function runAlgSanity() {
   console.log(computeCityAllocation(['A', 'B'], { A: 5, B: 4 }, 5).map((a) => `${a.cityId}:${a.days}d`).join(','))
   // 3 城: 7 天
   console.log(computeCityAllocation(['A', 'B', 'C'], { A: 5, B: 4, C: 3 }, 7).map((a) => `${a.cityId}:${a.days}d`).join(','))
+
+  // PR2-A（2026-08-05）：孩子画像驱动分配 + totalDays 升级
+  console.log('\n=== PR2-A: child-profile-driven heuristic ===')
+  const baseChild = {
+    childId: 'test',
+    name: '测试宝宝',
+    likes: ['动物', '恐龙'],
+    activities: [],
+    dislikes: [],
+    allergies: [],
+    activeHoursPerDay: 6,
+    needNap: 'optional' as const,
+    earlyOrLate: 'early_bird' as const,
+    hasMotionSickness: false,
+    isShyWithStrangers: false,
+    hasStudentCard: false,
+    needsChildTicket: true,
+    fearsAnimals: false,
+    dietaryRestrictions: [],
+  }
+
+  // mock spots：A 含 2 动物园（动物权重命中），B 含 2 主题乐园（怕生减权）
+  const mockSpotsByCity = {
+    'A': [
+      { tags: ['动物园', '动物互动'], kidHighlights: '看大熊猫' },
+      { tags: ['动物园', '动物'], kidHighlights: '长颈鹿喂食' },
+      { tags: ['公园'], kidHighlights: '湖边散步' },
+      { tags: ['公园'], kidHighlights: '草地野餐' },
+      { tags: ['博物馆'], kidHighlights: '恐龙化石' },
+    ] as any,
+    'B': [
+      { tags: ['主题乐园', '人群密集'], kidHighlights: '过山车' },
+      { tags: ['海洋公园', '游乐园'], kidHighlights: '海豚表演' },
+      { tags: ['公园'], kidHighlights: '湖边散步' },
+    ] as any,
+  }
+
+  // Case 1: baseline（无 child）→ 行为必须等同旧版
+  console.log('[1] baseline (no child):',
+    computeCityAllocation(['A', 'B'], { A: 5, B: 3 }, 7).map(a => `${a.cityId}:${a.days}d`).join(','))
+
+  // Case 2: 喜欢动物的孩子 → A 加权
+  const animalLover = { ...baseChild, likes: ['动物'] }
+  console.log('[2] animalLover (likes 动物):',
+    computeCityAllocation(['A', 'B'], { A: 5, B: 3 }, 7, animalLover, mockSpotsByCity).map(a => `${a.cityId}:${a.days}d`).join(','))
+
+  // Case 3: 怕动物的孩子（无 likes 冲突）→ A 减权
+  const fearChild = { ...baseChild, fearsAnimals: true, likes: [] }
+  console.log('[3] fearAnimals (no likes):',
+    computeCityAllocation(['A', 'B'], { A: 5, B: 3 }, 7, fearChild, mockSpotsByCity).map(a => `${a.cityId}:${a.days}d`).join(','))
+
+  // Case 4: 怕生 → B 减权
+  const shyChild = { ...baseChild, isShyWithStrangers: true }
+  console.log('[4] isShyWithStrangers:',
+    computeCityAllocation(['A', 'B'], { A: 5, B: 3 }, 7, shyChild, mockSpotsByCity).map(a => `${a.cityId}:${a.days}d`).join(','))
+
+  // Case 5: autoSuggestTotalDays 升级
+  console.log('\n=== PR2-A: autoSuggestTotalDays ===')
+  console.log('[5a] baseline (no child):', autoSuggestTotalDays(['A'], { A: 8 }))
+  console.log('[5b] lowEnergy child (activeHours=4):', autoSuggestTotalDays(['A'], { A: 8 }, { ...baseChild, activeHoursPerDay: 4 }))
+  console.log('[5c] napRequired:', autoSuggestTotalDays(['A'], { A: 8 }, { ...baseChild, needNap: 'required' as const }))
+  console.log('[5d] night_owl:', autoSuggestTotalDays(['A'], { A: 8 }, { ...baseChild, earlyOrLate: 'night_owl' as const }))
+  console.log('[5e] 2 children:', autoSuggestTotalDays(['A'], { A: 8 }, baseChild, { adults: 2, children: 2 }))
+  console.log('[5f] all factors stacked (4h + nap + night_owl + 2 kids):',
+    autoSuggestTotalDays(['A'], { A: 8 },
+      { ...baseChild, activeHoursPerDay: 4, needNap: 'required' as const, earlyOrLate: 'night_owl' as const },
+      { adults: 2, children: 2 }))
+  console.log('[5g] buffer day rule (6-day base → +1):', autoSuggestTotalDays(['A'], { A: 20 }))  // base ≈ 9 + 1 buffer
 }
 
 run()

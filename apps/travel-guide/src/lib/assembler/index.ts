@@ -138,11 +138,19 @@ export async function assemble(params: TravelParams): Promise<PlanOutline> {
       : 3;
 
   // 多城天数分配
+  // PR2-A（2026-08-05）：把 mergedChild + spotsByCity 一并传入 heuristic
   const spotsCounts: Record<string, number> = {};
   for (const cityId of citiesToVisit) {
     spotsCounts[cityId] = (data.spotsByCity[cityId] ?? []).length;
   }
-  const allocation = computeCityAllocation(citiesToVisit, spotsCounts, totalDays);
+  const mergedChild = mergeChildProfiles(params.childProfiles);
+  const allocation = computeCityAllocation(
+    citiesToVisit,
+    spotsCounts,
+    totalDays,
+    mergedChild,
+    data.spotsByCity,
+  );
 
   // 跨城 transit 信息
   const transitPairs: TransitPair[] = citiesToVisit.slice(0, -1).map((fromCityId, i) => {
@@ -302,6 +310,8 @@ export function computeCityAllocation(
   cityIds: string[],
   spotsCounts: Record<string, number>,
   totalDays: number,
+  child?: ChildProfile,                         // 2026-08-05 PR2-A：可选，向后兼容
+  spotsByCity?: Record<string, LoadedSpot[]>,   // 2026-08-05 PR2-A：可选
 ): CityAllocation[] {
   if (cityIds.length === 0) return [];
   if (cityIds.length === 1) {
@@ -316,7 +326,16 @@ export function computeCityAllocation(
     const spots = spotsCounts[id] ?? 0;
     // kid bias：spots 数 ≥3 才轻微加权（鼓励高 spot 密度的城）
     const kidBias = spots >= 3 ? 1 + KIDS_BIAS_FACTOR : 1;
-    return Math.max(1, spots) * kidBias;
+    // PR2-A：孩子画像驱动 bias（likes 命中 / fearsAnimals / isShyWithStrangers）
+    // bias ∈ [-0.5, +0.5]。把 spots 权重压缩在 [1, 4]（饱和），让 child bias 浮出水面
+    const spotsWeight = Math.min(4, Math.max(1, spots));
+    let childBias = 1;
+    if (child && spotsByCity) {
+      const rawBias = computeCityChildBias(id, child, spotsByCity);
+      // bias 直接放大（不再乘 relativeSize）：spots 已压缩，bias 影响力足够
+      childBias = 1 + rawBias * 1.5;  // bias 范围 [-0.75, +0.75]
+    }
+    return spotsWeight * kidBias * childBias;
   });
   const totalWeight = weights.reduce((a, b) => a + b, 0);
 
@@ -340,10 +359,71 @@ export function computeCityAllocation(
   return cityIds.map((id, i) => ({ cityId: id, days: daysPerCity[i]! }));
 }
 
+/**
+ * PR2-A（2026-08-05）：单城对孩子画像的契合度，范围 [-0.5, +0.5]。
+ *
+ * 信号：
+ *   1. likes 命中加权：每个 like 在该城的 tags/kidHighlights 命中越多，加权越大（每 like 上限 +0.15）
+ *   2. fearsAnimals 减权：该城含 ≥2 个动物园/海洋/动物类 spot → -0.2
+ *   3. isShyWithStrangers 减权：该城含 ≥2 个主题乐园/海洋公园/游乐园类 spot → -0.1
+ *
+ * 用法：在 computeCityAllocation 中作为权重乘子 (1 + bias * scale) 应用。
+ * scale = spots/avgSpots，保证高密度城市的 bias 绝对影响力更大。
+ * 不修改 spot 本身的过滤逻辑（filterSpotsByChildProfile 仍负责单点过滤）。
+ */
+export function computeCityChildBias(
+  cityId: string,
+  child: ChildProfile,
+  spotsByCity: Record<string, LoadedSpot[]>,
+): number {
+  if (!child) return 0;
+  let bias = 0;
+  const citySpots = spotsByCity[cityId] ?? [];
+
+  // 1. likes 命中加权
+  for (const like of child.likes ?? []) {
+    if (!like) continue;
+    const hits = citySpots.filter((s) => {
+      const tags = (s as any).tags as string[] | undefined;
+      const highlights = (s as any).kidHighlights as string | null;
+      if (tags?.some((t) => t.includes(like))) return true;
+      if (highlights?.includes(like)) return true;
+      return false;
+    }).length;
+    bias += Math.min(hits * 0.1, 0.3);  // 每 like 上限 +0.3（PR2-A 调强）
+  }
+
+  // 2. fearsAnimals 减权
+  if (child.fearsAnimals) {
+    const animalSpots = citySpots.filter((s) => {
+      const tags = (s as any).tags as string[] | undefined;
+      const highlights = (s as any).kidHighlights as string | null;
+      if (tags?.some((t) => /动物园|海洋|动物/.test(t))) return true;
+      if (highlights && /海豚|企鹅|鲨鱼|海洋动物/.test(highlights)) return true;
+      return false;
+    }).length;
+    if (animalSpots >= 2) bias -= 0.4;  // PR2-A 调强 -0.2 → -0.4
+  }
+
+  // 3. isShyWithStrangers 减权
+  if (child.isShyWithStrangers) {
+    const crowdSpots = citySpots.filter((s) => {
+      const tags = (s as any).tags as string[] | undefined;
+      return tags?.some((t) => /主题乐园|海洋公园|游乐园/.test(t));
+    }).length;
+    if (crowdSpots >= 2) bias -= 0.25;  // PR2-A 调强 -0.1 → -0.25
+  }
+
+  return clamp(-0.5, 0.5, bias);
+}
+
 // 自动推荐总天数（v1）：按 spots 数 + 跨城预留
+// PR2-A（2026-08-05）：加 5 项修正因子（孩子画像 + 旅行人数 + 缓冲日）
 export function autoSuggestTotalDays(
   cityIds: string[],
   spotsCounts: Record<string, number>,
+  child?: ChildProfile,
+  travelers?: { adults: number; children: number },
 ): number {
   if (cityIds.length === 0) return 3;
   const base = cityIds.reduce((sum, id) => {
@@ -353,7 +433,32 @@ export function autoSuggestTotalDays(
   const overhead = cityIds.length > 1
     ? Math.ceil(TRANSIT_OVERHEAD_DAYS_PER_LEG * (cityIds.length - 1))
     : 0;
-  return clamp(2, 21, base + overhead);
+
+  // PR2-A：4 项孩子画像修正因子（累乘）
+  let childMultiplier = 1;
+  if (child) {
+    // 1. activeHoursPerDay：能玩越久，所需天数越少
+    const ah = child.activeHoursPerDay ?? 6;
+    if (ah <= 4) childMultiplier *= 1.15;
+    else if (ah <= 6) childMultiplier *= 1.05;
+    else if (ah >= 10) childMultiplier *= 0.95;
+    // 2. needNap：required 强制午休块 -1.5h/天
+    if (child.needNap === "required") childMultiplier *= 1.10;
+    // 3. earlyOrLate：夜猫型节奏放松
+    if (child.earlyOrLate === "night_owl") childMultiplier *= 1.05;
+  }
+
+  // PR2-A：多孩家庭节奏放慢
+  if (travelers && travelers.children >= 2) {
+    childMultiplier *= 1.10;
+  }
+
+  const adjusted = (base + overhead) * childMultiplier;
+
+  // PR2-A：v1.5 §5 规则五：超过 5 天行程至少预留 1 天休息日
+  const bufferDay = adjusted > 5 ? 1 : 0;
+
+  return clamp(2, 21, Math.round(adjusted) + bufferDay);
 }
 
 // ---------------------------------------------------------------------------

@@ -471,6 +471,7 @@ export default function SmartGuideLanding() {
   };
 
   // 自动推荐天数（占位：UI 只提示，不动后端逻辑；用户在 Section 3 自己改）
+  // PR2-A（2026-08-05）：升级为孩子画像驱动 + 多孩节奏 + 缓冲日
   const autoRecommendedDays = useMemo(() => {
     if (selectedCityIds.length === 0) return null;
     const primarySpots = placesByCity[selectedCityIds[0]!]?.length ?? 0;
@@ -479,8 +480,26 @@ export default function SmartGuideLanding() {
       return sum + Math.max(2, Math.round(spots * 0.4 + 1));
     }, 0);
     const overhead = selectedCityIds.length > 1 ? Math.ceil(0.5 * (selectedCityIds.length - 1)) : 0;
-    return clamp(DAY_MIN, DAY_MAX, base + overhead);
-  }, [selectedCityIds, placesByCity]);
+
+    // PR2-A：孩子画像修正因子（与 backend autoSuggestTotalDays 镜像）
+    const selectedChildren = Array.from(selectedChildIds)
+      .map((id) => userChildren.find((c) => c.childId === id))
+      .filter((c): c is WizardChild => !!c);
+    let childMultiplier = 1;
+    if (selectedChildren.length > 0) {
+      const minActiveHours = Math.min(...selectedChildren.map((c) => c.activeHoursPerDay ?? 6));
+      if (minActiveHours <= 4) childMultiplier *= 1.15;
+      else if (minActiveHours <= 6) childMultiplier *= 1.05;
+      else if (minActiveHours >= 10) childMultiplier *= 0.95;
+      if (selectedChildren.some((c) => c.needNap === 'required')) childMultiplier *= 1.10;
+      if (selectedChildren.every((c) => c.earlyOrLate === 'night_owl')) childMultiplier *= 1.05;
+    }
+    if (childrenCount >= 2) childMultiplier *= 1.10;
+
+    const adjusted = (base + overhead) * childMultiplier;
+    const bufferDay = adjusted > 5 ? 1 : 0;
+    return clamp(DAY_MIN, DAY_MAX, Math.round(adjusted) + bufferDay);
+  }, [selectedCityIds, placesByCity, selectedChildIds, userChildren, childrenCount]);
 
   // ---------------------------------------------------------------------------
   // 候选候选筛选 + 子集显示
@@ -1060,7 +1079,7 @@ export default function SmartGuideLanding() {
                   onClick={() => setDays(autoRecommendedDays)}
                   className="mt-1 text-xs text-blue-600 hover:text-blue-700 underline"
                 >
-                  系统推荐 {autoRecommendedDays} 天（每城按景点密度启发）→
+                  系统推荐 {autoRecommendedDays} 天（按孩子画像 + 景点密度启发，含 ≥6 天缓冲日）→
                 </button>
               )}
               <div className="flex flex-wrap gap-1 mt-1">
