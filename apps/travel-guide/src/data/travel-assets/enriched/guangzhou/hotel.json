@@ -1,0 +1,97 @@
+[
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "SEED-gz-01",
+    "name": "广州长隆酒店",
+    "address": "广州市番禺区汉溪大道",
+    "lat": 23.00123,
+    "lng": 113.29645,
+    "hasFamilyRoom": true,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "avgPricePerNight": 1380,
+    "tags": [
+      "ai_draft_v1",
+      "长隆",
+      "亲子主题",
+      "动物主题"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "SEED-gz-02",
+    "name": "广州花园酒店",
+    "address": "广州市越秀区环市东路368号",
+    "lat": 23.13612,
+    "lng": 113.32012,
+    "hasFamilyRoom": true,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "avgPricePerNight": 980,
+    "tags": [
+      "ai_draft_v1",
+      "越秀",
+      "老牌豪华",
+      "亲子"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "SEED-gz-03",
+    "name": "广州四季酒店",
+    "address": "广州市天河区珠江新城冼村路",
+    "lat": 23.12245,
+    "lng": 113.32878,
+    "hasFamilyRoom": true,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "avgPricePerNight": 2100,
+    "tags": [
+      "ai_draft_v1",
+      "珠江新城",
+      "顶级",
+      "商务亲子"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "SEED-gz-04",
+    "name": "广州万豪酒店",
+    "address": "广州市天河区黄埔大道中122号",
+    "lat": 23.12845,
+    "lng": 113.33912,
+    "hasFamilyRoom": true,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "avgPricePerNight": 1100,
+    "tags": [
+      "ai_draft_v1",
+      "天河",
+      "商务",
+      "亲子"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "SEED-gz-05",
+    "name": "广州白云山山庄",
+    "address": "广州市白云区广园中路218号",
+    "lat": 23.17456,
+    "lng": 113.27345,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "avgPricePerNight": 750,
+    "tags": [
+      "ai_draft_v1",
+      "白云山",
+      "度假",
+      "性价比"
+    ],
+    "dataSource": "ai_draft_v1"
+  }
+]

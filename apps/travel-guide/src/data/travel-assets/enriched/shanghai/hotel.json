@@ -1,0 +1,97 @@
+[
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "SEED-sh-01",
+    "name": "上海浦东丽思卡尔顿酒店",
+    "address": "上海市浦东新区陆家嘴环路1717号",
+    "lat": 31.23612,
+    "lng": 121.50545,
+    "hasFamilyRoom": true,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "avgPricePerNight": 2200,
+    "tags": [
+      "ai_draft_v1",
+      "陆家嘴",
+      "顶级",
+      "商务亲子"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "SEED-sh-02",
+    "name": "上海外滩茂悦大酒店",
+    "address": "上海市黄浦区黄浦路199号",
+    "lat": 31.24512,
+    "lng": 121.49045,
+    "hasFamilyRoom": true,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "avgPricePerNight": 1600,
+    "tags": [
+      "ai_draft_v1",
+      "外滩",
+      "豪华",
+      "亲子设施齐全"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "SEED-sh-03",
+    "name": "上海浦东香格里拉大酒店",
+    "address": "上海市浦东新区富城路33号",
+    "lat": 31.23745,
+    "lng": 121.50112,
+    "hasFamilyRoom": true,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "avgPricePerNight": 1400,
+    "tags": [
+      "ai_draft_v1",
+      "陆家嘴",
+      "豪华",
+      "亲子"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "SEED-sh-04",
+    "name": "上海和平饭店",
+    "address": "上海市黄浦区南京东路20号",
+    "lat": 31.24012,
+    "lng": 121.48712,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "avgPricePerNight": 1900,
+    "tags": [
+      "ai_draft_v1",
+      "外滩",
+      "历史建筑",
+      "高端"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "SEED-sh-05",
+    "name": "上海迪士尼乐园酒店",
+    "address": "上海市浦东新区申迪西路1009号",
+    "lat": 31.14734,
+    "lng": 121.67112,
+    "hasFamilyRoom": true,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "avgPricePerNight": 2300,
+    "tags": [
+      "ai_draft_v1",
+      "迪士尼",
+      "亲子主题",
+      "顶级"
+    ],
+    "dataSource": "ai_draft_v1"
+  }
+]

@@ -214,6 +214,10 @@ const MOCK_PRESETS: Record<string, MockPoiPreset[]> = {
   "北京:hotel": [
     { id: "B000A06J5S", name: "北京香格里拉饭店", subtype: "hotel", typecode: "100100", address: "北京市海淀区紫竹院路29号", location: "116.30389,39.94523", business: { cost: "1500元/晚" } },
     { id: "B000A0YQC0", name: "北京嘉里大酒店", subtype: "hotel", typecode: "100100", address: "北京市朝阳区光华路1号", location: "116.46012,39.91455", business: { cost: "1200元/晚" } },
+    { id: "B000A0F8W2", name: "北京瑰丽酒店", subtype: "hotel", typecode: "100100", address: "北京市朝阳区呼家楼京广中心", location: "116.46011,39.91312", business: { cost: "1800元/晚" } },
+    { id: "B000A8HT0K", name: "北京诺金酒店", subtype: "hotel", typecode: "100100", address: "北京市朝阳区将台路甲2号", location: "116.48456,39.97234", business: { cost: "1100元/晚" } },
+    { id: "B000AAJQ35", name: "北京国贸大酒店", subtype: "hotel", typecode: "100100", address: "北京市朝阳区建国门外大街1号", location: "116.45823,39.90911", business: { cost: "1600元/晚" } },
+    { id: "B000A7LPK9", name: "北京丽思卡尔顿酒店", subtype: "hotel", typecode: "100100", address: "北京市朝阳区建国路83号", location: "116.48212,39.91178", business: { cost: "2200元/晚" } },
   ],
   "北京:park": [
     { id: "B000AA7T72", name: "奥林匹克森林公园", subtype: "park", typecode: "080100", address: "北京市朝阳区科荟路33号", location: "116.39877,40.00598", business: { open_time: "6:00-21:00" } },
@@ -237,6 +241,10 @@ const MOCK_PRESETS: Record<string, MockPoiPreset[]> = {
   ],
   "上海:hotel": [
     { id: "B001401UP4", name: "上海浦东丽思卡尔顿酒店", subtype: "hotel", typecode: "100100", address: "上海市浦东新区陆家嘴环路1717号", location: "121.50545,31.23612", business: { cost: "2200元/晚" } },
+    { id: "B00140K2L7", name: "上海外滩茂悦大酒店", subtype: "hotel", typecode: "100100", address: "上海市黄浦区黄浦路199号", location: "121.49045,31.24512", business: { cost: "1600元/晚" } },
+    { id: "B00140H5R9", name: "上海浦东香格里拉大酒店", subtype: "hotel", typecode: "100100", address: "上海市浦东新区富城路33号", location: "121.50112,31.23745", business: { cost: "1400元/晚" } },
+    { id: "B00140N8T1", name: "上海和平饭店", subtype: "hotel", typecode: "100100", address: "上海市黄浦区南京东路20号", location: "121.48712,31.24012", business: { cost: "1900元/晚" } },
+    { id: "B00140P3V6", name: "上海迪士尼乐园酒店", subtype: "hotel", typecode: "100100", address: "上海市浦东新区申迪西路1009号", location: "121.67112,31.14734", business: { cost: "2300元/晚" } },
   ],
   "上海:park": [
     { id: "B00140J807", name: "世纪公园", subtype: "park", typecode: "080100", address: "上海市浦东新区锦绣路1001号", location: "121.55712,31.22034", business: { cost: "10元/人" } },
@@ -252,6 +260,10 @@ const MOCK_PRESETS: Record<string, MockPoiPreset[]> = {
   ],
   "广州:hotel": [
     { id: "B0FFH7AN03", name: "广州长隆酒店", subtype: "hotel", typecode: "100100", address: "广州市番禺区汉溪大道", location: "113.29645,23.00123", business: { cost: "1380元/晚" } },
+    { id: "B0FFH7BD14", name: "广州花园酒店", subtype: "hotel", typecode: "100100", address: "广州市越秀区环市东路368号", location: "113.32012,23.13612", business: { cost: "980元/晚" } },
+    { id: "B0FFH7CQ29", name: "广州白云山山庄", subtype: "hotel", typecode: "100100", address: "广州市白云区广园中路218号", location: "113.27345,23.17456", business: { cost: "750元/晚" } },
+    { id: "B0FFH7DE37", name: "广州四季酒店", subtype: "hotel", typecode: "100100", address: "广州市天河区珠江新城冼村路", location: "113.32878,23.12245", business: { cost: "2100元/晚" } },
+    { id: "B0FFH7ER42", name: "广州万豪酒店", subtype: "hotel", typecode: "100100", address: "广州市天河区黄埔大道中122号", location: "113.33912,23.12845", business: { cost: "1100元/晚" } },
   ],
   "广州:park": [
     { id: "B0FFH7APQ0", name: "广州珠江公园", subtype: "park", typecode: "080100", address: "广州市天河区金穗路", location: "113.33612,23.13245" },

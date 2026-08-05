@@ -1554,6 +1554,12 @@ export default function SmartGuideLanding() {
                                      b.kind === 'rest' ? '😴' : '🎯'}
                                   </span>
                                   <span className="flex-1 truncate">{b.title}</span>
+                                  {b.kind === 'hotel' && b.kidHook && (
+                                    <span className="text-[10px] px-1.5 py-0.5 bg-purple-50 text-purple-700 rounded">
+                                      {b.kidHook}
+                                    </span>
+                                  )}
+                                  {b.notes && <span className="text-[10px] text-gray-400">{b.notes}</span>}
                                 </div>
                               ))}
                             </div>

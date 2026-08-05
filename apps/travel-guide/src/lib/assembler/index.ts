@@ -70,6 +70,7 @@ interface LoadedHotel {
   lng: number | null;
   hasFamilyRoom: boolean;
   hasKidsPool: boolean;
+  hasKidsBreakfast: boolean;
   avgPricePerNight: number | null;
   tags: string[];
 }
@@ -224,7 +225,7 @@ async function loadAllMulti(cityIds: string[]): Promise<LoadedData> {
       where: { cityId: { in: cityIds } },
       select: {
         id: true, cityId: true, name: true, lat: true, lng: true,
-        hasFamilyRoom: true, hasKidsPool: true,
+        hasFamilyRoom: true, hasKidsPool: true, hasKidsBreakfast: true,
         avgPricePerNight: true, tags: true,
       },
     }),
@@ -433,7 +434,7 @@ export function pickHotel(
     return (
       (h.hasFamilyRoom ? 5 : 0) +
       (h.hasKidsPool ? 4 : 0) +
-      ((h as any).hasKidsBreakfast ? 3 : 0) +
+      (h.hasKidsBreakfast ? 3 : 0) +
       (hasKidsTag ? 2 : 0)
     );
   };
