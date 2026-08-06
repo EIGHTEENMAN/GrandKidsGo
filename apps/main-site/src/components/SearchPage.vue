@@ -212,10 +212,9 @@ onMounted(async () => {
         <h2 class="s-keyword">搜索 "{{ q }}"</h2>
 
         <!-- App Results -->
-        <section class="s-section">
+        <section class="s-section" v-if="filteredApps.length > 0">
           <h3 class="s-section-title">🎯 应用搜索结果</h3>
-          <div v-if="filteredApps.length === 0" class="s-empty">没有找到匹配的应用</div>
-          <div v-else class="s-app-grid">
+          <div class="s-app-grid">
             <a
               v-for="app in filteredApps"
               :key="app.name"
