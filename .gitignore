@@ -42,3 +42,9 @@ apps/xueshici/public/images/poems/poems-data.original.json
 apps/xueshici/public/audio/
 apps/xueshici/public/images/poems/1004_*.mp3
 apps/xueshici/dist/audio/
+
+# Playwright 测试产物
+test-results/
+playwright-report/
+tests/reports/
+tests/artifacts/

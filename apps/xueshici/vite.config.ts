@@ -5,6 +5,7 @@ import { resolve } from 'path'
 export default defineConfig({
   plugins: [vue()],
   base: '/',
+  server: { host: '0.0.0.0', port: 3008 },
   resolve: {
     alias: {
       '@shared': resolve(__dirname, '../shared/src'),
