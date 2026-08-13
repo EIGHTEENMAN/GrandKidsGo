@@ -7,7 +7,14 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
 export default defineConfig({
   plugins: [react()],
-  server: { host: '0.0.0.0', port: 3005 },
+  server: {
+    host: '0.0.0.0',
+    port: 3005,
+    proxy: {
+      '/api': 'http://localhost:3505',
+      '/uploads': 'http://localhost:3505',
+    },
+  },
   resolve: {
     alias: {
       '@shared': path.resolve(__dirname, '../shared/src'),

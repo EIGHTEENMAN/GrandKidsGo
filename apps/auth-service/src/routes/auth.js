@@ -136,7 +136,7 @@ router.post('/refresh', (req, res) => {
 
 // POST /api/auth/logout - Logout
 router.post('/logout', (req, res) => {
-  const refreshToken = req.body.refreshToken;
+  const refreshToken = req.body?.refreshToken;
   if (refreshToken) {
     revokeSession(refreshToken);
   }

@@ -18,6 +18,6 @@ export default defineConfig({
     navigationTimeout: 15_000,
   },
   projects: [
-    { name: 'chromium', use: { ...devices['Desktop Chrome'] } },
+    { name: 'chromium', use: { ...devices['Desktop Chrome'], channel: 'chrome' } },
   ],
 });

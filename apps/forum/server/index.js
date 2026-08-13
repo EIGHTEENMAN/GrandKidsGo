@@ -53,7 +53,8 @@ function requireActiveUser(req, res, next) {
 
 // Auth
 app.post('/api/auth', (req, res) => {
-  const { userId, username } = req.body;
+  const { userId, username } = req.body || {};
+  if (!userId || !username) return res.status(400).json({ error: '缺少 userId 或 username' });
   const existing = db.prepare('SELECT * FROM users WHERE id = ?').get(userId);
   if (!existing) db.prepare('INSERT INTO users (id, username) VALUES (?, ?)').run(userId, username);
   const token = jwt.sign({ id: userId, username }, JWT_SECRET, { expiresIn: '7d' });
