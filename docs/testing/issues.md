@@ -39,12 +39,14 @@
 ## P2（一般 — 影响体验但有 workaround）
 
 ### Bug #4: moderation /api/moderation/check 未授权访问
-- **文件**：`apps/moderation/server/index.js:52`
-- **症状**：任何人 POST `/api/moderation/check` 都返回 200（没有 service token 校验或 serviceAuth 未生效）
-- **根因**：`serviceAuth` middleware 没生效 / 检查通过；任何调用方都能扫文本
-- **影响**：恶意用户可扫描敏感词库、绕过审核（DFA 词库暴露）；可滥用于 DoS
-- **建议修复**：核实 `serviceAuth` 中间件是否在校验 `x-service-token`，未通过必须 401
-- **状态**：⚠️ 已记录未修（P2）
+- **文件**：`apps/moderation/server/index.js:33` + `apps/forum/server/index.js:11` + `apps/travel-guide/src/app/api/guides/[id]/report/route.ts:18`
+- **症状**：任何人 POST `/api/moderation/check` 都返回 200（serviceAuth 检查逻辑反了：只在 SERVICE_KEY 设置时校验，导致 dev 默认开放到生产等于无鉴权）
+- **根因**：serviceAuth 中间件 `if (key !== process.env.SERVICE_KEY && process.env.SERVICE_KEY)`——没设 SERVICE_KEY 时直接 next() 通过；调用方也没传 x-service-token
+- **修复**：
+  - moderation serviceAuth：始终要求 SERVICE_KEY 配置 + x-service-token 头匹配，未配置返 503
+  - forum / travel-guide 调 moderation 时加 `x-service-token: INTERNAL_SERVICES_TOKEN` header
+  - 统一 token 名 `INTERNAL_SERVICES_TOKEN=dev-internal-token`（与 auth-service / travel-guide 已有约定一致）
+- **状态**：✅ 已修
 
 ## P3（轻微 — 视觉/文案/边界条件）
 

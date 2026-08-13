@@ -16,6 +16,7 @@ import { recordOperation } from "@/lib/operation-log";
 export const dynamic = "force-dynamic";
 
 const MODERATION_URL = process.env.MODERATION_SERVICE_URL || "http://127.0.0.1:3020";
+const SERVICE_TOKEN = process.env.INTERNAL_SERVICES_TOKEN || "dev-internal-token";
 
 export async function POST(
   req: NextRequest,
@@ -100,7 +101,7 @@ export async function POST(
 
     const r = await fetch(`${MODERATION_URL}/api/moderation/report`, {
       method: "POST",
-      headers,
+      headers: { ...headers, "x-service-token": SERVICE_TOKEN },
       body: JSON.stringify({
         targetType: "guide",
         targetId: guide.id,

@@ -9,12 +9,16 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const PORT = process.env.PORT || 3005;
 const JWT_SECRET = process.env.JWT_SECRET || 'grandkidsgo-forum-dev';
 const MODERATION_URL = process.env.MODERATION_URL || 'http://localhost:3020';
+const SERVICE_TOKEN = process.env.INTERNAL_SERVICES_TOKEN || 'dev-internal-token';
 
 async function checkContent(text, userId, username, contentType, sourceService) {
   try {
     const r = await fetch(`${MODERATION_URL}/api/moderation/check`, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: {
+        'Content-Type': 'application/json',
+        'x-service-token': SERVICE_TOKEN,
+      },
       body: JSON.stringify({ text, userId, username, contentType, sourceService }),
     });
     return await r.json();

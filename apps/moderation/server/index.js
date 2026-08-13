@@ -31,9 +31,14 @@ function auth(req, res, next) {
 }
 
 // Internal service auth (for other services to call)
+// 始终要求 x-service-token 头与 SERVICE_KEY 匹配；SERVICE_KEY 未配置时拒绝访问（防 dev 默认开放到生产）
 function serviceAuth(req, res, next) {
-  const key = req.headers['x-service-key'];
-  if (key !== process.env.SERVICE_KEY && process.env.SERVICE_KEY) {
+  const expected = process.env.SERVICE_KEY;
+  if (!expected) {
+    return res.status(503).json({ error: '审核服务未配置 SERVICE_KEY，拒绝访问' });
+  }
+  const token = req.headers['x-service-token'];
+  if (token !== expected) {
     return res.status(401).json({ error: '未授权' });
   }
   next();

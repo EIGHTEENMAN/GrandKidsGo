@@ -32,7 +32,8 @@ function ensureUser(userId, username) {
 
 // Auth
 app.post('/api/auth', (req, res) => {
-  const { userId, username } = req.body;
+  const { userId, username } = req.body || {};
+  if (!userId || !username) return res.status(400).json({ error: '缺少 userId 或 username' });
   const user = ensureUser(userId, username);
   const token = jwt.sign({ id: userId, username }, JWT_SECRET, { expiresIn: '7d' });
   res.json({ token, points: user.points });
