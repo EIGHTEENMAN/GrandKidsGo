@@ -97,6 +97,16 @@ function close() {
   // 返回到 StudyHub（不是学英语首页 3 大卡）
   window.location.hash = '#/study/__hub__'
 }
+
+// 联动：跳到 tiaozhan 挑战
+function goChallengeEnglish() {
+  // 全科英语挑战
+  window.location.href = 'https://tiaozhan.grandand.com/#/quiz?mode=solo&category=english'
+}
+function goChallengeWord(wordId: number) {
+  // 单单词精准挑战
+  window.location.href = 'https://tiaozhan.grandand.com/#/quiz?mode=solo&category=english&section_ref=english:' + wordId
+}
 </script>
 
 <template>
@@ -104,6 +114,7 @@ function close() {
     <div class="review-header">
       <button class="back-btn" @click="close">← 返回</button>
       <h2 class="title">单词复习</h2>
+      <button class="header-challenge" @click="goChallengeEnglish" title="去来挑战做英语题">⚡ 去挑战</button>
     </div>
 
     <div class="review-stats">
@@ -162,6 +173,7 @@ function close() {
           答对 <strong>{{ detailWord.correct }}</strong> / {{ detailWord.total }}
           <span v-if="detailWord.mastered" class="mastered-badge">已掌握</span>
         </div>
+        <button class="detail-challenge" @click="goChallengeWord(detailWord.id)" title="来挑战这个单词">⚡ 来挑战这个单词</button>
       </div>
     </div>
   </div>
@@ -381,5 +393,37 @@ function close() {
   background: var(--color-tertiary-light);
   color: var(--color-tertiary);
   font-weight: 600;
+}
+
+/* 顶栏挑战按钮 */
+.header-challenge {
+  margin-left: auto;
+  padding: 6px 14px;
+  border-radius: var(--radius-pill);
+  background: var(--color-secondary);
+  color: white;
+  font-size: var(--text-small);
+  font-weight: 600;
+  border: none;
+}
+.header-challenge:active {
+  transform: scale(0.95);
+}
+
+/* 详情弹窗挑战按钮 */
+.detail-challenge {
+  margin-top: var(--gap-md);
+  padding: 12px 20px;
+  width: 100%;
+  border-radius: var(--radius-pill);
+  background: var(--color-secondary);
+  color: white;
+  font-size: var(--text-body);
+  font-weight: 700;
+  border: none;
+  box-shadow: var(--shadow-card);
+}
+.detail-challenge:active {
+  transform: scale(0.97);
 }
 </style>

@@ -21,6 +21,7 @@ interface Props {
   initialMode?: 'solo' | 'online'
   initialCategory?: string
   initialRoomTarget?: string  // e.g. "ABCD-T1"
+  initialSectionRef?: string  // e.g. "english:452" or "english:452,english:1859"
 }
 
 interface Question {
@@ -74,7 +75,7 @@ const SUBJECT_LABELS: Record<string, string> = {
 
 const TEAM_SIZES = [1, 2, 3, 4, 5]
 
-export default function QuizBattle({ user, onBack, initialMode, initialCategory, initialRoomTarget }: Props) {
+export default function QuizBattle({ user, onBack, initialMode, initialCategory, initialRoomTarget, initialSectionRef }: Props) {
   const initialSubjects = initialCategory ? (UI_CATEGORY_MAP[initialCategory] || []) : []
   const [step, setStep] = useState<Step>(() => {
     if (initialMode === 'solo') return 'playing'
@@ -85,6 +86,8 @@ export default function QuizBattle({ user, onBack, initialMode, initialCategory,
   const [subjects, setSubjects] = useState<string[]>(initialSubjects)
   const [difficulty, setDifficulty] = useState(0)
   const [teamSize, setTeamSize] = useState(1)
+  // Stored for use in startSolo's fetch params
+  const [sectionRef, setSectionRef] = useState<string>(initialSectionRef || '')
 
   // Room state (team-based)
   const [roomCode, setRoomCode] = useState('')
@@ -316,7 +319,11 @@ export default function QuizBattle({ user, onBack, initialMode, initialCategory,
   // Solo: fetch questions
   const startSolo = async () => {
     const params = new URLSearchParams()
-    if (subjects.length > 0 && subjects.length < SUBJECTS.length) {
+    if (sectionRef) {
+      // Direct section_ref path (e.g. "english:452" or "english:1,english:2")
+      // takes priority over subjects — server treats it as OR match across refs
+      params.set('section_ref', sectionRef)
+    } else if (subjects.length > 0 && subjects.length < SUBJECTS.length) {
       params.set('subjects', subjects.join(','))
     }
     if (difficulty > 0) {

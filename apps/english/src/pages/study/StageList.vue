@@ -40,6 +40,13 @@ function back() {
   // 返回到 StudyHub（不是学英语首页 3 大卡）
   window.location.hash = '#/study/__hub__'
 }
+
+// 联动：跳到 tiaozhan 挑战本关单词
+function goChallengeStage(stageWords: typeof words) {
+  if (!stageWords.length) return
+  const refs = stageWords.map(w => 'english:' + w.id).join(',')
+  window.location.href = `https://tiaozhan.grandand.com/#/quiz?mode=solo&category=english&section_ref=${encodeURIComponent(refs)}`
+}
 </script>
 
 <template>
@@ -67,6 +74,12 @@ function back() {
             :style="{ width: (s.wordCount > 0 ? s.mastered / s.wordCount * 100 : 0) + '%' }"
           ></div>
         </div>
+        <button
+          v-if="s.allDone"
+          class="stage-challenge"
+          @click.stop="goChallengeStage(themeWords.slice(s.index * Math.ceil(themeWords.length / STAGES), Math.min(s.index * Math.ceil(themeWords.length / STAGES) + Math.ceil(themeWords.length / STAGES), themeWords.length)))"
+          title="来挑战本关全部单词"
+        >⚡ 挑战本关</button>
       </button>
     </div>
   </div>
@@ -174,5 +187,23 @@ function back() {
   height: 100%;
   background: var(--color-tertiary);
   transition: width 0.3s ease;
+}
+
+/* 挑战本关按钮（仅已完成关卡显示） */
+.stage-challenge {
+  grid-column: 1 / -1;
+  margin-top: var(--gap-sm);
+  padding: 10px 16px;
+  border-radius: var(--radius-pill);
+  background: var(--color-secondary);
+  color: white;
+  font-size: var(--text-body);
+  font-weight: 700;
+  font-family: var(--font-display);
+  border: none;
+  cursor: pointer;
+}
+.stage-challenge:active {
+  transform: scale(0.97);
 }
 </style>

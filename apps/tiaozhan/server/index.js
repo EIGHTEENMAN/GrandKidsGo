@@ -132,8 +132,12 @@ app.get('/api/quiz/solo', (_req, res) => {
   const conditions = [];
 
   if (sectionRef) {
-    conditions.push('section_ref = ?');
-    params.push(sectionRef);
+    // Support comma-separated multi-value section_ref (e.g. "english:1,english:2")
+    const refs = sectionRef.split(',').map(s => s.trim()).filter(Boolean);
+    if (refs.length > 0) {
+      conditions.push(`section_ref IN (${refs.map(() => '?').join(',')})`);
+      params.push(...refs);
+    }
   } else if (subjects.length > 0) {
     conditions.push(`category IN (${subjects.map(() => '?').join(',')})`);
     params.push(...subjects);

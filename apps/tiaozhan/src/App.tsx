@@ -42,7 +42,7 @@ export default function App() {
   const [page, setPage] = useState<Page>('home')
   const [user, setUser] = useState<User | null>(getStoredUser())
   const [showLogin, setShowLogin] = useState(false)
-  const [battleSettings, setBattleSettings] = useState<{ mode: 'solo' | 'online'; category: string; zone: string } | null>(null)
+  const [battleSettings, setBattleSettings] = useState<{ mode: 'solo' | 'online'; category: string; zone: string; sectionRef?: string } | null>(null)
   const [roomTarget, setRoomTarget] = useState<string | null>(null)
   const [youthBlocked, setYouthBlocked] = useState(false)
   const [youthReason, setYouthReason] = useState('')
@@ -106,6 +106,23 @@ export default function App() {
       const code = hash.replace('#join?room=', '')
       setRoomTarget(code)
       history.replaceState(null, '', window.location.pathname)
+      return
+    }
+    // Check for cross-app deep link: #quiz?mode=solo&category=english&section_ref=english:452
+    if (hash.startsWith('#quiz?') || hash.startsWith('#quiz')) {
+      const queryPart = hash.includes('?') ? hash.split('?').slice(1).join('?') : ''
+      const params = new URLSearchParams(queryPart)
+      const mode = params.get('mode') as 'solo' | 'online' | null
+      const category = params.get('category') || 'mixed'
+      const sectionRef = params.get('section_ref') || undefined
+      const targetMode = mode === 'online' ? 'online' : 'solo'
+      setBattleSettings({ mode: targetMode, category, zone: '', sectionRef })
+      history.replaceState(null, '', window.location.pathname)
+      // If user is already logged in, jump straight into quiz
+      if (getToken()) {
+        navigate('quiz')
+      }
+      // Else: handleLogin will pick this up after the user signs in
     }
   }, [])
 
@@ -154,12 +171,19 @@ export default function App() {
       setRoomTarget(null)
       setBattleSettings({ mode: 'online', category: 'mixed', zone: '' })
       navigate('quiz')
+      return
+    }
+
+    // If a cross-app deep link set battleSettings before login, honour it now
+    if (battleSettings) {
+      navigate('quiz')
+      return
     }
   }
 
-  const startBattle = (mode: 'solo' | 'online', category: string, zone: string) => {
+  const startBattle = (mode: 'solo' | 'online', category: string, zone: string, sectionRef?: string) => {
     if (!user || !getToken()) return
-    setBattleSettings({ mode, category, zone })
+    setBattleSettings({ mode, category, zone, sectionRef })
     navigate('quiz')
   }
 
@@ -261,7 +285,7 @@ export default function App() {
           <Home user={user} onLogin={handleLogin} onStart={startBattle} roomTarget={roomTarget} onShowLogin={() => setShowLogin(true)} />
         )}
         {page === 'quiz' && user && battleSettings && (
-          <QuizBattle user={{ id: user.id, username: displayName, token: getToken() || '' }} onBack={() => navigate('home')} initialMode={battleSettings.mode} initialCategory={battleSettings.category} initialRoomTarget={roomTarget || undefined} />
+          <QuizBattle user={{ id: user.id, username: displayName, token: getToken() || '' }} onBack={() => navigate('home')} initialMode={battleSettings.mode} initialCategory={battleSettings.category} initialRoomTarget={roomTarget || undefined} initialSectionRef={battleSettings.sectionRef} />
         )}
       </div>
       <LoginModal open={showLogin} onClose={() => setShowLogin(false)} onLogin={handleLogin} />
