@@ -660,9 +660,9 @@ function generateEnglishQuestions(): QuestionRow[] {
 
   console.log(`  英语: ${allWords.length} words available, ${wordsByDifficulty.size} difficulty levels`)
 
-  // ----- Type A: 中文→英文 (target: 800) -----
+  // ----- Type A: 中文→英文 (target: 600) -----
   const countA_start = results.length
-  const targetA = 800
+  const targetA = 600
 
   for (const word of shuffle(allWords)) {
     if (results.length - countA_start >= targetA) break
@@ -671,11 +671,11 @@ function generateEnglishQuestions(): QuestionRow[] {
 
     const options = shuffle([word.word, ...distractors])
     const ansIdx = options.indexOf(word.word)
-    const diff = word.difficulty <= 3 ? 1 : word.difficulty <= 6 ? 2 : 3
+    const diff = word.difficulty <= 3 ? 1 : word.difficulty <= 5 ? 2 : 3
 
     results.push({
       category: 'english',
-      section_ref: '',
+      section_ref: `english:${word.id}`,
       question: `"${word.meaning}" 的英文是？`,
       options: JSON.stringify(options),
       answer: ansIdx,
@@ -684,9 +684,9 @@ function generateEnglishQuestions(): QuestionRow[] {
   }
   console.log(`  已生成 中→英: ${results.length - countA_start} 题`)
 
-  // ----- Type B: 英文→中文 (target: 800) -----
+  // ----- Type B: 英文→中文 (target: 600) -----
   const countB_start = results.length
-  const targetB = 800
+  const targetB = 600
 
   for (const word of shuffle(allWords)) {
     if (results.length - countB_start >= targetB) break
@@ -701,11 +701,11 @@ function generateEnglishQuestions(): QuestionRow[] {
 
     const options = shuffle([word.meaning, ...distractors])
     const ansIdx = options.indexOf(word.meaning)
-    const diff = word.difficulty <= 3 ? 1 : word.difficulty <= 6 ? 2 : 3
+    const diff = word.difficulty <= 3 ? 1 : word.difficulty <= 5 ? 2 : 3
 
     results.push({
       category: 'english',
-      section_ref: '',
+      section_ref: `english:${word.id}`,
       question: `"${word.word}" 的中文意思是？`,
       options: JSON.stringify(options),
       answer: ansIdx,
@@ -714,9 +714,9 @@ function generateEnglishQuestions(): QuestionRow[] {
   }
   console.log(`  已生成 英→中: ${results.length - countB_start} 题`)
 
-  // ----- Type C: 选词填空 (target: 400) -----
+  // ----- Type C: 选词填空 (target: 1200) -----
   const countC_start = results.length
-  const targetC = 400
+  const targetC = 1200
 
   for (const word of shuffle(allWords)) {
     if (results.length - countC_start >= targetC) break
@@ -739,11 +739,11 @@ function generateEnglishQuestions(): QuestionRow[] {
 
     const options = shuffle([word.word, ...distractors])
     const ansIdx = options.indexOf(word.word)
-    const diff = word.difficulty <= 3 ? 1 : word.difficulty <= 6 ? 2 : 3
+    const diff = word.difficulty <= 3 ? 1 : word.difficulty <= 5 ? 2 : 3
 
     results.push({
       category: 'english',
-      section_ref: '',
+      section_ref: `english:${word.id}`,
       question: `选择正确的词填空：${filledSentence}`,
       options: JSON.stringify(options),
       answer: ansIdx,
@@ -752,7 +752,17 @@ function generateEnglishQuestions(): QuestionRow[] {
   }
   console.log(`  已生成 填空: ${results.length - countC_start} 题`)
 
-  return results
+  // Dedup by (question, options) — same word + same distractor pool = duplicate entry
+  const seen = new Set<string>()
+  const deduped = results.filter(q => {
+    const key = `${q.question}|${q.options}`
+    if (seen.has(key)) return false
+    seen.add(key)
+    return true
+  })
+  const removed = results.length - deduped.length
+  if (removed > 0) console.log(`  去重移除: ${removed} 题`)
+  return deduped
 }
 
 // ===================== 通识 Generator (2,000 题, category: general/science) =====================
@@ -1413,51 +1423,68 @@ function generateTongshiComprehensionQuestions(): QuestionRow[] {
 // ===================== Main =====================
 
 function main() {
+  // Parse CLI flags
+  const args = process.argv.slice(2)
+  const onlyEnglish = args.includes('--only=english')
+  const appendMode = args.includes('--append')
+
   console.log('========================================')
   console.log('  童慧行问答挑战 - 自动出题脚本')
-  console.log('========================================\n')
+  console.log('========================================')
+  if (onlyEnglish) console.log('  模式: 仅英语')
+  else console.log('  模式: 全部')
+  console.log(`  写库: ${appendMode ? '追加（保留现有）' : '按分类清空+重写（保留其他分类）'}`)
+  console.log('')
 
   let allQuestions: QuestionRow[] = []
 
-  console.log('📜 [1/7] 生成诗词题目 (target: 4,000)...')
-  const shici = generateShiciQuestions()
-  console.log(`   → 诗词题目: ${shici.length}\n`)
-  allQuestions.push(...shici)
+  if (onlyEnglish) {
+    // Short-circuit: only run English generator, skip all others
+    console.log('🔤 生成英语题目 (target: 2,400)...')
+    const eng = generateEnglishQuestions()
+    console.log(`   → 英语题目: ${eng.length}\n`)
+    allQuestions.push(...eng)
+  } else {
+    console.log('📜 [1/7] 生成诗词题目 (target: 4,000)...')
+    const shici = generateShiciQuestions()
+    console.log(`   → 诗词题目: ${shici.length}\n`)
+    allQuestions.push(...shici)
 
-  console.log('📜 [2/7] 生成诗词意境题...')
-  const shiciMood = generateShiciMoodQuestions()
-  console.log(`   → 诗词意境题: ${shiciMood.length}\n`)
-  allQuestions.push(...shiciMood)
+    console.log('📜 [2/7] 生成诗词意境题...')
+    const shiciMood = generateShiciMoodQuestions()
+    console.log(`   → 诗词意境题: ${shiciMood.length}\n`)
+    allQuestions.push(...shiciMood)
 
-  console.log('📜 [3/7] 生成诗词理解题...')
-  const shiciComp = generateShiciComprehensionQuestions()
-  console.log(`   → 诗词理解题: ${shiciComp.length}\n`)
-  allQuestions.push(...shiciComp)
+    console.log('📜 [3/7] 生成诗词理解题...')
+    const shiciComp = generateShiciComprehensionQuestions()
+    console.log(`   → 诗词理解题: ${shiciComp.length}\n`)
+    allQuestions.push(...shiciComp)
 
-  console.log('📚 [5/8] 生成国学题目 (target: 2,000)...')
-  const guoxue = generateGuoxueQuestions()
-  console.log(`   → 国学题目: ${guoxue.length}\n`)
-  allQuestions.push(...guoxue)
+    console.log('📚 [5/8] 生成国学题目 (target: 2,000)...')
+    const guoxue = generateGuoxueQuestions()
+    console.log(`   → 国学题目: ${guoxue.length}\n`)
+    allQuestions.push(...guoxue)
 
-  console.log('📚 [6/8] 生成国学理解题...')
-  const guoxueComp = generateGuoxueComprehensionQuestions()
-  console.log(`   → 国学理解题: ${guoxueComp.length}\n`)
-  allQuestions.push(...guoxueComp)
+    console.log('📚 [6/8] 生成国学理解题...')
+    const guoxueComp = generateGuoxueComprehensionQuestions()
+    console.log(`   → 国学理解题: ${guoxueComp.length}\n`)
+    allQuestions.push(...guoxueComp)
 
-  console.log('🔤 [7/8] 生成英语题目 (target: 2,000)...')
-  const eng = generateEnglishQuestions()
-  console.log(`   → 英语题目: ${eng.length}\n`)
-  allQuestions.push(...eng)
+    console.log('🔤 [7/8] 生成英语题目 (target: 2,400)...')
+    const eng = generateEnglishQuestions()
+    console.log(`   → 英语题目: ${eng.length}\n`)
+    allQuestions.push(...eng)
 
-  console.log('🌍 [8/8] 生成通识题目 (target: 2,000)...')
-  const tongshi = generateTongshiQuestions()
-  console.log(`   → 通识题目: ${tongshi.length}\n`)
-  allQuestions.push(...tongshi)
+    console.log('🌍 [8/8] 生成通识题目 (target: 2,000)...')
+    const tongshi = generateTongshiQuestions()
+    console.log(`   → 通识题目: ${tongshi.length}\n`)
+    allQuestions.push(...tongshi)
 
-  console.log('🌍 生成通识理解题...')
-  const tongshiComp = generateTongshiComprehensionQuestions()
-  console.log(`   → 通识理解题: ${tongshiComp.length}\n`)
-  allQuestions.push(...tongshiComp)
+    console.log('🌍 生成通识理解题...')
+    const tongshiComp = generateTongshiComprehensionQuestions()
+    console.log(`   → 通识理解题: ${tongshiComp.length}\n`)
+    allQuestions.push(...tongshiComp)
+  }
 
   // Final stats
   console.log('========================================')
@@ -1479,21 +1506,36 @@ function main() {
   const db = new Database(DB_PATH)
   db.pragma('journal_mode = DELETE')
 
-  db.exec('DROP TABLE IF EXISTS quiz_questions')
-  db.exec(`
-    CREATE TABLE quiz_questions (
-      id INTEGER PRIMARY KEY AUTOINCREMENT,
-      category TEXT DEFAULT 'general',
-      question TEXT NOT NULL,
-      options TEXT NOT NULL,
-      answer INTEGER NOT NULL,
-      difficulty INTEGER DEFAULT 1,
-      section_ref TEXT DEFAULT ''
-    );
-  `)
+  // Collect categories we'll touch (for replace-mode pre-delete)
+  const touchedCategories = [...new Set(allQuestions.map(q => q.category))]
 
-  db.exec('DELETE FROM quiz_questions')
-  db.exec("DELETE FROM sqlite_sequence WHERE name='quiz_questions'")
+  // Validate that quiz_questions table exists with expected schema
+  const tableInfo = db.prepare("PRAGMA table_info(quiz_questions)").all() as Array<{ name: string }>
+  if (tableInfo.length === 0) {
+    console.log('  ⚠️ quiz_questions 表不存在，创建新表...')
+    db.exec(`
+      CREATE TABLE quiz_questions (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        category TEXT DEFAULT 'general',
+        question TEXT NOT NULL,
+        options TEXT NOT NULL,
+        answer INTEGER NOT NULL,
+        difficulty INTEGER DEFAULT 1,
+        section_ref TEXT DEFAULT ''
+      );
+    `)
+  }
+
+  // In replace mode: delete only rows in the categories we're regenerating,
+  // preserving all other categories (e.g. running --only=english --replace
+  // leaves shici/guoxue/tongshi untouched).
+  if (!appendMode) {
+    for (const cat of touchedCategories) {
+      const before = (db.prepare('SELECT COUNT(*) as c FROM quiz_questions WHERE category = ?').get(cat) as { c: number }).c
+      db.prepare('DELETE FROM quiz_questions WHERE category = ?').run(cat)
+      console.log(`  清空 ${cat}: ${before} 题`)
+    }
+  }
 
   const insert = db.prepare(
     'INSERT INTO quiz_questions (category, question, options, answer, difficulty, section_ref) VALUES (?, ?, ?, ?, ?, ?)'
