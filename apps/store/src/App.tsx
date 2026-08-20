@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { injectWebSite, injectProduct } from '@shared/composables/useGeoInjectLd'
 import { navLinks } from '@shared/config/navLinks'
 import LoginModal from './components/LoginModal'
 
@@ -51,7 +52,15 @@ function App() {
   const [loading, setLoading] = useState('')
 
   useEffect(() => {
-    api('/api/products').then(r => r.json()).then(setProducts).catch(() => {})
+    api('/api/products').then(r => r.json()).then(d => {
+      setProducts(d.data || d || [])
+      // GEO: 商城首页 WebSite schema
+      injectWebSite(
+        '童慧行商城',
+        '童慧行积分商城 — 100% 非商业化。学习答题、写攻略、邀请好友获得金币，兑换学习用品、儿童图书、亲子门票。',
+        'https://store.grandand.com'
+      )
+    }).catch(() => {})
     history.replaceState({ tab: 'shop' }, '')
 
     async function autoLogin() {
@@ -159,6 +168,40 @@ function App() {
   const filtered = category ? products.filter(p => p.category === category) : products
 
   const owned = (productId: string) => items.some(i => i.product_id === productId)
+
+  // GEO: 商品加载后注入 Product schema（每个商品一条）
+  useEffect(() => {
+    if (!products.length) return
+    products.slice(0, 50).forEach(p => {
+      const scriptId = `geo-product-jsonld-${p.id}`
+      document.getElementById(scriptId)?.remove()
+      const script = document.createElement('script')
+      script.id = scriptId
+      script.type = 'application/ld+json'
+      script.textContent = JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'Product',
+        name: p.name,
+        description: p.description,
+        url: `https://store.grandand.com/#product/${p.id}`,
+        image: typeof p.image === 'string' ? p.image : undefined,
+        category: p.category,
+        offers: {
+          '@type': 'Offer',
+          priceCurrency: 'COIN',
+          price: p.price,
+          availability: p.stock > 0 ? 'https://schema.org/InStock' : 'https://schema.org/OutOfStock',
+          url: `https://store.grandand.com/#product/${p.id}`,
+          seller: { '@type': 'Organization', name: '童慧行积分商城', url: 'https://store.grandand.com' },
+        },
+        inLanguage: 'zh-CN',
+      })
+      document.head.appendChild(script)
+    })
+    return () => {
+      products.forEach(p => document.getElementById(`geo-product-jsonld-${p.id}`)?.remove())
+    }
+  }, [products])
 
   return (
     <>

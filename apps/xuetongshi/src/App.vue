@@ -81,6 +81,24 @@ watch(currentView, (newView, oldView) => {
       url: 'https://xuetongshi.grandand.com/#reader/' + t.id + '-' + s.id,
       type: 'topic',
     })
+
+    // GEO: BreadcrumbList（通识百科层级：百科 > 分类 > 主题 > 章节）
+    const bcId = 'jsonld-xuetongshi-breadcrumb'
+    document.getElementById(bcId)?.remove()
+    const bc = document.createElement('script')
+    bc.id = bcId
+    bc.type = 'application/ld+json'
+    bc.textContent = JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: '童慧行通识百科', item: 'https://xuetongshi.grandand.com/' },
+        { '@type': 'ListItem', position: 2, name: t.category || '通识', item: `https://xuetongshi.grandand.com/#reader/${encodeURIComponent(t.category || '')}` },
+        { '@type': 'ListItem', position: 3, name: t.title, item: `https://xuetongshi.grandand.com/#reader/${t.id}` },
+        { '@type': 'ListItem', position: 4, name: s.title, item: `https://xuetongshi.grandand.com/#reader/${t.id}-${s.id}` },
+      ],
+    })
+    document.head.appendChild(bc)
   }
   if (oldView === 'reader' && newView !== 'reader' && readerEntryTime.value > 0) {
     const childId = getActiveChildId()

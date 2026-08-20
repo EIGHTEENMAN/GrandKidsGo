@@ -576,18 +576,37 @@ watch([() => currentView.value, () => currentPoem.value], () => {
     })
   } else if (currentPoem.value) {
     const p = currentPoem.value
+    const dynasty = (p as any).dynasty || ''
     injectJsonLd({
       '@context': 'https://schema.org',
       '@type': 'LearningResource',
       'name': p.title + ' - 童慧行学诗词',
-      'description': (p as any).summary || `\${p.title} \${p.author}，收录于童慧行学诗词`,
+      'description': (p as any).summary || `${p.title} ${p.author}，收录于童慧行学诗词`,
       'author': { '@type': 'Person', 'name': p.author },
       'inLanguage': 'zh-CN',
       'educationalLevel': 'beginner',
       'learningResourceType': 'poem',
-      'teaches': [`古诗 - \${(p as any).dynasty || ''}`],
-      'url': `https://xueshici.grandand.com/#reader/\${p.id}-\${(p as any).sections?.[0]?.id || 1}`,
+      'teaches': [`古诗 - ${dynasty}`],
+      'url': `https://xueshici.grandand.com/#reader/${p.id}-${(p as any).sections?.[0]?.id || 1}`,
     })
+
+    // GEO: BreadcrumbList（诗词详情页层级路径）
+    const breadcrumbId = 'jsonld-shici-breadcrumb'
+    document.getElementById(breadcrumbId)?.remove()
+    const bc = document.createElement('script')
+    bc.id = breadcrumbId
+    bc.type = 'application/ld+json'
+    bc.textContent = JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: '童慧行学诗词', item: 'https://xueshici.grandand.com/' },
+        ...(dynasty ? [{ '@type': 'ListItem', position: 2, name: dynasty, item: `https://xueshici.grandand.com/#reader/${dynasty}` }] : []),
+        { '@type': 'ListItem', position: dynasty ? 3 : 2, name: p.author, item: `https://xueshici.grandand.com/#search?author=${encodeURIComponent(p.author)}` },
+        { '@type': 'ListItem', position: dynasty ? 4 : 3, name: p.title, item: `https://xueshici.grandand.com/#reader/${p.id}-${(p as any).sections?.[0]?.id || 1}` },
+      ],
+    })
+    document.head.appendChild(bc)
   }
 }, { immediate: true })
 </script>

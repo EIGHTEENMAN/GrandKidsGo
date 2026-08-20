@@ -1,4 +1,5 @@
 import { useState, useEffect, useCallback } from 'react'
+import { injectQuiz, injectWebSite } from '@shared/composables/useGeoInjectLd'
 import { navLinks } from '@shared/config/navLinks'
 import Home from './pages/Home'
 import QuizBattle from './pages/QuizBattle'
@@ -48,19 +49,31 @@ export default function App() {
   const [youthReason, setYouthReason] = useState('')
   const [youthLoading, setYouthLoading] = useState(true)
 
-  // Check youth mode on mount
+  // GEO: 来挑战首页注入 WebSite + Quiz 集合 schema
   useEffect(() => {
-    const token = getToken()
-    if (!token) {
-      setYouthLoading(false)
-      return
-    }
-    checkYouthMode(token).then(r => {
-      if (r.blocked) {
-        setYouthBlocked(true)
-        setYouthReason(r.reason)
-      }
-      setYouthLoading(false)
+    injectWebSite(
+      '童慧行来挑战',
+      '童慧行来挑战 — 答题对战、益智闯关、多人竞技。覆盖古诗词、英语单词、自然拼读、通识百科等多学科题目，8000+ 道，让孩子在游戏中巩固学习成果。',
+      'https://tiaozhan.grandand.com'
+    )
+    // Quiz 集合 schema（站点级别，作为"题库目录"被 AI 引擎索引）
+    injectQuiz({
+      name: '童慧行来挑战 · 全平台题目合集',
+      description: '童慧行来挑战站收录 8000+ 道题目，覆盖诗词 / 国学 / 英语 / 自然拼读 / 通识百科，适合 5-12 岁儿童答题挑战。题目分入门 / 进阶 / 高手三档难度，支持单人闯关 / 双人 PK / 排行榜。',
+      url: 'https://tiaozhan.grandand.com',
+      about: '儿童答题挑战',
+      educationalLevel: 'beginner',
+      questions: [
+        { text: '《静夜思》的作者是谁？', answerText: '李白', difficulty: 'easy' },
+        { text: '"床前明月光"的下一句是什么？', answerText: '疑是地上霜', difficulty: 'easy' },
+        { text: 'apple 的中文意思是？', answerText: '苹果', difficulty: 'easy' },
+        { text: '"学而时习之"出自哪本经典？', answerText: '论语', difficulty: 'medium' },
+        { text: '"举头望明月"的下一句是什么？', answerText: '低头思故乡', difficulty: 'easy' },
+        { text: 'cat 的中文意思是？', answerText: '猫', difficulty: 'easy' },
+        { text: '中国第一长河是？', answerText: '长江', difficulty: 'medium' },
+        { text: '三角形的内角和是多少度？', answerText: '180 度', difficulty: 'medium' },
+      ],
+      providerName: '童慧行来挑战',
     })
   }, [])
 

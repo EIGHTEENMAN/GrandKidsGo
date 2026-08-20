@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from 'react'
+import { injectQuiz } from '@shared/composables/useGeoInjectLd'
 
 function syncChallengePoints(points: number) {
   const token = sessionStorage.getItem('haodaer_token')
@@ -96,6 +97,33 @@ export default function QuizBattle({ user, onBack, initialMode, initialCategory,
   const [currentTeamSize, setCurrentTeamSize] = useState(1)
   const [countdown, setCountdown] = useState<number | null>(null)
   const [isHost, setIsHost] = useState(false)
+
+  // GEO: 当前题目切换时，注入 Question schema 单题标记
+  useEffect(() => {
+    if (!question) return
+    let options: string[] = []
+    try { options = JSON.parse(question.options) } catch {}
+    const correctText = options[question.answer] || ''
+    const difficulty = question.difficulty === 1 ? 'easy' : question.difficulty === 2 ? 'medium' : 'hard'
+    const categoryMap: Record<string, string> = { poetry: '古诗词', english: '英语', guoxue: '国学', general: '通识' }
+    const subject = categoryMap[question.category] || '挑战题'
+    injectQuiz({
+      name: `${subject} · 当前挑战题`,
+      description: question.question,
+      url: 'https://tiaozhan.grandand.com',
+      about: subject,
+      educationalLevel: difficulty,
+      questions: [{
+        text: question.question,
+        answerText: correctText,
+        difficulty: difficulty as 'easy' | 'medium' | 'hard',
+      }],
+      providerName: '童慧行来挑战',
+    })
+    return () => {
+      document.querySelectorAll('[id^="geo-jsonld"]').forEach(el => el.remove())
+    }
+  }, [question])
 
   // WebSocket
   const [ws, setWs] = useState<WebSocket | null>(null)

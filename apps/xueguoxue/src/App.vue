@@ -82,6 +82,23 @@ watch([() => currentView.value, () => currentClassic.value], () => {
       url: 'https://xueguoxue.grandand.com/#reader/' + cc.id + '-' + (cc.sections?.[0]?.id || 1),
       type: 'classic',
     })
+
+    // GEO: BreadcrumbList（国学层级：国学 > 分类 > 篇目 > 章节）
+    const bcId = 'jsonld-xueguoxue-breadcrumb'
+    document.getElementById(bcId)?.remove()
+    const bc = document.createElement('script')
+    bc.id = bcId
+    bc.type = 'application/ld+json'
+    bc.textContent = JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: '童慧行学国学', item: 'https://xueguoxue.grandand.com/' },
+        ...(cc.category ? [{ '@type': 'ListItem', position: 2, name: cc.category, item: `https://xueguoxue.grandand.com/#reader/${encodeURIComponent(cc.category)}` }] : []),
+        { '@type': 'ListItem', position: cc.category ? 3 : 2, name: cc.title, item: `https://xueguoxue.grandand.com/#reader/${cc.id}-${cc.sections?.[0]?.id || 1}` },
+      ],
+    })
+    document.head.appendChild(bc)
   }
 })
 
