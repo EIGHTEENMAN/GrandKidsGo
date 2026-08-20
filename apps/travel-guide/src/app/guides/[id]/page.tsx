@@ -1,7 +1,8 @@
-// 攻略详情页 — 走天下 PC 端（v4.1 蓝青 UI）
+// GEO: 攻略详情页 — 走天下 PC 端（v4.1 蓝青 UI）
 // 数据源：/api/guides/[id]（contentHtml + stats + author + isLiked/isSaved）
 // 渲染：contentHtml 安全清洗 + like/save/fork 按钮 + 双维度评分 + 评论区
 // GEO: generateMetadata 见 ./metadata.ts（服务端组件，AI 引擎可见）
+// GEO: 客户端 JSON-LD 注入（Article + BreadcrumbList）见 GuideJsonLd 内部组件
 'use client';
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
@@ -99,6 +100,26 @@ export default function GuideDetailPage() {
       .catch(console.error)
       .finally(() => setLoading(false));
   }, [id]);
+
+  // GEO: 攻略详情页 JSON-LD 注入（Article + BreadcrumbList）
+  useEffect(() => {
+    if (!data) return;
+    import('@/lib/jsonld').then(({ buildGuideJsonLd }) => {
+      const schemas = buildGuideJsonLd(data as any);
+      // 清理旧的 geo-jsonld-* 节点
+      document.querySelectorAll('[id^="geo-guide-jsonld-"]').forEach(el => el.remove());
+      schemas.forEach((s, i) => {
+        const script = document.createElement('script');
+        script.id = `geo-guide-jsonld-${i}`;
+        script.type = 'application/ld+json';
+        script.textContent = JSON.stringify(s);
+        document.head.appendChild(script);
+      });
+    });
+    return () => {
+      document.querySelectorAll('[id^="geo-guide-jsonld-"]').forEach(el => el.remove());
+    };
+  }, [data]);
 
   const toggleLike = async () => {
     if (!token) { router.push('/login'); return; }

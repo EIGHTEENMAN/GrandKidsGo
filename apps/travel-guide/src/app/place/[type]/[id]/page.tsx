@@ -245,6 +245,25 @@ export default function PlaceDetailPage() {
     return () => clearInterval(t);
   }, [data]);
 
+  // GEO: 景点详情页 JSON-LD 注入（TouristAttraction + BreadcrumbList）
+  useEffect(() => {
+    if (!data?.place) return;
+    import('@/lib/jsonld').then(({ buildPlaceJsonLd }) => {
+      const schemas = buildPlaceJsonLd(data.place as any, type);
+      document.querySelectorAll('[id^="geo-place-jsonld-"]').forEach(el => el.remove());
+      schemas.forEach((s, i) => {
+        const script = document.createElement('script');
+        script.id = `geo-place-jsonld-${i}`;
+        script.type = 'application/ld+json';
+        script.textContent = JSON.stringify(s);
+        document.head.appendChild(script);
+      });
+    });
+    return () => {
+      document.querySelectorAll('[id^="geo-place-jsonld-"]').forEach(el => el.remove());
+    };
+  }, [data, type]);
+
   if (loading) return <div className="min-h-screen flex items-center justify-center">加载中…</div>;
   if (!data) return <div className="min-h-screen flex items-center justify-center">地点不存在</div>;
 

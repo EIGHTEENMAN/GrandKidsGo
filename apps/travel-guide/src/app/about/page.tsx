@@ -5,10 +5,13 @@
 'use client';
 import Link from 'next/link';
 import { SparklesIcon } from '@/components/Icons';
+import AboutJsonLd from './about-jsonld';
 
 export default function AboutPage() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-blue-50 via-white to-cyan-50">
+      {/* GEO: Organization + Dataset JSON-LD 注入 */}
+      <AboutJsonLd />
       <header className="bg-gradient-to-r from-blue-600 via-cyan-600 to-teal-600 text-white">
         <div className="max-w-6xl mx-auto px-6 py-10">
           <Link href="/" className="text-blue-100 text-sm hover:text-white">← 返回首页</Link>

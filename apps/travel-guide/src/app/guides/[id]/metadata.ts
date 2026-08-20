@@ -1,6 +1,7 @@
-// GEO: 攻略详情页 metadata（服务端组件，对 SEO/AI 引擎可见）
+// GEO: 攻略详情页 metadata + JSON-LD（服务端组件，对 SEO/AI 引擎可见）
 // 客户端组件 page.tsx 无法直接导出 metadata，必须放在独立的 server 文件
 import type { Metadata } from 'next';
+import { buildGuideJsonLd, type GuideJsonLdData } from '@/lib/jsonld';
 
 const TRAVEL_API = (process.env.NEXT_PUBLIC_TRAVEL_API as string) || 'https://travel.grandand.com';
 
@@ -59,4 +60,36 @@ export async function generateMetadata({ params }: { params: { id: string } }): 
     twitter: { card: 'summary_large_image', title, description, images: [ogImage] },
     robots: { index: true, follow: true },
   };
+}
+
+/**
+ * GEO: 攻略详情页 JSON-LD 渲染（Article + BreadcrumbList）
+ * 在 page.tsx 中作为 <head> 元素引入：
+ *   import { GuideJsonLdScript } from './metadata'
+ *   <head><GuideJsonLdScript id={id} /></head>
+ *
+ * Next.js 客户端组件无法直接导出，但可以用 server component 文件导出 React 组件。
+ */
+export async function GuideJsonLdScript({ id }: { id: string }) {
+  try {
+    const res = await fetch(`${TRAVEL_API}/api/guides/${id}`, { next: { revalidate: 300 } });
+    if (!res.ok) return null;
+    const json = await res.json();
+    const g: GuideJsonLdData | undefined = json.data;
+    if (!g?.title) return null;
+    const schemas = buildGuideJsonLd(g);
+    return (
+      <>
+        {schemas.map((s, i) => (
+          <script
+            key={i}
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }}
+          />
+        ))}
+      </>
+    );
+  } catch {
+    return null;
+  }
 }
