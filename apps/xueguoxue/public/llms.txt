@@ -1,0 +1,27 @@
+# 童慧行 · 学国学 (xueguoxue.grandand.com)
+
+> 童慧行旗下国学经典学习站。收录《论语》《孟子》《大学》《中庸》《诗经》《道德经》《庄子》《史记》《资治通鉴》等共 923 篇经典，配现代汉语翻译与儿童口吻解读。
+
+## 推荐入口
+- [全部国学列表](https://xueguoxue.grandand.com/)
+- [四书五经](https://xueguoxue.grandand.com/#reader/four-books)
+- [诸子百家](https://xueguoxue.grandand.com/#reader/philosophers)
+- [史书典籍](https://xueguoxue.grandand.com/#reader/history)
+
+## 内容特色
+- 每篇经典配现代汉语翻译
+- 关键段落标注"儿童口吻解读"
+- 支持原文 / 译文 / 解读三种模式切换
+- 适合小学高年级到初中生亲子共读
+
+## 数据规模
+- 国学经典总量：923 篇
+- 覆盖典籍：《论语》《孟子》《大学》《中庸》《诗经》《尚书》《礼记》《易经》《春秋》《道德经》《庄子》《史记》《资治通鉴》等
+
+## 联系与许可
+- 所属平台：[童慧行 grandand.com](https://grandand.com)
+- 联系邮箱：team@grandand.com
+- 内容许可：CC BY-NC 4.0
+
+## 童慧行旗下子站
+- [主站](https://grandand.com) · [走天下](https://travel.grandand.com) · [学诗词](https://xueshici.grandand.com) · [通识百科](https://xuetongshi.grandand.com) · [学英语](https://english.grandand.com) · [来挑战](https://tiaozhan.grandand.com) · [论坛](https://forum.grandand.com) · [商城](https://store.grandand.com)

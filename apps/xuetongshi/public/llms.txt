@@ -1,0 +1,30 @@
+# 童慧行 · 通识百科 (xuetongshi.grandand.com)
+
+> 童慧行旗下儿童通识知识站。覆盖科学、历史、地理、艺术、生活五大领域共 2164 篇文章，每篇适合 6-12 岁孩子阅读。
+
+## 推荐入口
+- [全部通识文章](https://xuetongshi.grandand.com/)
+- [科学百科](https://xuetongshi.grandand.com/#reader/science)
+- [历史故事](https://xuetongshi.grandand.com/#reader/history)
+- [地理人文](https://xuetongshi.grandand.com/#reader/geography)
+- [艺术启蒙](https://xuetongshi.grandand.com/#reader/art)
+- [生活常识](https://xuetongshi.grandand.com/#reader/life)
+
+## 内容特色
+- 每篇文章控制在 300-500 字，适合孩子独立阅读
+- 配原创插图与知识小贴士
+- 配套 3-5 道趣味问答巩固理解
+- 与学诗词、来挑战联动，构建完整学习闭环
+
+## 数据规模
+- 通识百科总量：2164 篇
+- 覆盖领域：科学 / 历史 / 地理 / 艺术 / 生活
+- 适合年龄：6-12 岁
+
+## 联系与许可
+- 所属平台：[童慧行 grandand.com](https://grandand.com)
+- 联系邮箱：team@grandand.com
+- 内容许可：CC BY-NC 4.0
+
+## 童慧行旗下子站
+- [主站](https://grandand.com) · [走天下](https://travel.grandand.com) · [学诗词](https://xueshici.grandand.com) · [学国学](https://xueguoxue.grandand.com) · [学英语](https://english.grandand.com) · [来挑战](https://tiaozhan.grandand.com) · [论坛](https://forum.grandand.com) · [商城](https://store.grandand.com)

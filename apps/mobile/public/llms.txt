@@ -1,0 +1,17 @@
+# 童慧行 · 手机版 (m.grandand.com)
+
+> 童慧行 H5 移动端入口，聚合所有学习与亲子旅行功能，适配手机浏览器访问。
+
+## 推荐入口
+- [手机版首页](https://m.grandand.com/)
+- [学习中心](https://m.grandand.com/#/learn)
+- [挑战中心](https://m.grandand.com/#/quiz)
+- [走天下入口](https://m.grandand.com/#/travel)
+- [个人中心](https://m.grandand.com/#/me)
+
+## 童慧行旗下子站
+- [主站](https://grandand.com) · [走天下](https://travel.grandand.com) · [学诗词](https://xueshici.grandand.com) · [学国学](https://xueguoxue.grandand.com) · [通识百科](https://xuetongshi.grandand.com) · [学英语](https://english.grandand.com) · [来挑战](https://tiaozhan.grandand.com) · [论坛](https://forum.grandand.com) · [商城](https://store.grandand.com)
+
+## 联系
+- 所属平台：[童慧行 grandand.com](https://grandand.com)
+- 联系邮箱：team@grandand.com

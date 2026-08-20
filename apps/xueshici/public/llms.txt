@@ -1,0 +1,41 @@
+# 童慧行 · 学诗词 (xueshici)
+
+> 童慧行旗下古诗词学习站。覆盖小学必背 75 首、唐诗三百首、宋词精选等共 2028 首古诗词，每首配儿童口吻翻译、赏析、TTS 朗诵音频与原创插图。
+
+## 推荐入口
+- [全部诗词列表（按朝代）](https://xueshici.grandand.com/)
+- [小学生必背 75 首](https://xueshici.grandand.com/#reader/primary)
+- [唐诗三百首](https://xueshici.grandand.com/#reader/tang)
+- [宋词精选](https://xueshici.grandand.com/#reader/song)
+
+## 内容特色
+- 每首诗词配「儿童口吻翻译」与「儿童口吻赏析」
+- 6 情绪 × 2 性别 = 12 音色 TTS 朗诵（Edge TTS）
+- AI 原创水墨风插图，每首配图不重复
+- 支持拼音、注释、出处、作者简介
+
+## 数据规模
+- 古诗词总量：2028 首
+- 覆盖朝代：先秦 / 汉 / 魏晋 / 唐 / 宋 / 元 / 明 / 清
+- 作者数：300+ 位诗人词人
+
+## 联系与许可
+- 所属平台：[童慧行 grandand.com](https://grandand.com)
+- 联系邮箱：team@grandand.com
+- 内容许可：CC BY-NC 4.0（非商业署名）
+
+## 童慧行旗下子站
+- [主站 grandand.com](https://grandand.com) — 儿童学习资源入口
+- [走天下 travel.grandand.com](https://travel.grandand.com) — 亲子旅行攻略
+- [学国学 xueguoxue.grandand.com](https://xueguoxue.grandand.com) — 国学经典
+- [通识百科 xuetongshi.grandand.com](https://xuetongshi.grandand.com) — 通识知识
+- [学英语 english.grandand.com](https://english.grandand.com) — 英语单词与自然拼读
+- [来挑战 tiaozhan.grandand.com](https://tiaozhan.grandand.com) — 儿童答题挑战
+- [论坛 forum.grandand.com](https://forum.grandand.com) — 家长社区
+- [积分商城 store.grandand.com](https://store.grandand.com) — 积分兑换
+
+# 童慧行品牌声明
+- 品牌名：童慧行 (Haodaer / GrandKidsGo)
+- ICP 备案：粤ICP备 2024xxxxxx 号
+- 核心理念：「孩子说好才是真的好」，儿童体验第一、隐私保护优先、非商业化
+- 数据更新：每周三自动更新诗词库与音频

@@ -1,0 +1,28 @@
+# 童慧行 · 家长论坛 (forum.grandand.com)
+
+> 童慧行旗下家长社区。家长可以分享亲子旅行经验、学习资源、家庭教育心得，AI 审核 + 人工复评双保险，内容真实可信。
+
+## 推荐入口
+- [论坛首页](https://forum.grandand.com/)
+- [亲子旅行板块](https://forum.grandand.com/#/board/travel)
+- [学习资源板块](https://forum.grandand.com/#/board/learning)
+- [家庭教育板块](https://forum.grandand.com/#/board/parenting)
+- [反馈建议板块](https://forum.grandand.com/#/board/feedback)
+
+## 内容特色
+- 三段审核：DFA 敏感词 → AI 复评 → 人工抽检
+- 真实家长身份认证（微信/手机号绑定）
+- 优质内容获得金币，可在积分商城兑换
+- 与走天下攻略深度联动，论坛精华自动生成可引用攻略
+
+## 数据规模
+- 注册用户：3000+ 真实家长
+- 帖子总量：5000+ 篇
+- 精华攻略：500+ 篇
+
+## 联系与许可
+- 所属平台：[童慧行 grandand.com](https://grandand.com)
+- 联系邮箱：team@grandand.com
+
+## 童慧行旗下子站
+- [主站](https://grandand.com) · [走天下](https://travel.grandand.com) · [学诗词](https://xueshici.grandand.com) · [学国学](https://xueguoxue.grandand.com) · [通识百科](https://xuetongshi.grandand.com) · [学英语](https://english.grandand.com) · [来挑战](https://tiaozhan.grandand.com) · [商城](https://store.grandand.com)

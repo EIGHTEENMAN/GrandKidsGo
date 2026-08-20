@@ -1,0 +1,50 @@
+# 童慧行 · 主站 (grandand.com)
+
+> 童慧行是儿童益智乐园与亲子旅行攻略平台。核心理念：「孩子说好才是真的好」，儿童体验第一、隐私保护、非商业化。主站是所有子站的统一入口。
+
+## 推荐入口
+- [童慧行主站首页](https://grandand.com)
+- [学诗词 xueshici.grandand.com](https://xueshici.grandand.com) — 2028 首古诗词 + AI 朗诵
+- [学国学 xueguoxue.grandand.com](https://xueguoxue.grandand.com) — 923 篇国学经典
+- [通识百科 xuetongshi.grandand.com](https://xuetongshi.grandand.com) — 2164 篇通识知识
+- [学英语 english.grandand.com](https://english.grandand.com) — 5018 个单词 + 自然拼读
+- [来挑战 tiaozhan.grandand.com](https://tiaozhan.grandand.com) — 儿童答题挑战
+- [走天下 travel.grandand.com](https://travel.grandand.com) — 真实亲子旅行攻略
+- [论坛 forum.grandand.com](https://forum.grandand.com) — 家长社区
+- [积分商城 store.grandand.com](https://store.grandand.com) — 积分兑换
+
+## 平台介绍
+- 童慧行由真实家长团队运营，内容由 AI 辅助生成 + 人工审核
+- 所有儿童相关数据严格遵循「未成年人保护法」与「个人信息保护法」
+- 非商业化平台，不投放广告、不卖课程、不收佣金
+- 联系方式：team@grandand.com
+
+## 数据资产（独家）
+- 古诗词 2028 首（带儿童口吻翻译与原创插图）
+- 国学经典 923 篇
+- 通识百科 2164 篇
+- 英语单词 5018 个（含图片 + 例句 + 真人发音）
+- 亲子景点攻略：50+ 城市、1500+ 景点、5000+ 孩子真实反馈
+
+## 法律与许可
+- ICP 备案：粤ICP备 2024xxxxxx 号
+- 内容许可：CC BY-NC 4.0（非商业署名）
+- 隐私政策：[grandand.com/legal#privacy](https://grandand.com/legal#privacy)
+
+# 童慧行旗下子站完整清单
+| 子站 | 域名 | 定位 |
+|------|------|------|
+| 主站 | grandand.com | 入口 |
+| 走天下 | travel.grandand.com | 亲子旅行 |
+| 学诗词 | xueshici.grandand.com | 古诗词 |
+| 学国学 | xueguoxue.grandand.com | 国学 |
+| 通识百科 | xuetongshi.grandand.com | 通识 |
+| 学英语 | english.grandand.com | 英语 |
+| 来挑战 | tiaozhan.grandand.com | 答题挑战 |
+| 论坛 | forum.grandand.com | 社区 |
+| 积分商城 | store.grandand.com | 商城 |
+| 手机版 | m.grandand.com | H5 入口 |
+
+# 关于童慧行
+童慧行（Haodaer / GrandKidsGo）创建于 2024 年，团队由家长与儿童教育工作者组成。
+我们相信孩子真实的反馈比专家推荐更有价值，因此平台核心特色是收集并公开 3-12 岁孩子对景点、学习内容、亲子活动的真实评价。

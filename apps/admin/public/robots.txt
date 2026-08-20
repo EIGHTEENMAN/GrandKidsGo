@@ -1,4 +1,38 @@
-User-agent: *
-Allow: /
+# ============================================
+# 童慧行 · 管理后台 (admin.grandand.com)
+# robots.txt — 完全禁止搜索引擎与 AI 抓取
+# ============================================
 
-Sitemap: https://admin.grandand.com/sitemap.xml
+User-agent: *
+Disallow: /
+
+# 即便对 AI 友好，后台也不应被任何爬虫访问
+User-agent: ClaudeBot
+Disallow: /
+User-agent: Claude-User
+Disallow: /
+User-agent: Claude-SearchBot
+Disallow: /
+User-agent: Claude-Web
+Disallow: /
+
+User-agent: GPTBot
+Disallow: /
+User-agent: ChatGPT-User
+Disallow: /
+User-agent: OAI-SearchBot
+Disallow: /
+
+User-agent: PerplexityBot
+Disallow: /
+User-agent: Perplexity-User
+Disallow: /
+
+User-agent: Baiduspider
+Disallow: /
+User-agent: 360Spider
+Disallow: /
+User-agent: Sogou Pic Spider
+Disallow: /
+User-agent: Bytespider
+Disallow: /

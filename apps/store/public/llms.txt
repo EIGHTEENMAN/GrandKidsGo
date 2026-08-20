@@ -1,0 +1,23 @@
+# 童慧行 · 积分商城 (store.grandand.com)
+
+> 童慧行旗下积分兑换商城。家长与孩子通过学习答题、发表攻略、参与活动获得金币，可在商城兑换学习用品、儿童图书、亲子门票等奖品。100% 非商业化。
+
+## 推荐入口
+- [商城首页](https://store.grandand.com/)
+- [学习用品专区](https://store.grandand.com/#/category/study)
+- [儿童图书专区](https://store.grandand.com/#/category/books)
+- [亲子门票专区](https://store.grandand.com/#/category/tickets)
+- [金币充值](https://store.grandand.com/#/coins)
+
+## 内容特色
+- 100% 非商业化：不卖课程、不收佣金、不抽广告费
+- 金币来源：学习答题 / 写攻略 / 邀请好友 / 每日签到
+- 商品由真实家长试用后上架，附孩子使用反馈
+- 支持孩子独立兑换，培养财商意识
+
+## 联系与许可
+- 所属平台：[童慧行 grandand.com](https://grandand.com)
+- 联系邮箱：team@grandand.com
+
+## 童慧行旗下子站
+- [主站](https://grandand.com) · [走天下](https://travel.grandand.com) · [学诗词](https://xueshici.grandand.com) · [学国学](https://xueguoxue.grandand.com) · [通识百科](https://xuetongshi.grandand.com) · [学英语](https://english.grandand.com) · [来挑战](https://tiaozhan.grandand.com) · [论坛](https://forum.grandand.com)

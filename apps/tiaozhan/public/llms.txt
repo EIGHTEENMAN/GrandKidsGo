@@ -1,0 +1,28 @@
+# 童慧行 · 来挑战 (tiaozhan.grandand.com)
+
+> 童慧行旗下儿童答题挑战站。覆盖古诗词、英语单词、自然拼读、通识百科等多学科题目，让孩子在游戏中巩固学习成果。
+
+## 推荐入口
+- [挑战首页](https://tiaozhan.grandand.com/)
+- [诗词挑战](https://tiaozhan.grandand.com/#/quiz/poetry)
+- [英语挑战](https://tiaozhan.grandand.com/#/quiz/english)
+- [通识挑战](https://tiaozhan.grandand.com/#/quiz/general)
+- [神兽方块（休闲答题）](https://tiaozhan.grandand.com/#/shenshou)
+
+## 内容特色
+- 题目难度分 3 档：入门 / 进阶 / 高手
+- 答题配金币、神兽碎片、勋章三重激励
+- 支持单人闯关 / 双人 PK / 排行榜
+- 与学诗词、学英语、来挑战深度联动
+
+## 数据规模
+- 题目总量：8000+ 道
+- 覆盖学科：诗词 / 国学 / 英语 / 自然拼读 / 通识
+- 适合年龄：5-12 岁
+
+## 联系与许可
+- 所属平台：[童慧行 grandand.com](https://grandand.com)
+- 联系邮箱：team@grandand.com
+
+## 童慧行旗下子站
+- [主站](https://grandand.com) · [走天下](https://travel.grandand.com) · [学诗词](https://xueshici.grandand.com) · [学国学](https://xueguoxue.grandand.com) · [通识百科](https://xuetongshi.grandand.com) · [学英语](https://english.grandand.com) · [论坛](https://forum.grandand.com) · [商城](https://store.grandand.com)

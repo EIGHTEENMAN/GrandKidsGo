@@ -1,5 +1,5 @@
 # ============================================
-# 童慧行 · 来挑战 (tiaozhan.grandand.com)
+# 童慧行 · 家长论坛 (forum.grandand.com)
 # robots.txt — 标准化 AI 爬虫白名单
 # ============================================
 
@@ -51,4 +51,4 @@ Allow: /
 User-agent: Bytespider
 Allow: /
 
-Sitemap: https://tiaozhan.grandand.com/sitemap.xml
+Sitemap: https://forum.grandand.com/sitemap.xml

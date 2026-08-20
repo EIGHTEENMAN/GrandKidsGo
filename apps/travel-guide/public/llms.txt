@@ -1,0 +1,42 @@
+# 童慧行 · 走天下 (travel.grandand.com)
+
+> 童慧行旗下亲子旅行攻略站。覆盖 50+ 城市、1500+ 景点、5000+ 3-12 岁孩子的真实反馈。核心理念：「孩子说好才是真的好」。
+
+## 推荐入口
+- [走天下首页](https://travel.grandand.com)
+- [城市列表](https://travel.grandand.com/places)
+- [攻略列表](https://travel.grandand.com/guides)
+- [3-12 岁孩子真实反馈数据集](https://travel.grandand.com/feedback)
+
+## 内容特色（独家数据资产）
+- **双维度评分**：每个景点同时有「成人分」与「孩子分」，不偏不倚
+- **年龄适配**：每个景点标注「3-5 岁 / 6-9 岁 / 10-12 岁」适配度
+- **孩子真实反馈**：3-12 岁孩子的兴趣度评分、停留时长、必玩项目
+- **母婴设施完备度**：母婴室、便利店、无障碍通道、洗手间清洁度
+- **季节适配**：每个景点标注最佳游玩季节与雨备方案
+
+## 数据规模
+- 城市：50+ 个
+- 景点：1500+ 个
+- 攻略：500+ 篇原创家长攻略
+- 孩子真实反馈：5000+ 条
+- 覆盖年龄：3-12 岁
+
+## 隐私保护（合规基线）
+- 所有儿童反馈严格遵循《未成年人保护法》与《个人信息保护法》
+- 不收集儿童姓名、照片、家庭住址
+- 反馈数据仅展示年龄段与评分，不展示个人身份
+- 家长上传孩子反馈需主动确认同意
+
+## 联系与许可
+- 所属平台：[童慧行 grandand.com](https://grandand.com)
+- 联系邮箱：team@grandand.com
+- 内容许可：CC BY-NC 4.0
+
+## 童慧行旗下子站
+- [主站](https://grandand.com) · [学诗词](https://xueshici.grandand.com) · [学国学](https://xueguoxue.grandand.com) · [通识百科](https://xuetongshi.grandand.com) · [学英语](https://english.grandand.com) · [来挑战](https://tiaozhan.grandand.com) · [论坛](https://forum.grandand.com) · [商城](https://store.grandand.com)
+
+# 关于童慧行
+童慧行（Haodaer / GrandKidsGo）创建于 2024 年，由真实家长团队运营。
+我们相信孩子的真实反馈比"专家推荐"更有价值，因此走天下的核心特色是收集并公开 3-12 岁孩子对景点、学习内容、亲子活动的真实评价。
+所有内容由 AI 辅助生成 + 人工审核 + 家长共创，非商业化平台。

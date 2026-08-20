@@ -1,0 +1,28 @@
+# 童慧行 · 学英语 (english.grandand.com)
+
+> 童慧行旗下儿童英语启蒙站。收录 5018 个常用英语单词与自然拼读规则，适合 3-12 岁孩子。每词配图片、释义、例句与真人发音。
+
+## 推荐入口
+- [全部单词列表](https://english.grandand.com/)
+- [自然拼读规则](https://english.grandand.com/#phonics)
+- [小学必背单词](https://english.grandand.com/#reader/primary)
+- [亲子英语场景对话](https://english.grandand.com/#scenes)
+
+## 内容特色
+- 每个单词配原创手绘风格图片
+- 支持英文 / 中文 / 音标三种显示模式
+- 配套艾宾浩斯遗忘曲线复习机制
+- 与「来挑战」tiaozhan.grandand.com 联动，学完单词即可挑战答题
+
+## 数据规模
+- 单词总量：5018 个
+- 覆盖场景：日常 / 学校 / 动物 / 食物 / 自然 / 颜色 / 数字 / 家庭 / 身体 / 交通
+- 适合年龄：3-12 岁
+
+## 联系与许可
+- 所属平台：[童慧行 grandand.com](https://grandand.com)
+- 联系邮箱：team@grandand.com
+- 内容许可：CC BY-NC 4.0
+
+## 童慧行旗下子站
+- [主站](https://grandand.com) · [走天下](https://travel.grandand.com) · [学诗词](https://xueshici.grandand.com) · [学国学](https://xueguoxue.grandand.com) · [通识百科](https://xuetongshi.grandand.com) · [来挑战](https://tiaozhan.grandand.com) · [论坛](https://forum.grandand.com) · [商城](https://store.grandand.com)
