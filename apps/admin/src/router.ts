@@ -12,6 +12,7 @@ import GuideReports from './pages/GuideReports.vue'
 import KolReview from './pages/KolReview.vue'
 import LeaderboardReview from './pages/LeaderboardReview.vue'
 import ActivityReview from './pages/ActivityReview.vue'
+import GeoMonitor from './pages/GeoMonitor.vue'
 
 const routes = [
   { path: '/login', name: 'login', component: Login, meta: { title: '登录', guest: true } },
@@ -27,6 +28,7 @@ const routes = [
   { path: '/travel/kol-review', name: 'travel-kol-review', component: KolReview, meta: { title: '护城河字段复评', requiresAuth: true } },
   { path: '/travel/leaderboard-review', name: 'travel-leaderboard-review', component: LeaderboardReview, meta: { title: '排行榜审核', requiresAuth: true } },
   { path: '/travel/activity-review', name: 'travel-activity-review', component: ActivityReview, meta: { title: '动态审核', requiresAuth: true } },
+  { path: '/geo-monitor', name: 'geo-monitor', component: GeoMonitor, meta: { title: 'GEO 监控', requiresAuth: true } },
 ]
 
 const router = createRouter({
