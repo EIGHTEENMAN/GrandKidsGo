@@ -16,6 +16,7 @@ import DocPage from '@/components/DocPage.vue'
 import LegalPage from '@/components/LegalPage.vue'
 import FAQPage from '@/components/FAQPage.vue'
 import AboutPage from '@/components/AboutPage.vue'
+import AboutEn from '@/components/en/AboutEn.vue'
 import { navLinks } from '@shared/config/navLinks'
 
 const auth = useAuthStore()
@@ -35,6 +36,7 @@ const isPersonalCenterPage = ref(false)
 const isLegalPage = ref(false)
 const isFaqPage = ref(false)
 const isAboutPage = ref(false)
+const isAboutEnPage = ref(false)
 const showChildSwitcher = ref(false)
 
 // Active profile display name
@@ -130,7 +132,8 @@ onMounted(() => {
   isLegalPage.value = window.location.pathname === '/legal'
   isFaqPage.value = window.location.pathname === '/faq'
   isAboutPage.value = window.location.pathname === '/about'
-  if (!isSearchPage.value && !isDocPage.value && !isProfileSetupPage.value && !isPersonalCenterPage.value && !isLegalPage.value && !isFaqPage.value && !isAboutPage.value) {
+  isAboutEnPage.value = window.location.pathname === '/en/about' || window.location.pathname === '/about-en'
+  if (!isSearchPage.value && !isDocPage.value && !isProfileSetupPage.value && !isPersonalCenterPage.value && !isLegalPage.value && !isFaqPage.value && !isAboutPage.value && !isAboutEnPage.value) {
     refreshUser()
     loadChildren()
     window.addEventListener('storage', () => {
@@ -275,7 +278,7 @@ const stats = [
 </script>
 
 <template>
-  <div class="page" v-if="!isSearchPage && !isDocPage && !isPersonalCenterPage && !isLegalPage && !isFaqPage && !isAboutPage">
+  <div class="page" v-if="!isSearchPage && !isDocPage && !isPersonalCenterPage && !isLegalPage && !isFaqPage && !isAboutPage && !isAboutEnPage">
     <!-- Header Nav -->
     <header class="header">
       <div class="header-inner">
@@ -475,6 +478,7 @@ const stats = [
   <LegalPage v-if="isLegalPage" />
   <FAQPage v-if="isFaqPage" />
   <AboutPage v-if="isAboutPage" />
+  <AboutEn v-if="isAboutEnPage" />
 </template>
 
 <style>

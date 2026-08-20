@@ -262,7 +262,7 @@ const phaseLabel = computed(() => {
       <view class="footer-note">
         <text class="footer-note-text">完成出行后，点这里发布攻略，AI 会按孩子状态写（v1.5 第十五节）</text>
         <button class="btn-primary" @click="goPublishGuide">发布攻略</button>
-      </div>
+      </view>
     </template>
 
     <!-- v1.5 多维度结构化评分 modal -->
