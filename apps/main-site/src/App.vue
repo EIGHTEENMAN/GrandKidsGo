@@ -15,6 +15,7 @@ import SearchPage from '@/components/SearchPage.vue'
 import DocPage from '@/components/DocPage.vue'
 import LegalPage from '@/components/LegalPage.vue'
 import FAQPage from '@/components/FAQPage.vue'
+import AboutPage from '@/components/AboutPage.vue'
 import { navLinks } from '@shared/config/navLinks'
 
 const auth = useAuthStore()
@@ -33,6 +34,7 @@ const isProfileSetupPage = ref(false)
 const isPersonalCenterPage = ref(false)
 const isLegalPage = ref(false)
 const isFaqPage = ref(false)
+const isAboutPage = ref(false)
 const showChildSwitcher = ref(false)
 
 // Active profile display name
@@ -115,13 +117,20 @@ async function onParentConsentComplete() {
 }
 
 onMounted(() => {
+  // GEO: 主站首页 WebSite schema 注入（对 AI 引擎声明主站身份）
+  injectWebSite(
+    '童慧行 · 儿童益智乐园',
+    '童慧行是儿童益智乐园与亲子旅行攻略平台，核心理念：「孩子说好才是真的好」。覆盖古诗词、国学、通识、英语、来挑战、亲子旅行六大模块。',
+    'https://grandand.com'
+  )
   isSearchPage.value = window.location.pathname.startsWith('/search')
   isDocPage.value = window.location.pathname.startsWith('/doc')
   isProfileSetupPage.value = window.location.pathname.startsWith('/profile-setup')
   isPersonalCenterPage.value = window.location.pathname === '/personal-center'
   isLegalPage.value = window.location.pathname === '/legal'
   isFaqPage.value = window.location.pathname === '/faq'
-  if (!isSearchPage.value && !isDocPage.value && !isProfileSetupPage.value && !isPersonalCenterPage.value && !isLegalPage.value && !isFaqPage.value) {
+  isAboutPage.value = window.location.pathname === '/about'
+  if (!isSearchPage.value && !isDocPage.value && !isProfileSetupPage.value && !isPersonalCenterPage.value && !isLegalPage.value && !isFaqPage.value && !isAboutPage.value) {
     refreshUser()
     loadChildren()
     window.addEventListener('storage', () => {
@@ -266,7 +275,7 @@ const stats = [
 </script>
 
 <template>
-  <div class="page" v-if="!isSearchPage && !isDocPage && !isPersonalCenterPage && !isLegalPage && !isFaqPage">
+  <div class="page" v-if="!isSearchPage && !isDocPage && !isPersonalCenterPage && !isLegalPage && !isFaqPage && !isAboutPage">
     <!-- Header Nav -->
     <header class="header">
       <div class="header-inner">
@@ -465,6 +474,7 @@ const stats = [
   <!-- Legal Page (shown when path is /legal) -->
   <LegalPage v-if="isLegalPage" />
   <FAQPage v-if="isFaqPage" />
+  <AboutPage v-if="isAboutPage" />
 </template>
 
 <style>

@@ -70,6 +70,18 @@ async function ensureFullData() {
 }
 
 watch(currentView, (newView, oldView) => {
+  // GEO: 进入 reader 详情页注入 LearningResource schema
+  if (newView === 'reader' && currentTopic.value && currentSection.value) {
+    const t = currentTopic.value as any
+    const s = currentSection.value as any
+    injectLearningResource({
+      name: (s.title || t.title) + ' - 童慧行通识百科',
+      description: (s.content || t.summary || t.title).slice(0, 200),
+      author: '',
+      url: 'https://xuetongshi.grandand.com/#reader/' + t.id + '-' + s.id,
+      type: 'topic',
+    })
+  }
   if (oldView === 'reader' && newView !== 'reader' && readerEntryTime.value > 0) {
     const childId = getActiveChildId()
     if (childId) {
@@ -326,6 +338,13 @@ function stopAudio() { stopSpeaking(); speaking.value = false }
 function getReaderContent(): string { return currentSection.value?.content || '' }
 
 onMounted(async () => {
+  // GEO: 首页 WebSite schema 注入
+  injectWebSite(
+    '童慧行·通识百科',
+    '童慧行旗下儿童通识知识站，覆盖科学、历史、地理、艺术、生活五大领域共 2164 篇文章，每篇适合 6-12 岁孩子阅读。',
+    'https://xuetongshi.grandand.com'
+  )
+
   window.addEventListener('beforeunload', stopSpeaking)
   window.addEventListener('popstate', onPopState)
 
