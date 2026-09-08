@@ -42,7 +42,41 @@ async function checkCityBadges(userId: string): Promise<string[]> {
   });
   const citySet = new Set(completedPlans.map((p: any) => p.cityId).filter(Boolean) as string[]);
 
-  await maybeAward(userId, "城市探索者", citySet.size >= 1, newBadges);
+  // 完成 + footprint 合并：城市 ID 集合
+  // 1) completed plans cityIds
+  const completedCityIds = new Set<string>(
+    completedPlans.map((p: any) => p.cityId).filter(Boolean) as string[],
+  );
+  // 2) 用户 visited footprint 城市（覆盖了手动打卡和 from_plan 回填）
+  const visitedFootprints = await prisma.footprint.findMany({
+    where: { userId, state: "visited" },
+    select: { cityId: true },
+  });
+  for (const fp of visitedFootprints) {
+    if (fp.cityId) completedCityIds.add(fp.cityId);
+  }
+  // 把已完成的 city.id 转成 city.name 给 city_name_match 用
+  const visitedCityNames = new Set<string>();
+  if (completedCityIds.size > 0) {
+    const cities = await prisma.city.findMany({
+      where: { id: { in: [...completedCityIds] } },
+      select: { id: true, name: true },
+    });
+    for (const c of cities) visitedCityNames.add(c.name);
+  }
+  // 同时把 footprint 的 city name 直接拿来（覆盖尚未 PATCH plan.status=completed 但已打卡的情况）
+  if (visitedFootprints.length > 0) {
+    const fCityIds = visitedFootprints.map((f: any) => f.cityId).filter(Boolean) as string[];
+    if (fCityIds.length > 0) {
+      const fCities = await prisma.city.findMany({
+        where: { id: { in: [...new Set(fCityIds)] } },
+        select: { name: true },
+      });
+      for (const c of fCities) visitedCityNames.add(c.name);
+    }
+  }
+
+  await maybeAward(userId, "城市探索者", completedCityIds.size >= 1, newBadges);
   await maybeAward(
     userId,
     "海岛达人",
@@ -56,6 +90,36 @@ async function checkCityBadges(userId: string): Promise<string[]> {
     newBadges,
   );
   await maybeAward(userId, "周末游侠", completedPlans.length >= 5, newBadges);
+
+  // v2.1 城市足迹勋章（基于 footprint + planRecord 合并 visitedCityNames）
+  // 首都足迹：4 个一线城市 name match
+  await maybeAward(
+    userId,
+    "首都足迹",
+    ["北京", "上海", "广州", "深圳"].every((n) => visitedCityNames.has(n)),
+    newBadges,
+  );
+  // 江南水乡：江浙沪至少 1 个
+  await maybeAward(
+    userId,
+    "江南水乡",
+    ["杭州", "苏州", "南京", "无锡"].some((n) => visitedCityNames.has(n)),
+    newBadges,
+  );
+  // 西北豪情：西北至少 1 个
+  await maybeAward(
+    userId,
+    "西北豪情",
+    ["西安", "兰州", "银川", "西宁"].some((n) => visitedCityNames.has(n)),
+    newBadges,
+  );
+  // 西南风情：西南至少 1 个
+  await maybeAward(
+    userId,
+    "西南风情",
+    ["重庆", "成都", "昆明", "贵阳", "大理"].some((n) => visitedCityNames.has(n)),
+    newBadges,
+  );
 
   return newBadges;
 }

@@ -171,6 +171,8 @@ export async function GET(
 }
 
 // 周边 POI：按 category 分组返回
+// 优先读 place_nearby 表（已审核的人工/AI 录入数据），
+// fallback 读 spots.nearby_facilities JSONB（13-collect-nearby 高德 around 自动采集的数据）
 async function fetchNearby(type: string, id: string) {
   const rows = await prisma.placeNearby.findMany({
     where: { placeId: id, placeType: type },
@@ -193,6 +195,42 @@ async function fetchNearby(type: string, id: string) {
       isVerified: r.isVerified,
     });
   }
+
+  // Fallback: 若 place_nearby 表为空，读 spot.nearby_facilities JSONB
+  // JSONB 形态: { 母婴室:[{name,distance,address}], 儿童餐:[...], 医院:[{...,isPediatrics}], 便利店:[...], 停车场:[...], 推车可达:bool, 无障碍通道:bool }
+  // 映射到 enum: NURSING_ROOM / KID_RESTAURANT / KIDS_HOSPITAL / CONVENIENCE / STROLLER_FRIENDLY
+  if (Object.keys(groups).length === 0 && type === "sight") {
+    const spot = await prisma.spot.findUnique({
+      where: { id },
+      select: { nearbyFacilities: true },
+    });
+    const jb = spot?.nearbyFacilities as Record<string, unknown> | null;
+    if (jb && typeof jb === "object") {
+      const MAP: Record<string, string> = {
+        母婴室: "NURSING_ROOM",
+        儿童餐: "KID_RESTAURANT",
+        医院: "KIDS_HOSPITAL",
+        便利店: "CONVENIENCE",
+        停车场: "STROLLER_FRIENDLY",
+      };
+      for (const [zhKey, enumKey] of Object.entries(MAP)) {
+        const list = jb[zhKey] as Array<Record<string, unknown>> | undefined;
+        if (!Array.isArray(list) || list.length === 0) continue;
+        groups[enumKey] = list.slice(0, 5).map((p) => ({
+          name: String(p.name ?? ""),
+          distanceMeters: typeof p.distance === "number" ? p.distance : null,
+          extra: (() => {
+            const e: Record<string, unknown> = {};
+            if (typeof p.address === "string" && p.address) e.address = p.address;
+            if (typeof p.isPediatrics === "boolean") e.isPediatrics = p.isPediatrics;
+            return e;
+          })(),
+          isVerified: false,
+        }));
+      }
+    }
+  }
+
   const ordered: Record<string, unknown> = {};
   for (const cat of Object.values(PlaceNearbyCategory)) {
     if (groups[cat]) ordered[cat] = groups[cat];

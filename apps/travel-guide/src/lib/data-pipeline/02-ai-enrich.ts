@@ -59,6 +59,7 @@ interface EnrichedSpot {
   spotType?: string;
   costText?: string;
   openHours?: string;
+  images: string[];              // 高德 photos 直接透传
   kidHook: string;
   momHook: string;
   dadHook: string;
@@ -81,6 +82,7 @@ interface EnrichedRestaurant {
   hasKidsMenu: boolean;
   cuisine?: string;
   avgPricePerPerson?: number;
+  images: string[];
   tags: string[];
   dataSource: "ai_draft_v1";
 }
@@ -96,6 +98,7 @@ interface EnrichedHotel {
   hasKidsPool: boolean;
   hasKidsBreakfast: boolean;
   avgPricePerNight?: number;
+  images: string[];
   tags: string[];
   dataSource: "ai_draft_v1";
 }
@@ -108,6 +111,35 @@ interface EnrichedPark {
   lat: number;
   lng: number;
   hasKidsPlayArea: boolean;
+  images: string[];
+  tags: string[];
+  dataSource: "ai_draft_v1";
+}
+
+interface EnrichedHospital {
+  cityId: string;
+  amapPoiId: string;
+  name: string;
+  address: string;
+  lat: number;
+  lng: number;
+  hasPediatrics: boolean;       // 是否有儿科
+  phone?: string;
+  images: string[];
+  tags: string[];
+  dataSource: "ai_draft_v1";
+}
+
+interface EnrichedMall {
+  cityId: string;
+  amapPoiId: string;
+  name: string;
+  address: string;
+  lat: number;
+  lng: number;
+  hasKidsPlayArea: boolean;     // 是否有儿童游乐区
+  phone?: string;
+  images: string[];
   tags: string[];
   dataSource: "ai_draft_v1";
 }
@@ -172,8 +204,36 @@ function parseLocation(location: string): { lat: number; lng: number } {
   return { lng: Number(lngStr), lat: Number(latStr) };
 }
 
+/** 从高德 raw.photos 里提取 URL 数组。空数组 fallback []。
+ *  高德 photos 项是 { title, url, provider } 形态；我们只取 url。
+ */
+function extractPhotos(raw: RawEntry["raw"]): string[] {
+  if (!raw.photos || !Array.isArray(raw.photos)) return [];
+  return raw.photos
+    .map((p: any) => (typeof p?.url === "string" ? p.url : null))
+    .filter((u: string | null): u is string => u !== null);
+}
+
 function slugify(name: string): string {
-  const map: Record<string, string> = { 北京: "beijing", 上海: "shanghai", 广州: "guangzhou" };
+  const map: Record<string, string> = {
+    北京: "beijing", 上海: "shanghai", 广州: "guangzhou",
+    深圳: "shenzhen", 成都: "chengdu", 杭州: "hangzhou",
+    西安: "xian", 南京: "nanjing", 苏州: "suzhou",
+    青岛: "qingdao", 厦门: "xiamen", 重庆: "chongqing",
+    武汉: "wuhan", 天津: "tianjin", 大连: "dalian",
+    沈阳: "shenyang", 长沙: "changsha", 郑州: "zhengzhou",
+    济南: "jinan", 昆明: "kunming", 南宁: "nanning",
+    海口: "haikou", 三亚: "sanya", 福州: "fuzhou",
+    温州: "wenzhou", 宁波: "ningbo", 合肥: "hefei",
+    南昌: "nanchang", 佛山: "fushun", 东莞: "dongguan",
+    珠海: "zhuhai", 汕头: "shantou", 丽江: "lijiang",
+    大理: "dali", 拉萨: "lhasa", 西双版纳: "xishuangbanna",
+    长春: "changchun", 哈尔滨: "haerbin", 秦皇岛: "qinhuangdao",
+    北戴河: "beidaihe", 石家庄: "shijiazhuang", 太原: "taiyuan",
+    兰州: "lanzhou", 西宁: "xining", 洛阳: "luoyang",
+    开封: "kaifeng", 黄山: "huangshan", 宜昌: "wuhanguanggu",
+    峨眉山: "chongqing-emei", 台北: "taipei", 香港: "hongkong",
+  };
   return map[name] ?? name.toLowerCase().replace(/\s+/g, "-");
 }
 
@@ -191,6 +251,7 @@ async function enrichSpot(entry: RawEntry): Promise<EnrichedSpot> {
     spotType: entry.raw.typecode,
     costText: entry.raw.business?.cost,
     openHours: entry.raw.business?.open_time,
+    images: extractPhotos(entry.raw),
     kidHook: g.kidHook,
     momHook: g.momHook,
     dadHook: g.dadHook,
@@ -217,6 +278,7 @@ async function enrichRestaurant(entry: RawEntry): Promise<EnrichedRestaurant> {
     hasKidsMenu: /肯德基|麦当劳|必胜客/i.test(entry.raw.name),
     cuisine: entry.raw.business?.cost,
     avgPricePerPerson: parseCost(entry.raw.business?.cost),
+    images: extractPhotos(entry.raw),
     tags: ["ai_draft_v1"],
     dataSource: "ai_draft_v1",
   };
@@ -242,6 +304,7 @@ async function enrichHotel(entry: RawEntry): Promise<EnrichedHotel> {
     hasKidsPool: /儿童|亲子|度假/i.test(entry.raw.name),
     hasKidsBreakfast: /五星|豪华|国际|度假|儿童|亲子/i.test(entry.raw.name),
     avgPricePerNight: parseCost(entry.raw.business?.cost),
+    images: extractPhotos(entry.raw),
     tags: ["ai_draft_v1"],
     dataSource: "ai_draft_v1",
   };
@@ -257,6 +320,41 @@ async function enrichPark(entry: RawEntry): Promise<EnrichedPark> {
     lat,
     lng,
     hasKidsPlayArea: /儿童|亲子|游园|游乐园/i.test(entry.raw.name),
+    images: extractPhotos(entry.raw),
+    tags: ["ai_draft_v1"],
+    dataSource: "ai_draft_v1",
+  };
+}
+
+async function enrichHospital(entry: RawEntry): Promise<EnrichedHospital> {
+  const { lat, lng } = parseLocation(entry.raw.location);
+  return {
+    cityId: entry.cityId,
+    amapPoiId: entry.raw.id,
+    name: entry.raw.name,
+    address: entry.raw.address,
+    lat,
+    lng,
+    hasPediatrics: /儿童|儿科|妇幼|小儿|儿童医院|儿童保健/i.test(entry.raw.name),
+    phone: entry.raw.tel,
+    images: extractPhotos(entry.raw),
+    tags: ["ai_draft_v1"],
+    dataSource: "ai_draft_v1",
+  };
+}
+
+async function enrichMall(entry: RawEntry): Promise<EnrichedMall> {
+  const { lat, lng } = parseLocation(entry.raw.location);
+  return {
+    cityId: entry.cityId,
+    amapPoiId: entry.raw.id,
+    name: entry.raw.name,
+    address: entry.raw.address,
+    lat,
+    lng,
+    hasKidsPlayArea: /儿童|亲子|亲子乐园|儿童乐园|游乐/i.test(entry.raw.name),
+    phone: entry.raw.tel,
+    images: extractPhotos(entry.raw),
     tags: ["ai_draft_v1"],
     dataSource: "ai_draft_v1",
   };
@@ -267,7 +365,7 @@ async function processCity(citySlug: string): Promise<void> {
   const enrichedDir = path.join(ENRICHED_ROOT, citySlug);
   await fs.mkdir(enrichedDir, { recursive: true });
 
-  const subtypes = ["spot", "restaurant", "hotel", "park"];
+  const subtypes = ["spot", "restaurant", "hotel", "park", "hospital", "mall"];
   for (const st of subtypes) {
     const rawPath = path.join(cityDir, `${st}.json`);
     let entries: RawEntry[] = [];
@@ -277,13 +375,15 @@ async function processCity(citySlug: string): Promise<void> {
       continue;
     }
 
-    const out: (EnrichedSpot | EnrichedRestaurant | EnrichedHotel | EnrichedPark)[] = [];
+    const out: (EnrichedSpot | EnrichedRestaurant | EnrichedHotel | EnrichedPark | EnrichedHospital | EnrichedMall)[] = [];
     for (const entry of entries) {
       try {
         if (st === "spot") out.push(await enrichSpot(entry));
         else if (st === "restaurant") out.push(await enrichRestaurant(entry));
         else if (st === "hotel") out.push(await enrichHotel(entry));
         else if (st === "park") out.push(await enrichPark(entry));
+        else if (st === "hospital") out.push(await enrichHospital(entry));
+        else if (st === "mall") out.push(await enrichMall(entry));
       } catch (e) {
         console.warn(`[02] ${citySlug}/${st}/${entry.raw.name} skip：${(e as Error).message}`);
       }

@@ -16,6 +16,7 @@
     "db:check-drift": "prisma migrate diff --from-url \"$DATABASE_URL\" --to-schema-datamodel prisma/schema.prisma --exit-code"
   },
   "dependencies": {
+    "@amap/amap-jsapi-loader": "^1.0.1",
     "@prisma/client": "^5.22.0",
     "@radix-ui/react-slot": "^1.2.4",
     "@tiptap/extension-image": "^2.27.2",

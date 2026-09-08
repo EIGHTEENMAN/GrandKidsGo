@@ -23,9 +23,23 @@ const ASSETS_ROOT = path.join(
 /** 高德返回的 city 中文名 → raw 目录的拼音 slug。保持脚本不依赖 city 名拼写。 */
 function slugify(name: string): string {
   const map: Record<string, string> = {
-    北京: "beijing",
-    上海: "shanghai",
-    广州: "guangzhou",
+    北京: "beijing", 上海: "shanghai", 广州: "guangzhou",
+    深圳: "shenzhen", 成都: "chengdu", 杭州: "hangzhou",
+    西安: "xian", 南京: "nanjing", 苏州: "suzhou",
+    青岛: "qingdao", 厦门: "xiamen", 重庆: "chongqing",
+    武汉: "wuhan", 天津: "tianjin", 大连: "dalian",
+    沈阳: "shenyang", 长沙: "changsha", 郑州: "zhengzhou",
+    济南: "jinan", 昆明: "kunming", 南宁: "nanning",
+    海口: "haikou", 三亚: "sanya", 福州: "fuzhou",
+    温州: "wenzhou", 宁波: "ningbo", 合肥: "hefei",
+    南昌: "nanchang", 佛山: "fushun", 东莞: "dongguan",
+    珠海: "zhuhai", 汕头: "shantou", 丽江: "lijiang",
+    大理: "dali", 拉萨: "lhasa", 西双版纳: "xishuangbanna",
+    长春: "changchun", 哈尔滨: "haerbin", 秦皇岛: "qinhuangdao",
+    北戴河: "beidaihe", 石家庄: "shijiazhuang", 太原: "taiyuan",
+    兰州: "lanzhou", 西宁: "xining", 洛阳: "luoyang",
+    开封: "kaifeng", 黄山: "huangshan", 宜昌: "wuhanguanggu",
+    峨眉山: "chongqing-emei", 台北: "taipei", 香港: "hongkong",
   };
   return map[name] ?? name.toLowerCase().replace(/\s+/g, "-");
 }
@@ -53,6 +67,7 @@ async function pullOne(city: typeof CITY_META[number]): Promise<Record<string, P
   const fetchedAt = new Date().toISOString();
   const all: PoiEntry[] = [];
 
+  // 关键词搜索 — 按主题拉 POI（亲子/儿童/博物馆/动物园...）
   for (const kw of city.keywords) {
     let page = 1;
     while (true) {
@@ -83,8 +98,55 @@ async function pullOne(city: typeof CITY_META[number]): Promise<Record<string, P
       }
       if (items.length < 25) break;
       page += 1;
-      // 高德每页 25；防止无限循环，加个硬上限
-      if (page > 10) break;
+      // 高德 web 服务 API 实测有效分页：≤8 页 × 25 = 200 POI / 关键词，超过返回空。
+      // 设 25 是为了未来高德调整分页限制仍兼容；脚本会在 items.length===0 时提前 break
+      if (page > 25) break;
+    }
+  }
+
+  // 按大类(types) 搜索 — 关键词之外的"全品类亲子"POI 拉取
+  // 不传 keywords（空字符串）会按类型全量返回；与关键词搜索合并去重
+  const TYPE_CATEGORIES = [
+    "050000", // 餐饮服务
+    "060000", // 购物服务
+    "080000", // 体育休闲服务（含公园/游乐场）
+    "090000", // 医疗保健服务
+    "100000", // 住宿服务
+    "110000", // 风景名胜
+    "140000", // 科教文化服务（含博物馆/科技馆/图书馆）
+  ];
+  for (const tc of TYPE_CATEGORIES) {
+    let page = 1;
+    while (true) {
+      let items: Awaited<ReturnType<typeof client.poiSearch>> = [];
+      try {
+        items = await (client as any).poiSearch({
+          keywords: "",
+          types: tc,
+          city: city.name,
+          offset: 25,
+          page,
+          extensions: "all",
+        });
+      } catch (e) {
+        console.warn(`[01] ${city.name}/type=${tc} p${page} 失败：${(e as Error).message}`);
+        break;
+      }
+      if (items.length === 0) break;
+      for (const item of items) {
+        const subtype = inferSubtypeFromType(item.typecode);
+        if (!subtype) continue;
+        all.push({
+          cityId: city.id,
+          cityName: city.name,
+          raw: item,
+          keywords: `type:${tc}`,
+          fetchedAt,
+        });
+      }
+      if (items.length < 25) break;
+      page += 1;
+      if (page > 25) break;
     }
   }
   return dedupeByPoiId(all);

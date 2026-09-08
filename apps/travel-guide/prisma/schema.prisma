@@ -42,6 +42,7 @@ model City {
   plans        PlanRecord[]
   guides       Guide[]
   records      TravelRecord[]
+  Footprint    Footprint[]
 
   @@map("cities")
 }
@@ -80,6 +81,7 @@ model Spot {
   ratings      ChildRating[]
   reviews      SpotReview[]
   expectations ChildExpectation[]
+  Footprint    Footprint[]
 
   @@unique([cityId, name])
   @@index([cityId])
@@ -430,35 +432,36 @@ model ChildExpectation {
 // S-3: 基础字段（nickname/gender/birthDate/avatar）在 auth-service 是 SSOT，
 // 本表只缓存 + 扩展字段。name/nickname 改为可选，未填时由 GET 合并 auth 字段返回。
 model ChildProfile {
-  childId             String    @id @map("child_id")
-  userId              String    @map("user_id")
+  childId             String      @id @map("child_id")
+  userId              String      @map("user_id")
   name                String?
   nickname            String?
   avatar              String?
   gender              String?
-  birthDate           DateTime? @map("birth_date")
-  heightCm            Float?    @map("height_cm")
-  weightKg            Float?    @map("weight_kg")
-  likes               String[]  @map("likes")
-  activities          String[]  @map("activities")
-  dislikes            String[]  @map("dislikes")
-  activeHoursPerDay   Float?    @map("active_hours_per_day")
-  needNap             String    @default("optional") @map("need_nap")
-  earlyOrLate         String?   @map("early_or_late")
-  hasMotionSickness   Boolean   @default(false) @map("has_motion_sickness")
-  allergies           String[]  @map("allergies")
-  isShyWithStrangers  Boolean   @default(false) @map("is_shy_with_strangers")
-  healthNotes         String?   @map("health_notes")
+  birthDate           DateTime?   @map("birth_date")
+  heightCm            Float?      @map("height_cm")
+  weightKg            Float?      @map("weight_kg")
+  likes               String[]    @map("likes")
+  activities          String[]    @map("activities")
+  dislikes            String[]    @map("dislikes")
+  activeHoursPerDay   Float?      @map("active_hours_per_day")
+  needNap             String      @default("optional") @map("need_nap")
+  earlyOrLate         String?     @map("early_or_late")
+  hasMotionSickness   Boolean     @default(false) @map("has_motion_sickness")
+  allergies           String[]    @map("allergies")
+  isShyWithStrangers  Boolean     @default(false) @map("is_shy_with_strangers")
+  healthNotes         String?     @map("health_notes")
   // 2026-07-31 v1.0 Phase A：扩展字段（票务/推车/饮食/怕动物/温度）
-  hasStudentCard      Boolean   @default(false) @map("has_student_card")
-  idCardPrefix        String?   @map("id_card_prefix")
-  needsChildTicket    Boolean   @default(true) @map("needs_child_ticket")
-  strollerWidthCm     Int?      @map("stroller_width_cm")
-  comfortableTempC    String?   @map("comfortable_temp_c")
-  fearsAnimals        Boolean   @default(false) @map("fears_animals")
-  dietaryRestrictions String[]  @default([]) @map("dietary_restrictions")
-  createdAt           DateTime  @default(now()) @map("created_at")
-  updatedAt           DateTime  @updatedAt @map("updated_at")
+  hasStudentCard      Boolean     @default(false) @map("has_student_card")
+  idCardPrefix        String?     @map("id_card_prefix")
+  needsChildTicket    Boolean     @default(true) @map("needs_child_ticket")
+  strollerWidthCm     Int?        @map("stroller_width_cm")
+  comfortableTempC    String?     @map("comfortable_temp_c")
+  fearsAnimals        Boolean     @default(false) @map("fears_animals")
+  dietaryRestrictions String[]    @default([]) @map("dietary_restrictions")
+  createdAt           DateTime    @default(now()) @map("created_at")
+  updatedAt           DateTime    @updatedAt @map("updated_at")
+  Footprint           Footprint[]
 
   @@unique([userId, childId])
   @@index([userId])
@@ -507,11 +510,11 @@ model Guide {
   createdAt          DateTime  @default(now()) @map("created_at")
   updatedAt          DateTime  @updatedAt @map("updated_at")
 
-  city        City?        @relation(fields: [cityId], references: [id])
-  sourcePlan  PlanRecord?  @relation("PlanToGuide", fields: [sourcePlanRecordId], references: [id])
-  forkedPlans PlanRecord[] @relation("GuideFork")
-  saves       GuideSave[]
-  likes       GuideLike[]
+  city          City?        @relation(fields: [cityId], references: [id])
+  sourcePlan    PlanRecord?  @relation("PlanToGuide", fields: [sourcePlanRecordId], references: [id])
+  forkedPlans   PlanRecord[] @relation("GuideFork")
+  saves         GuideSave[]
+  likes         GuideLike[]
   galleryImages PlanMedia[]
 
   @@index([status, publishedAt])
@@ -1121,4 +1124,44 @@ model PoemLocation {
   @@index([placeType, placeId])
   @@index([cityId])
   @@map("poem_locations")
+}
+
+// =============================================================================
+// 足迹地图（v2.1 — 后续等 AMAP_JS_KEY 上线前端地图组件）
+// =============================================================================
+// 三态：visited（去过）/ wishlist（想去）/ childWishlist（孩子想去）
+// 来源：manual | from_plan (PlanRecord.status='completed' 自动) | from_guide（用户攻略 fork）
+
+model Footprint {
+  id         String    @id @default(uuid())
+  userId     String    @map("user_id")
+  childId    String?   @map("child_id") // 关联到 ChildProfile.childId（可选，单孩家庭可空）
+  cityId     String?   @map("city_id") // 城市级足迹
+  spotId     String?   @map("spot_id") // 景点级足迹
+  // 冗余字段，避免每次 JOIN City/Spot 查 lat/lng/name
+  placeName  String?   @map("place_name")
+  lat        Float?
+  lng        Float?
+  // 三态字段：visited | wishlist | child_wishlist
+  state      String    @default("visited")
+  // 来源：manual | from_plan | from_guide
+  source     String    @default("manual")
+  sourceId   String?   @map("source_id") // planRecordId / guideId
+  checkinAt  DateTime? @map("checkin_at") // 去过时的时间
+  note       String? // 用户备注（如"国庆带娃"）
+  visibility String    @default("private") // private | public | community
+  createdAt  DateTime  @default(now()) @map("created_at")
+  updatedAt  DateTime  @updatedAt @map("updated_at")
+
+  city  City?         @relation(fields: [cityId], references: [id])
+  spot  Spot?         @relation(fields: [spotId], references: [id])
+  child ChildProfile? @relation(fields: [childId], references: [childId])
+
+  @@unique([userId, childId, cityId, spotId, state], name: "footprint_uniq")
+  @@index([userId, state])
+  @@index([cityId])
+  @@index([spotId])
+  @@index([childId])
+  @@index([createdAt(sort: Desc)])
+  @@map("footprints")
 }

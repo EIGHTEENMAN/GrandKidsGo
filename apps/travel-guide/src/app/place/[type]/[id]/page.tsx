@@ -94,7 +94,7 @@ interface NearbyItem {
 const NEARBY_CATEGORIES: Array<{ key: string; label: string; Icon: any; tone: string }> = [
   { key: 'KID_RESTAURANT', label: '亲子餐厅', Icon: ForkIcon, tone: 'text-pink-600 bg-pink-50' },
   { key: 'NURSING_ROOM', label: '母婴室', Icon: NursingIcon, tone: 'text-pink-500 bg-pink-50' },
-  { key: 'TAP_WATER', label: '直饮水点', Icon: WaterDropIcon, tone: 'text-cyan-600 bg-cyan-50' },
+  { key: 'TAP_WATER', label: '直饮水点', Icon: WaterDropIcon, tone: 'text-cyan-600 bg-cyan-600/10' },
   { key: 'CONVENIENCE', label: '便利店', Icon: StoreIcon, tone: 'text-blue-600 bg-blue-50' },
   { key: 'TOY_STORE', label: '玩具书店（乐高/泡泡玛特/绘本）', Icon: SparklesIcon, tone: 'text-purple-600 bg-purple-50' },
   { key: 'BOOKSTORE', label: '儿童书店/绘本馆', Icon: GuidebookIcon, tone: 'text-amber-600 bg-amber-50' },
@@ -104,7 +104,8 @@ const NEARBY_CATEGORIES: Array<{ key: string; label: string; Icon: any; tone: st
   { key: 'DIDI_PICKUP', label: '网约车点', Icon: DiDiIcon, tone: 'text-blue-600 bg-blue-50' },
   { key: 'TAXI_STAND', label: '出租车候车区', Icon: StoreIcon, tone: 'text-slate-600 bg-slate-50' },
   { key: 'KID_HOTEL', label: '亲子酒店', Icon: HotelRoomIcon, tone: 'text-indigo-600 bg-indigo-50' },
-  { key: 'STROLLER_FRIENDLY', label: '婴儿车可达路径', Icon: StrollerIcon, tone: 'text-teal-600 bg-teal-50' },
+  // 13-collect-nearby 高德采集把"停车场"也映射到此 key（共享通道），label 同时表达两层
+  { key: 'STROLLER_FRIENDLY', label: '停车场 / 婴儿车可达', Icon: StrollerIcon, tone: 'text-teal-600 bg-teal-50' },
 ];
 
 const MONTH_NAMES = ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'];
@@ -593,7 +594,7 @@ export default function PlaceDetailPage() {
                             {it.extra && Object.keys(it.extra as Record<string, unknown>).length > 0 && (
                               <div className="text-xs text-gray-500 mt-0.5 truncate">
                                 {Object.entries(it.extra as Record<string, unknown>).slice(0, 2).map(([k, v]) => {
-                                  const lm: Record<string, string> = { hasKidsMenu: '儿童菜单', avgPrice: '人均', isFree: '免费', hasHotWater: '热水', hasRamp: '无障碍', hasKidsPool: '儿童泳池', hasKidsBreakfast: '儿童早餐', hasFamilyRoom: '家庭房', hasLego: '乐高', hasPopMart: '泡泡玛特', hasMilkPowder: '奶粉', hasDiapers: '尿不湿', hasChildMedicine: '儿童用药', hasER: '急诊', hasPlayArea: '儿童乐园', notes: '备注' };
+                                  const lm: Record<string, string> = { hasKidsMenu: '儿童菜单', avgPrice: '人均', isFree: '免费', hasHotWater: '热水', hasRamp: '无障碍', hasKidsPool: '儿童泳池', hasKidsBreakfast: '儿童早餐', hasFamilyRoom: '家庭房', hasLego: '乐高', hasPopMart: '泡泡玛特', hasMilkPowder: '奶粉', hasDiapers: '尿不湿', hasChildMedicine: '儿童用药', hasER: '急诊', hasPlayArea: '儿童乐园', notes: '备注', isPediatrics: '儿科', address: '地址' };
                                   const d = lm[k] ?? k;
                                   return `${d}：${typeof v === 'boolean' ? (v ? '有' : '无') : v}`;
                                 }).join(' · ')}

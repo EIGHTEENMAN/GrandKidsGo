@@ -89,17 +89,30 @@ export class AmapClient {
     page?: number;
     signal?: AbortSignal;
   }): Promise<AmapPoiRaw[]> {
-    return this.poiSearch({
+    if (!this.apiKey) {
+      throw new AmapApiError(401, "API key 未配置（AMAP_API_KEY）");
+    }
+    this.track();
+    const qs = new URLSearchParams({
+      key: this.apiKey,
       keywords: params.keywords,
-      city: params.location,
-      types: params.types,
-      offset: params.offset,
-      page: params.page,
-      ...(params.radius ? {} : {}),
-      // around 用不同 endpoint，但因为高德差不多，简化走 poiSearch 即可
-      // 实际生产可分 endpoint
-      signal: params.signal,
+      location: params.location,
+      offset: String(params.offset ?? 20),
+      page: String(params.page ?? 1),
+      extensions: "base",
+      ...(params.types ? { types: params.types } : {}),
+      ...(params.radius ? { radius: String(params.radius) } : {}),
     });
+    const url = `https://restapi.amap.com/v3/place/around?${qs.toString()}`;
+    const res = await fetch(url, { signal: params.signal });
+    if (!res.ok) {
+      throw new AmapApiError(res.status, await res.text().catch(() => ""));
+    }
+    const data = (await res.json()) as AmapResponse<AmapPoiRaw>;
+    if (data.status !== "1") {
+      throw new AmapApiError(data.status, data.info);
+    }
+    return data.pois ?? [];
   }
 
   async poiSearch(params: AmapPoiSearchParams): Promise<AmapPoiRaw[]> {

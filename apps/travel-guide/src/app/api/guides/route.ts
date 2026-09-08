@@ -91,9 +91,26 @@ export async function POST(req: NextRequest) {
       })),
     ];
 
+    // 去重：同一篇 guide 内，按 text 查 childSaying 是否已存在（防重复 POST 反复插入）
+    // 同时获取所有现有 text（一次性 IN 查询避免每条循环单独查）
+    const candidateTexts = allSayings
+      .map((s) => (s.text ?? "").trim().slice(0, 200))
+      .filter(Boolean);
+    const existingRows = candidateTexts.length
+      ? await prisma.childSaying.findMany({
+          where: { sourceGuideId: guide.id, text: { in: candidateTexts } },
+          select: { text: true },
+        })
+      : [];
+    const existingTextSet = new Set(existingRows.map((r) => r.text));
+    let autoExtractedInserted = 0;
+    let manualInserted = 0;
+
     for (const s of allSayings) {
       const text = (s.text ?? "").trim().slice(0, 200);
       if (!text) continue;
+      if (existingTextSet.has(text)) continue;
+      existingTextSet.add(text); // 同一请求内的重复也防住
       await prisma.childSaying.create({
         data: {
           userId,
@@ -107,7 +124,12 @@ export async function POST(req: NextRequest) {
           shareScope: "private",
         },
       });
+      if (s.source === "auto_extract") autoExtractedInserted++;
+      else manualInserted++;
     }
+    console.log(
+      `[guides] ${guide.id} childSayings inserted: ${manualInserted} manual + ${autoExtractedInserted} auto_extract (candidates=${allSayings.length})`,
+    );
 
     // 自动提取：从 contentHtml 中提取图片 → 录入儿童画廊
     // 仅在未被 hard reject 时执行（rejected 的攻略不提取）

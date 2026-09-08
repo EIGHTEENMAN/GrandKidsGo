@@ -1,10 +1,13 @@
 // POST /api/plans/:id/ratings — 写入 ChildRating
 // 详见 项目建设方案/走天下实施方案-v1.5.md 第十四节 第三段（v1.5 多维度结构化）
 // 2026-07-31 v1.0 Phase B：加 4 字段（favoriteMoment / wishToReturn / parentJoy / cryTriggers）
+// 2026-09-04 v2.1：plan 仍是 draft/confirmed/active 时首次评分自动 completed + backfill footprints
 
 import { NextRequest, NextResponse } from "next/server";
 import prisma from "@/lib/prisma";
 import { recomputeChildFeelingProfile } from "@/lib/child-profile-aggregate";
+import { backfillFootprintsForCompletedPlan } from "@/lib/backfill-footprints";
+import { checkBadgesFor } from "@/lib/badge-engine";
 
 export const dynamic = "force-dynamic";
 
@@ -33,7 +36,7 @@ export async function POST(
   const planId = params.id;
   const plan = await prisma.planRecord.findUnique({
     where: { id: planId },
-    select: { id: true, childAges: true },
+    select: { id: true, userId: true, status: true, childAges: true },
   });
   if (!plan) {
     return NextResponse.json(
@@ -101,6 +104,22 @@ export async function POST(
   // 同步重算感受画像聚合
   try { await recomputeChildFeelingProfile(body.childId); }
   catch (e) { console.error('[ratings] recompute profile failed', e); }
+
+  // v2.1：首次评分（plan 仍是 draft/confirmed/active）触发自动 completed + backfill
+  if (plan.status !== 'completed') {
+    try {
+      await prisma.planRecord.update({
+        where: { id: planId },
+        data: { status: 'completed' },
+      });
+      const fpResult = await backfillFootprintsForCompletedPlan(planId);
+      console.log(`[ratings] plan=${planId} auto-completed + footprint=${fpResult.cityFootprintsCreated}c/${fpResult.spotFootprintsCreated}s`);
+      // 异步勋章
+      checkBadgesFor(plan.userId, 'plan_saved', { planId }).catch(() => {});
+    } catch (e) {
+      console.error('[ratings] auto-complete backfill failed:', e);
+    }
+  }
 
   return NextResponse.json({ id: created.id });
 }

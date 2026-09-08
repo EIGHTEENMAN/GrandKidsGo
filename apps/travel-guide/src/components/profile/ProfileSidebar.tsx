@@ -24,7 +24,7 @@ const ITEMS = [
   { href: '/profile/children', label: '孩子档案', icon: BabyIcon, countKey: 'children' as const },
   { href: '/profile/sayings', label: '孩子说', icon: SparklesIcon, countKey: 'sayings' as const },
   { href: '/profile/badges', label: '勋章墙', icon: TrophyIcon, countKey: 'badges' as const },
-  { href: '/profile/footprints', label: '足迹地图', icon: MapPinIcon, disabled: true },
+  { href: '/profile/footprints', label: '足迹地图', icon: MapPinIcon },
   { href: '/profile/settings', label: '设置', icon: SettingsIcon },
 ];
 
