@@ -3,6 +3,9 @@ import { ref, computed } from 'vue'
 import { onShow } from '@dcloudio/uni-app'
 import { logout } from './auth'
 import { getProgress, getAppRanking } from '@/stores/progress'
+import SkeletonCard from '@/components/SkeletonCard.vue'
+import { shareContent } from '@/utils/native'
+import { debounce } from '@/utils/debounce'
 
 const isLoggedIn = ref(false)
 const userInfo = ref<any>(null)
@@ -71,6 +74,12 @@ const achievements = computed(() => {
     { id: 'subject_general', icon: '🌍', name: '通识入门', unlocked: subjectItems('general') >= 10 },
     { id: 'all_subjects', icon: '🦸', name: '全能学霸', unlocked: hasSubject('poetry') && hasSubject('classics') && hasSubject('general') },
   ]
+})
+
+const unlockedCount = computed(() => achievements.value.filter(a => a.unlocked).length)
+const achProgressPct = computed(() => {
+  if (achievements.value.length === 0) return 0
+  return Math.round((unlockedCount.value / achievements.value.length) * 100)
 })
 
 // Generate calendar days (current month)
@@ -222,7 +231,7 @@ function goLogin() {
   uni.navigateTo({ url: '/pages/mine/login' })
 }
 
-function handleLogout() {
+const handleLogout = debounce(function () {
   uni.showModal({
     title: '提示',
     content: '确定退出登录吗？',
@@ -234,7 +243,15 @@ function handleLogout() {
       }
     }
   })
-}
+}, 800)
+
+const handleShare = debounce(function () {
+  shareContent({
+    title: '童慧行 — 孩子说好才是真的好',
+    text: '读万卷书，行万里路。给孩子一个专属的学习+旅行乐园：国学/诗词/通识/英语/亲子旅行攻略。',
+    url: 'https://grandand.com/m',
+  })
+}, 800)
 </script>
 
 <template>
@@ -258,6 +275,11 @@ function handleLogout() {
           <text class="profile-badge">登录后享受完整功能</text>
         </view>
         <text class="profile-arrow">›</text>
+      </view>
+      <view v-if="!isLoggedIn" class="profile-benefits">
+        <text class="benefit-item">🏆 解锁勋章墙</text>
+        <text class="benefit-item">📊 查看学习报告</text>
+        <text class="benefit-item">🔥 每日打卡挑战</text>
       </view>
     </view>
 
@@ -303,7 +325,9 @@ function handleLogout() {
     <view v-if="isLoggedIn" class="report-section">
       <view class="report-header">📊 学习报告</view>
 
-      <view v-if="reportLoading" class="report-loading">加载中...</view>
+      <view v-if="reportLoading" class="report-loading-skel">
+        <SkeletonCard :rows="3" />
+      </view>
       <view v-else-if="!learningReport" class="report-loading">暂无数据，快去学习吧！</view>
 
       <!-- Calendar -->
@@ -348,19 +372,7 @@ function handleLogout() {
         </view>
       </view>
 
-      <!-- Achievements -->
-      <view v-if="learningReport" class="report-achievements">
-        <view class="ach-header">
-          <text>成就墙</text>
-          <text class="ach-progress">{{ achievements.filter(a => a.unlocked).length }}/{{ achievements.length }}</text>
-        </view>
-        <view class="ach-grid">
-          <view v-for="a in achievements" :key="a.id" class="ach-badge" :class="a.unlocked ? 'ach-unlocked' : 'ach-locked'">
-            <text class="ach-icon">{{ a.unlocked ? a.icon : '🔒' }}</text>
-            <text class="ach-name">{{ a.name }}</text>
-          </view>
-        </view>
-      </view>
+      <!-- Achievements (已独立成顶级模块，参见下方) -->
 
       <!-- Learning Path -->
       <view class="report-path">
@@ -388,6 +400,25 @@ function handleLogout() {
                 <text v-if="!item.unlocked && !item.isCurrent" class="path-lock-msg">学完 {{ item.minItems }} 项后解锁</text>
               </view>
             </view>
+          </view>
+        </view>
+      </view>
+
+      <!-- Achievements Wall (顶级子模块) -->
+      <view v-if="achievements.length > 0" class="achievements-section">
+        <view class="ach-section-header">
+          <view class="ach-section-title-row">
+            <text class="ach-section-title">🏆 勋章墙</text>
+            <text class="ach-section-count">{{ unlockedCount }}/{{ achievements.length }}</text>
+          </view>
+          <view class="ach-progress-bar">
+            <view class="ach-progress-fill" :style="{ width: achProgressPct + '%' }"></view>
+          </view>
+        </view>
+        <view class="ach-grid">
+          <view v-for="a in achievements" :key="a.id" class="ach-badge" :class="a.unlocked ? 'ach-unlocked' : 'ach-locked'">
+            <text class="ach-icon">{{ a.unlocked ? a.icon : '🔒' }}</text>
+            <text class="ach-name">{{ a.name }}</text>
           </view>
         </view>
       </view>
@@ -434,6 +465,14 @@ function handleLogout() {
       <button class="logout-btn" @click="handleLogout" hover-class="hover-logout">退出登录</button>
     </view>
 
+    <!-- Share -->
+    <view class="share-section">
+      <button class="share-btn" @click="handleShare" hover-class="hover-share">
+        <text class="share-icon">📤</text>
+        <text>分享给朋友</text>
+      </button>
+    </view>
+
     <!-- Version -->
     <view class="version">
       <text>童慧行 v1.0.0</text>
@@ -450,6 +489,15 @@ function handleLogout() {
   padding: 32rpx; border: 1rpx solid #e2e8f0;
 }
 .profile-info, .profile-login { display: flex; align-items: center; }
+.profile-benefits {
+  display: flex; flex-wrap: wrap; gap: 8rpx;
+  margin-top: 16rpx; padding-top: 16rpx;
+  border-top: 1rpx dashed #e2e8f0;
+}
+.benefit-item {
+  font-size: 22rpx; color: #475569; padding: 6rpx 14rpx;
+  background: #f1f5f9; border-radius: 12rpx;
+}
 .profile-avatar {
   font-size: 56rpx; width: 88rpx; height: 88rpx;
   display: flex; align-items: center; justify-content: center;
@@ -514,6 +562,17 @@ function handleLogout() {
 /* Version */
 .version { text-align: center; padding: 40rpx; font-size: 22rpx; color: #cbd5e1; }
 
+/* Share */
+.share-section { margin: 24rpx 24rpx 0; }
+.share-btn {
+  width: 100%; padding: 24rpx; background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+  color: #1e40af; border: 1rpx solid #bfdbfe; border-radius: 20rpx;
+  font-size: 28rpx; font-weight: 600;
+  display: flex; align-items: center; justify-content: center; gap: 12rpx;
+}
+.hover-share { background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%); }
+.share-icon { font-size: 32rpx; }
+
 /* Report Section */
 .report-section {
   margin: 0 24rpx 24rpx; background: white; border-radius: 24rpx;
@@ -521,6 +580,7 @@ function handleLogout() {
 }
 .report-header { font-size: 28rpx; font-weight: 700; color: #0f172a; margin-bottom: 16rpx; }
 .report-loading { text-align: center; padding: 24rpx; color: #94a3b8; font-size: 24rpx; }
+.report-loading-skel { padding: 8rpx 0; }
 
 /* Calendar */
 .report-calendar { margin-bottom: 20rpx; }
@@ -565,17 +625,42 @@ function handleLogout() {
 
 /* Achievements */
 .report-achievements { padding-top: 16rpx; border-top: 1rpx solid #f1f5f9; }
-.ach-header { display: flex; justify-content: space-between; align-items: center; font-size: 24rpx; font-weight: 600; color: #0f172a; margin-bottom: 12rpx; }
-.ach-progress { font-size: 22rpx; font-weight: 500; color: #94a3b8; }
-.ach-grid { display: flex; flex-wrap: wrap; gap: 8rpx; }
-.ach-badge {
-  width: calc(20% - 8rpx); text-align: center; padding: 12rpx 4rpx;
-  border-radius: 12rpx;
+/* Achievements Wall (顶级子模块) */
+.achievements-section {
+  margin-top: 32rpx; padding: 24rpx;
+  background: linear-gradient(135deg, #fef9c3 0%, #fef08a 100%);
+  border-radius: 24rpx; border: 1rpx solid #fde047;
 }
-.ach-badge.ach-unlocked { background: #f0f9ff; }
-.ach-badge.ach-locked { opacity: 0.4; }
-.ach-icon { font-size: 40rpx; display: block; line-height: 1.2; margin-bottom: 4rpx; }
-.ach-name { font-size: 18rpx; color: #475569; display: block; }
+.ach-section-header { margin-bottom: 16rpx; }
+.ach-section-title-row {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-bottom: 12rpx;
+}
+.ach-section-title { font-size: 28rpx; font-weight: 700; color: #854d0e; }
+.ach-section-count {
+  font-size: 22rpx; color: #92400e; font-weight: 600;
+  background: white; padding: 4rpx 14rpx; border-radius: 14rpx;
+  border: 1rpx solid #fde047;
+}
+.ach-progress-bar {
+  height: 10rpx; background: #fde68a; border-radius: 5rpx; overflow: hidden;
+}
+.ach-progress-fill {
+  height: 100%; background: linear-gradient(90deg, #f59e0b 0%, #d97706 100%);
+  border-radius: 5rpx; transition: width 0.4s ease;
+}
+.ach-grid { display: flex; flex-wrap: wrap; gap: 10rpx; }
+.ach-badge {
+  width: calc(20% - 8rpx); padding: 16rpx 8rpx;
+  background: white; border-radius: 16rpx;
+  display: flex; flex-direction: column; align-items: center;
+  border: 1rpx solid #fcd34d;
+  transition: transform 0.15s;
+}
+.ach-badge.ach-unlocked:active { transform: scale(0.95); }
+.ach-badge.ach-locked { background: #fef3c7; opacity: 0.55; }
+.ach-icon { font-size: 36rpx; display: block; line-height: 1.2; margin-bottom: 4rpx; }
+.ach-name { font-size: 18rpx; color: #475569; display: block; text-align: center; }
 .ach-locked .ach-name { color: #94a3b8; }
 
 /* Hover */

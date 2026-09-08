@@ -7,6 +7,7 @@
 
 import { ref, onMounted } from 'vue'
 import { TRAVEL_API_BASE } from '@/utils/travel-api'
+import SkeletonCard from '@/components/SkeletonCard.vue'
 
 const SCOPES: { key: 'follow' | 'all'; label: string }[] = [
   { key: 'follow', label: '关注流' },
@@ -89,7 +90,7 @@ function firstChar(name: string | null | undefined): string {
     </view>
 
     <view v-if="loading" class="loading">
-      <text class="loading-text">加载中…</text>
+      <SkeletonCard :rows="4" />
     </view>
     <view v-else-if="errMsg" class="error">
       <text class="error-text">{{ errMsg }}</text>

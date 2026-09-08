@@ -3,6 +3,7 @@ import { ref, reactive, onMounted } from 'vue'
 import { saveDraft, type WizardDraft } from '@/utils/wizard-state'
 import type { ChildProfileInput } from '@/utils/travel-api'
 import { track, TRACK } from '@/utils/analytics'
+import WizardProgress from '@/components/WizardProgress.vue'
 
 const LIKE_OPTIONS = ['动物', '车辆', '恐龙', '海洋', '公主', '太空', '绘本', '音乐', '运动']
 const ACTIVITY_OPTIONS = ['户外', '室内', '表演', '互动', '静态参观']
@@ -132,6 +133,8 @@ function next() {
 
 <template>
   <view class="page">
+    <WizardProgress :current="2" :total="4" :steps="['选目的地', '孩子画像', '偏好', '生成方案']" />
+
     <view class="hero">
       <text class="hero-title">第 2 步 · 孩子画像</text>
       <text class="hero-sub">走天下的硬步骤，没画像就不出方案</text>

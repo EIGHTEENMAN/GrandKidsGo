@@ -7,6 +7,7 @@ import {
   type CandidateOutline,
 } from '@/utils/travel-api'
 import { track, TRACK } from '@/utils/analytics'
+import WizardProgress from '@/components/WizardProgress.vue'
 
 const loading = ref(true)
 const errorMsg = ref('')
@@ -116,6 +117,8 @@ function back() {
 
 <template>
   <view class="page">
+    <WizardProgress :current="4" :total="4" :steps="['选目的地', '孩子画像', '偏好', '生成方案']" />
+
     <view class="hero">
       <text class="hero-title">已生成 3 档候选</text>
       <text class="hero-sub">"省时/省钱/舒服"是维度差异，点开看每档的"为什么这么排"</text>

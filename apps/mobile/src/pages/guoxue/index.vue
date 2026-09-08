@@ -2,10 +2,13 @@
 import { ref, computed } from 'vue'
 import { classicIndex, categories, categoryColors, type ClassicMeta } from './data'
 import { shareContent } from '@/utils/native'
+import { useSearchHistory } from '@/utils/search-history'
 import ScrollToTop from '@/components/ScrollToTop.vue'
 
 const activeCategory = ref('全部')
 const searchQuery = ref('')
+const searchFocused = ref(false)
+const { history: searchHistory, save: saveSearchHistory } = useSearchHistory('grandkidsgo_guoxue_search_history', 5)
 const dailyQuotes = [
   { text: '学而时习之，不亦说乎', source: '《论语》' },
   { text: '温故而知新，可以为师矣', source: '《论语》' },
@@ -80,7 +83,21 @@ function openClassic(c: ClassicMeta) {
       </view>
       <!-- Search -->
       <view class="search-bar">
-        <input v-model="searchQuery" class="search-input" placeholder="搜索书名、作者或标签" placeholder-style="color: #94a3b8" />
+        <input v-model="searchQuery" class="search-input" placeholder="搜索书名、作者或标签" placeholder-style="color: #94a3b8"
+          @focus="searchFocused = true"
+          @blur="setTimeout(() => searchFocused = false, 200)"
+          confirm-type="search"
+          @confirm="saveSearchHistory(searchQuery)" />
+      </view>
+
+      <!-- Search History Dropdown -->
+      <view v-if="searchFocused && !searchQuery && searchHistory.length > 0" class="search-history">
+        <view class="history-list">
+          <view v-for="item in searchHistory" :key="item" class="history-item" @mousedown="searchQuery = item; searchFocused = false">
+            <text class="history-icon">🕐</text>
+            <text class="history-text">{{ item }}</text>
+          </view>
+        </view>
       </view>
       <!-- Category Tags -->
       <scroll-view class="tags-scroll" scroll-x enable-flex>
@@ -195,8 +212,16 @@ function openClassic(c: ClassicMeta) {
 .search-bar { margin-bottom: 16rpx; }
 .search-input {
   width: 100%; padding: 20rpx 24rpx; background: white; border-radius: 16rpx;
-  font-size: 26rpx; color: #0f172a; border: 1rpx solid #bbf7d0; box-sizing: border-box;
+  font-size: 26rpx; color: #0f172a; border: 1rpx solid #bbf7d0; box-sizing: border-box; }
+.search-history {
+  background: white; border: 1rpx solid #bbf7d0; border-radius: 16rpx;
+  margin-bottom: 16rpx; padding: 4rpx 0;
 }
+.history-list { display: flex; flex-direction: column; }
+.history-item { display: flex; align-items: center; gap: 12rpx; padding: 14rpx 20rpx; }
+.history-item:active { background: #f0fdf4; }
+.history-icon { font-size: 24rpx; color: #94a3b8; }
+.history-text { font-size: 26rpx; color: #0f172a; }
 
 .tags-scroll { white-space: nowrap; }
 .tags { display: flex; gap: 12rpx; padding: 4rpx 0; }

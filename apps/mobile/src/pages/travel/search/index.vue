@@ -1,9 +1,44 @@
 <script setup lang="ts">
 // 攻略搜索结果页
 // 详见 项目建设方案/走天下实施方案-v1.5.md 第十三节第五条
-import { ref, computed } from 'vue'
+import { ref, computed, onMounted } from 'vue'
 import { TRAVEL_API_BASE } from '@/utils/travel-api'
 import { track, TRACK } from '@/utils/analytics'
+
+// 搜索历史
+const HISTORY_KEY = 'grandkidsgo_travel_search_history'
+const HISTORY_MAX = 6
+const searchHistory = ref<string[]>([])
+const showHistory = ref(false)
+
+function loadHistory() {
+  try {
+    const raw = uni.getStorageSync(HISTORY_KEY)
+    if (raw) searchHistory.value = JSON.parse(raw)
+  } catch {}
+}
+
+function saveToHistory(q: string) {
+  const trimmed = q.trim()
+  if (!trimmed) return
+  const list = searchHistory.value.filter(s => s !== trimmed)
+  list.unshift(trimmed)
+  searchHistory.value = list.slice(0, HISTORY_MAX)
+  try { uni.setStorageSync(HISTORY_KEY, JSON.stringify(searchHistory.value)) } catch {}
+}
+
+function clearHistory() {
+  searchHistory.value = []
+  try { uni.removeStorageSync(HISTORY_KEY) } catch {}
+}
+
+function pickHistory(q: string) {
+  keyword.value = q
+  showHistory.value = false
+  doSearch(q)
+}
+
+loadHistory()
 
 interface SearchItem {
   type: 'guide' | 'city' | 'spot' | 'restaurant' | 'hotel'
@@ -29,6 +64,8 @@ async function doSearch(q: string) {
     items.value = []
     return
   }
+  showHistory.value = false
+  saveToHistory(q)
   loading.value = true
   errMsg.value = ''
   try {
@@ -114,12 +151,28 @@ const counts = computed(() => {
       <input
         :value="keyword"
         @input="onInput"
+        @focus="showHistory = true"
+        @blur="setTimeout(() => showHistory = false, 200)"
         @confirm="onConfirm"
         placeholder="搜目的地、景点、餐厅、攻略"
         class="search-input"
         confirm-type="search"
       />
       <text class="search-btn" @click="onConfirm">搜索</text>
+    </view>
+
+    <!-- Search History Dropdown -->
+    <view v-if="showHistory && !keyword && searchHistory.length > 0" class="history-dropdown">
+      <view class="history-header">
+        <text class="history-title">最近搜索</text>
+        <text class="history-clear" @mousedown="clearHistory">清空</text>
+      </view>
+      <view class="history-list">
+        <view v-for="item in searchHistory" :key="item" class="history-item" @mousedown="pickHistory(item)">
+          <text class="history-icon">🕐</text>
+          <text class="history-text">{{ item }}</text>
+        </view>
+      </view>
     </view>
 
     <scroll-view scroll-x class="filter-row">
@@ -169,8 +222,22 @@ const counts = computed(() => {
 
 <style scoped>
 .page { padding: 24rpx 28rpx; min-height: 100vh; }
-.search-row { display: flex; align-items: center; gap: 16rpx; margin-bottom: 24rpx; }
+.search-row { display: flex; align-items: center; gap: 16rpx; margin-bottom: 24rpx; position: relative; }
 .search-input { flex: 1; background: #fff; border: 1rpx solid #e2e8f0; border-radius: 32rpx; padding: 18rpx 24rpx; font-size: 28rpx; }
+
+.history-dropdown {
+  background: white; border: 1rpx solid #e2e8f0; border-radius: 20rpx;
+  margin-bottom: 16rpx; padding: 8rpx 0;
+  box-shadow: 0 4rpx 12rpx rgba(0,0,0,0.06);
+}
+.history-header { display: flex; justify-content: space-between; align-items: center; padding: 12rpx 24rpx 4rpx; }
+.history-title { font-size: 22rpx; color: #94a3b8; }
+.history-clear { font-size: 22rpx; color: #2563eb; padding: 4rpx 8rpx; }
+.history-list { display: flex; flex-direction: column; }
+.history-item { display: flex; align-items: center; gap: 12rpx; padding: 16rpx 24rpx; }
+.history-item:active { background: #f8fafc; }
+.history-icon { font-size: 24rpx; color: #94a3b8; }
+.history-text { font-size: 26rpx; color: #0f172a; }
 .search-btn { font-size: 28rpx; color: #16a34a; font-weight: 600; padding: 0 12rpx; }
 .filter-row { white-space: nowrap; padding-bottom: 24rpx; }
 .filter-chip { display: inline-block; padding: 12rpx 24rpx; margin-right: 12rpx; background: #f1f5f9; border-radius: 32rpx; }

@@ -6,6 +6,10 @@
     <title>童慧行手机版</title>
   <meta name="description" content="童慧行移动端入口。">
   <meta name="keywords" content="童慧行,童慧行手机版,儿童学习,免费学习">
+  <meta name="theme-color" content="#2563eb">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="童慧行">
   <meta property="og:title" content="童慧行手机版">
   <meta property="og:description" content="童慧行移动端入口。">
   <meta property="og:type" content="website">
@@ -21,8 +25,27 @@
   <meta name="twitter:image" content="https://m.grandand.com/og-cover.svg">
   <link rel="canonical" href="https://m.grandand.com">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#x1F31F;</text></svg>" />
+  <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 180 180%22><rect width=%22180%22 height=%22180%22 fill=%22%232563eb%22 rx=%2240%22/><text x=%2290%22 y='125' text-anchor=%22middle%22 font-size=%22100%22>&#x1F31F;</text></svg>" />
+  <style>
+    /* 启动画面（避免白屏闪烁） */
+    html, body { background: #2563eb; margin: 0; }
+    #app-splash {
+      position: fixed; inset: 0; z-index: 99999;
+      background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      color: white; gap: 20rpx;
+    }
+    #app-splash .splash-icon { font-size: 100px; }
+    #app-splash .splash-title { font-size: 36rpx; font-weight: 800; letter-spacing: 4rpx; }
+    #app-splash .splash-sub { font-size: 24rpx; opacity: 0.8; letter-spacing: 2rpx; }
+  </style>
 </head>
 <body>
+  <div id="app-splash">
+    <div class="splash-icon">🌟</div>
+    <div class="splash-title">童慧行</div>
+    <div class="splash-sub">读万卷书 · 行万里路</div>
+  </div>
   <div id="app"></div>
   <script type="module" src="/src/main.ts"></script>
 </body>

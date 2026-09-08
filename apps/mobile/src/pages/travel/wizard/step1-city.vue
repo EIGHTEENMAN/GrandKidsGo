@@ -1,8 +1,9 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
 import { fetchCityOptions } from '@/utils/travel-api'
-import { saveDraft, loadDraft, todayISO, addDaysISO } from '@/utils/wizard-state'
+import { saveDraft, loadDraft, clearDraft, todayISO, addDaysISO } from '@/utils/wizard-state'
 import { track, TRACK } from '@/utils/analytics'
+import WizardProgress from '@/components/WizardProgress.vue'
 
 const cities = ref<Array<{ id: string; name: string }>>([])
 const selectedId = ref<string>('')
@@ -14,6 +15,19 @@ const draft = loadDraft()
 selectedId.value = draft.cityId ?? 'city-beijing'
 startDate.value = draft.startDate ?? todayISO()
 endDate.value = draft.endDate ?? addDaysISO(todayISO(), 2)
+
+// 检测是否有真实草稿（不只是默认值）
+const hasDraft = computed(() => {
+  return Boolean(draft.cityId && draft.startDate && draft.childProfile)
+})
+
+function clearAndStart() {
+  clearDraft()
+  selectedId.value = 'city-beijing'
+  startDate.value = todayISO()
+  endDate.value = addDaysISO(todayISO(), 2)
+  hasDraft.value = false
+}
 
 async function init() {
   try {
@@ -63,6 +77,18 @@ defineExpose({ pickCity })
 
 <template>
   <view class="page">
+    <WizardProgress :current="1" :total="4" :steps="['选目的地', '孩子画像', '偏好', '生成方案']" />
+
+    <!-- Draft Resume Banner -->
+    <view v-if="hasDraft" class="draft-banner">
+      <view class="draft-icon">📋</view>
+      <view class="draft-content">
+        <text class="draft-title">检测到上次的旅行计划</text>
+        <text class="draft-desc">{{ draft.cityName || draft.cityId }} · {{ draft.startDate }} ~ {{ draft.endDate }}</text>
+      </view>
+      <text class="draft-clear" @click="clearAndStart">重新开始</text>
+    </view>
+
     <view class="hero">
       <text class="hero-title">第 1 步 · 选目的地</text>
       <text class="hero-sub">先定个地方，再聊孩子</text>
@@ -115,6 +141,23 @@ defineExpose({ pickCity })
 <style scoped>
 .page { padding: 32rpx 28rpx; padding-bottom: 200rpx; }
 .hero { margin-bottom: 24rpx; }
+
+/* Draft Banner */
+.draft-banner {
+  margin: -8rpx 0 20rpx; padding: 16rpx 20rpx;
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+  border-radius: 16rpx; border: 1rpx solid #fcd34d;
+  display: flex; align-items: center; gap: 12rpx;
+}
+.draft-icon { font-size: 32rpx; }
+.draft-content { flex: 1; min-width: 0; }
+.draft-title { font-size: 24rpx; font-weight: 600; color: #92400e; display: block; }
+.draft-desc { font-size: 22rpx; color: #b45309; margin-top: 4rpx; display: block; }
+.draft-clear {
+  font-size: 22rpx; color: #d97706; padding: 6rpx 14rpx;
+  background: white; border-radius: 12rpx;
+  border: 1rpx solid #fcd34d; flex-shrink: 0;
+}
 .hero-title { display: block; font-size: 40rpx; font-weight: 700; color: #0f172a; }
 .hero-sub { display: block; font-size: 26rpx; color: #64748b; margin-top: 8rpx; }
 .search-bar { margin-bottom: 24rpx; }

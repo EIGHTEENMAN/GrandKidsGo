@@ -1,7 +1,8 @@
 <script setup lang="ts">
-import { ref, onMounted } from 'vue'
+import { ref, computed, onMounted } from 'vue'
 import { WORLDS, GRADES } from './data'
 import { shareContent } from '@/utils/native'
+import { debounce } from '@/utils/debounce'
 
 const totalWords = 3000
 const currentGrade = ref(0)
@@ -12,6 +13,21 @@ const gradeWorlds = [
   WORLDS.filter(w => w.grade === 2),
   WORLDS.filter(w => w.grade === 3),
 ]
+
+// 今日主题：按日期取 WORLDS
+const todayIdx = new Date().getDate() % WORLDS.length
+const todayWorld = WORLDS[todayIdx]
+
+// 学习激励语（按月日取）
+const dayOfYear = Math.floor((Date.now() - new Date(new Date().getFullYear(), 0, 0).getTime()) / 86400000)
+const encouragements = [
+  'Every word is a step forward. 每天一词，步步高升。',
+  'Practice makes perfect. 熟能生巧。',
+  'A little progress each day adds up. 每天进步一点点。',
+  'You are braver than you believe. 你比你想象的更勇敢。',
+  'Keep going, champion. 继续前进，冠军！',
+]
+const todayQuote = encouragements[dayOfYear % encouragements.length]
 
 onMounted(() => {
   // Auto-hide how-to-play after 5 seconds on first visit
@@ -30,12 +46,19 @@ function openWorld(w: typeof WORLDS[0]) {
   })
 }
 
-function shareEnglish() {
+const shareEnglish = debounce(function () {
   shareContent({
     title: '学英语 - 童慧行',
     text: `趣味单词，自然拼读 · ${totalWords}单词`,
   })
-}
+}, 800)
+
+const shareTodayWord = debounce(function () {
+  shareContent({
+    title: `今日单词 - ${todayWorld.nameCn}`,
+    text: `${todayWorld.theme} · ${todayQuote}`,
+  })
+}, 800)
 
 function startFirstWorld() {
   const firstWorld = WORLDS.find(w => w.grade === 1)
@@ -68,6 +91,19 @@ function startFirstWorld() {
         </view>
       </view>
       <text class="cta-arrow">›</text>
+    </view>
+
+    <!-- Today Theme -->
+    <view class="today-theme-card" @click="openWorld(todayWorld)">
+      <view class="today-icon" :style="{ background: todayWorld.color + '20' }">
+        <text>{{ todayWorld.visual }}</text>
+      </view>
+      <view class="today-content">
+        <text class="today-label">今日主题</text>
+        <text class="today-name">{{ todayWorld.nameCn }} · {{ todayWorld.theme }}</text>
+        <text class="today-quote">{{ todayQuote }}</text>
+      </view>
+      <text class="today-share" @click.stop="shareTodayWord">📤</text>
     </view>
 
     <!-- How to Play Hint -->
@@ -154,6 +190,36 @@ function startFirstWorld() {
 .cta-title { font-size: 28rpx; font-weight: 700; color: #9d174d; }
 .cta-desc { font-size: 22rpx; color: #ec4899; margin-top: 2rpx; }
 .cta-arrow { font-size: 36rpx; color: #f9a8d4; }
+
+/* Today Theme Card */
+.today-theme-card {
+  margin: 16rpx 24rpx; background: white;
+  border-radius: 24rpx; padding: 24rpx;
+  display: flex; align-items: center; gap: 20rpx;
+  border: 1rpx solid #e2e8f0;
+}
+.today-icon {
+  width: 80rpx; height: 80rpx; border-radius: 20rpx;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 44rpx; flex-shrink: 0;
+}
+.today-content { flex: 1; min-width: 0; }
+.today-label {
+  font-size: 20rpx; font-weight: 600; color: #94a3b8;
+  display: block; margin-bottom: 4rpx;
+}
+.today-name {
+  font-size: 28rpx; font-weight: 700; color: #0f172a;
+  display: block; margin-bottom: 6rpx;
+}
+.today-quote {
+  font-size: 22rpx; color: #64748b; display: block;
+  overflow: hidden; text-overflow: ellipsis;
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+}
+.today-share {
+  font-size: 32rpx; padding: 12rpx; flex-shrink: 0;
+}
 
 /* Hint Banner */
 .hint-banner {

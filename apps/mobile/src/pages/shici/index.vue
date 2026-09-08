@@ -2,10 +2,45 @@
 import { ref, computed } from 'vue'
 import { poemsIndex, categories, categoryColors, poetBios } from './data'
 import { shareContent, copyToClipboard } from '@/utils/native'
+import { debounce } from '@/utils/debounce'
 import ScrollToTop from '@/components/ScrollToTop.vue'
+
+// 搜索历史（localStorage 持久化）
+const HISTORY_KEY = 'grandkidsgo_shici_search_history'
+const HISTORY_MAX = 5
 
 const activeDynasty = ref('全部')
 const searchQuery = ref('')
+const searchFocused = ref(false)
+const searchHistory = ref<string[]>([])
+
+function loadSearchHistory() {
+  try {
+    const raw = uni.getStorageSync(HISTORY_KEY)
+    if (raw) searchHistory.value = JSON.parse(raw)
+  } catch {}
+}
+
+function saveSearchHistoryItem(q: string) {
+  const trimmed = q.trim()
+  if (!trimmed) return
+  const list = searchHistory.value.filter(s => s !== trimmed)
+  list.unshift(trimmed)
+  searchHistory.value = list.slice(0, HISTORY_MAX)
+  try { uni.setStorageSync(HISTORY_KEY, JSON.stringify(searchHistory.value)) } catch {}
+}
+
+function clearSearchHistory() {
+  searchHistory.value = []
+  try { uni.removeStorageSync(HISTORY_KEY) } catch {}
+}
+
+function pickHistoryItem(q: string) {
+  searchQuery.value = q
+  searchFocused.value = false
+}
+
+loadSearchHistory()
 
 const filteredPoems = computed(() => {
   let list = poemsIndex
@@ -67,17 +102,17 @@ function randomDailyPoem() {
 
 const daily = ref(randomDailyPoem())
 
-function shuffleDaily() {
+const shuffleDaily = debounce(function () {
   daily.value = randomDailyPoem()
-}
+}, 500)
 
-function shareDaily() {
+const shareDaily = debounce(function () {
   if (!daily.value) return
   shareContent({
     title: daily.value.poem.title,
     text: `${daily.value.preview}\n—— ${daily.value.poem.author}`,
   })
-}
+}, 800)
 
 function sharePoet(name: string) {
   shareContent({
@@ -116,7 +151,26 @@ const randomPoets = computed(() => {
       </view>
       <!-- Search -->
       <view class="search-bar">
-        <input v-model="searchQuery" class="search-input" placeholder="搜索诗词名或作者" placeholder-style="color: #94a3b8" />
+        <input v-model="searchQuery" class="search-input"
+          placeholder="搜索诗词名或作者" placeholder-style="color: #94a3b8"
+          @focus="searchFocused = true"
+          @blur="setTimeout(() => searchFocused = false, 200)"
+          confirm-type="search"
+          @confirm="saveSearchHistoryItem(searchQuery)" />
+      </view>
+
+      <!-- Search History Dropdown -->
+      <view v-if="searchFocused && !searchQuery && searchHistory.length > 0" class="search-history">
+        <view class="history-header">
+          <text class="history-title">最近搜索</text>
+          <text class="history-clear" @click="clearSearchHistory">清空</text>
+        </view>
+        <view class="history-list">
+          <view v-for="item in searchHistory" :key="item" class="history-item" @mousedown="pickHistoryItem(item)">
+            <text class="history-icon">🕐</text>
+            <text class="history-text">{{ item }}</text>
+          </view>
+        </view>
       </view>
       <!-- Dynasty Tags -->
       <scroll-view class="tags-scroll" scroll-x enable-flex>
@@ -215,6 +269,7 @@ const randomPoets = computed(() => {
   background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
   padding: 24rpx 32rpx 20rpx;
   border-bottom: 1rpx solid #fde68a;
+  position: relative;
 }
 .hero-row { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 20rpx; }
 .hero-left { display: flex; flex-direction: column; gap: 6rpx; }
@@ -237,6 +292,26 @@ const randomPoets = computed(() => {
   width: 100%; padding: 20rpx 24rpx; background: white; border-radius: 16rpx;
   font-size: 26rpx; color: #0f172a; border: 1rpx solid #fde68a; box-sizing: border-box;
 }
+.search-history {
+  position: absolute; left: 32rpx; right: 32rpx; z-index: 30;
+  background: white; border-radius: 16rpx;
+  border: 1rpx solid #fde68a; box-shadow: 0 4rpx 12rpx rgba(0,0,0,0.08);
+  margin-top: 4rpx; padding: 12rpx;
+}
+.history-header {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 8rpx 12rpx;
+}
+.history-title { font-size: 22rpx; color: #94a3b8; }
+.history-clear { font-size: 22rpx; color: #f59e0b; padding: 4rpx 8rpx; }
+.history-list { display: flex; flex-direction: column; }
+.history-item {
+  display: flex; align-items: center; gap: 12rpx;
+  padding: 16rpx 12rpx; border-radius: 12rpx;
+}
+.history-item:active { background: #fef3c7; }
+.history-icon { font-size: 24rpx; color: #94a3b8; }
+.history-text { font-size: 26rpx; color: #0f172a; }
 
 .tags-scroll { white-space: nowrap; }
 .tags { display: flex; gap: 12rpx; padding: 4rpx 0; }

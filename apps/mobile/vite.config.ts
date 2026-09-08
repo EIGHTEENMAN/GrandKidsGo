@@ -22,6 +22,9 @@ export default defineConfig({
         display: 'standalone',
         scope: '/',
         start_url: '/',
+        categories: ['education', 'lifestyle', 'travel', 'books'],
+        lang: 'zh-CN',
+        orientation: 'portrait',
         icons: [
           { src: '/favicon.ico', sizes: '64x64', type: 'image/x-icon' },
         ],

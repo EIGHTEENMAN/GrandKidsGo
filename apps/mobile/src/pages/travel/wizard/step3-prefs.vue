@@ -2,6 +2,7 @@
 import { ref } from 'vue'
 import { saveDraft } from '@/utils/wizard-state'
 import { track, TRACK } from '@/utils/analytics'
+import WizardProgress from '@/components/WizardProgress.vue'
 
 const SPOT_TYPES = [
   { key: 'museum', label: '博物馆', emoji: '🏛️' },
@@ -55,6 +56,8 @@ function submit() {
 
 <template>
   <view class="page">
+    <WizardProgress :current="3" :total="4" :steps="['选目的地', '孩子画像', '偏好', '生成方案']" />
+
     <view class="hero">
       <text class="hero-title">第 3 步 · 你的偏好</text>
       <text class="hero-sub">三档候选就在这步里出</text>

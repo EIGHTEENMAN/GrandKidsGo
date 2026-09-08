@@ -1,11 +1,13 @@
 <script setup lang="ts">
 import { ref, computed, onMounted } from 'vue'
-import { getRecentApps } from '@/stores/progress'
+import { getRecentApps, getAppRanking } from '@/stores/progress'
 
 const recentApps = ref<string[]>([])
+const appRanking = ref<{ name: string; count: number }[]>([])
 
 onMounted(() => {
   recentApps.value = getRecentApps()
+  appRanking.value = getAppRanking()
 })
 
 const apps = [
@@ -13,7 +15,7 @@ const apps = [
   { name: '学诗词', desc: '唐诗宋词，古韵童声', icon: '📜', url: 'https://xueshici.grandand.com', color: '#f59e0b', category: '诗词' },
   { name: '学通识', desc: '天文地理，万物百科', icon: '🔭', url: 'https://xuetongshi.grandand.com', color: '#06b6d4', category: '通识' },
   { name: '学英语', desc: '趣味单词，自然拼读', icon: '🔤', url: 'https://english.grandand.com', color: '#ec4899', category: '英语' },
-  { name: '来挑战', desc: '答题对战，益智闯关', icon: '⚡', url: 'https://tiaozhan.grandand.com', color: '#ef4444', category: '挑战' },
+  { name: '小答答', desc: '答题对战，益智闯关', icon: '⚡', url: 'https://tiaozhan.grandand.com', color: '#ef4444', category: '挑战' },
   { name: '走天下', desc: '亲子旅行攻略分享', icon: '✈️', url: 'https://travel.grandand.com', color: '#22c55e', category: '旅行' },
   { name: '社区论坛', desc: '交流分享，共同成长', icon: '💬', url: 'https://forum.grandand.com', color: '#f97316', category: '社区' },
   { name: '积分商城', desc: '努力学习，兑换好礼', icon: '🎒', url: 'https://store.grandand.com', color: '#14b8a6', category: '商城' },
@@ -23,11 +25,24 @@ const categories = ['全部', '学习', '挑战', '社区']
 const activeCategory = ref('全部')
 
 const filteredApps = computed(() => {
-  if (activeCategory.value === '全部') return apps
-  if (activeCategory.value === '学习') return apps.filter(a => ['国学', '诗词', '通识', '英语'].includes(a.category))
-  if (activeCategory.value === '挑战') return apps.filter(a => a.category === '挑战')
-  if (activeCategory.value === '社区') return apps.filter(a => ['社区', '商城', '旅行'].includes(a.category))
-  return apps
+  let list = apps
+  if (activeCategory.value === '全部') return list
+  if (activeCategory.value === '学习') return list.filter(a => ['国学', '诗词', '通识', '英语'].includes(a.category))
+  if (activeCategory.value === '挑战') return list.filter(a => a.category === '挑战')
+  if (activeCategory.value === '社区') return list.filter(a => ['社区', '商城', '旅行'].includes(a.category))
+  return list
+})
+
+// 智能排序：最近使用优先 + 频次优先
+const sortedApps = computed(() => {
+  const rankingMap = new Map(appRanking.value.map(r => [r.name, r.count]))
+  return [...filteredApps.value].sort((a, b) => {
+    const aRank = rankingMap.get(a.name) || 0
+    const bRank = rankingMap.get(b.name) || 0
+    if (aRank !== bRank) return bRank - aRank
+    // 频次相同时保留原序
+    return apps.findIndex(x => x.name === a.name) - apps.findIndex(x => x.name === b.name)
+  })
 })
 
 // Native apps (migrated to UniApp pages) vs WebView
@@ -97,11 +112,11 @@ function openApp(name: string, url: string) {
     <view class="grid-section">
       <view class="section-header">
         <text class="section-title">{{ activeCategory === '全部' ? '所有应用' : activeCategory }}</text>
-        <text class="section-count">{{ filteredApps.length }}个</text>
+        <text class="section-count">{{ sortedApps.length }}个</text>
       </view>
       <view class="grid">
         <view
-          v-for="app in filteredApps"
+          v-for="app in sortedApps"
           :key="app.name"
           class="card"
           @click="openApp(app.name, app.url)"

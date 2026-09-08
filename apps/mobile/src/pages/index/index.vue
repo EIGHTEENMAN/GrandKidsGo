@@ -7,12 +7,39 @@ import { getBrowseHistory, type BrowseRecord } from '@/stores/history'
 // PWA install prompt
 const pwaInstallEvent = ref<any>(null)
 const showInstallPrompt = ref(false)
+const showIosTutorial = ref(false)
+const isIos = ref(false)
+const isStandalone = ref(false)
+
+function isStandaloneMode() {
+  try {
+    return window.matchMedia('(display-mode: standalone)').matches
+      || (navigator as any).standalone === true
+  } catch { return false }
+}
+
+// 首启引导 banner
+const SHOW_WELCOME_KEY = 'grandkidsgo_welcome_dismissed'
+const showWelcome = ref(false)
 
 onMounted(() => {
+  isIos.value = /ipad|iphone|ipod/i.test(navigator.userAgent)
+  isStandalone.value = isStandaloneMode()
+  if (isStandalone.value) {
+    showInstallPrompt.value = false
+  } else if (isIos.value) {
+    showInstallPrompt.value = true
+    showIosTutorial.value = true
+  }
+  try {
+    const dismissed = uni.getStorageSync(SHOW_WELCOME_KEY)
+    if (!dismissed) showWelcome.value = true
+  } catch {}
   window.addEventListener('beforeinstallprompt', (e) => {
     e.preventDefault()
     pwaInstallEvent.value = e
     showInstallPrompt.value = true
+    showIosTutorial.value = false
   })
   window.addEventListener('appinstalled', () => {
     showInstallPrompt.value = false
@@ -20,33 +47,49 @@ onMounted(() => {
   })
 })
 
+function dismissWelcome() {
+  showWelcome.value = false
+  try { uni.setStorageSync(SHOW_WELCOME_KEY, '1') } catch {}
+}
+
 const token = ref('')
 const userInfo = ref<any>(null)
 const progress = ref(getProgress())
 const recentApps = ref(getRecentApps())
 const browseHistory = ref<BrowseRecord[]>([])
 
-// Daily recommendation (rotate daily based on date)
+// Daily recommendation (rotate daily based on date) - 真实诗 ID，点卡片跳转到 shici 详情
+// id 对齐 apps/mobile/src/pages/shici/data.ts 的 poemsIndex（数字字符串）
 const dailyRecommendations = [
-  { text: '床前明月光，疑是地上霜。举头望明月，低头思故乡。', source: '静夜思 · 李白', icon: '🌙' },
-  { text: '春眠不觉晓，处处闻啼鸟。夜来风雨声，花落知多少。', source: '春晓 · 孟浩然', icon: '🌸' },
-  { text: '锄禾日当午，汗滴禾下土。谁知盘中餐，粒粒皆辛苦。', source: '悯农 · 李绅', icon: '🌾' },
-  { text: '离离原上草，一岁一枯荣。野火烧不尽，春风吹又生。', source: '赋得古原草送别 · 白居易', icon: '🌿' },
-  { text: '好雨知时节，当春乃发生。随风潜入夜，润物细无声。', source: '春夜喜雨 · 杜甫', icon: '☔' },
-  { text: '欲穷千里目，更上一层楼。', source: '登鹳雀楼 · 王之涣', icon: '🏯' },
-  { text: '小时不识月，呼作白玉盘。', source: '古朗月行 · 李白', icon: '🌕' },
-  { text: '鹅鹅鹅，曲项向天歌。白毛浮绿水，红掌拨清波。', source: '咏鹅 · 骆宾王', icon: '🦢' },
-  { text: '学而时习之，不亦说乎？', source: '论语', icon: '📖' },
-  { text: '千里之行，始于足下。', source: '道德经', icon: '👣' },
+  { text: '床前明月光，疑是地上霜。', source: '静夜思 · 李白', icon: '🌙', poemId: '283' },
+  { text: '春眠不觉晓，处处闻啼鸟。', source: '春晓 · 孟浩然', icon: '🌸', poemId: '277' },
+  { text: '举头望明月，低头思故乡。', source: '静夜思 · 李白', icon: '🌕', poemId: '283' },
+  { text: '欲穷千里目，更上一层楼。', source: '登鹳雀楼 · 王之涣', icon: '🏯', poemId: '275' },
+  { text: '飞流直下三千尺，疑是银河落九天。', source: '望庐山瀑布 · 李白', icon: '🌊', poemId: '868' },
+  { text: '少壮不努力，老大徒伤悲。', source: '长歌行 · 佚名', icon: '⏳', poemId: '37' },
+  { text: '采菊东篱下，悠然见南山。', source: '饮酒 · 陶渊明', icon: '🌿', poemId: '57' },
+  { text: '海上生明月，天涯共此时。', source: '望月怀远 · 张九龄', icon: '🌝', poemId: '830' },
+  { text: '独在异乡为异客，每逢佳节倍思亲。', source: '九月九日忆山东兄弟 · 王维', icon: '🍂', poemId: '767' },
+  { text: '但愿人长久，千里共婵娟。', source: '水调歌头 · 苏轼', icon: '🌗', poemId: '132' },
+  { text: '大江东去，浪淘尽，千古风流人物。', source: '念奴娇 · 苏轼', icon: '🌊', poemId: '133' },
+  { text: '不识庐山真面目，只缘身在此山中。', source: '题西林壁 · 苏轼', icon: '⛰️', poemId: '771' },
+  { text: '长风破浪会有时，直挂云帆济沧海。', source: '行路难 · 李白', icon: '⛵', poemId: '69' },
+  { text: '天生我材必有用，千金散尽还复来。', source: '将进酒 · 李白', icon: '🍶', poemId: '756' },
+  { text: '随风潜入夜，润物细无声。', source: '春夜喜雨 · 杜甫', icon: '☔', poemId: '759' },
+  { text: '海内存知己，天涯若比邻。', source: '送杜少府之任蜀州 · 王勃', icon: '🤝', poemId: '99' },
+  { text: '野火烧不尽，春风吹又生。', source: '赋得古原草送别 · 白居易', icon: '🔥', poemId: '824' },
+  { text: '夕阳无限好，只是近黄昏。', source: '登乐游原 · 李商隐', icon: '🌅', poemId: '90' },
+  { text: '春蚕到死丝方尽，蜡炬成灰泪始干。', source: '无题 · 李商隐', icon: '🕯️', poemId: '92' },
+  { text: '人生自古谁无死，留取丹心照汗青。', source: '过零丁洋 · 文天祥', icon: '❤️', poemId: '402' },
 ]
 const dailyIdx = new Date().getDate() % dailyRecommendations.length
 const daily = dailyRecommendations[dailyIdx]
 
 const stats = [
-  { label: '国学经典', count: 168, unit: '部', icon: '📚', color: '#8b5cf6' },
-  { label: '唐诗宋词', count: 934, unit: '首', icon: '📜', color: '#f59e0b' },
-  { label: '通识百科', count: 2149, unit: '篇', icon: '🔭', color: '#06b6d4' },
-  { label: '英语单词', count: 3000, unit: '词', icon: '🔤', color: '#ec4899' },
+  { label: '国学经典', count: 923, unit: '部', icon: '📚', color: '#8b5cf6' },
+  { label: '唐诗宋词', count: 2026, unit: '首', icon: '📜', color: '#f59e0b' },
+  { label: '通识百科', count: 2164, unit: '篇', icon: '🔭', color: '#06b6d4' },
+  { label: '英语单词', count: 5018, unit: '词', icon: '🔤', color: '#ec4899' },
 ]
 
 // Animated counters
@@ -120,6 +163,14 @@ function openShici() {
   trackAppOpen('学诗词')
   uni.navigateTo({ url: '/pages/shici/index' })
 }
+
+// 点"每日诵读"卡片直接跳到该诗详情（用 webview 套主站锚点）
+function openDailyPoem() {
+  trackAppOpen('学诗词')
+  uni.navigateTo({
+    url: `/pages/learning/webview?title=${encodeURIComponent(daily.source)}&url=${encodeURIComponent('https://xueshici.grandand.com/#' + daily.poemId)}`
+  })
+}
 function openGuoxue() {
   trackAppOpen('学国学')
   uni.navigateTo({ url: '/pages/guoxue/index' })
@@ -137,16 +188,61 @@ const days = ['日', '一', '二', '三', '四', '五', '六']
 const today = new Date()
 const dateStr = `${today.getMonth() + 1}月${today.getDate()}日 星期${days[today.getDay()]}`
 
-// Continue learning - the most recently opened app
-const continueApp = computed(() => {
+// 打卡里程碑
+const streakMilestones = [
+  { days: 3, label: '坚持三天', emoji: '🔥' },
+  { days: 7, label: '一周好习惯', emoji: '⭐' },
+  { days: 30, label: '坚持不懈', emoji: '💪' },
+]
+
+const streakInfo = computed(() => {
+  const current = progress.value.dailyStreak || 0
+  const next = streakMilestones.find(m => m.days > current) || streakMilestones[streakMilestones.length - 1]
+  const prevDays = streakMilestones.filter(m => m.days <= current).pop()?.days || 0
+  const target = next.days
+  const progressPct = Math.min(100, Math.round(((current - prevDays) / (target - prevDays)) * 100))
+  const achieved = streakMilestones.filter(m => m.days <= current).map(m => m.emoji).join('')
+  return { current, next, target, progressPct, achieved }
+})
+
+// Continue learning - the most recently browsed specific content (not just the app)
+const continueTarget = computed(() => {
+  const records = browseHistory.value
+  // 优先用有 url 的具体内容
+  const withUrl = records.find(r => r.url)
+  if (withUrl) {
+    return { kind: 'content' as const, title: withUrl.title, subtitle: withUrl.subtitle, type: withUrl.type, url: withUrl.url, app: withUrl.title }
+  }
+  // fallback：最近一个 app
   const apps = recentApps.value
-  if (apps.length > 0) return apps[0]
+  if (apps.length > 0) {
+    return { kind: 'app' as const, title: apps[0], subtitle: '点击继续学习', type: '' as any, url: '', app: apps[0] }
+  }
   return null
 })
 
-function openContinueApp() {
-  if (continueApp.value) {
-    openRecent(continueApp.value)
+const continueIcon = computed(() => {
+  const t = continueTarget.value
+  if (!t) return '▶'
+  if (t.kind === 'app') return '▶'
+  switch (t.type) {
+    case 'poem': return '📜'
+    case 'classic': return '📚'
+    case 'topic': return '🔭'
+    case 'english': return '🔤'
+    default: return '📄'
+  }
+})
+
+function openContinue() {
+  const t = continueTarget.value
+  if (!t) return
+  if (t.kind === 'content' && t.url) {
+    uni.navigateTo({
+      url: `/pages/learning/webview?title=${encodeURIComponent(t.title)}&url=${encodeURIComponent(t.url)}`
+    })
+  } else {
+    openRecent(t.app)
   }
 }
 
@@ -184,19 +280,43 @@ function dismissInstall() {
 
 <template>
   <view class="page">
-    <!-- PWA Install Prompt -->
-    <view class="install-banner" v-if="showInstallPrompt">
+    <!-- Welcome Banner (first visit) -->
+    <view class="welcome-banner" v-if="showWelcome">
+      <view class="welcome-banner-content">
+        <text class="welcome-banner-icon">🌟</text>
+        <view class="welcome-banner-texts">
+          <text class="welcome-banner-title">欢迎来到童慧行</text>
+          <text class="welcome-banner-desc">读万卷书，行万里路 — 国学/诗词/通识/英语/旅行 5 大乐园</text>
+        </view>
+      </view>
+      <text class="welcome-banner-close" @click="dismissWelcome">✕</text>
+    </view>
+
+    <!-- PWA Install Prompt (Android) -->
+    <view class="install-banner" v-if="showInstallPrompt && !showIosTutorial">
       <view class="install-content">
         <text class="install-icon">📲</text>
         <view class="install-texts">
           <text class="install-title">安装童慧行</text>
-          <text class="install-desc">添加到主屏幕，随时学习</text>
+          <text class="install-desc">添加到主屏幕，离线也能学</text>
         </view>
       </view>
       <view class="install-actions">
         <text class="install-dismiss" @click="dismissInstall">稍后</text>
-        <text class="install-btn" @click="installPwa">安装</text>
+        <text class="install-btn" @click="installPwa">立即安装</text>
       </view>
+    </view>
+
+    <!-- PWA Install Tutorial (iOS Safari) -->
+    <view class="install-banner ios-banner" v-if="showInstallPrompt && showIosTutorial">
+      <view class="install-content">
+        <text class="install-icon">📲</text>
+        <view class="install-texts">
+          <text class="install-title">添加到主屏幕</text>
+          <text class="install-desc">点击底部的分享按钮 ⬆️，选「添加到主屏幕」</text>
+        </view>
+      </view>
+      <text class="install-dismiss" @click="dismissInstall">知道了</text>
     </view>
 
     <!-- Welcome Header -->
@@ -209,7 +329,7 @@ function dismissInstall() {
     </view>
 
     <!-- Daily Recommendation -->
-    <view class="daily-card" @click="openShici">
+    <view class="daily-card" @click="openDailyPoem">
       <view class="daily-icon">{{ daily.icon }}</view>
       <view class="daily-content">
         <text class="daily-label">每日诵读</text>
@@ -219,40 +339,43 @@ function dismissInstall() {
       <view class="daily-arrow">›</view>
     </view>
 
-    <!-- Continue Learning -->
-    <view class="continue-section" v-if="continueApp" @click="openContinueApp" hover-class="continue-hover">
+    <!-- Continue Learning / Empty State -->
+    <view v-if="continueTarget" class="continue-section" @click="openContinue" hover-class="continue-hover">
+      <view class="continue-left">
+        <text class="continue-icon">{{ continueIcon }}</text>
+      </view>
+      <view class="continue-content">
+        <text class="continue-label">{{ continueTarget.kind === 'content' ? '继续浏览' : '继续学习' }}</text>
+        <text class="continue-name">{{ continueTarget.title }}</text>
+      </view>
+      <text class="continue-arrow">›</text>
+    </view>
+    <view v-else class="continue-section continue-empty" @click="goLearning" hover-class="continue-hover">
       <view class="continue-left">
         <text class="continue-icon">▶</text>
       </view>
       <view class="continue-content">
-        <text class="continue-label">继续学习</text>
-        <text class="continue-name">{{ continueApp }}</text>
+        <text class="continue-label">开始你的学习之旅</text>
+        <text class="continue-name">选一个应用开始吧</text>
       </view>
       <text class="continue-arrow">›</text>
     </view>
 
-    <!-- Learning Progress (personalized) -->
-    <view class="progress-section" v-if="token">
-      <view class="section-header">
-        <text class="section-title">📊 我的学习</text>
+    <!-- Streak Card (每日打卡) -->
+    <view class="streak-card" v-if="token">
+      <view class="streak-left">
+        <text class="streak-fire">🔥</text>
       </view>
-      <view class="progress-cards">
-        <view class="progress-card">
-          <text class="progress-num">{{ progress.totalVisits }}</text>
-          <text class="progress-label">访问次数</text>
+      <view class="streak-content">
+        <view class="streak-row">
+          <text class="streak-num">{{ streakInfo.current }}</text>
+          <text class="streak-unit">天连续打卡</text>
+          <text class="streak-achieved" v-if="streakInfo.achieved">{{ streakInfo.achieved }}</text>
         </view>
-        <view class="progress-card">
-          <text class="progress-num">{{ Object.keys(progress.appOpens).length }}</text>
-          <text class="progress-label">学过的应用</text>
+        <view class="streak-bar">
+          <view class="streak-bar-fill" :style="{ width: streakInfo.progressPct + '%' }"></view>
         </view>
-        <view class="progress-card">
-          <text class="progress-num">{{ progress.totalContentViewed }}</text>
-          <text class="progress-label">浏览内容</text>
-        </view>
-        <view class="progress-card">
-          <text class="progress-num">{{ progress.dailyStreak }}</text>
-          <text class="progress-label">连续天数</text>
-        </view>
+        <text class="streak-hint">距{{ streakInfo.next.emoji }}{{ streakInfo.next.label }}还差 {{ streakInfo.target - streakInfo.current }} 天</text>
       </view>
     </view>
 
@@ -345,6 +468,23 @@ function dismissInstall() {
 <style scoped>
 .page { padding-bottom: 30rpx; }
 
+/* Welcome Banner (first visit) */
+.welcome-banner {
+  margin: 16rpx 32rpx 0; background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+  border-radius: 20rpx; padding: 20rpx 24rpx;
+  display: flex; align-items: center; justify-content: space-between;
+  border: 1rpx solid #fcd34d;
+}
+.welcome-banner-content { display: flex; align-items: center; gap: 12rpx; flex: 1; }
+.welcome-banner-icon { font-size: 36rpx; }
+.welcome-banner-texts { display: flex; flex-direction: column; }
+.welcome-banner-title { font-size: 28rpx; font-weight: 700; color: #92400e; }
+.welcome-banner-desc { font-size: 22rpx; color: #b45309; margin-top: 4rpx; line-height: 1.4; }
+.welcome-banner-close {
+  font-size: 28rpx; color: #d97706; padding: 8rpx 12rpx;
+  flex-shrink: 0;
+}
+
 /* PWA Install */
 .install-banner {
   margin: 16rpx 32rpx 0; background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
@@ -363,6 +503,15 @@ function dismissInstall() {
   font-size: 24rpx; font-weight: 600; color: white;
   background: #2563eb; padding: 10rpx 24rpx; border-radius: 12rpx;
 }
+
+/* iOS 教程 banner */
+.ios-banner {
+  background: linear-gradient(135deg, #fef9c3 0%, #fef08a 100%);
+  border-color: #fde047;
+}
+.ios-banner .install-title { color: #854d0e; }
+.ios-banner .install-desc { color: #a16207; }
+.ios-banner .install-dismiss { color: #ca8a04; }
 
 /* Welcome */
 .welcome-bar {
@@ -393,15 +542,33 @@ function dismissInstall() {
 .section-header { padding: 8rpx 32rpx 16rpx; display: flex; align-items: center; gap: 8rpx; }
 .section-title { font-size: 30rpx; font-weight: 700; color: #0f172a; }
 
-/* Progress */
-.progress-cards { display: flex; gap: 12rpx; padding: 0 32rpx; }
-.progress-card {
-  flex: 1; background: white; border-radius: 18rpx; padding: 20rpx 12rpx;
-  display: flex; flex-direction: column; align-items: center;
-  border: 1rpx solid #e2e8f0;
+/* Streak Card */
+.streak-card {
+  margin: 0 32rpx 24rpx; background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%);
+  border-radius: 24rpx; padding: 24rpx 28rpx;
+  display: flex; align-items: center; gap: 20rpx;
+  border: 1rpx solid #fed7aa;
 }
-.progress-num { font-size: 36rpx; font-weight: 800; color: #2563eb; }
-.progress-label { font-size: 20rpx; color: #94a3b8; margin-top: 4rpx; }
+.streak-left {
+  width: 80rpx; height: 80rpx; border-radius: 24rpx;
+  background: linear-gradient(135deg, #fb923c 0%, #f97316 100%);
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.streak-fire { font-size: 40rpx; }
+.streak-content { flex: 1; min-width: 0; }
+.streak-row { display: flex; align-items: baseline; gap: 8rpx; }
+.streak-num { font-size: 44rpx; font-weight: 800; color: #c2410c; }
+.streak-unit { font-size: 22rpx; color: #9a3412; }
+.streak-achieved { font-size: 24rpx; margin-left: 8rpx; }
+.streak-bar {
+  margin-top: 10rpx; height: 12rpx; background: #fed7aa;
+  border-radius: 6rpx; overflow: hidden;
+}
+.streak-bar-fill {
+  height: 100%; background: linear-gradient(90deg, #fb923c 0%, #f97316 100%);
+  border-radius: 6rpx; transition: width 0.4s ease;
+}
+.streak-hint { font-size: 20rpx; color: #c2410c; margin-top: 8rpx; display: block; }
 
 /* Recent */
 .recent-section { margin-bottom: 8rpx; }
@@ -479,6 +646,13 @@ function dismissInstall() {
   display: flex; align-items: center; gap: 20rpx;
   border: 1rpx solid #bae6fd;
 }
+.continue-empty {
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  border-color: #cbd5e1;
+}
+.continue-empty .continue-left { background: #94a3b8; }
+.continue-empty .continue-label { color: #475569; }
+.continue-empty .continue-name { color: #334155; }
 .continue-hover { opacity: 0.85; }
 .continue-left {
   width: 72rpx; height: 72rpx; border-radius: 20rpx;
