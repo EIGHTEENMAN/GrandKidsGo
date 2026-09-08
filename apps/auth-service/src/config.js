@@ -26,8 +26,15 @@ const config = {
     // 未配置 CORS_ORIGIN 时用白名单函数：grandand.com 及子域放行；
     // 生产环境非白名单 origin 拒绝（fail-closed），dev 才放行便于本地联调
     origin: process.env.CORS_ORIGIN || function (origin, callback) {
-      if (!origin) return callback(null, true); // 非浏览器请求（curl/server-side）
-      if (origin === 'https://grandand.com' || /^https:\/\/[a-z0-9-]+\.grandand\.com$/.test(origin)) {
+      if (!origin) return callback(null, true); // 非浏览器请求（curl/server-side、微信开发者工具）
+      // 白名单：grandand.com 主域 + 子域 + 微信小程序容器
+      if (
+        origin === 'https://grandand.com' ||
+        /^https:\/\/[a-z0-9-]+\.grandand\.com$/.test(origin) ||
+        // 微信小程序 WebView / wx.request 来源（开发工具 release 都有这两个值）
+        origin === 'https://servicewechat.com' ||
+        /^https:\/\/servicewechat\.com\//.test(origin)
+      ) {
         callback(null, true);
       } else if (IS_PROD) {
         callback(new Error(`CORS blocked: ${origin}`));

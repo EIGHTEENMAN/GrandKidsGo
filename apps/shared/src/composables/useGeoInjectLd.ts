@@ -319,7 +319,7 @@ export function injectQuiz(props: {
     })),
     provider: {
       '@type': 'Organization',
-      name: props.providerName || '童慧行来挑战',
+      name: props.providerName || '童慧行小答答',
       url: 'https://tiaozhan.grandand.com',
     },
     inLanguage: 'zh-CN',

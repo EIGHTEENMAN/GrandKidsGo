@@ -148,7 +148,7 @@ const teamRoles = [
             <strong>学英语</strong><span>english.grandand.com · 5018 个单词</span>
           </a>
           <a href="https://tiaozhan.grandand.com" class="site-link">
-            <strong>来挑战</strong><span>tiaozhan.grandand.com · 答题挑战</span>
+            <strong>小答答</strong><span>tiaozhan.grandand.com · 答题挑战</span>
           </a>
           <a href="https://travel.grandand.com" class="site-link">
             <strong>走天下</strong><span>travel.grandand.com · 亲子旅行</span>

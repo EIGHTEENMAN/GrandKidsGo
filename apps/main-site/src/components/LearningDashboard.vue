@@ -86,7 +86,7 @@ const subjectConfig = [
   { key: 'classics', name: '国学', icon: '📚', color: '#8b5cf6', app: 'xueguoxue' },
   { key: 'general', name: '通识', icon: '🔭', color: '#06b6d4', app: 'xuetongshi' },
   { key: 'english', name: '英语', icon: '🔤', color: '#ec4899', app: 'english' },
-  { key: 'challenge', name: '挑战', icon: '⚡', color: '#ef4444', app: 'tiaozhan' },
+  { key: 'challenge', name: '小答答', icon: '⚡', color: '#ef4444', app: 'tiaozhan' },
 ]
 
 function getSubjectProgress(child: any, subjectKey: string) {

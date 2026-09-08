@@ -255,9 +255,24 @@ function openDetail(c: Classic) {
 async function openDetailFromMeta(meta: ClassicMeta) {
   if (loadingData.value) return
   stopSpeaking()
-  await ensureFullData()
-  const c = fullData.value?.find(x => x.id === meta.id)
-  if (c) openDetail(c)
+  // 2026-09-07 修复：3MB classics chunk 下载需要几秒，加超时保护 + 提前 loading 反馈
+  // 用户第一次点卡片时立刻看到 loading 提示，不再"假死"
+  loadingData.value = true
+  try {
+    const loadWithTimeout = Promise.race([
+      ensureFullData(),
+      new Promise<never>((_, reject) =>
+        setTimeout(() => reject(new Error('加载超时，请检查网络后重试')), 30000)
+      ),
+    ])
+    await loadWithTimeout
+    const c = fullData.value?.find(x => x.id === meta.id)
+    if (c) openDetail(c)
+  } catch (e: any) {
+    alert(e?.message ?? '加载失败，请重试')
+  } finally {
+    loadingData.value = false
+  }
 }
 
 function openReader(s: Section) {
@@ -537,8 +552,11 @@ onUnmounted(() => {
     </template>
 
     <!-- ===== LOADING ===== -->
-    <template v-if="loadingData && (currentView === 'detail' || currentView === 'reader')">
-      <div class="gx-empty" style="padding:80px 24px">📖 正在加载内容...</div>
+    <template v-if="loadingData && (currentView === 'detail' || currentView === 'reader' || currentView === 'home')">
+      <div class="gx-empty" style="padding:80px 24px">
+        <div style="font-size:14px;color:#888;margin-bottom:8px">📖 正在加载典籍内容...</div>
+        <div style="font-size:12px;color:#aaa">首次打开需要下载约 1.3MB，正在加速加载</div>
+      </div>
     </template>
 
     <!-- ===== DETAIL VIEW with Favorite ===== -->

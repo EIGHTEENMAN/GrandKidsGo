@@ -122,7 +122,7 @@ onMounted(() => {
   // GEO: 主站首页 WebSite schema 注入（对 AI 引擎声明主站身份）
   injectWebSite(
     '童慧行 · 儿童益智乐园',
-    '童慧行是儿童益智乐园与亲子旅行攻略平台，核心理念：「孩子说好才是真的好」。覆盖古诗词、国学、通识、英语、来挑战、亲子旅行六大模块。',
+    '童慧行是儿童益智乐园与亲子旅行攻略平台，核心理念：「孩子说好才是真的好」。覆盖古诗词、国学、通识、英语、小答答、亲子旅行六大模块。',
     'https://grandand.com'
   )
   isSearchPage.value = window.location.pathname.startsWith('/search')
@@ -229,7 +229,7 @@ function trackApp(name: string) {
   for (const link of navLinks) {
     if (!link.hidden && link.trackKey) navMap[link.label] = link.trackKey
   }
-  const appKey = { '学国学': 'xueguoxue', '学诗词': 'xueshici', '学通识': 'xuetongshi', '学英语': 'english', '来挑战': 'tiaozhan', '走天下': 'travel', ...navMap }[name] || name
+  const appKey = { '学国学': 'xueguoxue', '学诗词': 'xueshici', '学通识': 'xuetongshi', '学英语': 'english', '小答答': 'xiaodada', '走天下': 'travel', ...navMap }[name] || name
   try {
     navigator.sendBeacon(
       'https://admin.grandand.com/api/analytics/track',
@@ -263,7 +263,7 @@ const apps = [
   { name: '学诗词', desc: '唐诗宋词，古韵童声', icon: 'feather', href: 'https://xueshici.grandand.com', color: '#f59e0b' },
   { name: '学通识', desc: '天文地理，万物百科', icon: 'globe', href: 'https://xuetongshi.grandand.com', color: '#06b6d4' },
   { name: '学英语', desc: '趣味单词，自然拼读', icon: 'languages', href: 'https://english.grandand.com', color: '#ec4899' },
-  { name: '来挑战', desc: '答题对战，益智闯关', icon: 'zap', href: 'https://tiaozhan.grandand.com', color: '#ef4444' },
+  { name: '小答答', desc: '答题对战，益智闯关', icon: 'zap', href: 'https://tiaozhan.grandand.com', color: '#ef4444' },
   { name: '走天下', desc: '亲子旅行攻略分享', icon: 'plane', href: 'https://travel.grandand.com', color: '#22c55e' },
 ]
 

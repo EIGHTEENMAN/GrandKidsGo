@@ -2,6 +2,7 @@ const express = require('express');
 const { v4: uuidv4 } = require('uuid');
 const db = require('../db');
 const { generateTokens } = require('../utils/jwt');
+const { authenticate } = require('../middleware/auth');
 const config = require('../config');
 
 const router = express.Router();
@@ -51,6 +52,30 @@ router.post('/wechat', async (req, res) => {
     });
   } catch (err) {
     console.error('[WeChat OAuth Error]', err);
+    res.status(500).json({ code: 'INTERNAL_ERROR', message: '微信登录请求失败' });
+  }
+});
+
+// POST /api/oauth/wechat/extract-openid
+// 已登录用户：把 wx.login() 拿到的 code 换成 openid，前端用这个 openid 调
+// /api/user/wechat-bind 把当前账号绑到微信。仅自己拿自己的 openid，安全。
+router.post('/wechat/extract-openid', authenticate, async (req, res) => {
+  const { code } = req.body;
+  if (!code) {
+    return res.status(400).json({ code: 'INVALID_INPUT', message: '微信登录 code 不能为空' });
+  }
+  try {
+    const resp = await fetch(
+      `https://api.weixin.qq.com/sns/jscode2session?appid=${config.wechat.appId}&secret=${config.wechat.appSecret}&js_code=${code}&grant_type=authorization_code`
+    );
+    const data = await resp.json();
+    if (data.errcode) {
+      console.error('[WeChat extract-openid Error]', data);
+      return res.status(400).json({ code: 'WECHAT_AUTH_FAILED', message: '微信登录失败' });
+    }
+    res.json({ code: 'OK', data: { openid: data.openid } });
+  } catch (err) {
+    console.error('[WeChat extract-openid Error]', err);
     res.status(500).json({ code: 'INTERNAL_ERROR', message: '微信登录请求失败' });
   }
 });

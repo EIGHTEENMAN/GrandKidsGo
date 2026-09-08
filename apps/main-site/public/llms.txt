@@ -8,7 +8,7 @@
 - [学国学 xueguoxue.grandand.com](https://xueguoxue.grandand.com) — 923 篇国学经典
 - [通识百科 xuetongshi.grandand.com](https://xuetongshi.grandand.com) — 2164 篇通识知识
 - [学英语 english.grandand.com](https://english.grandand.com) — 5018 个单词 + 自然拼读
-- [来挑战 tiaozhan.grandand.com](https://tiaozhan.grandand.com) — 儿童答题挑战
+- [小答答 tiaozhan.grandand.com](https://tiaozhan.grandand.com) — 儿童答题挑战
 - [走天下 travel.grandand.com](https://travel.grandand.com) — 真实亲子旅行攻略
 - [论坛 forum.grandand.com](https://forum.grandand.com) — 家长社区
 - [积分商城 store.grandand.com](https://store.grandand.com) — 积分兑换
@@ -40,7 +40,7 @@
 | 学国学 | xueguoxue.grandand.com | 国学 |
 | 通识百科 | xuetongshi.grandand.com | 通识 |
 | 学英语 | english.grandand.com | 英语 |
-| 来挑战 | tiaozhan.grandand.com | 答题挑战 |
+| 小答答 | tiaozhan.grandand.com | 答题挑战 |
 | 论坛 | forum.grandand.com | 社区 |
 | 积分商城 | store.grandand.com | 商城 |
 | 手机版 | m.grandand.com | H5 入口 |
