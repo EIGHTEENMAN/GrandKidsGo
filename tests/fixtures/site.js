@@ -3,7 +3,7 @@
  * 端口映射必须与 CLAUDE.md "运行中服务" 表一致：
  *   main-site:3000 | auth-service:3007 | travel-guide:3010 | admin:3099
  *   xueshici:3008 | xueguoxue:3003 | xuetongshi:3004 | english:3002
- *   tiaozhan:3001(后端)+3011(前端) | forum:3005 | store:3006 | moderation:3020
+ *   xiaodada(小答答):3001(后端)+3011(前端) | forum:3005 | store:3006 | moderation:3020
  */
 export const PORTS = {
   MAIN_SITE: 3000,

@@ -97,7 +97,7 @@ export const CONFIG = {
     // 请求间延迟 (ms) — 避免限流
     delayMs: 1500,
     // 输出目录（相对于脚本路径）
-    outputDir: '../../apps/xueshici/public/images/poems',
+    outputDir: process.env.OUTPUT_DIR || '../../apps/xueshici/public/images/poems',
     // 图片格式: webp | png | jpg
     format: 'webp',
   },

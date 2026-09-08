@@ -34,6 +34,19 @@ chinese-poetry/
 # 批量处理状态文件（PoC 跑完后可清空）
 scripts/generate-poem-audio/*-status.json
 scripts/generate-poem-audio/node_modules/
+# AI 生成产物（poems-data.json / knowledge.json / status.json / result.json）
+apps/xueshici/public/images/poems-data.json
+scripts/generate-poem-images/poems-data.json
+scripts/generate-poem-images/generation-status.json
+scripts/expand-all-fields/expand-result.json
+scripts/expand-all-fields/status.json
+scripts/generate-poem-translations/rewrite-result.json
+scripts/generate-poem-translations/status.json
+scripts/generate-xuetongshi-images/all-sections.json
+scripts/generate-xuetongshi-images/batch-status.json
+scripts/generate-xuetongshi-images/fill-missing-status.json
+scripts/rewrite-english-sentences/status.json
+scripts/generate-poem-audio/tts-status.bak.*.json
 
 # 原始数据备份（merge 前快照）
 apps/xueshici/public/images/poems/poems-data.original.json
@@ -43,8 +56,15 @@ apps/xueshici/public/audio/
 apps/xueshici/public/images/poems/1004_*.mp3
 apps/xueshici/dist/audio/
 
+# 通识百科 AI 配图（按需同步 OSS，不入仓；本地开发需要时单独 clone）
+apps/xuetongshi/public/images/sections/
+apps/xuetongshi/public/images/knowledge/
+
 # Playwright 测试产物
 test-results/
 playwright-report/
 tests/reports/
 tests/artifacts/
+# 环境变量密钥（严禁入库）
+**/.env
+!**/.env.example

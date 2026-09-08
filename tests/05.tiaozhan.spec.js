@@ -1,5 +1,5 @@
 /**
- * tiaozhan（来挑战 3011 前端 + 3001 后端）— 答题挑战
+ * xiaodada（小答答 3011 前端 + 3001 后端）— 答题挑战
  * 端到端：首页→登录弹窗→solo 记录→排行榜
  */
 import { test, expect, URL } from './fixtures/site.js';

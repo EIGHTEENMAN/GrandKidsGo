@@ -91,8 +91,8 @@ RSYNC_BASE=(
   -av
   --delete
   --exclude='._*'
-  --filter="protect audio/**"
-  --filter="protect images/**"
+  --filter='protect audio/'
+  --filter='protect images/'
 )
 
 # 分发到不同 deploy 路径
@@ -146,7 +146,7 @@ case "$KIND" in
         echo "🚀 rsync audio/$SUBTYPE → 服务端"
         # 只备份这一类 audio (变少了)，不备份其他类型
         ssh "$SERVER" "mkdir -p '$BACKUP_DIR' && rsync -a '$NGINX_HTML_DIR/$NGINX_DIR_NAME/audio/$SUBTYPE/' '$BACKUP_DIR/audio-$SUBTYPE/' 2>/dev/null || true"
-        rsync ${RSYNC_BASE[@]} "$SRC/" "$SERVER:$NGINX_HTML_DIR/$NGINX_DIR_NAME/audio/$SUBTYPE/"
+        rsync "${RSYNC_BASE[@]}" "$SRC/" "$SERVER:$NGINX_HTML_DIR/$NGINX_DIR_NAME/audio/$SUBTYPE/"
         ;;
       all)
         if [ ! -d "$APP_DIR/public/audio" ]; then
@@ -155,7 +155,7 @@ case "$KIND" in
         fi
         echo "🚀 rsync audio/ 全部 → 服务端"
         ssh "$SERVER" "mkdir -p '$BACKUP_DIR' && rsync -a '$NGINX_HTML_DIR/$NGINX_DIR_NAME/audio/' '$BACKUP_DIR/audio/' 2>/dev/null || true"
-        rsync ${RSYNC_BASE[@]} "$APP_DIR/public/audio/" "$SERVER:$NGINX_HTML_DIR/$NGINX_DIR_NAME/audio/"
+        rsync "${RSYNC_BASE[@]}" "$APP_DIR/public/audio/" "$SERVER:$NGINX_HTML_DIR/$NGINX_DIR_NAME/audio/"
         ;;
       *)
         echo "❌ 未知的 audio type '$SUBTYPE'" >&2
@@ -170,7 +170,7 @@ case "$KIND" in
     fi
     echo "🚀 rsync images/ → 服务端"
     ssh "$SERVER" "mkdir -p '$BACKUP_DIR' && rsync -a '$NGINX_HTML_DIR/$NGINX_DIR_NAME/images/' '$BACKUP_DIR/images/' 2>/dev/null || true"
-    rsync ${RSYNC_BASE[@]} "$APP_DIR/public/images/" "$SERVER:$NGINX_HTML_DIR/$NGINX_DIR_NAME/images/"
+    rsync "${RSYNC_BASE[@]}" "$APP_DIR/public/images/" "$SERVER:$NGINX_HTML_DIR/$NGINX_DIR_NAME/images/"
     ;;
   *)
     echo "❌ 未知 kind '$KIND'。支持: text-full | text | audio | images" >&2

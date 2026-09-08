@@ -6,7 +6,8 @@
  * 输入：/tmp/poems-data.json（= apps/xueshici/public/images/poems/poems-data.json 的拷贝）
  * 输出：
  *   /grandkidsgo/apps/auth-service/data/search/shici.json  ← 新版（2026 首）
- *   /grandkidsgo/apps/auth-service/data/search/index.json ← 重新合并（= shici+tongshi+guoxue+english+tiaozhan）
+ *   /grandkidsgo/apps/auth-service/data/search/index.json ← 重新合并（= shici+tongshi+guoxue+english+小答答索引）
+ * 注：小答答（xiaodada）的索引文件名仍保留 tiaozhan.json（auth-service 搜索数据命名约定，向后兼容）
  *
  * 2026-08-06 应急修复：旧 shici.json（1004 首，2026-05-18）不含招隐士等新诗
  */
@@ -66,7 +67,7 @@ console.log('newShici:', newShici.length);
 fs.writeFileSync(path.join(SEARCH_DIR, 'shici.json'), JSON.stringify(newShici, null, 2));
 console.log('wrote shici.json:', newShici.length, 'entries');
 
-// 重新合并 index.json：shici（新版）+ tongshi/guoxue/english/tiaozhan（旧版）
+// 重新合并 index.json：shici（新版）+ tongshi/guoxue/english/小答答（旧版，文件名 tiaozhan.json）
 const parts = [newShici];
 for (const f of ['tongshi.json', 'guoxue.json', 'english.json', 'tiaozhan.json']) {
   const p = path.join(SEARCH_DIR, f);
