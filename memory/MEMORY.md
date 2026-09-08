@@ -1,5 +1,12 @@
 # 童慧行项目记忆索引
 
+## ⚠️ Git 状态（2026-09-08 已修复+全量推送）
+- 曾 `.git` 损坏成空壳（非 git 仓库）。已重建并推送到远端 `github.com/EIGHTEENMAN/GrandKidsGo` main（`03b5c85..76d94b5`）。
+- 注意：旧的 session commit 号（37d43f0/65ea53b/e5f21a2）在远端历史不存在——这些 8-5 的 commit 从未真正推到远端或早随 .git 损坏丢失。实际可用 commit 以远端/GitHub 为准。
+- 仓库现已在项目 `.git` 正常可用（user=EIGHTEENMAN 已配，remote=origin SSH）。
+- `.gitignore` 已全局追加 `**/.env`（排除密钥入仓）；根目录杂项（品牌/项目建设方案/任务卡/高德授权书.jpeg）已入库。
+- apps/tiaozhan 已整体更名 apps/xiaodada（来挑战 app 改名）。
+
 ## Session 记录
 - [Session 2026-08-05 xueshici 图片裁切](session-2026-08-05-xueshici-image-smartcrop.md) — PoemIllustration 智能 object-position（人像 30% / 山水 45% / 通用 center）；commit 37d43f0
 - [Session 2026-08-05 PR2-A](session-2026-08-05-pr2-a.md) — 多城天数 heuristic 升级 — 孩子画像驱动（likes/fearsAnimals/isShy）+ 缓冲日（v1.5 §5 规则五）；commit 65ea53b
