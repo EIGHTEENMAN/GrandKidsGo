@@ -49,17 +49,17 @@ export default function App() {
   const [youthReason, setYouthReason] = useState('')
   const [youthLoading, setYouthLoading] = useState(true)
 
-  // GEO: 来挑战首页注入 WebSite + Quiz 集合 schema
+  // GEO: 小答答首页注入 WebSite + Quiz 集合 schema
   useEffect(() => {
     injectWebSite(
-      '童慧行来挑战',
-      '童慧行来挑战 — 答题对战、益智闯关、多人竞技。覆盖古诗词、英语单词、自然拼读、通识百科等多学科题目，8000+ 道，让孩子在游戏中巩固学习成果。',
+      '童慧行小答答',
+      '童慧行小答答 — 答题对战、益智闯关、多人竞技。覆盖古诗词、英语单词、自然拼读、通识百科等多学科题目，8000+ 道，让孩子在游戏中巩固学习成果。',
       'https://tiaozhan.grandand.com'
     )
     // Quiz 集合 schema（站点级别，作为"题库目录"被 AI 引擎索引）
     injectQuiz({
-      name: '童慧行来挑战 · 全平台题目合集',
-      description: '童慧行来挑战站收录 8000+ 道题目，覆盖诗词 / 国学 / 英语 / 自然拼读 / 通识百科，适合 5-12 岁儿童答题挑战。题目分入门 / 进阶 / 高手三档难度，支持单人闯关 / 双人 PK / 排行榜。',
+      name: '童慧行小答答 · 全平台题目合集',
+      description: '童慧行小答答站收录 8000+ 道题目，覆盖诗词 / 国学 / 英语 / 自然拼读 / 通识百科，适合 5-12 岁儿童答题挑战。题目分入门 / 进阶 / 高手三档难度，支持单人闯关 / 双人 PK / 排行榜。',
       url: 'https://tiaozhan.grandand.com',
       about: '儿童答题挑战',
       educationalLevel: 'beginner',
@@ -73,7 +73,7 @@ export default function App() {
         { text: '中国第一长河是？', answerText: '长江', difficulty: 'medium' },
         { text: '三角形的内角和是多少度？', answerText: '180 度', difficulty: 'medium' },
       ],
-      providerName: '童慧行来挑战',
+      providerName: '童慧行小答答',
     })
   }, [])
 
@@ -169,7 +169,7 @@ export default function App() {
       setYouthReason(ym.reason)
     }
 
-    // Sync with tiaozhan server
+    // Sync with xiaodada server
     try {
       await fetch('/api/auth', {
         method: 'POST',

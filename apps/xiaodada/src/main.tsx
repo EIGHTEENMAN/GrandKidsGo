@@ -4,7 +4,7 @@ import App from './App'
 import './index.css'
 import { initErrorReporter } from '@shared/composables/useErrorReporter'
 
-initErrorReporter({ endpoint: 'https://auth.grandand.com/api/errors', appName: 'tiaozhan' })
+initErrorReporter({ endpoint: 'https://auth.grandand.com/api/errors', appName: 'xiaodada' })
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <App />

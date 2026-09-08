@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 3001;
 
 // Use auth-service JWT secret for shared auth
 const JWT_SECRET = process.env.AUTH_JWT_SECRET || process.env.JWT_SECRET || 'grandkidsgo-auth-jwt-secret-kids-2024';
-const LOCAL_JWT_SECRET = process.env.JWT_SECRET || 'grandkidsgo-tiaozhan-dev-secret';
+const LOCAL_JWT_SECRET = process.env.JWT_SECRET || 'grandkidsgo-xiaodada-dev-secret';
 
 const app = express();
 const server = createServer(app);
@@ -749,7 +749,7 @@ app.use((_req, res) => {
 });
 
 server.listen(PORT, '0.0.0.0', () => {
-  console.log(`[grandkidsgo-tiaozhan] running on port ${PORT}`);
+  console.log(`[grandkidsgo-xiaodada] running on port ${PORT}`);
 });
 
 export default app;

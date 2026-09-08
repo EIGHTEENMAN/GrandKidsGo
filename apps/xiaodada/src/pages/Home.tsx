@@ -125,7 +125,7 @@ export default function Home({ user, onStart, onShowLogin }: Props) {
                 <span>⚡</span>
               </div>
               <div>
-                <h1 className="tz-hero-title">来挑战</h1>
+                <h1 className="tz-hero-title">小答答</h1>
                 <p className="tz-hero-desc">答题对战，益智闯关</p>
               </div>
             </div>

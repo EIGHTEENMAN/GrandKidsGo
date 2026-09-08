@@ -118,7 +118,7 @@ export default function QuizBattle({ user, onBack, initialMode, initialCategory,
         answerText: correctText,
         difficulty: difficulty as 'easy' | 'medium' | 'hard',
       }],
-      providerName: '童慧行来挑战',
+      providerName: '童慧行小答答',
     })
     return () => {
       document.querySelectorAll('[id^="geo-jsonld"]').forEach(el => el.remove())
