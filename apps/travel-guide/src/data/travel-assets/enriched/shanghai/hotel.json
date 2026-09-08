@@ -1,96 +1,4261 @@
 [
   {
     "cityId": "city-shanghai",
-    "amapPoiId": "SEED-sh-01",
-    "name": "上海浦东丽思卡尔顿酒店",
-    "address": "上海市浦东新区陆家嘴环路1717号",
-    "lat": 31.23612,
-    "lng": 121.50545,
-    "hasFamilyRoom": true,
+    "amapPoiId": "B0FFIQN8K2",
+    "name": "上海金陵紫金山大酒店",
+    "address": "东方路778号(世纪大道地铁站11号口步行420米)",
+    "lat": 31.227788,
+    "lng": 121.523446,
+    "hasFamilyRoom": false,
     "hasKidsPool": false,
-    "hasKidsBreakfast": true,
-    "avgPricePerNight": 2200,
+    "hasKidsBreakfast": false,
     "tags": [
-      "ai_draft_v1",
-      "陆家嘴",
-      "顶级",
-      "商务亲子"
+      "ai_draft_v1"
     ],
     "dataSource": "ai_draft_v1"
   },
   {
     "cityId": "city-shanghai",
-    "amapPoiId": "SEED-sh-02",
-    "name": "上海外滩茂悦大酒店",
-    "address": "上海市黄浦区黄浦路199号",
-    "lat": 31.24512,
-    "lng": 121.49045,
-    "hasFamilyRoom": true,
+    "amapPoiId": "B0KBFXWEMC",
+    "name": "上海世博滨江大酒店",
+    "address": "世博大道1588号",
+    "lat": 31.186409,
+    "lng": 121.486628,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LBL7PJTH",
+    "name": "上海乐高乐园酒店",
+    "address": "乐纷路188号",
+    "lat": 30.883889,
+    "lng": 121.096905,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0KKRAR663",
+    "name": "上海世博木棉花凯悦臻选酒店",
+    "address": "博成路861号(中华艺术宫地铁站3号口步行300米)",
+    "lat": 31.184773,
+    "lng": 121.490309,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0K3HU31S4",
+    "name": "上海伊敦康得思酒店",
+    "address": "吴淞口路166号",
+    "lat": 31.406006,
+    "lng": 121.501046,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0KG2AWEZA",
+    "name": "上海张江voco酒店",
+    "address": "华夏东路811号",
+    "lat": 31.19676,
+    "lng": 121.664589,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0KAK1QHHA",
+    "name": "上海野生动物园荷逸唐酒店(惠南地铁站店)",
+    "address": "惠南镇拱极路2875号(惠南地铁站2号口步行210米)",
+    "lat": 31.053344,
+    "lng": 121.764516,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0K29SO3I7",
+    "name": "上海云和夜泊酒店",
+    "address": "川沙新镇连民村179号54幢",
+    "lat": 31.092584,
+    "lng": 121.68317,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LRGZT7ZK",
+    "name": "城际上海外滩南京路步行街酒店",
+    "address": "福州路431号(南京东路地铁站4号口步行390米)",
+    "lat": 31.233569,
+    "lng": 121.482231,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LBTR50YE",
+    "name": "上海虹桥荷逸唐酒店(北新泾地铁站店)",
+    "address": "北新泾街道蒲淞北路60号申亚时代广场C栋",
+    "lat": 31.218881,
+    "lng": 121.375007,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0KGLUIJW7",
+    "name": "上海浦东丽呈华廷酒店",
+    "address": "申江南路4888号",
+    "lat": 31.075143,
+    "lng": 121.645769,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0K6BZ9WVE",
+    "name": "上海冰雪世界皇冠假日酒店",
+    "address": "南汇新城镇沪城环路2088弄2号",
+    "lat": 30.920196,
+    "lng": 121.905195,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0K03Z4BIX",
+    "name": "上海丽呈花园酒店",
+    "address": "川沙镇连民村179号53幢",
+    "lat": 31.092803,
+    "lng": 121.683659,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0KRO5TE15",
+    "name": "上海静安寺南京西路亚朵酒店",
+    "address": "延安中路839号1层A区、12-26层",
+    "lat": 31.222775,
+    "lng": 121.454642,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0KR07N2PA",
+    "name": "全季酒店(上海浦东机场店)",
+    "address": "施新路958号4幢",
+    "lat": 31.148085,
+    "lng": 121.760023,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0KULZ1PFE",
+    "name": "上海金桥海昌企鹅度假酒店",
+    "address": "腾波路518号",
+    "lat": 30.947015,
+    "lng": 121.930293,
+    "hasFamilyRoom": false,
     "hasKidsPool": true,
     "hasKidsBreakfast": true,
-    "avgPricePerNight": 1600,
     "tags": [
-      "ai_draft_v1",
-      "外滩",
-      "豪华",
-      "亲子设施齐全"
+      "ai_draft_v1"
     ],
     "dataSource": "ai_draft_v1"
   },
   {
     "cityId": "city-shanghai",
-    "amapPoiId": "SEED-sh-03",
-    "name": "上海浦东香格里拉大酒店",
-    "address": "上海市浦东新区富城路33号",
-    "lat": 31.23745,
-    "lng": 121.50112,
-    "hasFamilyRoom": true,
+    "amapPoiId": "B0JKZ5TL66",
+    "name": "上海枫泾福朋喜来登酒店",
+    "address": "朱枫公路8855号",
+    "lat": 30.90312,
+    "lng": 121.020723,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LALLPFML",
+    "name": "城际上海浦江中心酒店",
+    "address": "竹园路559号8幢",
+    "lat": 31.070106,
+    "lng": 121.514245,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0L0HAPVB2",
+    "name": "上海国际旅游度假区洲际假日酒店",
+    "address": "川沙新镇连民村179号66幢",
+    "lat": 31.092586,
+    "lng": 121.682543,
+    "hasFamilyRoom": false,
     "hasKidsPool": true,
     "hasKidsBreakfast": true,
-    "avgPricePerNight": 1400,
     "tags": [
-      "ai_draft_v1",
-      "陆家嘴",
-      "豪华",
-      "亲子"
+      "ai_draft_v1"
     ],
     "dataSource": "ai_draft_v1"
   },
   {
     "cityId": "city-shanghai",
-    "amapPoiId": "SEED-sh-04",
-    "name": "上海和平饭店",
-    "address": "上海市黄浦区南京东路20号",
-    "lat": 31.24012,
-    "lng": 121.48712,
+    "amapPoiId": "B0K2TSPT4L",
+    "name": "上海人民广场地铁站亚朵酒店",
+    "address": "北京西路199号(新闸路地铁站6号口步行290米)",
+    "lat": 31.235903,
+    "lng": 121.470203,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0K29ZU8YE",
+    "name": "汉庭酒店(上海国际旅游度假区鹿达路店)",
+    "address": "鹿达路28号28幢",
+    "lat": 31.106756,
+    "lng": 121.696486,
+    "hasFamilyRoom": false,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LDPR148M",
+    "name": "上海缤纷里希尔顿嘉悦里酒店",
+    "address": "乐缤路1299号",
+    "lat": 30.886672,
+    "lng": 121.095457,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LGXZ8EDQ",
+    "name": "上海武宁筑格酒店",
+    "address": "曹杨新村街道武宁路501号鸿运大厦",
+    "lat": 31.243855,
+    "lng": 121.41575,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0L3ZZ06AJ",
+    "name": "UrCove上海外滩逸扉酒店(BUND 15)",
+    "address": "中山东二路15号(豫园地铁站7号口步行490米)",
+    "lat": 31.231275,
+    "lng": 121.493525,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0KKT5VGFI",
+    "name": "上海北外滩四平路希尔顿欢朋酒店",
+    "address": "四平路870号(四平路地铁站3号口步行90米)",
+    "lat": 31.274344,
+    "lng": 121.501329,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LGOZ6NE7",
+    "name": "上海浦东温德姆花园酒店",
+    "address": "惠南镇沪南公路9825号近大川公路",
+    "lat": 31.041523,
+    "lng": 121.734828,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LGOL6GWI",
+    "name": "上海松江温德姆花园酒店(佘山店)",
+    "address": "洞泾镇莘砖公路3998弄1号",
+    "lat": 31.093525,
+    "lng": 121.272982,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0L1KSTQBL",
+    "name": "上海外滩智选假日酒店",
+    "address": "人民路388号(豫园地铁站7号口步行50米)",
+    "lat": 31.229644,
+    "lng": 121.490977,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0K23HZ8ND",
+    "name": "上海国际旅游度假区川沙古镇亚朵酒店",
+    "address": "川沙镇新川路272号2幢",
+    "lat": 31.194721,
+    "lng": 121.703644,
+    "hasFamilyRoom": false,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0L1J99DKL",
+    "name": "上海松江站希尔顿欢朋酒店",
+    "address": "中山中路245号",
+    "lat": 31.006405,
+    "lng": 121.229081,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0KDKZL8PF",
+    "name": "上海滴水湖临港万达广场亚朵S酒店",
+    "address": "上海浦东新区鸿音路1888弄18号楼",
+    "lat": 30.882895,
+    "lng": 121.817604,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LGAALGSU",
+    "name": "上海国际旅游度假区福朋喜来登酒店",
+    "address": "崇溪路111弄242号1层102室",
+    "lat": 31.108114,
+    "lng": 121.711349,
+    "hasFamilyRoom": false,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0L2354HGG",
+    "name": "如家商旅酒店(上海世博园高科西路地铁站店)",
+    "address": "上海浦东新区高科西路551号A区",
+    "lat": 31.184608,
+    "lng": 121.504249,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0L2AU2KUP",
+    "name": "上海北外滩长阳路智选假日酒店",
+    "address": "长阳路1687号(宁国路地铁站3号口步行240米)",
+    "lat": 31.270664,
+    "lng": 121.535769,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0L6X5SYTH",
+    "name": "上海静安寺南京西路珍宝NOA诺岸酒店",
+    "address": "武定路969号(昌平路地铁站3号口步行480米)",
+    "lat": 31.230154,
+    "lng": 121.443906,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0KD1LY8TZ",
+    "name": "景莱·臻选酒店(静安大宁灵石公园店)",
+    "address": "沪太路951号3幢",
+    "lat": 31.274976,
+    "lng": 121.43033,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0MGKUKTLV",
+    "name": "上海虹桥雅高翰悦阁酒店",
+    "address": "遵义南路5号",
+    "lat": 31.203604,
+    "lng": 121.405375,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0L2VS6UQJ",
+    "name": "上海国际旅游度假区开元名庭酒店",
+    "address": "崇溪路111弄242号1楼",
+    "lat": 31.107817,
+    "lng": 121.711474,
+    "hasFamilyRoom": false,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0L2S17JJ1",
+    "name": "艺龙安悦酒店(上海北外滩平凉路地铁站店)",
+    "address": "江浦路与榆林路交叉口北40米(平凉路地铁站1号口旁)",
+    "lat": 31.259797,
+    "lng": 121.526505,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0L16MQXPG",
+    "name": "上海浦东丽呈酒店(国际旅游度假区店)",
+    "address": "川沙镇车站路98号",
+    "lat": 31.199079,
+    "lng": 121.703971,
+    "hasFamilyRoom": false,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0K0J7ENUL",
+    "name": "汉庭酒店(上海国际旅游度假区六奉公路店)",
+    "address": "川沙新镇连民村179号59-61栋",
+    "lat": 31.093296,
+    "lng": 121.681879,
+    "hasFamilyRoom": false,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0M6YHQSB2",
+    "name": "上海嘉定丽呈华廷酒店",
+    "address": "澄浏公路108号御泰广场南门",
+    "lat": 31.402495,
+    "lng": 121.273389,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0KUGATSXF",
+    "name": "上海五角场辉盛坊公寓酒店",
+    "address": "殷行路1258号(新江湾城地铁站1号口步行480米)",
+    "lat": 31.329657,
+    "lng": 121.511775,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0L6DC8MEW",
+    "name": "上海静安苏河1號酒店(上海火车站店)",
+    "address": "恒丰路688号(上海火车站地铁站3号口步行430米)",
+    "lat": 31.248153,
+    "lng": 121.451336,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0MD2H64RV",
+    "name": "海玥名庭酒店(上海火车站店)",
+    "address": "中兴路1556号(上海火车站地铁站7号口步行370米)",
+    "lat": 31.252075,
+    "lng": 121.457325,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0K1RHYJ7F",
+    "name": "上海戴斯温德姆酒店(殷高西路地铁站店)",
+    "address": "逸仙路1600弄61号",
+    "lat": 31.323775,
+    "lng": 121.483271,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0K6OZQPHH",
+    "name": "桂客酒店(上海八万人体育场漕宝路地铁站店)",
+    "address": "田林东路75号汇阳广场层5F",
+    "lat": 31.174489,
+    "lng": 121.432817,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0KB3SY8SQ",
+    "name": "上海初心启程酒店(上海国际旅游度假区店)",
+    "address": "界龙大道266幢",
+    "lat": 31.17604,
+    "lng": 121.68358,
+    "hasFamilyRoom": false,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LU3H911A",
+    "name": "如家酒店·NEO(上海新华医院江浦路地铁站店)",
+    "address": "江浦路1188号东面裙房一层超市A区",
+    "lat": 31.269559,
+    "lng": 121.521728,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0L2NZHVAD",
+    "name": "美豪丽致酒店(上海国际旅游度假区川沙路店)",
+    "address": "华夏东路2480号",
+    "lat": 31.199572,
+    "lng": 121.700071,
+    "hasFamilyRoom": false,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0KKX716B2",
+    "name": "上海国际旅游度假区崇溪路美仑酒店",
+    "address": "崇溪路111弄237号",
+    "lat": 31.108191,
+    "lng": 121.710553,
+    "hasFamilyRoom": false,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0KRUGX31Z",
+    "name": "如家酒店·neo(上海野生动物园店)",
+    "address": "南六公路377弄29号",
+    "lat": 31.0609,
+    "lng": 121.712964,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LKNLR3AW",
+    "name": "际庭酒店(上海莘庄地铁站店)",
+    "address": "莘浜路69号",
+    "lat": 31.106275,
+    "lng": 121.379125,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LUNZ5DJC",
+    "name": "桔子酒店(上海东靖路地铁站店)",
+    "address": "张杨北路1933弄2号(东靖路地铁站2号口步行110米)",
+    "lat": 31.290897,
+    "lng": 121.588232,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0KAXB6NDP",
+    "name": "唯庭酒店(上海梅陇镇广场北京西路店)",
+    "address": "江宁路167号新城大厦F4层",
+    "lat": 31.230625,
+    "lng": 121.454599,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0KR15OYH9",
+    "name": "上海浦东龙樱酒店(上海国际旅游度假区店)",
+    "address": "上海浦东新区川沙新镇川周公路7076弄2号4幢",
+    "lat": 31.167278,
+    "lng": 121.685544,
+    "hasFamilyRoom": false,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LBZ7LGHX",
+    "name": "雷迪森世嘉酒店(上海嘉定新城同济大学嘉定校区店)",
+    "address": "曹安公路4671号",
+    "lat": 31.2757,
+    "lng": 121.217587,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFGRMWA7",
+    "name": "怡沁园度假村",
+    "address": "北沿公路2089号",
+    "lat": 31.67111,
+    "lng": 121.477884,
+    "hasFamilyRoom": false,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0K2N54D9I",
+    "name": "迪万度假酒店",
+    "address": "周浦镇瓦屑振兴路58号",
+    "lat": 31.10895,
+    "lng": 121.654965,
+    "hasFamilyRoom": false,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LURA43MR",
+    "name": "艺龙安悦酒店(上海虹桥水城路地铁站店)",
+    "address": "水城南路55号(水城路地铁站2号口步行380米)",
+    "lat": 31.196517,
+    "lng": 121.393058,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0K3NHNEGM",
+    "name": "上海浦东张江前沿产业创新中心亚朵X酒店",
+    "address": "张江路135号",
+    "lat": 31.210431,
+    "lng": 121.612659,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0KDU5AQCX",
+    "name": "汉庭酒店(上海外高桥五洲大道店)",
+    "address": "杨高北路3259号",
+    "lat": 31.29982,
+    "lng": 121.604869,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0L3RRO6A5",
+    "name": "上海荷逸·悦居酒店",
+    "address": "沪南公路9968号上海浦东禹悦汇F1层",
+    "lat": 31.039826,
+    "lng": 121.738638,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0KKZRU8I6",
+    "name": "上海浦东机场W9酒店",
+    "address": "盐朝公路1365弄2号",
+    "lat": 31.100541,
+    "lng": 121.834822,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0KUMZTWYO",
+    "name": "艺选安來酒店(上海国际旅游度假区秀沿路地铁站店)",
+    "address": "川周公路2858号",
+    "lat": 31.142832,
+    "lng": 121.616746,
+    "hasFamilyRoom": false,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0K0DRJY1A",
+    "name": "潮漫酒店(上海交通大学延安西路店)",
+    "address": "延安西路1088号",
+    "lat": 31.211714,
+    "lng": 121.430803,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0K67CESJV",
+    "name": "上海大宁国际市北高新园区轻居酒店",
+    "address": "大宁路街道江场路1228弄6B幢1楼",
+    "lat": 31.297885,
+    "lng": 121.459281,
     "hasFamilyRoom": false,
     "hasKidsPool": false,
     "hasKidsBreakfast": true,
-    "avgPricePerNight": 1900,
     "tags": [
-      "ai_draft_v1",
-      "外滩",
-      "历史建筑",
-      "高端"
+      "ai_draft_v1"
     ],
     "dataSource": "ai_draft_v1"
   },
   {
     "cityId": "city-shanghai",
-    "amapPoiId": "SEED-sh-05",
-    "name": "上海迪士尼乐园酒店",
-    "address": "上海市浦东新区申迪西路1009号",
-    "lat": 31.14734,
-    "lng": 121.67112,
+    "amapPoiId": "B0L25HC6CV",
+    "name": "艺龙安悦酒店(上海航头浦乐汇广场店)",
+    "address": "鹤雷路239号1号楼5楼",
+    "lat": 31.077665,
+    "lng": 121.592641,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0L2H5AM12",
+    "name": "上海丽呈雅苑酒店",
+    "address": "川沙新镇连民村179号55幢",
+    "lat": 31.092975,
+    "lng": 121.682547,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LA5LTB3S",
+    "name": "艺选安來酒店(上海环球港梅岭北路地铁站店)",
+    "address": "梅岭北路480号",
+    "lat": 31.242375,
+    "lng": 121.404475,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0KRZHFG6J",
+    "name": "上海乡韵度假酒店(上海国际旅游度假区店)",
+    "address": "川沙镇纯新村岭南支路鲍家宅48号",
+    "lat": 31.13877,
+    "lng": 121.70276,
+    "hasFamilyRoom": false,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0MDM7YVP5",
+    "name": "云禧悦居酒店(上海国际旅游度假区崇溪路店)",
+    "address": "崇溪路111弄208号1层",
+    "lat": 31.108503,
+    "lng": 121.711074,
+    "hasFamilyRoom": false,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0L2CDHQYF",
+    "name": "如家·neo(上海金桥金高路店)",
+    "address": "金高路1398号",
+    "lat": 31.274617,
+    "lng": 121.609649,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0L1DUUHJF",
+    "name": "品睿酒店(上海国际旅游度假区店)",
+    "address": "上海浦东新区川六公路1155、1157号1-6层",
+    "lat": 31.157362,
+    "lng": 121.71719,
+    "hasFamilyRoom": false,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0L1UB22SM",
+    "name": "上海丽呈璀际酒店(南京路步行街外滩店)",
+    "address": "山东中路337号悦荟广场7楼(南京东路地铁站3号口旁)",
+    "lat": 31.236799,
+    "lng": 121.484023,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LASSXQ2K",
+    "name": "桔子酒店(上海漕河泾吴中路店)",
+    "address": "吴中路1099号吴中商务大厦B座(近万源路)",
+    "lat": 31.175885,
+    "lng": 121.386172,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0KDY7UIX1",
+    "name": "上海金桥海昌企鹅万信酒店",
+    "address": "南汇新城镇腾波路555弄48号",
+    "lat": 30.947716,
+    "lng": 121.930241,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LA1HCG8Q",
+    "name": "汉庭酒店(上海虹桥火车站华翔路店)",
+    "address": "华翔路3689号",
+    "lat": 31.221073,
+    "lng": 121.301852,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0KBG95UKG",
+    "name": "如家·neo(上海第九人民医院马当路地铁站店)",
+    "address": "斜土路112号",
+    "lat": 31.205917,
+    "lng": 121.482323,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0MGNHQ5FM",
+    "name": "宸家·酒店(上海南京路步行街黄河路店)",
+    "address": "黄河路288号(新闸路地铁站6号口步行220米)",
+    "lat": 31.237786,
+    "lng": 121.469331,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0L2FZ1SR2",
+    "name": "格林豪泰智选(上海江杨南路长江西路店)",
+    "address": "江杨南路1648号",
+    "lat": 31.336974,
+    "lng": 121.465479,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0KA9HK97E",
+    "name": "唯庭轻居酒店(第九人民医院陆家浜路地铁站店)",
+    "address": "制造局路130号",
+    "lat": 31.208953,
+    "lng": 121.482879,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0MACHVXZH",
+    "name": "喜来乐亲子酒店(金山北站店)",
+    "address": "枫泾镇五一村4059号",
+    "lat": 30.883849,
+    "lng": 121.084519,
     "hasFamilyRoom": true,
     "hasKidsPool": true,
     "hasKidsBreakfast": true,
-    "avgPricePerNight": 2300,
     "tags": [
-      "ai_draft_v1",
-      "迪士尼",
-      "亲子主题",
-      "顶级"
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0KG7OY2C6",
+    "name": "驿居酒店(上海镇坪路地铁站店)",
+    "address": "光新路268号",
+    "lat": 31.253576,
+    "lng": 121.431613,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0L2KZFXJO",
+    "name": "如家精选酒店(上海周浦万达广场店)",
+    "address": "周浦镇川周公路4505号",
+    "lat": 31.119095,
+    "lng": 121.576335,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0JUM6NJTN",
+    "name": "觅应·米乐亲子度假露营花园酒店(上海国际旅游度假区店)",
+    "address": "川沙新镇金家村陈家宅22号",
+    "lat": 31.153605,
+    "lng": 121.679587,
+    "hasFamilyRoom": true,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LR55B9DZ",
+    "name": "枫溪小筑·亲子花园美宿(上海金山北站乐缤路店)",
+    "address": "金山区枫泾镇兰兴路600弄280号-281号",
+    "lat": 30.881075,
+    "lng": 121.082075,
+    "hasFamilyRoom": true,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LAZMON7E",
+    "name": "云绯酒店(上海虹桥机场火车站店)",
+    "address": "北翟路2910弄38号",
+    "lat": 31.222,
+    "lng": 121.322127,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0M605M80D",
+    "name": "乐积酒店(上海金山北站店)",
+    "address": "枫泾镇五一村4082号",
+    "lat": 30.884894,
+    "lng": 121.087637,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LRVDJUKT",
+    "name": "上海全际花园酒店",
+    "address": "建设路103号",
+    "lat": 31.111468,
+    "lng": 121.652859,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0J33OQ18E",
+    "name": "仙渡隐仙谷亲子民宿(上海国际旅游度假区店)",
+    "address": "上海浦东新区川沙新镇七灶支路吴家宅86号",
+    "lat": 31.141416,
+    "lng": 121.712602,
+    "hasFamilyRoom": true,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0KKTCW1L6",
+    "name": "上海溪栖里·Creek·露营·无边泳池·亲子度假民宿",
+    "address": "川沙新镇新吉村三吉263号",
+    "lat": 31.114725,
+    "lng": 121.728475,
+    "hasFamilyRoom": true,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0KGLHIYV1",
+    "name": "曼福楼优选酒店(上海南京西路店)",
+    "address": "陕西北路739号(康定路与陕西北路交汇处东南角)",
+    "lat": 31.234365,
+    "lng": 121.44995,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LKK7OVJJ",
+    "name": "SA·LEHI乐嗨·萌宠亲子乐园美宿(上海金山北站店)",
+    "address": "枫泾镇五一村5组4064号",
+    "lat": 30.885328,
+    "lng": 121.090035,
+    "hasFamilyRoom": true,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LAHHE6YY",
+    "name": "柒柒亲子度假民宿",
+    "address": "六灶镇汤店村426号",
+    "lat": 31.123647,
+    "lng": 121.723503,
+    "hasFamilyRoom": true,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0M69A9WLF",
+    "name": "泡泡家YA亲子民宿(上海金山北站店)",
+    "address": "枫泾镇兰兴路600弄110号",
+    "lat": 30.879901,
+    "lng": 121.081631,
+    "hasFamilyRoom": true,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0HKJ71KV7",
+    "name": "上海多米亲子花园民宿(上海国际旅游度假区店)",
+    "address": "川沙新镇鹿达路汇领商墅8号",
+    "lat": 31.107333,
+    "lng": 121.69704,
+    "hasFamilyRoom": true,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFMFZXB2",
+    "name": "上海静安自然博物馆亚朵轻居酒店",
+    "address": "南苏州路1419号",
+    "lat": 31.240692,
+    "lng": 121.462069,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFI2G55T",
+    "name": "上海尖微空间自然酒店(自然博物馆店)",
+    "address": "山海关路118号(新闸路地铁站1号口步行300米)",
+    "lat": 31.237713,
+    "lng": 121.466811,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFIT9KUF",
+    "name": "上海艾龙博江商旅酒店(上海自然博物馆地铁站店)",
+    "address": "慈溪路227号(13号自然博物馆站3号)",
+    "lat": 31.236413,
+    "lng": 121.46113,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0KA25GQF8",
+    "name": "蜗居青年旅舍(上海人民广场自然博物馆店)",
+    "address": "山海关路180号2楼(自然博物馆地铁站1号口步行290米)",
+    "lat": 31.237041,
+    "lng": 121.465366,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFHZ4KGP",
+    "name": "康铂酒店(上海自然博物馆店)",
+    "address": "南苏州路1455号",
+    "lat": 31.240083,
+    "lng": 121.461599,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0M66MAIRB",
+    "name": "格格民宿(上海上海火车站自然博物馆地铁站一店)",
+    "address": "恒通路360号一天下大厦B区1706室",
+    "lat": 31.240275,
+    "lng": 121.457375,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0KKDU5LNW",
+    "name": "唯庭轻居酒店(上海静安寺自然博物馆店)",
+    "address": "江宁路445号",
+    "lat": 31.234615,
+    "lng": 121.452001,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFGX9CYO",
+    "name": "登巴客栈(上海旗舰店)",
+    "address": "延安西路576号",
+    "lat": 31.216636,
+    "lng": 121.435379,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFFZKIZL",
+    "name": "大隐国际青年旅舍(上海陆家嘴滨江道店)",
+    "address": "陆家嘴街道浦东大道834弄-840号甲",
+    "lat": 31.239356,
+    "lng": 121.527291,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B00155779O",
+    "name": "登巴客栈(上海长寿路店)",
+    "address": "西康路1426号(近澳门路)",
+    "lat": 31.244349,
+    "lng": 121.435862,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B00156CO40",
+    "name": "开蔓酒店(上海延吉中路地铁站店)",
+    "address": "延吉中路95-1号",
+    "lat": 31.283959,
+    "lng": 121.532564,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B00155QBQ8",
+    "name": "绘家宾馆",
+    "address": "施湾镇水闸北路243号",
+    "lat": 31.151836,
+    "lng": 121.760721,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0J3V57LPJ",
+    "name": "宿适精品酒店(上海松江火车站店)",
+    "address": "荣乐东路2039号",
+    "lat": 31.016944,
+    "lng": 121.253907,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B00156DHEV",
+    "name": "领尚国际酒店公寓",
+    "address": "宋园路58号",
+    "lat": 31.192084,
+    "lng": 121.414458,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFFVN960",
+    "name": "海上小屋酒店(上海野生动物园惠南地铁站店)",
+    "address": "惠南镇城东路23号",
+    "lat": 31.044743,
+    "lng": 121.76305,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0L3YSISN6",
+    "name": "云欣汇居(上海中环百联梅川路店)",
+    "address": "梅川路1275号(锦江麦德龙斜对面)",
+    "lat": 31.242925,
+    "lng": 121.38213,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LK9ZA0UL",
+    "name": "迷家青年酒店(上海财经大学店)",
+    "address": "三门路497号4幢2-3楼",
+    "lat": 31.312127,
+    "lng": 121.493052,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0KDR79H9Y",
+    "name": "上海船长五号青年酒店(莘庄地铁站店)",
+    "address": "莘朱路128号",
+    "lat": 31.10755,
+    "lng": 121.384072,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B00156THIQ",
+    "name": "99旅馆连锁(上海莲花路地铁站复旦儿科医院店)",
+    "address": "梅陇西路584号(莲花路地铁站5B口步行290米)",
+    "lat": 31.128415,
+    "lng": 121.401521,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B00156NFBL",
+    "name": "上海汉慈电竞酒店(上海虹桥机场动物园地铁站店)",
+    "address": "虹井路795-797号4层",
+    "lat": 31.18603,
+    "lng": 121.368501,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B00155MSD4",
+    "name": "凯乐宾馆(西藏北路地铁站店)",
+    "address": "青云路496号",
+    "lat": 31.262209,
+    "lng": 121.470247,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0GRN7AAMR",
+    "name": "伍豪商务宾馆(上海第九人民医院奉城分院店)",
+    "address": "南奉公路343号",
+    "lat": 30.912056,
+    "lng": 121.631828,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFIBKTX9",
+    "name": "易佰酒店(上海周浦万达小上海步行街店)",
+    "address": "康沈路1588号",
+    "lat": 31.117706,
+    "lng": 121.575261,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFFLJD2U",
+    "name": "速8酒店(上海松江新城嘉和广场店)",
+    "address": "文诚路338弄D区1号楼4层",
+    "lat": 31.032767,
+    "lng": 121.218649,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0MDNLFF6O",
+    "name": "布丁酒店(康新公路地铁站店)",
+    "address": "川周公路2761号",
+    "lat": 31.143095,
+    "lng": 121.621115,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFIK2L7Q",
+    "name": "艾尚商务酒店(上海火车站店)",
+    "address": "中华新路1177号",
+    "lat": 31.25498,
+    "lng": 121.44873,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFFZADGX",
+    "name": "易佰良品酒店(九亭大街店)",
+    "address": "九亭大街254号",
+    "lat": 31.132276,
+    "lng": 121.335611,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LUG5K6BF",
+    "name": "船长五号青年酒店(东华大学延安西路地铁站店)",
+    "address": "凯旋路1068号(延安西路地铁站2号口步行410米)",
+    "lat": 31.206513,
+    "lng": 121.417497,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B00155Q3S5",
+    "name": "上海中华菁英公寓式酒店",
+    "address": "澳门路477号中华1912长寿创业园区2层",
+    "lat": 31.245525,
+    "lng": 121.440775,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B00155I6XI",
+    "name": "上海半月里国际青年旅社(陆家嘴浦东南路地铁站店)",
+    "address": "东昌路498弄内东园二村210号",
+    "lat": 31.231627,
+    "lng": 121.511302,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LKY53TB1",
+    "name": "和光青年酒店(上海光大会展中心漕宝路地铁站店)",
+    "address": "康健路2号4层",
+    "lat": 31.165416,
+    "lng": 121.433421,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFHK5U7B",
+    "name": "布丁酒店(上海金山百联城市沙滩店)",
+    "address": "石化龙胜路195号",
+    "lat": 30.72516,
+    "lng": 121.344856,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0GUC77AAH",
+    "name": "一间森林酒店(上海人民广场店)",
+    "address": "威海路62号",
+    "lat": 31.228139,
+    "lng": 121.469943,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0G1LC64A9",
+    "name": "上海汉萨公寓(松江大学城店)",
+    "address": "思贤路1855弄25-29号2-3层",
+    "lat": 31.023997,
+    "lng": 121.200846,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFLK7RE2",
+    "name": "悦享酒店(上海浦东机场店)",
+    "address": "川南奉公路1097-6号",
+    "lat": 31.178661,
+    "lng": 121.745551,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LGDZ8YO6",
+    "name": "登巴客栈(上海轻纺市场真新新村地铁站店)",
+    "address": "祁连山南路2199号(真新新村地铁站2号口步行290米)",
+    "lat": 31.253106,
+    "lng": 121.372433,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B00155QN3X",
+    "name": "易佰连锁旅店(上海虹桥火车站国家会展中心店)",
+    "address": "北翟路1511号",
+    "lat": 31.22355,
+    "lng": 121.341364,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0G29CQE92",
+    "name": "欣裕酒店",
+    "address": "沪闵路2758弄9号(北桥地铁站2号口步行420米)",
+    "lat": 31.048132,
+    "lng": 121.408168,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0JA19QWDC",
+    "name": "迷家青年酒店(上海金沙江路丰庄地铁站店)",
+    "address": "金沙江路2892号(丰庄地铁站2号口步行220米)",
+    "lat": 31.242029,
+    "lng": 121.358789,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFL8WM6N",
+    "name": "云欣艺术酒店(上海虹桥店)",
+    "address": "红松路528号3层",
+    "lat": 31.180655,
+    "lng": 121.364082,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B00155I0IF",
+    "name": "和谐商务酒店(上海南站华东理工大学徐汇校区店)",
+    "address": "老沪闵路662号(华东理工大学地铁站2号口步行230米)",
+    "lat": 31.145369,
+    "lng": 121.429028,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B00155Q8XJ",
+    "name": "遇站南城旧梦酒店(上海奉贤南桥店)",
+    "address": "南桥镇南奉公路9750号",
+    "lat": 30.911043,
+    "lng": 121.458879,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0MGB5TT6L",
+    "name": "青季酒店MINI(上海虹桥枢纽国展中心九亭地铁站店)",
+    "address": "涞坊路333弄1号",
+    "lat": 31.153471,
+    "lng": 121.317337,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0MBHAI29B",
+    "name": "宿适轻奢酒店(上海松江火车站店)",
+    "address": "荣乐东路2039号",
+    "lat": 31.016944,
+    "lng": 121.253907,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LKVU5SNH",
+    "name": "星瑞酒店(上海黄兴路地铁站店)",
+    "address": "黄兴路1100号",
+    "lat": 31.281614,
+    "lng": 121.52425,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B00156GXOL",
+    "name": "锦江之星旅馆(上海虹桥枢纽天山西路店)",
+    "address": "宁虹路1175弄15号",
+    "lat": 31.207727,
+    "lng": 121.308831,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFLFDR0K",
+    "name": "99优选酒店(上海临港滴水湖店)",
+    "address": "泥城镇云汉路781号",
+    "lat": 30.909254,
+    "lng": 121.810623,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0HKGZBKCG",
+    "name": "SMART青年旅舍(上海灵岩南路店)",
+    "address": "灵岩南路1065号",
+    "lat": 31.142648,
+    "lng": 121.499936,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B00155L8TQ",
+    "name": "友海酒店(上海嘉定清河路店)",
+    "address": "清河路48号",
+    "lat": 31.385269,
+    "lng": 121.247432,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0G2U94FNA",
+    "name": "迷家国际青年旅舍(上海人民广场店)",
+    "address": "天目中路305号",
+    "lat": 31.246125,
+    "lng": 121.469475,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B00155LKPH",
+    "name": "泊印致选酒店(上海大学嘉定北地铁站店)",
+    "address": "城中路197号",
+    "lat": 31.386929,
+    "lng": 121.244637,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0MB9HUJS6",
+    "name": "青季MINI酒店(上海火车站大悦城店)",
+    "address": "天目中路286号三楼",
+    "lat": 31.245175,
+    "lng": 121.468775,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0JA6SEW4W",
+    "name": "亚奢精选酒店(上海野生动物园禹州商业广场店)",
+    "address": "沪南公路9826号",
+    "lat": 31.039934,
+    "lng": 121.735798,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LKB5T4PZ",
+    "name": "上海坤城非凡酒店",
+    "address": "宣黄公路3107号",
+    "lat": 31.024658,
+    "lng": 121.748393,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFH8ZZB0",
+    "name": "上海宝格丽酒店",
+    "address": "山西北路108弄(天潼路地铁站5号口步行280米)",
+    "lat": 31.243027,
+    "lng": 121.48132,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFLFQTE3",
+    "name": "上海海莱精品酒店(浦东国际机场店)",
+    "address": "祝桥镇晨阳路229号",
+    "lat": 31.17643,
+    "lng": 121.753937,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFISD6YH",
+    "name": "格瑞斯酒店(上海松江站店)",
+    "address": "松汇东路39弄1号",
+    "lat": 31.001259,
+    "lng": 121.252406,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B00156O7K9",
+    "name": "99优选酒店(上海宝山万达店汾西路店)",
+    "address": "汾西路739号2层",
+    "lat": 31.313117,
+    "lng": 121.452124,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LURH30WR",
+    "name": "悦嘉酒店(上海市青浦区体育中心青浦新城地铁站店)",
+    "address": "上海市青浦区青安路202弄2号",
+    "lat": 31.151953,
+    "lng": 121.117661,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFGBGV6D",
+    "name": "速8酒店(上海洞泾欢乐谷洞业路店)",
+    "address": "洞泾镇洞薛路287号(近洞业路)",
+    "lat": 31.08142,
+    "lng": 121.256827,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFHBXWZV",
+    "name": "上海泓颐精品酒店(野生动物园店)",
+    "address": "下盐路4018号",
+    "lat": 31.068834,
+    "lng": 121.715147,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LGF7LZ73",
+    "name": "上海致宜度假酒店(上海迪士尼度假区店)",
+    "address": "川沙新镇陆申路其成村551号",
+    "lat": 31.111339,
+    "lng": 121.683369,
+    "hasFamilyRoom": false,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFI838W3",
+    "name": "布丁酒店(上海虹桥机场淞虹路地铁站店)",
+    "address": "福泉路162号2楼(淞虹路地铁站4号口步行470米)",
+    "lat": 31.213644,
+    "lng": 121.358821,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0I2BAVVUM",
+    "name": "布丁酒店(上海场中路地铁站店)",
+    "address": "大场镇沪太支路1368号",
+    "lat": 31.299789,
+    "lng": 121.417332,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LD2MJLDZ",
+    "name": "易居酒店(惠南地铁站店)",
+    "address": "惠南镇靖海路118号",
+    "lat": 31.044113,
+    "lng": 121.768479,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0MA91CHCH",
+    "name": "屿见青年客栈(嘉定北地铁站店)",
+    "address": "菊园新区城北路338弄鼎固大夏B座911室",
+    "lat": 31.390525,
+    "lng": 121.237425,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFI6B7O7",
+    "name": "沪辰宾馆",
+    "address": "金高路400号",
+    "lat": 31.29152,
+    "lng": 121.609964,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFG03MZ3",
+    "name": "途客轻居酒店(上海虹桥机场龙柏新村地铁站店)",
+    "address": "金汇路515弄2号",
+    "lat": 31.180106,
+    "lng": 121.373569,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFF00KGD",
+    "name": "泊印致选酒店(上海青浦新城地铁站城中北路店)",
+    "address": "城中北路518号(青浦法院斜对面)",
+    "lat": 31.155601,
+    "lng": 121.113117,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0IRFC8FGD",
+    "name": "上海左庭上院酒店",
+    "address": "太原路160弄7号楼",
+    "lat": 31.206499,
+    "lng": 121.454545,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0KGLUXVUU",
+    "name": "际庭青旅(北外滩平凉路地铁站店)",
+    "address": "平凉路街道扬州路628号(平凉路地铁站3号口步行250米)",
+    "lat": 31.25897,
+    "lng": 121.529141,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0JD6C1P1R",
+    "name": "美铂轩优选酒店(松江大学城店)",
+    "address": "茸平路559弄87号",
+    "lat": 31.034668,
+    "lng": 121.247746,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFHPQLB8",
+    "name": "锦江之星品尚(惠南野生动物园店)",
+    "address": "惠南镇城南路92号",
+    "lat": 31.039866,
+    "lng": 121.746335,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B00155LD1S",
+    "name": "如家酒店·neo(上海浦东机场惠南地铁站通济路店)",
+    "address": "通济路150号(靠近大学城公交站点)",
+    "lat": 31.04726,
+    "lng": 121.746139,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFFDQ3FI",
+    "name": "泊印致选酒店(上海南翔古镇古猗园店)",
+    "address": "南翔镇沪宜公路855号",
+    "lat": 31.288158,
+    "lng": 121.305017,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0KBBBMIT4",
+    "name": "豪笙电竞(上海松江大学城店)",
+    "address": "思贤路1855弄1号(近松江大学城)",
+    "lat": 31.024781,
+    "lng": 121.200752,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B00157297L",
+    "name": "布丁严选酒店(上海华东师范大学金沙江地铁站店)",
+    "address": "中山北路3612号银城大厦1层",
+    "lat": 31.229299,
+    "lng": 121.41052,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFIHLTAI",
+    "name": "尚客优精选酒店(徐泾北城店)",
+    "address": "盈港东路2805号",
+    "lat": 31.167643,
+    "lng": 121.244986,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B00156EG20",
+    "name": "99旅馆连锁(上海大华行知路地铁站店)",
+    "address": "真金路1041号",
+    "lat": 31.283664,
+    "lng": 121.405944,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B00156EO5W",
+    "name": "99旅馆连锁(上海火车站一店)",
+    "address": "公兴路88号(宝山路地铁站1号口步行280米)",
+    "lat": 31.253528,
+    "lng": 121.474685,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B00155ETZY",
+    "name": "禅心酒店(上海松江松卫北路店)",
+    "address": [],
+    "lat": 31.022325,
+    "lng": 121.261675,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B00155Q3RN",
+    "name": "浙商大酒店",
+    "address": "川沙新镇华夏东路2015号",
+    "lat": 31.200305,
+    "lng": 121.689902,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFILM01D",
+    "name": "维也纳国际酒店(上海虹桥枢纽青浦地铁站店)",
+    "address": "青安路58号",
+    "lat": 31.149315,
+    "lng": 121.117242,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B00155QX2Y",
+    "name": "绿地金庭庄园酒店",
+    "address": "协和路111号",
+    "lat": 31.203208,
+    "lng": 121.3567,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B00156GXQ5",
+    "name": "上海金桥红枫万豪酒店",
+    "address": "新金桥路15号",
+    "lat": 31.243924,
+    "lng": 121.591671,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B00156NX6B",
+    "name": "如家快捷酒店(上海南京路步行街黄河路店)",
+    "address": "黄河路288号-1(新闸路地铁站6号口步行110米)",
+    "lat": 31.237841,
+    "lng": 121.469284,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFKTT4NB",
+    "name": "上海漫迪酒店(迪士尼店)",
+    "address": "浦东新区川沙镇川图路300号8幢",
+    "lat": 31.155996,
+    "lng": 121.708999,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0L09RELXC",
+    "name": "阿纳迪酒店-大堂吧",
+    "address": "临虹路7号阿纳迪酒店1楼、2楼",
+    "lat": 31.229729,
+    "lng": 121.357666,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFKYLGJ4",
+    "name": "子源七号",
+    "address": "南桥镇南港路1008号",
+    "lat": 30.911182,
+    "lng": 121.488623,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0L0JZFDQQ",
+    "name": "上海北外滩周家嘴路亚朵酒店",
+    "address": "周家嘴路3055号2号楼一层、二层",
+    "lat": 31.275963,
+    "lng": 121.529594,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFF42W50",
+    "name": "上海金地岚韵酒店",
+    "address": "嘉松中路6888弄1号",
+    "lat": 31.126387,
+    "lng": 121.224511,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFMHLC53",
+    "name": "亚多轻奢酒店",
+    "address": "川图路300号30栋辛单元",
+    "lat": 31.15384,
+    "lng": 121.708349,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0IRB509D1",
+    "name": "上海大宁市北高新园区亚朵酒店",
+    "address": "广延路1286号A栋",
+    "lat": 31.292412,
+    "lng": 121.454793,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFLJ2HYW",
+    "name": "白玉兰酒店(上海鲁迅公园虹口足球场店)",
+    "address": "西江湾路718号(虹口足球场地铁站4号口步行480米)",
+    "lat": 31.276384,
+    "lng": 121.48043,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B00154ZLUN",
+    "name": "宏达山庄",
+    "address": "南奉公路255号",
+    "lat": 30.911892,
+    "lng": 121.633427,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFJP369M",
+    "name": "古亦居酒店(上海野生动物园店)",
+    "address": "宣中路484号",
+    "lat": 31.023047,
+    "lng": 121.703703,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFFCSS2N",
+    "name": "轩乐诗大酒店(聚丰购物店)",
+    "address": "聚丰园路205号沃尔玛3层",
+    "lat": 31.315057,
+    "lng": 121.382621,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0L1M9H9IZ",
+    "name": "客缘·初见(古美路店)",
+    "address": "古美路949号",
+    "lat": 31.151128,
+    "lng": 121.402142,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0KASUHWKR",
+    "name": "上海半月里酒店(水产西路店)",
+    "address": "水产西路767号201-207室",
+    "lat": 31.356122,
+    "lng": 121.415922,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFIGVKP7",
+    "name": "一间森林青年旅舍(上海同济大学四平路地铁站店)",
+    "address": "天宝路888号(近和平公园、四平路地铁站)",
+    "lat": 31.27231,
+    "lng": 121.500645,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0JGA5C99N",
+    "name": "一间森林酒店(上海中山公园江苏路地铁站店)",
+    "address": "长宁路320号2层",
+    "lat": 31.224728,
+    "lng": 121.427574,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LKOZFRBO",
+    "name": "上海驿家酒店(上海松江站店)",
+    "address": "乐都路16号",
+    "lat": 31.014427,
+    "lng": 121.237678,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0L2YDUSV7",
+    "name": "舅家·院",
+    "address": "曹路镇虹星路911号",
+    "lat": 31.253386,
+    "lng": 121.699397,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B00156NSUT",
+    "name": "上海馨博宾馆",
+    "address": "江园路400号浦江世博家园菜市场3层",
+    "lat": 31.075539,
+    "lng": 121.5002,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B00155QB8U",
+    "name": "上海开运精选酒店",
+    "address": "沁春路381号",
+    "lat": 31.094009,
+    "lng": 121.373775,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFG8J9XS",
+    "name": "格林豪泰贝壳酒店(上海虹桥枢纽徐泾北城地铁站店)",
+    "address": "徐乐路240号(徐泾北城地铁站2号口步行440米)",
+    "lat": 31.174214,
+    "lng": 121.245838,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0015200D5",
+    "name": "弘林宾馆",
+    "address": "中原路36号(翔殷路地铁站1号口步行480米)",
+    "lat": 31.309798,
+    "lng": 121.532271,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFHRDUHK",
+    "name": "上海公园度假村",
+    "address": "随塘公路116号",
+    "lat": 31.380075,
+    "lng": 121.537607,
+    "hasFamilyRoom": false,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B00156DW3U",
+    "name": "速8酒店(上海金山城市沙滩店)",
+    "address": "金山卫镇学府路551号",
+    "lat": 30.72689,
+    "lng": 121.322877,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFIXQNXJ",
+    "name": "布丁严选酒店(上海顾村公园华山医院店)",
+    "address": "菊联路68弄43号",
+    "lat": 31.350408,
+    "lng": 121.366569,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFKCLCO2",
+    "name": "锦江都城酒店(上海徐家汇南华亭宾馆)",
+    "address": "中山西路2525号(上海体育馆地铁站7号口步行290米)",
+    "lat": 31.181016,
+    "lng": 121.434488,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0MDM5XUMW",
+    "name": "三个月亮青年旅舍",
+    "address": "蕴川路1188弄106号大黄科创中心A2-5",
+    "lat": 31.356447,
+    "lng": 121.428319,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B00157I4FK",
+    "name": "格林豪泰贝壳酒店(虹桥枢纽会展中心店)",
+    "address": "徐泾镇京华路127号(近沪青平公路)",
+    "lat": 31.169455,
+    "lng": 121.274999,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B00155MPRP",
+    "name": "青季酒店MINI(上海火车站中潭路地铁站店)",
+    "address": "延长西路328号",
+    "lat": 31.261606,
+    "lng": 121.437387,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B00155L28Z",
+    "name": "锦江之星酒店(上海奉贤宝龙环城东路地铁站店)",
+    "address": "南桥镇航南公路5499号(环城东路地铁站2号口步行260米)",
+    "lat": 30.930945,
+    "lng": 121.46498,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0M6FZWKM9",
+    "name": "微尘里酒店(上海虹桥国展店)",
+    "address": "京华路267号",
+    "lat": 31.171709,
+    "lng": 121.273881,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B00156GMNT",
+    "name": "易佰良品酒店(上海金桥金京路地铁站店)",
+    "address": "金高路1310号3层",
+    "lat": 31.277255,
+    "lng": 121.609626,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFJ7KYN3",
+    "name": "如家商旅酒店(上海金山百联城市沙滩店)",
+    "address": "石化卫清西路55号西侧",
+    "lat": 30.729895,
+    "lng": 121.350891,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0KRKHCNIV",
+    "name": "大隐国际青年旅舍(上海火车站静安店)",
+    "address": "中华新路678弄60号",
+    "lat": 31.253224,
+    "lng": 121.461086,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0KDZNPYEV",
+    "name": "锦江之星风尚酒店(上海浦东新区野生动物园店)",
+    "address": "上海浦东新区惠南镇南园路39弄1号",
+    "lat": 31.03927,
+    "lng": 121.746362,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B00155R4RA",
+    "name": "蓝波万精品酒店",
+    "address": "同济路311号3-4层(水产路地铁站1号口步行130米)",
+    "lat": 31.382936,
+    "lng": 121.488446,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFI9BSDK",
+    "name": "海友酒店(上海虹桥枢纽徐泾北城地铁站店)",
+    "address": "徐泾镇盈港东路2781号(近奥特莱斯、地铁17号线嘉松中路站)",
+    "lat": 31.167462,
+    "lng": 121.246413,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0KKKHLQ09",
+    "name": "安心住民宿(上海江桥万达店)",
+    "address": "江桥镇鹤旋路万达广场(江桥店)7号楼332室",
+    "lat": 31.238521,
+    "lng": 121.322448,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0MD7U7IDY",
+    "name": "小筑青年旅舍",
+    "address": "漕宝路1054号(虹梅路地铁站2号口步行130米)",
+    "lat": 31.161004,
+    "lng": 121.40066,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFG3FUHN",
+    "name": "好友酒店(上海松江虬泾路店)",
+    "address": "虬泾路549弄1号",
+    "lat": 31.125961,
+    "lng": 121.33592,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B00155NEST",
+    "name": "上海绿都轻奢酒店",
+    "address": "都市路3786号",
+    "lat": 31.087129,
+    "lng": 121.399558,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFIPWH8Q",
+    "name": "般佈酒店(上海虹桥机场国展中心店)",
+    "address": "华江路1028号(江桥万达广场附近)",
+    "lat": 31.231459,
+    "lng": 121.324574,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFGY48QW",
+    "name": "秀庭酒店(上海松江站店)",
+    "address": "松汇中路455-4号",
+    "lat": 31.002167,
+    "lng": 121.236799,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0L6MNO5JO",
+    "name": "上海爱琴海柒溪青旅(虹桥国际机场店)",
+    "address": "吴中路1588号爱琴海购物中心4F层",
+    "lat": 31.174235,
+    "lng": 121.371527,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0L12HUVEK",
+    "name": "越山起航求职旅舍(上海大学场中路地铁站店)",
+    "address": "大场镇场联路188号",
+    "lat": 31.306619,
+    "lng": 121.4102,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B00156D3B4",
+    "name": "友福酒店(上海松江大学城店)",
+    "address": "新松江路223-243号",
+    "lat": 31.038425,
+    "lng": 121.234425,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0K2XC6Y64",
+    "name": "登巴客栈(华发路店)",
+    "address": "华发路1号3楼",
+    "lat": 31.126903,
+    "lng": 121.455096,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0K227FO4B",
+    "name": "尤家青年旅舍(上海第九人民医院西藏南路地铁站店)",
+    "address": "中山南一路500弄1号楼丽都大厦32层01室",
+    "lat": 31.199463,
+    "lng": 121.485567,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0G1CUPW2K",
+    "name": "桔子水晶上海临港海洋公园酒店",
+    "address": "夏栎路330弄48号",
+    "lat": 30.915968,
+    "lng": 121.918083,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0L0Z7FL2I",
+    "name": "上海简家青年旅舍(虹桥国家会展中心店)",
+    "address": "诸光路1355弄440号",
+    "lat": 31.181429,
+    "lng": 121.299564,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFLMQH4G",
+    "name": "Zsmart智尚酒店(上海莘庄地铁站龙之梦店)",
+    "address": "莘东路348号明物大厦3层",
+    "lat": 31.11054,
+    "lng": 121.376225,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFGPQHQQ",
+    "name": "铂友酒店(上海安亭国际汽车城店)",
+    "address": "安亭镇昌吉路216-1号",
+    "lat": 31.295352,
+    "lng": 121.160217,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0GKVK1CAW",
+    "name": "上海途遇青年旅舍(五角场店)",
+    "address": "国定东路273弄绿地汇创国际广场1号楼101室",
+    "lat": 31.298357,
+    "lng": 121.521121,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0M6S74C8M",
+    "name": "越山起航求职旅舍(彭浦新村地铁站店)",
+    "address": "共和新路4436号1楼",
+    "lat": 31.311938,
+    "lng": 121.44826,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFKD823Z",
+    "name": "登巴客栈(上海南站桂林公园地铁站店)",
+    "address": "莘庄镇田林路97号老凤祥银楼二楼",
+    "lat": 31.170473,
+    "lng": 121.418657,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0015587M4",
+    "name": "亿客酒店(上海新天地红房子店)",
+    "address": "建国新路93号",
+    "lat": 31.21383,
+    "lng": 121.481345,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0J1Y7NHOA",
+    "name": "上海星期八青年旅社",
+    "address": "诸光路1355弄147号1-3层",
+    "lat": 31.180636,
+    "lng": 121.302523,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0L1P562KF",
+    "name": "上海金蓝塔民宿",
+    "address": "定水路10号",
+    "lat": 31.241688,
+    "lng": 121.548767,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0KR7CKWYS",
+    "name": "乐客酒店(上海大学店)",
+    "address": "民晏路120号",
+    "lat": 31.27446,
+    "lng": 121.461081,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFKBIH30",
+    "name": "长丘国际青年旅舍(上海动物园地铁站店)",
+    "address": "虹井路788弄虹井小区2号楼",
+    "lat": 31.186464,
+    "lng": 121.369139,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0IRPK3Z5Y",
+    "name": "迷家青年酒店(上海虹桥漕河泾店)",
+    "address": "吴中路668号",
+    "lat": 31.181962,
+    "lng": 121.397415,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0L2CHGOOK",
+    "name": "船长五号青年酒店(上海中山公园江苏路地铁站店)",
+    "address": "江苏北路69号",
+    "lat": 31.224421,
+    "lng": 121.426844,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0K67CYW27",
+    "name": "上海远洋青年公寓(场中路地铁站店)",
+    "address": "沪太路2240号一楼(场中路地铁站2号口步行350米)",
+    "lat": 31.300765,
+    "lng": 121.413422,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B00156YNGB",
+    "name": "青季MINI酒店(上海南站南广场店)",
+    "address": "石龙路969号-971号",
+    "lat": 31.148176,
+    "lng": 121.43042,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0MAVR75SL",
+    "name": "登巴客栈(上海新国际博览中心店)",
+    "address": "罗山路1505号",
+    "lat": 31.227773,
+    "lng": 121.570549,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFFGR36A",
+    "name": "如家华驿酒店(上海金山城市沙滩店)",
+    "address": "金山湾时代广场",
+    "lat": 30.711377,
+    "lng": 121.345514,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0K3YSBVFL",
+    "name": "象院青年旅舍(陆家浜路地铁站店)",
+    "address": "斜土东路350号格林豪泰酒店4楼",
+    "lat": 31.206635,
+    "lng": 121.485078,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0L05ZSPUL",
+    "name": "越山青年里(上海金桥地铁站店)",
+    "address": "金沪路97号(金桥地铁站3号口步行460米)",
+    "lat": 31.257518,
+    "lng": 121.610887,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LA9RWF1V",
+    "name": "小成故事客栈(上海火车站镇坪路地铁站店)",
+    "address": "中山北路2052号振源大厦3楼",
+    "lat": 31.24828,
+    "lng": 121.431198,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0K0P9T8VU",
+    "name": "云欣客栈(中春路店)",
+    "address": "中春路7335号",
+    "lat": 31.142161,
+    "lng": 121.343905,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFKGW2J3",
+    "name": "一间森林青年旅社(上海外滩签证中心店)",
+    "address": "汉口路126号(南京东路地铁站2号口步行490米)",
+    "lat": 31.236585,
+    "lng": 121.487724,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFL9IH66",
+    "name": "盛臣酒店·云悦轻奢(上海浦东机场店)",
+    "address": "祝桥镇军民路106号(海霞路上)",
+    "lat": 31.168791,
+    "lng": 121.745069,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0H0776BB4",
+    "name": "安泊派青年社区(上海同济大学店)",
+    "address": "阜新路182弄11号",
+    "lat": 31.277163,
+    "lng": 121.507505,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFGH5WD1",
+    "name": "柏友青年酒店",
+    "address": "吴中路1099号2号楼4-5层",
+    "lat": 31.176054,
+    "lng": 121.386653,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFHJOOPL",
+    "name": "上海建业里嘉佩乐酒店",
+    "address": "建国西路480号",
+    "lat": 31.20326,
+    "lng": 121.451864,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LRZR2XDI",
+    "name": "微青春青年客栈(虹桥路地铁站店)",
+    "address": "凯旋路1669号6层(虹桥路地铁站6号口步行160米)",
+    "lat": 31.194915,
+    "lng": 121.421899,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0K3C5I8K0",
+    "name": "登巴客栈(上海莘庄地铁文化北广场店)",
+    "address": "庙泾路56号",
+    "lat": 31.11564,
+    "lng": 121.378767,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0IGLR4HE6",
+    "name": "星尚客栈(上海虹桥威宁路地铁站店)",
+    "address": "威宁路333号海盈金圣商务楼F5层",
+    "lat": 31.21268,
+    "lng": 121.384665,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0L0P513U7",
+    "name": "故旅城市青年旅社",
+    "address": "孙建路786号",
+    "lat": 31.182399,
+    "lng": 121.639092,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0K10RWDYE",
+    "name": "壹号青旅(火车站店)",
+    "address": "沪太路315弄2号201室",
+    "lat": 31.255255,
+    "lng": 121.452787,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0L0DHN3ZB",
+    "name": "瑞鑫青年酒店(同济大学新华医院店)",
+    "address": "长岭路56号2层",
+    "lat": 31.280782,
+    "lng": 121.520383,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0L2BCLP03",
+    "name": "登巴客栈(上海火车站店)",
+    "address": "天目中路520号201天悦水汇·汤泉· SPA楼上三楼",
+    "lat": 31.244025,
+    "lng": 121.465525,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0MBTZAZM8",
+    "name": "MINI青季酒店(上海顾村水产西路店)",
+    "address": "水产西路959号三楼",
+    "lat": 31.354698,
+    "lng": 121.412076,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFG5CBUJ",
+    "name": "M家社区酒店(上海周浦小上海步行街店)",
+    "address": "周浦镇周市路382号",
+    "lat": 31.116531,
+    "lng": 121.580919,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0I1R4YGF7",
+    "name": "上海考拉国际青年旅舍(长寿路地铁站店)",
+    "address": "西康路1447号(镇坪路地铁站5号口步行390米)",
+    "lat": 31.244666,
+    "lng": 121.4349,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0K60BULFL",
+    "name": "如眠客青年旅舍(上海静安寺店)",
+    "address": "东诸安浜路227号2层(江苏路地铁站4号口步行270米)",
+    "lat": 31.217955,
+    "lng": 121.432283,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LRZS28PJ",
+    "name": "喆喜长丘青年旅舍(上海外滩店)",
+    "address": "人民路885号淮海中华大厦2楼",
+    "lat": 31.225575,
+    "lng": 121.483325,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0K6CU098N",
+    "name": "上海浦东香橼果酒店(上海南汇大学城店)",
+    "address": "惠南镇人民东路2567号",
+    "lat": 31.048998,
+    "lng": 121.773178,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFLNA8RB",
+    "name": "上海夜宿晓行青年旅舍(火车站汉中路地铁站店)",
+    "address": "恒丰路55号二楼(汉中路地铁站10口步行80米)",
+    "lat": 31.240211,
+    "lng": 121.458518,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFIRT0NR",
+    "name": "龙翔宾馆(上海金山万达广场店)",
+    "address": "龙翔路480号2层",
+    "lat": 30.750744,
+    "lng": 121.347821,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0MGGC3N2Z",
+    "name": "曼菲青年酒店(上海火车站店)",
+    "address": "天目西路550号2楼",
+    "lat": 31.24514,
+    "lng": 121.450751,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LDK9QSL9",
+    "name": "大屋小栈(上海陆家嘴第一八佰伴店)",
+    "address": "浦电路128号",
+    "lat": 31.218825,
+    "lng": 121.52091,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LB377WT8",
+    "name": "登巴客栈(上海新国际博览中心世纪公园地铁站店)",
+    "address": "浦建路1143号3楼",
+    "lat": 31.207326,
+    "lng": 121.54119,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0KKPS3IDX",
+    "name": "登巴客栈(上海老西门豫园店)",
+    "address": "西藏南路767号2楼(老西门地铁站2号口步行280米)",
+    "lat": 31.21602,
+    "lng": 121.484846,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0K1CUNKZM",
+    "name": "大隐丨隐逸花园酒店(上海静安大悦城苏州河店)",
+    "address": "民德路58号(中兴路地铁站3号口步行470米)",
+    "lat": 31.2497,
+    "lng": 121.471288,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0K075AE8M",
+    "name": "际庭酒店式公寓(财经大学地铁站店)",
+    "address": "国权北路31号临二层(上海财经大学地铁站5号口步行180米)",
+    "lat": 31.309902,
+    "lng": 121.496444,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0KUTXDYJ0",
+    "name": "迷家青年酒店(上海通河新村地铁站店)",
+    "address": "通河路556号",
+    "lat": 31.33769,
+    "lng": 121.444778,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0GUK9FUCS",
+    "name": "悦栖酒店(上海虹桥机场动物园地铁站店)",
+    "address": "虹桥路2323号(大脚丫虹桥店隔壁)",
+    "lat": 31.190648,
+    "lng": 121.371274,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0G02D4PU0",
+    "name": "登巴客栈(复旦大学国权路地铁站店)",
+    "address": "国权后路7号",
+    "lat": 31.289347,
+    "lng": 121.505293,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0L1JS8M08",
+    "name": "上海考拉国际青年旅舍(中山公园武宁路地铁站店)",
+    "address": "长寿路1086号(武宁路地铁站1号口步行350米)",
+    "lat": 31.231631,
+    "lng": 121.42793,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0J21CHHYA",
+    "name": "上海登巴国际连锁客栈(虹桥机场九亭地铁站店)",
+    "address": "沪松公路1118号2楼",
+    "lat": 31.145034,
+    "lng": 121.328586,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0J3DBHKWH",
+    "name": "上海登巴客栈(虹桥火车站国家会展中心店)",
+    "address": "航中路618号",
+    "lat": 31.176091,
+    "lng": 121.350497,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
     ],
     "dataSource": "ai_draft_v1"
   }

@@ -1,0 +1,1472 @@
+[
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0KK95NLYU",
+    "name": "桐庐开元森泊·外婆家度假酒店",
+    "address": "瑶琳镇东琳村东洲188号",
+    "lat": 29.917433,
+    "lng": 119.519099,
+    "hasFamilyRoom": false,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0K6AHJ053",
+    "name": "杭州钱江湾开元名都酒店",
+    "address": "西浦路1066号",
+    "lat": 30.168242,
+    "lng": 120.133941,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0L0SAIL32",
+    "name": "杭州大运河马可波罗豪廷酒店",
+    "address": "聚贤路338号",
+    "lat": 30.346259,
+    "lng": 120.14564,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0K1GRUKKW",
+    "name": "杭州武林洲际酒店",
+    "address": "体育场路333号1幢",
+    "lat": 30.269568,
+    "lng": 120.162005,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0J1LXQCIA",
+    "name": "杭州拱墅城北希尔顿欢朋酒店",
+    "address": "春蓝支路88号",
+    "lat": 30.345402,
+    "lng": 120.180398,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0KKKSVQ9O",
+    "name": "杭州西湖湖滨武林广场希尔顿欢朋酒店",
+    "address": "体育场路347号",
+    "lat": 30.270063,
+    "lng": 120.160219,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0KUOKKH92",
+    "name": "杭州拱墅同协路地铁站希尔顿欢朋酒店",
+    "address": "杭玻街华丰时代城6号楼(同协路地铁站B口旁)",
+    "lat": 30.344836,
+    "lng": 120.210981,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0KGACTY9L",
+    "name": "Cheeinn祈居酒店(杭州西湖湖滨龙翔桥地铁站店)",
+    "address": "解放路221号",
+    "lat": 30.250382,
+    "lng": 120.169068,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0K35U6LBM",
+    "name": "杭州运河黄龙璀丽酒店",
+    "address": "丽水路7号(香积寺地铁站B口步行410米)",
+    "lat": 30.299987,
+    "lng": 120.14574,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0L1451171",
+    "name": "杭州上城九堡客运中心希尔顿欢朋酒店",
+    "address": "彭埠街道九州路266号玉沧轩3幢",
+    "lat": 30.314131,
+    "lng": 120.249631,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0MBDGFIXQ",
+    "name": "杭州兰里雷迪森大酒店",
+    "address": "三墩镇厚仁路158号",
+    "lat": 30.326657,
+    "lng": 120.081613,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0M645IMAZ",
+    "name": "杭州富阳富春希尔顿花园酒店",
+    "address": "文居街508号",
+    "lat": 30.05922,
+    "lng": 119.934486,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0KA458QS9",
+    "name": "杭州西湖湖滨平海路亚朵酒店",
+    "address": "平海路8号",
+    "lat": 30.254483,
+    "lng": 120.169751,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0K0RZL9WU",
+    "name": "杭州西湖区Orchid Retreat兰栖畔度假酒店(下宁桥地铁站店)",
+    "address": "下宁桥地铁站C口步行140米",
+    "lat": 30.283662,
+    "lng": 120.140593,
+    "hasFamilyRoom": false,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0K23ZZ7MU",
+    "name": "杭州滨江万豪万枫酒店",
+    "address": "浦沿路773号江南汇生活娱乐广场F1层",
+    "lat": 30.172934,
+    "lng": 120.146164,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0KGAGTVES",
+    "name": "杭州青山湖美爵酒店",
+    "address": "科技大道4396号(青山湖地铁站B口步行300米)",
+    "lat": 30.25608,
+    "lng": 119.753924,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0K0H7LI44",
+    "name": "桔子酒店(杭州火车东站店)",
+    "address": "天城路64号(新风地铁站C口步行410米)",
+    "lat": 30.287734,
+    "lng": 120.203822,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0M6BAGRQE",
+    "name": "SFEEL设计师酒店(杭州西湖武林广场店)",
+    "address": "天目山路7号胜利新村一弄东海创意中心",
+    "lat": 30.271535,
+    "lng": 120.152418,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0LAT18679",
+    "name": "建国璞隐酒店(杭州西湖店)",
+    "address": "保俶路146号",
+    "lat": 30.266274,
+    "lng": 120.148163,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0K6FAFXEB",
+    "name": "杭州东站书香世家酒店",
+    "address": "天城路88号",
+    "lat": 30.287163,
+    "lng": 120.19938,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B023B09QG8",
+    "name": "全季酒店(杭州西湖武林广场店)",
+    "address": "昌化路18号(武林门地铁站D口步行440米)",
+    "lat": 30.268528,
+    "lng": 120.15783,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0LAJ7IMRN",
+    "name": "艺龙酒店(中国京杭大运河博物馆拱宸桥东地铁站店)",
+    "address": "上塘路988号宸融大厦F1层",
+    "lat": 30.322789,
+    "lng": 120.147011,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0KUNULCZQ",
+    "name": "杭州萧山机场空港小镇亚朵酒店",
+    "address": "伟神路55号",
+    "lat": 30.22989,
+    "lng": 120.473528,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0LK7C40Z2",
+    "name": "杭州拱墅信义坊轻居酒店",
+    "address": "湖墅南路488号",
+    "lat": 30.294613,
+    "lng": 120.147298,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0KADYIM53",
+    "name": "建德星河温德姆至尊豪廷大酒店",
+    "address": "新安江街道浦发路88号",
+    "lat": 29.469048,
+    "lng": 119.292694,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0LANZV4I9",
+    "name": "金衙庄酒店(杭州西湖湖滨解放路店)",
+    "address": "解放路91-93号天工艺苑4层",
+    "lat": 30.250201,
+    "lng": 120.177887,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0KBFRYAMW",
+    "name": "全季酒店(杭州富阳富春江畔店)",
+    "address": "江滨西大道83号",
+    "lat": 30.035146,
+    "lng": 119.944592,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B023B145OC",
+    "name": "城际杭州余杭闲林酒店",
+    "address": "闲林街道闲富中路1号1幢",
+    "lat": 30.231532,
+    "lng": 119.98423,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0L21SSH1Y",
+    "name": "杭州城东文澜大酒店",
+    "address": "绍兴路95号水务大厦2幢",
+    "lat": 30.285876,
+    "lng": 120.178486,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0K2OHWI94",
+    "name": "杭州博奥开元名庭酒店",
+    "address": "北干街道建设路1号中栋国际1期",
+    "lat": 30.195069,
+    "lng": 120.236409,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0KUZCGVOX",
+    "name": "西子里·艺术酒店(杭州西湖大道庆春路店)",
+    "address": "潮鸣街道珠碧一弄51号",
+    "lat": 30.258921,
+    "lng": 120.183748,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0KA9LMKAF",
+    "name": "杭州博奥开元名都臻品之选酒店",
+    "address": "金城路107号(博奥路地铁站B口步行140米)",
+    "lat": 30.183308,
+    "lng": 120.242379,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0KK6ZNM1S",
+    "name": "杭州拱墅万豪万枫酒店",
+    "address": "衢州街9号(拱宸桥东地铁站D口旁)",
+    "lat": 30.31671,
+    "lng": 120.148512,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0L10RDSZF",
+    "name": "杭州四季青钱江新城希尔顿欢朋酒店",
+    "address": "秋涛路489号",
+    "lat": 30.240804,
+    "lng": 120.195709,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0KB6CAJNI",
+    "name": "临安城投景澜酒店",
+    "address": "玲珑街道九州街600号(九州街地铁站C1口步行50米)",
+    "lat": 30.202396,
+    "lng": 119.694637,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0KD0CWY6R",
+    "name": "杭州桐庐富春江花筑般蓝酒店",
+    "address": "下杭路458号",
+    "lat": 29.799637,
+    "lng": 119.699191,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0K0US32IL",
+    "name": "杭州拱墅杭钢公园此印酒店",
+    "address": "丰源街459号华友广场A幢",
+    "lat": 30.346171,
+    "lng": 120.167205,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0L1RSAXTS",
+    "name": "维也纳酒店(杭州桐庐富春江店)",
+    "address": "春江路1108号",
+    "lat": 29.789108,
+    "lng": 119.678753,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0L6YA8GQ0",
+    "name": "杭州余杭诺富特酒店",
+    "address": "禹航路408号(南湖东地铁站A口旁)",
+    "lat": 30.260667,
+    "lng": 119.947417,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0KR9DBX9M",
+    "name": "美豪丽致酒店(杭州西溪欢乐城店)",
+    "address": "闲林街道五常大道华元西溪欢乐城5号楼",
+    "lat": 30.239753,
+    "lng": 120.011915,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0LDGAD33X",
+    "name": "美豪丽致酒店(杭州新天地店)",
+    "address": "东新街道东文街51号华唐铭座IN1-08号",
+    "lat": 30.323681,
+    "lng": 120.183002,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0L3XH0KKQ",
+    "name": "如家精选酒店(杭州京杭大运河拱宸桥店)",
+    "address": "丽水路276号",
+    "lat": 30.323918,
+    "lng": 120.140693,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0L6SS37Q7",
+    "name": "如家商旅酒店(杭州西湖湖滨青年路店)",
+    "address": "青年路32号(紧邻房产档案馆)",
+    "lat": 30.248133,
+    "lng": 120.168769,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0KD7UNOP6",
+    "name": "杭州西湖银泰南宋御街轻居酒店",
+    "address": "中山中路198号(定安路地铁站D口步行250米)",
+    "lat": 30.24526,
+    "lng": 120.170809,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0KK5U6PCP",
+    "name": "臻庭酒店(杭州西湖湖滨龙翔桥地铁站店)",
+    "address": "长生路31号(龙翔桥地铁站B口步行240米)",
+    "lat": 30.257234,
+    "lng": 120.163481,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0KAO4NZCL",
+    "name": "杭州武林门柏纳酒店(拱墅区店)",
+    "address": "德胜路德胜巷1号",
+    "lat": 30.293004,
+    "lng": 120.153929,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0LAVH13T2",
+    "name": "欢迎酒店(杭州萧山国际机场店)",
+    "address": "萧清大道4518号(近杭州萧山国际机场西大门)",
+    "lat": 30.231887,
+    "lng": 120.396883,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0LGSU1NRW",
+    "name": "杭州璞憬酒店",
+    "address": "香积寺路201号三立商务大厦F13层",
+    "lat": 30.3049,
+    "lng": 120.162548,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0G1NL5NBV",
+    "name": "Zsmart智尚酒店(杭州黄龙体育中心浙大西溪店)",
+    "address": "文三路252号伟星大厦304室",
+    "lat": 30.277344,
+    "lng": 120.135515,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0IUV7SQIJ",
+    "name": "蓝城.千岛湖郡安忆度假村",
+    "address": "千岛湖镇环湖南路9号",
+    "lat": 29.592899,
+    "lng": 119.062645,
+    "hasFamilyRoom": false,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0M6PRMHON",
+    "name": "杭州钱江新城德尔斐酒店",
+    "address": "四季路39号迪凯金座2幢南门",
+    "lat": 30.247485,
+    "lng": 120.21539,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0L2FA1D0L",
+    "name": "如家商旅酒店(杭州西湖湖滨龙翔桥地铁站店)",
+    "address": "庆春路235号(西湖国贸中心北1门2楼)",
+    "lat": 30.257918,
+    "lng": 120.160055,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0K6SC65NQ",
+    "name": "雷迪森世嘉酒店(杭州萧山机场店)",
+    "address": "保税大道1号(保税大道西侧)",
+    "lat": 30.243972,
+    "lng": 120.459758,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0I07RQN0D",
+    "name": "杭州云栖葛园度假酒店",
+    "address": "转塘街道叶埠桥路99号",
+    "lat": 30.176615,
+    "lng": 120.06166,
+    "hasFamilyRoom": false,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0JGH4S10Q",
+    "name": "可人·千岛湖酒店(游艇帆船岛屿庄园)",
+    "address": "千岛湖镇睦州大道999号1幢",
+    "lat": 29.606848,
+    "lng": 119.138599,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0K13S0GX7",
+    "name": "桐庐骑士酒店(桐庐开元森泊度假乐园OMG心跳乐园店)",
+    "address": "瑶琳镇林场路1号(杭州马术中心场馆内)",
+    "lat": 29.911591,
+    "lng": 119.542295,
+    "hasFamilyRoom": false,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0KGS6Z955",
+    "name": "美度精选公寓(滨江省儿童医院店)",
+    "address": "长河街道儿康路239号滨盛云座1幢10楼",
+    "lat": 30.193352,
+    "lng": 120.174042,
+    "hasFamilyRoom": true,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0M6LU6KE5",
+    "name": "青荷·栖酒店(杭州高沙路地铁站店)",
+    "address": "天城东路159号杭州东沙商业中心F4层",
+    "lat": 30.304725,
+    "lng": 120.333925,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0LDBCDCBM",
+    "name": "如家丽岚睿柏·云酒店(杭州乐园湘湖景区店)",
+    "address": "南秀路317号恒安名座1层4-6层",
+    "lat": 30.144792,
+    "lng": 120.256369,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0K0C1AZHR",
+    "name": "晨栖酒店(杭州西湖湖滨银泰IN77店)",
+    "address": "中山北路118号",
+    "lat": 30.261171,
+    "lng": 120.169481,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0KRPAMCLO",
+    "name": "芭菲酒店(四季青金衙庄大厦店)",
+    "address": "解放路24金衙庄大厦F4层",
+    "lat": 30.249975,
+    "lng": 120.184755,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0LURA2UZU",
+    "name": "Zsmart智尚酒店(杭州庆春广场邵逸夫医院店)",
+    "address": "秋涛北路79号",
+    "lat": 30.261433,
+    "lng": 120.199954,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0KBXXIQX1",
+    "name": "港汇大酒店(银泰百货公望街地铁站店)",
+    "address": "富阳文居街387号(银泰斜对面)",
+    "lat": 30.058969,
+    "lng": 119.939962,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0KASAPZ3A",
+    "name": "桐庐云树小苑·农家小庭春院风亲子美宿(OMG心跳乐园店)",
+    "address": "瑶琳东琳村麻车边",
+    "lat": 29.922135,
+    "lng": 119.528986,
+    "hasFamilyRoom": true,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0KAMZ58K2",
+    "name": "满怡阁·亲子童趣大院乡忆美宿(OMG心跳乐园店)",
+    "address": "S302瑶琳镇东琳村中国邮政西北侧50米",
+    "lat": 29.922178,
+    "lng": 119.529198,
+    "hasFamilyRoom": true,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0FFHJT7FC",
+    "name": "杭州雅适・360度环山森林秘境・泳池亲子度假美宿(西湖风景名胜区店)",
+    "address": "梅家坞云栖花苑3号",
+    "lat": 30.190159,
+    "lng": 120.085888,
+    "hasFamilyRoom": true,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0K6AHEAI7",
+    "name": "奢野·设计师Hotel(杭州野生动物园店)",
+    "address": "银湖街道九龙大道402号",
+    "lat": 30.145921,
+    "lng": 119.985161,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0K2M7VQTC",
+    "name": "杭州枕河居·Riverside青旅民宿(京杭大运河拱宸桥东地铁站店)",
+    "address": "运河广场5号南楼2-3层(大门朝东由停车场进)",
+    "lat": 30.316741,
+    "lng": 120.139879,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0KUMR5THT",
+    "name": "花筑·米予丨Resort山境泳池·亲子度假美宿(OMG心跳乐园店)",
+    "address": "瑶琳镇东琳村冷坞于家村7号",
+    "lat": 29.919716,
+    "lng": 119.546124,
+    "hasFamilyRoom": true,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0K06Z8T55",
+    "name": "天玥酒店(杭州凤起路地铁站店)",
+    "address": "天水街道中山北路333号",
+    "lat": 30.265841,
+    "lng": 120.168135,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0K6CAQ2YT",
+    "name": "Zsmart智尚酒店(杭州良渚店)",
+    "address": "良渚街道莫干山路2579号",
+    "lat": 30.379069,
+    "lng": 120.047551,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0LDJ5WGQO",
+    "name": "柿子树下·亲子度假美宿(桐庐OMG心跳乐园店)",
+    "address": "瑶琳镇老年公寓北58米",
+    "lat": 29.923683,
+    "lng": 119.539379,
+    "hasFamilyRoom": true,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0MA9Z9JOZ",
+    "name": "西湖山间小隐精品民宿",
+    "address": "玉古路青芝坞99号(近浙大玉泉校区植物园)",
+    "lat": 30.258335,
+    "lng": 120.119833,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0KRFHL7NM",
+    "name": "柚子树·亲子庭院Leisure度假美宿(桐庐OMG心跳乐园店)",
+    "address": "瑶琳镇东琳村垂云路OMG心跳乐园(垂云通天河)入口处右转10米",
+    "lat": 29.923474,
+    "lng": 119.532057,
+    "hasFamilyRoom": true,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0G17AT4GM",
+    "name": "鹿早小院亲子民宿(西湖景区青芝坞店)",
+    "address": "青芝坞130号",
+    "lat": 30.258625,
+    "lng": 120.118475,
+    "hasFamilyRoom": true,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0KGXNN19B",
+    "name": "杭州鑫龙.Cortyard田园山景野趣小筑(龙井峡漂流店)",
+    "address": "龙岗镇龙井村",
+    "lat": 30.181734,
+    "lng": 119.106983,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0KANL2MGY",
+    "name": "途客轻奢酒店(桐庐银泰城店)",
+    "address": "中欧城5号楼11层",
+    "lat": 29.792335,
+    "lng": 119.70663,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0FFKJG05Z",
+    "name": "千岛湖祺悦度假村",
+    "address": "港口路2999号(千岛湖旅游度假区)",
+    "lat": 29.547799,
+    "lng": 118.971762,
+    "hasFamilyRoom": false,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0KRM118OE",
+    "name": "杭州波罗蜜食养民宿(径山寺店)",
+    "address": "径山镇桐桥71-2号",
+    "lat": 30.384658,
+    "lng": 119.7817,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0HU1SCNV0",
+    "name": "花庐·月涧温泉亲子民宿(马岭古道店)",
+    "address": "富春江镇蟹坑口95号",
+    "lat": 29.673149,
+    "lng": 119.691472,
+    "hasFamilyRoom": true,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0JRNH3N1W",
+    "name": "桐庐梧桐溪语·亲子森林度假民宿",
+    "address": "百江镇奇源村8号",
+    "lat": 29.823443,
+    "lng": 119.358411,
+    "hasFamilyRoom": true,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0I3L9ZGZH",
+    "name": "湍源里·溯溪温泉亲子度假民宿(杭州临安店)",
+    "address": "湍口镇湍源村陆家",
+    "lat": 29.997644,
+    "lng": 119.163885,
+    "hasFamilyRoom": true,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0J6FL3PTN",
+    "name": "杭州临安夏尔·亲子度假民宿",
+    "address": "太湖源镇白沙村太子庙2号",
+    "lat": 30.373861,
+    "lng": 119.562773,
+    "hasFamilyRoom": true,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0MAOAGOEL",
+    "name": "湖山小隐",
+    "address": "寺口村34号",
+    "lat": 29.821611,
+    "lng": 119.95,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0KB9U6E9D",
+    "name": "庐溪云舍·INS设计师简约风亲子度假美宿(瑶琳仙境OMG心跳乐园店)",
+    "address": "瑶琳镇东琳村杨家新街162号",
+    "lat": 29.921843,
+    "lng": 119.52932,
+    "hasFamilyRoom": true,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0LBRLKM97",
+    "name": "桐庐天目溪居溪边田园慢生活亲子美宿(OMG心跳乐园店)",
+    "address": "208省道",
+    "lat": 29.925819,
+    "lng": 119.518815,
+    "hasFamilyRoom": true,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0MGNAPBPH",
+    "name": "揽星月Mountain慢节奏谧境空间亲子庭院民宿",
+    "address": "三合村王家坑30号",
+    "lat": 29.974684,
+    "lng": 119.502797,
+    "hasFamilyRoom": true,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0MACXXKS9",
+    "name": "不晚·forest style泳池派对·亲子度假美宿",
+    "address": "横村镇滕家57号",
+    "lat": 29.854275,
+    "lng": 119.595575,
+    "hasFamilyRoom": true,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0I30ZK909",
+    "name": "言午小筑·Garden花园亲子休闲度假艺宿(马岭古道店)",
+    "address": "富春江镇芦茨蟹坑口村",
+    "lat": 29.672308,
+    "lng": 119.689373,
+    "hasFamilyRoom": true,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0K6LRBZI5",
+    "name": "千岛湖绿墅度假公寓(中心湖景区店)",
+    "address": "玲珑湾商旅中心二号楼154号",
+    "lat": 29.58421,
+    "lng": 119.007334,
+    "hasFamilyRoom": false,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0MUT1LZ4L",
+    "name": "慢叙|Serene游云栖山·星空泳池·亲子野宿(OMG心跳乐园店)",
+    "address": "瑶琳镇桃源村蒋家青曼东北200米",
+    "lat": 29.869058,
+    "lng": 119.515604,
+    "hasFamilyRoom": true,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0KD9OXHUF",
+    "name": "千岛湖拾光亲子卡通主题LOFT",
+    "address": "千岛湖镇阳光路878号402室",
+    "lat": 29.636373,
+    "lng": 119.05689,
+    "hasFamilyRoom": true,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0KR9UFQWV",
+    "name": "前苑后居·SUNSET星空泳池·亲子度假美宿(OMG心跳乐园店)",
+    "address": "瑶琳镇皇甫村和平三组",
+    "lat": 29.901099,
+    "lng": 119.533967,
+    "hasFamilyRoom": true,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0GDXMRX0X",
+    "name": "乡庐怡陌·山谷溯溪亲子度假美宿",
+    "address": "富文乡青田村雪坑80、81号",
+    "lat": 29.625525,
+    "lng": 119.231225,
+    "hasFamilyRoom": true,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B023B02071",
+    "name": "杭州索菲特西湖大酒店",
+    "address": "西湖大道333号",
+    "lat": 30.24556,
+    "lng": 120.161686,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B023B09IGU",
+    "name": "杭州西湖国宾馆",
+    "address": "杨公堤18号",
+    "lat": 30.235031,
+    "lng": 120.133672,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0FFIS6EUN",
+    "name": "杭州西湖文化广场亚朵酒店",
+    "address": "中山北路588号(西湖文化广场地铁站C口步行340米)",
+    "lat": 30.276734,
+    "lng": 120.166319,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0GK2XLX7Q",
+    "name": "美地拾光团建营地",
+    "address": "桂丰路与玫瑰路交叉口西北220米",
+    "lat": 30.419445,
+    "lng": 120.122759,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  }
+]

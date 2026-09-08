@@ -1,0 +1,92 @@
+[
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0L16ZS3KY",
+    "name": "熊猫大当家(春熙路店)",
+    "address": "新街后巷子9号附9号",
+    "lat": 30.656775,
+    "lng": 104.077225,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0L3JUEIP9",
+    "name": "熊猫大当家(太古里旗舰店)",
+    "address": "东大街下东大街段80、82号",
+    "lat": 30.650778,
+    "lng": 104.081442,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0L07U1XR0",
+    "name": "熊猫帅帅(天府广场店)",
+    "address": "东御街55号附1号",
+    "lat": 30.656787,
+    "lng": 104.067566,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0J2SCOH40",
+    "name": "贝甜熊猫(九号花园店)",
+    "address": "雄州大道南段436号",
+    "lat": 30.409241,
+    "lng": 104.539605,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0MANSPP5V",
+    "name": "泰莱花园",
+    "address": "大划街道崇双大道二段1176号附一号",
+    "lat": 30.584013,
+    "lng": 103.736171,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0FFFF7JR3",
+    "name": "熊猫侠餐厅(欢乐光年区店)",
+    "address": "西华大道16号成都欢乐谷欢乐光年区",
+    "lat": 30.720555,
+    "lng": 104.030834,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  }
+]

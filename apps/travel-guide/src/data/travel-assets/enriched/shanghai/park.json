@@ -1,11 +1,4262 @@
 [
   {
     "cityId": "city-shanghai",
-    "amapPoiId": "B00140J807",
-    "name": "世纪公园",
-    "address": "上海市浦东新区锦绣路1001号",
-    "lat": 31.22034,
-    "lng": 121.55712,
+    "amapPoiId": "B00157AW8O",
+    "name": "上海迪士尼度假区",
+    "address": "黄赵路310号",
+    "lat": 31.141447,
+    "lng": 121.667003,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0JBLMU234",
+    "name": "上海乐高乐园度假区",
+    "address": "乐缤路999号",
+    "lat": 30.884809,
+    "lng": 121.096085,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B001571JDU",
+    "name": "上海玛雅海滩水公园",
+    "address": "林荫新路1222号",
+    "lat": 31.095419,
+    "lng": 121.210363,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFKSMT14",
+    "name": "上海世茂精灵之城主题乐园-深坑秘境",
+    "address": "辰花路5898号",
+    "lat": 31.057651,
+    "lng": 121.153824,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFL5P95R",
+    "name": "耀雪冰雪世界",
+    "address": "南汇新城镇沪城环路2088弄1-5号",
+    "lat": 30.918925,
+    "lng": 121.906146,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFJHU0QI",
+    "name": "上海世茂精灵之城主题乐园-蓝精灵乐园",
+    "address": "辰花路5088弄",
+    "lat": 31.062256,
+    "lng": 121.158933,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B00155AOCD",
+    "name": "马陆葡萄主题公园",
+    "address": "马陆镇大治路29号",
+    "lat": 31.378698,
+    "lng": 121.318269,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LGRB9VSA",
+    "name": "耀雪水世界",
+    "address": "南汇新城镇沪城环路2088弄-2号",
+    "lat": 30.919602,
+    "lng": 121.905023,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0JKF50IXP",
+    "name": "奈尔宝儿童科技馆(上海馆)",
+    "address": "西岸凤巢(龙耀路地铁站1号口步行210米)西岸凤巢AI PLAZA北区一楼",
+    "lat": 31.164297,
+    "lng": 121.460739,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0JGVP0E24",
+    "name": "奈尔宝家庭中心(上海森兰花园城店)",
+    "address": "高行镇启帆路517号一层L105-1、二层L205-9(森兰花园城1楼北端)",
+    "lat": 31.315044,
+    "lng": 121.59203,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B00156EX81",
+    "name": "荣威·上海儿童艺术剧场",
+    "address": "苗江路800号",
+    "lat": 31.19636,
+    "lng": 121.494585,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0J1P52IP3",
+    "name": "奈尔宝·儿童乐园·亲子餐厅(豫园店)",
+    "address": "旧校场路69号悦宾楼",
+    "lat": 31.226765,
+    "lng": 121.490963,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0J25HS4G5",
+    "name": "奈尔宝·儿童乐园·亲子餐厅(上海爱琴海店)",
+    "address": "吴中路1588号上海爱琴海购物中心1F(5号门进来左转向前200米)",
+    "lat": 31.175177,
+    "lng": 121.373378,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFH3M72X",
+    "name": "得丘礼享谷文化创意园",
+    "address": "莘庄工业区申富路788号",
+    "lat": 31.077661,
+    "lng": 121.371493,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0I1Y57H6S",
+    "name": "季高兔窝窝pancoat乐园",
+    "address": "佘山镇林荫新路1158号(月湖雕塑公园内夏案旁)",
+    "lat": 31.102499,
+    "lng": 121.211969,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0GK6BNKCM",
+    "name": "meland club(上海瑞虹新天地太阳宫店)",
+    "address": "瑞虹路181号瑞虹新天地太阳宫L3层",
+    "lat": 31.2626,
+    "lng": 121.500978,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0I2HAXN2N",
+    "name": "奈尔宝·儿童乐园·亲子餐厅(上海天空万科广场店)",
+    "address": "上海城区崧泽大道2229弄66号万科天空之城",
+    "lat": 31.17671,
+    "lng": 121.252031,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LAUR7F61",
+    "name": "嗨享来亲子互动乐园",
+    "address": "真南路与真南路822弄455支弄交叉口西北40米",
+    "lat": 31.280422,
+    "lng": 121.382837,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0L67MT9TB",
+    "name": "小黄鸭主题乐园(浦江店)",
+    "address": "沈杜公路4314号",
+    "lat": 31.057702,
+    "lng": 121.505782,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0IG3C6EPL",
+    "name": "brightland耀心岛·亲子乐园",
+    "address": "嘉松公路6200号元祖梦世界1层3号电梯口",
+    "lat": 31.148218,
+    "lng": 121.226289,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFKCC0KS",
+    "name": "MINI MARS KIDS CLUB亲子家庭中心(静安江宁路店)",
+    "address": "江宁路428号一层西",
+    "lat": 31.235125,
+    "lng": 121.453075,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0KDJ78DYD",
+    "name": "上海迪士尼乐园",
+    "address": "川沙镇申迪西路753号上海迪士尼度假区",
+    "lat": 31.143212,
+    "lng": 121.660294,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0IGGMTNZY",
+    "name": "疯狂动物城",
+    "address": "上海迪士尼度假区小熊维尼历险记入口旁",
+    "lat": 31.146278,
+    "lng": 121.659453,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LAVU6OFH",
+    "name": "乡韵亲子露营地",
+    "address": "川沙新镇纯新村龄南路7号",
+    "lat": 31.138275,
+    "lng": 121.698655,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B00156F61P",
+    "name": "上海麦可将文创园",
+    "address": "联明路389号",
+    "lat": 31.14401,
+    "lng": 121.347109,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LRFS73RA",
+    "name": "丛林玩家探险乐园(上海松江九科绿洲店)",
+    "address": "九亭镇姚北路1200号2幢101室",
+    "lat": 31.104791,
+    "lng": 121.326238,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B00156GLVS",
+    "name": "沥江生态园",
+    "address": "霜竹公路5088号",
+    "lat": 31.447307,
+    "lng": 121.167647,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0K2X78C1Y",
+    "name": "蘑力乐园",
+    "address": "上钢新村街道通耀路与经四路交叉口北220米",
+    "lat": 31.175738,
+    "lng": 121.475558,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LDTLR74M",
+    "name": "森有灵溪·轻奢营地",
+    "address": "川沙新镇六团社区储店村杨家路1号",
+    "lat": 31.140487,
+    "lng": 121.730755,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFLMBVF3",
+    "name": "四季冰雪乐园",
+    "address": "嘉松中路6200号元祖梦世界3层",
+    "lat": 31.148073,
+    "lng": 121.22569,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFI7532G",
+    "name": "奈尔宝·儿童乐园·亲子餐厅(星河湾店)",
+    "address": "都会路3788号5号楼",
+    "lat": 31.087647,
+    "lng": 121.410886,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0GUJCQ561",
+    "name": "探洞秀(上海大宁小城旗舰店)",
+    "address": "广中西路666号107-109",
+    "lat": 31.275285,
+    "lng": 121.438494,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFHOCF5U",
+    "name": "上海乐高探索中心",
+    "address": "大渡河路196号2层(长风公园地铁站3号口步行210米)",
+    "lat": 31.223033,
+    "lng": 121.395777,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0H2AC5CMH",
+    "name": "奈尔宝·儿童乐园·亲子餐厅(长泰广场店)",
+    "address": "祖冲之路1239弄7号长泰广场1F层",
+    "lat": 31.205784,
+    "lng": 121.603518,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0KAM54SBR",
+    "name": "星火玫瑰露营地基地",
+    "address": "星勤路与川南奉公路交叉口东120米",
+    "lat": 31.080839,
+    "lng": 121.779378,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0J2K5YPVP",
+    "name": "一起森呼吸·农家菜·户外烤肉·夜宵大排档",
+    "address": "澄江路1599弄2号",
+    "lat": 31.076375,
+    "lng": 121.431475,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0L1PR7Q06",
+    "name": "木星动物岛·室内萌宠互动乐园(龙之梦店)",
+    "address": "汇川路龙之梦城市生活中心蓝中庭L5层5061、5063、5065、5067、5069号",
+    "lat": 31.219554,
+    "lng": 121.416859,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFIB115L",
+    "name": "桃侬桃业南汇水蜜桃",
+    "address": "3组村宅路南航果739号",
+    "lat": 31.023221,
+    "lng": 121.606124,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0I0LUGC6U",
+    "name": "星慕露营地(方孝孺纪念馆研学基地店)",
+    "address": "丰桥村576号",
+    "lat": 31.013793,
+    "lng": 121.584207,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0K377QXHO",
+    "name": "陇尚乐园",
+    "address": "向阳路305弄55号正南方向130米",
+    "lat": 31.072699,
+    "lng": 121.436148,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0K3GL8VYA",
+    "name": "云也路亚营地",
+    "address": "东庆路8号",
+    "lat": 31.117834,
+    "lng": 121.155237,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFLBEZVR",
+    "name": "奈尔宝·儿童乐园·亲子餐厅(上海前滩店)",
+    "address": "钱家滩路388号平家桥路口晶耀前滩南区2层",
+    "lat": 31.151928,
+    "lng": 121.477474,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0G1CSQIHB",
+    "name": "土拨鼠俱乐部(上海苏航生活广场店)",
+    "address": "沪南公路5588号苏航家具广场3层南区",
+    "lat": 31.034153,
+    "lng": 121.596282,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0KDLRKEQK",
+    "name": "嘻哆哆亲子乐园",
+    "address": "镇北路秦家港路口",
+    "lat": 31.267349,
+    "lng": 121.677294,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0K60R7YOW",
+    "name": "汤姆猫亲子乐园(上海TSF购物中心店)",
+    "address": "白银路233号上海TSF购物中心F3层",
+    "lat": 31.352612,
+    "lng": 121.263149,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0K2VLS1D8",
+    "name": "快来乐·亲子乐园",
+    "address": "蔡家浜路655号",
+    "lat": 31.085297,
+    "lng": 121.267967,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0KRMCUD9E",
+    "name": "嗨享乐亲子互动乐园(浦东康桥店)",
+    "address": "康沿路419号",
+    "lat": 31.13982,
+    "lng": 121.604822,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LR71JEE3",
+    "name": "荷岸拾趣·亲子·团建·垂钓营地",
+    "address": "南华街王泥浜村沙更浪89号",
+    "lat": 31.225716,
+    "lng": 121.31535,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0I1TSAIZP",
+    "name": "梧桐树露营亲子庄园(大华店)",
+    "address": "环镇南路858弄(城璟·宝山中环社区)东门岗188号",
+    "lat": 31.296613,
+    "lng": 121.399771,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0JDVUM47G",
+    "name": "魔大星爆笑亲子魔术秀(浦东店)",
+    "address": "张杨路500号华润时代广场L5层",
+    "lat": 31.227128,
+    "lng": 121.517945,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0L2XRYGAR",
+    "name": "Slime gogo史莱姆学院·亲子乐园(虹桥南丰城店)",
+    "address": "虹桥南丰城南区L308",
+    "lat": 31.207314,
+    "lng": 121.407561,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFG8I1BF",
+    "name": "乐游宝宝亲子游泳(徐汇中心)",
+    "address": "钦州北路226号田尚坊b28",
+    "lat": 31.18068,
+    "lng": 121.418618,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0L17O9V6Q",
+    "name": "滴水湖布拉沃营地·露营烧烤·团建派对·户外亲子(临港店)",
+    "address": "环湖南三路与临雅路交叉口东180米",
+    "lat": 30.877364,
+    "lng": 121.938873,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LAK7LVSA",
+    "name": "萌溪草堂萌宠亲子露营",
+    "address": "远景村东小东侧150米",
+    "lat": 31.404691,
+    "lng": 121.339045,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0IUP7OZDZ",
+    "name": "六十六亩田.团建拓展.野战Cs.户外烧烤.亲子农场",
+    "address": "渔沥农场(友谊路东)1236号",
+    "lat": 30.973578,
+    "lng": 121.386753,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0KDV6KL5X",
+    "name": "滩玩乐园-亲子世界",
+    "address": "揽海路5弄",
+    "lat": 31.454399,
+    "lng": 121.837741,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LR07O0OM",
+    "name": "魔大星爆笑亲子魔术秀(静安店)",
+    "address": "山海关路388号博华广场F2层(自然博物馆地铁站2号口旁)",
+    "lat": 31.235738,
+    "lng": 121.462023,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0JA3ZTMTT",
+    "name": "嗨享乐无动力亲子乐园(三新汇开元里店)",
+    "address": "三新路333号三新汇开元里3层",
+    "lat": 31.0037,
+    "lng": 121.194458,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0L1L5DMZQ",
+    "name": "NOKAYA乃佳屋·亲子乐园(莘庄维璟印象城店)",
+    "address": "七莘路1507号3层014号印象城三层",
+    "lat": 31.130052,
+    "lng": 121.363945,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFH0ZSM0",
+    "name": "meland亲子乐园·研学(上海合生汇店·焕新开业)",
+    "address": "翔殷路2188号合生汇国际广场三层",
+    "lat": 31.300343,
+    "lng": 121.51895,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0M69DB5BM",
+    "name": "一起森呼吸轻奢露营团建亲子菜地认养",
+    "address": "景西路与汇源路交叉口东北220米",
+    "lat": 31.077025,
+    "lng": 121.431325,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LUFU1ZF2",
+    "name": "洛洛森林亲子俱乐部",
+    "address": "大宁路街道平型关路1700号宏慧视界1号库2幢1楼A003号",
+    "lat": 31.293515,
+    "lng": 121.457006,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0L697QCH3",
+    "name": "bb boom亲子协作游戏·聚会·亲子·团建(徐家汇店)",
+    "address": "TPY中心4楼L3-03-06",
+    "lat": 31.193012,
+    "lng": 121.439167,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0HAYR0K9T",
+    "name": "乐稻心田·亲子农场·团建营地",
+    "address": "朱家镇周家港村129号-1",
+    "lat": 31.097075,
+    "lng": 121.055075,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0KBFRRMBG",
+    "name": "精灵部落·森林露营·亲子营地",
+    "address": "七星4组路与陶郭路交叉口西80米",
+    "lat": 31.121463,
+    "lng": 121.679771,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0J2L53G4J",
+    "name": "meland club亲子乐园•派对•餐厅(上海百联西郊购物中心店)",
+    "address": "百联西郊购物中心3楼",
+    "lat": 31.208979,
+    "lng": 121.369781,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0KD04VK2Y",
+    "name": "闲野农场·露营亲子团建垂钓研学基地",
+    "address": "八滧公路与陈西中路交叉口西北240米",
+    "lat": 31.506659,
+    "lng": 121.780457,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B00155Q41F",
+    "name": "上海欢乐谷",
+    "address": "林湖路888号",
+    "lat": 31.09607,
+    "lng": 121.214778,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B00151C5FA",
+    "name": "中国福利会儿童艺术剧院",
+    "address": "华山路643号",
+    "lat": 31.216223,
+    "lng": 121.440539,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0I1TCDC99",
+    "name": "上海贝嘉葆steam儿童主题体验中心(恒越荣欣广场店)",
+    "address": "恒越荣欣广场5号楼3层",
+    "lat": 31.280775,
+    "lng": 121.67627,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0KBNHK5JV",
+    "name": "阿奇贝尔儿童乐园",
+    "address": "罗店镇罗迎路299号1栋2层201室",
+    "lat": 31.401978,
+    "lng": 121.357468,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFHMAL6P",
+    "name": "meland club儿童成长乐园(上海七宝领展广场)",
+    "address": "漕宝路3366号七宝领展广场3层343号",
+    "lat": 31.154024,
+    "lng": 121.349853,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B00151E2CC",
+    "name": "儿童乐园(海盈路)",
+    "address": "海盈路143号(海盈路青浦卫中路)",
+    "lat": 31.151409,
+    "lng": 121.110904,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0L3VHI9N2",
+    "name": "dadaland低幼龄儿童成长乐园",
+    "address": "宝昌路486号",
+    "lat": 31.258685,
+    "lng": 121.472991,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0J0SUG53L",
+    "name": "山楂花儿童游乐场",
+    "address": "龙腾大道459号",
+    "lat": 31.1406,
+    "lng": 121.455451,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFGVI51N",
+    "name": "爱思儿童公园",
+    "address": "海伦公园海伦路499号",
+    "lat": 31.257395,
+    "lng": 121.486569,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LDSCYK42",
+    "name": "CIDKT少年儿童运动空间(三林旗舰店)",
+    "address": "高青路2878弄1号2F",
+    "lat": 31.160118,
+    "lng": 121.527727,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0KA9UK420",
+    "name": "乐宝贝儿童乐园",
+    "address": "东西巷街128号2号楼一层1F010-1F0211F025-1F027",
+    "lat": 31.413925,
+    "lng": 121.340475,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B001574ZOK",
+    "name": "浦东嘉里大酒店儿童探险乐园",
+    "address": "花木路1388号浦东嘉里大酒店4层",
+    "lat": 31.213175,
+    "lng": 121.563775,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LDL5RGCJ",
+    "name": "星雨晨儿童乐园",
+    "address": "青浦区万达茂A区2层(淀山湖大道地铁站3号口步行120米)",
+    "lat": 31.132725,
+    "lng": 121.081075,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LG7185BW",
+    "name": "森林勇者·安踏儿童运动联名馆(七宝店)",
+    "address": "联明路389弄F栋麦可将园区停车场旁边",
+    "lat": 31.143917,
+    "lng": 121.347582,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0GRA52S94",
+    "name": "萌帆儿童游泳体能训练中心(龙湖店)",
+    "address": "双单路1499号5楼(嘉定新城地铁站3号口步行430米)",
+    "lat": 31.327064,
+    "lng": 121.252725,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0JKXUOQ01",
+    "name": "贝尔派对儿童乐园(朗香优嘉店)",
+    "address": "丰翔路55号大华朗香优嘉3楼304室",
+    "lat": 31.308694,
+    "lng": 121.380163,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0JANHN9S0",
+    "name": "卡通尼儿童乐园(招商花园城)",
+    "address": "曹路镇顾唐路99号招商花园城三层L3003室",
+    "lat": 31.263767,
+    "lng": 121.659068,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFFCNMPK",
+    "name": "欢乐堡儿童乐园(金高路店)",
+    "address": "金高路1085号联华超市1层",
+    "lat": 31.28134,
+    "lng": 121.610405,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LGV7XP0D",
+    "name": "蜂蜜糖儿童乐园",
+    "address": "南桥运河北路与南桥环城东路交叉口东160米",
+    "lat": 30.924775,
+    "lng": 121.467375,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LKSDHRHN",
+    "name": "森林勇者·安踏儿童运动联名馆(冠军汇店)",
+    "address": "北翟路虹桥·冠军汇体育文化公园6号楼二楼",
+    "lat": 31.205543,
+    "lng": 121.299415,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LB4RHR2G",
+    "name": "贝尔派对儿童乐园(吉浦天地店)",
+    "address": "高境镇三门路501号6幢1层143A室",
+    "lat": 31.312137,
+    "lng": 121.490456,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFJ0Q9ES",
+    "name": "MAGE麦其天地儿童乐园(临沂店)",
+    "address": "临沂路140号百联临沂购物中心临沂路店F2层",
+    "lat": 31.195359,
+    "lng": 121.512634,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0JU6SWAR6",
+    "name": "铭迪儿童水上成长中心(恒生万鹂广场店)",
+    "address": "恒生万鹂广场30号楼1楼110室(迪卡侬后面)",
+    "lat": 31.212568,
+    "lng": 121.65357,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0K0275TA8",
+    "name": "鲸鱼爸爸儿童运动馆(杨浦万达店)",
+    "address": "国宾路58号2层2101.2102A号房屋",
+    "lat": 31.300887,
+    "lng": 121.513558,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFH1070L",
+    "name": "徐家汇公园-儿童乐园",
+    "address": "肇嘉浜路986号徐家汇公园(东北角)",
+    "lat": 31.198633,
+    "lng": 121.443033,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFMDSQRR",
+    "name": "儿童游乐场",
+    "address": "前滩休闲公园(西南角)",
+    "lat": 31.146225,
+    "lng": 121.460575,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0KU29RSSN",
+    "name": "嘻卡西儿童乐园(七宝宝龙店)",
+    "address": "漕宝路3299号上海七宝宝龙城西区L3层",
+    "lat": 31.158495,
+    "lng": 121.355003,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0KA1MQAEH",
+    "name": "玩在这儿·儿童乐园·亲子游乐场(万嘉商业广场店)",
+    "address": "东靖路1881号万嘉商业广场F2层",
+    "lat": 31.293574,
+    "lng": 121.610615,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LAG7UHLZ",
+    "name": "闵行体育公园儿童乐园",
+    "address": "S20外环高速与服务区交叉口南280米",
+    "lat": 31.143408,
+    "lng": 121.373453,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B001557ROA",
+    "name": "上海市少年儿童浏河活动营地",
+    "address": "唐行镇",
+    "lat": 31.484422,
+    "lng": 121.235839,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LDUPGPZJ",
+    "name": "水彩城堡儿童乐园",
+    "address": "妙境路1118号川沙商业广场F2层",
+    "lat": 31.180913,
+    "lng": 121.691718,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0KRXUFV6Z",
+    "name": "大米和小米儿童成长中心(龙阳中心)",
+    "address": "龙阳路龙阳广场301-1室",
+    "lat": 31.203071,
+    "lng": 121.557871,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0KUN5B25T",
+    "name": "鲸鱼爸爸儿童游泳综合运动馆(长宁来福士东区店)",
+    "address": "长宁路1189号长宁来福士广场东区L3层",
+    "lat": 31.216074,
+    "lng": 121.414089,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0IBXAOQ84",
+    "name": "趣动熊儿童运动馆(乐坊·羽山生活广场店)",
+    "address": "崮山路717号乐坊·羽山生活广场F3层",
+    "lat": 31.239162,
+    "lng": 121.560704,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LADC7CDM",
+    "name": "卡拉米儿童乐园(嘉定宝龙广场店)",
+    "address": "阿克苏路1099号嘉定宝龙广场",
+    "lat": 31.346421,
+    "lng": 121.260503,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0L6B7JNS9",
+    "name": "肥猫侦探·儿童探索乐园(世博天地店)",
+    "address": "世博天地二楼(中华艺术宫地铁站3号口步行390米)",
+    "lat": 31.185117,
+    "lng": 121.490571,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFKUBVWE",
+    "name": "KidsRunning小跳鼠儿童运动馆",
+    "address": "归昌路167号融创商场C座203B",
+    "lat": 31.276902,
+    "lng": 121.596786,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0J1FS8XHW",
+    "name": "共青国家森林公园-儿童乐园",
+    "address": "军工路2237号",
+    "lat": 31.317481,
+    "lng": 121.54961,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0L6VRW5FF",
+    "name": "未来城堡儿童乐园",
+    "address": "川沙路5858号三层3-13",
+    "lat": 31.178927,
+    "lng": 121.700697,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0L2PMQ8PU",
+    "name": "鲸鱼爸爸儿童运动馆(浦东三林店)",
+    "address": "永泰路1058弄新达汇东区C栋",
+    "lat": 31.14245,
+    "lng": 121.526881,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0KR47I0XA",
+    "name": "向日葵儿童天地(阳辉广场店)",
+    "address": "新场镇沪南公路7688弄5号301-1室",
+    "lat": 31.03034,
+    "lng": 121.663827,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFI9158Y",
+    "name": "爱玩儿童(虹桥南丰城店)",
+    "address": "遵义路100号虹桥南丰城北区L3层",
+    "lat": 31.207701,
+    "lng": 121.407482,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFHV6JWS",
+    "name": "儿童游乐场",
+    "address": "浦江镇新港河路与永颂路交叉口往东100米",
+    "lat": 31.025953,
+    "lng": 121.502749,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0KBTU1R6Q",
+    "name": "趣动熊儿童运动馆(1088校区)",
+    "address": "浦东南路1088号1088广场F1层(西门进入直行40m,扶梯附近)",
+    "lat": 31.228107,
+    "lng": 121.515116,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0KDZZNUXI",
+    "name": "嘻卡西儿童乐园(上海绿地缤纷广场店)",
+    "address": "周浦镇年家浜东路238号上海绿地缤纷广场外场一楼",
+    "lat": 31.113575,
+    "lng": 121.594025,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LDCHRGND",
+    "name": "快落岛儿童乐园(奉贤宝龙店)",
+    "address": "航南公路5639号奉贤宝龙广场L1层",
+    "lat": 30.930382,
+    "lng": 121.463072,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0HRLAZ7BX",
+    "name": "益趣玩儿童综合运动训练中心(吾悦广场店)",
+    "address": "淀山湖大道218号3号门二楼",
+    "lat": 31.143625,
+    "lng": 121.094325,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0H1O1WPDO",
+    "name": "闵行文化公园-儿童乐园",
+    "address": "吴中路2019号上海闵行文化公园(东南角)",
+    "lat": 31.16054,
+    "lng": 121.363852,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0J3DNGY3Q",
+    "name": "卡卡儿童主题乐园(新邻天地店)",
+    "address": "武威路1285号新邻天地2L层(南门进入直行20m,扶梯上到2L可见)",
+    "lat": 31.280669,
+    "lng": 121.348012,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B001572AE0",
+    "name": "偶哈悠儿童乐园(五月花店)",
+    "address": "芷江西路488号五月花生活广场2层250-252号",
+    "lat": 31.256294,
+    "lng": 121.456523,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0L04UXRBV",
+    "name": "宝育弘泽·儿童剧场",
+    "address": "盘古路与克山路交叉口东北300米",
+    "lat": 31.404184,
+    "lng": 121.46883,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0JUTN1D93",
+    "name": "北迪熊儿童乐园(贝尚坊店)",
+    "address": "九里亭街道沪亭北路350弄贝尚坊时尚生活中心二楼",
+    "lat": 31.145575,
+    "lng": 121.317375,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0J0T125CF",
+    "name": "飞行之梦儿童乐园",
+    "address": "联谊路与联泰路交叉口东200米",
+    "lat": 31.345069,
+    "lng": 121.431757,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0K21NWF1Q",
+    "name": "嘻卡西儿童乐园(西渡店)",
+    "address": "南桥镇西渡镇沪杭公路299号大骏百货(西渡地铁站出入口旁)",
+    "lat": 30.989625,
+    "lng": 121.431375,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0KUUSVB0K",
+    "name": "童梦岛儿童乐园(白丽生活广场店)",
+    "address": "武威路1118号白丽生活广场F3层",
+    "lat": 31.282095,
+    "lng": 121.349454,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LRT1AGVH",
+    "name": "跳动时代儿童乐园(恒久又一城店)",
+    "address": "金运路与鹤望路交叉口东南140米",
+    "lat": 31.242672,
+    "lng": 121.320933,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0JR1XTOA6",
+    "name": "贝趣坊儿童乐园",
+    "address": "夏碧路261号世纪联华三楼",
+    "lat": 31.338608,
+    "lng": 121.587948,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LGK6IW1S",
+    "name": "卡拉米儿童乐园(松江吾悦店)",
+    "address": "永丰街道玉树路2599号吾悦广场1号门飞航广场一楼",
+    "lat": 31.009823,
+    "lng": 121.208597,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0KUJHGG5A",
+    "name": "勇游儿童游泳俱乐部(南翔太茂店)",
+    "address": "丰翔路3168号1楼101-106室",
+    "lat": 31.29908,
+    "lng": 121.324697,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0L3XD1CYE",
+    "name": "HML儿童斯巴达体能馆",
+    "address": "古北路1799号A栋501号",
+    "lat": 31.1874,
+    "lng": 121.402977,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LRT1B8PX",
+    "name": "锦绣文化公园儿童乐园",
+    "address": "花木街道高科西路2599号锦绣文化公园内(西侧)",
+    "lat": 31.192318,
+    "lng": 121.539486,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LD4OO1N0",
+    "name": "思邃·活体昆虫博物馆",
+    "address": "江宁路699号MOHO Mall3层",
+    "lat": 31.237737,
+    "lng": 121.44859,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LKYO4MI1",
+    "name": "Tim嘟嘟动物园",
+    "address": "协和路与新泾路交叉口西80米",
+    "lat": 31.204325,
+    "lng": 121.356475,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFFDHITH",
+    "name": "海豚戏水",
+    "address": "程家桥街道虹桥路2381号上海动物园(西南角)",
+    "lat": 31.191065,
+    "lng": 121.361443,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0KACM0NIV",
+    "name": "小象动悟公园(上海松江印象城)",
+    "address": "广富林路1788弄上海松江印象城L3层",
+    "lat": 31.0609,
+    "lng": 121.222834,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0K3YUJINI",
+    "name": "优立全息动物园(美兰湖金地店)",
+    "address": "美健路466弄29号一层L1-16-17",
+    "lat": 31.398867,
+    "lng": 121.349742,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0MGT787KQ",
+    "name": "上海海洋世界",
+    "address": "陆家嘴西路正大广场东区2楼(阿迪达斯后边)",
+    "lat": 31.236755,
+    "lng": 121.49915,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0L05ZTSNX",
+    "name": "上海海昌海洋公园-童趣乐园",
+    "address": "银飞路166号上海海昌海洋公园",
+    "lat": 30.912155,
+    "lng": 121.905962,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFFFCN69",
+    "name": "上海欢乐谷-海洋奇幻馆(暂停营业)",
+    "address": "佘山林湖路888号上海欢乐谷欢乐海洋",
+    "lat": 31.095703,
+    "lng": 121.21285,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0KU6K1SOF",
+    "name": "松江梦幻水世界",
+    "address": "辰花路5088弄",
+    "lat": 31.06339,
+    "lng": 121.161655,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B001557M3D",
+    "name": "诺贝尔科技公园",
+    "address": "美兰湖路545号美兰湖景区(东北角)",
+    "lat": 31.401555,
+    "lng": 121.358774,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LU7UUA4A",
+    "name": "洛克公园(轰趴营地)",
+    "address": "中山南路609号B1层",
+    "lat": 31.216467,
+    "lng": 121.506148,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFHKDU6C",
+    "name": "徐家汇体育公园",
+    "address": "零陵路800号(上海游泳馆地铁站2号口旁)",
+    "lat": 31.181297,
+    "lng": 121.440734,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0L12RUZEA",
+    "name": "MINI MARS NATURE PARY(天安千树店)",
+    "address": "莫干山路600号大洋晶典L3",
+    "lat": 31.249157,
+    "lng": 121.445498,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LU4UZKY5",
+    "name": "百慕大冒险",
+    "address": "贵州路南京东路世茂广场东区L3层",
+    "lat": 31.234691,
+    "lng": 121.47605,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFGHRVM8",
+    "name": "摩天轮(上海大悦城北座店)",
+    "address": "西藏北路166号上海静安大悦城北座F8层",
+    "lat": 31.244533,
+    "lng": 121.472061,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0KUK6XFA7",
+    "name": "环球大冒险(上海悦荟广场店)",
+    "address": "南京东路353号悦荟广场L1-119B",
+    "lat": 31.236637,
+    "lng": 121.483807,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B00156R4RZ",
+    "name": "人民公园游乐园(南京西路)",
+    "address": "南京西路231号人民公园内(北侧)",
+    "lat": 31.232792,
+    "lng": 121.472986,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0HR99BSVT",
+    "name": "卡通尼·妖怪村(北外滩来福士店)",
+    "address": "北外滩来福士广场L2-26/27",
+    "lat": 31.253275,
+    "lng": 121.507725,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0MA97BGZY",
+    "name": "Party Sir团建生日聚会(陆家嘴店)",
+    "address": "银城路155号光音广场LG39-42号",
+    "lat": 31.243366,
+    "lng": 121.513725,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0L6DRQJMX",
+    "name": "卡通尼·Fun Forward(上海崇邦今潮八弄店)",
+    "address": "武进路与中州路交叉口东南60米",
+    "lat": 31.251144,
+    "lng": 121.484133,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0MG0DGOWC",
+    "name": "汤姆猫超能战队乐园·上海徐汇店",
+    "address": "衡山路932号新六百L3层",
+    "lat": 31.195333,
+    "lng": 121.438704,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFFS6E5L",
+    "name": "上海世嘉都市乐园JOYPOLIS(上海月星环球港店)",
+    "address": "中山北路3300号环球港3层L3163室",
+    "lat": 31.232075,
+    "lng": 121.411753,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFK46CVY",
+    "name": "捕梦人的后花园",
+    "address": "斜土路2200弄8号",
+    "lat": 31.192531,
+    "lng": 121.449236,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0K2CLTWQD",
+    "name": "卡乐比乐园",
+    "address": "世博大道1368号世博源3区G层",
+    "lat": 31.183416,
+    "lng": 121.492719,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0I3V5G4IU",
+    "name": "奥斯丁梦想乐园(正大乐城店)",
+    "address": "中山南二路699号正大乐城F2层",
+    "lat": 31.185752,
+    "lng": 121.457716,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0JR7GD600",
+    "name": "托马斯&朋友之探索世界(商场世纪汇广场店)",
+    "address": "世纪大道1192号世纪汇广场F3层",
+    "lat": 31.228118,
+    "lng": 121.526533,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0JK7ZGO0S",
+    "name": "MELAND CLUB(上海真如环宇城MAX)",
+    "address": "铜川路699弄1号上海真如环宇城MAX L3层",
+    "lat": 31.250831,
+    "lng": 121.410586,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0HKKDKFGM",
+    "name": "汤姆熊对战机(上海久光中心)",
+    "address": "共和新路2188号上海久光中心L3层L332",
+    "lat": 31.276574,
+    "lng": 121.451072,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFJL4V41",
+    "name": "上海小猪佩奇的玩趣世界",
+    "address": "张杨路2389弄2号置汇旭辉广场3层32室",
+    "lat": 31.241529,
+    "lng": 121.556119,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LR4UPN96",
+    "name": "熊猫密室探索乐园(虹桥南丰城店)",
+    "address": "上海虹桥南丰城南区商场3楼L320",
+    "lat": 31.207231,
+    "lng": 121.407968,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0G3MSWBSQ",
+    "name": "鹿儿岛婴幼儿成长乐园",
+    "address": "吉浦路323号吉浦湾3层(出电梯右转)",
+    "lat": 31.305776,
+    "lng": 121.490518,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LRMHXFGO",
+    "name": "1号卡丁(上海世博天地店)",
+    "address": "世博大道1467号世博天地两层L207-208",
+    "lat": 31.184958,
+    "lng": 121.489424,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFJPZF0W",
+    "name": "N+乐园(巴黎春天浦建店)",
+    "address": "浦建路118号巴黎春天(浦建店)F3层",
+    "lat": 31.208036,
+    "lng": 121.520606,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LDCSMV3D",
+    "name": "小虎探险队",
+    "address": "瑞金南路518号",
+    "lat": 31.198346,
+    "lng": 121.468317,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0K24CGEX1",
+    "name": "木星动物岛· 室内萌宠互动乐园(合生汇店)",
+    "address": "翔殷路1099号合生汇L2层",
+    "lat": 31.300128,
+    "lng": 121.518894,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0G2Z7I9ZF",
+    "name": "棒恰恰欢乐屋(大宁国际商业广场店)",
+    "address": "共和新路2008号大宁国际商业广场12座4层",
+    "lat": 31.27423,
+    "lng": 121.451078,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0KA7G4BD0",
+    "name": "托马斯&朋友之探索世界(上海大宁久光乐园店)",
+    "address": "共和新路2188号上海久光中心L3层D316",
+    "lat": 31.276444,
+    "lng": 121.451326,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0H2B4K251",
+    "name": "汤姆熊欢乐世界(上海旭辉店)",
+    "address": "张杨路2389弄2号旭辉广场4F-1B汤姆熊",
+    "lat": 31.24149,
+    "lng": 121.555714,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFFE0M2V",
+    "name": "鲁迅公园游乐场",
+    "address": "四川北路2288号(虹口足球场地铁站6号口步行220米)",
+    "lat": 31.268843,
+    "lng": 121.481467,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0J13RNWRG",
+    "name": "CRUSH樂園",
+    "address": "大连路970号海上海弘基休闲广场9号楼1309室",
+    "lat": 31.265978,
+    "lng": 121.507333,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0J0PU9PTL",
+    "name": "格子大乱斗·儿童密室(日月光中心店)",
+    "address": "徐家汇路618号瑞金区3F02B(打浦桥地铁站4号口旁)",
+    "lat": 31.206052,
+    "lng": 121.467635,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LGGCUY1S",
+    "name": "奥斯丁梦想乐园(正大广场店)",
+    "address": "陆家嘴西路168号正大广场F2层",
+    "lat": 31.236587,
+    "lng": 121.498977,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0I0NG6O8E",
+    "name": "爱宠游乐园Paw City",
+    "address": "曹杨路1888弄2号1层D01-3单元",
+    "lat": 31.257197,
+    "lng": 121.406171,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFFOBVCC",
+    "name": "世纪公园-游乐园",
+    "address": "锦绣路1001号世纪公园",
+    "lat": 31.218581,
+    "lng": 121.552343,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0HGSC50H9",
+    "name": "崇乐汇(百联曲阳购物中心)",
+    "address": "曲阳路800号百联曲阳购物中心L3层L3-M04A",
+    "lat": 31.286337,
+    "lng": 121.491902,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0HRJ1RYFT",
+    "name": "豫梦魔都四百年互动主题乐园(豫园店)",
+    "address": "方浜中路249号豫园百货天裕楼B1层",
+    "lat": 31.225571,
+    "lng": 121.491333,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0IA3CY9LQ",
+    "name": "爱玩卡雷拉(世博源3区店)",
+    "address": "世博大道1368号世博源3区G层",
+    "lat": 31.183133,
+    "lng": 121.492485,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0JUYMOGAQ",
+    "name": "鲸奇岛(瑞虹天地店)",
+    "address": "嘉兴路街道瑞虹路181号瑞虹天地太阳宫L3层",
+    "lat": 31.262836,
+    "lng": 121.500835,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0JKV9I5WU",
+    "name": "爱玩冒险王国(世博源店)",
+    "address": "上南路168号世博源4区L1层",
+    "lat": 31.181608,
+    "lng": 121.492993,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0M69OE78M",
+    "name": "魔法特工(邮博店)",
+    "address": "四川北路与天潼路交叉口东南40米",
+    "lat": 31.244825,
+    "lng": 121.485775,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFJOJYNV",
+    "name": "钓娱岛(我格广场店)",
+    "address": "武宁路101号我格广场F3层L3-38(北2门进入直行10m,扶梯上到F3可见)",
+    "lat": 31.238203,
+    "lng": 121.422968,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0JKT64JSL",
+    "name": "Bingo Mini进击的人类幼崽·沉浸式亲子戏剧乐园(上海环宇城MAX店)",
+    "address": "铜川路699弄1号上海真如环宇城MAX L3层",
+    "lat": 31.250137,
+    "lng": 121.410677,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0IG4U2QC9",
+    "name": "爱玩可可萌(大宁音乐广场店)",
+    "address": "万荣路777号大宁音乐广场B1层",
+    "lat": 31.280425,
+    "lng": 121.444075,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0JK64XBQA",
+    "name": "玩童会迷你乐园(徐汇日月光店)",
+    "address": "漕宝路33号徐汇日月光中心L3层L3-31",
+    "lat": 31.168784,
+    "lng": 121.432518,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0L19SGUUH",
+    "name": "1号卡丁(静安大融城店)",
+    "address": "上海城区沪太路1111弄静安大融城1号楼2楼240-7C 1号卡丁",
+    "lat": 31.279928,
+    "lng": 121.426964,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFJ1M63X",
+    "name": "卡通尼(百联中环购物广场店)",
+    "address": "真光路1258号百联中环购物广场2F层A-L222/L223",
+    "lat": 31.244703,
+    "lng": 121.384291,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0H0B907MY",
+    "name": "儿童游乐场",
+    "address": "龙华东路800号(打浦路口)南园公园内(东侧)",
+    "lat": 31.191275,
+    "lng": 121.476525,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0M6TR6ACD",
+    "name": "奶龙云端嘉年华",
+    "address": "银城中路501号上海之品商场B1层",
+    "lat": 31.233825,
+    "lng": 121.506125,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFGQ4IPA",
+    "name": "卡通尼汉堡屋(金桥店)",
+    "address": "张杨路3611弄金桥国际商业广场1座3-4层",
+    "lat": 31.257838,
+    "lng": 121.577785,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0J3TLLHXQ",
+    "name": "魔法特工(中山公园店)",
+    "address": "长宁路890号玫瑰坊(中山公园地铁站7号口步行50米)",
+    "lat": 31.219088,
+    "lng": 121.419434,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0M6HUAMZO",
+    "name": "百慕大冒险(人广来福士店)",
+    "address": "西藏中路268号上海来福士广场F5层",
+    "lat": 31.232352,
+    "lng": 121.476513,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0KDZGN83K",
+    "name": "玩童会主题店(上海太阳宫店)",
+    "address": "瑞虹路181号瑞虹新天地太阳宫L3层",
+    "lat": 31.262923,
+    "lng": 121.500533,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0L2FU2HBC",
+    "name": "尖叫社穿越上海",
+    "address": "南京东路789号上海世茂广场东区L6楼",
+    "lat": 31.234575,
+    "lng": 121.476325,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0L64A4335",
+    "name": "哇酷星球(世纪汇广场店)",
+    "address": "世纪大道1192号世纪汇广场F3层",
+    "lat": 31.227375,
+    "lng": 121.527325,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B001572HS3",
+    "name": "童年阳光(上海杨浦店)",
+    "address": "黄兴路1618号大润发(杨浦店)F2层",
+    "lat": 31.289265,
+    "lng": 121.52153,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0JG7LU7BX",
+    "name": "蔬菜花园",
+    "address": "锦绣路1001号上海世纪公园内(东侧)",
+    "lat": 31.215475,
+    "lng": 121.556075,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0G39YK54B",
+    "name": "妙糖乐园(乐坊·大华生活广场店)",
+    "address": "真北路4288号乐坊精致生活广场宝山大华店F2层",
+    "lat": 31.291452,
+    "lng": 121.408004,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0MDKRDL19",
+    "name": "中兴公园儿童游乐区",
+    "address": "中兴路630号(中兴路地铁站1号口步行240米)",
+    "lat": 31.254726,
+    "lng": 121.470471,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0MBD6ERIQ",
+    "name": "MiniMars亲子乐园",
+    "address": "大洋晶典·天安千树1期",
+    "lat": 31.248975,
+    "lng": 121.445975,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0IG57KXNP",
+    "name": "多喜乐园",
+    "address": "伯士路与同普路交叉口北140米",
+    "lat": 31.231064,
+    "lng": 121.375848,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B00156RJYQ",
+    "name": "汤姆熊欢乐世界(上海南方店)",
+    "address": "沪闵路7388号百联南方购物中心5层52050",
+    "lat": 31.132073,
+    "lng": 121.399901,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B00155KY9K",
+    "name": "锦江乐园(暂停营业)",
+    "address": "虹梅路201号",
+    "lat": 31.139688,
+    "lng": 121.408838,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0KUDM6HUD",
+    "name": "心芝麻开门亲子乐园(上海三邻桥店)",
+    "address": "安汾路三邻桥体育文化园",
+    "lat": 31.317101,
+    "lng": 121.470538,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0H2O5D5EM",
+    "name": "凡尔纳魔幻公馆",
+    "address": "南京东路829号上海世茂广场东区L8",
+    "lat": 31.234573,
+    "lng": 121.475089,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0HKGLHRBJ",
+    "name": "ice family(日月光中心宝山店)",
+    "address": "沪太路1933号宝山日月光H栋B优品社日月光中心(宝山店)L3层",
+    "lat": 31.294489,
+    "lng": 121.416931,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFIAYD39",
+    "name": "MELAND CLUB(上海万象城吴中路店)(暂停营业)",
+    "address": "吴中路1599号上海万象城L3层L350号",
+    "lat": 31.16975,
+    "lng": 121.367809,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0KDAXHJNG",
+    "name": "玩童会迷你乐园(合生汇店)",
+    "address": "翔殷路1099号合生汇B1层",
+    "lat": 31.299863,
+    "lng": 121.518148,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0KUP40OYA",
+    "name": "半马苏河公园二期儿童乐园",
+    "address": "光复西路与真光路辅路交叉口西北40米",
+    "lat": 31.225284,
+    "lng": 121.368085,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0K2OU3ON7",
+    "name": "卡通尼乐园(上海荟聚店)",
+    "address": "金钟路788号上海荟聚Livat F3层",
+    "lat": 31.221907,
+    "lng": 121.357067,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0K2OUYFR0",
+    "name": "汤姆熊欢乐世界(上海宜家荟聚店)",
+    "address": "金钟路788号上海荟聚L3层03A02",
+    "lat": 31.221736,
+    "lng": 121.357301,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0M6TR5TC3",
+    "name": "绿野谜踪·公园亲子AR探险(和平公园店)",
+    "address": "大连路与畅心园路交叉口东南60米",
+    "lat": 31.272325,
+    "lng": 121.503975,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0K35RQDCR",
+    "name": "DramaKids抓马亲子",
+    "address": "世博大道与上南路交叉口北180米",
+    "lat": 31.188525,
+    "lng": 121.492475,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0MDX911KJ",
+    "name": "Bingo Mini进击的人类幼崽·沉浸式亲子戏剧乐园(静安宏慧视界box店)",
+    "address": "广延路与汶水路交叉口东160米",
+    "lat": 31.293325,
+    "lng": 121.457225,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0MGP71CEN",
+    "name": "跑跑太空熊(太阳宫店)",
+    "address": "瑞虹路181号瑞虹新天地太阳宫",
+    "lat": 31.262825,
+    "lng": 121.500575,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0M6Z7298K",
+    "name": "百慕大冒险(正大广场店)",
+    "address": "陆家嘴西路168号正大广场F2层",
+    "lat": 31.237325,
+    "lng": 121.499375,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LKHZPVOT",
+    "name": "YOLO悠乐儿童成长乐园",
+    "address": "逸仙路1328号9新业坊9号楼3层",
+    "lat": 31.31912,
+    "lng": 121.483618,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LGV5XOFP",
+    "name": "尚湾里儿童乐园",
+    "address": "东安路与龙腾大道辅路交叉口西200米",
+    "lat": 31.181015,
+    "lng": 121.461452,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0L1YGDS9D",
+    "name": "弹射能量",
+    "address": "长征镇真光路1258号百联中环购物广场B1层",
+    "lat": 31.245525,
+    "lng": 121.383925,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0J33LX8TU",
+    "name": "卡通尼乐园(中房金谊广场店)",
+    "address": "上南路4467号中房金谊广场3F层339",
+    "lat": 31.14081,
+    "lng": 121.513341,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0G3LXIECX",
+    "name": "卡通尼乐园(新达汇三林店)",
+    "address": "永泰路1058弄1新达汇·三林F3层",
+    "lat": 31.141645,
+    "lng": 121.526027,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0MDY1VTY0",
+    "name": "乐奇Rokid(上海环球港店)",
+    "address": "中山北路3300号上海环球港B1-2N乐奇Rokid专卖店",
+    "lat": 31.233247,
+    "lng": 121.412628,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0M6TR5KFL",
+    "name": "绿野谜踪·公园亲子AR探险(中山公园店)",
+    "address": "长宁路与定西路交叉口西180米",
+    "lat": 31.219775,
+    "lng": 121.419725,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0HGMX1IAO",
+    "name": "卡通尼乐园(爱琴海购物中心店)",
+    "address": "吴中路1588号爱琴海购物中心3F层(3号门进入向右走20m,扶梯上到3F可见)",
+    "lat": 31.17531,
+    "lng": 121.373738,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LD01GK27",
+    "name": "宝藏小熊扭蛋世界(上海悦荟广场店)",
+    "address": "外滩街道南京东路353号悦荟广场",
+    "lat": 31.236725,
+    "lng": 121.483725,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0HUYAS842",
+    "name": "MOREPRK滑板公园Piazza",
+    "address": "金湘路1000号",
+    "lat": 31.243514,
+    "lng": 121.611177,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0IKKCVFT1",
+    "name": "Finnie Friends(海上海·弘基休闲广场店)",
+    "address": "飞虹路568弄28号",
+    "lat": 31.266903,
+    "lng": 121.506831,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0HDOA6358",
+    "name": "汤姆熊欢乐世界(LaLaport上海金桥)",
+    "address": "新金桥路738号LaLaport上海金桥3F层",
+    "lat": 31.253637,
+    "lng": 121.604024,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0L3LOQ9N0",
+    "name": "象素乐园",
+    "address": "隆昌路与舒兰路交叉口西北100米",
+    "lat": 31.281296,
+    "lng": 121.538359,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0KBN9IJNX",
+    "name": "N+亲子乐园(宝山巴黎春天店)",
+    "address": "大场镇真华路888号巴黎春天宝山店F3层",
+    "lat": 31.270925,
+    "lng": 121.413075,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LR5N8X7E",
+    "name": "亦童儿童主题乐园(静安大融城店)",
+    "address": "沪太路1111号静安大融城2F层",
+    "lat": 31.27987,
+    "lng": 121.426852,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0M6HD9K8G",
+    "name": "童梦乐园",
+    "address": "昌邑路与福山路交叉口东北140米",
+    "lat": 31.24223,
+    "lng": 121.525386,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0K6ACD8YU",
+    "name": "妙糖乐园(尚优里·乐坊生活广场店)",
+    "address": "淞南镇淞塘路111弄7号2楼211室",
+    "lat": 31.334669,
+    "lng": 121.490873,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LK95AFJ5",
+    "name": "苏珊乐园Susan's Playground",
+    "address": "万航渡路889号889广场L1-03",
+    "lat": 31.229314,
+    "lng": 121.428554,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0L1LKD4MX",
+    "name": "MOREPRK滑板公园skyline(徐汇万科店)",
+    "address": "康健新村街道沪闵路9191号徐汇万科广场3层L3-04室",
+    "lat": 31.157438,
+    "lng": 121.430648,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LKXKHJ1H",
+    "name": "跑跑太空熊弹珠乐园(世博源店)",
+    "address": "上南路168号世博源2区L1层(中华艺术宫地铁站出入口旁)",
+    "lat": 31.185725,
+    "lng": 121.492175,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0KKX6YRY2",
+    "name": "悠乐YOLO乐园",
+    "address": "大场镇经地路99弄经纬汇6座2F",
+    "lat": 31.323325,
+    "lng": 121.399175,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LKSZHQHO",
+    "name": "童小宅儿童乐园(虹口今雨荟店)",
+    "address": "广粤路 299 今雨荟1号门门口",
+    "lat": 31.28746,
+    "lng": 121.465972,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0M6LH6G2P",
+    "name": "百慕大冒险(虹口龙之梦店)",
+    "address": "凯德虹口商业中心B座4楼密室逃脱隔壁",
+    "lat": 31.271398,
+    "lng": 121.477506,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0L0MH9IZH",
+    "name": "一工元运动空间·上海新嘉店(奈尔宝旗下·团建派对·运动探索)",
+    "address": "巨峰路111号PRISMA新嘉中心L2层",
+    "lat": 31.280788,
+    "lng": 121.590414,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0I1TRF2S5",
+    "name": "崇乐汇(久金广场店)",
+    "address": "张杨路3918号久金广场F2层",
+    "lat": 31.255527,
+    "lng": 121.581614,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0KUFC3JWQ",
+    "name": "卡通尼·棒恰恰欢乐屋(上滨生活广场店)",
+    "address": "周家嘴路917号上滨生活广场304-楼三楼",
+    "lat": 31.260363,
+    "lng": 121.503849,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0HR9RA479",
+    "name": "爱玩可可萌(爱琴海店)",
+    "address": "吴中路1588号爱琴海购物中心3F层(1号门进入向右前方走30m,扶梯上到3F可见)",
+    "lat": 31.174559,
+    "lng": 121.373033,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFHZSG3K",
+    "name": "卡通尼(莘庄维璟印象城店)",
+    "address": "七莘路1507号维璟广场F3层L3-007",
+    "lat": 31.130925,
+    "lng": 121.364146,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0L6NHUNEN",
+    "name": "豹豹乐园(唐镇店)",
+    "address": "高科东路515弄恒生万鹂广场3层",
+    "lat": 31.211329,
+    "lng": 121.651756,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFL7BA2A",
+    "name": "崇乐汇(龙湖华泾天街店)",
+    "address": "华泾路459号龙湖华泾天街2F-18",
+    "lat": 31.119259,
+    "lng": 121.45573,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0J11K7IOX",
+    "name": "海贼王快闪店",
+    "address": "南京东路340百联ZX创趣场F1层",
+    "lat": 31.237116,
+    "lng": 121.483488,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B00157I3AL",
+    "name": "蹦奔跳游乐园(北斗星商业广场店)",
+    "address": "长临路913号北斗星商务大厦1层",
+    "lat": 31.324785,
+    "lng": 121.436154,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0JBD5YE59",
+    "name": "NEOBIO(西岸凤巢AI PLAZA店)",
+    "address": "龙启路与云绣路交叉口西南80米",
+    "lat": 31.164059,
+    "lng": 121.4607,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0H094KOCP",
+    "name": "卡通尼乐园(中庚漫游城店)",
+    "address": "闵虹路8号中庚漫游城F2层",
+    "lat": 31.130925,
+    "lng": 121.398475,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0MD6UBE4Z",
+    "name": "咔米·拼豆·亲子乐园(镇坪路店)",
+    "address": "中山北路2052号振源大厦2楼",
+    "lat": 31.248126,
+    "lng": 121.431305,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0K0H4KEQZ",
+    "name": "逗逗龙儿童乐园",
+    "address": "长寿路街道长寿路401-甲号亚新生活广场一层",
+    "lat": 31.238875,
+    "lng": 121.437825,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0I6KCNPV9",
+    "name": "卡通尼乐园(森兰商都店)",
+    "address": "张杨北路2988号森兰商都2F层",
+    "lat": 31.312154,
+    "lng": 121.592144,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0IGSU5FI7",
+    "name": "可可蒙主题乐园(百盛优客城市广场东区)",
+    "address": "天山路789号百盛优客城市广场东区4F层",
+    "lat": 31.210779,
+    "lng": 121.403626,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0J3JZTHOU",
+    "name": "爱玩可可萌(悠方购物中心店)",
+    "address": "殷行路1388号悠方购物中心L2层",
+    "lat": 31.329913,
+    "lng": 121.50843,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0J0YK7FUH",
+    "name": "芝麻街奇趣乐园(静安大融城店)",
+    "address": "沪太路1111号静安大融城2F层",
+    "lat": 31.280326,
+    "lng": 121.425419,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0J13SNDB8",
+    "name": "万象城玩童会店",
+    "address": "吴中路1599号上海万象城L3层",
+    "lat": 31.170708,
+    "lng": 121.369351,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0L12LV771",
+    "name": "夹乐园",
+    "address": "百联南方商城二区4楼(莲花路地铁站3号口步行420米)",
+    "lat": 31.131168,
+    "lng": 121.399901,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0MB4CZLB0",
+    "name": "雷霆猪弹珠乐园(杨浦悠方店)",
+    "address": "新江湾城街道殷行路1388号悠方购物中心地下一层B108-b",
+    "lat": 31.329675,
+    "lng": 121.507875,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0KK7ZO2GS",
+    "name": "pikaland彼乐岛",
+    "address": "天钥桥路1188号C区102",
+    "lat": 31.173807,
+    "lng": 121.447406,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0H3S5KI3L",
+    "name": "富荟·童乐园",
+    "address": "浦建路1317号",
+    "lat": 31.204438,
+    "lng": 121.544599,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0H3SXLUZG",
+    "name": "meland club 晋商之旅玩学店(上海南翔印象城)",
+    "address": "陈翔公路2299号上海南翔印象城MEGAL3层L3-20",
+    "lat": 31.304696,
+    "lng": 121.307218,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0K0T71B16",
+    "name": "娃娃集合营(上海江桥万达店)",
+    "address": "金沙江西路1051弄1号江桥万达2064-2065号铺(酷乐潮玩对面)",
+    "lat": 31.239207,
+    "lng": 121.321916,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0MG1ST258",
+    "name": "大渡河路梅岭北路交叉口儿童乐园",
+    "address": "大渡河路684号(梅岭北路地铁站4号口步行170米)",
+    "lat": 31.241009,
+    "lng": 121.396984,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0JA1ZNNEH",
+    "name": "菲菲羊乐园(江桥万达店)",
+    "address": "江桥镇金沙江西路1063号万达广场3层3097室",
+    "lat": 31.239951,
+    "lng": 121.323799,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0K1KDB76V",
+    "name": "奥飞Q宠 汽车小镇(徐汇万科广场店)",
+    "address": "沪闵路9191号徐汇万科广场L3层",
+    "lat": 31.15736,
+    "lng": 121.43115,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0K6GZZPX0",
+    "name": "恐龙爱迪(新达汇三林店)",
+    "address": "永泰路1058弄1新达汇·三林F3层",
+    "lat": 31.141901,
+    "lng": 121.525431,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0L3O909PT",
+    "name": "B-DUCK城市乐园(上海LCM置地旭辉店)",
+    "address": "张杨路与泾南路交叉口东北80米",
+    "lat": 31.241454,
+    "lng": 121.55618,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0K127A8DH",
+    "name": "蔚空间-宝宝屋乐园(暂停营业)",
+    "address": "槎溪路280号2楼",
+    "lat": 31.284289,
+    "lng": 121.326445,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LKJH25HW",
+    "name": "超级飞侠启航站(陆悦天地店)",
+    "address": "中科路1600号陆悦天地F3层",
+    "lat": 31.182875,
+    "lng": 121.616175,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0KDD57UO2",
+    "name": "多哆堡儿童乐园(力波·九坊店)",
+    "address": "梅陇镇虹梅南路379弄27号楼力波九坊mall2楼208-210",
+    "lat": 31.133871,
+    "lng": 121.413347,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFKQU44X",
+    "name": "三邻桥体育文化园",
+    "address": "江杨南路485号",
+    "lat": 31.316943,
+    "lng": 121.469883,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LA2UJK1I",
+    "name": "霓虹小人国",
+    "address": "南京西路与九江路交叉口东北40米",
+    "lat": 31.233489,
+    "lng": 121.472227,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFGUD610",
+    "name": "翱翔飞越地平线",
+    "address": "川沙镇黄赵路310号上海迪士尼乐园",
+    "lat": 31.143421,
+    "lng": 121.665397,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0K0YMGB06",
+    "name": "飞跃恐龙岛",
+    "address": "南京路步行街353号悦荟广场3层",
+    "lat": 31.236624,
+    "lng": 121.483682,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFGUD0ZJ",
+    "name": "巴斯光年星际营救",
+    "address": "川沙镇黄赵路310号上海迪士尼乐园",
+    "lat": 31.140956,
+    "lng": 121.657608,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0J1CRANKQ",
+    "name": "抱抱龙冲天赛车",
+    "address": "申迪西路360号",
+    "lat": 31.143356,
+    "lng": 121.656429,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFGUD2JK",
+    "name": "奇想花园",
+    "address": "川沙镇黄赵路310号上海迪士尼乐园",
+    "lat": 31.142747,
+    "lng": 121.660517,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFGUD7IY",
+    "name": "小飞侠天空奇遇",
+    "address": "川沙镇黄赵路310号上海迪士尼乐园",
+    "lat": 31.14319,
+    "lng": 121.657913,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFGUD7JK",
+    "name": "奇梦之光幻影秀",
+    "address": "川沙镇黄赵路310号上海迪士尼乐园",
+    "lat": 31.143374,
+    "lng": 121.659659,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFGUD46Q",
+    "name": "奇幻童话城堡",
+    "address": "川沙镇黄赵路310号上海迪士尼乐园",
+    "lat": 31.143558,
+    "lng": 121.659627,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFGUD7J5",
+    "name": "小熊维尼历险记",
+    "address": "川沙镇黄赵路310号上海迪士尼乐园",
+    "lat": 31.145607,
+    "lng": 121.658645,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFGUD0Z9",
+    "name": "明日世界",
+    "address": "川沙镇黄赵路310号上海迪士尼乐园",
+    "lat": 31.141536,
+    "lng": 121.657045,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0GUBXQCR6",
+    "name": "meland(上海闵行龙湖天街店)",
+    "address": "剑川路1000弄1号A-3F-24室",
+    "lat": 31.026075,
+    "lng": 121.415947,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFGUD478",
+    "name": "旋转疯蜜罐",
+    "address": "川沙镇黄赵路310号上海迪士尼乐园",
+    "lat": 31.145317,
+    "lng": 121.658687,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFGUD0ZM",
+    "name": "喷气背包飞行器",
+    "address": "川沙镇黄赵路310号上海迪士尼乐园",
+    "lat": 31.141483,
+    "lng": 121.658679,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFGUD14T",
+    "name": "小飞象",
+    "address": "上海迪士尼度假区",
+    "lat": 31.1426,
+    "lng": 121.659756,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFGUD46V",
+    "name": "爱丽丝梦游仙境迷宫",
+    "address": "川沙镇黄赵路310号上海迪士尼乐园梦幻世界内",
+    "lat": 31.144255,
+    "lng": 121.660005,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFGUD5TV",
+    "name": "宝藏湾",
+    "address": "川沙镇黄赵路310号上海迪士尼乐园",
+    "lat": 31.145145,
+    "lng": 121.662918,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFGUD2JQ",
+    "name": "幻想曲旋转木马",
+    "address": "川沙镇黄赵路310号上海迪士尼乐园",
+    "lat": 31.142555,
+    "lng": 121.661275,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFGUD7JA",
+    "name": "探险岛",
+    "address": "川沙镇黄赵路310号上海迪士尼乐园",
+    "lat": 31.143205,
+    "lng": 121.663047,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFJG4TDB",
+    "name": "皮克斯玩具总动员",
+    "address": "川沙新镇唐黄路180号上海迪士尼度假区",
+    "lat": 31.143694,
+    "lng": 121.656281,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0K0C6ZRJN",
+    "name": "米奇大街",
+    "address": "川沙镇黄赵路310号上海迪士尼乐园",
+    "lat": 31.141832,
+    "lng": 121.661606,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LBO99N6E",
+    "name": "恐龙爱迪(虹口今雨荟店)",
+    "address": "广粤路283号虹口今雨荟2层213室",
+    "lat": 31.287675,
+    "lng": 121.465575,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFFDJUVW",
+    "name": "综合游乐场(上海动物园店)",
+    "address": "虹桥路2381号(近虹井路)上海动物园内(西侧)",
+    "lat": 31.193848,
+    "lng": 121.359444,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0G2MKVTEL",
+    "name": "卡丁公园汽车主题乐园(爱琴海购物公园店)",
+    "address": "吴中路1588号爱琴海购物中心下沉式广场(B1层)",
+    "lat": 31.173592,
+    "lng": 121.372153,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFHFC44N",
+    "name": "佛罗伦萨小镇游乐场",
+    "address": "卓耀路58弄1-365号彪马楼上",
+    "lat": 31.196357,
+    "lng": 121.763891,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFGUD2JR",
+    "name": "十二朋友园",
+    "address": "川沙镇黄赵路310号上海迪士尼乐园",
+    "lat": 31.142971,
+    "lng": 121.660949,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFGUD477",
+    "name": "漫游童话时光",
+    "address": "川沙镇黄赵路310号上海迪士尼乐园",
+    "lat": 31.143602,
+    "lng": 121.659437,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFFTAVAR",
+    "name": "蓝月飞车",
+    "address": "佘山林湖路888号上海欢乐谷",
+    "lat": 31.098668,
+    "lng": 121.212963,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFK205FZ",
+    "name": "渔港老码头户外运动游乐场",
+    "address": "长兴岛渔家乐路199弄渔港老码头",
+    "lat": 31.346679,
+    "lng": 121.7902,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0H3DDPXMM",
+    "name": "奇幻丛林(佛罗伦萨小镇上海名品奥特莱斯店)",
+    "address": "上海浦东新区卓耀路58弄佛罗伦萨小镇上海名品奥特莱斯2期",
+    "lat": 31.194214,
+    "lng": 121.765145,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFGUD0ZL",
+    "name": "太空幸会史迪奇",
+    "address": "川沙镇黄赵路310号上海迪士尼乐园",
+    "lat": 31.141193,
+    "lng": 121.658344,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0MDYSTZPY",
+    "name": "潮玩趣境游乐园",
+    "address": "鹤立西路88弄68号",
+    "lat": 31.057625,
+    "lng": 121.583925,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFFTB1PB",
+    "name": "矿山历险",
+    "address": "佘山林湖路888号上海欢乐谷",
+    "lat": 31.096031,
+    "lng": 121.214325,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0H121BV35",
+    "name": "星乐荟(宝乐汇)",
+    "address": "佘月路27号(佘山地铁站2号出口旁)宝乐汇2F层(北门进入直行20m,扶梯上到2F可见)",
+    "lat": 31.104816,
+    "lng": 121.230648,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFGUD704",
+    "name": "奇幻童话城堡里的迪士尼公主们",
+    "address": "川沙镇黄赵路310号上海迪士尼乐园",
+    "lat": 31.143526,
+    "lng": 121.659431,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFF33TAE",
+    "name": "绝顶雄风(上海欢乐谷店)",
+    "address": "佘山林湖路888号上海欢乐谷上海滩",
+    "lat": 31.09955,
+    "lng": 121.21645,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFFFK4HJ",
+    "name": "上海欢乐谷-香格里拉",
+    "address": "佘山林湖路888号上海欢乐谷",
+    "lat": 31.098425,
+    "lng": 121.213575,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFFFAXI0",
+    "name": "大洋历险(上海欢乐谷店)",
+    "address": "佘山林湖路888号欢乐谷欢乐海洋内",
+    "lat": 31.095478,
+    "lng": 121.21331,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFGQ3JPW",
+    "name": "上海欢乐谷-阳光港",
+    "address": "佘山林湖路888号上海欢乐谷",
+    "lat": 31.0949,
+    "lng": 121.218418,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LKPAYI7R",
+    "name": "上海富悦大酒店-儿童乐园",
+    "address": "茸宁路与银泽路交叉口西南120米",
+    "lat": 31.059834,
+    "lng": 121.247114,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0HR31JXOA",
+    "name": "探险乐园",
+    "address": "秋柑路199号长兴岛郊野公园内(东侧)",
+    "lat": 31.401564,
+    "lng": 121.717373,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LG5MMU53",
+    "name": "龙猫星球",
+    "address": "张杨路400号停车场对面",
+    "lat": 31.226374,
+    "lng": 121.515253,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0J6PZXTVP",
+    "name": "爱那里·变形金刚与小马宝莉欢乐世界",
+    "address": "沪南公路7688弄1号爱那里度假天地",
+    "lat": 31.031055,
+    "lng": 121.663815,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LDF4UFXS",
+    "name": "浩宇乐园(森兰店)",
+    "address": "启帆路517号森兰花园城L2层",
+    "lat": 31.314409,
+    "lng": 121.591419,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFFTB361",
+    "name": "完美风暴",
+    "address": "佘山林湖路888号上海欢乐谷",
+    "lat": 31.094938,
+    "lng": 121.216455,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFFTAN15",
+    "name": "异度空间(上海欢乐谷店)",
+    "address": "佘山林湖路888号上海欢乐谷",
+    "lat": 31.095976,
+    "lng": 121.218864,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFFRCHUR",
+    "name": "高桥公园游乐场",
+    "address": "花山路482号高桥公园内(东南角)",
+    "lat": 31.344979,
+    "lng": 121.573198,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0JAKCKHQ1",
+    "name": "启力儿童游乐园",
+    "address": "观海路与拱极路交叉口东北180米",
+    "lat": 31.054025,
+    "lng": 121.784768,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0HGNXQ6J3",
+    "name": "奇奇学紫叶乐园",
+    "address": "紫叶广场3层",
+    "lat": 31.020775,
+    "lng": 121.464925,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LG7HVPW8",
+    "name": "方塔游乐园",
+    "address": "中山东路235号方塔园内",
+    "lat": 31.005704,
+    "lng": 121.246092,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0L6U6PIFB",
+    "name": "浦东翠溪路53/57AI智慧乐园(上海浦东新区浦东翠溪路53/57AI智慧乐园)",
+    "address": "翠溪路与芋秋路交叉口西南60米",
+    "lat": 31.147702,
+    "lng": 121.470393,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0KUSUQDUM",
+    "name": "海湾康强欢乐世界(海鸥路店)",
+    "address": "海湾旅游区海鸥路1960号",
+    "lat": 30.81336,
+    "lng": 121.518519,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFFDIBO5",
+    "name": "自控飞机",
+    "address": "虹桥路2381号(近虹井路)上海动物园内(西南角)",
+    "lat": 31.191046,
+    "lng": 121.361435,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0KANU00X1",
+    "name": "哇咔王国(万达广场上海江桥店)",
+    "address": "万达广场(上海江桥店)",
+    "lat": 31.23943,
+    "lng": 121.322351,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0K277XDHQ",
+    "name": "上海我们1984乐园",
+    "address": "南六公路与郭家宅路交叉口东460米",
+    "lat": 31.148325,
+    "lng": 121.697425,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFFDURBF",
+    "name": "旋转车",
+    "address": "虹桥路2381号(近虹井路)上海动物园内(西南角)",
+    "lat": 31.191085,
+    "lng": 121.361429,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0KA9RQ73T",
+    "name": "绿野谜踪·公园博物馆亲子AR探险(自然博物馆店)",
+    "address": "山海关路与大田路交叉口东南60米(自然博物馆地铁站1号口旁)",
+    "lat": 31.235479,
+    "lng": 121.463265,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0LR1ZSTPQ",
+    "name": "申灵奇境(自然博物馆店)",
+    "address": "山海关路388号博华广场F1层(自然博物馆地铁站2号口旁)",
+    "lat": 31.235862,
+    "lng": 121.462423,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0L0LP99HO",
+    "name": "VISIONWALK沉浸式VR空间(上海自然博物馆店)",
+    "address": "山海关路与大田路交叉口西南60米(自然博物馆地铁站2号口旁)",
+    "lat": 31.235525,
+    "lng": 121.462625,
     "hasKidsPlayArea": false,
     "tags": [
       "ai_draft_v1"

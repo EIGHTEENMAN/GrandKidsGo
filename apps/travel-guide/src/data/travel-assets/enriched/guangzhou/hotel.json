@@ -1,96 +1,6376 @@
 [
   {
     "cityId": "city-guangzhou",
-    "amapPoiId": "SEED-gz-01",
-    "name": "广州长隆酒店",
-    "address": "广州市番禺区汉溪大道",
-    "lat": 23.00123,
-    "lng": 113.29645,
-    "hasFamilyRoom": true,
-    "hasKidsPool": true,
-    "hasKidsBreakfast": true,
-    "avgPricePerNight": 1380,
-    "tags": [
-      "ai_draft_v1",
-      "长隆",
-      "亲子主题",
-      "动物主题"
-    ],
-    "dataSource": "ai_draft_v1"
-  },
-  {
-    "cityId": "city-guangzhou",
-    "amapPoiId": "SEED-gz-02",
-    "name": "广州花园酒店",
-    "address": "广州市越秀区环市东路368号",
-    "lat": 23.13612,
-    "lng": 113.32012,
-    "hasFamilyRoom": true,
-    "hasKidsPool": true,
-    "hasKidsBreakfast": true,
-    "avgPricePerNight": 980,
-    "tags": [
-      "ai_draft_v1",
-      "越秀",
-      "老牌豪华",
-      "亲子"
-    ],
-    "dataSource": "ai_draft_v1"
-  },
-  {
-    "cityId": "city-guangzhou",
-    "amapPoiId": "SEED-gz-03",
-    "name": "广州四季酒店",
-    "address": "广州市天河区珠江新城冼村路",
-    "lat": 23.12245,
-    "lng": 113.32878,
-    "hasFamilyRoom": true,
+    "amapPoiId": "B0K3CHAYM8",
+    "name": "广州设计之都温德姆酒店",
+    "address": "黄边北路150号(黄边地铁站D口步行370米)",
+    "lat": 23.221387,
+    "lng": 113.284419,
+    "hasFamilyRoom": false,
     "hasKidsPool": false,
-    "hasKidsBreakfast": true,
-    "avgPricePerNight": 2100,
+    "hasKidsBreakfast": false,
     "tags": [
-      "ai_draft_v1",
-      "珠江新城",
-      "顶级",
-      "商务亲子"
+      "ai_draft_v1"
     ],
     "dataSource": "ai_draft_v1"
   },
   {
     "cityId": "city-guangzhou",
-    "amapPoiId": "SEED-gz-04",
-    "name": "广州万豪酒店",
-    "address": "广州市天河区黄埔大道中122号",
-    "lat": 23.12845,
-    "lng": 113.33912,
-    "hasFamilyRoom": true,
+    "amapPoiId": "B0KBJS7QJO",
+    "name": "南沙岭南东方酒店",
+    "address": "安康路二街6号",
+    "lat": 22.752146,
+    "lng": 113.537315,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0L0VHIQ8W",
+    "name": "广州塔艺术博物院亚朵酒店(V3.6)",
+    "address": "艺苑路5号",
+    "lat": 23.096969,
+    "lng": 113.322997,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0MG9CQ9BS",
+    "name": "广州长隆万博中心希尔顿欢朋酒店",
+    "address": "番禺大道北181号",
+    "lat": 23.002696,
+    "lng": 113.34573,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0KGDSSANK",
+    "name": "广州南站城际酒店",
+    "address": "三坊路126号",
+    "lat": 22.987735,
+    "lng": 113.27885,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0M60GLCWH",
+    "name": "广州长隆万博商务区福朋喜来登酒店",
+    "address": "番禺大道北188号",
+    "lat": 23.002696,
+    "lng": 113.34573,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0L6ART0YS",
+    "name": "全季酒店(广州南站店)",
+    "address": "石壁街双涌路251号万科世博汇A3号楼",
+    "lat": 22.985056,
+    "lng": 113.280591,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0MBHSI8QJ",
+    "name": "广州塔琶洲会展亚朵S酒店(赫基大厦店)",
+    "address": "新港东路277号赫基大厦20层",
+    "lat": 23.09955,
+    "lng": 113.348097,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LBLUOI9H",
+    "name": "格芮酒店(广州番禺长隆野生动物世界店)",
+    "address": "富石路463号",
+    "lat": 23.001433,
+    "lng": 113.307307,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LDFUR2I4",
+    "name": "广州白云站逸衡酒店",
+    "address": "广州白云站TOD粤胜广场西北塔4-13层",
+    "lat": 23.193625,
+    "lng": 113.244075,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0K6LAF4YA",
+    "name": "宜致酒店(广州长隆野生动物世界店)",
+    "address": "105国道大石路段613号",
+    "lat": 23.008649,
+    "lng": 113.308964,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0L29XT6QU",
+    "name": "天境·雅院花园酒店(广州南站店)",
+    "address": "石壁街韦涌村田心大街十一巷3号",
+    "lat": 22.981625,
+    "lng": 113.266225,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0K1J5FWO8",
+    "name": "全季酒店(广州黄埔大沙东地铁站酒店)",
+    "address": "丰乐北路52号F8层(中鼎名汇南塔)",
+    "lat": 23.107168,
+    "lng": 113.453835,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0M6T53XUB",
+    "name": "广州永庆坊中山八地铁站亚朵酒店",
+    "address": "中山八路新虹街32号",
+    "lat": 23.126984,
+    "lng": 113.234931,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LU2ZWT0Z",
+    "name": "广州番禺长隆万博四海城亚朵S酒店",
+    "address": "番禺大道北331号万博智汇大厦2号楼1层",
+    "lat": 23.001647,
+    "lng": 113.347955,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LGPM7MST",
+    "name": "广州站中医院大学亚朵酒店",
+    "address": "机场路12号(梓元岗地铁站B口步行180米)",
+    "lat": 23.155057,
+    "lng": 113.264205,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0K11SO470",
+    "name": "广州金融城科韵路城际酒店",
+    "address": "棠安路121号",
+    "lat": 23.131265,
+    "lng": 113.375964,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0K62UBELO",
+    "name": "广州美华航空主题酒店",
+    "address": "花山镇平石路1号",
+    "lat": 23.417739,
+    "lng": 113.247463,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LUL55F7R",
+    "name": "广州番禺亚运城希尔顿欢朋酒店",
+    "address": "石楼镇兴亚五路114号",
+    "lat": 22.943049,
+    "lng": 113.485002,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0K01AAIIJ",
+    "name": "全季酒店(广州白云亭岗地铁站店)",
+    "address": "石沙公路东720号正升·星荟2号楼",
+    "lat": 23.22547,
+    "lng": 113.219814,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0KBFCU3V3",
+    "name": "全季酒店(广州三元里中医药大学店)",
+    "address": "机场路18号",
+    "lat": 23.159977,
+    "lng": 113.264233,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0K36DHSFL",
+    "name": "广州白云山如家精选PLUS酒店",
+    "address": "白云大道北1392号",
+    "lat": 23.225603,
+    "lng": 113.30264,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0KUSAQ7KT",
+    "name": "广州番禺长隆南村万博地铁站亚朵酒店",
+    "address": "南村镇汇智三路66号ITC国际科创中心1层",
+    "lat": 23.005949,
+    "lng": 113.346122,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LDRZBLGC",
+    "name": "鼎舍酒店(广州沙面岛永庆坊店)",
+    "address": "黄沙大道5号1层(黄沙地铁站F1出口)",
+    "lat": 23.108249,
+    "lng": 113.239369,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0M6PSLWIT",
+    "name": "安漫花园酒店(广州万博长隆旅游度假区店)",
+    "address": "大石街道南大路156号",
+    "lat": 23.009844,
+    "lng": 113.33162,
+    "hasFamilyRoom": false,
     "hasKidsPool": true,
     "hasKidsBreakfast": true,
-    "avgPricePerNight": 1100,
     "tags": [
-      "ai_draft_v1",
-      "天河",
-      "商务",
-      "亲子"
+      "ai_draft_v1"
     ],
     "dataSource": "ai_draft_v1"
   },
   {
     "cityId": "city-guangzhou",
-    "amapPoiId": "SEED-gz-05",
-    "name": "广州白云山山庄",
-    "address": "广州市白云区广园中路218号",
-    "lat": 23.17456,
-    "lng": 113.27345,
+    "amapPoiId": "B0LDZ5UOCI",
+    "name": "广州海珠沙园地铁站亚朵酒店",
+    "address": "金沙路9号(沙园地铁站A口步行440米)",
+    "lat": 23.08918,
+    "lng": 113.256954,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LUMRFWCI",
+    "name": "广州华裕万福酒店(广州东站天河体育中心店)",
+    "address": "瘦狗岭路303号(广州东站地铁站K口步行240米)",
+    "lat": 23.151687,
+    "lng": 113.327837,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0KG1L5ZUM",
+    "name": "广州番禺长隆大石智选假日酒店",
+    "address": "新置路29号(大石地铁站C口步行130米)",
+    "lat": 23.015453,
+    "lng": 113.322395,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0K1HZROSA",
+    "name": "广州黄埔体育中心希尔顿欢朋酒店",
+    "address": "丰乐北路创新中心3号楼",
+    "lat": 23.121548,
+    "lng": 113.456143,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0K0OAH6VP",
+    "name": "美豪丽致酒店(广州番禺旗舰店)",
+    "address": "沙头街西环路266号",
+    "lat": 22.951466,
+    "lng": 113.352335,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0K2DZGB6L",
+    "name": "广州太古汇正佳广场轻居酒店",
+    "address": "体育东横街7-19号",
+    "lat": 23.129207,
+    "lng": 113.330068,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0K62H4M16",
+    "name": "院士港岭南东方酒店(广州大学城店)",
+    "address": "长洲街道公益大街98号(长洲地铁站E口步行250米)",
+    "lat": 23.074718,
+    "lng": 113.429143,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0KAV5EDZL",
+    "name": "广州南沙环宇城亚朵酒店",
+    "address": "凤凰路89号环宇城D栋15-23层(翠华餐厅旁)",
+    "lat": 22.788453,
+    "lng": 113.519014,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0L25ACH58",
+    "name": "广州北京路步行街天字码头轻居酒店",
+    "address": "沿江中路199号首层G03G05-G08G12号铺",
+    "lat": 23.114975,
+    "lng": 113.270675,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0L356CBOP",
+    "name": "啡诺酒店(北京路步行街店)",
+    "address": "人民北路604大新银行大楼F1层",
+    "lat": 23.132324,
+    "lng": 113.254863,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0K2HSJ6AA",
+    "name": "宜致酒店(金沙洲沙贝地铁站店)",
+    "address": "环洲二路51号沙凤商业大厦",
+    "lat": 23.151819,
+    "lng": 113.208639,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LKZRFVZA",
+    "name": "广州白云国际机场希尔顿惠庭酒店",
+    "address": "新雅街道雅正路3号-2",
+    "lat": 23.369786,
+    "lng": 113.233875,
     "hasFamilyRoom": false,
     "hasKidsPool": false,
     "hasKidsBreakfast": true,
-    "avgPricePerNight": 750,
     "tags": [
-      "ai_draft_v1",
-      "白云山",
-      "度假",
-      "性价比"
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0M63D7GKZ",
+    "name": "麗枫酒店(广州新塘高铁站香山大道旗舰店)",
+    "address": "香山大道55号",
+    "lat": 23.178104,
+    "lng": 113.622789,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LDHMN5IB",
+    "name": "丽呈铂锐酒店(广州奥体中心国际金融城店)",
+    "address": "健明六路35号首层、七至十一层",
+    "lat": 23.14004,
+    "lng": 113.389104,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0L0DUNC5L",
+    "name": "广州健力酒店(广州火车东站天河体育中心店)",
+    "address": "林和西路169号(广州东站地铁站B1口步行210米)",
+    "lat": 23.15131,
+    "lng": 113.321481,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LBS6P0DB",
+    "name": "广州番禺长隆万博四海城城际酒店",
+    "address": "南村镇汉溪大道东390号四海城商业广场1栋2座411号房",
+    "lat": 23.005349,
+    "lng": 113.351703,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0K3JZ6IKM",
+    "name": "美丽豪酒店(广州番禺长隆万博中心店)",
+    "address": "南村镇兴南大道中华美食城B区5号楼",
+    "lat": 23.012249,
+    "lng": 113.344917,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0KKFH87IR",
+    "name": "广州花都白云国际机场逸扉酒店",
+    "address": "迎宾大道132号星旺广场1栋",
+    "lat": 23.385684,
+    "lng": 113.245274,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0K14ATA98",
+    "name": "广州番禺长隆万博商务区轻居酒店",
+    "address": "南村镇兴南大道88号",
+    "lat": 23.011395,
+    "lng": 113.343303,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0KRRSRASN",
+    "name": "广州宝能演艺中心萝岗万达广场宜致美居",
+    "address": "归谷科技园A1栋A层",
+    "lat": 23.161281,
+    "lng": 113.467075,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LU2HPCWS",
+    "name": "星公馆·云端之境·Star Mansion(广州番禺长隆南村万博地铁站店)",
+    "address": "南村镇汇智一路6号锦麟万博B栋2单元19层1912A",
+    "lat": 23.009665,
+    "lng": 113.345779,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0KASZJKYO",
+    "name": "广州汇悦江漫酒店式公寓(南洲地铁站店)",
+    "address": "越秀天荟江湾B13322",
+    "lat": 23.059064,
+    "lng": 113.291054,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0K3Z5JXSM",
+    "name": "广州琶洲会展宜致美居",
+    "address": "阳光家园仑头环村东路海珠立方",
+    "lat": 23.080575,
+    "lng": 113.378525,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0K65SK5FB",
+    "name": "广州新塘高铁站希尔顿欢朋酒店",
+    "address": "宁西街创新大道东进广场9号之九",
+    "lat": 23.156,
+    "lng": 113.619671,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0L615PQ8O",
+    "name": "锦江之星酒店(广州长隆野生动物世界大石地铁站店)",
+    "address": "大石街富石路299号怡景花园怡富苑二层3区202房",
+    "lat": 23.01573,
+    "lng": 113.314345,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0MB9RUEAO",
+    "name": "美豪丽致酒店(广州番禺市桥易发步行街店)",
+    "address": "市桥大北路118号",
+    "lat": 22.941329,
+    "lng": 113.366395,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0KAAH87AY",
+    "name": "雅致酒店(广州二沙岛珠江夜游店)",
+    "address": "沿江东路436号",
+    "lat": 23.113212,
+    "lng": 113.283377,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0KRAR875B",
+    "name": "宜致酒店(广州西塱地铁站店)",
+    "address": "花地大道78号",
+    "lat": 23.061162,
+    "lng": 113.229603,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0L2G9UA7J",
+    "name": "宜尚酒店(黄埔宝能演艺中心店)",
+    "address": "长岭街道长贝二路水西敏捷广场3栋",
+    "lat": 23.201653,
+    "lng": 113.489355,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LGYU3E5E",
+    "name": "广州大学城楽逸酒店(大学城南地铁站店)",
+    "address": "大学城外环西路7号2栋",
+    "lat": 23.034696,
+    "lng": 113.403083,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0K2BCBLW5",
+    "name": "禧越·希缇酒店(广州番禺长隆南村万博地铁站店)",
+    "address": "大石街道迎宾路202号-8",
+    "lat": 23.020124,
+    "lng": 113.33236,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0L6FCHFVW",
+    "name": "广州黄埔华美达酒店(中新知识城店)",
+    "address": "云创街9号118房(旺村地铁站C口步行340米)",
+    "lat": 23.325983,
+    "lng": 113.549753,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0MAR74VUY",
+    "name": "宝阁丽·地标云端酒店(广州塔琶洲会展中心旗舰店)",
+    "address": "叠景路158合生广场南区A栋1-24层",
+    "lat": 23.084575,
+    "lng": 113.313075,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0K22SA5RT",
+    "name": "广州火车站白云万达广场喆啡锐品酒店",
+    "address": "机场路39号(乐嘉路地铁站D口步行250米)",
+    "lat": 23.167921,
+    "lng": 113.26003,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LAO61EKV",
+    "name": "乔治莫兰迪(广州番禺长隆万博中心店)",
+    "address": "南村镇兴南大道1号",
+    "lat": 23.013545,
+    "lng": 113.339309,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0K2AHZG0R",
+    "name": "广州健康方舟骑士物语酒店(东沙地铁站店)",
+    "address": "翠园道115号",
+    "lat": 23.058327,
+    "lng": 113.259957,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0K14MWHDL",
+    "name": "羽奕酒店(广州沙面店)",
+    "address": "沙面大街54号北座",
+    "lat": 23.107862,
+    "lng": 113.243458,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LDXA5RSU",
+    "name": "广州番禺长隆万博中心宝仕龙酒店",
+    "address": "群贤东路26号",
+    "lat": 23.019249,
+    "lng": 113.331162,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0KA6UI4FI",
+    "name": "万象精品主题酒店(广州长隆野生动物世界北门店)",
+    "address": "大石街105国道猛涌路段619号",
+    "lat": 23.007873,
+    "lng": 113.308416,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LAMRDQV8",
+    "name": "广州白云国际机场美爵酒店",
+    "address": "空港大道10号之三",
+    "lat": 23.426426,
+    "lng": 113.311981,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B00140AUE6",
+    "name": "广州海晖酒店(广州塔琶洲会展店)",
+    "address": "新港中路470号(赤岗地铁站C1出口200米)",
+    "lat": 23.096057,
+    "lng": 113.335928,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0KUXZ1XQJ",
+    "name": "丽呈東谷酒店(广州京溪南方医院同和地铁站店)",
+    "address": "广州大道北1927号(同和地铁站A口步行410米)",
+    "lat": 23.193154,
+    "lng": 113.32683,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0L1Z7OHER",
+    "name": "广州黄埔温德姆花园酒店",
+    "address": "开泰大道22号",
+    "lat": 23.162908,
+    "lng": 113.459041,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LKDBLBWU",
+    "name": "丽呈铂锐酒店(广州白云站百信广场店)",
+    "address": "新市墟萧岗村南街33号",
+    "lat": 23.190843,
+    "lng": 113.263461,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0M6J7FKWD",
+    "name": "澜悦逸居(广州白云国际机场店)",
+    "address": "夏花六路18号",
+    "lat": 23.339025,
+    "lng": 113.229725,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0KRPOM10N",
+    "name": "广州白云机场文旅城希尔顿欢朋酒店",
+    "address": "辉贤街8号",
+    "lat": 23.347094,
+    "lng": 113.260807,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0K06D914C",
+    "name": "勾途设计师酒店(广州江南西燕岗地铁站店)",
+    "address": "工业大道中333号3栋13楼",
+    "lat": 23.076454,
+    "lng": 113.272947,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0MGHMST0V",
+    "name": "丰正酒店(广州金融城科韵路店)",
+    "address": "员村街道椰林路9号",
+    "lat": 23.115181,
+    "lng": 113.372774,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0MGD1S0OH",
+    "name": "瀚庭轻居(广州岗顶地铁站店)",
+    "address": "龙口东路129号龙泽商业大厦内",
+    "lat": 23.138225,
+    "lng": 113.339975,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0L2OMVJXZ",
+    "name": "先泽酒店(广州北站花都汽车城地铁站店)",
+    "address": "广州市花都区九潭南路8号之二十二",
+    "lat": 23.375271,
+    "lng": 113.181405,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LBCCE714",
+    "name": "广州领越公馆(广州塔琶洲会展店)",
+    "address": "广州大道南125号",
+    "lat": 23.100613,
+    "lng": 113.316549,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LUX7PQ3K",
+    "name": "香蕉FUN酒店(广州北京路步行街越秀公园店)",
+    "address": "天香街三2号北秀花园22号楼",
+    "lat": 23.133116,
+    "lng": 113.271043,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LURZ2VIS",
+    "name": "From·K欢凯酒店(正佳广场体育西路地铁站店)",
+    "address": "天河路123号(体育中心南地铁站A口步行320米)",
+    "lat": 23.13429,
+    "lng": 113.32072,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0K06C57J1",
+    "name": "广州南沙温美顿艺术酒店",
+    "address": "凤凰大道89号中铁环宇城C塔",
+    "lat": 22.789003,
+    "lng": 113.518759,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0L1NKW0BL",
+    "name": "广州北京路步行街宜致美居",
+    "address": "大南路2号合润广场二楼",
+    "lat": 23.119217,
+    "lng": 113.264899,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0K3UAR2XD",
+    "name": "芮庭酒店(广州东晓南地铁站中大江南纺织城店)",
+    "address": "江南大道南695号",
+    "lat": 23.073584,
+    "lng": 113.287247,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0L0HCQWOQ",
+    "name": "米花国际公寓(北京路步行街店)",
+    "address": "解放中路459号明月豪庭F1层",
+    "lat": 23.123568,
+    "lng": 113.262061,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0L3HS76Y9",
+    "name": "丽呈铂锐酒店(广州白云东平地铁站警官学院店)",
+    "address": "龙归街道广从一路81号",
+    "lat": 23.258623,
+    "lng": 113.3214,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0L2XCXMB6",
+    "name": "广州长隆万博中心桔子水晶酒店",
+    "address": "兴南大道33号",
+    "lat": 23.012429,
+    "lng": 113.340242,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0KG5H9HWH",
+    "name": "宜尚酒店(广州挂绿广场1978创意园店)",
+    "address": "增江街沿江东三路15号",
+    "lat": 23.297938,
+    "lng": 113.845494,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0KUBOUDZ7",
+    "name": "千里寻居国际家园(番禺易发商业步行街西坊大院店)",
+    "address": "市桥街北桥路1号",
+    "lat": 22.937905,
+    "lng": 113.356393,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LD49SB12",
+    "name": "莱斯登酒店(广州海珠万达广场逸景路地铁站店)",
+    "address": "叠景路155号",
+    "lat": 23.085548,
+    "lng": 113.310912,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0JKZHM5FW",
+    "name": "云臻度假村",
+    "address": "温泉镇桃莲村南大队82号",
+    "lat": 23.624271,
+    "lng": 113.729161,
+    "hasFamilyRoom": false,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LDL9TAWI",
+    "name": "丽致星悦轻居(广州大学城店)",
+    "address": "北亭村博凌大街三巷13号",
+    "lat": 23.047746,
+    "lng": 113.374894,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0KRMH038E",
+    "name": "温德福光影臻选轻居(广州万博中心店)",
+    "address": "大石街河村工业路2号1楼",
+    "lat": 23.011187,
+    "lng": 113.335229,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0K13ZUKAA",
+    "name": "三青酒店(广州龙归金铂广场店)",
+    "address": "新石路37号",
+    "lat": 23.255864,
+    "lng": 113.290512,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LUPAPDMQ",
+    "name": "GEE INN格曼城舍(广州南沙北站东涌地铁站店)",
+    "address": "东涌镇市南路东涌段117号",
+    "lat": 22.883269,
+    "lng": 113.466607,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LR75JB28",
+    "name": "广州悦橙·酒店(永庆坊上下九步行街店)",
+    "address": "第十甫路12号二层(黄沙地铁站B口步行440米)",
+    "lat": 23.113398,
+    "lng": 113.242015,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0K3KAFFGX",
+    "name": "美豪丽致酒店(广州番禺市桥地铁站店)",
+    "address": "大北路381号",
+    "lat": 22.951519,
+    "lng": 113.369336,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0K2M7P4SZ",
+    "name": "宜程轻居(广州长隆野生动物世界店)",
+    "address": "大石街富石路315号2梯108商铺",
+    "lat": 23.011987,
+    "lng": 113.312625,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0L3BLEPQC",
+    "name": "智营精选酒店(广州中山大学晓港地铁站店)",
+    "address": "泰沙路2号之一",
+    "lat": 23.087675,
+    "lng": 113.285375,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0K6UUSZ6J",
+    "name": "超时光美宿(广州东站岗顶地铁站店)",
+    "address": "凯科榕合院一号楼",
+    "lat": 23.138111,
+    "lng": 113.342214,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0K1K5EE6V",
+    "name": "全季酒店(广州番禺长隆店)",
+    "address": "番新路2号7号楼",
+    "lat": 22.980316,
+    "lng": 113.356029,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0KBGH32EO",
+    "name": "丽盈酒店(广州白云站同德地铁站店)",
+    "address": "西槎路423号华悦大厦首层105号(8号线同德C出口)",
+    "lat": 23.162767,
+    "lng": 113.234301,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LKXSMDY2",
+    "name": "忽岚间酒店(广州番禺广场店)",
+    "address": "南堤东路828号南岸壹号8楼和9楼",
+    "lat": 22.921292,
+    "lng": 113.383546,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0K37RVXVA",
+    "name": "宜致X酒店(广州白云机国际机场T2.3航站楼店)",
+    "address": "空港大道9号",
+    "lat": 23.425767,
+    "lng": 113.315989,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0M69UCRNC",
+    "name": "凯芮城堡酒店(广州长隆野生动物园店)",
+    "address": "大石105国道625号",
+    "lat": 23.007908,
+    "lng": 113.308169,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LDSR3VIV",
+    "name": "秋果酒店X(广州白云国际机场T1航站楼店)",
+    "address": "空港大道9号B4栋之十五1016单元",
+    "lat": 23.425271,
+    "lng": 113.31612,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0L17G7MVY",
+    "name": "雅阁酒店(广州从化太平地铁站店)",
+    "address": "广从南路514号",
+    "lat": 23.442106,
+    "lng": 113.490296,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0M6AUYNZE",
+    "name": "柏丽智能美宿(广州南站大洲地铁站店)",
+    "address": "大洲村南边路鹤基坊2号102房",
+    "lat": 22.986225,
+    "lng": 113.261439,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0K27U6XMR",
+    "name": "未来美宿(广州长隆野生动物世界大石地铁站店)",
+    "address": "大石街礼村北约街27号之一101",
+    "lat": 23.012018,
+    "lng": 113.315787,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0M6G7PY10",
+    "name": "锦江之星(广州增城万达广场1978创意园店)",
+    "address": "光明东路12号",
+    "lat": 23.283483,
+    "lng": 113.842333,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0MAMO7A2N",
+    "name": "比奇儿童乐园·水上欢乐奇趣岛",
+    "address": "774乡道与新民落洋一路交叉口西南480米",
+    "lat": 23.456925,
+    "lng": 113.200325,
+    "hasFamilyRoom": true,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0L2SA53MM",
+    "name": "广州海傍·九州幽城聊斋夜",
+    "address": "海傍水乡北门售票处",
+    "lat": 22.941446,
+    "lng": 113.4677,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFFTKSWG",
+    "name": "广州顺发民宿(广州火车站店)",
+    "address": "矿泉街道站西路87号骏马商务大楼4层",
+    "lat": 23.151245,
+    "lng": 113.253226,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B00141JB0U",
+    "name": "百思吉酒店(广州涉外经济职业技术学院店)",
+    "address": "沙太北路林安物流园A5幢",
+    "lat": 23.263823,
+    "lng": 113.357763,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFGL12UI",
+    "name": "StarAsia星亚酒店(广州北站西进站口店)",
+    "address": "新街大道61-1(近布心牌坊、距广州北站地铁A出口200米)",
+    "lat": 23.377015,
+    "lng": 113.196722,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0IGXYJ213",
+    "name": "湖畔豪庭客栈(广州南站店)",
+    "address": "石壁街韦涌村环塘街26号之2号",
+    "lat": 22.981334,
+    "lng": 113.264429,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFKW7WH3",
+    "name": "耐斯顿公寓(广州南站店)",
+    "address": "韦涌村田心大街七巷一号",
+    "lat": 22.980445,
+    "lng": 113.26641,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LAZ1ZJK2",
+    "name": "星途酒店(增城挂绿广场店)",
+    "address": "荔城街道富鹏路27号",
+    "lat": 23.30285,
+    "lng": 113.828111,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0014075CF",
+    "name": "金港酒店(广州南沙进港大道店)",
+    "address": "金洲进港路117号",
+    "lat": 22.800373,
+    "lng": 113.551882,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0KAAXACTL",
+    "name": "雅尚电竞酒店(广州南沙大岗店)",
+    "address": "繁荣路9号",
+    "lat": 22.797367,
+    "lng": 113.400171,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B00141IDIP",
+    "name": "柏豪国际水疗酒店",
+    "address": "新街大道68号(艺景明苑旁)",
+    "lat": 23.379546,
+    "lng": 113.197016,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFG2USFY",
+    "name": "7天连锁酒店(广州街口镇北路店)",
+    "address": "街口镇北路26号之二",
+    "lat": 23.551329,
+    "lng": 113.590654,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B00140V298",
+    "name": "尚九酒店(上下九十三行广场店)",
+    "address": "上九路八甫水脚15号",
+    "lat": 23.116043,
+    "lng": 113.252358,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0JU6SX5MZ",
+    "name": "广州偶寓Hotel(广州柯木塱地铁站店)",
+    "address": "背坪窑屋地西街一巷一号之3号",
+    "lat": 23.19202,
+    "lng": 113.395012,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFG419NW",
+    "name": "广州长红酒店(龙归金铂广场店)",
+    "address": "均禾街长湴北街自编88号南天百货4层(长红村公交总站)",
+    "lat": 23.260234,
+    "lng": 113.297231,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFF3UUXS",
+    "name": "广州飙峰酒店(花都湖店)",
+    "address": "新华路153号,近兴华幼儿园",
+    "lat": 23.379857,
+    "lng": 113.225704,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B00141J193",
+    "name": "广州怡安旅馆",
+    "address": "鹤洞路203-209号3层",
+    "lat": 23.072303,
+    "lng": 113.24057,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0H1UO04RA",
+    "name": "卡尔曼国际公寓(广州万科里店)",
+    "address": "黄埔东路融悦汇C1栋大堂",
+    "lat": 23.092331,
+    "lng": 113.531914,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFL9ISAN",
+    "name": "乐高民宿(广州挂绿广场东汇城店)",
+    "address": "园墩路大墩二街1号(近东汇城、增城万达广场)",
+    "lat": 23.286447,
+    "lng": 113.827763,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B00141RBYS",
+    "name": "京都酒店",
+    "address": "金福馨庭旁花城北路104号(近美阁花园)",
+    "lat": 23.392352,
+    "lng": 113.208332,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0GRK163YX",
+    "name": "华都精选美宿(广州白云国际机场店)",
+    "address": "花东镇商达街25号",
+    "lat": 23.434326,
+    "lng": 113.321037,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFGZSOJT",
+    "name": "时代公寓(广州白云站店)",
+    "address": "祥岗后街23号",
+    "lat": 23.184867,
+    "lng": 113.249708,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0L647UAYY",
+    "name": "宜逸酒店(广州火车北站花城路地铁站店)",
+    "address": "新华路60号",
+    "lat": 23.375367,
+    "lng": 113.214524,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0G31NV6KS",
+    "name": "广州芒果公寓(植物园地铁站龙洞步行街店)",
+    "address": "龙洞步行街翠竹五巷1号2层",
+    "lat": 23.194248,
+    "lng": 113.36752,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFGIBBXA",
+    "name": "广州南站壹号公寓",
+    "address": "广州市番禺区石壁街道韦涌村田心大街十一巷9号",
+    "lat": 22.98118,
+    "lng": 113.266424,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFLF6YFQ",
+    "name": "广州斯尼仟玺公寓(广州高铁南站南浦地铁站店)",
+    "address": "南浦尚岛国际一楼144号",
+    "lat": 23.034514,
+    "lng": 113.292883,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFIUFYKX",
+    "name": "橙子水晶公馆(广州融创文旅城花城街地铁站店)",
+    "address": "新雅街团结安置区北区团结商业街南石东路10-4",
+    "lat": 23.42187,
+    "lng": 113.231417,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFFHC9QH",
+    "name": "豪之森公寓(广州增城万达广场东汇城店)",
+    "address": "荔城街荔景大道南24号",
+    "lat": 23.280516,
+    "lng": 113.814317,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFFEMVD1",
+    "name": "广州平顺公寓(广东技术师范大学店)",
+    "address": "口岗新大街31号2楼",
+    "lat": 23.134667,
+    "lng": 113.368066,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0L24UOZ03",
+    "name": "金陵南天门酒店(广州花都广场地铁站店)",
+    "address": "新华街道曙光大道26号",
+    "lat": 23.392417,
+    "lng": 113.227034,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFGNG27T",
+    "name": "圣陶莎酒店(荔城大道店)",
+    "address": "荔城大道27号",
+    "lat": 23.29145,
+    "lng": 113.829409,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LRABZBPN",
+    "name": "广州途优精品民宿",
+    "address": "站前路25号",
+    "lat": 23.382196,
+    "lng": 113.203466,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B00140WCDT",
+    "name": "金鹏宾馆(广州永庆坊陈家祠地铁站店)",
+    "address": "逢源街道龙津西路319号4楼",
+    "lat": 23.12412,
+    "lng": 113.240289,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0I135T3ZY",
+    "name": "欧兰酒店(广州江南西宝岗大道地铁站店)",
+    "address": "昌岗中路91号(宝岗大道地铁站C口步行150米)",
+    "lat": 23.08595,
+    "lng": 113.267459,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0H61APM2U",
+    "name": "侣行家公寓(广州米酷店)",
+    "address": "新塘街道高普路万科云城米酷C2栋负一楼商铺B124号",
+    "lat": 23.165497,
+    "lng": 113.409395,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B00141J5V0",
+    "name": "广州顺鑫酒店(石碁文化广场店)",
+    "address": "市莲路石基村路段9号",
+    "lat": 22.950132,
+    "lng": 113.438539,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFFAID3V",
+    "name": "尚都酒店(广州黄埔南岗地铁站店)",
+    "address": "黄埔东路3631号(南岗地铁站E口步行190米)",
+    "lat": 23.093518,
+    "lng": 113.539745,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFK9AVU4",
+    "name": "旅途连锁(广州高铁南站店)",
+    "address": "大洲村南边路鹤基坊17号",
+    "lat": 22.985893,
+    "lng": 113.26179,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B00141S18U",
+    "name": "198连锁酒店(广州金沙洲横沙地铁站店)",
+    "address": "平乐中街20号金悦广场7层",
+    "lat": 23.159283,
+    "lng": 113.209879,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0HKDHVP2E",
+    "name": "美景公寓(广州南站敏捷店)",
+    "address": "石壁街石山大道南捷诚街12号1座120号",
+    "lat": 22.981916,
+    "lng": 113.270673,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0K2KHPVP3",
+    "name": "广州芯海商务酒店(竹料地铁站店)",
+    "address": "钟落潭镇白沙村广从五路18号",
+    "lat": 23.344499,
+    "lng": 113.3673,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFG6W6F3",
+    "name": "君朗假日酒店(广州增城广场地铁站万达店)",
+    "address": "荔城街增城大道14号之六",
+    "lat": 23.276039,
+    "lng": 113.818996,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0I09ZL1Y4",
+    "name": "江南西酒店(广州番禺沙湾店)",
+    "address": "西环路1809号(岐山牌坊侧)",
+    "lat": 22.913866,
+    "lng": 113.34947,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B00141J26N",
+    "name": "至尊宾馆",
+    "address": "荔城大道450号",
+    "lat": 23.282808,
+    "lng": 113.782741,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFHX93GA",
+    "name": "8天连锁主题酒店(植物园地铁站广东工业大学龙洞校区店)",
+    "address": "迎龙路186号(龙洞巨幕影城斜对面,广东工业大学附近)",
+    "lat": 23.198501,
+    "lng": 113.364948,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0HA19H71U",
+    "name": "菲立斯酒店(广州涉外经济学院店)",
+    "address": "太和镇大源北路47号",
+    "lat": 23.259391,
+    "lng": 113.358052,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B00141KCHN",
+    "name": "华业精品酒店(广州增城挂绿广场店)",
+    "address": "挂绿路2号挂绿广场7楼",
+    "lat": 23.291037,
+    "lng": 113.833229,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B00140U486",
+    "name": "柏元酒店(宝岗大道地铁站店)",
+    "address": "昌岗中路南街78号(宝岗大道地铁站D口步行110米)",
+    "lat": 23.084678,
+    "lng": 113.270018,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0014246FS",
+    "name": "天发商务酒店(新塘总店)",
+    "address": "新塘镇东坑三横路68号(99旅馆对面)",
+    "lat": 23.12424,
+    "lng": 113.610596,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFGAQ207",
+    "name": "广州200间连锁公寓北亭总店",
+    "address": "云程大街18号",
+    "lat": 23.049744,
+    "lng": 113.375928,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B00141VHGH",
+    "name": "广州乐游青年旅舍(华师店)",
+    "address": "石牌街道五山路265号瑞华大厦南塔23层FG",
+    "lat": 23.143038,
+    "lng": 113.34558,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B00140W8PE",
+    "name": "品尚商务酒店",
+    "address": "机场路1948号(黄石立交往北100米右侧)",
+    "lat": 23.207134,
+    "lng": 113.264021,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0KG96152M",
+    "name": "米酷公寓(广州天河智慧城地铁站店)",
+    "address": "华观路万科智慧商业广场米酷公寓c5栋11楼1198室",
+    "lat": 23.166129,
+    "lng": 113.408771,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFM38H76",
+    "name": "广州新悦酒店(新白云国际机场店)",
+    "address": "人和镇矮岗大路东七巷7号(近三号线机场南地铁站、高增地铁站)",
+    "lat": 23.361301,
+    "lng": 113.291672,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0KKFM7CEE",
+    "name": "柏尔曼精选公寓(南岗万达店)",
+    "address": "南岗街道万荟珑寓1号楼205室",
+    "lat": 23.098275,
+    "lng": 113.549575,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0H1U12EIT",
+    "name": "卡尔曼国际公寓(佳兆业城市广场店)",
+    "address": "盛凯大街1号佳纷天地F5层",
+    "lat": 23.104166,
+    "lng": 113.549347,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFFEMVFF",
+    "name": "佳桦住宿(广州上社华景路地铁站店)",
+    "address": "上社口岗新大街21号",
+    "lat": 23.135025,
+    "lng": 113.368575,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFK1GGBJ",
+    "name": "广州星豪公寓",
+    "address": "矮岗村大路口西二巷2号",
+    "lat": 23.360929,
+    "lng": 113.291178,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B00140HUFU",
+    "name": "鹏逸酒店(广州增城新塘广场店)",
+    "address": "新塘大道中30号",
+    "lat": 23.11663,
+    "lng": 113.616372,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0IRSRJAIB",
+    "name": "雅居酒店(广州番禺市桥地铁站店)",
+    "address": "市桥街东环路395号亚朵酒店9-10层",
+    "lat": 22.952067,
+    "lng": 113.373314,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B001403F73",
+    "name": "新世纪酒店",
+    "address": "新华街秀全大道43号",
+    "lat": 23.380757,
+    "lng": 113.211882,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B001401797",
+    "name": "冰花酒店",
+    "address": "天河北路2号",
+    "lat": 23.140378,
+    "lng": 113.315449,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B00140RLDY",
+    "name": "壹心国际",
+    "address": "三元里大道1299号7楼,12楼(棠溪公交站旁)",
+    "lat": 23.182574,
+    "lng": 113.253037,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0KAYAP90O",
+    "name": "贝悦斯·智能轻居(广州万科里燕岗地铁站店)",
+    "address": "江燕路240号F1层",
+    "lat": 23.076799,
+    "lng": 113.276413,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B00141JTB3",
+    "name": "印象琶洲公寓",
+    "address": "新港东路137号之5(磨碟沙地铁站B口旁)",
+    "lat": 23.099239,
+    "lng": 113.341211,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B00140U8L8",
+    "name": "锦江之星(广州荔湾西华路彩虹桥地铁站店)",
+    "address": "西华路77号(彩虹桥地铁站D口步行160米)",
+    "lat": 23.134013,
+    "lng": 113.244248,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0L33UAGMS",
+    "name": "里白酒店(广州北京路中山大学附属医院店)",
+    "address": "中山三路53号(烈士陵园地铁站D口步行280米)",
+    "lat": 23.126828,
+    "lng": 113.282054,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0K125C9KD",
+    "name": "星程酒店(广州白云国际会议中心新市墟地铁站店)",
+    "address": "齐富路(新市墟地铁站C口步行90米)",
+    "lat": 23.194438,
+    "lng": 113.267614,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0014018C5",
+    "name": "新疆大厦(天河北路)",
+    "address": "天河北路76-78号",
+    "lat": 23.140459,
+    "lng": 113.318262,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B00140ANA8",
+    "name": "嘉逸皇冠酒店",
+    "address": "中山大道中483号",
+    "lat": 23.121138,
+    "lng": 113.408174,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B00140W6IT",
+    "name": "锦源国际公馆",
+    "address": "北京路149号锦源公寓1层",
+    "lat": 23.118717,
+    "lng": 113.269238,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0HDDZ8Y0J",
+    "name": "珺玥(广州新白云国际机场直营店)",
+    "address": "人和镇聚龙街14号",
+    "lat": 23.363328,
+    "lng": 113.291209,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFMDXRNJ",
+    "name": "赛楠酒店(广州大沙地地铁站店)",
+    "address": "大沙地东38号(大沙地地铁站C口步行290米)",
+    "lat": 23.104436,
+    "lng": 113.448791,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B00140W2S3",
+    "name": "微八酒店(西朗分店)",
+    "address": "花地大道南55号(西塱地铁站B口步行240米)",
+    "lat": 23.062841,
+    "lng": 113.231229,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFLOEGL4",
+    "name": "大唐宾馆(聚隆集市店)",
+    "address": "聚德西路南大街1-4号",
+    "lat": 23.080837,
+    "lng": 113.325785,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFI5VLT9",
+    "name": "丽芙酒店(万科里江泰路地铁站店)",
+    "address": "南珠路20号(江泰路地铁站D口步行140米)",
+    "lat": 23.08063,
+    "lng": 113.28017,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0IGYLN6AW",
+    "name": "IU酒店(广州增城万达挂绿广场店)",
+    "address": "荔城街新桥路15号近增城挂绿广场",
+    "lat": 23.292137,
+    "lng": 113.836263,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0HK3LXGI9",
+    "name": "广州北京路天字码头亚朵S酒店",
+    "address": "沿江中路233号(北京路地铁站A1口步行400米)",
+    "lat": 23.115238,
+    "lng": 113.271405,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFH6NMNY",
+    "name": "广州慕吉.云溪山居",
+    "address": "河樟路",
+    "lat": 23.529947,
+    "lng": 113.855896,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0H6SC0JQS",
+    "name": "MUSTEL木文缇酒店(广州南沙悠方店)",
+    "address": "黄阁镇蕉门翠瑜街5号",
+    "lat": 22.799073,
+    "lng": 113.519618,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0I1NOEIHR",
+    "name": "如家快捷酒店(广州芳村花地湾地铁站店)",
+    "address": "东漖北路566-568号",
+    "lat": 23.090152,
+    "lng": 113.228121,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B00140Q05K",
+    "name": "京源商务酒店",
+    "address": "京溪路18号(近地铁京溪南方医院D出口,云景花园对面)",
+    "lat": 23.181855,
+    "lng": 113.328888,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0L2OZUSVC",
+    "name": "麗枫酒店(广州越秀公园小北地铁站店)",
+    "address": "童心路5号(小北地铁站D口步行450米)",
+    "lat": 23.141217,
+    "lng": 113.274043,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFGP2221",
+    "name": "麗枫酒店(广州科学城黄陂地铁站店)",
+    "address": "天鹿南路100号",
+    "lat": 23.197884,
+    "lng": 113.426435,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFFJQKCJ",
+    "name": "中大学人馆",
+    "address": "滨江东路588号",
+    "lat": 23.102163,
+    "lng": 113.298978,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0MGNUQDXJ",
+    "name": "广州卓尊金莎大酒店(白云火车站三元里大道店)",
+    "address": "三元里大道1469号(白云公园地铁D出口)",
+    "lat": 23.18504,
+    "lng": 113.256955,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFGH76KZ",
+    "name": "奕佳酒店公寓",
+    "address": "沿河路奕佳街1-4号",
+    "lat": 23.070241,
+    "lng": 113.516639,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0HD27DTLF",
+    "name": "汉庭酒店(广州江夏地铁站店)",
+    "address": "江夏北二路一巷10号(江夏地铁站A口旁)",
+    "lat": 23.211693,
+    "lng": 113.282563,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0J3D5EGEA",
+    "name": "寓舍精品·设计师Hotel(广州番禺汉溪长隆地铁站店)",
+    "address": "汉溪大道东保利大都汇D区2栋1楼(近汉溪长隆地铁站G出口、长隆旅游度假区)",
+    "lat": 22.992509,
+    "lng": 113.336115,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFF3UYVK",
+    "name": "广州春田家家青年旅舍LAZY GAGA",
+    "address": "海珠中路215号(西门口地铁站B口步行390米)",
+    "lat": 23.122783,
+    "lng": 113.256777,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0L35UF16L",
+    "name": "金湘庭苑(广州黄埔店)",
+    "address": "云埔街道开创大道1553号楼自编102号",
+    "lat": 23.162025,
+    "lng": 113.518575,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0G2FA1DAT",
+    "name": "广州碧桂园金叶子田园公寓酒店",
+    "address": "派潭镇达开北路36号",
+    "lat": 23.558712,
+    "lng": 113.780569,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0K6P7W0G0",
+    "name": "隆德商务酒店(金融城店)",
+    "address": "科新路9隆德商务中心F1层",
+    "lat": 23.123239,
+    "lng": 113.381202,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFLAIBMI",
+    "name": "麗枫酒店(广州厦滘地铁站沙溪酒店用品城店)",
+    "address": "洛浦街迎宾路115号惠信商业园",
+    "lat": 23.036067,
+    "lng": 113.327327,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0L165RSTC",
+    "name": "卡季酒店(广州北站花都广场店)",
+    "address": "天贵路70号",
+    "lat": 23.393606,
+    "lng": 113.222707,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0JU1XYDMS",
+    "name": "索丽亚(广州新白云国际机场店)",
+    "address": "人和镇矮岗村北街西五巷1号",
+    "lat": 23.362431,
+    "lng": 113.288528,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFK3OMU3",
+    "name": "建乔公寓(广州岗顶地铁站中山三院店)",
+    "address": "天河路558号3楼(榕江会牌坊,胡桃里斜对面)",
+    "lat": 23.133359,
+    "lng": 113.337559,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFH9QC7N",
+    "name": "住星精品主题酒店(广州市桥地铁站店)",
+    "address": "市桥繁华路81号",
+    "lat": 22.9419,
+    "lng": 113.360755,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFFRNTQ4",
+    "name": "文星酒店(广州均禾大道金铂广场店)",
+    "address": "清湖大布路1号",
+    "lat": 23.257231,
+    "lng": 113.274697,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B00141VI9C",
+    "name": "广州四季如春酒店(广州北站花城路地铁站店)",
+    "address": "新华街站前路17号",
+    "lat": 23.380441,
+    "lng": 113.20382,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B00141RDSI",
+    "name": "天顺宾馆(广州市二宫地铁站店)",
+    "address": "前进路前进北街2号(市二宫地铁站E口步行320米)",
+    "lat": 23.103706,
+    "lng": 113.272177,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B00141JSND",
+    "name": "江南一家酒店(广州融创文旅城店)",
+    "address": "建设北路147号",
+    "lat": 23.405753,
+    "lng": 113.206299,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0KU61V1YJ",
+    "name": "维尔曼顿轻享美宿(广州白云国际机场店)",
+    "address": "南溪商业街90号",
+    "lat": 23.434755,
+    "lng": 113.320592,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B00141KN82",
+    "name": "北海稻酒店",
+    "address": "金岭北路中国银行旁",
+    "lat": 22.794184,
+    "lng": 113.55186,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0H1AH3QSM",
+    "name": "智营·博海快捷酒店(广州珠江新城中山眼科医院店)",
+    "address": "东兴南路91号(五羊邨地铁站C口步行430米)",
+    "lat": 23.122127,
+    "lng": 113.312915,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFG8X0W9",
+    "name": "加州时尚驿站(机场北门店)",
+    "address": "花东镇凤祥路5号",
+    "lat": 23.426239,
+    "lng": 113.31694,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFFCOM3V",
+    "name": "橙子酒店(迎龙路)",
+    "address": "迎龙路180号(龙洞巨幕影城斜对面)",
+    "lat": 23.197776,
+    "lng": 113.364964,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0JKSH3GDH",
+    "name": "欧尔曼酒店(增城万达广场东汇城店)",
+    "address": "荔城街观翠路10号",
+    "lat": 23.28432,
+    "lng": 113.821067,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0J2F5606U",
+    "name": "诗漫酒店(广州番禺市桥店)",
+    "address": "时代创客主场",
+    "lat": 22.933927,
+    "lng": 113.34904,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFHGN3L9",
+    "name": "鲜居精品主题酒店(番禺市桥奥园广场店)",
+    "address": "南郊路18号西门町购物天地F1层",
+    "lat": 22.927898,
+    "lng": 113.364635,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0G3D72N9T",
+    "name": "泰庭酒店(广州龙归金铂广场店)",
+    "address": "龙归南岭村南岭中路5号",
+    "lat": 23.269578,
+    "lng": 113.296302,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0HUBSDVK0",
+    "name": "哈啰酒店(广州番禺广场地铁站店)",
+    "address": "平康路300号(沙墟市场旁)",
+    "lat": 22.940861,
+    "lng": 113.379915,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B00140W1Y4",
+    "name": "盈丰源酒店(广州江南西仲恺学院店)",
+    "address": "万寿路7-19号(近地铁2号线江南西站)",
+    "lat": 23.102675,
+    "lng": 113.280099,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFI0235L",
+    "name": "可比尚酒店",
+    "address": "江高镇广花二路888号",
+    "lat": 23.281503,
+    "lng": 113.244483,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFF9ZM1N",
+    "name": "龙都大酒店(新市新街)",
+    "address": "新市新街1号",
+    "lat": 23.191011,
+    "lng": 113.261075,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0KATSOZJO",
+    "name": "城枫酒店(石井朝阳店)",
+    "address": "石井镇朝阳莘村董丰路1号",
+    "lat": 23.215887,
+    "lng": 113.208644,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B00140SO7E",
+    "name": "琶洲酒店",
+    "address": "新港东路37号(磨碟沙地铁站B口步行330米)",
+    "lat": 23.099233,
+    "lng": 113.338204,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0I2R6MW49",
+    "name": "悦禾轻奢公寓(广州南站地铁站店)",
+    "address": "石兴大道南288号展创商务中心A1公寓2楼217房",
+    "lat": 22.985426,
+    "lng": 113.276414,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFGPSZQ1",
+    "name": "帝景酒店",
+    "address": "新塘镇沙埔大道2号",
+    "lat": 23.16975,
+    "lng": 113.657488,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B00141JH49",
+    "name": "凯旋龙连锁酒店(广州白云国际机场店)",
+    "address": "花东镇顺祥路2号",
+    "lat": 23.435631,
+    "lng": 113.319792,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0H39GRPGE",
+    "name": "广州高领宾馆(黄庄南路店)",
+    "address": "黄庄南路自编5号高领大厦",
+    "lat": 23.235445,
+    "lng": 113.34304,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFG74FB4",
+    "name": "新再线酒店(广州东晓南地铁站孙逸仙纪念医院南院店)",
+    "address": "侨港路文华街46号二楼,地铁东晓南E1出口直走50米",
+    "lat": 23.070471,
+    "lng": 113.292639,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFFA0I86",
+    "name": "如家派柏·云酒店(广州白云机场人和地铁站店)",
+    "address": "人和镇北后西街36号",
+    "lat": 23.331928,
+    "lng": 113.300428,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B00140WCME",
+    "name": "悦欣酒店(广州上下九步行街十三行店)",
+    "address": "上九路32号(文昌小学对面)",
+    "lat": 23.115381,
+    "lng": 113.250295,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFLIIDJW",
+    "name": "妃子笑酒店(广州增城沙村地铁站店)",
+    "address": "新塘大道西391号",
+    "lat": 23.110437,
+    "lng": 113.581679,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0HAMZ1ZHM",
+    "name": "喜巢精品(广州大学城中大店)",
+    "address": "小谷围街道贝岗村青云坊五巷自编10号101",
+    "lat": 23.061451,
+    "lng": 113.393103,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B001408B7D",
+    "name": "嘉华酒店(广州增城新塘高铁站店)",
+    "address": "东坑四横路89号",
+    "lat": 23.123958,
+    "lng": 113.613089,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFFEMWM8",
+    "name": "广州马莉公寓(广东机电职业技术学院店)",
+    "address": "钟落潭镇马沥村马沥南街东四巷22号",
+    "lat": 23.382753,
+    "lng": 113.444691,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LKFNSKAJ",
+    "name": "珺庭·HOTEL(广州白云国际机场店)",
+    "address": "人和镇矮岗村矮岗大路口西五巷一号",
+    "lat": 23.361217,
+    "lng": 113.291291,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0K1BSWDWT",
+    "name": "铂宸丽致美宿(广州江高白云学院西校区店)",
+    "address": "小塘东路21-1号",
+    "lat": 23.275652,
+    "lng": 113.210013,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0IKGS3CUM",
+    "name": "朴风谷酒店(广州番禺长隆万博中心店)",
+    "address": "番禺大道北62号红树湾家具旁",
+    "lat": 23.014582,
+    "lng": 113.336096,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LDUZFJP8",
+    "name": "卡尔希酒店(新塘地铁站店)",
+    "address": "广深大道中180号",
+    "lat": 23.122033,
+    "lng": 113.608455,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B00141J8ES",
+    "name": "文星酒店(广州科韵路棠东地铁站店)",
+    "address": "棠德南路口太阳荟8号",
+    "lat": 23.132285,
+    "lng": 113.380387,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFHH4O3C",
+    "name": "尚客优连锁酒店(广州北站花城路地铁站店)",
+    "address": "新华镇商业大道33号(实验中学旁)",
+    "lat": 23.376664,
+    "lng": 113.211329,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B00140U6YY",
+    "name": "佳俊宾馆(广州火车东站店)",
+    "address": "沾益直街170-174号(火车东站东南400米)",
+    "lat": 23.148184,
+    "lng": 113.328588,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0H17H6JYC",
+    "name": "舒尚怡居(广州大学城GOGO新天地店)",
+    "address": "小谷围街道贝岗村青云坊十三巷15号",
+    "lat": 23.061674,
+    "lng": 113.392614,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFF3UJZ6",
+    "name": "丽途·城市雅居(广州科汇金谷神舟路地铁站店)",
+    "address": "科学大道101号科汇金谷K栋105铺",
+    "lat": 23.165796,
+    "lng": 113.435608,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFG7FQHD",
+    "name": "轻住·荣廷商务酒店(奥体中心店)",
+    "address": "中山大道黄村园丁路13号",
+    "lat": 23.120208,
+    "lng": 113.413027,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LDJHU1BX",
+    "name": "希城酒店(广州南沙万达广场金洲地铁站店)",
+    "address": "惠康街83号金洲商业大厦F10层",
+    "lat": 22.80209,
+    "lng": 113.547676,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0HA45SC9O",
+    "name": "江湾豪园酒店(江南西地铁站仲恺学院店)",
+    "address": "江湾路基立北街8号",
+    "lat": 23.103662,
+    "lng": 113.274954,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFLGM3J6",
+    "name": "华熙精品主题酒店(广州番禺长隆大石店)",
+    "address": "大石105国道大石段219-221号大石桥南(鲁班大楼对面)",
+    "lat": 23.0283,
+    "lng": 113.311406,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0H0JDTYX2",
+    "name": "广州文舍公寓(西塱地铁站朝花大厦店)",
+    "address": "冲口街道花地大道中朝花大厦4楼406室(西塱地铁站G口旁)",
+    "lat": 23.067581,
+    "lng": 113.233257,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFM1EOBQ",
+    "name": "文星希悦酒店(广州白云火车站黄石店)",
+    "address": "黄石西路马务商业美食街38号A栋",
+    "lat": 23.206086,
+    "lng": 113.256132,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFKZB0FH",
+    "name": "广州富兴时尚酒店(番禺广场地铁站店)",
+    "address": "桥街坑口路91号",
+    "lat": 22.941584,
+    "lng": 113.373944,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B00141IBPJ",
+    "name": "欧时快捷酒店(广州北站店)",
+    "address": "新街大道61号",
+    "lat": 23.376871,
+    "lng": 113.19707,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B00141KE2Y",
+    "name": "金泰酒店(车陂地铁站店)",
+    "address": "中山大道中90号高地大厦(车陂地铁站D口步行190米)",
+    "lat": 23.124252,
+    "lng": 113.397633,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B00140C9HR",
+    "name": "江涛酒店(广州江南西市二宫地铁站店)",
+    "address": "江南大道中110号(市二宫地铁站E口步行390米)",
+    "lat": 23.102114,
+    "lng": 113.271107,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LDO507UN",
+    "name": "维也秀酒店(广州花都炭步店)",
+    "address": "炭步镇花都大道西188号1楼",
+    "lat": 23.33432,
+    "lng": 113.109636,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0K3YSDIDZ",
+    "name": "广州名城酒店(从化碧桂园1960店)",
+    "address": "街口街西宁中路朝阳街33号",
+    "lat": 23.549767,
+    "lng": 113.589244,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0GRD5JJ7O",
+    "name": "赛楠酒店(广州万科尚城南岗地铁站店)",
+    "address": "黄埔东路2976号",
+    "lat": 23.087991,
+    "lng": 113.531905,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFMHHLCQ",
+    "name": "奕梦酒店(西华路陈家祠地铁站店)",
+    "address": "西华路418号",
+    "lat": 23.129483,
+    "lng": 113.251533,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B00140UEDZ",
+    "name": "温馨宾馆(广州南沙金洲万达广场店)",
+    "address": "进港大道52号",
+    "lat": 22.800078,
+    "lng": 113.548681,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0KA25EKFS",
+    "name": "智营·天梦酒店(广州上下九步行街西门口地铁站店)",
+    "address": "惠福西路13-19号二楼",
+    "lat": 23.121106,
+    "lng": 113.253995,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LGLSNFG3",
+    "name": "奥奇酒店(西华路彩虹桥地铁站店)",
+    "address": "彩虹街道西华路尾22号(彩虹桥地铁站D口步行350米)",
+    "lat": 23.134328,
+    "lng": 113.241698,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFFAHOQQ",
+    "name": "华宝宾馆(广州南村板桥地铁站店)",
+    "address": "南村商业步行街",
+    "lat": 23.005956,
+    "lng": 113.388554,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B00140UOIS",
+    "name": "文星酒店(广州金茂广场梅花园地铁站店)",
+    "address": "广州大道北883号",
+    "lat": 23.169412,
+    "lng": 113.317778,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0H1279IEX",
+    "name": "哈啰轻酒店(广州龙归金铂广场店)",
+    "address": "鹤龙三路22号3层",
+    "lat": 23.263386,
+    "lng": 113.293975,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFIR2YWM",
+    "name": "慕兰酒店(广州黄埔南岗万达广场店)",
+    "address": "南康新村综合楼1栋",
+    "lat": 23.104426,
+    "lng": 113.547537,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFFAH8GB",
+    "name": "金湾商务酒店",
+    "address": "大龙街罗家村罗家商业街4号楼",
+    "lat": 22.940678,
+    "lng": 113.386453,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0H2A78GU3",
+    "name": "拼图酒店(广州永庆坊陈家祠地铁站店)",
+    "address": "中山八路16号中山八地铁站B出口",
+    "lat": 23.126208,
+    "lng": 113.239419,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFLMH51C",
+    "name": "广州木棉酒店(孙逸仙南院东晓南地铁站店)",
+    "address": "南州北路南燕二街265号",
+    "lat": 23.070422,
+    "lng": 113.305703,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFLHFNKB",
+    "name": "广州四季芒果公寓(白云国际机场清布地铁站店)",
+    "address": "新雅街道清莲路26号",
+    "lat": 23.378152,
+    "lng": 113.258004,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B00140ULJ0",
+    "name": "广州太子大酒店(花都狮岭皮革城店)",
+    "address": "狮岭镇田心路1号",
+    "lat": 23.456172,
+    "lng": 113.167852,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0HAKAHIJY",
+    "name": "逸米酒店(广州龙归金铂广场店)",
+    "address": "太和镇南岭中路1号A栋4楼",
+    "lat": 23.268322,
+    "lng": 113.29616,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0H1JSPIXP",
+    "name": "城枫北门酒店(广州机场路店)",
+    "address": "棠景街机场路631号",
+    "lat": 23.179688,
+    "lng": 113.259338,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFIIVGYT",
+    "name": "竣裕酒店(广州远景路店)",
+    "address": "棠景街道棠下南街76号竣裕商厦8楼8A",
+    "lat": 23.173612,
+    "lng": 113.255484,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B00140W6LS",
+    "name": "翔辉大酒店",
+    "address": "石井街石井桥东北侧自编1号四至七层(金碧新城旁)",
+    "lat": 23.206607,
+    "lng": 113.240756,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B00140TDTK",
+    "name": "潭月酒店(琶洲会展龙潭地铁站店)",
+    "address": "东环街与龙潭东约官滘大街交叉口东北25米",
+    "lat": 23.080949,
+    "lng": 113.336565,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFIQGXAD",
+    "name": "逸米酒店(广州华为研发中心白云摩配城店)",
+    "address": "增槎路395-401号",
+    "lat": 23.157132,
+    "lng": 113.223088,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0H2PCS5A1",
+    "name": "悦享家公寓(广州永庆坊上下九步行街店)",
+    "address": "文昌南路139号1楼(长寿路地铁站A口步行220米)",
+    "lat": 23.117513,
+    "lng": 113.244284,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFLHGKC2",
+    "name": "骏怡精选酒店(钟落潭地铁站庆达广场店)",
+    "address": "钟落潭地铁站B1口步行410米",
+    "lat": 23.378828,
+    "lng": 113.402019,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFFAIB6Q",
+    "name": "鸿胜商务酒店(广州钟村地铁站店)",
+    "address": "钟村街诜敦路段154号",
+    "lat": 22.980704,
+    "lng": 113.315163,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFIVK3G7",
+    "name": "赛楠商务酒店(广州黄埔南岗万达店)",
+    "address": "榕村西街一巷二号101",
+    "lat": 23.110041,
+    "lng": 113.545833,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0KK0MDSMQ",
+    "name": "裕豪主题式公寓(广州南沙塘坑地铁站店)",
+    "address": "环市大道西134号",
+    "lat": 22.753939,
+    "lng": 113.563458,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0L6R52QFB",
+    "name": "嘉美欣假日酒店(嘉禾望岗黄边地铁站店)",
+    "address": "嘉禾街尖彭路3号嘉鼎广场F1层",
+    "lat": 23.228452,
+    "lng": 113.276364,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0KDX501VG",
+    "name": "Best莱贝丝酒店(太和地铁站店)",
+    "address": "太和镇太和中路190号",
+    "lat": 23.293936,
+    "lng": 113.354826,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFF63ZKJ",
+    "name": "广州大学城南亭金韵公寓",
+    "address": "大学城南亭村下朗大街5巷8号",
+    "lat": 23.036673,
+    "lng": 113.388609,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B00140W8JR",
+    "name": "广州宏源时尚酒店(南岗万达广场逸富广场店)",
+    "address": "新塘镇广深大道西635号",
+    "lat": 23.108276,
+    "lng": 113.550461,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0GUN7H3V6",
+    "name": "拼图酒店(江南西凤凰新村地铁站店)",
+    "address": "南田路112号(凤凰新村地铁站A口步行290米)",
+    "lat": 23.096494,
+    "lng": 113.258751,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFFVBCCZ",
+    "name": "有间民宿(广州火车站店)",
+    "address": "站西路87号骏马写字楼4楼446房",
+    "lat": 23.151117,
+    "lng": 113.252843,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFHN94CI",
+    "name": "广州祥和大酒店(永宁南站店)",
+    "address": "永宁街民兵路8号",
+    "lat": 23.178441,
+    "lng": 113.589642,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFLK0MF6",
+    "name": "盒子空间(广州天河客运站华南理工大学店)",
+    "address": "燕岭路585号(天河客运站地铁站B口步行460米)",
+    "lat": 23.169776,
+    "lng": 113.338704,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFLJ1OYE",
+    "name": "天亿酒店(广州同德围上步地铁站店)",
+    "address": "同德围上步村上步大道29号2层",
+    "lat": 23.169651,
+    "lng": 113.238894,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0JDVUMEMU",
+    "name": "Best·铂亿智能酒店(广州火车白云站夏茅广场店)",
+    "address": "白云湖街石夏路98号",
+    "lat": 23.213741,
+    "lng": 113.252363,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B001408FA1",
+    "name": "长隆酒店",
+    "address": "汉溪大道东299号",
+    "lat": 23.001591,
+    "lng": 113.327692,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFG7O74G",
+    "name": "白水寨嘉华温泉酒店",
+    "address": "派谭镇高滩村松柏朗合作社",
+    "lat": 23.556354,
+    "lng": 113.768482,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFFFP2WQ",
+    "name": "三英温泉度假酒店",
+    "address": "派潭镇高滩村温泉路2号",
+    "lat": 23.559562,
+    "lng": 113.782341,
+    "hasFamilyRoom": false,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFI9N7E5",
+    "name": "长隆香江酒店(广州长隆野生动物世界店)",
+    "address": "大石街富石路333号",
+    "lat": 23.00962,
+    "lng": 113.310621,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFGIL2TX",
+    "name": "碧泉空中温泉酒店",
+    "address": "温泉镇温泉东路76号",
+    "lat": 23.646205,
+    "lng": 113.655074,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B00140W7Y8",
+    "name": "广州万富希尔顿酒店",
+    "address": "云城东路515-517号",
+    "lat": 23.17555,
+    "lng": 113.268437,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0I165V1DH",
+    "name": "广州合汇温泉酒店(白水寨度假区店)",
+    "address": "派潭镇北山路20号",
+    "lat": 23.571405,
+    "lng": 113.760992,
+    "hasFamilyRoom": false,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B00141IMIF",
+    "name": "金叶子温泉度假酒店",
+    "address": "派潭镇高滩村白水寨大道38号",
+    "lat": 23.565438,
+    "lng": 113.785721,
+    "hasFamilyRoom": false,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFLB76H3",
+    "name": "广州卓美亚酒店",
+    "address": "珠江东路12号(花城大道地铁站A口步行410米)",
+    "lat": 23.119498,
+    "lng": 113.327292,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFHJXMBZ",
+    "name": "卓思道温泉度假酒店",
+    "address": "良口镇御泉大道288号",
+    "lat": 23.688062,
+    "lng": 113.70809,
+    "hasFamilyRoom": false,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0I2NHNE90",
+    "name": "广州从化希尔顿惠庭酒店",
+    "address": "江埔街从城大道6号",
+    "lat": 23.52697,
+    "lng": 113.601952,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFLFSLAF",
+    "name": "广州南湖假日酒店",
+    "address": "同和路320号",
+    "lat": 23.206896,
+    "lng": 113.330357,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0JU7DICL8",
+    "name": "广州新塘希尔顿欢朋酒店",
+    "address": "新塘镇广深大道西495号",
+    "lat": 23.12015,
+    "lng": 113.573111,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFJGH4N9",
+    "name": "广州财富温泉酒店",
+    "address": "温泉镇温泉东路74号",
+    "lat": 23.645586,
+    "lng": 113.654559,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0JUCSV1LK",
+    "name": "广州黄埔科学城希尔顿惠庭酒店",
+    "address": "开泰大道190号高新钧恒广场D栋",
+    "lat": 23.163693,
+    "lng": 113.498849,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0JU9RFX5O",
+    "name": "广州新世界酒店",
+    "address": "百顺北路30号",
+    "lat": 23.235201,
+    "lng": 113.298286,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFLJVFQW",
+    "name": "广东温泉宾馆",
+    "address": "温泉镇温泉西路38号",
+    "lat": 23.649357,
+    "lng": 113.651837,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFGZQ5X4",
+    "name": "广州德安丽舍凯宾斯基酒店(越秀淘金店)",
+    "address": "建设六马路19号",
+    "lat": 23.133258,
+    "lng": 113.284859,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0JUGU94WC",
+    "name": "美豪丽致酒店(广州塔琶洲会展店)",
+    "address": "江海大道石榴岗路3号(赤岗地铁站C1口步行430米)",
+    "lat": 23.092594,
+    "lng": 113.333114,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0JRB53VMO",
+    "name": "广州星河吉酒店",
+    "address": "蕉西路129号",
+    "lat": 22.80351,
+    "lng": 113.531948,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0K6KRXK6A",
+    "name": "广州古玄酒店(增城万达广场店)",
+    "address": "荔城街荔城大道270号",
+    "lat": 23.297241,
+    "lng": 113.81032,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0H2PCSBFP",
+    "name": "岚语酒店(广州永庆坊沙面岛店)",
+    "address": "十二甫西街15号(黄沙地铁站B口步行220米)",
+    "lat": 23.112425,
+    "lng": 113.239442,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0JUDMT9FY",
+    "name": "广州番禺汉溪长隆旅游度假区轻居酒店",
+    "address": "工业四路9号",
+    "lat": 23.006462,
+    "lng": 113.330285,
+    "hasFamilyRoom": false,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFL8H59E",
+    "name": "麗枫酒店(广州智慧城店)",
+    "address": "科学城光宝路9号",
+    "lat": 23.16144,
+    "lng": 113.419072,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0L0FNUX61",
+    "name": "广州火车站万达广场华朋酒店",
+    "address": "机场路575号穗景大厦A座F4层",
+    "lat": 23.172895,
+    "lng": 113.259596,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B00141P6DS",
+    "name": "博雅假日酒店(广州白云区万达广场店)",
+    "address": "金钟横路177号",
+    "lat": 23.169359,
+    "lng": 113.269409,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0JGU1O0C7",
+    "name": "广州花都希尔顿惠庭酒店",
+    "address": "迎宾大道80号三分地商业广场",
+    "lat": 23.3979,
+    "lng": 113.238289,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0HR2HTSHT",
+    "name": "广州中新知识城纳米国际大酒店",
+    "address": "中新广州知识城科信产业园创研街8号",
+    "lat": 23.306668,
+    "lng": 113.546105,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0M6GZORC5",
+    "name": "光擎·AI电竞酒店(广州华师大华景地铁站店)",
+    "address": "华景路31号",
+    "lat": 23.135805,
+    "lng": 113.358048,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0JKZ7U8M0",
+    "name": "广州番禺市桥地铁站轻居酒店",
+    "address": "市桥街富华东路223号",
+    "lat": 22.945662,
+    "lng": 113.375728,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFGDOLGF",
+    "name": "丽枫酒店(中山八路地铁站店)",
+    "address": "中山八路新虹街8号(地铁5,11号线中山八站A出口步行280米)",
+    "lat": 23.126354,
+    "lng": 113.234902,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0JAMZIA55",
+    "name": "如家商旅酒店(广州白云国际机场T2航站楼店)",
+    "address": "空港大道10号",
+    "lat": 23.427025,
+    "lng": 113.310184,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B00140B4B8",
+    "name": "广州总统大酒店(天河体育中心太古汇店)",
+    "address": "天河路586号6-17层(近石牌岗顶)",
+    "lat": 23.133819,
+    "lng": 113.338547,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFKNVI7K",
+    "name": "迎宾国际酒店(广州新白云国际机场店)",
+    "address": "人和镇矮岗陇西庄27号8号铺",
+    "lat": 23.362472,
+    "lng": 113.290329,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0KKNR14GM",
+    "name": "中国市长大厦酒店(广州天河体育中心正佳广场店)",
+    "address": "天河北路189号(地铁3号线林和西路站A出口)",
+    "lat": 23.14167,
+    "lng": 113.322664,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0G0M7OFNO",
+    "name": "广州鸣泉居酒店",
+    "address": "白云大道南1068号",
+    "lat": 23.186538,
+    "lng": 113.287675,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LRO7XGLU",
+    "name": "广州增城荔湖木莲庄酒店",
+    "address": "荔湖街景上街2号",
+    "lat": 23.246917,
+    "lng": 113.821282,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0JRA7JPQ1",
+    "name": "美豪丽致酒店(广州东站天河体育中心店)",
+    "address": "林和西路167号(威尼国际大厦一楼)",
+    "lat": 23.150813,
+    "lng": 113.321756,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFGX75UB",
+    "name": "广州白云站鹤边地铁站汇和酒店",
+    "address": "鹤龙街道鹤龙一路88号汇龙海峡两岸青年创业基地汇龙1楼",
+    "lat": 23.212871,
+    "lng": 113.268839,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B00140654A",
+    "name": "东山宾馆",
+    "address": "三育路44号(区庄地铁站B2口步行410米)",
+    "lat": 23.129764,
+    "lng": 113.299751,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0JUMS6XRP",
+    "name": "漫豪思酒店(广州北京路步行街纪念堂地铁站店)",
+    "address": "东风西路233号千树盘福大厦附楼",
+    "lat": 23.132683,
+    "lng": 113.259949,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0I2UC2USO",
+    "name": "网鱼电竞酒店(广州番禺长隆大石地铁站店)",
+    "address": "大石街大涌路76号,近大山学校",
+    "lat": 23.021997,
+    "lng": 113.31485,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFHRVA53",
+    "name": "希岸·轻雅酒店(广州石溪地铁站店)",
+    "address": "工业大道南438号(石溪地铁站A口步行460米)",
+    "lat": 23.069491,
+    "lng": 113.281543,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0GDCM65H0",
+    "name": "夏朗酒店(广州白云机场莲塘地铁站店)",
+    "address": "迎宾大道163号高晟广场首层135号铺",
+    "lat": 23.38908,
+    "lng": 113.2458,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFLO913G",
+    "name": "麗枫酒店(广州番禺市桥地铁站大北路店)",
+    "address": "市桥街大北路391-395号",
+    "lat": 22.955635,
+    "lng": 113.369769,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFHUAFCM",
+    "name": "城市便捷酒店(广州上下九陈家祠地铁站店)",
+    "address": "康王中路181号(陈家祠地铁站B口步行20米)",
+    "lat": 23.121965,
+    "lng": 113.246573,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0HR47YA3C",
+    "name": "丽呈朗誉酒店(广州白云国际机场空港中心店)",
+    "address": "绿港一街3号之四(空港花都)",
+    "lat": 23.366795,
+    "lng": 113.261152,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0J21UF4LD",
+    "name": "泉溪温泉酒店(从化温泉店)",
+    "address": "温泉镇温泉村荔园路22号首层至七层",
+    "lat": 23.648076,
+    "lng": 113.656915,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B00140340F",
+    "name": "影星宾馆",
+    "address": "新港中路350号(客村地铁站C口步行210米)",
+    "lat": 23.095602,
+    "lng": 113.317789,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0G2X1Q758",
+    "name": "广州番禺智选假日酒店",
+    "address": "沙头街禺山西路357号",
+    "lat": 22.935579,
+    "lng": 113.33422,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0IB2CSSJ8",
+    "name": "府上酒店(广州越秀公园火车站店)(盘福路分店)",
+    "address": "盘福路63号",
+    "lat": 23.135471,
+    "lng": 113.259943,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B00140W65A",
+    "name": "卡尔文大酒店",
+    "address": "齐富路388号",
+    "lat": 23.193212,
+    "lng": 113.272515,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFHJS738",
+    "name": "麗枫酒店(广州东站天河体育中心店)",
+    "address": "天寿路31号江河大厦5-10层",
+    "lat": 23.144277,
+    "lng": 113.331828,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0JBHCYPCT",
+    "name": "超时光潮玩设计酒店(广州北京路步行街大佛寺店)",
+    "address": "西湖路81号3层(公园前地铁站D口步行370米)",
+    "lat": 23.122729,
+    "lng": 113.266897,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFKAY9IE",
+    "name": "广州森林海温泉度假酒店",
+    "address": "白水寨101号",
+    "lat": 23.564934,
+    "lng": 113.765722,
+    "hasFamilyRoom": false,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFFVVSPU",
+    "name": "万敏主题公寓(广州番禺万达广场店)",
+    "address": "汉溪大道东387号万达广场B4栋2605室",
+    "lat": 23.007059,
+    "lng": 113.349991,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFI9JU6O",
+    "name": "柏槿酒店(广州天河体育中心龙口西地铁站店)",
+    "address": "天润路37-39号润华大厦",
+    "lat": 23.143683,
+    "lng": 113.334968,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFJHCAKI",
+    "name": "桔子酒店(广州火车站三元里地铁站店)",
+    "address": "三元里大道583号",
+    "lat": 23.165068,
+    "lng": 113.253173,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B00140UOF6",
+    "name": "骏福酒店(碧桂路)",
+    "address": "洛溪新城南浦东乡村经济合作社1号",
+    "lat": 23.032562,
+    "lng": 113.29353,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0HUMSSPBR",
+    "name": "广州北京路天字码头漫豪思酒店",
+    "address": "沿江中路337号(团一大广场地铁站B口步行370米)",
+    "lat": 23.115608,
+    "lng": 113.276682,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0L6GSFJ3F",
+    "name": "广州森悦谷温泉度假酒店",
+    "address": "良口镇葳格诗一街388号B3栋1楼温泉庄园",
+    "lat": 23.696197,
+    "lng": 113.638649,
+    "hasFamilyRoom": false,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFL74KEG",
+    "name": "维也纳酒店(广州黄埔保税区夏园地铁站店)",
+    "address": "黄埔东路2839号",
+    "lat": 23.084802,
+    "lng": 113.524149,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFIRDVIC",
+    "name": "柏高·颂酒店(广州环市东路动物园地铁站店)",
+    "address": "环市东路486号广粮大厦F1层",
+    "lat": 23.134167,
+    "lng": 113.306551,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B00141JIXE",
+    "name": "广州邦国酒店",
+    "address": "机场路282号云港大厦",
+    "lat": 23.177723,
+    "lng": 113.260064,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFG2M5R7",
+    "name": "柏高酒店(广州体育西路地铁站店)",
+    "address": "天河南街道体育西路广利路69号107室",
+    "lat": 23.130455,
+    "lng": 113.320091,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0J02UP4ZU",
+    "name": "愉舍酒店(广州白云站聚龙地铁站店)",
+    "address": "西槎路811号(聚龙地铁站E口步行170米)",
+    "lat": 23.181007,
+    "lng": 113.237341,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B00140T9BG",
+    "name": "广州珠江新城骑士物语酒店",
+    "address": "员村一横路7号2-3层",
+    "lat": 23.120272,
+    "lng": 113.353014,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0MAXSKCTO",
+    "name": "广州璞季·亲子美宿(北京路步行街店)",
+    "address": "泰康路锦源国际公寓-149号楼北京路步行街",
+    "lat": 23.118625,
+    "lng": 113.269275,
+    "hasFamilyRoom": true,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFLG62DK",
+    "name": "广州丛林大象酒店(番禺长隆南村万博地铁站店)",
+    "address": "汉溪大道东390号四海城商业广场2栋10楼",
+    "lat": 23.006241,
+    "lng": 113.352899,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFJYT72O",
+    "name": "广州奇幻熊猫公馆亲子民宿",
+    "address": "大石街道工业四路52号敏捷华美国际3栋1606",
+    "lat": 23.007971,
+    "lng": 113.327763,
+    "hasFamilyRoom": true,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFMBQF0S",
+    "name": "名季酒店(广州亚运城店)",
+    "address": "石楼镇市莲路108号",
+    "lat": 22.965839,
+    "lng": 113.484285,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0I2BC0E3C",
+    "name": "中青·秋果酒店(广州北京路步行街纪念堂地铁站店)",
+    "address": "盘福路22号泰峰大厦",
+    "lat": 23.133664,
+    "lng": 113.259549,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0GD7H94CB",
+    "name": "广州永庆坊瞻云精选酒店(上下九步行街店)",
+    "address": "恩宁路钟巷31号",
+    "lat": 23.114634,
+    "lng": 113.238871,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B00140W1X6",
+    "name": "汉庭酒店(燕塘店)",
+    "address": "燕岭路149号",
+    "lat": 23.163574,
+    "lng": 113.331053,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0J2ACX6I6",
+    "name": "广州增城同派酒店(新塘高铁站店)",
+    "address": "永宁街凤凰北横路1号4栋104",
+    "lat": 23.134825,
+    "lng": 113.598125,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0I1TCE7SO",
+    "name": "柏高·雅酒店(广州龙洞植物园地铁站店)",
+    "address": "迎龙路3号(植物园地铁站D口步行340米)",
+    "lat": 23.193779,
+    "lng": 113.36522,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0K6BUG7F3",
+    "name": "橙子电竞Hotel(广州从化城建学院店)",
+    "address": "江埔街环市东路269号",
+    "lat": 23.530236,
+    "lng": 113.606277,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0H3SZL2N8",
+    "name": "美豪丽致酒店(增城万达广场低碳总部园店)",
+    "address": "石滩镇新城大道703号4栋",
+    "lat": 23.227652,
+    "lng": 113.831186,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0JDJUIVMZ",
+    "name": "哈曼酒店(广州南沙大涌地铁站店)",
+    "address": "金岭南路463号101铺",
+    "lat": 22.756202,
+    "lng": 113.559699,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B001423D49",
+    "name": "木莲庄酒店(广州珠江新城暨南大学石牌校区店)",
+    "address": "金穗路715号",
+    "lat": 23.123252,
+    "lng": 113.339403,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFLD9HYS",
+    "name": "柏高酒店(广州塔大塘地铁站店)",
+    "address": "东凤村聚德西路汇源新街南大街1-4号",
+    "lat": 23.08061,
+    "lng": 113.325481,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFIF9K83",
+    "name": "沐澌汀酒店",
+    "address": "鹤龙三路93号(竹仔园公交站旁)",
+    "lat": 23.268787,
+    "lng": 113.297691,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0M66UANJO",
+    "name": "广州番禺长隆万博地铁站瑾程酒店",
+    "address": "兴南大道92号",
+    "lat": 23.009691,
+    "lng": 113.346179,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B00141IEXS",
+    "name": "华泰宾馆",
+    "address": "融通街1-27号",
+    "lat": 23.133409,
+    "lng": 113.290119,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LK41XPZ7",
+    "name": "卜拉美颂|Holiday Villa繁花入梦酒店(沙面岛黄沙地铁站店)",
+    "address": "沙面二街10号",
+    "lat": 23.107675,
+    "lng": 113.245875,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0HKMB52VW",
+    "name": "美夜酒店(广州北京路步行街天字码头店)",
+    "address": "文德南路62号(距北京路步行街、天字码头500米)",
+    "lat": 23.11824,
+    "lng": 113.272935,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B00141KFQC",
+    "name": "广州W酒店",
+    "address": "珠江新城冼村路26号",
+    "lat": 23.121774,
+    "lng": 113.328528,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0MB1LWT2O",
+    "name": "德和圆生态度假酒店",
+    "address": "迎龙路1283号",
+    "lat": 23.221475,
+    "lng": 113.360625,
+    "hasFamilyRoom": false,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0JUNR1ZZN",
+    "name": "广州白云国际机场可可酒店CoCoHotel(T2航站楼店)",
+    "address": "凤祥路5号",
+    "lat": 23.425261,
+    "lng": 113.316515,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFKDM5GS",
+    "name": "广州长隆布朗熊亲子主题公寓(汉溪长隆番禺万达广场店)",
+    "address": "南村镇万惠一路96号万达广场B2座5层505前台",
+    "lat": 23.008454,
+    "lng": 113.349148,
+    "hasFamilyRoom": true,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B00141R4CF",
+    "name": "广州柏丽酒店(白云远景路店)",
+    "address": "远景路88号(肯德基斜对面)",
+    "lat": 23.172131,
+    "lng": 113.256311,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0L09RE01F",
+    "name": "广州璞季城市亲子民宿(汉溪长隆地铁站店)",
+    "address": "汉兴一街12号B2栋",
+    "lat": 22.995225,
+    "lng": 113.334825,
+    "hasFamilyRoom": true,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0JK1MIGPG",
+    "name": "广州从化云岭月涧酒店",
+    "address": "温泉镇宣星村储运仓径284号",
+    "lat": 23.591477,
+    "lng": 113.633583,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0KGVSCH37",
+    "name": "亚美酒店(广州花都融创文旅城店)",
+    "address": "建设北路190号",
+    "lat": 23.408857,
+    "lng": 113.209046,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0JKT61TS0",
+    "name": "栢里酒店(广州北京路上下九步行街店)",
+    "address": "上九路82号",
+    "lat": 23.115529,
+    "lng": 113.251468,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0MATZVXZP",
+    "name": "丽呈铂锐酒店(市桥地铁站大北路店)",
+    "address": "大北路150号华兴商贸大厦6-10层",
+    "lat": 22.943484,
+    "lng": 113.366574,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0MG5YYHUU",
+    "name": "温泉之上·设计师温泉酒店(从化温泉景区店)",
+    "address": "悦泉路亿城一街145号",
+    "lat": 23.631775,
+    "lng": 113.636175,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0M6UCQIWR",
+    "name": "ClOUD HORIZON·云际酒店(广州增城新塘高铁站店)",
+    "address": "新塘镇石新路41号",
+    "lat": 23.123561,
+    "lng": 113.621824,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFI1UVCG",
+    "name": "莱思特主题公寓(广州科学城绿地中央广场店)",
+    "address": "神舟路绿地中央广场D栋22层2201",
+    "lat": 23.163577,
+    "lng": 113.430055,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFI8JRAA",
+    "name": "喜悦主题公寓(广州汉溪长隆地铁站北门店)",
+    "address": "工业四路52号敏捷华美国际8栋",
+    "lat": 23.006968,
+    "lng": 113.329333,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFFAETOM",
+    "name": "柏高·雅酒店(广州萝岗万达广场店)",
+    "address": "开创大道2838号(中山大学岭南医院斜对面)",
+    "lat": 23.171043,
+    "lng": 113.467124,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFG155YZ",
+    "name": "柏高商务酒店",
+    "address": "天平架沙太南路3号陶庄1号",
+    "lat": 23.161618,
+    "lng": 113.32158,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0KDVUC35O",
+    "name": "帕美酒店(广州从化环市东路店)",
+    "address": "环市东路208号",
+    "lat": 23.54684,
+    "lng": 113.608765,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFFPCTXV",
+    "name": "美夜酒店(广州石溪中医院店)",
+    "address": "石溪村蚝壳东街18号红八方创意企业园C栋101号",
+    "lat": 23.064567,
+    "lng": 113.283394,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFG9G72U",
+    "name": "和颐酒店(广州琶洲会展中心广州塔店)",
+    "address": "新港东路2-4号(赤岗地铁站C2口步行350米)",
+    "lat": 23.097474,
+    "lng": 113.337244,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFLJFR8G",
+    "name": "广州上水精品设计酒店",
+    "address": "良口镇良明街",
+    "lat": 23.697715,
+    "lng": 113.725568,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0JU64X54Q",
+    "name": "柏高酒店(广州北站花城路地铁站店)",
+    "address": "新华街道站前路21号柏高酒店后座1-6层",
+    "lat": 23.381028,
+    "lng": 113.203127,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0K63NP02W",
+    "name": "布鲁长隆滑梯亲子民宿(汉兴直街分店)",
+    "address": "汉兴直街奥园城市天地5区",
+    "lat": 22.99235,
+    "lng": 113.333671,
+    "hasFamilyRoom": true,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFI7XM8V",
+    "name": "袋鼠妈妈亲子主题公寓(广州长隆万达广场店)",
+    "address": "南村镇万达广场B3座35楼3504房",
+    "lat": 23.006356,
+    "lng": 113.349084,
+    "hasFamilyRoom": true,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0H2UUQV1G",
+    "name": "千艺·艺宿QY亲子民宿(帽峰山森林公园店)",
+    "address": "铜锣湾北一巷3号",
+    "lat": 23.304876,
+    "lng": 113.44876,
+    "hasFamilyRoom": true,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LGMCAD74",
+    "name": "海鸥岛海心度假酒店公寓",
+    "address": "海心村东围街4号",
+    "lat": 22.955666,
+    "lng": 113.516822,
+    "hasFamilyRoom": false,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0KG9A20GB",
+    "name": "毛毛球滑梯亲子公寓(广州番禺长隆店)",
+    "address": "钟村街道汉兴二街66号保利大都会C4栋1307室",
+    "lat": 22.994275,
+    "lng": 113.335525,
+    "hasFamilyRoom": true,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0J6048QS7",
+    "name": "香蕉宿设计公馆(广州南村万博地铁站万达店)",
+    "address": "万惠一路96号万达广场B2座6楼",
+    "lat": 23.008476,
+    "lng": 113.348947,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0L6SSNHU6",
+    "name": "丽呈熹玥·嘉贝时光酒店(广州番禺亚运城店)",
+    "address": "石楼镇市莲路石楼路段179号",
+    "lat": 22.967542,
+    "lng": 113.484255,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0KRFKI5CH",
+    "name": "宫崎酒店(广州白云国际机场花东市场店)",
+    "address": "东风路2号",
+    "lat": 23.436771,
+    "lng": 113.319703,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0K1AMNNBJ",
+    "name": "星辰主题公寓(广州番禺天河城南村万博地铁站店)",
+    "address": "万博二路180号8楼835房",
+    "lat": 23.00323,
+    "lng": 113.349462,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0KUX5WELU",
+    "name": "云湾国际酒店(广州白云火车站小坪地铁站店)",
+    "address": "金碧西路28号",
+    "lat": 23.204075,
+    "lng": 113.240118,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LD1UL2P7",
+    "name": "泊尼·PLUS酒店(白云区新市百信广场店)",
+    "address": "棠涌南社大街9号(棠涌地铁站B口步行480米)",
+    "lat": 23.191799,
+    "lng": 113.256485,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0014020FB",
+    "name": "迎商酒店(广州西门口地铁站店)",
+    "address": "净慧路76号(西门口C出口直行300米光孝寺旁)",
+    "lat": 23.128312,
+    "lng": 113.255693,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LBRDJQ6R",
+    "name": "机寓CLUB公馆(广州长隆店)",
+    "address": "钟村街道市广路322号",
+    "lat": 22.978375,
+    "lng": 113.322875,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFJNRSF7",
+    "name": "喜鹊乐居公寓(广州长隆欢乐世界北门店)",
+    "address": "大石街道敏昌街96号敏捷华美国际3栋1606A房",
+    "lat": 23.008101,
+    "lng": 113.327814,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LGDCIS46",
+    "name": "星程酒店",
+    "address": "花东镇空港大道9号空港电商物流园区B1栋首层",
+    "lat": 23.425677,
+    "lng": 113.315896,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LAPRM4TV",
+    "name": "希雅酒店(广州番禺沙湾古镇店)",
+    "address": "沙湾镇中华大道134号",
+    "lat": 22.902304,
+    "lng": 113.340678,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0K39MD48A",
+    "name": "麗枫酒店(广州番禺长隆南村万博地铁站店)",
+    "address": "南村镇登云大路2号之四",
+    "lat": 23.012522,
+    "lng": 113.344494,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0K10SRA71",
+    "name": "TP电竞酒店(富力海珠城店)",
+    "address": "江南大道中232号B座华海大厦第7-8层",
+    "lat": 23.094017,
+    "lng": 113.27507,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0MBGR3IXY",
+    "name": "圣曼酒店",
+    "address": "港口大道北323号",
+    "lat": 23.122369,
+    "lng": 113.604499,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B00140NKAF",
+    "name": "泊尼酒店(海珠凤凰新村地铁站店)",
+    "address": "宝岗大道松漱前西2号1栋",
+    "lat": 23.098439,
+    "lng": 113.261665,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFKMU7AR",
+    "name": "荟朋酒店(广州永旺梦乐城番禺广场地铁站店)",
+    "address": "市桥云山大街16号东荟创新园B座5-8层",
+    "lat": 22.941893,
+    "lng": 113.381234,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0K1D5L06Y",
+    "name": "KO.INN科栈城市酒店(广州萝岗地铁站宝能演艺中心店)",
+    "address": "新阳东路17号至泰广场B3栋一楼大堂",
+    "lat": 23.172498,
+    "lng": 113.484205,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B00140W3N8",
+    "name": "广州荔圃温泉酒店",
+    "address": "温泉镇温泉西路55号",
+    "lat": 23.645024,
+    "lng": 113.650207,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LK5ZSGZU",
+    "name": "美豪酒店(广州新塘高铁站店)",
+    "address": "荔新十三路44号",
+    "lat": 23.129338,
+    "lng": 113.612985,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LDOH1IDG",
+    "name": "广州贝贝亲子美宿(汉溪长隆地铁站店)",
+    "address": "保利大都汇B栋C栋",
+    "lat": 22.995225,
+    "lng": 113.334775,
+    "hasFamilyRoom": true,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFLO1C1J",
+    "name": "广州怡尚酒店(新塘高铁站沙村地铁站店)",
+    "address": "新塘镇西洲村新塘大道西423号",
+    "lat": 23.109602,
+    "lng": 113.577224,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0L1S5PZQ2",
+    "name": "广州番禺万博雅致酒店(旗舰店)",
+    "address": "汉溪大道东386号55层云端大堂",
+    "lat": 23.005175,
+    "lng": 113.350475,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
     ],
     "dataSource": "ai_draft_v1"
   }

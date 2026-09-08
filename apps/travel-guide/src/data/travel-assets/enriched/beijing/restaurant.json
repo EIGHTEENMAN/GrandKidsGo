@@ -1,16 +1,19 @@
 [
   {
     "cityId": "city-beijing",
-    "amapPoiId": "B000A2XAU9",
-    "name": "肯德基(自然博物馆餐厅)",
-    "address": "北京市东城区天坛东路",
-    "lat": 39.86935,
-    "lng": 116.41822,
+    "amapPoiId": "B0HA5ANGIR",
+    "name": "元气拾光户外烧烤·亲子露营",
+    "address": "元气拾光园度假别墅(西甘路1号分店)北侧",
+    "lat": 40.392789,
+    "lng": 116.584821,
     "hasHighChair": true,
     "isKidTolerant": true,
-    "hasKidsMenu": true,
-    "cuisine": "50元/人",
-    "avgPricePerPerson": 50,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/411b7c1ef3b378b595a4d7eb209c1eae",
+      "http://store.is.autonavi.com/showpic/d3368a4eff8d16af321aca6360fd86b1",
+      "http://store.is.autonavi.com/showpic/bef93387c67713db63cde9529a94e6ac"
+    ],
     "tags": [
       "ai_draft_v1"
     ],
@@ -18,16 +21,2917 @@
   },
   {
     "cityId": "city-beijing",
-    "amapPoiId": "B000A877YJ",
-    "name": "海底捞(中关村店)",
-    "address": "北京市海淀区中关村大街15号",
-    "lat": 39.98454,
-    "lng": 116.31045,
+    "amapPoiId": "B0HKUUVAAH",
+    "name": "水裹+(合生汇店)",
+    "address": "西大望路甲16号院3号楼-1至3层101二层2-1室",
+    "lat": 39.899369,
+    "lng": 116.4781,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B0HKUUVAAH/comment/01151ED1_7391_4ED5_90C0_8DC8E879B7CE_L0_001_2000_133_1764734746335_05789311.jpg",
+      "https://aos-comment.amap.com/B0HKUUVAAH/comment/b60ef4a9220b4ec894b6bc6b9d3a8b5c_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B0HKUUVAAH/comment/a3ec08a2c8422b12255989b7d2c2aed6_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0LRZ73OGH",
+    "name": "Fang-Fang Monkey(崇文门新世界百货2期店)",
+    "address": "新世界2期3层(崇文门地铁站H西南口步行410米)",
+    "lat": 39.896495,
+    "lng": 116.417507,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B0LRZ73OGH/comment/669D0BB1_CF42_4363_9CEA_9036251BFCB5_L0_001_2016_113_1762411439343_12970983.jpg",
+      "https://aos-comment.amap.com/B0LRZ73OGH/comment/59A9FABA_23B9_456C_8B8B_2793AF34D2FA_L0_001_2016_113_1762411439340_71745994.jpg",
+      "https://store.is.autonavi.com/showpic/850e96a524c9c2adfc0776005dd50307"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0H15ZTRVE",
+    "name": "乐仕堡(绿心公园店)",
+    "address": "城市绿心森林公园南区5号楼101室",
+    "lat": 39.869302,
+    "lng": 116.725643,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/900c8bbda7b67f730000000583602561",
+      "https://store.is.autonavi.com/showpic/912be44cc259166d0000003049498640?type=pic",
+      "https://aos-comment.amap.com/B0H15ZTRVE/comment/1CE89291_D121_4749_9805_3D27B307E1FE_L0_001_700_884_1741532462243_37592833.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0LBU5AYH8",
+    "name": "全季乐家酒店(北京南站角门东地铁站店)",
+    "address": "马家堡路65号",
+    "lat": 39.843272,
+    "lng": 116.377998,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/55c4b039216487b30000004337142414?type=pic",
+      "https://store.is.autonavi.com/showpic/04028f63a3fd91a8b6b137fb3bb15fcb",
+      "https://store.is.autonavi.com/showpic/80ee43b70757fd6b96a981d26be3072b"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFIKNDQ8",
+    "name": "晨记烧烤",
+    "address": "青年路国美第一城3号院6号楼底商",
+    "lat": 39.934621,
+    "lng": 116.513968,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B0FFIKNDQ8/comment/content_media_external_file_57388_ss__1772371267472_28008385.jpg",
+      "https://store.is.autonavi.com/showpic/4aee418df62c6d600000001265746788?type=pic",
+      "https://aos-comment.amap.com/B0FFIKNDQ8/comment/e273bd8592e15d1be278d08e58db84d5_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A8X3PW",
+    "name": "大红果(顺义东海洪店)",
+    "address": "南法信镇东海洪村5号",
+    "lat": 40.139959,
+    "lng": 116.626299,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/ceeb020ada86185f8a447c4d99663c4e",
+      "https://aos-comment.amap.com/B000A8X3PW/comment/content_media_external_file_4452_1765235976289_56415068.jpg",
+      "https://aos-comment.amap.com/B000A8X3PW/comment/content_media_external_file_100002148_1765675181863_19601367.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A87KZY",
+    "name": "紫雲軒 GREEN T.HOUSE",
+    "address": "崔各庄乡何各庄村318号",
+    "lat": 40.045099,
+    "lng": 116.492112,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/fa9604a46f90e7ee722ceae7aa17dfb1",
+      "http://store.is.autonavi.com/showpic/a00de8dbf1e178e65d50f0c0ed6cee71",
+      "http://store.is.autonavi.com/showpic/40c3ac6cf8ad5e6cd3f30bc042030cd0"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFIMK53S",
+    "name": "老袁羊板筋(农光路店)",
+    "address": "陈经纶中学劲松分校聚沙校区南门旁",
+    "lat": 39.882022,
+    "lng": 116.465893,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/e6d31ea86e837d1f0000004604620607?type=pic",
+      "https://aos-comment.amap.com/B0FFIMK53S/comment/865EDFCB_0A94_4D0A_8EB9_DDA3FC1B2C7D_L0_001_1440_96_1757689406114_32697309.jpg",
+      "https://store.is.autonavi.com/showpic/a78bb6be889ea75e0000004604628378?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFHWI1P7",
+    "name": "柳沟68号院·甄选豆腐宴",
+    "address": "北京城区井庄镇柳果路柳沟村68号",
+    "lat": 40.44429,
+    "lng": 116.100901,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/ab01477da3389955ea636f0f71389b32",
+      "https://aos-comment.amap.com/B0FFHWI1P7/comment/99ddfd808e2f3a0fa1ec31ed7b06b5e0_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B0FFHWI1P7/comment/450b5ed4a3d128a889c8b757d4bf7916_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFGSU51H",
+    "name": "柳沟16号院·精品豆腐宴",
+    "address": "北京市井庄柳沟村一区55号柳沟16号院",
+    "lat": 40.444643,
+    "lng": 116.100917,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/5df694d01e0c66230000003771694797?type=pic",
+      "https://store.is.autonavi.com/showpic/05e28bf939d8405c0000002191464690?type=pic",
+      "https://aos-comment.amap.com/B0FFGSU51H/comment/f2fdf8f8c8556f1c364b46d71ece229d_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFGSS1IU",
+    "name": "鱼师傅·怀柔土菜",
+    "address": "北京城区渤海镇苇店村北50米",
+    "lat": 40.400206,
+    "lng": 116.558898,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B0FFGSS1IU/headerImg/8bda6ecf017dabdd23dca51f599c71ef_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B0FFGSS1IU/headerImg/9574efae415ae51b31ef81fe2bce487d_2048_2048_80.jpg",
+      "https://store.is.autonavi.com/showpic/ca8278d6de3ff56be63d8a984f2a1228"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A8XFFI",
+    "name": "北京福楼法餐厅(三元桥店)",
+    "address": "霄云路18号",
+    "lat": 39.963775,
+    "lng": 116.470505,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/f1c69f90346bc1c6b657403a6535c788",
+      "http://store.is.autonavi.com/showpic/5236e13fa8d20206d5c6d7b704579461",
+      "http://store.is.autonavi.com/showpic/2e86a6a54144b3ac69c72f302a9a0e6a"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A46D6E",
+    "name": "北京海淀花园饭店(牡丹园地铁站店)",
+    "address": "花园东路30号(牡丹园地铁站B东北口步行140米)",
+    "lat": 39.977192,
+    "lng": 116.371524,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/caa5c66cf30e8724d8edd9a733ec4f3f",
+      "https://aos-comment.amap.com/B000A46D6E/comment/%5B2026-01-01-16-46-48%5D8DC1978A-18D2-493B-8B2B-374CC99D656_1767257209830_17198728.jpg",
+      "https://store.is.autonavi.com/showpic/3332dd86b8c3e40b0e12b5a13573be8d"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFIJXM5Z",
+    "name": "梧桐小院",
+    "address": "月坛南营房1-37宅甲4号",
+    "lat": 39.919822,
+    "lng": 116.349533,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B0FFIJXM5Z/comment/5e67a5f5bd6f3a14ecc54a76d9f46f88_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B0FFIJXM5Z/comment/DE7A5D90_0D0E_4D1A_841A_A2F3ADEEA4CB_L0_001_1500_2000_1742465554776_52486074.jpg",
+      "https://aos-comment.amap.com/B0FFIJXM5Z/comment/2e8d2cb172ffb37c764082060a5e15aa_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFHO9S1E",
+    "name": "鼎嘉轩羊蝎子火锅店",
+    "address": "南厂住宅中区西门旁",
+    "lat": 40.242159,
+    "lng": 116.125251,
+    "hasHighChair": false,
+    "isKidTolerant": false,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B0FFHO9S1E/comment/content_media_external_images_media_100015937_1742387650009_98006475.jpg",
+      "https://store.is.autonavi.com/showpic/15c8f292ef0697f10000003719394700?type=pic",
+      "https://store.is.autonavi.com/showpic/ef661ccdc614c33a8dd55ba0c09fe86d"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFHM8WOY",
+    "name": "遇吉岛COFFEE",
+    "address": "崔各庄乡马泉营村村北顺白路万荷文创B区北门进入",
+    "lat": 40.041272,
+    "lng": 116.504052,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B0FFHM8WOY/comment/content_media_external_file_60280_ss__1751530095285_88549677.jpg",
+      "https://aos-comment.amap.com/B0FFHM8WOY/comment/content_media_external_file_60292_ss__1751530095165_94597106.jpg",
+      "https://aos-comment.amap.com/B0FFHM8WOY/comment/content_media_external_file_1000062758_ss__1760877790738_01093414.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFH4G6WG",
+    "name": "湘乡楼·湖南菜·宴请聚会(鸟巢店)",
+    "address": "慧忠北里105号四海凯悦一层",
+    "lat": 40.00621,
+    "lng": 116.406874,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B0FFH4G6WG/comment/790c77a67380114a2c0ba95fe1236b31_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B0FFH4G6WG/comment/b54acf1699d7b2565bdb9b48d7b634ef_2048_2048_80.jpg",
+      "http://store.is.autonavi.com/showpic/232a4e77f51869efde7d4b6a1f001888"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFG80V35",
+    "name": "老阿妈蒙古村·草原文化·西北菜·歌舞表演·蒙古包(老君堂店)",
+    "address": "十八里店老君堂村518号-15号·免费停车·草原文化·西北菜·歌舞表演·蒙古包",
+    "lat": 39.836948,
+    "lng": 116.51866,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/52465f39cf8503cff4aeb4b33f28725e",
+      "http://store.is.autonavi.com/showpic/6cde8c234fde4cf70a38961b18534199",
+      "https://store.is.autonavi.com/showpic/2786b564c689a432116c8d6c83476ce3"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFFHMSCX",
+    "name": "苹果树下艺术餐厅",
+    "address": "宋庄小堡西街146号",
+    "lat": 39.9462,
+    "lng": 116.716005,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/54c79b4b23947f640000001987748422?type=pic",
+      "https://aos-comment.amap.com/B0FFFHMSCX/comment/content_media_external_file_37281_ss__1754518853163_37208766.jpg",
+      "https://store.is.autonavi.com/showpic/20cc0d74fd01f9980000003123588134?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFFGWTIQ",
+    "name": "三江芦苇荡贵州酸汤鱼(回龙观店)",
+    "address": "和谐家园一区西门南100米",
+    "lat": 40.084678,
+    "lng": 116.358066,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B0FFFGWTIQ/comment/20260310-e71d7e84efca62598f9a0400-6LoRCPNhdOsA22u9136IqM.jpg",
+      "https://aos-comment.amap.com/B0FFFGWTIQ/comment/65d5a5265dfc59d98c5ee4bad31ffa3a_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B0FFFGWTIQ/comment/content_media_external_file_1000081968_ss__1764737361538_03149582.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A877HN",
+    "name": "滇馨园云南清真餐厅(亦庄店)",
+    "address": "北京城区康定街18号永康公寓5号楼底商",
+    "lat": 39.771214,
+    "lng": 116.539991,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/e568b665b7636a3afe4f306d792f6406",
+      "http://store.is.autonavi.com/showpic/f19db0568b0b565851386f7b4e8f27bf",
+      "http://store.is.autonavi.com/showpic/9cf983cdf7becff3c177c7e1b67b183b"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A80O07",
+    "name": "北京双井轩海鲜饺子食府(双井店)",
+    "address": "广渠门外大街5号院4号楼",
+    "lat": 39.893966,
+    "lng": 116.455437,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/00af1044d5278574c0d0bfab03b75720",
+      "http://store.is.autonavi.com/showpic/0153b11b1e7031d4076f065f2c962334",
+      "http://store.is.autonavi.com/showpic/3829b95fa487f952ac99a9c6d4fe6cc0"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A7S6SE",
+    "name": "新川办餐厅",
+    "address": "小红门路312号北京天府蜀风酒店6号楼",
+    "lat": 39.849695,
+    "lng": 116.455812,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/ba6b627c39dacfec54118f221ce82298",
+      "http://store.is.autonavi.com/showpic/5e874f2456087e0b9d82167d2f953add",
+      "https://store.is.autonavi.com/showpic/a907687f5e78d6430000002356000096?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFHP4HEI",
+    "name": "WOLFGANGS STEAKHOUSE沃夫冈牛排馆",
+    "address": "工体北路甲2号盈科中心西南侧捌坊1层",
+    "lat": 39.93213,
+    "lng": 116.458433,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/eeff917869696b4bef246ab1478cd57a",
+      "http://store.is.autonavi.com/showpic/1d43e6c3a8f888a255f195d946f733df",
+      "http://store.is.autonavi.com/showpic/995fcc7a9a40ee6eadb75462f5ec6c3e"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFGIGW3I",
+    "name": "清华大学清芬园",
+    "address": "双清路清华大学南区7号楼",
+    "lat": 40.00568,
+    "lng": 116.328177,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B0FFGIGW3I/comment/AD23009C_D505_44F4_8923_4DAE01AE7FAF_L0_001_1500_200_1764400378715_12138957.jpg",
+      "https://aos-comment.amap.com/B0FFGIGW3I/comment/content_media_external_file_98863_ss__1766912279351_96534756.jpg",
+      "https://aos-comment.amap.com/B0FFFFK4EO/comment/b486ab68d0ca0f425f1af6000002e492_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A9JNHK",
+    "name": "1369冰火锅(五方桥店)",
+    "address": "黄厂路甲1号左50米",
+    "lat": 39.867733,
+    "lng": 116.552461,
+    "hasHighChair": false,
+    "isKidTolerant": false,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B000A9JNHK/comment/93db294e1081977a1f23b81726d78eb1_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B000A9JNHK/comment/content_media_external_images_media_1000062643_ss__1730707101402_84123699.jpg",
+      "https://aos-comment.amap.com/B000A9JNHK/comment/BA6E59C0_02CE_439F_B106_ADA6FA914013_L0_001_2048_153_1766636000468_08339646.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A7CIK5",
+    "name": "紫玉烤鸭店",
+    "address": "增光路与西三环北路辅路交叉口东180米",
+    "lat": 39.929001,
+    "lng": 116.312151,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/fe814b9d619a365abef6752bcdc5abfb",
+      "https://store.is.autonavi.com/showpic/cefe7aa878be02350000002455902462?type=pic",
+      "https://aos-comment.amap.com/B000A7CIK5/comment/content_media_external_file_119707_ss__1765719900750_15044966.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFJUZ80C",
+    "name": "Ponte意大利餐厅",
+    "address": "东四环北路6号滨河花园一区15号楼1-06号",
+    "lat": 39.966716,
+    "lng": 116.480717,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/172334b0eb959f6eb0de7db715ed8474",
+      "https://aos-comment.amap.com/B0FFJUZ80C/comment/965CE6F3_E8D7_4D8F_819D_A71E76AC3C5D_L0_001_2000_1500_1734618683519_62194827.jpg",
+      "https://store.is.autonavi.com/showpic/08e39f40ff4c094f0000002793692944?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFJ6X7YY",
+    "name": "玫瑰红烤羊排(北新桥三条店)",
+    "address": "北新桥三条49号(北新桥地铁站B东北口步行430米)",
+    "lat": 39.94332,
+    "lng": 116.419955,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://img.alicdn.com/imgextra/i3/2200876512816/O1CN012DZWUB1Wflq7GNVJj_!!2200876512816-2-koubei.png",
+      "https://store.is.autonavi.com/showpic/fca1e0ca041ec6d10000002489288161?type=pic",
+      "https://aos-comment.amap.com/B0FFJ6X7YY/comment/aea1f763cb18c4ecd537800a363a28a3_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFIQPDAH",
+    "name": "城边渔村·虹鳟鱼·农家菜",
+    "address": "怀北镇河防口村574号1",
+    "lat": 40.439616,
+    "lng": 116.674248,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/38b625841ad88309da1af80620ce6ed6",
+      "https://aos-comment.amap.com/B0FFIQPDAH/comment/2448b931c295eb184495900c75af3497_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B0FFIQPDAH/comment/content_media_external_images_media_517535_ss__1764840338200_77447551.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFFW5B20",
+    "name": "成涛私家火锅",
+    "address": "东卓家营村京北机动车检测场北侧",
+    "lat": 40.507683,
+    "lng": 115.987734,
+    "hasHighChair": false,
+    "isKidTolerant": false,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B0FFFW5B20/comment/7babedbc32242de775432af4ca6d96a0_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B0FFFW5B20/comment/content_media_external_file_100299_ss__1745406827664_20612926.jpg",
+      "https://aos-comment.amap.com/B0FFFW5B20/comment/2BCD6F50_DD14_4359_A8EB_18B092AFA3F4_L0_001_2000_150_1756953449053_50126843.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFFAFBAY",
+    "name": "海拉尔蒙古包",
+    "address": "长阳镇马厂村沿堤路北200米",
+    "lat": 39.769756,
+    "lng": 116.23271,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/12fffe50870ea5c6eba82958219670ec",
+      "https://store.is.autonavi.com/showpic/d23ce0a4734d6ab5bb2eda4c2e894914",
+      "https://store.is.autonavi.com/showpic/caa032bcc5724a01a1722c7d2a66211c"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A8ZIQU",
+    "name": "青玉酸奶",
+    "address": "北京城区豆角胡同46号",
+    "lat": 39.936717,
+    "lng": 116.398483,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B000A8ZIQU/comment/68BE0D4C_4AC4_4D7F_829D_62B15FE6F4B7_L0_001_1500_2000_1737264771101_85791768.jpg",
+      "https://aos-comment.amap.com/B000A8ZIQU/comment/3a52b9562477ab2afa029fa30a387941_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B000A8ZIQU/comment/177297569740_1772975708719_75656025.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A8WEQQ",
+    "name": "东北锅台鱼",
+    "address": "兴寿镇东营村上东路和上西路交汇处",
+    "lat": 40.200279,
+    "lng": 116.457715,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/8ec7af15e3a1f86d017011bf78f612a1",
+      "http://store.is.autonavi.com/showpic/9800263ce52bd69a6417262e81ad8577",
+      "http://store.is.autonavi.com/showpic/72929626872deff5e5f615663c37e0f5"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A87X2G",
+    "name": "密顺饭庄·手切肉饼",
+    "address": "钓鱼台村970钓鱼台车站旁(顺密路王首魁中医诊所)",
+    "lat": 40.296857,
+    "lng": 116.800568,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/b9b310dcdc82d97d0000002701076023?type=pic",
+      "https://aos-comment.amap.com/B000A87X2G/comment/D74F5D1D_1B0F_4DA9_B678_236F8D03FF82_L0_001_1170_75_1756585650686_76515747.jpg",
+      "https://aos-comment.amap.com/B000A87X2G/comment/content_media_external_file_1000020451_ss__1760596440109_34350461.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A2B6B4",
+    "name": "泓盛花园·融合菜",
+    "address": "北京城区北土城西路18号",
+    "lat": 39.976567,
+    "lng": 116.391298,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/a6410597199f4defaf9273094b12b5b4",
+      "http://store.is.autonavi.com/showpic/cc567dd7bb15468b629cc7545d1333b6",
+      "https://store.is.autonavi.com/showpic/11e652f8b045b2000000002239896492?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFJ1JK0K",
+    "name": "楼亭泰(丽都店)",
+    "address": "将台西路9-3号二楼楼亭泰餐厅地铁12号线将台西站A口出往前200米日本人学校正对面",
+    "lat": 39.973975,
+    "lng": 116.475783,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/14f18a94865e2d9a7c97734cebf93ad0",
+      "https://aos-comment.amap.com/B0FFJ1JK0K/comment/content_media_external_file_15672_ss__1772318883993_78675856.jpg",
+      "https://aos-comment.amap.com/B0FFJ1JK0K/comment/content_media_external_file_2803538_ss__1766735440609_34126494.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFJ0ALIL",
+    "name": "鸽子窝(青塔店)",
+    "address": "青塔西路15号一层A02(青塔西路与岳各庄北路交口西侧)",
+    "lat": 39.883784,
+    "lng": 116.263876,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/c2484c631b77dcdf47aecd0263f12b33",
+      "http://store.is.autonavi.com/showpic/83bd365a895162e578fb94819061972a",
+      "http://store.is.autonavi.com/showpic/0094e924c3d01ec648e6a2fec0d48db4"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFIXKE75",
+    "name": "唐廊烤鸭店(祥云小镇店)",
+    "address": "北京城区安泰大街中粮祥云小镇南区6号院7号楼1层101号",
+    "lat": 40.087451,
+    "lng": 116.537832,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B0FFIXKE75/comment/content_media_external_images_media_1000028717_ss__1765950422718_44586487.jpg",
+      "https://store.is.autonavi.com/showpic/60637b060a59834b0000002617428942?type=pic",
+      "https://store.is.autonavi.com/showpic/c36fdb987dbec5020000002777788376?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFIXH5ID",
+    "name": "韩香馆Saveurs de Coree",
+    "address": "东直门内北小街22号2层201号",
+    "lat": 39.943059,
+    "lng": 116.425924,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B0FFIXH5ID/comment/content_media_external_images_media_100012092_1735055500494_56596917.jpg",
+      "https://aos-comment.amap.com/B0FFIXH5ID/comment/5b883938b2c95f87e6ce7e23b3ed4142_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B0FFIXH5ID/comment/F08A2FE6_FB66_4C57_90C1_3724ECAEA6FA_L0_001_1512_2016_1738680774051_25823523.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFIR6P28",
+    "name": "渔沅·威海小渔村(万柳2店)",
+    "address": "北京城区北京城区北京城区长春桥路11号万柳亿城中心c1座2层201-6号",
+    "lat": 39.960601,
+    "lng": 116.301861,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B0FFIR6P28/comment/3D3C0AD1_0EFB_4AB7_9353_6EB6D56933D7_L0_001_1080_144_1753935429920_78796713.jpg",
+      "https://aos-comment.amap.com/B0FFIR6P28/comment/02F1D13E_0F98_4E6F_A8F4_F40881023F86_L0_001_1500_200_1758687879680_83446762.jpg",
+      "https://store.is.autonavi.com/showpic/d08a4e58afb3a1738cc07a4c1ab129fd"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFIQ937W",
+    "name": "潮闽农家海鲜",
+    "address": "海淀驾校东50米",
+    "lat": 40.090115,
+    "lng": 116.122364,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/3993b55901e8e566beb805a48f304df8",
+      "https://aos-comment.amap.com/B0FFIQ937W/comment/228E03E7_B17E_4F8E_8D6C_24ACC264096D_L0_001_2000_150_1760798747628_89697647.jpg",
+      "https://aos-comment.amap.com/B0FFIQ937W/comment/6030e386-9df2-4b0c-8d63-b9f4a44fd694.png"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFINOXTW",
+    "name": "唯真Coco椰子鸡火锅",
+    "address": "大屯里312号楼1层03号",
+    "lat": 40.006269,
+    "lng": 116.413592,
+    "hasHighChair": false,
+    "isKidTolerant": false,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/07dc3eeb6c40f7d62a3bfffb3573791f",
+      "http://store.is.autonavi.com/showpic/71f6471a7dba6f032f5f203e522e7465",
+      "https://aos-comment.amap.com/B0FFINOXTW/comment/content_media_external_images_media_1000556378_ss__1733364511670_87774276.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFICEW7Q",
+    "name": "三月茶花(华威桥店)",
+    "address": "南新园中路106号",
+    "lat": 39.869194,
+    "lng": 116.467477,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B0FFICEW7Q/comment/content_media_external_file_1000029292_ss__1754203803169_22728255.jpg",
+      "https://store.is.autonavi.com/showpic/acb9aac2293d52700000003767668066?type=pic",
+      "https://store.is.autonavi.com/showpic/7b19c3c2cfe7f9b70000003767634860?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFI91CAK",
+    "name": "行运海鲜食集(北京首店)",
+    "address": "三源里小区西南3门西北80米",
+    "lat": 39.952814,
+    "lng": 116.456283,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/0ed5bfefdf6da41f99fc5c275eb9f1a0",
+      "http://store.is.autonavi.com/showpic/37d7cf5c85478452b93bb66a2a37349c",
+      "https://aos-comment.amap.com/B0FFI91CAK/comment/content_media_external_file_100044630_1767109446825_13198711.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFI0C9HE",
+    "name": "二两店铺(外馆斜街店)",
+    "address": "北京城区安外大街3号院北1门旁",
+    "lat": 39.961937,
+    "lng": 116.406487,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B0FFI0C9HE/comment/254E8EBA_E2A7_4444_8AF4_801B4D3901B5_L0_001_1290_92_1770851253368_16976562.jpg",
+      "https://store.is.autonavi.com/showpic/7ccb94753c0c03650000001505524770?type=pic",
+      "https://store.is.autonavi.com/showpic/ff2c85b63617da590000002711432029?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFHTS0OL",
+    "name": "密云印象",
+    "address": "溪翁庄七孔桥西(水库主坝对面)",
+    "lat": 40.47846,
+    "lng": 116.830659,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/006f26e416149e58a88f0507d9a9c527",
+      "https://aos-comment.amap.com/B0FFHTS0OL/comment/20260322-aab850d298d002b0f8a1ef36-7hgBOGZtI0AAj75fybtGwr.jpg",
+      "https://store.is.autonavi.com/showpic/f1607f8f5fdc18ae0000003762400299?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFGL35AE",
+    "name": "穆禾家清真时尚转转小火锅(牡丹园店)",
+    "address": "北京城区花园东路11号泰兴大厦1层126-127室",
+    "lat": 39.98026,
+    "lng": 116.368018,
+    "hasHighChair": false,
+    "isKidTolerant": false,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/359229e60bc75818edab251bdcd31b3f",
+      "https://aos-comment.amap.com/B0FFGL35AE/comment/4feedback_sendimag_1749986879660_26067338.jpg",
+      "https://aos-comment.amap.com/B0FFGL35AE/comment/1a803c313d40e0fe2c3341efa19d38e3_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFG8S1H4",
+    "name": "大白羊涮肉坊",
+    "address": "高丽营镇顺于路水坡村南街04号(西侧30米机场北线天北路水坡村)",
+    "lat": 40.1333,
+    "lng": 116.536189,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B0FFG8S1H4/comment/16A5598B_3FA3_49BF_92EC_A2C3E3FA97D2_L0_001_1500_200_1755000197166_97280198.jpg",
+      "https://aos-comment.amap.com/B0FFG8S1H4/comment/content_media_external_file_1299_1767510272845_18203222.jpg",
+      "https://aos-comment.amap.com/B0FFG8S1H4/comment/7BEB4FD6_209E_4B13_9A5B_1F1E6B52AEF6_L0_001_IMG_153_1755135573499_86734645.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFFZBKXM",
+    "name": "米娜餐厅(宋庄店)",
+    "address": "双塘街5b号",
+    "lat": 39.968213,
+    "lng": 116.714047,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B0FFFZBKXM/comment/fe172478ed8655b3a8e815783ea77add_2048_2048_80.jpg",
+      "https://store.is.autonavi.com/showpic/1d63c40c175d20d10000002301020426?type=pic",
+      "https://store.is.autonavi.com/showpic/fb3c36f81e7413420000003068258289?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFFDCEN6",
+    "name": "Mezzaluna伴月意大利餐厅(国展店)",
+    "address": "天竺开发区林荫路荣和广场5号楼",
+    "lat": 40.053183,
+    "lng": 116.562738,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B0FFFDCEN6/comment/33aab5ff9069b0bd17dfa82549b7f586_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B0FFFDCEN6/comment/083DF9E1_B799_4DBC_AB39_63AC6FCFF5EC_L0_001_1242_87_1758219317495_85267258.jpg",
+      "https://aos-comment.amap.com/B0FFFDCEN6/comment/ba731f2c3a1fe81e855de65443aa47e4_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFFAIM8F",
+    "name": "1819餐厅·团队聚餐·烤串·精酿",
+    "address": "北京城区花家地(北京市城建开发总公司)北京华诚为民产品市场1层A1号",
+    "lat": 39.979761,
+    "lng": 116.466923,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/17b2c16b92e2ed3a5c513b3f710c8e49",
+      "https://aos-comment.amap.com/B0FFFAIM8F/comment/content_media_external_images_media_978703_ss__1743676588413_91178488.jpg",
+      "http://store.is.autonavi.com/showpic/0e919f50b4b6ee3e7971b40967b797c2"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFFADIGF",
+    "name": "二张农家菜(昌平店)",
+    "address": "马池口镇楼自庄村49号院(楼自庄桥西南侧)",
+    "lat": 40.165181,
+    "lng": 116.213932,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B0FFFADIGF/comment/2B68D119_51BB_4111_924D_16ACF4219EDA_L0_001_1284_102_1769018332223_34431436.jpg",
+      "https://aos-comment.amap.com/B0FFFADIGF/comment/7BC3B332_589E_477B_A2D1_75D7B9F79DDD_L0_001_1320_152_1770742702079_94441732.jpg",
+      "https://aos-comment.amap.com/B0FFFADIGF/headerImg/a82dc0b52cfef827d882cd42ac587b7f_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A9IM9B",
+    "name": "鲸鱼悦·鱼掌门鱼火锅(上地店)",
+    "address": "北京城区马连洼北路8号万霖科技大厦B座106",
+    "lat": 40.03364,
+    "lng": 116.296722,
+    "hasHighChair": false,
+    "isKidTolerant": false,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/f29110e619f82ad0d0ee2259dde24a68",
+      "https://aos-comment.amap.com/B000A9IM9B/comment/content_media_external_file_100000157_1752556522862_34218815.jpg",
+      "https://aos-comment.amap.com/B000A9IM9B/comment/e5f6762f6fb69962c349b795ddaa411e_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A9D7E4",
+    "name": "风渡嘉荷西餐厅Windy City(永泰庄店)",
+    "address": "北京城区永泰庄北路9号",
+    "lat": 40.039272,
+    "lng": 116.363919,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/b9187dac9e718081af8123f7d5c86751",
+      "http://store.is.autonavi.com/showpic/e9e5c0857cb77ab2e603e136e01c9ff8",
+      "http://store.is.autonavi.com/showpic/02ec466f3d0bc0145a2d7ed587353b0a"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A8VUXW",
+    "name": "七叶香山德式花园餐厅",
+    "address": "北京城区万安东路266号西侧30米",
+    "lat": 39.9827,
+    "lng": 116.238012,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/0e630e19d886b3fce8cdb16c728f3c16",
+      "http://store.is.autonavi.com/showpic/efc578637d54fcc0a1c468c9251be1db",
+      "http://store.is.autonavi.com/showpic/e8c1554eb96658f6837fd0709677768c"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A8UPZA",
+    "name": "果园西餐厅",
+    "address": "崔各庄乡何各庄村北口旁边果园内(大红灯笼处入口)",
+    "lat": 40.040373,
+    "lng": 116.498974,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/f602cb39cc196292b6a640f00fb35006",
+      "http://store.is.autonavi.com/showpic/6fea0844a35895d3f6a5db63e3bd8417",
+      "http://store.is.autonavi.com/showpic/68b3de78e2b5abfeafd3d3f139d88d69"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A82T2N",
+    "name": "川浙会·江南菜馆(上地店)",
+    "address": "上地信息路19号1幢一层121室二层205室",
+    "lat": 40.030516,
+    "lng": 116.311331,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/ebdc4c50070629bab4391d4bfc43e363",
+      "https://aos-comment.amap.com/B000A82T2N/comment/373f388c7feb6087198f6ab8f7a075b6_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B000A82T2N/comment/content_media_external_file_100000928_1770875356665_68827668.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A81FOA",
+    "name": "火凤凰重庆火锅(东直门店)",
+    "address": "北京城区东直门内大街15-5号",
+    "lat": 39.941319,
+    "lng": 116.426691,
+    "hasHighChair": false,
+    "isKidTolerant": false,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/daa376f26263597f86ffdfab326488d0",
+      "https://store.is.autonavi.com/showpic/990bb881eb725c830000003060624453?type=pic",
+      "https://aos-comment.amap.com/B000A81FOA/comment/B621886D_0AA4_45A1_B1E9_40A4E3B3225A_L0_001_1080_1377_1745478879621_67525974.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A7Q2CB",
+    "name": "清真·白记年糕(牛街北口店)",
+    "address": "牛街清真超市1层(牛街地铁站D2口步行360米)",
+    "lat": 39.88695,
+    "lng": 116.363303,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/2f8dbac8d6b8f4ac9abc9882411a127d",
+      "http://store.is.autonavi.com/showpic/57218a420f9d7fc3f0d00c99b0380083",
+      "https://store.is.autonavi.com/showpic/1524e7c24d26689f0000002416152757?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A7BWW5",
+    "name": "小楼饭店",
+    "address": "北京城区南大街12号(华联商场南)",
+    "lat": 39.907599,
+    "lng": 116.669077,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/3f86fbb1976473d20000003611348331?type=pic",
+      "https://store.is.autonavi.com/showpic/5608fa4efc2f363eca9c002df8076a67",
+      "https://aos-comment.amap.com/B000A7BWW5/comment/af1e2c6048f7ecf17b71a0530aae5b0f_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFIPHOK3",
+    "name": "同香荟(同里市集店)",
+    "address": "北京城区裕丰路1号同里市集F1层",
+    "lat": 40.072863,
+    "lng": 116.543976,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://aos-cdn-image.amap.com/sns/ugccomment/b4bcabac-ba5e-4bd1-b644-e92540768827.jpg",
+      "https://aos-comment.amap.com/B0FFIPHOK3/comment/705BF17F_288A_4674_A897_0EF856F42D4C_L0_001_2000_150_1763784550989_53723851.jpg",
+      "https://aos-comment.amap.com/B0FFIPHOK3/comment/content_media_external_file_115802_ss__1764673269181_67710392.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFFR62IN",
+    "name": "雍和炸鸡烧饼",
+    "address": "雍和宫大街66号(北新桥地铁站B东北口步行190米)",
+    "lat": 39.942623,
+    "lng": 116.41691,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/7c06d531c6278e709aaad121a5925db5",
+      "https://aos-comment.amap.com/B0FFFR62IN/comment/436b0e41f48f74f1c86bac5fd66a0d93_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B0FFFR62IN/comment/content_media_external_file_4457_1765412737651_20299565.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFF75A4A",
+    "name": "伊尹鲁味湘(阜成路店)",
+    "address": "阜成路81号院1号楼4-5层",
+    "lat": 39.924785,
+    "lng": 116.292381,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/60ba870fbfb0a022d8fe3c2075fdd614?operate=original?operate=original",
+      "https://store.is.autonavi.com/showpic/97bca3f81b101a025af63376dd73085d",
+      "http://store.is.autonavi.com/showpic/62247c3afcd3bc826ab831f829a55d53"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A7S83Y",
+    "name": "渔来旺(望园东里店)",
+    "address": "望园东里19号综合楼2层(七里庄地铁站E西北口步行270米)",
+    "lat": 39.867173,
+    "lng": 116.289787,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/104d036953aa23ad9bcf26bbdf155eec",
+      "http://store.is.autonavi.com/showpic/14854d0b0e323e4f82dc9834c7f7cfdb",
+      "https://aos-comment.amap.com/B000A7S83Y/comment/6399863E_776B_4A3D_93D3_AC4074593281_L0_001_1500_2000_1743597000238_12852865.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A7PGPG",
+    "name": "奉天缘饭庄",
+    "address": "新南路11号",
+    "lat": 40.370975,
+    "lng": 116.852148,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/a5537e5cd33889aa0000003570942046?type=pic",
+      "https://aos-comment.amap.com/B000A7PGPG/comment/content_media_external_file_167909_ss__1761871903696_14933297.jpg",
+      "https://aos-comment.amap.com/B000A7PGPG/comment/FF58F73D_FE00_48D2_8D4B_6285D1C68181_L0_001_1532_200_1747370976218_66016998.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFIZJAGE",
+    "name": "外婆馋小院烤肉(双桥店)",
+    "address": "北京城区通惠河南路新房村甲1号(如家酒店南侧)",
+    "lat": 39.906135,
+    "lng": 116.565538,
+    "hasHighChair": true,
+    "isKidTolerant": false,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/fe5a5d172759c5af0000002799064203?type=pic",
+      "https://store.is.autonavi.com/showpic/cf3d035ec08d84820000002885832115?type=pic",
+      "https://aos-comment.amap.com/B0FFIZJAGE/comment/a1c8eed3a1508147834b8c27e5a32d8a_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFIB5G61",
+    "name": "菜麻串串香火锅(温都水城店)",
+    "address": "北七家镇温都水城商业街东排A-1",
+    "lat": 40.103362,
+    "lng": 116.37368,
+    "hasHighChair": false,
+    "isKidTolerant": false,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B0FFIB5G61/comment/20260308-4dc8152fd7d03ba0a6124417-6SaxXBwveWq7DUQ7KDXPSR.jpg",
+      "http://store.is.autonavi.com/showpic/578220ac36fe417d87ed0dca24e7a639",
+      "https://store.is.autonavi.com/showpic/9a15d0d063f1533a0000000738464602?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFHMR220",
+    "name": "水乡人家",
+    "address": "青龙湖镇水乡人家",
+    "lat": 39.76665,
+    "lng": 116.036594,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://aos-cdn-image.amap.com/sns/ugccomment/6a27ff5c-cbe6-48de-a6ba-d9ae33074932.jpg",
+      "https://aos-comment.amap.com/B0FFHMR220/comment/content_media_external_file_476643_ss__1765425055090_24215448.jpg",
+      "https://aos-comment.amap.com/B0FFHMR220/comment/content_media_external_file_15969_1771336502429_33001434.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFH14LRF",
+    "name": "奥华餐厅老张记(台基厂店)",
+    "address": "北京城区台基厂大街18-3号",
+    "lat": 39.902869,
+    "lng": 116.411937,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/a44d4745fdde65bc76e850f893a9937b",
+      "http://store.is.autonavi.com/showpic/fec7ca89f1bed3ea5df496df4fd3acad",
+      "https://store.is.autonavi.com/showpic/242f0b997c790cef0000002559606278?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFH12OZA",
+    "name": "万龙洲(亚运村店)",
+    "address": "亚运村安慧里四区15号中国五矿大厦二层",
+    "lat": 39.989101,
+    "lng": 116.41304,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/10d3e82896fc558942ebda8f8e3f1ad7",
+      "http://store.is.autonavi.com/showpic/5e8b0aa50ad47f5e02f8b81fa329811a",
+      "http://store.is.autonavi.com/showpic/6e12be58cd3ee9c933865dbe61c10884"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFGT0O99",
+    "name": "小牛海记潮汕牛肉店(牡丹园店)",
+    "address": "花园路中城写字楼2层(牡丹宾馆北)",
+    "lat": 39.979105,
+    "lng": 116.369133,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/86e3b78831a68547e3915ad3db23e1e3",
+      "https://aos-comment.amap.com/B0FFGT0O99/comment/E8BE1F27_57CE_48F7_BABF_AE290EA4D2F4_L0_001_2000_1500_1727315479469_30007069.jpg",
+      "https://aos-comment.amap.com/B0FFGT0O99/comment/33C5D674_3945_4CF9_AB82_45F12E24969D_L0_001_1500_200_1768494266973_61271371.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFGCD9TJ",
+    "name": "北京德云红事会馆",
+    "address": "王四营乡道口村2-27幢",
+    "lat": 39.873451,
+    "lng": 116.551957,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B0FFGCD9TJ/comment/d3ab94ab01f88f0abd171b8714aeb943_2048_2048_80.jpg",
+      "https://store.is.autonavi.com/showpic/52916b1788a1b80b0000002240750826?type=pic",
+      "https://aos-comment.amap.com/B0FFGCD9TJ/comment/4519ff37a3fe5b0f959ef59f9371e4d6_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFFY4ZUZ",
+    "name": "老杨家清真饭店",
+    "address": "温南路与西贯市村南街交叉口北120米",
+    "lat": 40.135174,
+    "lng": 116.140069,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B0FFFY4ZUZ/comment/4BBC947D_3D72_4DCA_98DD_9A4C14D40F19_L0_001_1080_144_1763535575676_18644672.jpg",
+      "https://aos-comment.amap.com/B0FFFY4ZUZ/comment/d3449f6b60a946b24fc04e77dae5268e_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B0FFFY4ZUZ/comment/content_media_external_images_media_1000034824_ss__1740370208770_59530366.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFF70JST",
+    "name": "李伟牛羊肉",
+    "address": "常营中路常营民族家园55号楼",
+    "lat": 39.928528,
+    "lng": 116.58503,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B0FFF70JST/comment/content_media_external_images_media_37230_1656200772230_693b5a8f.jpg",
+      "https://aos-comment.amap.com/B0FFF70JST/comment/content_media_external_images_media_37231_1656200772230_a61e670c.jpg",
+      "https://aos-comment.amap.com/B0FFF70JST/comment/6ae78a1257570c8f4ef916cb66b7b988_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A9ONPA",
+    "name": "牛街清真满恒記(平安里西大街店)",
+    "address": "北京城区平安里西大街14号",
+    "lat": 39.932207,
+    "lng": 116.367609,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/2e943f3c1780f1e048fa331bc3a20803",
+      "http://store.is.autonavi.com/showpic/54507bab840af0f8e8a88d618ed6ede3",
+      "http://store.is.autonavi.com/showpic/6a34b074ad3b0823b5d1b23ed222a32f"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A8VQH7",
+    "name": "龙聚源大公鸡粘卷子",
+    "address": "北京城区平谷镇北环东路3号楼3-11室",
+    "lat": 40.150946,
+    "lng": 117.130961,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B000A8VQH7/comment/content_media_external_file_768_1769565522258_00090546.jpg",
+      "https://aos-comment.amap.com/B000A8VQH7/comment/06b8d198f3892bf99954c0653e8b93df_2048_2048_80.jpg",
+      "https://store.is.autonavi.com/showpic/3dbf149e8d86042b0000002239288451?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A85IXW",
+    "name": "老井·俄罗斯餐厅",
+    "address": "西羊管胡同甲1号(北新桥派出所斜对面)",
+    "lat": 39.942693,
+    "lng": 116.427473,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/504a966208eedca9057058ad9d2639a4",
+      "http://store.is.autonavi.com/showpic/8757f4d141a1bacde042d6be9de1c30e",
+      "http://store.is.autonavi.com/showpic/0532fa6559b0d1fbeb7f19fc4044a203"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A838EN",
+    "name": "小草屋(望京店)",
+    "address": "望京街道阜通东大街30号南侧一层底商",
+    "lat": 39.982364,
+    "lng": 116.469956,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/39d31885b6333c0d0000002456106223?type=pic",
+      "https://aos-comment.amap.com/B000A838EN/comment/content_media_external_images_media_1000037839_ss__1727277433626_05697198.jpg",
+      "https://store.is.autonavi.com/showpic/8c89d457a25745f503fc143462e99b93"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A7XJFX",
+    "name": "云腾食府·云南菜",
+    "address": "东花市北里东区8号楼",
+    "lat": 39.899829,
+    "lng": 116.435854,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/430a39b632bb0caaf4c3282b55f9654a",
+      "https://aos-comment.amap.com/B000A7XJFX/comment/176ec7c10568d83eacfac9d9ef819476_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B000A7XJFX/comment/297AE741_EA55_4A4D_A173_9ABA7DB649BE_L0_001_2016_1512_1754477060402_48069779.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFK19S71",
+    "name": "小院烤肉(旗舰店)",
+    "address": "苇子坑125号",
+    "lat": 39.846139,
+    "lng": 116.434849,
+    "hasHighChair": false,
+    "isKidTolerant": false,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B0FFK19S71/comment/content_media_external_file_100017277_1748348476227_06990496.jpg",
+      "http://aos-cdn-image.amap.com/sns/ugccomment/c7b4005d-2b0b-468b-81b6-b54a78027837.jpg",
+      "https://store.is.autonavi.com/showpic/4b1bb9eda0e9aa690000002753164184?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFJ2008Y",
+    "name": "丁老三涮肉(洋桥店)",
+    "address": "北京城区奇迹广场3层",
+    "lat": 39.849646,
+    "lng": 116.38735,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/e986a0418c724d30ac5d31d8bc7a42f4",
+      "https://store.is.autonavi.com/showpic/a7880d2905e818750000003769014367?type=pic",
+      "https://aos-comment.amap.com/B0FFJ2008Y/comment/content_media_external_file_1000007922_ss__1764643657711_82278296.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFI5QIQI",
+    "name": "徽韵人家(牡丹园店)",
+    "address": "北京城区花园路2号33号楼1层(牡丹园地铁站A西北口步行270米)",
+    "lat": 39.978075,
+    "lng": 116.368305,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/c4f0cbebd5cbc4fe3129e7229e4d702a",
+      "https://store.is.autonavi.com/showpic/90e3401a2759af440000002449086521?type=pic",
+      "https://aos-comment.amap.com/B0FFI5QIQI/comment/content_media_external_images_media_1000080026_ss__1765369998658_52586658.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFHUTU0X",
+    "name": "泰合鲜(奥运村店)",
+    "address": "北京城区安立路28号华创生活广场3层",
+    "lat": 40.026498,
+    "lng": 116.411413,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/64ce3acbf14341eb6af14f589ada97e6",
+      "https://aos-comment.amap.com/B0FFHUTU0X/comment/44479deff899a998da9d3b870d7929e6_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B0FFHUTU0X/comment/1f0a871ca35c69f5ebb45904ea396300_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFHIDG1T",
+    "name": "玉林烤鸭(刘家窑店)",
+    "address": "南三环中路小铁营10号恒松园小区7号楼东区二层部分",
+    "lat": 39.857644,
+    "lng": 116.41993,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B0FFHIDG1T/comment/content_media_external_file_8603_1770703603263_45504094.jpg",
+      "https://aos-comment.amap.com/B0FFHIDG1T/comment/content_media_external_images_media_1000028351_ss__1765244747797_37464308.jpg",
+      "https://aos-comment.amap.com/B0FFHIDG1T/comment/content_media_external_file_100000686_1764665703131_69038088.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFGMDBO1",
+    "name": "老胡灌饼",
+    "address": "安翔里社区南门东60米",
+    "lat": 39.990736,
+    "lng": 116.381648,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://img.alicdn.com/imgextra/i1/3695320962/O1CN01JeGWQs1IydidvU9SZ_!!3695320962-0-kbcontentapng.jpg",
+      "https://store.is.autonavi.com/showpic/b4e7c871b84926d70000002876944512?type=pic",
+      "https://aos-comment.amap.com/B0FFGMDBO1/comment/4437a563eaa43b08952705285b256d2a_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFFR0EYY",
+    "name": "金福源铁板烧",
+    "address": "阜成门内大街甲92号锦江之星酒店院内(国土资源部西60米)",
+    "lat": 39.923835,
+    "lng": 116.369549,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B0FFFR0EYY/comment/content_media_external_file_100002578_1751781765903_22431385.jpg",
+      "https://store.is.autonavi.com/showpic/c044d83f7699edeb0000002974968935?type=pic",
+      "https://store.is.autonavi.com/showpic/6d376e405faadfca0000003568506947?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFF75DS0",
+    "name": "朕辉麻辣香锅麻辣烫(总店)",
+    "address": "城北街道二街通福桥11号平房",
+    "lat": 40.223669,
+    "lng": 116.236426,
+    "hasHighChair": false,
+    "isKidTolerant": false,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B0FFF75DS0/comment/27b380e2c6c74eda41f60af17644e286_2048_2048_80.jpg",
+      "https://store.is.autonavi.com/showpic/7c81acd239a4d30e7b3d2115e3231aff",
+      "https://aos-comment.amap.com/B0FFF75DS0/comment/301971A3_EA55_4191_AE5F_B3A8AD0632B8_L0_001_1206_125_1765362293730_05574306.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFF35K7Z",
+    "name": "TRB Hutong",
+    "address": "北京城区沙滩北街嵩祝寺23号",
+    "lat": 39.927736,
+    "lng": 116.403462,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/0c36b1879f93b6fdb5c84da0943d593c",
+      "http://store.is.autonavi.com/showpic/1fca8822d03df03c37b03df61664e9dc",
+      "http://store.is.autonavi.com/showpic/bcfb3069058d5d7038b150839f9d6d1a"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A9DCMG",
+    "name": "尹三豆汁(天坛北门店)",
+    "address": "东晓市街176号(天坛北门向北150米马路东侧)",
+    "lat": 39.8905,
+    "lng": 116.412778,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://img.alicdn.com/imgextra/i2/3695320962/O1CN011IydfqAph2zL1In_!!3695320962-0-kbcontentapng.jpg",
+      "http://store.is.autonavi.com/showpic/183f6e0dea14ceecf0693dbe70d34f05",
+      "http://store.is.autonavi.com/showpic/9f9ff7e7e15c06a403032f8fdd51d545"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A87FJP",
+    "name": "1901 Cafe(西四店)",
+    "address": "西安门大街101号(近西什库大街)",
+    "lat": 39.92276,
+    "lng": 116.378154,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B000A87FJP/comment/content_media_external_images_media_1000015594_ss__1732157348996_63144307.jpg",
+      "https://aos-comment.amap.com/B000A87FJP/comment/541B3F60_CDA1_4327_8C69_82A1C2334537_L0_001_1500_200_1764124231668_44080755.jpg",
+      "https://aos-comment.amap.com/B000A87FJP/comment/f1e2931d9d537d6e2496805e8c530bdf_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A81APL",
+    "name": "辣婆婆(航天桥店)",
+    "address": "北京城区西八里庄路恩济庄18号院4号楼一二层",
+    "lat": 39.927164,
+    "lng": 116.287533,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B000A81APL/comment/7741650c704a6496b3173554471ad032_2048_2048_80.jpg",
+      "https://store.is.autonavi.com/showpic/80a8fec10ffaae2d8a72fdafeaae391b",
+      "https://aos-comment.amap.com/B000A81APL/comment/1A8D9179_0595_4D05_B097_3A13F0AD20AF_L0_001_960_128_1748400982286_56267753.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A7XE1B",
+    "name": "香融府",
+    "address": "马家堡路西马场南里一区29号楼",
+    "lat": 39.836881,
+    "lng": 116.379255,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B000A7XE1B/comment/567586f4611350c2ac0f10812d36f66b_2048_2048_80.jpg",
+      "http://store.is.autonavi.com/showpic/b7e96a011ec94b035ffe8a3951ea6e93",
+      "http://store.is.autonavi.com/showpic/a3234b7460e6c90831c8d55bd499396e"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A7J64A",
+    "name": "玉桥烤鸭店",
+    "address": "天坛东路21号(近东侧路公交车站)",
+    "lat": 39.875879,
+    "lng": 116.420721,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B000A7J64A/comment/7BA281BA_0F6B_49D6_9038_63D65627A3ED_L0_001_2000_1500_1766104913591_56473765.jpg",
+      "https://store.is.autonavi.com/showpic/3c3aa1cdf1b460b10000002905830016?type=pic",
+      "https://aos-comment.amap.com/B000A7J64A/comment/8FA94973_7100_4947_A3DF_94EC892C45D9_L0_001_2000_150_1760699493629_66193079.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A7D9XS",
+    "name": "北新桥卤煮老店(总店)",
+    "address": "东四北大街141号(近如家北新桥店)",
+    "lat": 39.937255,
+    "lng": 116.416819,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/369e9f2333036418573b1a66f331c758",
+      "http://store.is.autonavi.com/showpic/97be7d1285461334b51db74fac60fd8a",
+      "http://store.is.autonavi.com/showpic/7fa6a1458864ff2d3234429fe5d9c62b"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A6D4A8",
+    "name": "洋森餐厅(南关店)",
+    "address": "北京城区良乡西潞南大街21号",
+    "lat": 39.725652,
+    "lng": 116.136395,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B000A6D4A8/comment/content_media_external_file_1000041396_ss__1757153106595_77157429.jpg",
+      "https://store.is.autonavi.com/showpic/f5c2d11a024629780000000668772987?type=pic",
+      "https://aos-comment.amap.com/B000A6D4A8/comment/content_media_external_file_1000041394_ss__1757153106599_55587026.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A15405",
+    "name": "安诚居干锅鸭头(八角店)",
+    "address": "八角南路48-5号八角南里14栋",
+    "lat": 39.910598,
+    "lng": 116.201537,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/3ba8dc4b3d146cd90bfd1a921216cf0a",
+      "http://store.is.autonavi.com/showpic/fb22c133af99326d83c5f429612e0e2b",
+      "https://store.is.autonavi.com/showpic/59bee4403707194b0000002778430918?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0M6ULRS6W",
+    "name": "桔子水晶酒店",
+    "address": "清河三街95号同源大厦写字楼F1层",
+    "lat": 40.032268,
+    "lng": 116.34432,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/3c8e88d1c93959bb83b6b39d71cccad3",
+      "https://store.is.autonavi.com/showpic/3208f3f81de9a53f9988f5535639afda",
+      "https://store.is.autonavi.com/showpic/b3b750b19f181488150113be861ae016"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0L0L5A3CD",
+    "name": "翰林宴(北京西单店)",
+    "address": "大木仓胡同一巷一号(灵境胡同地铁站D西南口步行420米)",
+    "lat": 39.912908,
+    "lng": 116.371925,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/3aff0794a54a8cfcaf721f11f63daf50",
+      "https://store.is.autonavi.com/showpic/a5b7d726ec93b29b63eccb3e4bb6f5ce",
+      "https://store.is.autonavi.com/showpic/d20623ec11d8fb5a1576c2660da1c4f1"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0IK5MOJE3",
+    "name": "喆啡酒店(北京环球度假区梨园地铁站店)",
+    "address": "云景东路1号园景国际大厦C段3-6层",
+    "lat": 39.883542,
+    "lng": 116.666152,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/6d41394b12d1fb351e5079ccdbab058e",
+      "https://store.is.autonavi.com/showpic/e0b6038ce83782b316cf07c33bb3508c",
+      "https://store.is.autonavi.com/showpic/ae54c27edd54a932c149e3e078008500"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0I67SNKAK",
+    "name": "桔子酒店(北京五棵松大成路店)",
+    "address": "大成路21号",
+    "lat": 39.889759,
+    "lng": 116.257165,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/fd0795b46042d77559d7e6ae9fb2808f",
+      "https://aos-comment.amap.com/B0I67SNKAK/comment/0feedback_sendimag_1740538367741_79097976.jpg",
+      "https://aos-comment.amap.com/B0I67SNKAK/comment/e626b411e3d26952ea2dd945685d0ad5_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0HDFUG90W",
+    "name": "北京世园凯悦嘉轩酒店",
+    "address": "延康路12号院1号楼A座",
+    "lat": 40.442537,
+    "lng": 115.96458,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/63a6e365d13c50027506e1cc7f00e1cf",
+      "https://store.is.autonavi.com/showpic/0ce29b8422046d03c5e3cbafa2daed30",
+      "http://store.is.autonavi.com/showpic/ad39a5f09ba33dc1f40f6894d90eff6c"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFIKUIF3",
+    "name": "儒宴江南菜·新淮扬菜·烤鸭(总部基地丰体店)",
+    "address": "北京城区西四环南路45号(近丰体体育中心)",
+    "lat": 39.869197,
+    "lng": 116.280785,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B0FFIKUIF3/comment/133b9a1072ab84f716c7299750ae2722_2048_2048_80.jpg",
+      "https://store.is.autonavi.com/showpic/15ac872f388d62840000001805880896?type=pic",
+      "https://store.is.autonavi.com/showpic/ba9a4653f122f359e3ef70c1b4b5148b"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFFHV7LC",
+    "name": "小金朝族饭馆(工体西门店)",
+    "address": "东营房十条6号",
+    "lat": 39.929799,
+    "lng": 116.439788,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B0FFFHV7LC/comment/content_media_external_images_media_521265_1682919432022_b483b0a8.jpg",
+      "https://aos-comment.amap.com/B0FFFHV7LC/comment/5c877394cf845511c99a5b920e63b72b_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B0FFFHV7LC/comment/81b51a89f71f0adde394fc329be099c5_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A7P667",
+    "name": "清华大学观畴园(餐厅)",
+    "address": "清华园街道双清路30号清华大学观畴园餐厅负一楼",
+    "lat": 40.0069,
+    "lng": 116.322438,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/b9b5289f5e71f308760d00423bdcbf75",
+      "https://aos-comment.amap.com/B000A7P667/comment/content_media_external_file_100006242_1761290369247_81547546.jpg",
+      "https://aos-comment.amap.com/B000A7P667/comment/b39cda9be629548e4da24915e92a4b9f_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A2C7FE",
+    "name": "玉流馆餐厅",
+    "address": "望京湖光中街8号",
+    "lat": 39.996731,
+    "lng": 116.460924,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B000A2C7FE/comment/content_media_external_file_1000017698_ss__1753764926319_35515903.jpg",
+      "https://store.is.autonavi.com/showpic/2e22ab45d22319f40000001048924166?type=pic",
+      "https://aos-comment.amap.com/B000A2C7FE/comment/content_media_external_file_156794_ss__1764590857603_72570719.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFJKJ6KC",
+    "name": "老东街涮肉(三里屯店)",
+    "address": "白家庄路3号",
+    "lat": 39.927036,
+    "lng": 116.456309,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B0FFJKJ6KC/comment/content_media_external_file_100003148_1768641708162_86533895.jpg",
+      "https://aos-comment.amap.com/B0FFJKJ6KC/comment/content_media_external_images_media_439_1752718197048_55136458.jpg",
+      "https://store.is.autonavi.com/showpic/12d552c2afeb1a680000000972772870?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFJIO3ZD",
+    "name": "湘悦荷堂·时鲜湖南菜",
+    "address": "南沙滩8号楼全季酒店东邻",
+    "lat": 39.997213,
+    "lng": 116.378526,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/9b220cc0397f912a0000000731308017?type=pic",
+      "https://store.is.autonavi.com/showpic/0a92ab1c421443c50000000731274788?type=pic",
+      "https://aos-comment.amap.com/B0FFJIO3ZD/comment/content_media_external_images_media_1000003332_ss__1744609074805_61520139.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFHNYLFP",
+    "name": "一阳寿司(部落方舟店)",
+    "address": "麦子店街39号Y108",
+    "lat": 39.947802,
+    "lng": 116.466428,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://img.alicdn.com/imgextra/i4/3695320962/O1CN011IydftPaUSgFa9D_!!3695320962-0-kbcontentapng.jpg",
+      "https://img.alicdn.com/imgextra/i1/3695320962/O1CN011IydftPaUgoNLi4_!!3695320962-0-kbcontentapng.jpg",
+      "https://img.alicdn.com/imgextra/i2/3695320962/O1CN011IydftPaUSlme8G_!!3695320962-0-kbcontentapng.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFHJFY82",
+    "name": "小城外婆肴(上地店)",
+    "address": "北京城区上地西街康得大厦西南门入口",
+    "lat": 40.042629,
+    "lng": 116.303481,
     "hasHighChair": true,
     "isKidTolerant": true,
     "hasKidsMenu": false,
-    "cuisine": "120元/人",
-    "avgPricePerPerson": 120,
+    "images": [
+      "http://store.is.autonavi.com/showpic/8ce5f6f24b8eb0fd19dbd88b75eabeb9",
+      "http://store.is.autonavi.com/showpic/e1df87b7dcf7de59885c0be3000bdf5a",
+      "https://aos-comment.amap.com/B0FFHJFY82/comment/6fb905ba79e063d82272c6e02cd51cac_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFHCCZKU",
+    "name": "玉林烤鸭(甘露园店)",
+    "address": "甘露园南里二区1号楼商业街(维尔口轻与医院东侧200m)",
+    "lat": 39.916189,
+    "lng": 116.517918,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/00fa14837e389b64ad369bdd94e8f37f",
+      "https://store.is.autonavi.com/showpic/196a646b57d4c909a183a75a945d4572",
+      "https://aos-comment.amap.com/B0FFHCCZKU/comment/0f34127c6dfc84df5ff5ad9f3306112e_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFGSVMJG",
+    "name": "霧MIST(南锣鼓巷)",
+    "address": "北京城区东棉花胡同32号(中央戏剧学院南锣鼓巷)",
+    "lat": 39.935517,
+    "lng": 116.405038,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/6835065e6ab5fd6952008357633a61cc",
+      "http://store.is.autonavi.com/showpic/067e433db28992150c338650cd5110a9",
+      "http://store.is.autonavi.com/showpic/162adb35a9e1e396f147eb0c20340309"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFGPFZ87",
+    "name": "渔娘渔家私房菜(东直门店)",
+    "address": "胡家园社区21号",
+    "lat": 39.944811,
+    "lng": 116.44481,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B0FFGPFZ87/comment/content_media_external_file_33606_ss__1758765035333_90076223.jpg",
+      "https://aos-comment.amap.com/B0FFGPFZ87/comment/F69E096B_A83B_42AA_9CD7_1121BF07183C_L0_001_1500_200_1760931200808_25214403.jpg",
+      "http://store.is.autonavi.com/showpic/4bf660b03c1d0a10b8f76d7102246436"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFG2NAFC",
+    "name": "乡村名厨东北菜",
+    "address": "马驹桥镇西后街百尚家具建材城底商",
+    "lat": 39.763679,
+    "lng": 116.548226,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B0FFG2NAFC/comment/619DE3BF_0C0C_4985_B2A7_575AFF85EA47_L0_001_2000_150_1753003876106_44774847.jpg",
+      "https://aos-comment.amap.com/B0FFG2NAFC/comment/175841483135_1758414835381_09855722.jpg",
+      "https://aos-comment.amap.com/B0FFG2NAFC/comment/afafd286b8d0a8d7b5e4f394fa9da990_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFFCVDHQ",
+    "name": "云栖小院(798店)",
+    "address": "北京城区崔各庄5-6环之间草场地国际艺术村169号",
+    "lat": 39.994936,
+    "lng": 116.506295,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B0FFFCVDHQ/comment/%5B2026-02-27-20-53-02%5DC65831B6-074E-4E2D-A006-DB1CD336D86_1772196789843_73222136.jpg",
+      "https://aos-comment.amap.com/B0FFFCVDHQ/comment/3e2c32ad0b035472023080035e455ca7_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B0FFFCVDHQ/comment/1F3FE370_0E24_4D30_8D63_EFAE785FE96B_L0_001_1920_108_1758499024397_76442713.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFF9ZCWQ",
+    "name": "新疆饭庄",
+    "address": "车公庄大街北里1号",
+    "lat": 39.934736,
+    "lng": 116.348343,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/2abbb7aef97792f8ed99e8cb5a0676c4",
+      "http://store.is.autonavi.com/showpic/aa0e21214b5e067b2aded03bf9ccd69b",
+      "https://img.alicdn.com/imgextra/i1/3695320962/O1CN011IydfrKicHjxgla_!!3695320962-0-kbcontentapng.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFF4T2AB",
+    "name": "马艾萨·将台路牛拉",
+    "address": "东川酒店南门旁",
+    "lat": 39.971108,
+    "lng": 116.483736,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://img.alicdn.com/imgextra/i4/3695320962/O1CN01xOgI001IydgMpmHgL_!!3695320962-0-kbcontentapng.jpg",
+      "https://store.is.autonavi.com/showpic/aaaad9add2d667750000002890490073?type=pic",
+      "https://store.is.autonavi.com/showpic/a6ef8babd4af6e990000002501924491?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFF34UQN",
+    "name": "渔沅·威海小渔村(小南庄店)",
+    "address": "北京城区小南庄甲8号喆啡酒店1层",
+    "lat": 39.964765,
+    "lng": 116.306,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/0369601d8ed832f62c3b3381f74f307f",
+      "https://store.is.autonavi.com/showpic/8ee2495bcddde0847a05df6d2b28b2d0",
+      "https://aos-comment.amap.com/B0FFF34UQN/comment/60F0955F_B457_4329_B693_A614D2375A47_L0_001_2048_204_1744340731983_83147001.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFF0616A",
+    "name": "静水StillWater",
+    "address": "鼓楼东大街69号",
+    "lat": 39.941009,
+    "lng": 116.405482,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B0FFF0616A/comment/content_media_external_file_1000025245_ss__1770882874067_98147674.jpg",
+      "https://aos-comment.amap.com/B0FFF0616A/comment/c338803f4f36edef23b4f33aa5455c37_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B0FFF0616A/comment/fb93c86ab2888d3b450cf40d9692218b_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000AA1A6N",
+    "name": "北门涮肉·铜锅涮肉(南锣鼓巷店)",
+    "address": "地安门东大街56-1号(南锣鼓巷地铁站F东北口步行70米)",
+    "lat": 39.933257,
+    "lng": 116.405609,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/75ddf7014b7b193d943d74454198e539",
+      "https://aos-comment.amap.com/B000AA1A6N/comment/content_media_external_file_37799_ss__1764465833902_05580263.jpg",
+      "http://store.is.autonavi.com/showpic/e9d280f32346e9c018218fd444ac8ec4"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A9JH36",
+    "name": "淮扬菜品鉴堂(光耀东方中心店)",
+    "address": "西三环北路100号光耀东方3层(航天桥东北角)",
+    "lat": 39.925195,
+    "lng": 116.311035,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/cc2d2e26861ac822aa845300d9acc41e",
+      "http://store.is.autonavi.com/showpic/783a1cfc2f57f138e9654664b8c4561e",
+      "http://store.is.autonavi.com/showpic/03032d63272577889fedf43f4e4ac8f1"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A8X64K",
+    "name": "老胡家常菜",
+    "address": "兵马司胡同2号(灵境胡同地铁站B东北口步行400米)",
+    "lat": 39.91934,
+    "lng": 116.373168,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/2cd9ec7f6e41166b0000003768916783?type=pic",
+      "https://aos-comment.amap.com/B000A8X64K/comment/cd79f292c7c6eb542c3adaae3eeb3479_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B000A8X64K/comment/30d7aa6045050c64c8582e68801b1f1d_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A8WBF0",
+    "name": "德仁居烤鸭店",
+    "address": "北京城区阜通东大街花家地小区30号楼(中医药大学对面)",
+    "lat": 39.982454,
+    "lng": 116.470479,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B000A8WBF0/comment/content_media_external_images_media_1820_1735354626024_13763183.jpg",
+      "https://store.is.autonavi.com/showpic/73084630caf844870000002241184231?type=pic",
+      "https://aos-comment.amap.com/B000A8WBF0/comment/DFE2C549_C643_4C79_9196_BC0B631A866B_L0_001_1500_200_1764643595322_70748986.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A8U4ZV",
+    "name": "玉林烤鸭(金台路店)",
+    "address": "延静西里甲7号楼(京玺酒店旁)",
+    "lat": 39.920386,
+    "lng": 116.484392,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B000A8U4ZV/comment/e5f549f8866a14e8b74d20c64faa43aa_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B000A8U4ZV/comment/f60afe30a888286c3cf6cdb8097f3a39_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B000A8U4ZV/comment/50ea9bc73783a510981e5ee399371f97_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A87G3Q",
+    "name": "北门涮肉·铜锅涮肉(什刹海店)",
+    "address": "北京城区帽儿胡同乙43号(什刹海地铁站C东南口步行230米)",
+    "lat": 39.936452,
+    "lng": 116.398466,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/1f4c6a3bcadb6efac42ecf15da7f8308",
+      "http://store.is.autonavi.com/showpic/7823ddc26c82ec304b2ebce7c46aa71b",
+      "http://store.is.autonavi.com/showpic/75ddf7014b7b193d943d74454198e539"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A87FFB",
+    "name": "兰庭玉树·老饭骨家宴(后海店)",
+    "address": "板桥二条15号(积水潭地铁站F口步行250米)",
+    "lat": 39.946416,
+    "lng": 116.373174,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/3d43090d945be1e907b10909e9024a76",
+      "http://store.is.autonavi.com/showpic/5b0a2ca9be7b71b75a2dbdfc43cfc5e9",
+      "http://store.is.autonavi.com/showpic/c87ca0a08ad5f6de443c66620b152f70"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A83HQ4",
+    "name": "双福园东北菜(双榆树店)",
+    "address": "北京城区双榆树北路57号(中关村中学北侧)",
+    "lat": 39.972898,
+    "lng": 116.321775,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B000A83HQ4/comment/content_media_external_file_100002839_1751814023819_88855945.jpg",
+      "https://aos-comment.amap.com/B000A83HQ4/comment/content_media_external_file_1000034257_ss__1763207846743_07937259.jpg",
+      "https://store.is.autonavi.com/showpic/056db5f383ae5daf0000002334404698?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A2AC80",
+    "name": "老熟人烤肉城",
+    "address": "北京城区西罗园南里68号(京华饭店旁)",
+    "lat": 39.856677,
+    "lng": 116.389936,
+    "hasHighChair": false,
+    "isKidTolerant": false,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/09d6f52f64712dff55651ac2b4883bfa",
+      "http://store.is.autonavi.com/showpic/041b0070f8d82ab2113a63f3690abd92",
+      "http://store.is.autonavi.com/showpic/f23239fe9b4b33b900b7defee6d5c009"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0LACUL10Q",
+    "name": "同仁堂知嘛健康(零号店)",
+    "address": "思邈路与春林大街交叉口西100米",
+    "lat": 39.668531,
+    "lng": 116.293701,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/e44f03f74af2c6f80000002499182729?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFIB71KZ",
+    "name": "壹同·湖南菜·干面胡同",
+    "address": "东石槽胡同31号(灯市口地铁站C东南口步行330米)",
+    "lat": 39.916794,
+    "lng": 116.421661,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B0FFIB71KZ/comment/content_media_external_images_media_100002404_1731483268609_34399515.jpg",
+      "https://aos-comment.amap.com/B0FFIB71KZ/comment/a13be50b2edc7230c1ed43967abef2be_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B0FFIB71KZ/comment/97A0F157_813D_4CFB_9DC9_5F5402591207_L0_001_1500_200_1765024345543_52351202.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFI5FI5U",
+    "name": "静一餐厅(琉璃厂文化街店)",
+    "address": "琉璃厂东街2号",
+    "lat": 39.895208,
+    "lng": 116.389337,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/ad4726b1332fdbd4e1f2fb13f8384cf7",
+      "https://aos-comment.amap.com/B0FFI5FI5U/comment/C45F5D2A_B584_4555_9665_E74290662217_L0_001_1500_200_1766672731635_42895441.jpg",
+      "https://aos-comment.amap.com/B0FFI5FI5U/comment/content_media_external_file_84971_ss__1762591890681_09624962.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFHPOQ6Z",
+    "name": "魁元艺术餐厅(宋庄店)",
+    "address": "北京城区宋庄镇小堡村民委员会北1010米",
+    "lat": 39.965556,
+    "lng": 116.721058,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B0FFHPOQ6Z/comment/e9b5ea2ee58028140ba7a3fca8bb2ba6_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/comment/20260309-d3dc93c0653d7d40cb50aa54-9YslfqidDQcAgLiENgHuQA.jpg",
+      "https://store.is.autonavi.com/showpic/4da3dfc57734fa530000002458694340?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFHHU21V",
+    "name": "潭月烧鹅(三里屯太古里北区店)",
+    "address": "北京城区三里屯路19号三里屯太古里北区LG层NLG-09a",
+    "lat": 39.939022,
+    "lng": 116.454937,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/4bab4a1d0eaedc82c1c3565a34231ee2",
+      "https://aos-comment.amap.com/B0FFHHU21V/comment/content_media_external_images_media_100002408_1731483369170_84904858.jpg",
+      "http://store.is.autonavi.com/showpic/9b39a55b537c1bd2e6273a44a58af507"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFHD43CV",
+    "name": "粒粒仓(牡丹园店)",
+    "address": "牡丹园花园路2号牡丹园翠微百货左侧",
+    "lat": 39.977752,
+    "lng": 116.365902,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/69ffdb8bf82b387fa05b97cf36915416",
+      "https://aos-comment.amap.com/B0FFHD43CV/comment/content_media_external_file_1000125780_ss__1769595469823_32464097.jpg",
+      "https://aos-comment.amap.com/B0FFHD43CV/comment/content_media_external_file_1000001822_ss__1763083056285_86255724.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFH0HKBY",
+    "name": "甲丁堤岸打边炉(将台店)",
+    "address": "北京城区酒仙桥村132号(将台地铁站C东南口步行210米)",
+    "lat": 39.968287,
+    "lng": 116.489207,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/7c41442a8fdf833b0000002344906666?type=pic",
+      "https://aos-comment.amap.com/B0FFH0HKBY/comment/FEC6F94A_7CFD_4519_B3C7_0036346BDFAD_L0_001_2016_151_1760570541384_18572103.jpg",
+      "https://aos-comment.amap.com/B0FFH0HKBY/comment/85716586a45d352d19a48e4a62fcfc14_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFGU7P0C",
+    "name": "小印象云南菜(酒仙桥店)",
+    "address": "酒仙桥红霞路3号晶都国际酒店对面",
+    "lat": 39.966047,
+    "lng": 116.489245,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B0FFGU7P0C/comment/content_media_external_file_1000012835_ss__1753957811731_82854837.jpg",
+      "https://aos-comment.amap.com/B0FFGU7P0C/comment/content_media_external_file_34799_ss__1764136636524_34192599.jpg",
+      "https://aos-comment.amap.com/comment/20260315-b0532d912d77027ff9cc8060-7BTlxwOQ0lL9qaNgNbq6c7.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFG39S42",
+    "name": "勺园食堂",
+    "address": "颐和园路5号北京大学内勺园2号楼1层餐厅(近中关村)",
+    "lat": 39.991855,
+    "lng": 116.305538,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B0FFG39S42/comment/6071EDC9_8B22_4F37_B595_D2DE424C8672_L0_001_1500_200_1771715251569_75919292.jpg",
+      "https://aos-comment.amap.com/B0FFG39S42/comment/6D42B076_85DA_4CFF_9DA0_24BB3F2FFB9B_L0_001_1500_200_1761713271711_05150812.jpg",
+      "https://aos-comment.amap.com/comment/20260321-95375627756c208edb215a16-XF0O8WlR8x8WvGRFl7zYN.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFG2OAOP",
+    "name": "南城小刘涮肉(虎坊桥店)",
+    "address": "大川二巷18号(阡儿胡同口)",
+    "lat": 39.888293,
+    "lng": 116.388193,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B0FFG2OAOP/comment/27FD35C2_A6F9_4B3F_B4A5_814892B3E744_L0_001_700_350_1759541152119_93523124.jpg",
+      "https://store.is.autonavi.com/showpic/defa57345112260f0000000960448465?type=pic",
+      "https://aos-comment.amap.com/B0FFG2OAOP/comment/bfbb40e83cf1de1ba7d10a58670285b6_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFFYK9KR",
+    "name": "清华大学桃李园餐厅",
+    "address": "成府路45-1号清华园内",
+    "lat": 40.010939,
+    "lng": 116.326059,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B0FFFYK9KR/comment/file_media_Photo_11513_IMG_1773463848_11264_IMG_20260314_124908_jpg_ss__1773465319134_54251403.jpg",
+      "https://aos-comment.amap.com/B0FFFYK9KR/comment/%5B2025-11-27-21-25-45%5D58D20376-9E18-4B6D-A6B5-2FC15F7EDCD_1764249947007_81150925.jpg",
+      "https://aos-comment.amap.com/comment/20260316-f72402efbc4f60e026bfa55d-GoHVk2DTzA0zKOmQelL0.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFFT514L",
+    "name": "天府食舫(中海商务中心店)",
+    "address": "北京城区阜成门外大街1号四川大厦西门A区",
+    "lat": 39.924378,
+    "lng": 116.353402,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B0FFFT514L/comment/20260320-0d5fba9e4952fb4983d8504d-5F0QuSSZa4b7mjs1sqOCCD.jpg",
+      "https://aos-comment.amap.com/B0FFFT514L/comment/content_media_external_file_3114_1764889700669_33630501.jpg",
+      "https://aos-comment.amap.com/B0FFFT514L/comment/6741f60ea113516e0238171626b58c4c_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A6D3FB",
+    "name": "同和居(月坛店)",
+    "address": "月坛南街甲71号",
+    "lat": 39.914189,
+    "lng": 116.340044,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B000A6D3FB/comment/6693B4FB_4E26_4F72_87B2_B0E6C92AF922_L0_001_1500_200_1755179876862_88984057.jpg",
+      "https://aos-comment.amap.com/B000A6D3FB/comment/326fd18c4e4ac8f250ff74700e1beabe_2048_2048_80.jpg",
+      "https://store.is.autonavi.com/showpic/edb931503ec673240000000653316733"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A8U6F5",
+    "name": "鸿宾楼(北京西城区)",
+    "address": "展览馆路11号",
+    "lat": 39.927867,
+    "lng": 116.34352,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/8af936b3ee17065b3ab372eba8e770f4",
+      "http://store.is.autonavi.com/showpic/bd81c8b476e4f1f976fb4b222e829ec7",
+      "http://store.is.autonavi.com/showpic/ec3e3e3d96c01c70d50a64b6c3de59f0"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0I1FANOWX",
+    "name": "丝路驿站(丽都店)",
+    "address": "北京城区芳园西路6号1号楼丽都花园北门",
+    "lat": 39.974995,
+    "lng": 116.478686,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/8684431e28ae11c4e87e2e7345456880",
+      "https://store.is.autonavi.com/showpic/246f1b9f38ba994d91eaa016f8b92cfd",
+      "https://store.is.autonavi.com/showpic/6a6055a743549f0c1f5c1bcc4e0edc41"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0G1L56BKT",
+    "name": "江仙雅居(中航国际店)",
+    "address": "大兴区经济技术开发区荣华南路13号院1号楼2层201",
+    "lat": 39.782934,
+    "lng": 116.516871,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/6c33595366e5ced61ed6f7d06ff6e786",
+      "https://store.is.autonavi.com/showpic/e5815807dfa42aff94b33cb3d2d62b7f",
+      "http://store.is.autonavi.com/showpic/7115baa14b708573a2146bf195be272a"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFJMG3RK",
+    "name": "佳木斯人在北京(亚运村店)",
+    "address": "大屯北路金泉美食宫F-1-20佳木斯人在北京特色烧烤",
+    "lat": 40.005862,
+    "lng": 116.411247,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B0FFJMG3RK/comment/4cd31c80bb506e8cf6b489ca8087f65f_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B0FFJMG3RK/comment/0c2d1b01e62530ea3384fe1874ea1657_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B0FFJMG3RK/comment/content_media_external_images_media_100009614_1733667612556_27245929.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A9P06J",
+    "name": "京北渔家傲",
+    "address": "怀黄路288号2",
+    "lat": 40.40767,
+    "lng": 116.554038,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/85396ec9307690af49c74b96d80402f4",
+      "http://store.is.autonavi.com/showpic/9590fb06198b14255443437bca15b748",
+      "http://store.is.autonavi.com/showpic/1fba724f846ec23e10d65dfee4699cc9"
+    ],
     "tags": [
       "ai_draft_v1"
     ],

@@ -1,0 +1,77 @@
+[
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0LATA01SF",
+    "name": "卷不动了森林咖啡馆",
+    "address": "径山镇小古城村委斜对面",
+    "lat": 30.38915,
+    "lng": 119.870513,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B023B08UVT",
+    "name": "西湖春天·粤府(深蓝广场店)",
+    "address": "朝晖路203号深蓝广场2楼",
+    "lat": 30.276491,
+    "lng": 120.169269,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0G3RHAU1A",
+    "name": "杭州西湖风景名胜区-石屋洞",
+    "address": "西湖街道西湖风景区下满觉陇路3号",
+    "lat": 30.219835,
+    "lng": 120.130638,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0K1TSUW9Y",
+    "name": "CHAGEE霸王茶姬(浙江杭州西湖柳浪闻莺店)",
+    "address": "杭州西湖风景名胜区内(东北角)",
+    "lat": 30.241101,
+    "lng": 120.155135,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0FFFA5PC5",
+    "name": "江南名石苑餐厅",
+    "address": "北山街87-3号",
+    "lat": 30.251828,
+    "lng": 120.132918,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  }
+]

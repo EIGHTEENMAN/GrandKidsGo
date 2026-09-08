@@ -1,0 +1,4652 @@
+[
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0K0ZHZ3ZN",
+    "name": "北京市海淀区妇幼保健院(北部院区)",
+    "address": "六里屯南路6号",
+    "lat": 40.053571,
+    "lng": 116.249194,
+    "hasPediatrics": true,
+    "phone": "010-82871460",
+    "images": [
+      "https://aos-comment.amap.com/B0K0ZHZ3ZN/comment/content_media_external_file_1000162041_ss__1764839705032_33423637.jpg",
+      "https://aos-comment.amap.com/B0K0ZHZ3ZN/comment/content_media_external_file_1000007375_ss__1764411582410_31285896.jpg",
+      "https://aos-comment.amap.com/B0K0ZHZ3ZN/comment/content_media_external_images_media_1000041450_ss__1752199113156_38815623.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000ABCLP7",
+    "name": "北京天使儿童医院",
+    "address": "北京市广渠路大郊亭桥东200米2号",
+    "lat": 39.892595,
+    "lng": 116.492598,
+    "hasPediatrics": true,
+    "phone": "15300271779",
+    "images": [
+      "https://aos-comment.amap.com/B000ABCLP7/comment/ecb18af343cb536db5954a28adb0ea19_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B000ABCLP7/comment/content_media_external_file_100004970_1764244658387_91393837.jpg",
+      "https://aos-comment.amap.com/B000ABCLP7/comment/content_media_external_file_100004970_1764244658390_37847888.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A8XAZK",
+    "name": "北京新世纪儿童医院",
+    "address": "南礼士路56号",
+    "lat": 39.911919,
+    "lng": 116.355922,
+    "hasPediatrics": true,
+    "phone": "4006625588",
+    "images": [
+      "https://aos-comment.amap.com/B000A8XAZK/comment/content_media_external_images_media_100002144_1744269123202_34852451.jpg",
+      "https://store.is.autonavi.com/showpic/749deb7e83b2a78660a9a68503aaad36",
+      "https://store.is.autonavi.com/showpic/f88b71e7b6ac331f8ea401c362a8b284"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A7E92N",
+    "name": "北京市东城区妇幼保健院(南院区)",
+    "address": "法华南里25号",
+    "lat": 39.887348,
+    "lng": 116.425925,
+    "hasPediatrics": true,
+    "phone": "010-67122966;010-67163922",
+    "images": [
+      "http://store.is.autonavi.com/showpic/dd02cf0f8900af09dc07e208ea793f59",
+      "http://store.is.autonavi.com/showpic/537f03c4a310b9502c0d05ee",
+      "https://aos-comment.amap.com/B000A7E92N/comment/content_media_external_file_17940_1763332810444_24991248.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A9EH2O",
+    "name": "嫣然天使儿童医院",
+    "address": "阜通东大街望京东园519号楼",
+    "lat": 39.996701,
+    "lng": 116.483934,
+    "hasPediatrics": true,
+    "phone": "010-84781977",
+    "images": [
+      "https://store.is.autonavi.com/showpic/d3876385a88fbd39426632e2d5a470b3",
+      "https://aos-comment.amap.com/B000A9EH2O/comment/339a18380372cbc611b7725c747071a4_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B000A9EH2O/comment/1906901dcbbba94b701c12ecd36f0843_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFHCXYRV",
+    "name": "北京北儿窦店儿童医院",
+    "address": "窦店镇田家园",
+    "lat": 39.65846,
+    "lng": 116.06867,
+    "hasPediatrics": true,
+    "phone": "010-80320999",
+    "images": [
+      "http://store.is.autonavi.com/showpic/7864722cd6675a4f0367501b0d2142ec",
+      "https://aos-comment.amap.com/B0FFHCXYRV/comment/content_media_external_images_media_100006232_1728703488721_39581031.jpg",
+      "https://aos-comment.amap.com/B0FFHCXYRV/comment/486999c25f99277ec83d19ecbcb8d4d0_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFFAHHSE",
+    "name": "解放军总医院第七医学中心附属八一儿童医院",
+    "address": "东四十条南门仓5号解放军总医院第七医学中心内(近青蓝大厦)",
+    "lat": 39.930342,
+    "lng": 116.430187,
+    "hasPediatrics": true,
+    "phone": "010-66721117;010-66721787",
+    "images": [
+      "https://store.is.autonavi.com/showpic/8dcd7ec814a370c74ebbb3b8fa0934cc",
+      "http://store.is.autonavi.com/showpic/9d3f4e7140ee0061e1da9b4278868dd0",
+      "http://store.is.autonavi.com/showpic/8bd88df757e8d4fd8c03c98ca797eaf7"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0JG3HV2KQ",
+    "name": "瞳博士眼科•儿童青少年视力防控中心(丰台方庄院)",
+    "address": "方庄芳星园三区20号楼商业1层20-3-101",
+    "lat": 39.859386,
+    "lng": 116.435717,
+    "hasPediatrics": true,
+    "phone": "18310208112",
+    "images": [
+      "https://store.is.autonavi.com/showpic/6314dae52eed3930c929e0a76d2ea1e5",
+      "http://store.is.autonavi.com/showpic/c32742e28e2ae115026e7f3b626dc136",
+      "https://aos-comment.amap.com/B0JG3HV2KQ/comment/EC0CA7D9_8112_4F5F_8492_A416C37203EA_L0_001_1080_1920_1729321464982_11801297.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A83N5I",
+    "name": "北京首儿李桥儿童医院",
+    "address": "李天路李桥段5号(李天桥西侧)",
+    "lat": 40.038523,
+    "lng": 116.659924,
+    "hasPediatrics": true,
+    "phone": "010-81473388",
+    "images": [
+      "https://aos-comment.amap.com/B000A83N5I/headerImg/4a26475c5aa060fe04edf84b86e5bf2a_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B000A83N5I/headerImg/ef306f17f5e922ce41ae1540e2382b22_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B000A83N5I/comment/4564556B_CDCC_478D_A282_C70DA46E5FA5_L0_001_1123_920_1740819163283_82283126.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFGIS416",
+    "name": "北京未来儿童医院",
+    "address": "八角街道阜石路166号泽洋大厦2楼",
+    "lat": 39.920982,
+    "lng": 116.20074,
+    "hasPediatrics": true,
+    "phone": "010-53352808;010-68886888",
+    "images": [
+      "http://store.is.autonavi.com/showpic/48e46e2cea55fd7346ebd02b4dbf4b66",
+      "https://aos-comment.amap.com/B0FFGIS416/comment/25A41EB7_B439_4258_925F_47F41F9DD689_L0_001_2000_1500_1744330900195_94611112.jpg",
+      "https://aos-comment.amap.com/B0FFGIS416/comment/content_media_external_file_1000047600_ss__1758943715184_86619049.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0LADU8E76",
+    "name": "清清博视儿童眼视光中心(三元桥店)",
+    "address": "三元桥曙光西里甲1号第三置业B座302室",
+    "lat": 39.960648,
+    "lng": 116.451593,
+    "hasPediatrics": true,
+    "phone": "4006193316",
+    "images": [
+      "http://store.is.autonavi.com/showpic/da6a3f1c4abb6bafdb28c645bb43383f",
+      "https://aos-comment.amap.com/B0LADU8E76/comment/content_media_external_file_100003093_1766463034562_75412589.jpg",
+      "https://store.is.autonavi.com/showpic/180306092ec51abd982ed0ac5b7ca851"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFG4E2ZT",
+    "name": "首都医科大学附属北京儿童医院儿童保健中心",
+    "address": "南礼士路56号",
+    "lat": 39.912376,
+    "lng": 116.352945,
+    "hasPediatrics": true,
+    "phone": "010-59616384",
+    "images": [
+      "https://aos-comment.amap.com/B0FFG4E2ZT/comment/237c921193825ada9e123e9a7e564e00_2048_2048_80.jpg",
+      "http://store.is.autonavi.com/showpic/fd67d55869c3f7fd85cd4bed0a61398b",
+      "http://store.is.autonavi.com/showpic/7a65f640c615028c1370f1d167e04305"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFGPTCB2",
+    "name": "北京儿童医院顺义妇儿医院住院部",
+    "address": "顺康路1号北京儿童医院顺义妇儿医院内",
+    "lat": 40.114851,
+    "lng": 116.673154,
+    "hasPediatrics": true,
+    "phone": "010-81412345",
+    "images": [
+      "http://store.is.autonavi.com/showpic/57d495d493d5bef1c6e052b0cfe113ec"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0M64SIS9I",
+    "name": "北京儿童医院国际医疗部",
+    "address": "南礼士路56号",
+    "lat": 39.91334,
+    "lng": 116.354408,
+    "hasPediatrics": true,
+    "phone": "010-59616263",
+    "images": [
+      "https://store.is.autonavi.com/showpic/baefeaf6b16a624c2690945225937155",
+      "https://store.is.autonavi.com/showpic/b67fe9a8321378bec94272506c5f6318",
+      "https://store.is.autonavi.com/showpic/1922d066a63b9c4258fff67f70887953"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0LAYUZEXS",
+    "name": "清清博视儿童眼视光中心(大兴分店)",
+    "address": "北京城区云河墅北门底商1层",
+    "lat": 39.76655,
+    "lng": 116.3296,
+    "hasPediatrics": true,
+    "phone": "4006193316",
+    "images": [
+      "https://store.is.autonavi.com/showpic/04eee8d8b9446a9301fa5a093956adc1",
+      "https://aos-comment.amap.com/B0LAYUZEXS/comment/20260320-a6e783f454c824838348fb23-xW8npPdHMb9Yzy6yFhm7U.jpg",
+      "https://store.is.autonavi.com/showpic/56d9f96a2578652d5b597f63eb562a5e"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0LG7O49YL",
+    "name": "北京东区儿童医院口腔中心",
+    "address": "八棵杨北街与八棵杨西路交叉口西北80米",
+    "lat": 39.891475,
+    "lng": 116.462075,
+    "hasPediatrics": true,
+    "phone": [],
+    "images": [
+      "https://store.is.autonavi.com/showpic/3187f7a6f94b669f13dbdd17c0814ed6",
+      "https://store.is.autonavi.com/showpic/6e5331062cf64023d7c588976eb14bed"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0J2RRWW5H",
+    "name": "北大医疗脑健康儿童康学之家(北京角门中心)",
+    "address": "北京城区马家堡西路15号时代风帆大厦时代天街三层01",
+    "lat": 39.846825,
+    "lng": 116.370725,
+    "hasPediatrics": true,
+    "phone": "15110253101",
+    "images": [
+      "http://store.is.autonavi.com/showpic/22adef6a9a4a15195f24ac568664cc14",
+      "https://store.is.autonavi.com/showpic/ddcbe99d3654859e8fea82be801b584e",
+      "https://store.is.autonavi.com/showpic/d56da3c5c88e5fef8a265bb45d0812ad"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFHLMOQ6",
+    "name": "康朴乐COMF·PRO儿童学习桌椅(集美家居大红门店)",
+    "address": "集美家居大红门店三厅二层",
+    "lat": 39.83382,
+    "lng": 116.393016,
+    "hasPediatrics": true,
+    "phone": "13522063955;18911988882",
+    "images": [
+      "http://store.is.autonavi.com/showpic/56f80b7c5284b6f33478ba773fc7a053",
+      "http://store.is.autonavi.com/showpic/0693770ea0f6e5eb71c684c0af8afd53",
+      "http://store.is.autonavi.com/showpic/495075194dfed6726e6f315391976b10"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0JR9ULGMM",
+    "name": "北京天使儿童医院·生长发育科",
+    "address": "广渠东路166号大郊亭2号",
+    "lat": 39.892514,
+    "lng": 116.492664,
+    "hasPediatrics": true,
+    "phone": "010-83839090",
+    "images": [
+      "https://store.is.autonavi.com/showpic/a53d2afb0df33f9b914b61c341d8f6c2"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0I6A74UZO",
+    "name": "艾佑堂儿童推拿(角门店)",
+    "address": "北京城区嘉园三里3号楼天阳亲子广场2层F2-11",
+    "lat": 39.845664,
+    "lng": 116.366863,
+    "hasPediatrics": true,
+    "phone": "13520579515",
+    "images": [
+      "http://store.is.autonavi.com/showpic/cecc5e8fbea21949a6ada7e01647ae67",
+      "http://store.is.autonavi.com/showpic/3ebd4345e4590811673635c0143b37e8",
+      "http://store.is.autonavi.com/showpic/f4cf386382e054385f8d65d29856f00c"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0K0HU95E2",
+    "name": "杏仁家儿童健康管理中心",
+    "address": "云景东路17-5号二楼",
+    "lat": 39.880572,
+    "lng": 116.665867,
+    "hasPediatrics": true,
+    "phone": "13269610114",
+    "images": [
+      "http://store.is.autonavi.com/showpic/9c59f22410b5f7c865c8006fccb41704",
+      "https://store.is.autonavi.com/showpic/5cec55d4a8815111f97e3507e08b0c10",
+      "https://store.is.autonavi.com/showpic/2002a876be94062ebf9b6e967bc75cf6"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0KB314A7B",
+    "name": "京都儿童医院国际部",
+    "address": "回龙观东大街308号",
+    "lat": 40.080001,
+    "lng": 116.357226,
+    "hasPediatrics": true,
+    "phone": "18513206293",
+    "images": [
+      "http://store.is.autonavi.com/showpic/30339129c39856f75750d0897ac5d8a4",
+      "https://store.is.autonavi.com/showpic/e6fbbdf076ffcc22ff7d17962c035a13",
+      "http://store.is.autonavi.com/showpic/429c6fd5aa27f73d90fe84a0285213c0"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A561A6",
+    "name": "首都医科大学附属首都儿童医学中心",
+    "address": "雅宝路2号",
+    "lat": 39.914787,
+    "lng": 116.439081,
+    "hasPediatrics": true,
+    "phone": "010-85695555",
+    "images": [
+      "https://aos-comment.amap.com/B000A561A6/comment/486e60d7b8274a56dbde5a23047331ce_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B000A561A6/comment/aa871cb925d1b5f56dad94cef86d0947_2048_2048_80.jpg",
+      "https://store.is.autonavi.com/showpic/02cb6d166005f208666aa526c401c335"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A87GVW",
+    "name": "中国医学科学院阜外医院",
+    "address": "北礼士路167号",
+    "lat": 39.925289,
+    "lng": 116.351313,
+    "hasPediatrics": false,
+    "phone": "010-88322674",
+    "images": [
+      "https://store.is.autonavi.com/showpic/2566a11f8354e905ebd9ea2bbdcf7b32",
+      "https://aos-comment.amap.com/B000A87GVW/comment/content_media_external_file_13391_1753258671647_92441947.jpg",
+      "https://aos-comment.amap.com/B000A87GVW/comment/8707591baf7b893b3cf832fa2f546419_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A24092",
+    "name": "首都医科大学附属北京中医医院",
+    "address": "美术馆后街23号(南锣鼓巷地铁站F东北口步行480米)",
+    "lat": 39.931876,
+    "lng": 116.407913,
+    "hasPediatrics": false,
+    "phone": "010-84712345",
+    "images": [
+      "http://store.is.autonavi.com/showpic/8c9c6f39baab3cfed35b69d01028aada",
+      "https://aos-comment.amap.com/B000A24092/comment/b77b92155fe3aef7f5f1aa52728aff76_2048_2048_80.jpg",
+      "https://store.is.autonavi.com/showpic/ea0c9499e2f5f80ae84c1e7a26cb69ed"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A7WHGI",
+    "name": "首都医科大学附属北京妇产医院东院",
+    "address": "姚家园路251号",
+    "lat": 39.931304,
+    "lng": 116.471338,
+    "hasPediatrics": false,
+    "phone": "010-52276699",
+    "images": [
+      "http://store.is.autonavi.com/showpic/7b93a3c4e21cce2904f6ac6d0e1b2d84",
+      "https://aos-comment.amap.com/B000A7WHGI/comment/C93FB086_E7DF_4E4B_94EF_230AC164C1E8_L0_001_1500_200_1753857816966_98713323.jpg",
+      "https://aos-comment.amap.com/comment/content_service__1770436205185_92889966_1770436407555_40711271.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0IDKHK72E",
+    "name": "首都医科大学附属北京口腔医院主院区",
+    "address": "樊家村路9号院",
+    "lat": 39.838544,
+    "lng": 116.318152,
+    "hasPediatrics": false,
+    "phone": "010-57099284",
+    "images": [
+      "https://aos-comment.amap.com/B0IDKHK72E/comment/C29CDD07_CD86_4007_8F21_EF20B680F510_L0_001_1439_91_1768361353368_16101931.jpg",
+      "https://store.is.autonavi.com/showpic/e9bab8b26c076cefed2c4aa4f35d643d",
+      "https://store.is.autonavi.com/showpic/668960ee52d2b01fb10fb2fec68c697c"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A9Q0A3",
+    "name": "北京大学国际医院",
+    "address": "中关村生命科学园生命园路1号",
+    "lat": 40.101167,
+    "lng": 116.263513,
+    "hasPediatrics": false,
+    "phone": "010-69006666;010-69006900",
+    "images": [
+      "http://store.is.autonavi.com/showpic/395e595142bf8c7c657e7ee39bc5a5ed",
+      "https://aos-comment.amap.com/B000A9Q0A3/comment/content_media_external_images_media_17882_1735268220438_58792439.jpg",
+      "https://aos-comment.amap.com/B000A9Q0A3/comment/content_media_external_images_media_17882_1735268220438_49386414.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A7YVTM",
+    "name": "中国中医科学院广安门医院",
+    "address": "北线阁5号",
+    "lat": 39.890596,
+    "lng": 116.35173,
+    "hasPediatrics": false,
+    "phone": "010-88001222;010-83123311",
+    "images": [
+      "http://store.is.autonavi.com/showpic/2c02c2364fb6e4c9cbb0fefbe3ae3a02",
+      "http://store.is.autonavi.com/showpic/f5a2499ae9e6355f0e71d4b0ae810de8",
+      "https://aos-comment.amap.com/B000A7YVTM/comment/content_media_external_file_17367_1763807022038_64711494.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A8VUX1",
+    "name": "空军特色医学中心",
+    "address": "阜成路30号",
+    "lat": 39.92152,
+    "lng": 116.301346,
+    "hasPediatrics": false,
+    "phone": "010-66928009;010-66928118;010-66928200",
+    "images": [
+      "http://store.is.autonavi.com/showpic/33205abab14526c0927da3b1d2186455",
+      "https://store.is.autonavi.com/showpic/7370fb050722d07b877c7231c46bee4e",
+      "https://aos-comment.amap.com/B000A8VUX1/comment/content_media_external_file_2066_1756331463055_82029756.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A82Z2N",
+    "name": "北京协和医院(东单院区)",
+    "address": "帅府园1号",
+    "lat": 39.912815,
+    "lng": 116.41513,
+    "hasPediatrics": false,
+    "phone": "010-69156114",
+    "images": [
+      "http://store.is.autonavi.com/showpic/424212df0b2cc0549de5c01fd6e4ec4b",
+      "https://aos-comment.amap.com/B000A82Z2N/comment/content_media_external_file_100009812_1749527385146_33245159.jpg",
+      "https://store.is.autonavi.com/showpic/3bc183019de64fe00000003046496754?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFFYTUKL",
+    "name": "首都医科大学附属北京天坛医院",
+    "address": "南四环西路119号(南四环花乡桥东北)",
+    "lat": 39.834653,
+    "lng": 116.315119,
+    "hasPediatrics": false,
+    "phone": "010-59978585",
+    "images": [
+      "http://store.is.autonavi.com/showpic/c2c19a20162210c3ee8018f67928766c",
+      "http://aos-cdn-image.amap.com/sns/ugccomment/96aa93fc-ef87-48b3-b307-209a02c14555.jpg",
+      "https://aos-comment.amap.com/B0FFFYTUKL/comment/F898C932_6880_4967_9D2D_D99D2121DC4F_L0_001_2000_1126_1740796310066_07442672.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A9DPJ4",
+    "name": "中国人民解放军总医院",
+    "address": "复兴路28号",
+    "lat": 39.904572,
+    "lng": 116.276578,
+    "hasPediatrics": false,
+    "phone": "010-66937748",
+    "images": [
+      "https://store.is.autonavi.com/showpic/22902b81d76c5add0000004112126661",
+      "https://store.is.autonavi.com/showpic/06ae4e70c5369e6727b2236268e35b6f",
+      "https://store.is.autonavi.com/showpic/c38c3929d932ea94efe87f5e73bf5d53"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A3EA6A",
+    "name": "首都医科大学宣武医院",
+    "address": "长椿街45号",
+    "lat": 39.891136,
+    "lng": 116.361951,
+    "hasPediatrics": false,
+    "phone": "010-83922345",
+    "images": [
+      "http://store.is.autonavi.com/showpic/cbd5cb859722b1bd192bd0e35e4b119d",
+      "https://aos-comment.amap.com/B000A3EA6A/comment/content_media_external_file_2313_1749435388774_36522208.jpg",
+      "https://store.is.autonavi.com/showpic/a7f96fb7bb4cd6090000002650782911?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A84SNR",
+    "name": "中国医学科学院肿瘤医院",
+    "address": "潘家园南里17号",
+    "lat": 39.87294,
+    "lng": 116.446921,
+    "hasPediatrics": false,
+    "phone": "010-67781331",
+    "images": [
+      "https://store.is.autonavi.com/showpic/ceb3f36ebb1c6f170000003051920817?type=pic",
+      "https://aos-comment.amap.com/B000A84SNR/comment/content_media_external_file_100003910_1756623744411_19775783.jpg",
+      "https://aos-comment.amap.com/B000A84SNR/comment/content_media_external_file_1000027215_ss__1766710765452_73633743.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A5BA25",
+    "name": "北京大学人民医院(西直门院区)",
+    "address": "西直门南大街11号(西直门地铁站D西南口步行390米)",
+    "lat": 39.936961,
+    "lng": 116.354215,
+    "hasPediatrics": false,
+    "phone": "010-88326666",
+    "images": [
+      "http://store.is.autonavi.com/showpic/048c586c38c57721a6862abad979aea1",
+      "https://aos-comment.amap.com/B000A5BA25/comment/content_media_external_file_100007737_1765378311968_50223677.jpg",
+      "https://store.is.autonavi.com/showpic/a957231c48bb0ed2a5bd46d5711027a7"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A7CNNE",
+    "name": "北京大学第一医院(西城厂桥院区)",
+    "address": "西什库大街8号",
+    "lat": 39.931911,
+    "lng": 116.380745,
+    "hasPediatrics": false,
+    "phone": "010-83572211;010-83572544",
+    "images": [
+      "http://store.is.autonavi.com/showpic/fbf8facd05e954af0afecc6a09e92748",
+      "http://store.is.autonavi.com/showpic/c015425fe54c0c186e4e7c88ba39307c",
+      "http://store.is.autonavi.com/showpic/57df687253dd41b5275b82953b0ce70d"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFLQ3QBJ",
+    "name": "北京同仁医院(亦庄院区)",
+    "address": "西环南路2号",
+    "lat": 39.7751,
+    "lng": 116.519723,
+    "hasPediatrics": false,
+    "phone": [],
+    "images": [
+      "http://store.is.autonavi.com/showpic/0a4051a394d986401570352894a02715",
+      "https://store.is.autonavi.com/showpic/164e0bece01a65840000003045264824?type=pic",
+      "https://store.is.autonavi.com/showpic/4a9fff188ff8f6010000003008616889?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A8316D",
+    "name": "中国医学科学院整形外科医院",
+    "address": "八大处路33号(近北京射击场)",
+    "lat": 39.942676,
+    "lng": 116.198602,
+    "hasPediatrics": false,
+    "phone": "010-53968000",
+    "images": [
+      "http://store.is.autonavi.com/showpic/8418bd68ebd46b431489dc7c57112482",
+      "https://aos-comment.amap.com/B000A8316D/comment/D223DAC2_0DBD_4B0F_8B29_506164E9B3DA_L0_001_1440_165_1774153495158_53771409.jpg",
+      "https://aos-comment.amap.com/B000A8316D/comment/4374eca3bdc2120a5138a6047d058131_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFFVGQPU",
+    "name": "首都医科大学附属北京安贞医院",
+    "address": "安贞路2号",
+    "lat": 39.973153,
+    "lng": 116.403379,
+    "hasPediatrics": false,
+    "phone": "010-64412431",
+    "images": [
+      "http://store.is.autonavi.com/showpic/f9325cf046685fc27282781d2edf0ef7",
+      "https://store.is.autonavi.com/showpic/a2ea099da56ee3aeddbc7b5615a7443d",
+      "https://store.is.autonavi.com/showpic/834f6df0b726a7fd0000003054844431?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A81KK9",
+    "name": "首都医科大学附属北京同仁医院·西区",
+    "address": "东交民巷1号",
+    "lat": 39.902721,
+    "lng": 116.417224,
+    "hasPediatrics": false,
+    "phone": "010-58266699;010-58269911",
+    "images": [
+      "http://store.is.autonavi.com/showpic/b8ed616a3d5c88df3e4216e0c4efcdad",
+      "https://aos-comment.amap.com/B000A81KK9/comment/content_media_external_images_media_1000021939_ss__1734922233280_18004464.jpg",
+      "https://store.is.autonavi.com/showpic/8c9797398cd7bccd0000003072882143?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFHDV3WZ",
+    "name": "北京大学第一医院(大兴院区)",
+    "address": "高米店街道乐园路5号",
+    "lat": 39.768378,
+    "lng": 116.333224,
+    "hasPediatrics": false,
+    "phone": "010-83572211",
+    "images": [
+      "https://aos-comment.amap.com/B0FFHDV3WZ/comment/%5B2025-09-17-20-06-38%5DEFD52BA4-05DA-4F51-B8BF-850669F5574_1758110799930_33119589.jpg",
+      "https://store.is.autonavi.com/showpic/2778f799dc87d2fd0000003049332373?type=pic",
+      "https://store.is.autonavi.com/showpic/66862c635d0224f60000003046562323?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A7CGSS",
+    "name": "北京大学第三医院(院本部)",
+    "address": "花园北路49号",
+    "lat": 39.982728,
+    "lng": 116.36001,
+    "hasPediatrics": false,
+    "phone": "010-82266699",
+    "images": [
+      "http://store.is.autonavi.com/showpic/824faa2cccfc4aa50a4be6db0e2b653c",
+      "https://store.is.autonavi.com/showpic/91acdc06b92cd3b80000004497120426",
+      "https://aos-comment.amap.com/B000A7CGSS/comment/1feedback_sendimag_1736230733586_73578595.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A8370S",
+    "name": "中日友好医院本部",
+    "address": "樱花园东街2号",
+    "lat": 39.974097,
+    "lng": 116.426883,
+    "hasPediatrics": false,
+    "phone": "010-84205566",
+    "images": [
+      "http://store.is.autonavi.com/showpic/df28a3078eba3c21295455d7f346832f",
+      "https://aos-comment.amap.com/B000A8370S/comment/42fe97c1fa618d86f99815bff6a649af_2048_2048_80.jpg",
+      "https://store.is.autonavi.com/showpic/99252b923db83f83350f181b928737df"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A7ZOR8",
+    "name": "首都医科大学附属北京儿童医院",
+    "address": "南礼士路56号",
+    "lat": 39.912501,
+    "lng": 116.354367,
+    "hasPediatrics": true,
+    "phone": "010-59616161",
+    "images": [
+      "http://store.is.autonavi.com/showpic/38f39d069fedff8d37c1cad3714c401b",
+      "https://aos-comment.amap.com/B000A7ZOR8/comment/content_media_external_images_media_1000022110_ss__1726901638013_35750377.jpg",
+      "https://store.is.autonavi.com/showpic/e6641858f5ca8fbe0000003058970086?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A7C1GL",
+    "name": "北京大学肿瘤医院",
+    "address": "阜成路52号",
+    "lat": 39.923043,
+    "lng": 116.289445,
+    "hasPediatrics": false,
+    "phone": "010-88121122;010-88196155;18010494987",
+    "images": [
+      "http://store.is.autonavi.com/showpic/fecbd7fbbaf660d02165d9c20e3cd9ae",
+      "https://store.is.autonavi.com/showpic/63db7fb2267b9c120000003080248589?type=pic",
+      "https://store.is.autonavi.com/showpic/cb69b63d2777cc8a0000003048940278?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A87C55",
+    "name": "北京积水潭医院(回龙观院区)",
+    "address": "回龙观街道回南北路68号",
+    "lat": 40.086589,
+    "lng": 116.322073,
+    "hasPediatrics": false,
+    "phone": "010-58516688",
+    "images": [
+      "http://store.is.autonavi.com/showpic/01480a6252cc3dbde33f48209e121de1",
+      "https://aos-comment.amap.com/B000A87C55/comment/EFC6F743_5AE3_419E_939B_2E01078E7CBD_L0_001_1500_200_1760245740720_21652038.jpg",
+      "https://store.is.autonavi.com/showpic/cf1d468aaabe7e5e0000003049314987?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A7ZGO3",
+    "name": "北京中医药大学东方医院方庄院区",
+    "address": "方庄芳星园一区6号",
+    "lat": 39.864075,
+    "lng": 116.432265,
+    "hasPediatrics": false,
+    "phone": "010-67689655;010-67689620;010-67689653",
+    "images": [
+      "http://store.is.autonavi.com/showpic/5a8fd6bb2a7e085301984e64b953063b",
+      "https://aos-comment.amap.com/B000A7ZGO3/comment/content_media_external_images_media_7241_1738384710275_48157333.jpg",
+      "https://aos-comment.amap.com/B000A7ZGO3/comment/175999288359_1759992886371_20400752.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A88E1U",
+    "name": "中国中医科学院西苑医院",
+    "address": "西苑操场1号",
+    "lat": 39.99516,
+    "lng": 116.293634,
+    "hasPediatrics": false,
+    "phone": "010-62835678;010-62835252",
+    "images": [
+      "http://store.is.autonavi.com/showpic/93338b8e28d026170d412ccdc92ecd7c",
+      "https://aos-comment.amap.com/B000A88E1U/comment/ED98C510_28B2_4C47_9121_D86B73F69693_L0_001_1439_178_1772504658831_74617891.jpg",
+      "https://store.is.autonavi.com/showpic/d04a72f85ebfaa730000003383806744?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFIBNGNO",
+    "name": "北京大学口腔医院第一门诊部",
+    "address": "西黄城根北街10号(西四地铁站B东北口步行430米)",
+    "lat": 39.924086,
+    "lng": 116.378016,
+    "hasPediatrics": false,
+    "phone": "010-53295000;010-58595031",
+    "images": [
+      "https://aos-comment.amap.com/B0FFIBNGNO/comment/C7F5339B_DB7C_4494_94AF_D3E56231C5D1_L0_001_1080_141_1772157710646_37526036.jpg",
+      "https://store.is.autonavi.com/showpic/c6276e3499c53287bc6cc102d03155e1",
+      "https://store.is.autonavi.com/showpic/69b88b85556f09ce0000004250072816?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A845NT",
+    "name": "首都医科大学附属北京朝阳医院院本部",
+    "address": "工人体育场南路8号",
+    "lat": 39.925878,
+    "lng": 116.453397,
+    "hasPediatrics": false,
+    "phone": "010-85231777",
+    "images": [
+      "http://store.is.autonavi.com/showpic/6872adc9ce1956b866a739fd1f482c58",
+      "https://aos-comment.amap.com/B000A845NT/comment/5568D427_CEA4_464A_AD5A_E80E7E501EB8_L0_001_1284_94_1753850800347_32831543.jpg",
+      "https://aos-comment.amap.com/B000A845NT/comment/content_media_external_file_1000005914_ss__1754035450514_26582959.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A88EDY",
+    "name": "首都医科大学附属北京妇产医院西院",
+    "address": "骑河楼街17号",
+    "lat": 39.920566,
+    "lng": 116.404272,
+    "hasPediatrics": false,
+    "phone": "010-52276699",
+    "images": [
+      "https://store.is.autonavi.com/showpic/038bc256abd21f890000003046640993?type=pic",
+      "https://store.is.autonavi.com/showpic/03525081ff9d72780000003069846505?type=pic",
+      "https://store.is.autonavi.com/showpic/6f193acbc2a05a100000003711546432?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFKRLF0O",
+    "name": "首都医科大学附属北京安贞医院通州院区",
+    "address": "京榆旧线宋庄南一街225号",
+    "lat": 39.940654,
+    "lng": 116.709794,
+    "hasPediatrics": false,
+    "phone": "010-81991101",
+    "images": [
+      "https://aos-comment.amap.com/B0FFKRLF0O/comment/%5B2024-10-22-15-18-58%5DCE34428A-A594-47C5-81E7-5F26D961DED_1729581540462_16554175.jpg",
+      "https://aos-comment.amap.com/B0FFKRLF0O/comment/content_media_external_file_100007791_1762959337428_60998752.jpg",
+      "https://aos-comment.amap.com/B0FFKRLF0O/comment/content_media_external_file_100007791_1762959337427_16054924.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A805XC",
+    "name": "京城皮肤医院",
+    "address": "北沙滩科荟路双泉堡甲4号",
+    "lat": 40.008517,
+    "lng": 116.36555,
+    "hasPediatrics": false,
+    "phone": "010-64888999",
+    "images": [
+      "http://store.is.autonavi.com/showpic/4caefa7a1c1bf2dc88b604ad72242057",
+      "https://store.is.autonavi.com/showpic/89116ca85bf48bf92c927d180486cf69",
+      "https://aos-comment.amap.com/B000A805XC/comment/IMG_20250910_094908_tem_1757468969553_17741744.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFM4L4R5",
+    "name": "首都医科大学附属北京朝阳医院(常营院区)",
+    "address": "东十里堡路3号",
+    "lat": 39.922325,
+    "lng": 116.602295,
+    "hasPediatrics": false,
+    "phone": "010-85231777",
+    "images": [
+      "https://aos-comment.amap.com/B0FFM4L4R5/comment/file_media_Photo_15164_IMG_1765166162_15033_IMG_20251208_115422_jpg_ss__1765169398213_29294606.jpg",
+      "https://aos-comment.amap.com/B0FFM4L4R5/comment/content_media_external_file_24221_ss__1745540227496_38449073.jpg",
+      "https://store.is.autonavi.com/showpic/4523e65fc01cf178b807b2c1cbc81a6b"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A2A796",
+    "name": "北京大学口腔医院总院门诊",
+    "address": "大慧寺路与中关村南大街交叉口东北80米",
+    "lat": 39.952109,
+    "lng": 116.324724,
+    "hasPediatrics": false,
+    "phone": "010-62179977",
+    "images": [
+      "http://store.is.autonavi.com/showpic/93f0b75d7908dd317f0ad84ced30c823",
+      "https://aos-comment.amap.com/B000A2A796/comment/7b2ec65f62a2b75dc215745d70ec2d29_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B000A2A796/comment/4D8A515D_B0AD_4A9B_A9A2_58D9659E45E6_L0_001_1280_1706_1730993557007_83509733.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A11DA0",
+    "name": "首都医科大学附属北京友谊医院西城院区",
+    "address": "永安路95号",
+    "lat": 39.885153,
+    "lng": 116.392125,
+    "hasPediatrics": false,
+    "phone": "010-63014411;010-63016616",
+    "images": [
+      "http://store.is.autonavi.com/showpic/d68bf7a304850f4e903e8b3140435769",
+      "https://aos-comment.amap.com/B000A11DA0/comment/%5B2025-05-15-08-52-40%5DA7EFD684-C74F-41AE-A086-DD032770240_1747270362278_41129216.jpg",
+      "https://store.is.autonavi.com/showpic/510cc94625c32028ef8a3c827777811a"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A5D5AE",
+    "name": "北京积水潭医院(新街口院区)",
+    "address": "新街口东街31号",
+    "lat": 39.944269,
+    "lng": 116.37482,
+    "hasPediatrics": false,
+    "phone": "010-58516688",
+    "images": [
+      "http://store.is.autonavi.com/showpic/2797d8c1207ddf9456ebc2a2a885e537",
+      "http://store.is.autonavi.com/showpic/539938e7a310b133764c74bd",
+      "https://store.is.autonavi.com/showpic/cbee3092462f22c40000003043506637?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFGFNTL2",
+    "name": "北京儿童医院妇儿中心",
+    "address": "顺康路1号",
+    "lat": 40.114598,
+    "lng": 116.672164,
+    "hasPediatrics": true,
+    "phone": "010-81412345",
+    "images": [
+      "https://aos-comment.amap.com/B0FFGFNTL2/comment/content_media_external_file_100004023_1754016650414_33366015.jpg",
+      "https://aos-comment.amap.com/B0FFGFNTL2/comment/content_media_external_file_45892_ss__1766643869688_04900514.jpg",
+      "https://store.is.autonavi.com/showpic/7f938f26a0475f113b766a17bbd30c12"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A80ZRG",
+    "name": "首都医科大学附属北京安定医院",
+    "address": "安康胡同5号",
+    "lat": 39.952767,
+    "lng": 116.376791,
+    "hasPediatrics": false,
+    "phone": "010-86430066",
+    "images": [
+      "http://store.is.autonavi.com/showpic/294d25d6ac3690a2efdfcadec2f8834a",
+      "https://aos-comment.amap.com/B000A80ZRG/comment/A659C1C7_CB4C_4E55_B55C_CB1CF97AFCB8_L0_001_1080_680_1742526846936_94302427.jpg",
+      "https://aos-comment.amap.com/B000A80ZRG/comment/D1DCE2D8_D1F0_4A88_806C_29F1964AAA27_L0_001_861_722_1742526846935_98623251.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A7ZWQO",
+    "name": "中国中医科学院眼科医院",
+    "address": "鲁谷路33号",
+    "lat": 39.904787,
+    "lng": 116.230919,
+    "hasPediatrics": false,
+    "phone": "010-68686800;010-68688877",
+    "images": [
+      "http://store.is.autonavi.com/showpic/f76e979190419812fc25381b29811814",
+      "https://aos-comment.amap.com/B000A7ZWQO/comment/3733B32D_67BF_46A2_959C_5E98899D1307_L0_001_1500_200_1761098305347_75973687.jpg",
+      "https://store.is.autonavi.com/showpic/b66f857e115c62d211dd13dc0d91094d"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A0A62E",
+    "name": "通州妇幼保健院",
+    "address": "玉桥中路124号",
+    "lat": 39.88728,
+    "lng": 116.683075,
+    "hasPediatrics": true,
+    "phone": "010-81583000;010-81591233",
+    "images": [
+      "https://aos-comment.amap.com/B000A0A62E/comment/content_media_external_file_24349_ss__1753897024206_51618325.jpg",
+      "http://aos-cdn-image.amap.com/sns/ugccomment/bf93ba70-fb3c-4d36-b8ae-475d05820dc6.jpg",
+      "https://store.is.autonavi.com/showpic/9f0e9ce666f0a0600000003141488970?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFFADUF5",
+    "name": "首都医科大学附属北京友谊医院(通州院区)",
+    "address": "潞苑东路101号院",
+    "lat": 39.934915,
+    "lng": 116.68278,
+    "hasPediatrics": false,
+    "phone": "010-80834411",
+    "images": [
+      "http://store.is.autonavi.com/showpic/d7e1f7a70c33b03d9cebadf3df7d358f",
+      "https://store.is.autonavi.com/showpic/d1b37f6fcd515e420000002499052642?type=pic",
+      "https://store.is.autonavi.com/showpic/b9d6e0eef402903d5cf73723b61e60e1"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFF5C1YE",
+    "name": "北京京都儿童医院",
+    "address": "北京城区回龙观东大街308号",
+    "lat": 40.080181,
+    "lng": 116.357166,
+    "hasPediatrics": true,
+    "phone": "18511910162",
+    "images": [
+      "https://store.is.autonavi.com/showpic/d725189793c15311ff2382355583f1e4",
+      "https://aos-comment.amap.com/B0FFF5C1YE/comment/content_media_external_images_media_5890_1735776972818_63759786.jpg",
+      "https://store.is.autonavi.com/showpic/b8c70fab48ae26d60000003043596317?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A83G5E",
+    "name": "首都医科大学附属北京地坛医院",
+    "address": "京顺东街8号",
+    "lat": 40.02309,
+    "lng": 116.526118,
+    "hasPediatrics": false,
+    "phone": "010-84322000;010-84322566",
+    "images": [
+      "http://store.is.autonavi.com/showpic/e55a96c8d506b2649a4aa112c0661609",
+      "https://aos-comment.amap.com/B000A83G5E/comment/8597568E_DA2A_44E7_919E_A904215493F4_L0_001_1500_2000_1736228687787_16687585.jpg",
+      "https://aos-comment.amap.com/B000A83G5E/comment/f0913c2bcd5ea39ea10b24e6c9562cc7_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A52E0B",
+    "name": "北京医院",
+    "address": "东单大华路1号",
+    "lat": 39.903772,
+    "lng": 116.415057,
+    "hasPediatrics": false,
+    "phone": "010-85132114;010-85132266",
+    "images": [
+      "http://store.is.autonavi.com/showpic/7d035c34bc70930def56dd6526ece43a",
+      "http://store.is.autonavi.com/showpic/2554022f7a28554296879ffa4d456b34",
+      "https://store.is.autonavi.com/showpic/3b95d87b4a8419940000003057286313?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFHD44F4",
+    "name": "北京四惠中医医院",
+    "address": "高碑店乡半壁店村惠河南街1092号",
+    "lat": 39.90499,
+    "lng": 116.498592,
+    "hasPediatrics": false,
+    "phone": "15313329030",
+    "images": [
+      "http://store.is.autonavi.com/showpic/9bafb292604a4329cbcc1135ad658d87",
+      "http://store.is.autonavi.com/showpic/e9d06a4e0f5d7108ae74a0dad7ecd62a",
+      "https://store.is.autonavi.com/showpic/616a7c5ba495daa95d7015b43c0ac2fc"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFKOBF2E",
+    "name": "北京嘉禾妇儿医院",
+    "address": "北京城区马家堡路69号院2号楼",
+    "lat": 39.841916,
+    "lng": 116.377867,
+    "hasPediatrics": false,
+    "phone": "19910619030",
+    "images": [
+      "http://store.is.autonavi.com/showpic/23d6e7cc81183e2b6e5cdee8e002d896",
+      "http://store.is.autonavi.com/showpic/a53ee008f7638eb1286b235639000d73",
+      "https://aos-comment.amap.com/B0FFKOBF2E/comment/content_media_external_images_media_100001220_1767087272244_53093067.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A56455",
+    "name": "北京世纪坛医院",
+    "address": "羊坊店铁医路10号",
+    "lat": 39.899343,
+    "lng": 116.318681,
+    "hasPediatrics": false,
+    "phone": "010-63312580",
+    "images": [
+      "http://store.is.autonavi.com/showpic/2f44a7a51f0d789978c2e4a5b69acc3c",
+      "http://store.is.autonavi.com/showpic/0acda9d0ae9e60f32aaaa15197c977dc",
+      "https://aos-comment.amap.com/B000A56455/comment/0bd9fd750ed9eb1c3ed1de7628e57572_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A843P7",
+    "name": "北京协和医院西单院区",
+    "address": "大木仓胡同41号",
+    "lat": 39.912623,
+    "lng": 116.367298,
+    "hasPediatrics": false,
+    "phone": "010-69156114",
+    "images": [
+      "https://aos-comment.amap.com/B0FFJO48KF/headerImg/5c7a9cc871547b6b9517fd85b987edcf_2048_2048_80.jpg",
+      "https://store.is.autonavi.com/showpic/c9ef1901cc1bfc2e0000003043540340?type=pic",
+      "https://store.is.autonavi.com/showpic/158c14b6b38f4f560000003048720622?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFJXD1X0",
+    "name": "中国人民解放军总医院第六医学中心",
+    "address": "阜成路6号(白堆子地铁站D西南口步行160米)",
+    "lat": 39.921941,
+    "lng": 116.324117,
+    "hasPediatrics": false,
+    "phone": "010-66958311;010-66958327",
+    "images": [
+      "https://store.is.autonavi.com/showpic/bec12d29dea353357e98bfd0d6037bec",
+      "https://store.is.autonavi.com/showpic/02527131d2eec82c85db60a504d0d602",
+      "https://aos-comment.amap.com/B0FFJXD1X0/comment/876e92a89d8beb2fc86c47f774d4ce13_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A7CBPW",
+    "name": "北京大学口腔医院第二门诊部",
+    "address": "安立路66号安立写字楼A座5层",
+    "lat": 40.003979,
+    "lng": 116.408351,
+    "hasPediatrics": false,
+    "phone": "010-82196299",
+    "images": [
+      "http://store.is.autonavi.com/showpic/263741794a10f144ea9709ed7e1e1240",
+      "https://aos-comment.amap.com/B000A7CBPW/comment/cba6957e1bf8b38ed03ce7cbf92f6796_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B000A7CBPW/comment/b90536953b4808734ddd06e43674d88d_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A0B192",
+    "name": "航天中心医院",
+    "address": "玉泉路15号",
+    "lat": 39.91656,
+    "lng": 116.251565,
+    "hasPediatrics": false,
+    "phone": "010-59971199",
+    "images": [
+      "https://aos-comment.amap.com/B000A0B192/comment/content_media_external_images_media_100003853_1746106191787_84959186.jpg",
+      "http://store.is.autonavi.com/showpic/5385a4b0a310086a993226e1",
+      "https://aos-comment.amap.com/B000A0B192/comment/2F5A29B0_0E1F_4211_90AC_01FDE22578A3_L0_001_1280_95_1748225323678_17156429.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFF4BCKE",
+    "name": "北京清华长庚医院",
+    "address": "立汤路168号",
+    "lat": 40.072551,
+    "lng": 116.414943,
+    "hasPediatrics": false,
+    "phone": "010-56112345",
+    "images": [
+      "https://aos-comment.amap.com/B0FFF4BCKE/comment/418E25CA_E906_4FCB_9669_9CA521817F87_L0_001_1147_80_1760757650735_03981617.jpg",
+      "https://store.is.autonavi.com/showpic/fd1598a6c08b35a90000003049344161?type=pic",
+      "https://aos-comment.amap.com/B0FFF4BCKE/comment/content_media_external_file_25763_ss__1757763056845_74266934.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A58138",
+    "name": "北京市海淀医院",
+    "address": "中关村大街29号(海淀黄庄地铁站A1西北口步行130米)",
+    "lat": 39.977058,
+    "lng": 116.315102,
+    "hasPediatrics": false,
+    "phone": "010-62583042;010-82619999",
+    "images": [
+      "https://store.is.autonavi.com/showpic/9646c1db0ef07016e20666655b2d9e0e",
+      "https://store.is.autonavi.com/showpic/ff4e064e09aca4790000000701876911?type=pic",
+      "http://store.is.autonavi.com/showpic/53b224b7a310a21470ad9c8a"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A8VWCK",
+    "name": "中国人民解放军总医院第七医学中心",
+    "address": "东四十条南门仓胡同5号",
+    "lat": 39.930995,
+    "lng": 116.429131,
+    "hasPediatrics": false,
+    "phone": "010-66721629",
+    "images": [
+      "http://store.is.autonavi.com/showpic/97c61fc65a0cdcecd90826aa0919bdf5",
+      "https://store.is.autonavi.com/showpic/de44c99cb7a54a94d795724cd39b7aec",
+      "https://store.is.autonavi.com/showpic/c5f69f2ca3398a02b912653f3c89bc6d"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A48C44",
+    "name": "北京市房山区良乡医院",
+    "address": "良乡拱辰大街45号",
+    "lat": 39.736801,
+    "lng": 116.140164,
+    "hasPediatrics": false,
+    "phone": "010-81356000",
+    "images": [
+      "https://store.is.autonavi.com/showpic/72a829e907f2f6f80000003060476340?type=pic",
+      "https://store.is.autonavi.com/showpic/a8f8f877189d64e40000003059020164?type=pic",
+      "https://aos-comment.amap.com/B000A48C44/comment/176325006326_1763250064568_45310467.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFG2TVK4",
+    "name": "北京协和医院东单院区门诊楼",
+    "address": "帅府园1号(灯市口地铁站C东南口步行470米)",
+    "lat": 39.913346,
+    "lng": 116.416644,
+    "hasPediatrics": false,
+    "phone": "010-69156114",
+    "images": [
+      "https://store.is.autonavi.com/showpic/18d27900d8da2f73ec311618e9d24066",
+      "https://aos-comment.amap.com/B0FFG2TVK4/comment/content_media_external_file_100002614_1771136718223_29090722.jpg",
+      "https://store.is.autonavi.com/showpic/e76f5af13843369a0000003048760085?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A7RDMO",
+    "name": "中国中医科学院望京医院",
+    "address": "花家地街6号",
+    "lat": 39.982433,
+    "lng": 116.473094,
+    "hasPediatrics": false,
+    "phone": [],
+    "images": [
+      "https://store.is.autonavi.com/showpic/4dc6ffc4949dac487cd096d87a83d51d",
+      "https://store.is.autonavi.com/showpic/fc0be4452866655a0000003049436598?type=pic",
+      "https://aos-comment.amap.com/B000A7RDMO/comment/content_media_external_file_47814_ss__1764993164780_88463942.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFF67A85",
+    "name": "北京爱育华医院",
+    "address": "北京城区景园南街2号",
+    "lat": 39.772949,
+    "lng": 116.522143,
+    "hasPediatrics": false,
+    "phone": "010-69079666",
+    "images": [
+      "https://store.is.autonavi.com/showpic/d1febbb0d858fad8a79ffb3247cdde7d",
+      "https://store.is.autonavi.com/showpic/ac0c63629b7e22c56dc425963930188d",
+      "https://store.is.autonavi.com/showpic/1e300721c69795320000000729176874?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A6391F",
+    "name": "北京大学首钢医院",
+    "address": "晋元庄路9号院",
+    "lat": 39.928892,
+    "lng": 116.203395,
+    "hasPediatrics": false,
+    "phone": "010-57830000;010-57830311;010-57830194",
+    "images": [
+      "https://aos-comment.amap.com/B000A6391F/comment/7EAC7D74_6FAF_4DBB_84CD_3F74424F7309_L0_001_1080_72_1751423179571_57690787.jpg",
+      "https://aos-comment.amap.com/B000A6391F/comment/9F7145D3_0593_4F62_BB0E_213F6CD1DB5D_L0_001_1284_94_1744869191861_15742692.jpg",
+      "https://aos-comment.amap.com/B000A6391F/comment/content_media_external_file_4514_1751256939341_78659375.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A0A635",
+    "name": "首都医科大学附属北京潞河医院",
+    "address": "新华南路82号",
+    "lat": 39.9013,
+    "lng": 116.659893,
+    "hasPediatrics": false,
+    "phone": "010-69531069",
+    "images": [
+      "https://store.is.autonavi.com/showpic/f7112f5854e0eb4ec13c171b12437f0e",
+      "https://aos-comment.amap.com/B000A0A635/comment/6D2693A3_43CD_4692_8AAC_0CD0535575A3_L0_001_1500_200_1755241129955_68077643.jpg",
+      "https://aos-comment.amap.com/B000A0A635/comment/C2B55AD5_328F_4337_8645_897FD6A4513D_L0_001_1179_105_1769868856663_71423795.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A8X5CF",
+    "name": "北京市丰盛中医骨伤专科医院",
+    "address": "阜成门内大街306号",
+    "lat": 39.923438,
+    "lng": 116.361723,
+    "hasPediatrics": false,
+    "phone": "010-66013330;010-66014349;010-66067455",
+    "images": [
+      "https://aos-comment.amap.com/B000A8X5CF/comment/content_media_external_file_23760_ss__1747906547500_73307567.jpg",
+      "https://store.is.autonavi.com/showpic/f52b85fdef5a52407bd7b028e3d8257d",
+      "https://aos-comment.amap.com/B000A8X5CF/comment/content_media_external_images_media_158_1741258342118_71150876.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A83XRE",
+    "name": "北京中医药大学东直门医院东城院区",
+    "address": "海运仓胡同5号",
+    "lat": 39.93714,
+    "lng": 116.427707,
+    "hasPediatrics": false,
+    "phone": "010-84013276",
+    "images": [
+      "http://store.is.autonavi.com/showpic/fe4eaf6b6645b79e8ee997008b4c0d72",
+      "https://aos-comment.amap.com/B000A83XRE/comment/038774736723e0c7bd2406d7824ee2e4_2048_2048_80.jpg",
+      "https://store.is.autonavi.com/showpic/6302d99f730735fe0000003051912832?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFF33T81",
+    "name": "首都医科大学附属北京佑安医院",
+    "address": "右安门外西头条8号",
+    "lat": 39.86666,
+    "lng": 116.355761,
+    "hasPediatrics": false,
+    "phone": "010-83997599",
+    "images": [
+      "http://store.is.autonavi.com/showpic/d5fc2f2ca0d3ac4579390c64be6829ff",
+      "https://store.is.autonavi.com/showpic/3d2d76552a18c64ae11df7fc340b483b",
+      "https://aos-comment.amap.com/B0FFF33T81/comment/content_media_external_file_1000073060_ss__1762478445111_71008383.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A80O8I",
+    "name": "同仁堂中医医院",
+    "address": "北京城区西打磨厂街46号",
+    "lat": 39.898596,
+    "lng": 116.409275,
+    "hasPediatrics": false,
+    "phone": "010-67038686",
+    "images": [
+      "https://aos-comment.amap.com/B000A80O8I/comment/content_media_external_file_100000668_1758938387674_69816085.jpg",
+      "https://store.is.autonavi.com/showpic/26b668bc30dcd0f5909488f933708012",
+      "https://aos-comment.amap.com/B000A80O8I/comment/2A03ACC0_9B5E_48C7_9A14_9627FD82E97B_L0_001_1500_2000_1740658530468_42159241.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFGK39MF",
+    "name": "中国人民解放军总医院门诊楼",
+    "address": "复兴路与西四环中路辅路交叉口东200米",
+    "lat": 39.906854,
+    "lng": 116.276497,
+    "hasPediatrics": false,
+    "phone": [],
+    "images": [
+      "https://aos-comment.amap.com/B0FFGK39MF/comment/caa2494f294b11f33cdc34de270aa85e_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B0FFGK39MF/comment/content_media_external_file_1000017275_ss__1755231883026_62672383.jpg",
+      "https://aos-comment.amap.com/B0FFGK39MF/comment/b0920363f8c14806d14fe5bc8df589a0_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0H6JUETON",
+    "name": "北京积水潭医院(新龙泽院区)",
+    "address": "龙域环路38号院",
+    "lat": 40.065282,
+    "lng": 116.302891,
+    "hasPediatrics": false,
+    "phone": "010-58516688",
+    "images": [
+      "https://aos-comment.amap.com/B0H6JUETON/comment/content_media_external_file_9167_1753589381719_28658318.jpg",
+      "https://aos-comment.amap.com/B0H6JUETON/comment/aea1f802c9468937608795623460eef2_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B0H6JUETON/comment/4df18fa7f1f27e48dbaf206e016ead6a_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFKURGVM",
+    "name": "首都医科大学附属北京友谊医院(顺义院区)",
+    "address": "机场北线南路与裕泰路交叉口东260米",
+    "lat": 40.118173,
+    "lng": 116.520534,
+    "hasPediatrics": false,
+    "phone": "010-81608585",
+    "images": [
+      "https://aos-comment.amap.com/B0FFKURGVM/comment/content_media_external_images_media_4952_1728693029614_85179242.jpg",
+      "https://store.is.autonavi.com/showpic/fef6b9077326b55fa2fec605965cedbe",
+      "https://store.is.autonavi.com/showpic/6bad09d947779617d715bbbcabcc4cf6"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000ABCNEQ",
+    "name": "解放军总医院第五医学中心北院区",
+    "address": "西四环中路100号",
+    "lat": 39.885138,
+    "lng": 116.277876,
+    "hasPediatrics": false,
+    "phone": "010-66933129;010-66933114",
+    "images": [
+      "https://aos-comment.amap.com/B000ABCNEQ/comment/a0a7ede96603b6ed6f0497cdf6639033_2048_2048_80.jpg",
+      "https://store.is.autonavi.com/showpic/81ee234902ae8909b8b4c0274e389b64",
+      "https://store.is.autonavi.com/showpic/4f1b8bdde33b4acf0b2297db4e00069f"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFJB7CN2",
+    "name": "北京中医药大学东直门医院通州院区",
+    "address": "翠屏西路116号",
+    "lat": 39.884025,
+    "lng": 116.644712,
+    "hasPediatrics": false,
+    "phone": "010-80816655",
+    "images": [
+      "http://store.is.autonavi.com/showpic/e06c96d5cf2d8ff9a97ef5a8ee7cbc7c",
+      "https://store.is.autonavi.com/showpic/e8ec3f132e48750bba6b44d38a7ad3f5",
+      "https://store.is.autonavi.com/showpic/8cbd2409a321a55c54d4909eea94a887"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFI7GN7Q",
+    "name": "北京大学人民医院通州院区",
+    "address": "漷县镇南凤西一路39号院",
+    "lat": 39.774925,
+    "lng": 116.767728,
+    "hasPediatrics": false,
+    "phone": "010-88326666",
+    "images": [
+      "http://store.is.autonavi.com/showpic/1daae915c8fb64b48035721ba5f87d61",
+      "http://store.is.autonavi.com/showpic/4d12bd14e8b85778f3ca1bf903798385",
+      "http://store.is.autonavi.com/showpic/015499fc05b89964282429809dd23734"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A8W0ML",
+    "name": "中国人民解放军总医院第四医学中心",
+    "address": "阜成路51号",
+    "lat": 39.925292,
+    "lng": 116.30446,
+    "hasPediatrics": false,
+    "phone": "010-66867304;010-68410322",
+    "images": [
+      "https://store.is.autonavi.com/showpic/2e9d35658783ab7e0000003060930040?type=pic",
+      "https://aos-comment.amap.com/B000A8W0ML/comment/8d0dda9acbdc91cc558c8f11b855e11c_2048_2048_80.jpg",
+      "https://store.is.autonavi.com/showpic/d34173585ebaf8680000003203970884"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A85I42",
+    "name": "北京大学第三医院生殖医学中心",
+    "address": "花园北路49号",
+    "lat": 39.981909,
+    "lng": 116.355309,
+    "hasPediatrics": false,
+    "phone": [],
+    "images": [
+      "https://aos-comment.amap.com/B000A85I42/comment/file_media_Photo_565_IMG_1749421360_555_screenshot_20250609_062100_jpg.jpg",
+      "https://aos-comment.amap.com/B000A85I42/comment/675BD20B_DDA1_4188_A248_2628C891A012_L0_001_2000_150_1758236973460_71103875.jpg",
+      "https://aos-comment.amap.com/B000A85I42/comment/68ade1f95ed69391c4938f3e52ff4b93_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0I0BUAPSI",
+    "name": "北京按摩医院(朝阳院区)",
+    "address": "武圣北路10号",
+    "lat": 39.885269,
+    "lng": 116.468395,
+    "hasPediatrics": false,
+    "phone": "010-66161297",
+    "images": [
+      "https://aos-comment.amap.com/B0I0BUAPSI/comment/f6e94a9c645363cffdac2d6390337ba0_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B0I0BUAPSI/comment/6240c55bff8d744a976ff5a7bd1c26bc_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B0I0BUAPSI/comment/content_media_external_images_media_1000013894_ss__1734775268502_95524723.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A83XEV",
+    "name": "北京市大兴区人民医院",
+    "address": "黄村镇黄村西大街18号",
+    "lat": 39.730909,
+    "lng": 116.334334,
+    "hasPediatrics": false,
+    "phone": "010-60283006",
+    "images": [
+      "https://aos-comment.amap.com/B000A83XEV/comment/content_media_external_images_media_1000293630_ss__1735862805543_66991289.jpg",
+      "https://store.is.autonavi.com/showpic/941f61c4378fdb7a0000003059018489?type=pic",
+      "https://aos-comment.amap.com/B000A83XEV/comment/0fb3b815ca1f8edc38ef27c49d6ff543_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFJXXPXN",
+    "name": "极简口腔(总院)",
+    "address": "松榆南路54华腾旌凯写字楼F1层",
+    "lat": 39.870894,
+    "lng": 116.464304,
+    "hasPediatrics": false,
+    "phone": "010-67344710",
+    "images": [
+      "https://store.is.autonavi.com/showpic/6ef2139539b3549168ad0ba0b0f47752",
+      "http://store.is.autonavi.com/showpic/394813d166028213ad46e957a0ed7e1a",
+      "https://aos-comment.amap.com/B0FFJXXPXN/comment/98a378db-e96e-41aa-b2cd-167aa3d9c0ae.png"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A7FCHG",
+    "name": "北京爱尔英智眼科医院",
+    "address": "华威南路与潘家园东路交叉路口西侧潘家园大厦",
+    "lat": 39.872075,
+    "lng": 116.450407,
+    "hasPediatrics": false,
+    "phone": "010-60641945",
+    "images": [
+      "http://store.is.autonavi.com/showpic/7b6d79e41e74b8e335623315d6fe92b9",
+      "http://store.is.autonavi.com/showpic/f9ae4b6d2522f0cf0b7505e365e114e8",
+      "http://store.is.autonavi.com/showpic/c66a50ebdbb441e2a0a10a92d2118d30"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A8VUOC",
+    "name": "东城中医医院",
+    "address": "和平里兴化路11号",
+    "lat": 39.961734,
+    "lng": 116.413443,
+    "hasPediatrics": false,
+    "phone": "010-64070199",
+    "images": [
+      "https://store.is.autonavi.com/showpic/c2479e9040525e9bbe02b3b1ca0dd3ed",
+      "https://aos-comment.amap.com/B000A8VUOC/comment/20c3a7ad772128dcf96ca562da7a88d4_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B000A8VUOC/comment/content_media_external_file_1000197487_ss__1766807257962_48171371.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFLDW6BK",
+    "name": "北京画美医疗美容医院",
+    "address": "北京城区东三环北路15号恒安大厦B座",
+    "lat": 39.93108,
+    "lng": 116.460905,
+    "hasPediatrics": false,
+    "phone": "17718529710",
+    "images": [
+      "https://aos-comment.amap.com/B0LAC5A4CR/comment/5d53df65-4ffa-4d36-be25-c184ea9a5799.png",
+      "https://aos-comment.amap.com/B0FFLDW6BK/comment/content_media_external_images_media_30177_ss__1739766984781_15282533.jpg",
+      "https://aos-comment.amap.com/B0FFLDW6BK/comment/772afacad553732e036349b0aa843563_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A0A520",
+    "name": "航空总医院",
+    "address": "安外北苑路3号(北苑路北地铁站B2东南口步行300米)",
+    "lat": 40.02898,
+    "lng": 116.420234,
+    "hasPediatrics": false,
+    "phone": "010-59520439",
+    "images": [
+      "http://store.is.autonavi.com/showpic/f464ae611ffec56a04c13c7862add88b",
+      "https://aos-comment.amap.com/B000A0A520/comment/88DF7322_DDDE_4F62_AC4E_4AD777CABA4F_L0_001_2000_150_1765181629256_14271711.jpg",
+      "https://aos-comment.amap.com/B000A0A520/comment/5960c124031be3ee341f75ea85ad0e49_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A7Z185",
+    "name": "北京大学第一医院(妇产儿童医院)",
+    "address": "西安门大街1号",
+    "lat": 39.923455,
+    "lng": 116.382055,
+    "hasPediatrics": true,
+    "phone": "010-83572544;010-83572211",
+    "images": [
+      "https://store.is.autonavi.com/showpic/515ad0ed5b03d8fb0000001329406482?type=pic",
+      "https://store.is.autonavi.com/showpic/1b04baee60f6b82433f13f3c7c49f4f6",
+      "https://aos-comment.amap.com/B000A7Z185/comment/266A4148_7BFD_4AAD_8DD2_90658AAEA9AE_L0_001_1178_136_1766855282625_02921407.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFF2DZD3",
+    "name": "中国人民解放军总医院第八医学中心",
+    "address": "黑山扈路甲17号",
+    "lat": 40.024586,
+    "lng": 116.263535,
+    "hasPediatrics": false,
+    "phone": "010-66775010;010-66767309",
+    "images": [
+      "http://store.is.autonavi.com/showpic/1edecf7ef5d76ae9952db1bf841b5dcf",
+      "https://store.is.autonavi.com/showpic/0a33e6ea0b388d350000003059694088?type=pic",
+      "https://store.is.autonavi.com/showpic/40cd7dfb1d4581e541f46e6cac450fc4"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A88CGQ",
+    "name": "首都医科大学附属北京胸科医院",
+    "address": "北关大街9号院一区",
+    "lat": 39.92391,
+    "lng": 116.652792,
+    "hasPediatrics": false,
+    "phone": "010-89509000",
+    "images": [
+      "https://store.is.autonavi.com/showpic/977332116e83342a0000000649734992",
+      "https://aos-comment.amap.com/B000A88CGQ/comment/content_media_external_file_100000328_1772146441765_03399279.jpg",
+      "https://aos-comment.amap.com/B000A88CGQ/comment/970E5A72_1B48_454D_89E2_336DEFF25749_L0_001_1440_1080_1742261905444_16201845.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A2EF2C",
+    "name": "北京大学第六医院海淀院区",
+    "address": "花园北路51号",
+    "lat": 39.982328,
+    "lng": 116.357522,
+    "hasPediatrics": false,
+    "phone": "010-82801936;010-82801939",
+    "images": [
+      "http://store.is.autonavi.com/showpic/3501ed7aa629c5a404a0fe4bcf34d688",
+      "https://store.is.autonavi.com/showpic/d7cb6884b33f8d6560b9c3ade7d09797",
+      "https://store.is.autonavi.com/showpic/6a3c75907f92e22c6372b736839bddcc"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A8XNSU",
+    "name": "首都医科大学附属北京康复医院",
+    "address": "八大处西下庄南路西头",
+    "lat": 39.944927,
+    "lng": 116.195227,
+    "hasPediatrics": false,
+    "phone": "010-56981158",
+    "images": [
+      "http://store.is.autonavi.com/showpic/c9b737bc8dbec0e30c307d9f5f353f80",
+      "https://aos-comment.amap.com/B000A8XNSU/comment/6abe92537ea07d2f10f773ffd644c896_2048_2048_80.jpg",
+      "http://store.is.autonavi.com/showpic/d539b8ad00a151f893e604cdb57cb41d"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFFW46G1",
+    "name": "北京和睦家医院",
+    "address": "将台路2号",
+    "lat": 39.974566,
+    "lng": 116.485376,
+    "hasPediatrics": false,
+    "phone": "010-59277000;010-59277120;4008919191",
+    "images": [
+      "https://aos-comment.amap.com/B0FFFW46G1/comment/ea1ef088ee62b5d2ee3f9e480b579d12_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B0FFFW46G1/comment/4a9e04cde26ce00f043d7f71e5dbebbd_2048_2048_80.jpg",
+      "https://store.is.autonavi.com/showpic/89bd18ec25b34778103201787f36a18c"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A9R5DQ",
+    "name": "北京市丰台区妇幼保健院",
+    "address": "右安门外开阳里三街1号(景风门地铁站E口步行130米)",
+    "lat": 39.864743,
+    "lng": 116.36494,
+    "hasPediatrics": true,
+    "phone": "010-83917266;010-83917299",
+    "images": [
+      "https://store.is.autonavi.com/showpic/67f6c57d300b15a66a1f4f40e7bd556f",
+      "https://store.is.autonavi.com/showpic/00dd20b12ba7d463a2cf04896021c4c4",
+      "https://aos-comment.amap.com/B000A9R5DQ/comment/7DA911B7_D90D_4B46_97D5_9B3C81448B73_L0_001_2000_150_1766888331532_82350545.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A7ZNLI",
+    "name": "北京大学第一医院第二住院部",
+    "address": "西什库大街7号",
+    "lat": 39.928782,
+    "lng": 116.37847,
+    "hasPediatrics": false,
+    "phone": "010-83573456",
+    "images": [
+      "https://aos-comment.amap.com/B000A7ZNLI/comment/content_media_external_images_media_1000158162_ss__1737500477172_63628768.jpg",
+      "https://aos-comment.amap.com/B000A7ZNLI/comment/content_media_external_images_media_1000158161_ss__1737500477173_00637741.jpg",
+      "https://store.is.autonavi.com/showpic/fa0c55eb5f17c2e69231d5ef63b1927b"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A28714",
+    "name": "北京按摩医院(西城院区)",
+    "address": "新街口街道新街口南大街187-10宝产胡同",
+    "lat": 39.935215,
+    "lng": 116.371681,
+    "hasPediatrics": false,
+    "phone": "010-66168880",
+    "images": [
+      "http://store.is.autonavi.com/showpic/dc3382e9e285c4e408d811f6b52089bd",
+      "https://aos-comment.amap.com/B000A28714/comment/content_media_external_images_media_100003334_1740439039694_61417181.jpg",
+      "https://aos-comment.amap.com/B000A28714/comment/content_media_external_images_media_14748_ss__1748844011852_40698523.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A48989",
+    "name": "首都医科大学附属北京口腔医院王府井院区",
+    "address": "王府井步行街锡拉胡同11号",
+    "lat": 39.916645,
+    "lng": 116.409389,
+    "hasPediatrics": false,
+    "phone": "010-57099688;010-85120588",
+    "images": [
+      "http://store.is.autonavi.com/showpic/a0e617505fb7cacca5325efba05ba88b",
+      "https://store.is.autonavi.com/showpic/aac80841ab9c33530000003041372102?type=pic",
+      "https://aos-comment.amap.com/B000A48989/comment/8d89263605504456c81fa4efc0c9c2e6_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFH6N6M2",
+    "name": "中诺口腔医院·全国种植总院",
+    "address": "北京城区方庄镇南三环东路辅路芳星园三区18号",
+    "lat": 39.859288,
+    "lng": 116.436967,
+    "hasPediatrics": false,
+    "phone": "010-87027271",
+    "images": [
+      "http://store.is.autonavi.com/showpic/59c515ad37b996d833e8c9fe04bbe1bf",
+      "http://store.is.autonavi.com/showpic/c3b3a364a9a147f6b534f523455fffed",
+      "http://store.is.autonavi.com/showpic/1e2e340b3eabce825a278bdb8981861a"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFL6QF8O",
+    "name": "北京朝阳区妇幼保健院北院",
+    "address": "来广营乡北苑东路11号院",
+    "lat": 40.045722,
+    "lng": 116.440925,
+    "hasPediatrics": true,
+    "phone": "010-87789800",
+    "images": [
+      "https://aos-comment.amap.com/B0FFL6QF8O/comment/b29b5f1fe0f191d8d50723002bb8f31f_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B0FFL6QF8O/comment/%5B2025-11-19-05-04-26%5D4D616980-DA78-4A64-8556-7A54C318EC8_1763499871227_90849871.jpg",
+      "https://aos-comment.amap.com/B0FFL6QF8O/comment/859CBECD_A01D_404B_B817_33C06E1A713A_L0_001_1114_120_1761102842625_86268256.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A8ZN8T",
+    "name": "北京美莱医疗美容医院",
+    "address": "北京城区朝外大街227号1幢",
+    "lat": 39.924795,
+    "lng": 116.441312,
+    "hasPediatrics": false,
+    "phone": "18001306981",
+    "images": [
+      "https://aos-comment.amap.com/B000A8ZN8T/comment/D5BB22F0_9DD6_4AA1_9CC7_846ED1F11145_L0_001_1276_170_1766133673598_80828996.jpg",
+      "https://store.is.autonavi.com/showpic/c98d3fd3ca20316d1f55e79c6ca469f6",
+      "https://aos-comment.amap.com/B000A8ZN8T/comment/content_media_external_images_media_370502_ss__1743656642334_00118315.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0GRM70KV2",
+    "name": "北京大学第三医院(北方院区)",
+    "address": "蓝靛厂南路与车道沟桥交叉路口往东北约100米",
+    "lat": 39.949744,
+    "lng": 116.297092,
+    "hasPediatrics": false,
+    "phone": "010-68961975",
+    "images": [
+      "https://aos-comment.amap.com/B0GRM70KV2/comment/36707fd6f4848bfd967ebee359d81e21_2048_2048_80.jpg",
+      "https://store.is.autonavi.com/showpic/06645db06d9d40b90000000668268359",
+      "https://store.is.autonavi.com/showpic/cd12bc03dd3a4958d8c7070b47cc272d"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A8W5A8",
+    "name": "解放军总医院第五医学中心(南院区)",
+    "address": "东大街8号",
+    "lat": 39.862096,
+    "lng": 116.295692,
+    "hasPediatrics": false,
+    "phone": "010-66947114",
+    "images": [
+      "https://store.is.autonavi.com/showpic/d60fde7ef8b4735a0ec8b74718a9b150",
+      "https://aos-comment.amap.com/B000A8W5A8/comment/fab68e0feafeb2df43eb9326e042fb66_2048_2048_80.jpg",
+      "https://store.is.autonavi.com/showpic/32f9ecaaf751f86dd389b32249f0207a"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFJYB8P5",
+    "name": "中国人民解放军总医院第三医学中心",
+    "address": "永定路69号",
+    "lat": 39.911186,
+    "lng": 116.263564,
+    "hasPediatrics": false,
+    "phone": "010-57976688;010-88276688",
+    "images": [
+      "https://store.is.autonavi.com/showpic/aec9345b180942a16d22add7d3ea35db",
+      "https://store.is.autonavi.com/showpic/89593a6f16c6b83775e80960193d12eb",
+      "https://store.is.autonavi.com/showpic/b5fadd3eef66b0064c11d4e0b77da06b"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFL47CJC",
+    "name": "解放军总医院第九医学中心",
+    "address": "奥运村街道安翔北里9号",
+    "lat": 39.9953,
+    "lng": 116.378478,
+    "hasPediatrics": false,
+    "phone": "010-66356729",
+    "images": [
+      "http://store.is.autonavi.com/showpic/ffdf639f851b7aa2ef2963d2a9bf8b12",
+      "http://store.is.autonavi.com/showpic/925d59a62eceb232849e54fd8aa9591f",
+      "https://aos-comment.amap.com/B0FFL47CJC/comment/60180b2d381c1f40820253937436acf6_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A95CEU",
+    "name": "首都医科大学附属北京朝阳医院石景山院区",
+    "address": "京原路5号",
+    "lat": 39.900177,
+    "lng": 116.209376,
+    "hasPediatrics": false,
+    "phone": "010-51718135",
+    "images": [
+      "http://store.is.autonavi.com/showpic/4788b2e8d8a47988c24f0fd22e54226a",
+      "http://store.is.autonavi.com/showpic/ac99eb9329d9b4414b87c23bd67a63a6",
+      "https://store.is.autonavi.com/showpic/f4fb4a8612a452b28fa5a45d3bf1ee4a"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A07F91",
+    "name": "北京航天总医院",
+    "address": "东高地万源北路7号",
+    "lat": 39.80421,
+    "lng": 116.4197,
+    "hasPediatrics": false,
+    "phone": "010-68754024",
+    "images": [
+      "https://store.is.autonavi.com/showpic/7c66a9f5eaab1a37ee05f091d5708ba1",
+      "https://store.is.autonavi.com/showpic/d85bf5d3f2e77db92ee3522b5121ceb5",
+      "https://aos-comment.amap.com/B000A07F91/comment/%5B2025-10-15-09-50-21%5D1A115290-908A-4C67-A092-0957F17F391_1760493022946_07034905.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFFADE8M",
+    "name": "北京王府中西医结合医院",
+    "address": "王府街1号",
+    "lat": 40.106208,
+    "lng": 116.414202,
+    "hasPediatrics": false,
+    "phone": "010-81779999",
+    "images": [
+      "https://store.is.autonavi.com/showpic/e816233e8ad7bb390000003060918781?type=pic",
+      "https://store.is.autonavi.com/showpic/2562bb6eac285f276ac124fd763139d2",
+      "https://store.is.autonavi.com/showpic/4ebdb2d3fa80ab48ce4fc95ca26159be"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFGW2BJQ",
+    "name": "爱康国宾亚运村分院",
+    "address": "北京城区慧忠北里105号楼B段二层三层",
+    "lat": 40.006897,
+    "lng": 116.407355,
+    "hasPediatrics": false,
+    "phone": "4008100120",
+    "images": [
+      "http://store.is.autonavi.com/showpic/1835aa8d9882e3fa13016196180b4f20",
+      "http://store.is.autonavi.com/showpic/1f8b63c2a03b658949230e2fc0f3adb8",
+      "http://store.is.autonavi.com/showpic/508011804c4de41a2c925aa6702ffa1a"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFK6GDS8",
+    "name": "中诺第二口腔医院·种植总院",
+    "address": "北京城区北京城区北京市北京市海淀区中关村街道北四环西路9-1号楼银谷大厦配楼",
+    "lat": 39.987149,
+    "lng": 116.334875,
+    "hasPediatrics": false,
+    "phone": "13011876871",
+    "images": [
+      "https://store.is.autonavi.com/showpic/2ef6c816381635de394f44647ea26ab9",
+      "https://store.is.autonavi.com/showpic/235b21035bb5b7580000003291610405?type=pic",
+      "https://store.is.autonavi.com/showpic/08fbc4e4a456839f0000003081696570?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A09CF1",
+    "name": "民航总医院",
+    "address": "朝阳路76号院",
+    "lat": 39.915307,
+    "lng": 116.529382,
+    "hasPediatrics": false,
+    "phone": "010-85762244",
+    "images": [
+      "https://aos-comment.amap.com/B000A09CF1/comment/87DE48AB_13A9_4358_BF99_45DB0E39DF93_L0_001_1654_200_1765801069277_87527921.jpg",
+      "https://store.is.autonavi.com/showpic/2282807f426560490000000900510916?type=pic",
+      "http://store.is.autonavi.com/showpic/014058bcc372f0e1c7316598a6fdb96e"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A7KOY1",
+    "name": "清华大学第一附属医院",
+    "address": "医院南路与酒仙桥路交叉口东北140米",
+    "lat": 39.965718,
+    "lng": 116.495836,
+    "hasPediatrics": false,
+    "phone": "010-64369999",
+    "images": [
+      "https://store.is.autonavi.com/showpic/b167b424ad6a436faaca9e17137bcf94",
+      "https://aos-comment.amap.com/B000A7KOY1/comment/0685f727ebf0f52ddc5d8ffaf0186f48_2048_2048_80.jpg",
+      "https://store.is.autonavi.com/showpic/a70bdfedc011600effc91fd3f130bcfc"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A7BD7I",
+    "name": "北京五洲妇儿医院",
+    "address": "北京城区劲松街道西大望路35号楼1-5层",
+    "lat": 39.892022,
+    "lng": 116.476806,
+    "hasPediatrics": false,
+    "phone": "13011065052",
+    "images": [
+      "https://store.is.autonavi.com/showpic/179819a8e78359568174ca5e088a09cb",
+      "http://store.is.autonavi.com/showpic/e2b3c7972e286d905f097cf6f7765c14",
+      "http://store.is.autonavi.com/showpic/8bce1e2dcb51a310359fba38ed52144e"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFF3NLD9",
+    "name": "北京市垂杨柳医院",
+    "address": "垂杨柳南街2号(劲松地铁站A西北口步行310米)",
+    "lat": 39.886796,
+    "lng": 116.459767,
+    "hasPediatrics": false,
+    "phone": "010-67700622",
+    "images": [
+      "http://store.is.autonavi.com/showpic/1c8b552dcd9b7642331305e06428fa14",
+      "http://store.is.autonavi.com/showpic/95e24ea26f95eed4bd640bc597e787b2",
+      "http://store.is.autonavi.com/showpic/a0981f01fef7ee8ed2e1d5a0b6989de9"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0K1XA61FH",
+    "name": "北京京城皮肤医院",
+    "address": "北京城区德胜门外G6辅路旁双泉堡甲第4号",
+    "lat": 40.008915,
+    "lng": 116.365285,
+    "hasPediatrics": false,
+    "phone": "010-64888999",
+    "images": [
+      "http://store.is.autonavi.com/showpic/3a49d8a381bb61dd53c612d23c33e313",
+      "https://aos-comment.amap.com/B0K1XA61FH/comment/content_media_external_file_4489_ss__1766538740499_45954706.jpg",
+      "https://aos-comment.amap.com/B0K1XA61FH/comment/4A724974_D553_4CD4_81E3_4D683B1B1997_L0_001_1500_200_1761700275891_36991304.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFG8VTTX",
+    "name": "北京万柳美中宜和妇儿医院",
+    "address": "北京城区万柳中路7号",
+    "lat": 39.970209,
+    "lng": 116.295479,
+    "hasPediatrics": false,
+    "phone": "010-56063331",
+    "images": [
+      "https://store.is.autonavi.com/showpic/319dd7588b5c581a25b2662109b48f17",
+      "http://store.is.autonavi.com/showpic/acbf1c015b447ef0b0951e461a2a8b17",
+      "http://store.is.autonavi.com/showpic/e7118a855a698a34a7f8d541bed79cbe"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFH72J92",
+    "name": "爱康国宾总部基地分院",
+    "address": "北京城区南四环西路188号一区31号楼",
+    "lat": 39.827881,
+    "lng": 116.28707,
+    "hasPediatrics": false,
+    "phone": "4008100120",
+    "images": [
+      "https://img.alicdn.com/imgextra/i1/O1CN01YPR4aq1PGrZpDXMkD_!!6000000001814-0-tps-365-365.jpg",
+      "http://store.is.autonavi.com/showpic/2d2ee6ddfc979e9f467f8c0971be1162",
+      "http://store.is.autonavi.com/showpic/4ab7be4c0abe90ac1ad6587b5cdfcaf4"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFJVS6DO",
+    "name": "爱康国宾中关村分院",
+    "address": "北四环西路52号方正国际大厦2层",
+    "lat": 39.9846,
+    "lng": 116.313149,
+    "hasPediatrics": false,
+    "phone": "4008100120",
+    "images": [
+      "https://img.alicdn.com/imgextra/i1/O1CN01YPR4aq1PGrZpDXMkD_!!6000000001814-0-tps-365-365.jpg",
+      "http://store.is.autonavi.com/showpic/00afa5c757d4bbe4da8488e1c1e64707",
+      "http://store.is.autonavi.com/showpic/620b7d39badab47ffc44507139e62682"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A8VUC6",
+    "name": "北京市肛肠医院",
+    "address": "德外大街16号",
+    "lat": 39.959576,
+    "lng": 116.380225,
+    "hasPediatrics": false,
+    "phone": "010-57763088;010-57763114",
+    "images": [
+      "http://store.is.autonavi.com/showpic/c8e4a331c21f2497a906859446e852e5",
+      "https://aos-comment.amap.com/B000A8VUC6/headerImg/173504d1147d51d34b0b9aaa908e61b4_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B000A8VUC6/comment/content_media_external_images_media_4260_ss__1735788287297_45779606.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFG765BA",
+    "name": "北京市第一中西医结合医院CBD院区",
+    "address": "朝阳路127号",
+    "lat": 39.916809,
+    "lng": 116.471802,
+    "hasPediatrics": false,
+    "phone": "010-85993431",
+    "images": [
+      "http://store.is.autonavi.com/showpic/65b78c43f5c932110ffae276ec4a401f",
+      "http://store.is.autonavi.com/showpic/f55da815894313f264401eba9d0db701",
+      "https://store.is.autonavi.com/showpic/25698618e84281f9a49b2368a3c7b05a"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A8W8FS",
+    "name": "北京华医中西医结合皮肤病医院",
+    "address": "西四环北路29号",
+    "lat": 39.955387,
+    "lng": 116.274602,
+    "hasPediatrics": false,
+    "phone": "010-88546709",
+    "images": [
+      "https://comment-oss-online.oss-cn-wulanchabu.aliyuncs.com/B000A8W8FS/comment/content_media_external_images_media_2577597_1652496241479_a78621b1.jpg",
+      "http://store.is.autonavi.com/showpic/89c5fa1efcf84083223861982622c32e",
+      "https://aos-comment.amap.com/B000A8W8FS/comment/f2d5040922649e48deedb4a2b13250f2_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFKBDBR3",
+    "name": "中科领军口腔(魏公村总院)",
+    "address": "北京城区中关村南大街24号5号楼1层115及2层至6层",
+    "lat": 39.951351,
+    "lng": 116.32452,
+    "hasPediatrics": false,
+    "phone": "010-88518668",
+    "images": [
+      "http://store.is.autonavi.com/showpic/791521546f272c1860e769526e0d7f02",
+      "https://store.is.autonavi.com/showpic/82ac6eb533c56fa30000003000194837?type=pic",
+      "https://store.is.autonavi.com/showpic/3901a3a114a3f4210000003106158087?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000AAALA0",
+    "name": "慈铭体检(洋桥分院)",
+    "address": "马家堡东路106号",
+    "lat": 39.840959,
+    "lng": 116.387049,
+    "hasPediatrics": false,
+    "phone": "010-58030099;010-58031085;010-89655274",
+    "images": [
+      "https://img.alicdn.com/imgextra/i3/O1CN01NBmDQP1cZitc2w5qO_!!6000000003615-0-tps-591-591.jpg",
+      "https://store.is.autonavi.com/showpic/921ab318bb29a63a0000004209396920?type=pic",
+      "https://aos-comment.amap.com/B000AAALA0/comment/content_media_external_file_1000007192_ss__1763165679896_21317387.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A7BVNF",
+    "name": "北京市昌平区医院",
+    "address": "鼓楼北街9号",
+    "lat": 40.226946,
+    "lng": 116.231672,
+    "hasPediatrics": false,
+    "phone": "010-69742328;010-69742509",
+    "images": [
+      "https://aos-comment.amap.com/B000A7BVNF/comment/176233171923_1762331720930_01227808.jpg",
+      "https://store.is.autonavi.com/showpic/ff3ba6a4d47405c50000003060914690?type=pic",
+      "http://store.is.autonavi.com/showpic/68f86b51c1dcb585eeed6cc085f7dbf8"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0JBL1OTCE",
+    "name": "中国医学科学院阜外医院西院区",
+    "address": "永定镇阜外西院东街1号",
+    "lat": 39.913703,
+    "lng": 116.0897,
+    "hasPediatrics": false,
+    "phone": "010-88322674",
+    "images": [
+      "https://store.is.autonavi.com/showpic/5e75481671343e689c3163cba45fbdb0",
+      "https://store.is.autonavi.com/showpic/dc9c17dde853df78c1d2904e0d9c3e41",
+      "https://store.is.autonavi.com/showpic/0894f00cfb0d6ea10000000661662364"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFICYZGC",
+    "name": "瑞泰口腔北苑总院",
+    "address": "天居园1号楼1层101",
+    "lat": 40.039226,
+    "lng": 116.414917,
+    "hasPediatrics": false,
+    "phone": "010-84825969",
+    "images": [
+      "http://store.is.autonavi.com/showpic/d01335af4eeb16505a06b54f1b80c163",
+      "https://aos-comment.amap.com/B0FFICYZGC/comment/23E9477C_5EF2_4814_AAC9_C6A32953D0D0_L0_001_1284_927_1740044945358_51440144.jpg",
+      "https://store.is.autonavi.com/showpic/9af9b917c28cec4d7a7aab9315c4b490"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A87EA7",
+    "name": "北京市顺义区医院",
+    "address": "胜利街道光明南街3号(顺义地铁站D西南口步行60米)",
+    "lat": 40.128327,
+    "lng": 116.655152,
+    "hasPediatrics": false,
+    "phone": "010-69423220",
+    "images": [
+      "https://aos-comment.amap.com/B000A87EA7/comment/content_media_external_file_33388_1760761127541_48183094.jpg",
+      "https://store.is.autonavi.com/showpic/3365bada834660c30000003049458210?type=pic",
+      "https://store.is.autonavi.com/showpic/f84ee7f12c7dc5bc0000003060934077?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A84916",
+    "name": "北京德尔康尼骨科医院",
+    "address": "定慧桥西阜石路甲19号",
+    "lat": 39.926423,
+    "lng": 116.256942,
+    "hasPediatrics": false,
+    "phone": "010-52713366",
+    "images": [
+      "https://aos-comment.amap.com/B000A84916/comment/%5B2025-10-10-20-41-04%5D29B1F6C2-35D2-4888-B091-1B88B66A541_1760100087626_69635192.jpg",
+      "https://aos-comment.amap.com/B000A84916/comment/93434729a21a57fe2a8799b479ba8304_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B000A84916/comment/content_media_external_images_media_77173_ss__1734580787592_19648335.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFJXXE78",
+    "name": "中国人民解放军火箭军特色医学中心",
+    "address": "新街口外大街16号院",
+    "lat": 39.956684,
+    "lng": 116.372456,
+    "hasPediatrics": false,
+    "phone": "010-66343114;010-66343144",
+    "images": [
+      "https://store.is.autonavi.com/showpic/4079135a5130c97177752cb8df653eec",
+      "https://aos-comment.amap.com/B0FFJXXE78/comment/content_media_external_images_media_100007342_1731818822149_85085783.jpg",
+      "https://store.is.autonavi.com/showpic/94f30d27db7a08450000002512282053?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A8061D",
+    "name": "北京爱尔眼科医院",
+    "address": "北京城区北苑路169号1幢-1至8层101内1层101内1-8层",
+    "lat": 40.0033,
+    "lng": 116.416336,
+    "hasPediatrics": false,
+    "phone": "4006068800",
+    "images": [
+      "https://aos-comment.amap.com/B000A8061D/comment/content_media_external_file_52206_ss__1765757805514_06819502.jpg",
+      "https://store.is.autonavi.com/showpic/ee8854b4cbdf09950000002914836654?type=pic",
+      "https://store.is.autonavi.com/showpic/6153677700cb1b8b0000002879270176?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0HUYZRT9T",
+    "name": "慈铭体检(丽泽分院)",
+    "address": "丰台北路18号金唐中心B座2-3层",
+    "lat": 39.866485,
+    "lng": 116.307592,
+    "hasPediatrics": false,
+    "phone": "010-63821335;010-63821737;010-89655274",
+    "images": [
+      "https://img.alicdn.com/imgextra/i3/O1CN01NBmDQP1cZitc2w5qO_!!6000000003615-0-tps-591-591.jpg",
+      "https://aos-comment.amap.com/B0HUYZRT9T/comment/content_media_external_images_media_10697_ss__1751597903007_01650414.jpg",
+      "https://store.is.autonavi.com/showpic/573525f26bdeae38df2222298c76c725"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0GKFSNJAZ",
+    "name": "中国民族卫生协会北京融科医院",
+    "address": "夕照寺街8号东玖大厦A座",
+    "lat": 39.890556,
+    "lng": 116.440344,
+    "hasPediatrics": false,
+    "phone": "18210770145",
+    "images": [
+      "https://aos-comment.amap.com/B0GKFSNJAZ/comment/content_media_external_images_media_1000012171_ss__1744621497652_63830253.jpg",
+      "http://store.is.autonavi.com/showpic/f2178c714948c1f80e61e85e2daf1a4a",
+      "https://store.is.autonavi.com/showpic/6abe7f1fa94464c199fa7f98a1c45256"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0GR0CVPJI",
+    "name": "北京美中宜和北三环妇儿医院",
+    "address": "新街口外大街1号(北太平庄地铁站D1口旁)",
+    "lat": 39.967229,
+    "lng": 116.369573,
+    "hasPediatrics": false,
+    "phone": "010-56063331",
+    "images": [
+      "https://store.is.autonavi.com/showpic/e4ec0ceb99396c4b2ecef973c10b07d0",
+      "https://aos-comment.amap.com/B0GR0CVPJI/comment/542661c0-7f6b-4614-8347-cc45d5e86be3.png",
+      "http://store.is.autonavi.com/showpic/8b5144701a3e938f7d568849034a2781"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A7JNR1",
+    "name": "北京天坛普华医院",
+    "address": "天坛南里12号",
+    "lat": 39.875417,
+    "lng": 116.405274,
+    "hasPediatrics": false,
+    "phone": "18515501007",
+    "images": [
+      "https://aos-comment.amap.com/B000A7JNR1/comment/content_media_external_images_media_139189_ss__1728877342155_16729069.jpg",
+      "http://store.is.autonavi.com/showpic/ee94fb41d63e6d721109fd67b5b04db5",
+      "https://aos-comment.amap.com/B000A7JNR1/comment/2CDE0533_6DF9_4F8D_A448_A21392AA3F77_L0_001_1920_108_1755154814311_55125646.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0LBTU4KC3",
+    "name": "北京四惠西区医院",
+    "address": "阜成路甲2号",
+    "lat": 39.925582,
+    "lng": 116.285522,
+    "hasPediatrics": false,
+    "phone": "010-88849999",
+    "images": [
+      "https://store.is.autonavi.com/showpic/d847fdedc546fb3d2d54b7d43fe5c704",
+      "https://aos-comment.amap.com/B0LBTU4KC3/comment/content_media_external_file_100001543_1759843419548_52265749.jpg",
+      "https://aos-comment.amap.com/B0LBTU4KC3/comment/content_media_external_file_33685_1754016306259_98276886.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A0989A",
+    "name": "首都医科大学附属北京回龙观医院",
+    "address": "南店路7号",
+    "lat": 40.066758,
+    "lng": 116.329899,
+    "hasPediatrics": false,
+    "phone": [],
+    "images": [
+      "https://aos-comment.amap.com/B000A0989A/comment/84F909B5_4540_4E8F_907F_7932683C702C_L0_001_946_61_1745454125665_99361187.jpg",
+      "https://aos-comment.amap.com/B000A0989A/comment/5ad5e528f9bbb71fb921c5aed4656d03_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B000A0989A/comment/6121ACB0_9BD6_4CA0_819B_3C3150B69064_L0_001_2016_151_1753149950203_19446337.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0LG7G0UWU",
+    "name": "解放军总医院第一医学中心",
+    "address": "复兴路28号",
+    "lat": 39.904898,
+    "lng": 116.277358,
+    "hasPediatrics": false,
+    "phone": "010-66937329",
+    "images": [
+      "https://aos-comment.amap.com/B0LG7G0UWU/comment/file_media_Photo_24724_IMG_1764755785_23251_image_1764755685117_jpg_ss__1764755786342_17315863.jpg",
+      "https://aos-comment.amap.com/B0LG7G0UWU/comment/content_media_external_file_7054_ss__1756035224395_62830894.jpg",
+      "https://aos-comment.amap.com/B0LG7G0UWU/comment/file_media_Photo_24726_IMG_1764755798_23253_image_1764755698179_pn_1764755786311_28697745.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A7PTMD",
+    "name": "北京老年医院",
+    "address": "温泉镇温泉路118号",
+    "lat": 40.048762,
+    "lng": 116.163949,
+    "hasPediatrics": false,
+    "phone": "010-83183939",
+    "images": [
+      "https://aos-comment.amap.com/B000A7PTMD/comment/content_media_external_file_100005131_1760416559104_94764713.jpg",
+      "https://aos-comment.amap.com/B000A7PTMD/comment/701acc7e-402c-4080-baea-6e6800df93d8.png",
+      "http://store.is.autonavi.com/showpic/6c9507f32914277d086c5f39e7e797bc"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFGI0YWZ",
+    "name": "中国医学科学院阜外医院门诊",
+    "address": "北礼士路167号中国医学科学院阜外医院内",
+    "lat": 39.925369,
+    "lng": 116.349746,
+    "hasPediatrics": false,
+    "phone": "010-68314466",
+    "images": [
+      "https://aos-comment.amap.com/B0FFGI0YWZ/comment/20138962_590B_45A4_9787_795F76E95BE6_L0_001_1170_151_1763710255332_45601392.jpg",
+      "https://aos-comment.amap.com/B0FFGI0YWZ/comment/content_media_external_images_media_2504128_ss__1731281103650_15237113.jpg",
+      "https://store.is.autonavi.com/showpic/8d2ce751becd9f1a0000000416820793"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A7HC4T",
+    "name": "北京电力医院",
+    "address": "太平桥西里甲1号",
+    "lat": 39.885665,
+    "lng": 116.315578,
+    "hasPediatrics": false,
+    "phone": [],
+    "images": [
+      "https://store.is.autonavi.com/showpic/57537ab3eab66e479a19d4e02e20541a",
+      "https://aos-comment.amap.com/B000A7HC4T/comment/DB97D607_3FA6_40FE_8D9A_52C424A5538B_L0_001_1500_200_1763374398150_30711639.jpg",
+      "https://store.is.autonavi.com/showpic/72e06eb38da412602c4f67b636ba9f84"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A88E9T",
+    "name": "北京中医药大学第三附属医院",
+    "address": "安定门外小关51号(安贞门地铁站B东北口步行240米)",
+    "lat": 39.978393,
+    "lng": 116.409215,
+    "hasPediatrics": false,
+    "phone": "010-52075325",
+    "images": [
+      "https://store.is.autonavi.com/showpic/d3f44debeb51bb08124cfd8801a7915f",
+      "https://aos-comment.amap.com/B000A88E9T/comment/content_media_external_file_7560_1770543543481_07360027.jpg",
+      "https://store.is.autonavi.com/showpic/91b2b9f0c322930f5a1493c077cf24f0"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0J36CQ5L9",
+    "name": "北京丰台医院",
+    "address": "西安街1号",
+    "lat": 39.848038,
+    "lng": 116.278096,
+    "hasPediatrics": false,
+    "phone": "010-63811115",
+    "images": [
+      "https://store.is.autonavi.com/showpic/c217aa57b4ced31456ada1c1cd891690",
+      "https://store.is.autonavi.com/showpic/85afb9391c4f4c029a9e94b63e31088a",
+      "https://aos-comment.amap.com/B0J36CQ5L9/comment/3A4A0388_38CB_4498_8791_3A643B8EF82F_L0_001_1075_843_1732121957629_72013191.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A8UWH3",
+    "name": "北京博爱医院",
+    "address": "角门北路10号",
+    "lat": 39.849336,
+    "lng": 116.378244,
+    "hasPediatrics": false,
+    "phone": "010-67563322",
+    "images": [
+      "http://store.is.autonavi.com/showpic/2d3db10122d293809a831762bb1f8fd8",
+      "https://store.is.autonavi.com/showpic/b2c92c8b11e7849e7f71096f009727b8",
+      "https://aos-comment.amap.com/B000A8UWH3/comment/0b2cf47ec051a437e3b7a6c1d424f315_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0JDJ5FGFS",
+    "name": "雍禾植发医院(北京总院)",
+    "address": "北京城区朝外大街丙10号-1-4层",
+    "lat": 39.922608,
+    "lng": 116.446602,
+    "hasPediatrics": false,
+    "phone": "18508101096",
+    "images": [
+      "https://store.is.autonavi.com/showpic/8a770930aafe4b31363848e50ffa4942",
+      "https://aos-comment.amap.com/B0JDJ5FGFS/comment/c391e470c336d6cd92376b82717a4225_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B0JDJ5FGFS/comment/content_media_external_images_media_1000002945_ss__1739695078861_03243992.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A9Q628",
+    "name": "首都医科大学附属北京安贞医院门诊",
+    "address": "安贞路2号安贞医院门诊部1层",
+    "lat": 39.972297,
+    "lng": 116.402564,
+    "hasPediatrics": false,
+    "phone": [],
+    "images": [
+      "https://aos-comment.amap.com/B000A9Q628/comment/78F1249C_E233_403A_974E_4BC7192F543D_L0_001_1193_149_1766402170614_51954944.jpg",
+      "https://store.is.autonavi.com/showpic/0ef4036f3bfbc6d80000000725064529?type=pic",
+      "https://store.is.autonavi.com/showpic/a5fa38d4b2aa2f39831728052dba6423"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A88EBX",
+    "name": "北京市第六医院",
+    "address": "交道口北二条36号",
+    "lat": 39.942626,
+    "lng": 116.41295,
+    "hasPediatrics": false,
+    "phone": "010-64035566",
+    "images": [
+      "http://store.is.autonavi.com/showpic/056c665ab59cc3857bb0b634eac38b8c",
+      "http://store.is.autonavi.com/showpic/1b2f6aa28c787146178efe0cc634bbdc",
+      "http://store.is.autonavi.com/showpic/3d51842696e7bdc3ca6ed056336a3471"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFM1A6M3",
+    "name": "北京大学第三医院海淀北部院区",
+    "address": "永丰路甲6号",
+    "lat": 40.053854,
+    "lng": 116.251031,
+    "hasPediatrics": false,
+    "phone": "010-82266699",
+    "images": [
+      "https://aos-comment.amap.com/B0FFM1A6M3/comment/content_media_external_file_27676_ss__1766030428931_93383531.jpg",
+      "https://store.is.autonavi.com/showpic/c60b923d1ba8393da3620153b4886c3c",
+      "https://store.is.autonavi.com/showpic/75fb730f63a927094b10c95a37149315"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0K30ZJUMH",
+    "name": "北京艺星医疗美容医院(超级星院)",
+    "address": "广渠门外大街8号(双井地铁D出口)",
+    "lat": 39.893022,
+    "lng": 116.459034,
+    "hasPediatrics": false,
+    "phone": "15300827527",
+    "images": [
+      "https://store.is.autonavi.com/showpic/b211afe6fffdbfb94bdf92ed23a8b1cf",
+      "http://store.is.autonavi.com/showpic/9842e587fa35e86d0394329d31fdcb0d",
+      "http://store.is.autonavi.com/showpic/2dd21d6c91124ea16953416ad8534185"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFFW46IU",
+    "name": "北京协和医院东单院区国际医疗部",
+    "address": "东单协和医院内科楼最南端",
+    "lat": 39.912217,
+    "lng": 116.4163,
+    "hasPediatrics": false,
+    "phone": "010-69156699",
+    "images": [
+      "http://store.is.autonavi.com/showpic/3de1cb28a98d1ae57b0adff5965c599e",
+      "https://store.is.autonavi.com/showpic/e9085ecae17aa0782d032b0c18bdf01e",
+      "https://aos-comment.amap.com/B0FFFW46IU/comment/DD71DB90_E020_4C1E_A48E_FC47994918AF_L0_001_1500_200_1762930879571_36086506.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A75726",
+    "name": "北大口腔第三门诊部",
+    "address": "花园东路10号高德大厦A座2层",
+    "lat": 39.982854,
+    "lng": 116.370054,
+    "hasPediatrics": false,
+    "phone": "010-82037030",
+    "images": [
+      "http://store.is.autonavi.com/showpic/25254a1890833a6fca3f70a173670e9e",
+      "https://aos-comment.amap.com/B000A75726/comment/d23011819cd615141f4ab77a1d912ab0_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B000A75726/comment/f7ba551d47251a7122e0891e9bce0a38_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000AB9B0M",
+    "name": "北京市昌平区中西医结合医院",
+    "address": "黄平路219号",
+    "lat": 40.076077,
+    "lng": 116.36602,
+    "hasPediatrics": false,
+    "phone": "010-58596000",
+    "images": [
+      "http://store.is.autonavi.com/showpic/634310c9940e8e388fcb5a447df62110",
+      "https://aos-comment.amap.com/B000AB9B0M/comment/content_media_external_images_media_1000179836_ss__1768053626295_71568724.jpg",
+      "https://store.is.autonavi.com/showpic/6f26d14eb10aeb950000003049166504?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A106E4",
+    "name": "北京市仁和医院",
+    "address": "兴丰北大街1号",
+    "lat": 39.741918,
+    "lng": 116.338131,
+    "hasPediatrics": false,
+    "phone": "010-69242469",
+    "images": [
+      "https://store.is.autonavi.com/showpic/30937d8d838ad9ea290a4d161f188f82",
+      "https://store.is.autonavi.com/showpic/2128b122f02850ec473f9fc186e7dcbe",
+      "https://aos-comment.amap.com/B000A106E4/comment/content_media_external_file_3298_1762334003815_60040375.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A835WY",
+    "name": "北京德胜门中医院",
+    "address": "北京城区德胜门外大街200号",
+    "lat": 39.952059,
+    "lng": 116.379969,
+    "hasPediatrics": false,
+    "phone": "13370172809;18611621530",
+    "images": [
+      "http://store.is.autonavi.com/showpic/3a5ecf9165b23874b784aa272819c16f",
+      "https://store.is.autonavi.com/showpic/9408b20e08f82d903408300e0d219e15",
+      "https://store.is.autonavi.com/showpic/cdf9954956282855ce87c18cd223fa70"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A8U7SJ",
+    "name": "北京市石景山医院",
+    "address": "内石景山路24号(八角游乐园地铁站B南口步行380米)",
+    "lat": 39.906105,
+    "lng": 116.213332,
+    "hasPediatrics": false,
+    "phone": "010-88429999;010-88689046",
+    "images": [
+      "https://aos-comment.amap.com/B000A8U7SJ/comment/content_media_external_file_1000112824_ss__1768280239556_69049702.jpg",
+      "https://store.is.autonavi.com/showpic/ea920655cfacc842226f709e5fef4326",
+      "https://aos-comment.amap.com/B000A8U7SJ/comment/079668235ff3523ba85a717b9715e48d_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0JGL4B1GH",
+    "name": "慈铭体检(通州北苑分院)",
+    "address": "北京城区八里桥南街1号院1-1、1-2、1-3号商业F3-135",
+    "lat": 39.90658,
+    "lng": 116.635009,
+    "hasPediatrics": false,
+    "phone": "010-80888003;010-80888050;010-89655274",
+    "images": [
+      "https://img.alicdn.com/imgextra/i3/O1CN01NBmDQP1cZitc2w5qO_!!6000000003615-0-tps-591-591.jpg",
+      "https://store.is.autonavi.com/showpic/cdf4730873bee812da02e94418f414a2",
+      "https://aos-comment.amap.com/B0JGL4B1GH/comment/ed9a33542c36debf79facb8e45e8ad10_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A239E3",
+    "name": "首都医科大学附属复兴医院",
+    "address": "复兴门外大街甲20号",
+    "lat": 39.905587,
+    "lng": 116.340022,
+    "hasPediatrics": false,
+    "phone": "010-88062068;010-88062035",
+    "images": [
+      "http://store.is.autonavi.com/showpic/88870f7b60ca52b5e479c91e1221256f",
+      "https://aos-comment.amap.com/B000A239E3/comment/content_media_external_images_media_2133_1737876192977_37975128.jpg",
+      "https://aos-comment.amap.com/B000A239E3/comment/content_media_external_images_media_2133_1737876192977_66197423.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFKVXRTN",
+    "name": "美年大健康体检中心(建国门分院)",
+    "address": "北京城区建国门外大街24号1幢1-3层",
+    "lat": 39.907158,
+    "lng": 116.440296,
+    "hasPediatrics": false,
+    "phone": "15727381334;18911934378",
+    "images": [
+      "https://aos-comment.amap.com/B0FFKVXRTN/comment/07f3f791314eea3fc8556906e55d2c2d_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B0FFKVXRTN/comment/content_media_external_images_media_1000084018_ss__1726972816622_22459681.jpg",
+      "https://aos-comment.amap.com/B0FFKVXRTN/comment/content_media_external_images_media_1000084026_ss__1726972816626_52726187.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A137ED",
+    "name": "北京华德眼科医院",
+    "address": "北京城区金台路甜水园东街10号",
+    "lat": 39.923355,
+    "lng": 116.478797,
+    "hasPediatrics": false,
+    "phone": "13522044071",
+    "images": [
+      "http://store.is.autonavi.com/showpic/6b3a0d8b9842fde5ee77e5a8c0885bf6",
+      "http://store.is.autonavi.com/showpic/4064867b62434e8b834bc8a5056f259e",
+      "https://aos-comment.amap.com/B000A137ED/comment/d1256b1dc7f9983a6f4dc4abbbe7fac5_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0K0DSATBE",
+    "name": "美中宜和北京宜和医院",
+    "address": "京顺路111号",
+    "lat": 39.968309,
+    "lng": 116.461545,
+    "hasPediatrics": false,
+    "phone": "010-56063331",
+    "images": [
+      "http://store.is.autonavi.com/showpic/f2be1269f614690c878bf6b478a231f7",
+      "https://store.is.autonavi.com/showpic/a911854250f482ad9937c2ea2861e0e1",
+      "https://store.is.autonavi.com/showpic/a9f9509b9bac1a5e3e72ae5674b21e12"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0HAPSRV1E",
+    "name": "北京和平中西医结合医院",
+    "address": "和平里北街5号(柳芳地铁站A西口步行370米)",
+    "lat": 39.960113,
+    "lng": 116.430916,
+    "hasPediatrics": false,
+    "phone": "010-64216666",
+    "images": [
+      "https://store.is.autonavi.com/showpic/45197ace194a66a58ca45f75f901c748",
+      "https://store.is.autonavi.com/showpic/4ca18bd9fdce2b1911272302de4f9d29",
+      "https://store.is.autonavi.com/showpic/c6360cc988ca458e5e1a0eeefe62b0d2"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0GK4OSQKS",
+    "name": "北京和睦家京北妇儿医院",
+    "address": "北苑路甲170号院1号楼",
+    "lat": 39.998229,
+    "lng": 116.418181,
+    "hasPediatrics": false,
+    "phone": "4008919191",
+    "images": [
+      "http://store.is.autonavi.com/showpic/072a50a8cbe2a8d71650f80d48e5a198",
+      "https://aos-comment.amap.com/B0GK4OSQKS/comment/8C6BC0E5_9735_4AE2_B6A4_A3BC5BB6777E_L0_001_1500_2000_1733482562085_65599415.jpg",
+      "https://aos-comment.amap.com/B0GK4OSQKS/comment/F5AD5EBD_56EC_4B93_9D27_1C6A57C754A4_L0_001_1170_58_1765605245018_08983612.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A83AJ9",
+    "name": "北京中西医结合医院",
+    "address": "永定路86号",
+    "lat": 39.906383,
+    "lng": 116.265884,
+    "hasPediatrics": false,
+    "phone": "010-68212075;010-88223585",
+    "images": [
+      "http://store.is.autonavi.com/showpic/8a2b7fa2ef4fecebb41805041b04437c",
+      "https://store.is.autonavi.com/showpic/5ebcb964eeceb8c62078ea87dc170137",
+      "https://store.is.autonavi.com/showpic/7c57b6ff9202b3aa3c9b061a718f6f21"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFG730XR",
+    "name": "北京怡德医院",
+    "address": "昆明湖南路51号E座",
+    "lat": 39.95034,
+    "lng": 116.280239,
+    "hasPediatrics": false,
+    "phone": "010-53826011",
+    "images": [
+      "https://store.is.autonavi.com/showpic/6b898a388f236f370000002606742165?type=pic",
+      "https://aos-comment.amap.com/B0FFG730XR/comment/content_media_external_file_107307_ss__1768621317811_20002974.jpg",
+      "https://store.is.autonavi.com/showpic/4a58421236359b740000003047996129?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0JALH92HT",
+    "name": "北京同仁堂(大栅栏总店)",
+    "address": "大栅栏街24号(前门地铁站I西南口步行490米)",
+    "lat": 39.895773,
+    "lng": 116.396263,
+    "hasPediatrics": false,
+    "phone": [],
+    "images": [
+      "https://store.is.autonavi.com/showpic/119c818bed48e0c2e223a8175d21a0fd",
+      "https://aos-comment.amap.com/B0JALH92HT/comment/3aa4c96aaf45eb124233782d726f8395_2048_2048_80.jpg",
+      "https://store.is.autonavi.com/showpic/6116b188aa6910eb3b0453cfe5fe0587"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A85LR5",
+    "name": "北京国丹医院",
+    "address": "北京城区太平桥路17号",
+    "lat": 39.877662,
+    "lng": 116.317142,
+    "hasPediatrics": false,
+    "phone": "010-88995699;010-88995799",
+    "images": [
+      "https://store.is.autonavi.com/showpic/df07904ba7f21361789ece7387c32f37",
+      "https://aos-comment.amap.com/B000A85LR5/comment/content_media_external_file_18_1748478660458_55133744.jpg",
+      "https://store.is.autonavi.com/showpic/3ec4f2e6a8bccb87674361e0ff3fbd2a"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFK1PUOE",
+    "name": "劲松口腔医院(望京分院)",
+    "address": "望京园607号楼1层1192层2063层3064层501",
+    "lat": 39.988759,
+    "lng": 116.477501,
+    "hasPediatrics": false,
+    "phone": "010-65121070;010-65121711",
+    "images": [
+      "http://store.is.autonavi.com/showpic/04562e89c7d7c4142aa9a1863afdac06",
+      "http://store.is.autonavi.com/showpic/e3e706ed8fe06c6fb42e0f66b744ee3a",
+      "http://store.is.autonavi.com/showpic/5e3e0d0d18426f851fb931918f81cda8"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFHTRDCO",
+    "name": "慈铭体检(辉煌店)",
+    "address": "上地十街1号院6号楼2层213辉煌国际大厦亚朵酒店门口进入",
+    "lat": 40.052928,
+    "lng": 116.300561,
+    "hasPediatrics": false,
+    "phone": "010-62962808;010-62982811;010-89655274",
+    "images": [
+      "https://img.alicdn.com/imgextra/i3/O1CN01NBmDQP1cZitc2w5qO_!!6000000003615-0-tps-591-591.jpg",
+      "https://store.is.autonavi.com/showpic/c2f53033772ee784ae0e4c2f9147260d",
+      "https://store.is.autonavi.com/showpic/05955d3f8d2a895a0a83605ed981f8b5"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0GKSDJND2",
+    "name": "劲松口腔医院(五棵松分院)",
+    "address": "北京城区复兴路69号院12号1层101",
+    "lat": 39.911701,
+    "lng": 116.28288,
+    "hasPediatrics": false,
+    "phone": "010-65121070",
+    "images": [
+      "http://store.is.autonavi.com/showpic/437dff059c47398ee05e9038c2764375",
+      "http://store.is.autonavi.com/showpic/877f9b69b5dd4309ac605a380c397d1b",
+      "http://store.is.autonavi.com/showpic/d7550b94ed9e796597d0f749465f056f"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFHDHQTF",
+    "name": "美年大健康体检中心(牡丹园分院)",
+    "address": "北京城区花园北路35号9号楼105B101-B102",
+    "lat": 39.982218,
+    "lng": 116.365759,
+    "hasPediatrics": false,
+    "phone": "15727381334;18911934378",
+    "images": [
+      "http://store.is.autonavi.com/showpic/251b357f0d31261b4ead2b3869ad26b9",
+      "https://aos-comment.amap.com/B0FFHDHQTF/comment/07180ff61ce7fa5c069973510c917107_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B0FFHDHQTF/comment/AECDA3B7_0A48_493A_B6FF_8DBB909F8030_L0_001_1500_2000_1739752005605_29362837.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0K3O7S8JL",
+    "name": "爱康国宾体检中心(望之京首开广场分院)",
+    "address": "北京城区阜荣街10号2层二层商业2713层三层商业371",
+    "lat": 39.992866,
+    "lng": 116.473637,
+    "hasPediatrics": false,
+    "phone": "4008100120",
+    "images": [
+      "https://img.alicdn.com/imgextra/i1/O1CN01YPR4aq1PGrZpDXMkD_!!6000000001814-0-tps-365-365.jpg",
+      "https://aos-comment.amap.com/B0K3O7S8JL/comment/content_media_external_images_media_12784_ss__1733799953952_44924235.jpg",
+      "https://aos-comment.amap.com/B0K3O7S8JL/comment/content_media_external_file_1000070131_ss__1765369845332_51698969.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFH7673X",
+    "name": "北京固生堂中医医院",
+    "address": "北京城区六铺炕3号迤北",
+    "lat": 39.955295,
+    "lng": 116.394797,
+    "hasPediatrics": false,
+    "phone": "17610366903",
+    "images": [
+      "https://aos-comment.amap.com/B0FFH7673X/comment/content_media_external_file_1000048137_ss__1761180882823_31071405.jpg",
+      "https://aos-comment.amap.com/B0FFH7673X/comment/992FF092_3F0E_4A66_8994_5EF69EEFD787_L0_001_1075_919_1757578104010_41892655.jpg",
+      "https://store.is.autonavi.com/showpic/b353fe212d22ab3e0000002323040951?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFK6SVD1",
+    "name": "应急总医院(本院区)",
+    "address": "西坝河南里29号楼(柳芳地铁站B东口步行480米)",
+    "lat": 39.960263,
+    "lng": 116.436761,
+    "hasPediatrics": false,
+    "phone": "010-64667755",
+    "images": [
+      "https://store.is.autonavi.com/showpic/fe56187d0b3f8b9782733de7090bd873",
+      "https://aos-comment.amap.com/B0FFK6SVD1/comment/content_media_external_file_100001602_1758101233377_15044382.jpg",
+      "https://store.is.autonavi.com/showpic/2d03e2bd6659d7488bde32d83d827470"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFG96OEN",
+    "name": "中国中医科学院广安门医院南区",
+    "address": "清源街道兴丰大街2段138号",
+    "lat": 39.744517,
+    "lng": 116.340081,
+    "hasPediatrics": false,
+    "phone": "010-60283683",
+    "images": [
+      "http://store.is.autonavi.com/showpic/612c9dee6fc5cf4474e1b79d1d9b7775",
+      "https://store.is.autonavi.com/showpic/f77a03856e8f1b2b5fb7a6609cb1f97c",
+      "https://aos-comment.amap.com/B0FFG96OEN/comment/content_media_external_images_media_94667_ss__1737420381422_33162857.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFK328U3",
+    "name": "北京大学口腔医院四门诊",
+    "address": "东4环中路41号嘉泰国际大厦A座1楼(家乐福慈云寺店南侧)",
+    "lat": 39.916908,
+    "lng": 116.48827,
+    "hasPediatrics": false,
+    "phone": "010-85715955;010-85715965",
+    "images": [
+      "http://store.is.autonavi.com/showpic/34af76d7b626764242f535b236d9f17e",
+      "http://store.is.autonavi.com/showpic/53bb4e22a310502a4d106a9d",
+      "https://store.is.autonavi.com/showpic/c98b718ff5648fa4533f88bde36c3a8e"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A7ZIKU",
+    "name": "北京固生堂潘家园中医医院",
+    "address": "北京城区松榆北路5号楼",
+    "lat": 39.876368,
+    "lng": 116.463731,
+    "hasPediatrics": false,
+    "phone": "17610366903",
+    "images": [
+      "http://store.is.autonavi.com/showpic/41e11efd56e0c2a924b52d6aecf0cd9b",
+      "https://store.is.autonavi.com/showpic/a281202911d35661255c04d3539ac415",
+      "https://store.is.autonavi.com/showpic/9bcf379e5daee2d4656841892da0afc4"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000AB9BQT",
+    "name": "昌平区妇幼保健院",
+    "address": "北环路1号",
+    "lat": 40.230429,
+    "lng": 116.239955,
+    "hasPediatrics": true,
+    "phone": "010-69742706",
+    "images": [
+      "https://store.is.autonavi.com/showpic/818bb27555ac15aec738d8d0afca688a",
+      "http://store.is.autonavi.com/showpic/e8a890b947602620929ba63a8c306dc8",
+      "https://store.is.autonavi.com/showpic/9287fdda24d6f3887adf196324ba9d6b"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFH8N8DR",
+    "name": "北京明医方中医医院",
+    "address": "北太平庄路2号2幢一层101-113、层201-213、三层301-310、四层401-409",
+    "lat": 39.974867,
+    "lng": 116.370651,
+    "hasPediatrics": false,
+    "phone": "17812191927",
+    "images": [
+      "https://aos-comment.amap.com/B0FFH8N8DR/comment/2D8F1B38_2DDB_4A29_BEC4_E47F07F4A4FA_L0_001_2048_1536_1750229199445_63574883.jpg",
+      "https://store.is.autonavi.com/showpic/010b4ffcd6d227a7290ca294444b6cb4",
+      "https://store.is.autonavi.com/showpic/300a99af0aeb6a82b26ba9f8d7f6165b"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A8W911",
+    "name": "北京新世纪妇儿医院",
+    "address": "望京北路51号院",
+    "lat": 40.010023,
+    "lng": 116.456941,
+    "hasPediatrics": false,
+    "phone": "15600319389;4001853366",
+    "images": [
+      "https://store.is.autonavi.com/showpic/05892d87d24ecbf8efbb22eabf8a7e4e",
+      "http://store.is.autonavi.com/showpic/26cf6e1e13e4e01a149da0f620b524fd",
+      "https://comment-oss-online.oss-cn-wulanchabu.aliyuncs.com/B000A8W911/comment/content_media_external_images_media_37846_1655104806495_43bfae0f.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFFYKAEF",
+    "name": "大兴区妇幼保健院",
+    "address": "兴丰大街三段56号",
+    "lat": 39.737033,
+    "lng": 116.33995,
+    "hasPediatrics": true,
+    "phone": "010-69252081;010-69247278",
+    "images": [
+      "https://aos-comment.amap.com/B0FFFYKAEF/headerImg/365fbc528a0cf30b2d2e6e3e3e7b1ec3_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B0FFFYKAEF/comment/content_media_external_file_29597_1767953529268_53246617.jpg",
+      "https://aos-comment.amap.com/B0FFFYKAEF/comment/0e14cad95d7d08cc19f9e26f7a5f66d1_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A848X0",
+    "name": "北京市中关村医院",
+    "address": "中关村南路12号(中关村地铁站C3东南口步行490米)",
+    "lat": 39.98003,
+    "lng": 116.320584,
+    "hasPediatrics": false,
+    "phone": "010-82548888",
+    "images": [
+      "https://store.is.autonavi.com/showpic/e0a3e12dcf2eb28c42b534f327b5d14f",
+      "https://store.is.autonavi.com/showpic/44791aeeaf2864d2520a760b9d03609c",
+      "http://store.is.autonavi.com/showpic/53bb5240a310502a4d11bc3a"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A8VYGG",
+    "name": "北京大兴兴业口腔医院",
+    "address": "枣园北里10号(康庄路与兴业大街交叉路口)",
+    "lat": 39.75676,
+    "lng": 116.323397,
+    "hasPediatrics": false,
+    "phone": "010-61210808;4000815199",
+    "images": [
+      "https://aos-comment.amap.com/B000A8VYGG/comment/12171b6090629d5a002cfa669939ed73_2048_2048_80.jpg",
+      "https://store.is.autonavi.com/showpic/a887c3dab98486ca0000002901230513?type=pic",
+      "https://aos-comment.amap.com/B000A8VYGG/comment/d69d1e2481f068ffcfbf7e9e5f9d8a71_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A889VE",
+    "name": "清华大学玉泉医院",
+    "address": "石景山路5号",
+    "lat": 39.908375,
+    "lng": 116.246394,
+    "hasPediatrics": false,
+    "phone": "010-89926000",
+    "images": [
+      "http://store.is.autonavi.com/showpic/1817b250720c6e48503144af0e8bcff8",
+      "https://aos-comment.amap.com/B000A889VE/comment/content_media_external_file_10388_1756199126549_72442256.jpg",
+      "http://store.is.autonavi.com/showpic/8a79f7875403bd12d9cb8b7cd2d85c13"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFFAL3Z2",
+    "name": "北京南郊肿瘤医院",
+    "address": "西红门镇育才路2号",
+    "lat": 39.786699,
+    "lng": 116.346378,
+    "hasPediatrics": false,
+    "phone": "010-88969999",
+    "images": [
+      "https://store.is.autonavi.com/showpic/654cc0a142f91ca926ec8b27efc0a83d",
+      "https://store.is.autonavi.com/showpic/d51eeb03b5db4cd0cd23af667d21bdf4",
+      "https://aos-comment.amap.com/B0FFFAL3Z2/comment/%5B2025-03-14-07-15-48%5DDB774D96-963D-4CBD-AD2A-46D24C9195B_1741907750864_85026942.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFK4DTPC",
+    "name": "北京大学第三医院首都国际机场院区",
+    "address": "机场生活区机场南路东里17号",
+    "lat": 40.051347,
+    "lng": 116.596548,
+    "hasPediatrics": false,
+    "phone": "010-64581188;010-64591120",
+    "images": [
+      "https://store.is.autonavi.com/showpic/eafa600a6c9ac3e46ae12712065139c1",
+      "https://aos-comment.amap.com/B0FFK4DTPC/comment/A7B032DA_7986_495E_A807_F4170C96CC1C_L0_001_1080_192_1760682570289_21227302.jpg",
+      "https://aos-comment.amap.com/B0FFK4DTPC/comment/%5B2025-12-03-10-30-50%5D668D45B2-38DD-4BDF-9F73-92420AD52AA_1764729051238_02439683.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0JD5Z7MDP",
+    "name": "瑞慈体检北京中关村机构",
+    "address": "北四环西路68号4层401-402",
+    "lat": 39.98412,
+    "lng": 116.304689,
+    "hasPediatrics": false,
+    "phone": "010-62574559",
+    "images": [
+      "https://aos-comment.amap.com/B0JD5Z7MDP/comment/a437c0ff356b3aee03b51ae246d41b11_2048_2048_80.jpg",
+      "http://store.is.autonavi.com/showpic/de2f92cb5fd7901cadb2b7147088def2",
+      "https://aos-comment.amap.com/B0JD5Z7MDP/comment/3b0b35b39c1d25acca15e958611fd363_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFH60VMX",
+    "name": "爱康国宾博惠分院",
+    "address": "珠市口东大街6号珍贝大厦2层",
+    "lat": 39.892439,
+    "lng": 116.411519,
+    "hasPediatrics": false,
+    "phone": "4008100120",
+    "images": [
+      "https://img.alicdn.com/imgextra/i1/O1CN01YPR4aq1PGrZpDXMkD_!!6000000001814-0-tps-365-365.jpg",
+      "http://store.is.autonavi.com/showpic/33ad6af8b6cf3d540db66db7a49bcc9a",
+      "http://store.is.autonavi.com/showpic/575d0d8d88aba38878cde868824c0653"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A812ON",
+    "name": "北京中医药大学国医堂中医门诊部",
+    "address": "北三环东路11号(近和平东桥)",
+    "lat": 39.970062,
+    "lng": 116.428612,
+    "hasPediatrics": false,
+    "phone": "010-64286901",
+    "images": [
+      "https://aos-comment.amap.com/B000A812ON/comment/af70419a24ed7dcf8b46a7c0698cdc61_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B000A812ON/comment/C73AF484_61CD_4E5A_B523_DD98AE96B2DE_L0_001_1126_200_1762316283883_40784588.jpg",
+      "https://aos-comment.amap.com/B000A812ON/comment/2138A9AD_5321_4587_98DE_535B443418F2_L0_001_1500_200_1751964657812_28487445.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFGYKO1K",
+    "name": "北京莱佛士医院",
+    "address": "左家庄街道新源里16号琨莎中心一座105室",
+    "lat": 39.94831,
+    "lng": 116.450177,
+    "hasPediatrics": false,
+    "phone": "010-87937700",
+    "images": [
+      "http://store.is.autonavi.com/showpic/272364abb39adceef2f2cbb16e92c505",
+      "http://store.is.autonavi.com/showpic/d8c02e7431a584d6d5856aa6404ea1ab",
+      "https://aos-comment.amap.com/B0FFGYKO1K/comment/669820C7_C948_4A35_836E_89D8D263CC8C_L0_001_1536_2048_1754448408193_56422128.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0GUU71NNJ",
+    "name": "爱康卓悦北京西三旗分院",
+    "address": "京藏辅路西三旗沁春家园1号楼底商3层301号",
+    "lat": 40.058189,
+    "lng": 116.336481,
+    "hasPediatrics": false,
+    "phone": "4008100120",
+    "images": [
+      "http://store.is.autonavi.com/showpic/027ab97dbda108bf26f8f662d3014f39",
+      "http://store.is.autonavi.com/showpic/2e603ea3066ad786c9e78fff228bbeb0",
+      "http://store.is.autonavi.com/showpic/65f949ff8d0adf6fd0e9daaf23229c03"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFH6M5RS",
+    "name": "爱康国宾顺平分院",
+    "address": "南法信镇顺平路南法信段9号院1幢2层203室",
+    "lat": 40.118647,
+    "lng": 116.6125,
+    "hasPediatrics": false,
+    "phone": "4008100120",
+    "images": [
+      "https://img.alicdn.com/imgextra/i1/O1CN01YPR4aq1PGrZpDXMkD_!!6000000001814-0-tps-365-365.jpg",
+      "http://store.is.autonavi.com/showpic/1244b917376cc412d394b65a3fa2fc76",
+      "http://store.is.autonavi.com/showpic/6e33df8af8457880c3c08bf076e70d38"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A8X64U",
+    "name": "爱康国宾(北京西直门分院)",
+    "address": "西直门南大街2号成铭大厦4门",
+    "lat": 39.939473,
+    "lng": 116.356564,
+    "hasPediatrics": false,
+    "phone": "4008100120",
+    "images": [
+      "https://img.alicdn.com/imgextra/i1/O1CN01YPR4aq1PGrZpDXMkD_!!6000000001814-0-tps-365-365.jpg",
+      "http://store.is.autonavi.com/showpic/01bc85b50ca9b17defc3ea1fcc0f1f02",
+      "http://store.is.autonavi.com/showpic/1fed37c8888f0ddaca533371eedd474a"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A9QVQ3",
+    "name": "慈铭体检(公主坟店)",
+    "address": "复兴路21号海育大厦四层五层",
+    "lat": 39.909432,
+    "lng": 116.310984,
+    "hasPediatrics": false,
+    "phone": "010-68511180;010-68511908;010-89655274",
+    "images": [
+      "https://img.alicdn.com/imgextra/i3/O1CN01NBmDQP1cZitc2w5qO_!!6000000003615-0-tps-591-591.jpg",
+      "https://aos-comment.amap.com/B000A9QVQ3/headerImg/a6f2a3e9e171594825c48c7346b8bb16_2048_2048_80.jpg",
+      "http://store.is.autonavi.com/showpic/7bedefaf3f4953e4b17c095d02e18d41"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A6533E",
+    "name": "北京市普仁医院",
+    "address": "崇文门外街道崇文门外大街98号",
+    "lat": 39.894946,
+    "lng": 116.420297,
+    "hasPediatrics": false,
+    "phone": "010-87928000",
+    "images": [
+      "https://store.is.autonavi.com/showpic/ffc21cad4b6fdde711b2464975b93ace",
+      "https://store.is.autonavi.com/showpic/40c68b1e63f3394f1f007f15e1d1b1ea",
+      "http://store.is.autonavi.com/showpic/64f73c9ef5a0885d25619185be0303f3"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A62BD9",
+    "name": "北京丰台右安门医院",
+    "address": "右安门外大街199号",
+    "lat": 39.859276,
+    "lng": 116.361502,
+    "hasPediatrics": false,
+    "phone": "010-83322000;010-83322001;010-83322588",
+    "images": [
+      "http://aos-cdn-image.amap.com/sns/ugccomment/55e39f93-c3bb-4f05-8a1c-fb261bbb208b.jpg",
+      "https://store.is.autonavi.com/showpic/2704df8d9dfb81ac0000000802288051?type=pic",
+      "https://aos-comment.amap.com/B000A62BD9/comment/2426664117de7fc268315775ae98bc57_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFFV5AEA",
+    "name": "慈铭体检(西直门分店)",
+    "address": "北京城区西直门外大街1号西环广场T1写字楼(南座)15-16层",
+    "lat": 39.94085,
+    "lng": 116.352498,
+    "hasPediatrics": false,
+    "phone": "010-58301063;010-58301213;010-89655274",
+    "images": [
+      "https://img.alicdn.com/imgextra/i3/O1CN01NBmDQP1cZitc2w5qO_!!6000000003615-0-tps-591-591.jpg",
+      "https://aos-comment.amap.com/B0FFFV5AEA/comment/46d55ac851a64073c76a6fe8dc55e87f_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B0FFFV5AEA/comment/977c425aa8b3d06d0060e5014f002782_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0KRNZGF66",
+    "name": "京东体检(亦庄店)",
+    "address": "经海四路22号院亦城时代广场F1层",
+    "lat": 39.808025,
+    "lng": 116.539825,
+    "hasPediatrics": false,
+    "phone": "010-56359135",
+    "images": [
+      "http://store.is.autonavi.com/showpic/a8a3b0b09518b461c249a15d5692a533",
+      "https://aos-comment.amap.com/B0KRNZGF66/comment/20260317-f18e91244ffeb91659f13a9a-7vddjeJZ55S9LKeEkHU2X7.jpg",
+      "https://store.is.autonavi.com/showpic/41e765d4f0dbfdad031f3229b8d9654b"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0H2B5JWPV",
+    "name": "北京医院门诊楼",
+    "address": "东单大华路1号北京医院内(崇文门地铁站E西北口步行410米)",
+    "lat": 39.904229,
+    "lng": 116.415841,
+    "hasPediatrics": false,
+    "phone": "010-85132114",
+    "images": [
+      "https://aos-comment.amap.com/B0H2B5JWPV/comment/c46bffcf88766e0d4e213c118162c08a_2048_2048_80.jpg",
+      "https://store.is.autonavi.com/showpic/d5955a715492c0b02b6be9d6316f946f",
+      "https://store.is.autonavi.com/showpic/84d68008d779ff270000003070766471?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0KRLC2Z73",
+    "name": "美年大健康体检中心(大成分院)",
+    "address": "东四环中路78号楼金隅大成国际B2座2层",
+    "lat": 39.899458,
+    "lng": 116.493289,
+    "hasPediatrics": false,
+    "phone": "15727381334;18911934378",
+    "images": [
+      "http://store.is.autonavi.com/showpic/251b357f0d31261b4ead2b3869ad26b9",
+      "https://store.is.autonavi.com/showpic/279a8f08831a50fb0000003074588824?type=pic",
+      "https://store.is.autonavi.com/showpic/8e38f56588f34fa00000001199046759"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFG1AYUZ",
+    "name": "瑞慈体检北京三里屯机构",
+    "address": "工人体育场北路8号院6号楼3层",
+    "lat": 39.931506,
+    "lng": 116.453465,
+    "hasPediatrics": false,
+    "phone": "010-59359028",
+    "images": [
+      "http://store.is.autonavi.com/query_pic?id=stdba819b7-7e69-4e75-8542-d104c51183a8&user=search&operate=original",
+      "https://aos-comment.amap.com/B0FFG1AYUZ/comment/35985862_F4AC_4CA8_9C64_CA4CA3B383F6_L0_001_1284_661_1731045965821_31475223.jpg",
+      "https://aos-comment.amap.com/B0FFG1AYUZ/comment/3ed14cfb833bb7c414053bb097b6ba51_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A9EV5E",
+    "name": "北京首大眼耳鼻喉医院",
+    "address": "成寿寺路33号(成寿寺地铁站A西北口步行360米)",
+    "lat": 39.849156,
+    "lng": 116.445432,
+    "hasPediatrics": false,
+    "phone": "010-67002835",
+    "images": [
+      "http://store.is.autonavi.com/showpic/e2aa93e5db2794bd412493e763c9a66f",
+      "http://store.is.autonavi.com/showpic/0477db66489003b2290733e332994f89",
+      "http://store.is.autonavi.com/showpic/d657fa77caae2d323222bba9597ee16d"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0HUV162NF",
+    "name": "慈铭体检(雍和宫分院)",
+    "address": "安定门东大街28号雍和大厦B座1-2层",
+    "lat": 39.948356,
+    "lng": 116.421397,
+    "hasPediatrics": false,
+    "phone": "010-84195507;010-89655274",
+    "images": [
+      "https://img.alicdn.com/imgextra/i3/O1CN01NBmDQP1cZitc2w5qO_!!6000000003615-0-tps-591-591.jpg",
+      "https://store.is.autonavi.com/showpic/383625a91b284a50cec5f459a8a94259",
+      "http://store.is.autonavi.com/showpic/5fec2ff869689928c732e74e96e2a745"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A8356H",
+    "name": "嘉仁体检(热爱健康·北京首师大分院)",
+    "address": "北洼路26号楼东楼首层",
+    "lat": 39.936444,
+    "lng": 116.305859,
+    "hasPediatrics": false,
+    "phone": "4000109099",
+    "images": [
+      "https://store.is.autonavi.com/showpic/5d117611704156e17f082a48b3d8067d",
+      "https://store.is.autonavi.com/showpic/2d275d242150b03ac75ab10aee0acc68",
+      "https://aos-comment.amap.com/B000A8356H/comment/5a35e41f5050703cb1299a4d8d049c2c_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A85CLO",
+    "name": "北京弘医堂中医医院",
+    "address": "团结湖北路2号(长虹桥南)",
+    "lat": 39.931672,
+    "lng": 116.462363,
+    "hasPediatrics": false,
+    "phone": "010-65827961;010-65827962;010-65827963",
+    "images": [
+      "https://aos-comment.amap.com/B000A85CLO/comment/1687DB92_A4FB_4E55_8546_4EB61516F16F_L0_001_1920_108_1755826266940_23334822.jpg",
+      "http://store.is.autonavi.com/showpic/ca58c43666477b0b0eba777d552f2ad2",
+      "https://store.is.autonavi.com/showpic/86a197a12679d90dc4d2472f6dd6cfb5"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0H1H6PTEE",
+    "name": "爱康国宾北京西站瑞海大厦分院",
+    "address": "北京城区羊坊店路21号3层301-1至301-10",
+    "lat": 39.897764,
+    "lng": 116.319845,
+    "hasPediatrics": false,
+    "phone": "4008100120",
+    "images": [
+      "http://store.is.autonavi.com/showpic/164fb9fbe1a6f642825bdc0a2a5f3c9e",
+      "http://store.is.autonavi.com/showpic/544b16660719496ffcf10ff32106c49c",
+      "http://store.is.autonavi.com/showpic/587ae9d911e01346f0180aa81b88c750"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A9V65B",
+    "name": "首都医科大学附属北京同仁医院西区门诊楼",
+    "address": "崇文门内大街3号(崇文门地铁站E西北口步行230米)",
+    "lat": 39.902744,
+    "lng": 116.417982,
+    "hasPediatrics": false,
+    "phone": [],
+    "images": [
+      "https://aos-comment.amap.com/B000A9V65B/comment/F2959E07_A2C0_4ABA_A743_238B384D85E6_L0_001_1500_200_1769235875405_08231972.jpg",
+      "https://aos-comment.amap.com/B000A9V65B/comment/content_media_external_images_media_3386_1735513386336_05077895.jpg",
+      "https://store.is.autonavi.com/showpic/8d1cbdf7bde192a70000003075960558?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFJ1Z714",
+    "name": "北京中医医院顺义医院",
+    "address": "马坡镇健盛街1号院",
+    "lat": 40.166302,
+    "lng": 116.658111,
+    "hasPediatrics": false,
+    "phone": "010-69469671;010-81419999",
+    "images": [
+      "https://store.is.autonavi.com/showpic/873edcb23b9a6eb579a30b0e421e603f",
+      "https://aos-comment.amap.com/B0FFJ1Z714/comment/content_media_external_file_33383_1760654471113_80353156.jpg",
+      "https://aos-comment.amap.com/B0FFJ1Z714/comment/content_media_external_file_15736_1763800199918_43062606.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0KRSRGCOC",
+    "name": "恩生堂刘家窑中医医院",
+    "address": "横七条44号院1号商业",
+    "lat": 39.851261,
+    "lng": 116.424097,
+    "hasPediatrics": false,
+    "phone": "17812075307",
+    "images": [
+      "https://aos-comment.amap.com/B0KRSRGCOC/comment/E5C4AFF8_A0BE_4FFB_A8E6_773FD62BA6B8_L0_001_2000_150_1749198636355_09234092.jpg",
+      "https://aos-comment.amap.com/B0KRSRGCOC/comment/content_media_external_file_100000571_1764408908436_40478675.jpg",
+      "https://store.is.autonavi.com/showpic/73f9e35e7a3bbe6a33b53f4f30e476d2?operate=original"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFG85DIY",
+    "name": "北京大学人民医院(白塔寺院区)",
+    "address": "阜成门内大街133号",
+    "lat": 39.924732,
+    "lng": 116.366192,
+    "hasPediatrics": false,
+    "phone": "010-66583666",
+    "images": [
+      "http://store.is.autonavi.com/showpic/1bab2c13434eb3935700bfa73f2d9978",
+      "http://store.is.autonavi.com/showpic/00a17116fd7faf5b38ff6df3515fad5d",
+      "https://store.is.autonavi.com/showpic/8171d0f33191a99287ad7af24811f644"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFF08DXG",
+    "name": "北京怀柔医院",
+    "address": "永泰北街9号院",
+    "lat": 40.317103,
+    "lng": 116.660724,
+    "hasPediatrics": false,
+    "phone": "010-69644822",
+    "images": [
+      "http://store.is.autonavi.com/showpic/7194197b58fe33b1e0d33dba56ed41be",
+      "https://store.is.autonavi.com/showpic/405021d8f87593ebc01274365aa73638",
+      "https://store.is.autonavi.com/showpic/e5001f7ad575ce5a0a7b50b2421ebfd6"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A81JC1",
+    "name": "北京市鼓楼中医医院",
+    "address": "豆腐池胡同13号",
+    "lat": 39.944278,
+    "lng": 116.397785,
+    "hasPediatrics": false,
+    "phone": "010-64012858;010-64044445;010-64069506",
+    "images": [
+      "https://aos-comment.amap.com/B000A81JC1/comment/6cb3a1d27f8c83f581496a2ca9a44e2a_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B000A81JC1/comment/7DF2B912_DF6F_4269_8BE0_15A3C497DFD0_L0_001_1170_1674_1745544963661_70831833.jpg",
+      "http://store.is.autonavi.com/showpic/91ed5c1d5827cf84c2b7e0d522873c37"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0K1DG5UXI",
+    "name": "禾禾齿科(怡和阳光店)",
+    "address": "东土城路12号怡和阳光大厦C座一层",
+    "lat": 39.954955,
+    "lng": 116.432686,
+    "hasPediatrics": false,
+    "phone": "010-58761678;010-61845616",
+    "images": [
+      "https://aos-comment.amap.com/B0K1DG5UXI/comment/content_media_external_images_media_344931_ss__1731303964233_28229838.jpg",
+      "https://aos-comment.amap.com/B0K1DG5UXI/comment/8D77DCE3_1CE9_4DCD_ABA8_33D8667AF550_L0_001_1500_2000_1737453487698_53971963.jpg",
+      "https://aos-comment.amap.com/B0K1DG5UXI/comment/%5B2025-02-08-16-58-30%5D06983C70-82DA-4494-877D-F0B6BA770CA_1739005129974_61739971.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFHP1EVG",
+    "name": "北京市平谷区医院",
+    "address": "新平北路59号",
+    "lat": 40.146841,
+    "lng": 117.104734,
+    "hasPediatrics": false,
+    "phone": "010-89992020",
+    "images": [
+      "https://aos-comment.amap.com/B0FFHP1EVG/comment/content_media_external_file_29681_1753453991732_81963587.jpg",
+      "https://store.is.autonavi.com/showpic/1e9e2347885ef77b0000003145240211?type=pic",
+      "https://store.is.autonavi.com/showpic/34730b3fd376e9db057fc76205f06983"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFHLSI2C",
+    "name": "慈铭体检(奥亚分院)",
+    "address": "北京城区北苑路91号慈铭大厦",
+    "lat": 40.002075,
+    "lng": 116.419332,
+    "hasPediatrics": false,
+    "phone": "010-59658919;010-59658966;010-89655274",
+    "images": [
+      "https://img.alicdn.com/imgextra/i3/O1CN01NBmDQP1cZitc2w5qO_!!6000000003615-0-tps-591-591.jpg",
+      "https://store.is.autonavi.com/showpic/fb856b54010b88600000002730068900?type=pic",
+      "https://store.is.autonavi.com/showpic/a3321fbe06f88d4e0000002730096716?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A7HWMR",
+    "name": "北京市健宫医院",
+    "address": "菜市口南大街儒福里6号(陶然亭地铁站C东南口步行300米)",
+    "lat": 39.880853,
+    "lng": 116.375757,
+    "hasPediatrics": false,
+    "phone": "010-83521777",
+    "images": [
+      "http://store.is.autonavi.com/showpic/c7403bced4cb0d08d5979eec455c1761",
+      "https://aos-comment.amap.com/B000A7HWMR/comment/112806a6c1ed5b7505a0a0fe9d7d5871_2048_2048_80.jpg",
+      "http://store.is.autonavi.com/showpic/369fb914c210c5d255f812858bcd2933"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFF3IYQZ",
+    "name": "北京裕和中西医结合康复医院",
+    "address": "永定路15号",
+    "lat": 39.92181,
+    "lng": 116.263473,
+    "hasPediatrics": false,
+    "phone": "18500233697;4001199900",
+    "images": [
+      "https://store.is.autonavi.com/showpic/482d01a4fd717715f71692867fe39ef1",
+      "https://store.is.autonavi.com/showpic/941b5dfedacaf1c0d0dbabc48c455b6d",
+      "http://store.is.autonavi.com/showpic/b5651b85c9a07040451b90995e21a95d"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000AA89WW",
+    "name": "北京清河医院",
+    "address": "昌平路南段36号",
+    "lat": 40.036831,
+    "lng": 116.344647,
+    "hasPediatrics": false,
+    "phone": "17810264246",
+    "images": [
+      "http://store.is.autonavi.com/showpic/e0582992b435f672a24b3fdb433c8981",
+      "http://store.is.autonavi.com/showpic/e708e2d948839d1f1122c33ae733648f",
+      "https://store.is.autonavi.com/showpic/c936ac1bcdc36d6b2bf1146a86f219bb"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A07FC2",
+    "name": "北京小汤山医院",
+    "address": "银街北路390号",
+    "lat": 40.183573,
+    "lng": 116.391164,
+    "hasPediatrics": false,
+    "phone": "010-61781818",
+    "images": [
+      "https://store.is.autonavi.com/showpic/befb155186ebd619fc9f850d79dd27ab",
+      "http://store.is.autonavi.com/showpic/74fb31303d0e1e2895d20b50968503c3",
+      "https://store.is.autonavi.com/showpic/db75271712e9ff915b7698e264870da7"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A9DN12",
+    "name": "北京明德医院",
+    "address": "酒仙桥北路9号(厂区)23 45号楼",
+    "lat": 39.988803,
+    "lng": 116.492072,
+    "hasPediatrics": false,
+    "phone": "13810431500",
+    "images": [
+      "https://aos-comment.amap.com/B000A9DN12/comment/9DD9E535_584E_4340_B933_E68859B039A2_L0_001_1206_77_1760533244712_72994218.jpg",
+      "https://aos-comment.amap.com/B000A9DN12/comment/content_media_external_images_media_78425_ss__1730534778666_04879237.jpg",
+      "http://store.is.autonavi.com/showpic/c0dd0f23583458d0c3ea5213a8d2d9d7"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A78EA8",
+    "name": "北京市和平里医院",
+    "address": "和平里北街18号",
+    "lat": 39.958168,
+    "lng": 116.413255,
+    "hasPediatrics": false,
+    "phone": [],
+    "images": [
+      "http://store.is.autonavi.com/showpic/29f9831df452bc4bc1ab9fc2e8d0a678",
+      "http://store.is.autonavi.com/showpic/0294d864c6f577dcc70f5b4f3e8e36ef",
+      "https://store.is.autonavi.com/showpic/ad6391f5b6c5179520f21060ea4a2f1f"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFFPO572",
+    "name": "北京熙仁医院",
+    "address": "北京城区静淑东里10号院",
+    "lat": 40.005615,
+    "lng": 116.351154,
+    "hasPediatrics": false,
+    "phone": "13146900705",
+    "images": [
+      "https://store.is.autonavi.com/showpic/d66e2bb89ac3b2450000002292164977?type=pic",
+      "https://aos-comment.amap.com/B0FFFPO572/comment/content_media_external_images_media_1000187051_1695026291602_d4f95c98.jpg",
+      "https://aos-comment.amap.com/B0FFFPO572/comment/B13462AE_8C88_480B_80E0_30ED648EE8C8_L0_001_1428_107_1756189044405_39684952.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A8X90T",
+    "name": "北京市西城区妇幼保健院",
+    "address": "平原里小区19号",
+    "lat": 39.881273,
+    "lng": 116.373049,
+    "hasPediatrics": true,
+    "phone": "010-63531560;010-63577260",
+    "images": [
+      "https://store.is.autonavi.com/showpic/7fe988523cabc7654269bf16fbaf1443",
+      "https://store.is.autonavi.com/showpic/6a3636c936f66de8019fbcdba509ba33",
+      "https://aos-comment.amap.com/B000A8X90T/comment/content_media_external_images_media_100007237_1734340151294_86767448.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000AA6LAG",
+    "name": "国家体育总局运动医学研究所体育医院",
+    "address": "体育馆路甲2号旁门",
+    "lat": 39.88332,
+    "lng": 116.426239,
+    "hasPediatrics": false,
+    "phone": "010-67116611;010-67192749",
+    "images": [
+      "https://aos-comment.amap.com/B000AA6LAG/comment/57A7642A_6191_42DC_979B_83A7991D45D4_L0_001_1500_2000_1742345865886_17214686.jpg",
+      "https://aos-comment.amap.com/B000AA6LAG/comment/file_media_Photo_17018_IMG_1764915923_16938_IMG_20251205_142343_jpg_ss__1765194467802_99781474.jpg",
+      "https://store.is.autonavi.com/showpic/980b2067901be5785bfc3a38056df1fb"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFGUE7UM",
+    "name": "维尔口腔医院(紫竹桥分院)",
+    "address": "北京城区西三环北路35号(香格里拉酒店旁边)",
+    "lat": 39.943625,
+    "lng": 116.309579,
+    "hasPediatrics": false,
+    "phone": "010-60905443",
+    "images": [
+      "https://store.is.autonavi.com/showpic/c65a9597dac5a81f0000003050640170?type=pic",
+      "https://store.is.autonavi.com/showpic/034e2eaf1760a11d0000003118732664?type=pic",
+      "https://store.is.autonavi.com/showpic/a794ab9ee603f8360000003985068447?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFLKIJ9Z",
+    "name": "慈铭体检上地分院",
+    "address": "北京城区农大南路1号院硅谷亮城2A座3层",
+    "lat": 40.026607,
+    "lng": 116.311957,
+    "hasPediatrics": false,
+    "phone": "010-62963766;010-62963966;010-89655274",
+    "images": [
+      "https://img.alicdn.com/imgextra/i3/O1CN01NBmDQP1cZitc2w5qO_!!6000000003615-0-tps-591-591.jpg",
+      "http://store.is.autonavi.com/showpic/3547e23d5dda59f7a94ee8db8469398d",
+      "http://store.is.autonavi.com/showpic/209054a94fe472f5522efc3c3917d54e"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFF7608V",
+    "name": "美年大健康体检中心(太阳宫分院)",
+    "address": "北京城区夏家园12号楼底商一层部分二层全部",
+    "lat": 39.970797,
+    "lng": 116.450772,
+    "hasPediatrics": false,
+    "phone": "15727381334;18911934378",
+    "images": [
+      "https://store.is.autonavi.com/showpic/2774d0b750ca618105e325f4f9638949",
+      "http://store.is.autonavi.com/showpic/1faa75bee0784ba24d3870d05efa829c",
+      "https://store.is.autonavi.com/showpic/7a259a3a3ae0d4486e76760426a41aed"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0JK675G1H",
+    "name": "首都医科大学三博脑科医院",
+    "address": "东坝中路36号院1号楼",
+    "lat": 39.953268,
+    "lng": 116.548188,
+    "hasPediatrics": false,
+    "phone": "010-85130777",
+    "images": [
+      "https://store.is.autonavi.com/showpic/c1ed4008417a0aa70000002876862215?type=pic",
+      "https://store.is.autonavi.com/showpic/f59511a6c3538d3e0000000973248049?type=pic",
+      "https://store.is.autonavi.com/showpic/1999815e7fa80a4163d6705d6c912fe2"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFF6X3IN",
+    "name": "北京通用航天医院",
+    "address": "云岗镇云岗路云岗南里3号院",
+    "lat": 39.809157,
+    "lng": 116.170674,
+    "hasPediatrics": false,
+    "phone": "010-56373666",
+    "images": [
+      "http://store.is.autonavi.com/showpic/d1f1e81ca1bcbf472cc524dc2ee403b6",
+      "http://store.is.autonavi.com/showpic/d3c42c2109842de00fd5cbd8d5d75a13",
+      "https://store.is.autonavi.com/showpic/3e1137c0307004252a68072720510fc7"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0FFFFPHEK",
+    "name": "慈铭体检(国贸分院)",
+    "address": "北京城区建国路99号楼1层99-3内106B、2层99-10、99-12内部分面积、3层99-15内部分面积",
+    "lat": 39.909057,
+    "lng": 116.463073,
+    "hasPediatrics": false,
+    "phone": "010-65816513;010-65818780;010-89655274",
+    "images": [
+      "https://img.alicdn.com/imgextra/i3/O1CN01NBmDQP1cZitc2w5qO_!!6000000003615-0-tps-591-591.jpg",
+      "http://store.is.autonavi.com/showpic/209054a94fe472f5522efc3c3917d54e",
+      "https://aos-comment.amap.com/B0FFFFPHEK/comment/832ad2490145297e4ccf095ed63c637b_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A07F23",
+    "name": "首都医科大学附属北京同仁医院门头沟院区",
+    "address": "河滩桥东街10号(近新桥大街)",
+    "lat": 39.94553,
+    "lng": 116.101748,
+    "hasPediatrics": false,
+    "phone": "010-69828378;010-69843251",
+    "images": [
+      "http://store.is.autonavi.com/showpic/be6fea1448430481314e14dee5861fa9",
+      "http://store.is.autonavi.com/showpic/6b02dcef620d8daac60e1d0b2cbb1f31",
+      "https://store.is.autonavi.com/showpic/181321e56bafb1f93484b8812b2561a7"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0HGDK66IC",
+    "name": "爱康国宾航天桥分院",
+    "address": "北京城区西三环北路100号1号楼4层",
+    "lat": 39.925346,
+    "lng": 116.311914,
+    "hasPediatrics": false,
+    "phone": "4008100120",
+    "images": [
+      "http://store.is.autonavi.com/showpic/11c147bf4ecbc14006b977eba8a7288c",
+      "https://img.alicdn.com/imgextra/i1/O1CN01YPR4aq1PGrZpDXMkD_!!6000000001814-0-tps-365-365.jpg",
+      "http://store.is.autonavi.com/showpic/0f6a191f6015b7e4afb8e12e230c9150"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B0J3YR6ZC6",
+    "name": "北京中科百年中老年口腔医院",
+    "address": "石榴庄路政馨园三区56号楼一层",
+    "lat": 39.84568,
+    "lng": 116.432511,
+    "hasPediatrics": false,
+    "phone": "18600835093",
+    "images": [
+      "https://store.is.autonavi.com/showpic/5d422930393d5e570000003424310992?type=pic",
+      "https://store.is.autonavi.com/showpic/e5a196c7eefa2a5b0000003906946558?type=pic",
+      "https://store.is.autonavi.com/showpic/b7b3b560771bb3110000002444746521?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-beijing",
+    "amapPoiId": "B000A9V4PY",
+    "name": "北京大学口腔医院第五门诊部",
+    "address": "朝外街道朝阳门外大街吉庆里14号佳汇国际中心A座305室",
+    "lat": 39.927205,
+    "lng": 116.441047,
+    "hasPediatrics": false,
+    "phone": "010-65530988;010-65538893",
+    "images": [
+      "http://store.is.autonavi.com/showpic/3f69699c1b78ad05f160a395903b7398",
+      "https://aos-comment.amap.com/B000A9V4PY/headerImg/HeadImage_1769270661706_94185698.jpg",
+      "https://store.is.autonavi.com/showpic/52d2862d86a21f38750fe7056006ef78"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  }
+]

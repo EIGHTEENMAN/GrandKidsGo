@@ -1,0 +1,834 @@
+[
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0HD2ZCWXL",
+    "name": "OMG心跳乐园",
+    "address": "垂云通天河景区内",
+    "lat": 29.923903,
+    "lng": 119.531731,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B023B150LA",
+    "name": "龙井峡漂流",
+    "address": "龙岗镇龙井村(近浙西大龙湾景区)",
+    "lat": 30.185164,
+    "lng": 119.105965,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0FFI5IRZI",
+    "name": "杭州开元森泊度假乐园",
+    "address": "湘湖路1515号",
+    "lat": 30.132039,
+    "lng": 120.22379,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0I1CUE68D",
+    "name": "元·探索馆",
+    "address": "明星路620号娃哈哈大楼1层",
+    "lat": 30.21013,
+    "lng": 120.249841,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0L0VMI3KL",
+    "name": "潮玩立方运动超乐场(杭州城北花园城店)",
+    "address": "城北招商花园城3号门L1021-A",
+    "lat": 30.3807,
+    "lng": 120.159919,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0FFMFRYJC",
+    "name": "量子空间竞技主题乐园(杭州东站店)",
+    "address": "新风路266.268-270.272号杭州火车东站西广场C座G002商铺",
+    "lat": 30.290981,
+    "lng": 120.208473,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0KK079P71",
+    "name": "partyday运动超乐场(杭州奥体AT天地店)",
+    "address": "盈丰街道博奥路2657号1层",
+    "lat": 30.232526,
+    "lng": 120.231596,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0FFF3O4WK",
+    "name": "千岛湖九龙溪漂流",
+    "address": "左口乡显后村",
+    "lat": 29.723704,
+    "lng": 119.05351,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0HGU6CAEV",
+    "name": "千岛湖沪马探险乐园",
+    "address": "姜家镇球山村村委大楼",
+    "lat": 29.528902,
+    "lng": 118.736144,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0K679AF22",
+    "name": "奈尔宝·儿童乐园·亲子餐厅(杭州天空之城店)",
+    "address": "余杭塘路与浩苍巷交叉口向北100米天空文化艺术中心1-2层",
+    "lat": 30.297967,
+    "lng": 120.042068,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0KUDL4035",
+    "name": "POPOME泡泡米益智乐园·餐厅·派对(西湖文化广场店)",
+    "address": "环城北路47号西湖文化广场C区1层",
+    "lat": 30.276928,
+    "lng": 120.163514,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0L36XAL4D",
+    "name": "开心宇宙Cosmic Joy(西湖断桥店)",
+    "address": "西湖街道北山街28号1层",
+    "lat": 30.25963,
+    "lng": 120.150199,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0IBARK725",
+    "name": "杭州雪极星城市滑雪中心",
+    "address": "杭辰星万里一楼(港北路兴元路交叉口)",
+    "lat": 30.459025,
+    "lng": 120.220925,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0FFM0S7Q2",
+    "name": "杭州小六石乐园",
+    "address": "新登镇上山村官地上",
+    "lat": 30.009381,
+    "lng": 119.784642,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0H2GHUR7C",
+    "name": "辛巴达海洋乐园",
+    "address": "瓶窑镇展遗街11号",
+    "lat": 30.393569,
+    "lng": 119.965035,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0I0K50KCY",
+    "name": "MELAND CLUB(杭州城西银泰店)",
+    "address": "丰潭路380号银泰百货杭州城西店F2层",
+    "lat": 30.299585,
+    "lng": 120.108409,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0M67AWTUI",
+    "name": "杭州少年宫游乐园",
+    "address": "昭庆寺里街与古新河(桃花河)绿道交叉口西120米",
+    "lat": 30.261525,
+    "lng": 120.155525,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0H3SZKNF4",
+    "name": "MELANDCLUB(印力汇德隆杭州奥体印象城)",
+    "address": "盈丰街道飞虹路1408号印力汇德隆奥体印象城L3层20号",
+    "lat": 30.222873,
+    "lng": 120.253468,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0FFJC3GDI",
+    "name": "超级奈尔宝SUPER NEOBIO(杭州星光店)",
+    "address": "长河街道滨盛路1766号华联·星光大道二期北区一层L101-L110、二层L233-L234",
+    "lat": 30.211876,
+    "lng": 120.206125,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0IU1AXRQV",
+    "name": "MELAND(杭州滨江银泰店)",
+    "address": "银泰百货D区",
+    "lat": 30.200973,
+    "lng": 120.224431,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0FFFQ4R34",
+    "name": "杭州Do都城",
+    "address": "新业路311号(钱江新城市民中心K座)",
+    "lat": 30.247996,
+    "lng": 120.209448,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0L13S5X0K",
+    "name": "少年派城市森林乐园",
+    "address": "乔司街道葛家村村口农庄过高速桥洞150米",
+    "lat": 30.343904,
+    "lng": 120.273554,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0HKTA06YP",
+    "name": "MELAND CLUB(杭州萧山银泰店)",
+    "address": "通惠南路667号银泰百货杭州萧山店F3层",
+    "lat": 30.144499,
+    "lng": 120.286524,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0J30M0DOS",
+    "name": "meland club(杭州城北万象城)",
+    "address": "良渚街道杭行路1499号杭州城北万象城L3层",
+    "lat": 30.351019,
+    "lng": 120.112792,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0FFFVNA8T",
+    "name": "千岛湖-欢乐水世界",
+    "address": "千岛湖青溪大道119号珍珠半岛广场",
+    "lat": 29.59795,
+    "lng": 119.115082,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B023B14VSJ",
+    "name": "杭州烂苹果乐园",
+    "address": "风情大道2555号杭州乐园正门口对面",
+    "lat": 30.164538,
+    "lng": 120.242122,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0FFLB5TK3",
+    "name": "森泊水乐园",
+    "address": "湘湖旅游度假区湘湖路1515号(湖山广场音乐喷泉对面)",
+    "lat": 30.132169,
+    "lng": 120.224369,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0KD371B7F",
+    "name": "大船剧院",
+    "address": "严家路338号109室(新塘地铁站B口步行390米)",
+    "lat": 30.274272,
+    "lng": 120.203818,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0L14X2QUH",
+    "name": "布布熊亲子乐园·森林水乐园",
+    "address": "莫干山沈园户外探险乐园西南侧180米",
+    "lat": 30.457709,
+    "lng": 119.893681,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0M6AHZ6R6",
+    "name": "龙吟谷·cliff主题乐园",
+    "address": "桐庐龙吟谷水世界西侧170米",
+    "lat": 29.693549,
+    "lng": 119.929611,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0K3FUNU2C",
+    "name": "临安青山湖雷迪森庄园",
+    "address": "锦城街道吴山街1608号",
+    "lat": 30.234678,
+    "lng": 119.768988,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0L6AZUPXC",
+    "name": "千岛湖阿尔法城璞蔚逸趣度假村",
+    "address": "千岛湖阿尔法城1幢106室",
+    "lat": 29.595422,
+    "lng": 119.108712,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0J2HS10TZ",
+    "name": "杭州童宇宙亲子游乐园",
+    "address": "松乔街",
+    "lat": 30.325936,
+    "lng": 120.34549,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0HRM5HXE5",
+    "name": "杭州长乔亲子乐园",
+    "address": "湘湖路777号杭州极地海洋公园旁",
+    "lat": 30.138806,
+    "lng": 120.22384,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0KGXHVXY0",
+    "name": "You&Me HaHa亲子家庭中心(杭州临平inPARK店)",
+    "address": "南苑街道汀兰街233号临平银泰inPARK D区2层L2012室",
+    "lat": 30.392594,
+    "lng": 120.295596,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0KUOZVQ66",
+    "name": "梦春谷亲子农场",
+    "address": "中泰街道双联村黄毛山石矿-1农家乐团建",
+    "lat": 30.19972,
+    "lng": 119.945203,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0LAMH7Y5X",
+    "name": "源啟亲子乐园营地",
+    "address": "镇中路132号",
+    "lat": 30.218542,
+    "lng": 119.979372,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0JKA1LQDP",
+    "name": "在湖畔露营·户外轻奢烧烤·亲子企业团建营地",
+    "address": "兴场路与创业路交叉口南140米",
+    "lat": 30.266017,
+    "lng": 120.270016,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0MGRUL152",
+    "name": "杭州卡皮巴拉宠物亲子漂流",
+    "address": "万市镇方里村1号",
+    "lat": 30.113012,
+    "lng": 119.487867,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0I21ZQ6Y9",
+    "name": "yours游术亲子俱乐部",
+    "address": "大奇山路456号",
+    "lat": 29.788957,
+    "lng": 119.68579,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0JUKSOUWZ",
+    "name": "心芝麻开门亲子乐园(东兴天地店)",
+    "address": "祥泰街398号东兴天地F1层",
+    "lat": 30.334021,
+    "lng": 120.126123,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0ID6ZZBFG",
+    "name": "星野牧歌乐园",
+    "address": "浙江省杭州市钱塘区下沙街道乔司农场原二分公司生活备勤用房6号楼",
+    "lat": 30.372648,
+    "lng": 120.385855,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0H2VDUT3Z",
+    "name": "麒麟山丛林先峰越野",
+    "address": "鸬鸟镇太平山村操家里7号越野车真人CS团建烧烤亲子活动",
+    "lat": 30.432975,
+    "lng": 119.749025,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0HKYU07TL",
+    "name": "龙格亲子游泳俱乐部(江和美店)",
+    "address": "杭海路601号江和美海洋公园3层",
+    "lat": 30.268148,
+    "lng": 120.226976,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0J0UC4BIN",
+    "name": "蓝海豚亲子俱乐部",
+    "address": "金昌路2067号开元颐居酒店三层",
+    "lat": 30.345773,
+    "lng": 120.119311,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0L2BHJKY2",
+    "name": "呗比乐亲子乐园",
+    "address": "玲珑街道九洲街818号1幢",
+    "lat": 30.20295,
+    "lng": 119.68754,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0I2V55WGM",
+    "name": "小时光亲子农场",
+    "address": "闲林中路1号小时光亲子农场",
+    "lat": 30.216463,
+    "lng": 119.992894,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0LBHC00G2",
+    "name": "塔塔屋亲子生活馆(龙湖杭州滨江天街店)",
+    "address": "江汉路1515号龙湖杭州滨江天街L2层",
+    "lat": 30.200623,
+    "lng": 120.202355,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0L3O5Y04T",
+    "name": "梦宝儿亲子微密室(开元广场店)",
+    "address": "市心路1216号开元广场东门上二楼",
+    "lat": 30.134485,
+    "lng": 120.267066,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0FFIY1EUQ",
+    "name": "亲子工坊(江南时代购物中心店)",
+    "address": "余杭街道荆余路1号江南时代购物中心F5层",
+    "lat": 30.259163,
+    "lng": 119.951033,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0JGMZ3H39",
+    "name": "觅雨森林亲子乐园",
+    "address": "龙坞茶镇九街28号104室",
+    "lat": 30.182456,
+    "lng": 120.059004,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0L0HPPDV8",
+    "name": "西湖自划船",
+    "address": "西湖边六公园",
+    "lat": 30.258832,
+    "lng": 120.156927,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0FFJVUZGE",
+    "name": "杭州野生动物世界-欢乐庄园",
+    "address": "银湖街道九龙大道1号杭州野生动物世界",
+    "lat": 30.151908,
+    "lng": 119.983888,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0HU4ZKLYR",
+    "name": "动物幼儿园",
+    "address": "受降镇杭富路九龙大道1号杭州野生动物世界内",
+    "lat": 30.152335,
+    "lng": 119.984071,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0L6N5TZMS",
+    "name": "梦幻丛林萌宠家园",
+    "address": "甁窑镇塘埠村彭安路22号樱花谷乐园售票处",
+    "lat": 30.415197,
+    "lng": 119.887829,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0FFHNDJYQ",
+    "name": "杭州野生动物世界-钓鱼机",
+    "address": "受降镇杭富路九龙大道1号杭州野生动物世界内(西南角)",
+    "lat": 30.1524,
+    "lng": 119.983171,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0FFJWFQGL",
+    "name": "杭州野生动物世界-勇闯蚁巢",
+    "address": "受降镇九龙大道1号杭州野生动物世界",
+    "lat": 30.152409,
+    "lng": 119.983787,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0FFFDUEWA",
+    "name": "杭州野生动物世界-音乐快车",
+    "address": "受降镇杭富路九龙大道1号杭州野生动物世界内(西南角)",
+    "lat": 30.152174,
+    "lng": 119.982768,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0KRMR4AK7",
+    "name": "侈奇幻啦海洋公园(玉长城店)",
+    "address": "公园路8号一楼",
+    "lat": 30.067345,
+    "lng": 119.94892,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0KUB7OT4G",
+    "name": "杭州长乔亲子乐园-梦幻水母宫",
+    "address": "城厢街道湘湖景区湘湖路777号杭州长乔极地海洋公园内(南侧)",
+    "lat": 30.139515,
+    "lng": 120.22517,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0HKPCAOW6",
+    "name": "宁聚网羽公园",
+    "address": "新宁路与文明路交叉口北120米东",
+    "lat": 30.211974,
+    "lng": 120.278426,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0IRFD91RC",
+    "name": "福尔特体育公园",
+    "address": "加贸路230号",
+    "lat": 30.206747,
+    "lng": 120.263265,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0HUMMT34M",
+    "name": "五甲河滨水公园绿道凉亭",
+    "address": "建设四路276号",
+    "lat": 30.212133,
+    "lng": 120.246588,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-hangzhou",
+    "amapPoiId": "B0LUU7R1BI",
+    "name": "明石中央公园",
+    "address": "明石路3号(明石路地铁站D2口步行250米)",
+    "lat": 30.301033,
+    "lng": 120.229858,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  }
+]

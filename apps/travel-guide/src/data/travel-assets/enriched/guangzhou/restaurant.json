@@ -1,16 +1,224 @@
 [
   {
     "cityId": "city-guangzhou",
-    "amapPoiId": "B0FFH7AOJ2",
-    "name": "点都德(天河店)",
-    "address": "广州市天河区天河北路233号",
-    "lat": 23.13845,
-    "lng": 113.33012,
+    "amapPoiId": "B00140NVWJ",
+    "name": "麦当劳(今日广场店)",
+    "address": "体育西路79-83号今日广场1-2层",
+    "lat": 23.132458,
+    "lng": 113.321321,
+    "hasHighChair": true,
+    "isKidTolerant": true,
+    "hasKidsMenu": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0JKHSBD71",
+    "name": "椿风小院",
+    "address": "大龙街亚运大道573号123",
+    "lat": 22.940303,
+    "lng": 113.401364,
     "hasHighChair": false,
     "isKidTolerant": true,
     "hasKidsMenu": false,
-    "cuisine": "75元/人",
-    "avgPricePerPerson": 75,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B00140AFH3",
+    "name": "麦当劳(中泰国际广场店)",
+    "address": "林和西路161号中泰国际广场1层及夹层",
+    "lat": 23.149406,
+    "lng": 113.323292,
+    "hasHighChair": true,
+    "isKidTolerant": true,
+    "hasKidsMenu": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B00140T53J",
+    "name": "麦当劳(北京路广百广场店)",
+    "address": "北京街道北京路295号广百新翼商务中心二楼",
+    "lat": 23.123555,
+    "lng": 113.267796,
+    "hasHighChair": true,
+    "isKidTolerant": true,
+    "hasKidsMenu": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0KBY7A8MY",
+    "name": "FullHills满山丘艺术农场",
+    "address": "天鹅路南二巷一号",
+    "lat": 23.229518,
+    "lng": 113.444765,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0K395GBZ2",
+    "name": "水之美营地",
+    "address": "兰溪水美村水美路",
+    "lat": 23.345411,
+    "lng": 113.960774,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B00141IMI9",
+    "name": "麦当劳(儿童公园分店)",
+    "address": "人民南路88号儿童公园负一层",
+    "lat": 23.111638,
+    "lng": 113.253868,
+    "hasHighChair": true,
+    "isKidTolerant": true,
+    "hasKidsMenu": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFJIS50A",
+    "name": "麦当劳(广州汉溪大道东二分店)",
+    "address": "钟村街道汉溪大道东276号、泽溪街1号",
+    "lat": 22.994992,
+    "lng": 113.332926,
+    "hasHighChair": true,
+    "isKidTolerant": true,
+    "hasKidsMenu": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B00140U09R",
+    "name": "麦当劳(棠下分店餐厅)",
+    "address": "中山大道棠下村口达善大街1号之三1层",
+    "lat": 23.126139,
+    "lng": 113.379926,
+    "hasHighChair": true,
+    "isKidTolerant": true,
+    "hasKidsMenu": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B00140SXV2",
+    "name": "麦当劳(下渡路分店餐厅)",
+    "address": "上渡路123号首层",
+    "lat": 23.100411,
+    "lng": 113.308355,
+    "hasHighChair": true,
+    "isKidTolerant": true,
+    "hasKidsMenu": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0H3Z9GCW3",
+    "name": "环球社区GLOBAL•MUSICLIVE音乐现场(新塘店)",
+    "address": "新塘镇中学体育馆汇太广场第F1层东01-0305号铺",
+    "lat": 23.126859,
+    "lng": 113.601285,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0KBXXIK9G",
+    "name": "大小魔乐园(富基商城店)",
+    "address": "江南大道中富基广场2期一楼",
+    "lat": 23.106951,
+    "lng": 113.270488,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0L3M1OSPT",
+    "name": "kikisland其趣",
+    "address": "赤岗街道客村地铁站D口直上丽影广场三楼",
+    "lat": 23.095827,
+    "lng": 113.321534,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0L3X50SPC",
+    "name": "淘趣牛(正佳广场店)",
+    "address": "天河南街道天河路228号正佳广场6B033-034、041-044号",
+    "lat": 23.134728,
+    "lng": 113.324845,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0L2YCWTAA",
+    "name": "弹猪乐(岭南电商园店)",
+    "address": "洛浦街道洛浦街迎宾路段19号厦滘商务区A区广州岭南电商园市场7街21-22号",
+    "lat": 23.039465,
+    "lng": 113.316813,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
     "tags": [
       "ai_draft_v1"
     ],

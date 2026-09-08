@@ -1,0 +1,1887 @@
+[
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0GDL5H38P",
+    "name": "成都融创水世界",
+    "address": "玉堂镇至臻路35号",
+    "lat": 30.952832,
+    "lng": 103.620554,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0J1CDB34T",
+    "name": "成都丹景谷漂流",
+    "address": "三岔镇丹景街道新场村二组888号",
+    "lat": 30.333542,
+    "lng": 104.236836,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0FFG80VV1",
+    "name": "环球中心海洋乐园",
+    "address": "天府大道北段1700号新世纪环球中心1层",
+    "lat": 30.569822,
+    "lng": 104.062862,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0LGNRW0A3",
+    "name": "成都金堂龚家山漂流",
+    "address": "淮口街道龚家村18组66号",
+    "lat": 30.753197,
+    "lng": 104.55361,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B001C8SBF6",
+    "name": "九龙沟漂流",
+    "address": "三郎镇欢喜村11组",
+    "lat": 30.796997,
+    "lng": 103.518563,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0JBDZW8IK",
+    "name": "鹿尔花园",
+    "address": "天乡路三段2288号",
+    "lat": 30.693609,
+    "lng": 103.776171,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B001C8ONIB",
+    "name": "南湖梦幻岛",
+    "address": "南湖大道428号",
+    "lat": 30.499033,
+    "lng": 104.053915,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0HG5HBVKJ",
+    "name": "华熙LIVE·528·M空间",
+    "address": "雨树巷28号附321号",
+    "lat": 30.591066,
+    "lng": 104.14538,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0KDTHELFF",
+    "name": "天府云海度假区",
+    "address": "天府新区新兴街道井坝村3组300号",
+    "lat": 30.485725,
+    "lng": 104.160724,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0M615I5MK",
+    "name": "盘小宝儿童成长乐园",
+    "address": "中国(四川)自由贸易试验区成都高新区天府大道北段1700号9栋1单元1层101号附X1F28号",
+    "lat": 30.570083,
+    "lng": 104.060905,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0LK0582F6",
+    "name": "鲁班奇幻乐园(奥莱广场店)",
+    "address": "长荣路66号优悦奥莱广场3层",
+    "lat": 30.612571,
+    "lng": 104.078849,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0FFF6XR1X",
+    "name": "海豚湾水上乐园(彭州市店)",
+    "address": "天桂路丽春镇黄龙村17组(陈家大院)",
+    "lat": 31.020142,
+    "lng": 103.855893,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0KARMADLI",
+    "name": "马帮寨·生日主题馆·团建·室内休闲(空港花田店)",
+    "address": "黄甲街道航枢大道二段138号钓二郎当生态园西侧",
+    "lat": 30.526008,
+    "lng": 103.953135,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0H2Y5XBH4",
+    "name": "街子悠游岛",
+    "address": "街子镇显永路4号",
+    "lat": 30.806248,
+    "lng": 103.559328,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0FFFHWQ7J",
+    "name": "国色天乡陆地乐园",
+    "address": "万春镇天乡路二段88号",
+    "lat": 30.722538,
+    "lng": 103.821498,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0K1BAOAXH",
+    "name": "枫叶小溪",
+    "address": "401省道与双凤路交叉口西南60米",
+    "lat": 30.846874,
+    "lng": 103.59175,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0FFH5G1Y4",
+    "name": "加勒比冒险水世界",
+    "address": "划石路与崇双路交叉路口大划大桥",
+    "lat": 30.585712,
+    "lng": 103.735391,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0HUOSH6GA",
+    "name": "探洞工场(环球中心旗舰店)",
+    "address": "天府大道北段1700号9栋1单元1楼101附",
+    "lat": 30.571067,
+    "lng": 104.061663,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0LKAH9A1F",
+    "name": "墨屿森林营地",
+    "address": "温玉路与春水二支道交叉口西北120米",
+    "lat": 30.719963,
+    "lng": 103.806275,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0L0LZ9BF0",
+    "name": "成都B.DUCK小黄鸭城市乐园",
+    "address": "东安湖文创空间东50米",
+    "lat": 30.582459,
+    "lng": 104.23688,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0FFFS02DM",
+    "name": "国色天乡童话世界",
+    "address": "万春镇天乡路二段98号",
+    "lat": 30.722908,
+    "lng": 103.828591,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0JAS72NQL",
+    "name": "三只鹅白·孔雀花园艺术营地",
+    "address": "孔雀村8组31号",
+    "lat": 30.498914,
+    "lng": 104.184655,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0JGJR72OI",
+    "name": "彭州市天使眼露营地",
+    "address": "通济镇天台山村5组1号",
+    "lat": 31.188881,
+    "lng": 103.85263,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0L2AU2SBO",
+    "name": "艾丽树·奇迹沙漠(环球中心店)",
+    "address": "桂溪街道天府大道北段1700号新世纪环球中心B馆3楼E01",
+    "lat": 30.567475,
+    "lng": 104.064675,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0L6DY5W8O",
+    "name": "嘉辰星光森林国际营地",
+    "address": "寿安镇东岳社区10组300号",
+    "lat": 30.861603,
+    "lng": 103.69882,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0FFJ7QLNX",
+    "name": "香溢四季草莓乐园",
+    "address": "凤翔大道37号",
+    "lat": 30.656262,
+    "lng": 103.874734,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0JAURJMLG",
+    "name": "成都西湖水上乐园",
+    "address": "沙渠街道置业路",
+    "lat": 30.506833,
+    "lng": 103.753494,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0K6YR2RNN",
+    "name": "半隐小院·团建·烧烤·采摘·城市营地",
+    "address": "新繁街道锦苑社区13社680号",
+    "lat": 30.860564,
+    "lng": 104.039245,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0KUFOVWFU",
+    "name": "奈尔宝·儿童乐园·亲子餐厅(成都光环店)",
+    "address": "东大街东大路段333号成都光环购物公园A馆L2层A-L2-01&19",
+    "lat": 30.636337,
+    "lng": 104.110501,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0IRYDCCF4",
+    "name": "鹭途·松果营",
+    "address": "天府新区万安街道雅韵路777号1栋1层1号",
+    "lat": 30.480139,
+    "lng": 104.1478,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0FFJ35ARA",
+    "name": "多彩山地滑水",
+    "address": "怀远镇三官旅游新村重庆路",
+    "lat": 30.713032,
+    "lng": 103.502994,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0JU4ZGT2Z",
+    "name": "小溪边营地",
+    "address": "蒲阳街道石瓮社区3组",
+    "lat": 31.127552,
+    "lng": 103.740845,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0IA3L3W85",
+    "name": "Lala Land日落半岛露营地",
+    "address": "土龙路310号",
+    "lat": 30.716394,
+    "lng": 103.955903,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0IUCAQVGM",
+    "name": "飞放艺术营地",
+    "address": "兴隆湖儿童艺术中心",
+    "lat": 30.403868,
+    "lng": 104.08581,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0GKJC0BLL",
+    "name": "奈尔宝·儿童乐园·亲子餐厅(成都大悦城店)",
+    "address": "大悦路518号大悦城购物中心1F-J13",
+    "lat": 30.625742,
+    "lng": 104.01247,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0JGLAG7XN",
+    "name": "双流航空乐园",
+    "address": "空港中央公园之五湖四海",
+    "lat": 30.584518,
+    "lng": 103.929131,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0IDOUCOZD",
+    "name": "落日岛营地",
+    "address": "东部新区三岔街道万福村9组",
+    "lat": 30.284269,
+    "lng": 104.29273,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0H61SPF73",
+    "name": "新津县松霖家庭农场草莓采摘",
+    "address": "兴义镇不二果园子小区255号",
+    "lat": 30.484343,
+    "lng": 103.806416,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0K0662N5Y",
+    "name": "桃源里垂钓露营地",
+    "address": "回龙鑫院西侧100米",
+    "lat": 30.722904,
+    "lng": 103.78814,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0I2LZX6ZQ",
+    "name": "MELAND SPORT(成都万象城店)",
+    "address": "万年场街道双庆路8号万象城D馆L4层D-413",
+    "lat": 30.64733,
+    "lng": 104.113726,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0HUA58MEM",
+    "name": "北湖熊猫乐园",
+    "address": "环湖路与湖景三路交叉口北约200米",
+    "lat": 30.713733,
+    "lng": 104.155724,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0HROZIPEH",
+    "name": "瑞小满·熊猫颐园",
+    "address": "严家祠路188号",
+    "lat": 30.749878,
+    "lng": 104.135862,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0MD1OV8II",
+    "name": "园气熊猫(太古里店)",
+    "address": "Silver银石广场9楼2号",
+    "lat": 30.653112,
+    "lng": 104.079774,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0M657K9UW",
+    "name": "花花驾到熊猫工厂店",
+    "address": "总府路2号1幢时代广场A座10层5号",
+    "lat": 30.656207,
+    "lng": 104.080445,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0LUKZOZIW",
+    "name": "熊猫山姆甄选仓",
+    "address": "青瓷路51号17栋1楼(新津站地铁站D口步行270米)",
+    "lat": 30.465075,
+    "lng": 103.875275,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0FFIAHQYM",
+    "name": "西南交通大学犀浦校区机车博物园",
+    "address": "犀安路999号",
+    "lat": 30.761663,
+    "lng": 103.991673,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0G3JC77UT",
+    "name": "小岛动物农场",
+    "address": "麓客岛内(东侧)",
+    "lat": 30.459536,
+    "lng": 104.065423,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0GR4MH7QT",
+    "name": "杰克船长的奇幻动物世界",
+    "address": "杉板桥路龙湖滨江天街1号门5楼",
+    "lat": 30.665287,
+    "lng": 104.123801,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0MGHRU2I9",
+    "name": "一起幻城·任务闯关乐园(成都环球中心店)",
+    "address": "环球中心A馆3层B16号",
+    "lat": 30.570027,
+    "lng": 104.064583,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0LUAMGZXU",
+    "name": "锦江区无人机主题公园",
+    "address": "幸福路163号江家艺苑",
+    "lat": 30.576751,
+    "lng": 104.123412,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0KKLZ3VPK",
+    "name": "银河乐园",
+    "address": "新乐北街47号",
+    "lat": 30.606935,
+    "lng": 104.042144,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B001C80821",
+    "name": "成都欢乐谷",
+    "address": "西华街道西华大道16号",
+    "lat": 30.719292,
+    "lng": 104.032415,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0FFL5BHIY",
+    "name": "塔子山公园-游乐园",
+    "address": "迎晖路222号塔子山公园内(东侧)",
+    "lat": 30.634691,
+    "lng": 104.126855,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0FFKGQKOF",
+    "name": "乐奇冰雪乐园",
+    "address": "海洋路1号(海昌路地铁站E口步行280米)",
+    "lat": 30.495733,
+    "lng": 104.072293,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0LGRDBWIV",
+    "name": "星光游乐园",
+    "address": "柳荫路16号58神奇空间",
+    "lat": 30.589213,
+    "lng": 104.103144,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0FFKVMBA2",
+    "name": "塔子山公园-摩天轮",
+    "address": "塔子山公园-游乐园",
+    "lat": 30.634638,
+    "lng": 104.127327,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0HDUDJBGA",
+    "name": "超级运动休闲娱乐中心",
+    "address": "柳荫路红砂联合二组318号",
+    "lat": 30.585701,
+    "lng": 104.155996,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0J0RAO88Z",
+    "name": "北湖洛嘉森乐园",
+    "address": "湖景一路7号",
+    "lat": 30.715485,
+    "lng": 104.149567,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0J14HYBIE",
+    "name": "空港壹号游乐园",
+    "address": "成双大道南段与龙桥路交叉口东240米",
+    "lat": 30.593587,
+    "lng": 103.954702,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0KDUK4IZM",
+    "name": "宝贝的游乐园",
+    "address": "世纪英博幼儿园东北门旁",
+    "lat": 30.559117,
+    "lng": 104.086566,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0FFL7BC71",
+    "name": "研学乐园",
+    "address": "迎晖南街迎晖路222号塔子山公园内(东侧)",
+    "lat": 30.634575,
+    "lng": 104.127025,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0K1XU9FMC",
+    "name": "恐龙乐园(环贸ICD店)",
+    "address": "东大路577号成都环贸ICD B1层",
+    "lat": 30.63338,
+    "lng": 104.113604,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0KKV7K56D",
+    "name": "星空乐园",
+    "address": "成新蒲快速路与星空路四段交叉口东140米",
+    "lat": 30.633927,
+    "lng": 103.923145,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B001C8SA3P",
+    "name": "飞跃地中海(成都欢乐谷店)",
+    "address": "西华大道16号成都欢乐谷飞跃地中海区",
+    "lat": 30.720839,
+    "lng": 104.032549,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0LGVDXVQC",
+    "name": "汪托邦训犬学校·宠物主题公园",
+    "address": "汉江路20号",
+    "lat": 30.626621,
+    "lng": 103.874346,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0FFK7BO5N",
+    "name": "乐达·天府狂欢动物城",
+    "address": "天乡路三段777号",
+    "lat": 30.70568,
+    "lng": 103.802002,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0KK3D78Q5",
+    "name": "鹿溪花园",
+    "address": "斑竹园街道锦城村9组109号附1号",
+    "lat": 30.8742,
+    "lng": 104.109056,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0HA97829I",
+    "name": "亚特波塞冬欢乐世界",
+    "address": [],
+    "lat": 30.378303,
+    "lng": 103.837135,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0FFLC0RSE",
+    "name": "蓝色星球",
+    "address": "南湖大道428号南湖梦幻岛",
+    "lat": 30.50182,
+    "lng": 104.053788,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B001C8SBH3",
+    "name": "成都欢乐谷-飞行岛",
+    "address": "西华大道16号欢乐谷内",
+    "lat": 30.722489,
+    "lng": 104.034658,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0IGNH2OJD",
+    "name": "摩幻世界",
+    "address": "南湖东路与益州大道南湖大道段交叉口东220米",
+    "lat": 30.500826,
+    "lng": 104.05473,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0IDRSD3Z9",
+    "name": "童趣里儿童乐园",
+    "address": "双龙路488-21栋",
+    "lat": 30.580469,
+    "lng": 104.261386,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B001C8SAFC",
+    "name": "天旋地转",
+    "address": "西华大道16号欢乐谷加勒比旋风区内",
+    "lat": 30.723034,
+    "lng": 104.034838,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0KAUHFUQE",
+    "name": "GoSlime史莱姆主题乐园(龙湖·东安天街店)",
+    "address": "桃都大道中段666号龙湖成都东安天街F3层",
+    "lat": 30.574225,
+    "lng": 104.249875,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0I6ZMGSHO",
+    "name": "1860游乐园",
+    "address": "东升1860文创公园A3",
+    "lat": 30.560875,
+    "lng": 103.916575,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0K6PMSK24",
+    "name": "世界乐园",
+    "address": "泰山大道与红光大道辅路交叉口西180米",
+    "lat": 30.762864,
+    "lng": 103.962685,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0LAMCBLNC",
+    "name": "小巨蛋森林迷宫乐园",
+    "address": "麓坊街93号麓坊中心",
+    "lat": 30.464094,
+    "lng": 104.058121,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0HB6AIENB",
+    "name": "奇彩乐园",
+    "address": "花源镇长乐村15组8号",
+    "lat": 30.45035,
+    "lng": 103.8606,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0LK4ZW1EH",
+    "name": "童趣童乐儿童游乐场(林溪康城店)",
+    "address": "阳光城林溪康城下沉广场童趣童乐儿童游乐场58号",
+    "lat": 30.606625,
+    "lng": 104.290525,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0L2URFIS6",
+    "name": "瞿上田园-游乐园",
+    "address": "瞿上田园",
+    "lat": 30.49564,
+    "lng": 103.9232,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0J3ZCXX9T",
+    "name": "七一广场摩天轮(七一国际广场店)",
+    "address": "新泰东路71号七一国际广场",
+    "lat": 30.821675,
+    "lng": 104.172175,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0JAZZ00CS",
+    "name": "碰碰车(龙泉驿欢乐田园店)",
+    "address": "双龙路2884号",
+    "lat": 30.601527,
+    "lng": 104.255513,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0LD4YN5D8",
+    "name": "科幻视界游乐园",
+    "address": "航鹰东路3号附21号A7",
+    "lat": 30.585225,
+    "lng": 103.927481,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0FFL329K5",
+    "name": "迷你过山车",
+    "address": "天府新区华阳南湖大道南湖梦幻岛内",
+    "lat": 30.498204,
+    "lng": 104.054474,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0IRVUTUHL",
+    "name": "超级水工厂乐园",
+    "address": "三道堰镇永宁路南一段461号",
+    "lat": 30.860079,
+    "lng": 103.913622,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0FFFOE539",
+    "name": "南湖梦幻岛太空梭",
+    "address": "华阳南湖路南湖梦幻岛",
+    "lat": 30.501425,
+    "lng": 104.054575,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0I33NL54F",
+    "name": "宝宝游乐园",
+    "address": "芙蓉锦苑B区东北1门旁",
+    "lat": 30.594497,
+    "lng": 103.987422,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0KG9C0JGM",
+    "name": "嗨享玩欢乐小镇(装修中)",
+    "address": "槐树店路38号附49号(槐树店地铁站C口步行480米)",
+    "lat": 30.65177,
+    "lng": 104.143424,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0J6PC49ID",
+    "name": "成都童趣泡泡儿童亲子乐园(暂停营业)",
+    "address": "聚霞路3号",
+    "lat": 30.792692,
+    "lng": 104.078204,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0M6MATJJX",
+    "name": "精灵欢乐谷",
+    "address": "蛟龙港海滨广场11号楼1221室",
+    "lat": 30.604125,
+    "lng": 103.910027,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0JB25WXLO",
+    "name": "海滨主题乐园",
+    "address": "蛟龙大道21号海滨城购物中心2F层A226",
+    "lat": 30.604017,
+    "lng": 103.909848,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0FFFVNDDY",
+    "name": "川晋游乐场",
+    "address": "黄龙溪古镇景区",
+    "lat": 30.319635,
+    "lng": 103.967893,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0IUM76MU8",
+    "name": "侏罗纪公园",
+    "address": "洛带镇府兴街132号(政府办公楼一楼)",
+    "lat": 30.673522,
+    "lng": 104.367505,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0HGFH52A7",
+    "name": "游乐场",
+    "address": "蜀龙大道南段漫花庄园景区内",
+    "lat": 30.763557,
+    "lng": 104.140734,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0FFFE7QM2",
+    "name": "贝瑞草莓主题乐园",
+    "address": "中国西部枇杷博览园西北门西南330米",
+    "lat": 30.362571,
+    "lng": 104.158263,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0M6Z72GK8",
+    "name": "骑聚-欢乐谷",
+    "address": "长庆路与花照壁上横街交叉口东80米",
+    "lat": 30.704575,
+    "lng": 104.034975,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0KALCIATN",
+    "name": "老谢的游乐场",
+    "address": "牧华路一段700号空港花田北门内",
+    "lat": 30.504013,
+    "lng": 103.935415,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0MATLXOB1",
+    "name": "望丛公园游乐场",
+    "address": "望丛公园",
+    "lat": 30.808825,
+    "lng": 103.869875,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0LBT50JXL",
+    "name": "金龙长城丛林过山车",
+    "address": "洛带镇长安中街7号",
+    "lat": 30.685033,
+    "lng": 104.366366,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0IGBSKB6Q",
+    "name": "狂野飞车",
+    "address": "府河路一段与南湖路交叉口西220米",
+    "lat": 30.497528,
+    "lng": 104.054517,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0LBSDMJRV",
+    "name": "桔子乐园(罗马假日广场店)",
+    "address": "高升桥东路6号罗马假日广场",
+    "lat": 30.637475,
+    "lng": 104.041725,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0J29H1DGT",
+    "name": "Dida造梦乐园",
+    "address": "简州新城龙马湖公园(西南角)",
+    "lat": 30.49345,
+    "lng": 104.455132,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0KUF96I09",
+    "name": "会仙河游乐园经营部",
+    "address": "华丰路与华丰巷交叉口西北240米",
+    "lat": 30.715948,
+    "lng": 104.027642,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0LDBADJ8N",
+    "name": "比趣明日世界旋转木马",
+    "address": "晋阳路313号龙湖成都金楠天街(阳公桥地铁站B口旁)",
+    "lat": 30.649175,
+    "lng": 103.996575,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0G1F5MH0X",
+    "name": "金沙乐园摩天轮广场",
+    "address": "金沙南街39南侧金沙公园(东南角)",
+    "lat": 30.854931,
+    "lng": 104.399703,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0J0TZXVZT",
+    "name": "豆乐园儿童游乐园(暂停营业)",
+    "address": "民兴北二路正成东区1号",
+    "lat": 30.684672,
+    "lng": 104.159171,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0FFFOE52X",
+    "name": "南湖梦幻岛创意工坊",
+    "address": "南湖大道428号南湖梦幻岛",
+    "lat": 30.501223,
+    "lng": 104.054737,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0IDSCKO51",
+    "name": "灵官庙欢乐塘",
+    "address": "鱼龙路",
+    "lat": 30.820821,
+    "lng": 104.035308,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0FFFOE3BI",
+    "name": "南湖梦幻岛巅峰飞越",
+    "address": "华阳南湖梦幻岛内",
+    "lat": 30.499068,
+    "lng": 104.053992,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0L0C10DKR",
+    "name": "好想弹猪珠潮品游乐园(海滨购物中心店)",
+    "address": "蛟龙大道21号海滨城购物中心B1层",
+    "lat": 30.603375,
+    "lng": 103.908825,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0FFI7PUSS",
+    "name": "蜀国鹃都游乐园",
+    "address": "郫筒镇太平村1社88号",
+    "lat": 30.846832,
+    "lng": 103.870874,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0FFFOE9D0",
+    "name": "南湖梦幻岛丛林小火车",
+    "address": "南湖公园内(东侧)",
+    "lat": 30.498965,
+    "lng": 104.052902,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0L3FH5O41",
+    "name": "萌趣游乐园",
+    "address": "青龙街道青龙广场负一楼永辉超市收银区旁",
+    "lat": 30.709568,
+    "lng": 104.110218,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0KBOO9UNE",
+    "name": "小叮当游乐园",
+    "address": "华府大道一段与天府大道南段辅路交叉口西180米",
+    "lat": 30.526384,
+    "lng": 104.06761,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0FFIWBNTB",
+    "name": "天府乐园",
+    "address": "东溪镇鳌山",
+    "lat": 30.40167,
+    "lng": 104.556846,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0I1O7A9IY",
+    "name": "小不叮游乐园快递自提柜",
+    "address": "龙都国际西北2门旁",
+    "lat": 30.581038,
+    "lng": 104.285407,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0FFFE8KZ9",
+    "name": "旋风过山车",
+    "address": "万春镇天乡路二段88号国色天乡乐园内(西侧)",
+    "lat": 30.722987,
+    "lng": 103.822964,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0J1YPFN02",
+    "name": "活力堡玩趣世界游乐园(悦尚中心店)",
+    "address": "犀浦街道双铁路112号润扬双铁广场一期悦尚中心3楼",
+    "lat": 30.758167,
+    "lng": 103.975791,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0KUAN1SVO",
+    "name": "青杠树小火车",
+    "address": "三道堰青杠树村8组95号香草湖湿地公园内(南侧)",
+    "lat": 30.838499,
+    "lng": 103.96023,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0FFFOE9CP",
+    "name": "南湖梦幻岛桑巴气球",
+    "address": "南湖大道南湖梦幻岛",
+    "lat": 30.499131,
+    "lng": 104.052946,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0LGGYW67H",
+    "name": "小Hill光影游乐园",
+    "address": "东安街道桃都大道中段666号龙湖成都东安天街",
+    "lat": 30.574487,
+    "lng": 104.247698,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0H1OAS3QE",
+    "name": "天浩游乐场",
+    "address": "府兴街与槐树中街交叉口东南80米",
+    "lat": 30.63919,
+    "lng": 104.324446,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0FFKX8L3M",
+    "name": "魔幻飞马",
+    "address": "华阳南湖大道南湖梦幻岛内",
+    "lat": 30.501932,
+    "lng": 104.054212,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0LA9HS513",
+    "name": "太空乐园",
+    "address": "大同红光体育公园(西北角)",
+    "lat": 30.877864,
+    "lng": 104.282158,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0K6JSX8OT",
+    "name": "鑫岛乐园",
+    "address": "赵镇街道万泰东街",
+    "lat": 30.852095,
+    "lng": 104.418367,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0KUNCNGEA",
+    "name": "德奥塔奶香山丘",
+    "address": "王山别墅西侧360米",
+    "lat": 30.539986,
+    "lng": 103.242079,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0JUVZX7KG",
+    "name": "青白江橙乐堡游乐场(英祥商业广场店)",
+    "address": "凤凰西六路1号1栋3楼",
+    "lat": 30.891225,
+    "lng": 104.260075,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0JD2AL76Y",
+    "name": "哈小象游乐场(苏宁广场店)",
+    "address": "蜀龙大道中段1333号(钟楼地铁站出入口步行150米)",
+    "lat": 30.820075,
+    "lng": 104.176428,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0LAUU7B4F",
+    "name": "北湖熊猫乐园-自控飞机",
+    "address": "北湖熊猫乐园",
+    "lat": 30.713709,
+    "lng": 104.15575,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0JDR7QEXA",
+    "name": "新津区淘气游乐中心",
+    "address": "方兴社区9组101号",
+    "lat": 30.421148,
+    "lng": 103.726614,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0LD2DN7AP",
+    "name": "星光游乐园",
+    "address": "曲景路570号",
+    "lat": 30.78495,
+    "lng": 104.168654,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0MA7AZL0H",
+    "name": "锦绣东宸-游乐场",
+    "address": "洛西路98号-锦绣东宸园区内",
+    "lat": 30.642589,
+    "lng": 104.311965,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0JABLT2LF",
+    "name": "玉女山童话游乐场",
+    "address": "新斑路一段与金马路交叉口西360米",
+    "lat": 30.831007,
+    "lng": 104.063233,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0IAP7RGC7",
+    "name": "百花谷时空探险馆",
+    "address": "叠秀路1777号百花谷出口大厅二楼",
+    "lat": 30.764127,
+    "lng": 104.165776,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0IDKNCEOQ",
+    "name": "青白江区鲸鱼的家游乐场",
+    "address": "凤凰大道二段747号3楼",
+    "lat": 30.890934,
+    "lng": 104.280064,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0IRUC2XKO",
+    "name": "一把手运动游乐园",
+    "address": "市府路20号3楼",
+    "lat": 30.415375,
+    "lng": 103.462875,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0LA4RAY3R",
+    "name": "爱智艺游乐场",
+    "address": "崇阳街道唐安东路368号圣沅唐人街购物中心沃尔玛三楼",
+    "lat": 30.631575,
+    "lng": 103.689375,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0LDXD5S74",
+    "name": "永生战士游乐园",
+    "address": "凤凰大道阳光里932号2栋2楼1号永生战士游乐园",
+    "lat": 30.398542,
+    "lng": 103.473654,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0J607DL8Y",
+    "name": "天府之光",
+    "address": "融创乐园",
+    "lat": 30.948923,
+    "lng": 103.623286,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0LG417LRY",
+    "name": "贝壳-乐远",
+    "address": "南熏大道三段与海科路东段交叉口东南40米",
+    "lat": 30.680775,
+    "lng": 103.831975,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0KU3LIVVE",
+    "name": "裉丰大垲榔体育文创公园游乐园",
+    "address": "大天路与大成路南段交叉口东200米",
+    "lat": 30.758316,
+    "lng": 104.072575,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0KGPC0BCT",
+    "name": "天府田园童话王国",
+    "address": "中国橘乡西侧",
+    "lat": 30.766225,
+    "lng": 104.586325,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0JGXSRFJH",
+    "name": "高攀小游园",
+    "address": "高攀路与高翔西路交叉口东南60米",
+    "lat": 30.610065,
+    "lng": 104.081529,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0H2HOKQXG",
+    "name": "鲨鱼公园(置信丽都花园A区店)",
+    "address": "丽都路2号丽都花园A区栋102",
+    "lat": 30.630181,
+    "lng": 104.034402,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0KU5UK10K",
+    "name": "武侯20号体育公园",
+    "address": "金航路53号(金花地铁站A口步行470米)",
+    "lat": 30.595826,
+    "lng": 103.967816,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  }
+]

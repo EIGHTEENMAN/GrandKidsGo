@@ -1,11 +1,4171 @@
 [
   {
     "cityId": "city-guangzhou",
-    "amapPoiId": "B0FFH7APQ0",
-    "name": "广州珠江公园",
-    "address": "广州市天河区金穗路",
-    "lat": 23.13245,
-    "lng": 113.33612,
+    "amapPoiId": "B00140UE17",
+    "name": "长隆水上乐园",
+    "address": "汉溪大道299号",
+    "lat": 23.002051,
+    "lng": 113.324377,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0IBCC08IF",
+    "name": "广州森林海嬉水乐园",
+    "address": "白水寨大道101号",
+    "lat": 23.564647,
+    "lng": 113.763428,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B00140UE18",
+    "name": "长隆国际大马戏",
+    "address": "汉溪大道299号长隆国际大马戏",
+    "lat": 23.00342,
+    "lng": 113.331398,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFKJ04AN",
+    "name": "广州热雪奇迹",
+    "address": "新华平步大道融创文旅城内",
+    "lat": 23.427736,
+    "lng": 113.232793,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFKDY4LD",
+    "name": "广州融创水世界",
+    "address": "凤凰北路63号融创茂一楼",
+    "lat": 23.42773,
+    "lng": 113.233724,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0G23RE2KR",
+    "name": "广州钧明欢乐世界",
+    "address": "永宁街道创盈路3号",
+    "lat": 23.189965,
+    "lng": 113.593709,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LR0SM6JD",
+    "name": "Moohu牧湖农场",
+    "address": "海鸥公路与勾西二路交叉口东南140米",
+    "lat": 22.924428,
+    "lng": 113.515625,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B00140UFVQ",
+    "name": "黄金海岸水上乐园",
+    "address": "滨江东路29号(近中大北门)",
+    "lat": 23.104405,
+    "lng": 113.294513,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0JA7RXDA2",
+    "name": "奈尔宝·儿童乐园·亲子餐厅(广州悦汇城店)",
+    "address": "西湾路150号悦汇城1楼150-3号",
+    "lat": 23.149088,
+    "lng": 113.243318,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0L37AKWI0",
+    "name": "高新沙桥底公园",
+    "address": "大岗镇高沙村珠江三角洲水资源配置工程对面",
+    "lat": 22.833802,
+    "lng": 113.42753,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B00141S9QS",
+    "name": "星纪世界·南湖乐园",
+    "address": "同和路983号",
+    "lat": 23.220854,
+    "lng": 113.334724,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0L1VHB2CA",
+    "name": "疯狂的麦咭官方体验馆(广州店)",
+    "address": "钟盛路183号",
+    "lat": 22.970806,
+    "lng": 113.302098,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0K307L67D",
+    "name": "运动派·广州店",
+    "address": "黄埔大道东823号居然之家五楼(原运动萌兽)",
+    "lat": 23.103286,
+    "lng": 113.419448,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0KU9ACXU8",
+    "name": "增城欢乐湾",
+    "address": "荔湖街道连江路68号",
+    "lat": 23.244042,
+    "lng": 113.83245,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0KDDUAKOG",
+    "name": "运动拾光潮玩馆",
+    "address": "盛兴大街83-5号",
+    "lat": 22.930972,
+    "lng": 113.387263,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0K32ZC9ID",
+    "name": "芒果树桨板露营基地",
+    "address": "黄龙路",
+    "lat": 23.736722,
+    "lng": 113.733242,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0HDZ94ADK",
+    "name": "MELAND CLUB(广州乐峰广场店)",
+    "address": "工业大道北106-108号乐峰广场L1层L1-S39",
+    "lat": 23.088859,
+    "lng": 113.258507,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0K0NK7FIN",
+    "name": "VeRyland奇境乐园",
+    "address": "新市街机场路1399号百信广场东区4层DL4018号5层DL5001",
+    "lat": 23.193715,
+    "lng": 113.261943,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0MA17FATM",
+    "name": "松鼠部落(广州店)",
+    "address": "狮岭镇益群合二经济社靓仔自编1号之三",
+    "lat": 23.463469,
+    "lng": 113.186615,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0JD75ADTM",
+    "name": "MELAND CLUB(广州天河领展广场店)",
+    "address": "马场路36号领展广场316-3铺",
+    "lat": 23.123459,
+    "lng": 113.343751,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LGZZPVN3",
+    "name": "高沙钓虾场",
+    "address": "新村街23号",
+    "lat": 22.81881,
+    "lng": 113.433332,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LG0H6070",
+    "name": "欢乐舟主题乐园",
+    "address": "白云大道北888号安华汇7楼",
+    "lat": 23.21662,
+    "lng": 113.296518,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0KGRAFV5C",
+    "name": "鹤鸣涧营地",
+    "address": "永顺大道领学街鹤鸣涧营地",
+    "lat": 23.218312,
+    "lng": 113.520956,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0KADST0YA",
+    "name": "兰溪山居露营",
+    "address": "水美路",
+    "lat": 23.334818,
+    "lng": 113.964454,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0I2HKWWL1",
+    "name": "野溪谷露营地",
+    "address": "长岭街道广汕公路55号",
+    "lat": 23.216871,
+    "lng": 113.477817,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LUNS5LG1",
+    "name": "天鹅谷•森氧Camp(天鹅谷森氧营地)",
+    "address": "天鹅路东街14号",
+    "lat": 23.233192,
+    "lng": 113.454213,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFFDT3UE",
+    "name": "荔枝红温泉庄园",
+    "address": "良口镇御泉大道338号",
+    "lat": 23.69112,
+    "lng": 113.71147,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0KUKMGAOE",
+    "name": "琶堤溪谷",
+    "address": "正果镇兰溪村水美路琶堤溪谷",
+    "lat": 23.345719,
+    "lng": 113.961679,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0GUYS1PBB",
+    "name": "马克生态园",
+    "address": "马克村滘尾南街198号",
+    "lat": 22.830236,
+    "lng": 113.441044,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFM8IAI6",
+    "name": "艾米稻香小镇",
+    "address": "风云岭森林公园内(东北角)",
+    "lat": 23.547771,
+    "lng": 113.563494,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LAYGW5P3",
+    "name": "南沙区灵山岛尖露营地",
+    "address": "江林北路与初晴路交叉口东180米",
+    "lat": 22.775625,
+    "lng": 113.508625,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0MANUQ6YF",
+    "name": "鲁班奇幻乐园",
+    "address": "中山大道中1242号广东数字文化谷L1-L2中庭",
+    "lat": 23.111926,
+    "lng": 113.424965,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFJPZTU4",
+    "name": "会江钓鱼钓虾烧烤场",
+    "address": "大石街鸿盛三路附近",
+    "lat": 23.016962,
+    "lng": 113.281703,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0KKS5TUZD",
+    "name": "漫森农场MANNSEN",
+    "address": "花城街长岗村东城三社自偏1号",
+    "lat": 23.453056,
+    "lng": 113.226492,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LBXCJYCP",
+    "name": "八哥·溪谷营地",
+    "address": "长岭街道黄麻社区黄麻西街26号",
+    "lat": 23.219687,
+    "lng": 113.454926,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0J13HNLNL",
+    "name": "萤火之森·广州塔露营地",
+    "address": "江海街道赤岗西路288号杨协成时尚工场A座5楼天台",
+    "lat": 23.090772,
+    "lng": 113.322066,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LDXSGJE0",
+    "name": "雪熊熊冰雪乐园",
+    "address": "奥体南路12号优托邦购物中心二楼F233(童年时光西南门进入)",
+    "lat": 23.130152,
+    "lng": 113.413492,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFJQ3S5K",
+    "name": "飞越丛林探险乐园",
+    "address": "天鹿南路天鹿湖森林公园(西北角)",
+    "lat": 23.226274,
+    "lng": 113.42474,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0HK972RIK",
+    "name": "探洞工场(六元素旗舰店)",
+    "address": "琶洲街道六元素体验天地2层1088号",
+    "lat": 23.096023,
+    "lng": 113.372102,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFINIF6X",
+    "name": "圣托利世界珍稀温泉馆",
+    "address": "温泉镇温泉东路112号",
+    "lat": 23.64859,
+    "lng": 113.655293,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFHOA0JY",
+    "name": "荔枝文化博览园",
+    "address": "江埔街道江埔街环市东路1280号",
+    "lat": 23.583293,
+    "lng": 113.617977,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0K2RLBZAF",
+    "name": "大野牧乡国际牧场",
+    "address": "鳌头镇横江村格村队200号",
+    "lat": 23.683729,
+    "lng": 113.38475,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B00140UFEN",
+    "name": "金印游乐场",
+    "address": "解放北路988号越秀公园(东南角)",
+    "lat": 23.138875,
+    "lng": 113.268493,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0KUFHSHBR",
+    "name": "临江带状公园-露营地",
+    "address": "临江大道与海文路交叉口西南80米",
+    "lat": 23.111662,
+    "lng": 113.339796,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFG4OH16",
+    "name": "盘古山泉水世界",
+    "address": "狮岭镇山前大道盘古王公园旁",
+    "lat": 23.485111,
+    "lng": 113.152658,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0I0NUABKT",
+    "name": "小黄鸭元宇宙乐园",
+    "address": "东沙大道16号健康港星河COCO Park北塔L2-006",
+    "lat": 23.059437,
+    "lng": 113.260864,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFJP0XV0",
+    "name": "广州天下先生态园营地(海鸥岛店)",
+    "address": "石楼镇海心村23队天下先生态园",
+    "lat": 22.932837,
+    "lng": 113.514547,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B00140H7SM",
+    "name": "长隆欢乐世界",
+    "address": "汉溪大道299号",
+    "lat": 22.999065,
+    "lng": 113.329601,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFGTCIO0",
+    "name": "富力·儿童世界(富力广场南区店)",
+    "address": "中山八路61号1期富力儿童2楼2110档",
+    "lat": 23.122464,
+    "lng": 113.238284,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFHMP1ZD",
+    "name": "二沙岛体育公园-儿童活动区",
+    "address": "二沙岛大通路",
+    "lat": 23.108335,
+    "lng": 113.311829,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0JK5CCRXR",
+    "name": "NATAKIDS游乐橙儿童乐园(南沙星河cocopark店)",
+    "address": "番中公路黄阁段37号之1星河COCOPark3层",
+    "lat": 22.803391,
+    "lng": 113.530845,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0L07A0XW0",
+    "name": "一起幻城·儿童任务闯关乐园",
+    "address": "新港东路1088号六元素体验天地2楼",
+    "lat": 23.096214,
+    "lng": 113.372306,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0L12ATUJV",
+    "name": "大自然赶海儿童乐园",
+    "address": "新塘镇大敦村创业东路3号",
+    "lat": 23.130164,
+    "lng": 113.676825,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0MGK1LHVX",
+    "name": "潮动力儿童乐园(琶洲店)",
+    "address": "琶洲大道180号lovemall万民·星光城201铺",
+    "lat": 23.099672,
+    "lng": 113.348809,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0G0C5YAQ3",
+    "name": "小哈比儿童运动馆.体能.篮球.跳绳(剑桥郡中心)",
+    "address": "南村镇兴南大道雅居乐剑桥郡瀚澜一街26号三楼",
+    "lat": 23.020841,
+    "lng": 113.385182,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0JUHARDRZ",
+    "name": "TaxiWay 大Q小q沉浸式儿童体验馆(广州塔店)",
+    "address": "阅江西路222号广州塔-1F层",
+    "lat": 23.106146,
+    "lng": 113.324865,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0K129IW75",
+    "name": "睛朗宝贝儿童乐园",
+    "address": "爱都一街23号(南洲地铁站D口步行310米)",
+    "lat": 23.066257,
+    "lng": 113.299332,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFKQZV4W",
+    "name": "长隆野生动物世界-儿童天地",
+    "address": "汉溪大道东299号长隆野生动物世界内(南侧)",
+    "lat": 22.99872,
+    "lng": 113.316046,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0KRALDE0S",
+    "name": "绮梦儿童乐园(心谊路店)",
+    "address": "心谊路51号101(乐嘉路地铁站D口步行470米)",
+    "lat": 23.170175,
+    "lng": 113.256076,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0MG37APTY",
+    "name": "赤沙儿童游乐中心",
+    "address": "赤沙村赤沙路40号201(赤沙村委会旁)",
+    "lat": 23.086738,
+    "lng": 113.358465,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFFW1Q43",
+    "name": "奇乐儿巴迪总动员儿童乐园(保利时光里店)",
+    "address": "建设大马路20号保利中环购物广场北塔3层",
+    "lat": 23.13684,
+    "lng": 113.281775,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0L2S75XJ5",
+    "name": "桥南儿童公园(多米元气乐园)",
+    "address": "陈涌路383号",
+    "lat": 22.903406,
+    "lng": 113.369399,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0L051UI2M",
+    "name": "番禺小平儿童游乐中心(联城乐购店)",
+    "address": "沙头街小平村小平大街4号小平市场226号铺联城乐购一楼",
+    "lat": 22.949074,
+    "lng": 113.338572,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0GKA6XMA1",
+    "name": "酷乐思儿童主题乐园(海印又一城奥特莱斯广场店)",
+    "address": "南村镇番禺大道北383号海印又一城奥特莱斯广场A座5层",
+    "lat": 22.999358,
+    "lng": 113.348768,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFJ6ZSUR",
+    "name": "花都湖儿童乐园",
+    "address": "新华路102号花都湖公园内",
+    "lat": 23.374662,
+    "lng": 113.231674,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0I64R55P3",
+    "name": "乐宝儿童乐园(中大·合悦Hey Park店)",
+    "address": "新港西路68号中大合悦heypark三楼乐宝乐园",
+    "lat": 23.092475,
+    "lng": 113.289785,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFLAABYW",
+    "name": "大儿童乐园(江南西店)",
+    "address": "江南中街道青凤大街17号101铺",
+    "lat": 23.094782,
+    "lng": 113.272844,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LUTC6A5U",
+    "name": "魔童猫儿童游乐园",
+    "address": "和苑二街5号101自编003",
+    "lat": 23.154337,
+    "lng": 113.24012,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0JRVSJNWO",
+    "name": "小猪泰德儿童乐园(合一国际店)",
+    "address": "合一国际北门一楼",
+    "lat": 23.192307,
+    "lng": 113.328265,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0J3HHJVUZ",
+    "name": "超跃贝儿童运动馆(荔湾校区)",
+    "address": "彩虹街道周门路16号荔怡中心首层商铺(双喜花园对面)",
+    "lat": 23.130815,
+    "lng": 113.242122,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0IKMZFCJB",
+    "name": "创皇堡国际儿童益智乐园(广州海乐荟店)",
+    "address": "禺山西路228号海乐荟奥特莱斯3栋2楼",
+    "lat": 22.93967,
+    "lng": 113.342208,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFMFCXYA",
+    "name": "奇妙岛儿童乐园(番禺建华汇店)",
+    "address": "建华路9号建华汇东街B座F3层",
+    "lat": 23.024276,
+    "lng": 113.315918,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0JGYMW0D8",
+    "name": "陪你玩儿童沉浸体验馆",
+    "address": "华利路57号3层自编310房",
+    "lat": 23.118031,
+    "lng": 113.318861,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LAO5QSM9",
+    "name": "嘻哈乐儿童乐园(花都茶园新天地店)",
+    "address": "茶园路15号茶园新天地3楼",
+    "lat": 23.392444,
+    "lng": 113.214428,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LGBZX7RC",
+    "name": "Kikis其趣游艺·儿童乐园(白云湖金铂店)",
+    "address": "机场路2829号白云湖金铂天地3层317、318号",
+    "lat": 23.216995,
+    "lng": 113.253097,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0HRAMK13G",
+    "name": "嘻哈乐儿童乐园(钟村店)",
+    "address": "钟村街钟山公园治安执法亭后侧",
+    "lat": 22.974094,
+    "lng": 113.316882,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0JBBU3VCM",
+    "name": "小猪泰德儿童乐园(大源店)",
+    "address": "太和镇大源南路108号大源里2楼小猪泰德主题乐园",
+    "lat": 23.245259,
+    "lng": 113.349486,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LAF91J35",
+    "name": "广九社区儿童公园",
+    "address": "内环路入口与大沙头二马路交叉口北80米",
+    "lat": 23.116618,
+    "lng": 113.281439,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0JBDAWG5J",
+    "name": "天河公园儿童活动区",
+    "address": "天河公园(华景路地铁站B1口步行300米)",
+    "lat": 23.131812,
+    "lng": 113.363209,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0KKPD0ILD",
+    "name": "噢斯卡OSIKA亲子儿童乐园(荔园店)",
+    "address": "西环路荔园新天地2层",
+    "lat": 22.919425,
+    "lng": 113.345725,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0L1KHTR5D",
+    "name": "奇跃儿童运动馆(白云五号T5MALL店)",
+    "address": "三元里街道云霄路353号白云五号T5MALL二楼L2069N",
+    "lat": 23.180175,
+    "lng": 113.264375,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFJRTH36",
+    "name": "广州市儿童公园-龙舟戏水乐园",
+    "address": "齐心路61号",
+    "lat": 23.185852,
+    "lng": 113.271428,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFJE58RD",
+    "name": "广州市儿童公园-沙滩乐园",
+    "address": "齐心路61号(白云公园地铁站D口步行300米)",
+    "lat": 23.183635,
+    "lng": 113.271125,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0G3LDH0ZO",
+    "name": "番禺儿童乐园",
+    "address": "城北公园迎星中路",
+    "lat": 22.96198,
+    "lng": 113.365167,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0L1MZG288",
+    "name": "幻乐鲸岛儿童游乐馆",
+    "address": "中新镇侨建御溪谷花园御宾街2号2009(二楼)",
+    "lat": 23.286175,
+    "lng": 113.610575,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFH9E5KV",
+    "name": "奇乐儿儿童游乐园(黄埔惠润广场店)",
+    "address": "黄埔东路298号惠润广场2层中岛",
+    "lat": 23.100589,
+    "lng": 113.456582,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0J2TLUMMD",
+    "name": "汇乐堡儿童乐园(汇盈广场店)",
+    "address": "市桥街捷进二路1号汇盈广场F1层",
+    "lat": 22.95071,
+    "lng": 113.360109,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0G0A7XVD4",
+    "name": "娜丫拾光岛儿童乐园",
+    "address": "学校北路8号新怡商务大厦F1层",
+    "lat": 23.210025,
+    "lng": 113.279975,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFKC3XIY",
+    "name": "爱乐宝儿童主题乐园",
+    "address": "瑞兴街10号时代花生二期105铺",
+    "lat": 23.166044,
+    "lng": 113.320659,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFF3UUP8",
+    "name": "泳之乐星海儿童乐园",
+    "address": "环城中路120号星海公园南门直入50米",
+    "lat": 22.942825,
+    "lng": 113.370875,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0GK4UPJR2",
+    "name": "辉特儿童乐园(南沙悠方天地店)",
+    "address": "黄阁镇翠瑜街1号悠方购物广场A栋302铺",
+    "lat": 22.798861,
+    "lng": 113.519147,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0J37SU8ND",
+    "name": "嘻鸭涂儿童手工(环宇城店)",
+    "address": "黄阁镇凤凰大道89号中国铁建·南沙环宇城3楼L345",
+    "lat": 22.789934,
+    "lng": 113.519688,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0K60AVOZE",
+    "name": "迪乐尼儿童乐园(榕景路店)",
+    "address": "工业大道北106-108号乐峰广场B2层永旺超市内",
+    "lat": 23.088525,
+    "lng": 113.259375,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0K1TZHJER",
+    "name": "欢乐岛屿儿童乐园(广州海乐荟店)",
+    "address": "沙头街道禺山西路228号广州海乐荟商场三楼",
+    "lat": 22.939325,
+    "lng": 113.341925,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0IA3CXSLU",
+    "name": "童趣儿童乐园(骐利广场)",
+    "address": "西槎路99号骐利广场1F层",
+    "lat": 23.155625,
+    "lng": 113.234604,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFIR5Z01",
+    "name": "智多宝儿童乐园(地王广场店)",
+    "address": "解放北路115号地王广场F2层",
+    "lat": 23.116826,
+    "lng": 113.614738,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0JGRZ6C2A",
+    "name": "皮皮虾儿童益智乐园(富城邻里时光店)",
+    "address": "市桥富城邻里时光商场1楼(市桥地铁站A口步行160米)",
+    "lat": 22.951992,
+    "lng": 113.361592,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0G1TXWQP9",
+    "name": "明珠儿童乐园",
+    "address": [],
+    "lat": 22.777093,
+    "lng": 113.50469,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0L1DCV46L",
+    "name": "盛会新动立儿童乐园(参林汇一楼中庭)",
+    "address": "海北三街与海北一横街交叉口北60米",
+    "lat": 23.073475,
+    "lng": 113.202975,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LKTMV6GM",
+    "name": "仑头儿童游乐中心",
+    "address": "仑头村车站西一巷9号之一",
+    "lat": 23.076108,
+    "lng": 113.377998,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0HACPT4I0",
+    "name": "童真儿童功夫体能运动馆",
+    "address": "富石路77号",
+    "lat": 23.024928,
+    "lng": 113.311359,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0MDORX8HO",
+    "name": "沙步儿童游乐中心",
+    "address": "黄埔东路2845号沙步市场二楼247-248铺沙步儿童游乐中心",
+    "lat": 23.087084,
+    "lng": 113.525945,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LU6CL9B4",
+    "name": "童话岛儿童乐园",
+    "address": "东莞庄路30-3438号010铺自编125铺",
+    "lat": 23.152014,
+    "lng": 113.33663,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFI7W229",
+    "name": "盈熙儿童成长乐园(盈熙广场店)",
+    "address": "凤阳街道江南大道南689号盈熙广场F1层",
+    "lat": 23.073825,
+    "lng": 113.287925,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0MDK5DXJW",
+    "name": "迪乐尼儿童乐园",
+    "address": "潖江路40号104铺",
+    "lat": 23.666728,
+    "lng": 113.413898,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0I6RHS2KE",
+    "name": "悦动儿童运动馆(广钢新城店)",
+    "address": "崇文五路与开拓一横路交叉口南100米",
+    "lat": 23.067927,
+    "lng": 113.237306,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0L3M7MS5O",
+    "name": "乐宝贝儿童乐园(莱茵汇店)",
+    "address": "江埔街道从城大道2号莱茵汇大广场",
+    "lat": 23.526425,
+    "lng": 113.601925,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0K6CKVL3J",
+    "name": "萌趣虎儿童乐园(万民广场店)",
+    "address": "鹤龙四路99号龙归万民广场2号楼F2层",
+    "lat": 23.287303,
+    "lng": 113.300916,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LKYC4JEO",
+    "name": "智立方儿童桌游",
+    "address": "永平街道集贤路280号百世商业广场D7栋508室",
+    "lat": 23.235571,
+    "lng": 113.304702,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LA4RAYAY",
+    "name": "幸福儿童乐园(优托邦时光店)",
+    "address": "花城大道84号珠江奥莱城F1层",
+    "lat": 23.118225,
+    "lng": 113.329875,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFKPA9PF",
+    "name": "长隆飞鸟乐园-儿童乐园",
+    "address": "大石镇大边村石北大道长隆飞鸟乐园",
+    "lat": 23.026275,
+    "lng": 113.277154,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0L3ASTH9K",
+    "name": "沙头儿童游乐中心",
+    "address": "捷进西路40号沙头市场2层中庭",
+    "lat": 22.946675,
+    "lng": 113.350325,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LGL4DE7G",
+    "name": "南浦儿童游乐中心",
+    "address": "洛浦街沿沙路133号南浦综合市场一楼D02铺",
+    "lat": 23.045754,
+    "lng": 113.278679,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0MAGYXY5L",
+    "name": "贝乐朵儿童成长空间",
+    "address": "101号之四(靠近球盟篮球馆)",
+    "lat": 23.273757,
+    "lng": 113.67528,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0IRDYLFN0",
+    "name": "宝贝本色儿童乐园(石基城市广场店)",
+    "address": "石碁镇莲塘路76号石碁城市广场",
+    "lat": 22.955776,
+    "lng": 113.441413,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFI2653Q",
+    "name": "美+纷儿童乐园(来又来时尚购物广场店)",
+    "address": "新华街龙珠路39号来又来广场3层",
+    "lat": 23.397798,
+    "lng": 113.232172,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0JDVRLS7I",
+    "name": "趣哆哆儿童室内乐园",
+    "address": "花山镇祈福聚龙堡61号商铺",
+    "lat": 23.4373,
+    "lng": 113.272814,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0L2KDGD7Y",
+    "name": "欣悦儿童乐园",
+    "address": "江高镇神山大道西金山四街10号101铺",
+    "lat": 23.331576,
+    "lng": 113.184736,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0L311W13U",
+    "name": "奇趣乐园儿童堡(燕汇广场店)",
+    "address": "南石头街道江燕路108号燕汇广场4楼",
+    "lat": 23.082125,
+    "lng": 113.277375,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0HKVD9RY3",
+    "name": "儿童木育游乐场(永旺梦乐城广州新塘购物中心店)",
+    "address": "宁西街创新大道15号1栋永旺梦乐城(广州新塘购物中心)F3层3073、3074",
+    "lat": 23.158,
+    "lng": 113.624729,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LD1PJR38",
+    "name": "斑马天赋星·阳露营儿童玩教乐园(白云湖金铂天地店)",
+    "address": "白云湖街道机场路2829号白云湖金铂天地3层307号",
+    "lat": 23.226275,
+    "lng": 113.260425,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0JGMC7L3T",
+    "name": "罗马儿童乐园",
+    "address": "东盛街6号103",
+    "lat": 23.060032,
+    "lng": 113.323318,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LAVRGHQ0",
+    "name": "莱德队长儿童运动中心(荔湾御景校区)",
+    "address": "华誉一街与黄沙大道辅路交叉口西南180米",
+    "lat": 23.11228,
+    "lng": 113.232626,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFF3US6N",
+    "name": "广东八和会馆(广州永庆坊店)(暂停开放)",
+    "address": "恩宁路177号(地铁1,6号线黄沙站B口步行460米)",
+    "lat": 23.114066,
+    "lng": 113.239149,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LKKHNICQ",
+    "name": "番禺牧云小镇",
+    "address": "陈涌路东65号",
+    "lat": 22.903687,
+    "lng": 113.368868,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0IK3CRD12",
+    "name": "正佳企鹅冰雪世界",
+    "address": "正佳广场7楼中庭(体育中心地铁站D3口步行410米)",
+    "lat": 23.132415,
+    "lng": 113.326721,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0KUOZVB82",
+    "name": "哆哆咪娅星球乐园",
+    "address": "黄埔大道中299号(科韵路地铁站C口)",
+    "lat": 23.122523,
+    "lng": 113.377327,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0M6CHUWTU",
+    "name": "蜜恋空间智能影音科技馆",
+    "address": "太和镇大来南路80号富盈大厦",
+    "lat": 23.295625,
+    "lng": 113.358025,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0L1D7UMQV",
+    "name": "反弹蹦床公园(小西关店)",
+    "address": "荔湾路97号13栋101铺",
+    "lat": 23.129472,
+    "lng": 113.241508,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0JDFHTBM9",
+    "name": "星光明文体公园(光明广场店)",
+    "address": "西湖路63号光明广场9-10层",
+    "lat": 23.122173,
+    "lng": 113.267326,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFGY5XC0",
+    "name": "广州市越秀儿童公园",
+    "address": "人民南路88号(一德路地铁站A口步行230米)",
+    "lat": 23.111653,
+    "lng": 113.254507,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0GKA6W3RC",
+    "name": "侏罗纪恐龙乐园(正佳广场店)",
+    "address": "天河路228号正佳广场F5层",
+    "lat": 23.132125,
+    "lng": 113.327025,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFKD1987",
+    "name": "O2PARK创客公园",
+    "address": "工业大道南882号(工业大道南地铁站B口步行430米)",
+    "lat": 23.063984,
+    "lng": 113.291453,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0JG15FIWA",
+    "name": "广州悬空玻璃剧场(光明广场)",
+    "address": "西湖路63号光明广场6F层656(西6门进入向左前方走20m,扶梯上到6F可见)",
+    "lat": 23.122519,
+    "lng": 113.267338,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0L247P019",
+    "name": "智妙小屋",
+    "address": "北京路168号天河城A区5楼自编B504、C506铺",
+    "lat": 23.11929,
+    "lng": 113.27017,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0L6GZ0YBJ",
+    "name": "云山丛林飞跃乐园",
+    "address": "白云山风景名胜区-可憩草坪旁",
+    "lat": 23.167553,
+    "lng": 113.301862,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0KKPYB5LS",
+    "name": "Wonderland •coffee (基立北街店)",
+    "address": "基立北街与基立南街交叉口东南60米",
+    "lat": 23.102875,
+    "lng": 113.276275,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFKU7YW2",
+    "name": "欢乐谷",
+    "address": "齐心路61号广州市儿童公园(东南角)",
+    "lat": 23.183421,
+    "lng": 113.273339,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B00141PT5Z",
+    "name": "流花湖公园-榕荫游乐场",
+    "address": "流花路100号",
+    "lat": 23.137563,
+    "lng": 113.25067,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0J339PLCD",
+    "name": "蒂姆时光(富力店)",
+    "address": "江南大道180号富力海珠城A区3F层",
+    "lat": 23.095962,
+    "lng": 113.273797,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0L1T61F1M",
+    "name": "超级萌弹(西门口广场店)",
+    "address": "金花街道中山七路50号西门口广场225铺",
+    "lat": 23.126861,
+    "lng": 113.253247,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B00140U0HF",
+    "name": "麓湖游乐场",
+    "address": "白云山麓湖路11号",
+    "lat": 23.147608,
+    "lng": 113.280001,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B00141S9FI",
+    "name": "欢乐世界城堡(广州动物园店)",
+    "address": "先烈中路120号广州动物园(东南角)",
+    "lat": 23.137223,
+    "lng": 113.307272,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFL7B7WF",
+    "name": "大小魔成长乐园(圣地新天地广场店)",
+    "address": "南岸路45号圣地新天地广场F1层",
+    "lat": 23.132426,
+    "lng": 113.229442,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0H1T5ISHY",
+    "name": "广州乐水桨板俱乐部",
+    "address": "新滘中路海珠同创汇东一街105号",
+    "lat": 23.077029,
+    "lng": 113.319758,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0KUGCVQDD",
+    "name": "洛嘉盒子雨林探秘",
+    "address": "齐心路61号102房(广州市儿童公园南门西南侧)",
+    "lat": 23.182638,
+    "lng": 113.270719,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0L26LF568",
+    "name": "智妙小屋·疯狂闯关(广州正佳店)",
+    "address": "天河路228号正佳广场5层5D097铺",
+    "lat": 23.132171,
+    "lng": 113.32696,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0HRGA7EAP",
+    "name": "蒂姆时光(新光店)",
+    "address": "康王路650号新光城市广场三楼",
+    "lat": 23.124159,
+    "lng": 113.248064,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0MGDPOOJC",
+    "name": "B·Duck小黄鸭城市乐园(白云凯德店)",
+    "address": "云城西路890号凯德广场·云尚B2层",
+    "lat": 23.181188,
+    "lng": 113.269133,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0KKG78UVV",
+    "name": "嘉比熊探索乐园(悦汇城店)",
+    "address": "广州市悦汇城三层3B039铺",
+    "lat": 23.150231,
+    "lng": 113.242858,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFLISAO4",
+    "name": "乐玩乐园(亲子游乐场)",
+    "address": "花地街道花地大道北88号壹号文化广场一楼",
+    "lat": 23.094016,
+    "lng": 113.233577,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0KGPA0VMZ",
+    "name": "咔咔星球(动漫星城店)",
+    "address": "吉祥路1号动漫星城B2层(公园前地铁站F口旁)",
+    "lat": 23.125856,
+    "lng": 113.264776,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0G1LK3K60",
+    "name": "鱼趣坊(乐峰广场店)",
+    "address": "工业大道北107号乐峰广场L1层L1-K03",
+    "lat": 23.088953,
+    "lng": 113.259086,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0KU368GTF",
+    "name": "爱与乐亲子乐园(广百广场店)",
+    "address": "广州市荔胜广场2F-1(坑口地铁站B口步行70米)",
+    "lat": 23.079028,
+    "lng": 113.232949,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0MBOCXVO3",
+    "name": "梦幻搭档超级弹珠堂",
+    "address": "江燕路99号万科里B1层",
+    "lat": 23.082524,
+    "lng": 113.279211,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFK10X5B",
+    "name": "莫莉幻想(永旺梦乐城金沙洲店)",
+    "address": "金沙洲金沙街道沙风三路1号(永旺梦乐城3层)322",
+    "lat": 23.150891,
+    "lng": 113.194687,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LRHZ82PW",
+    "name": "易乐谷(广州时尚天河店)",
+    "address": "天河南街道天河路299号时尚天河商业广场B1层中三街082-088",
+    "lat": 23.134789,
+    "lng": 113.3245,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0JDZ58PCU",
+    "name": "蒂姆时光(海珠城光荟广场店)",
+    "address": "东晓南路1290号海珠城光荟广场F3层",
+    "lat": 23.072806,
+    "lng": 113.292156,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0KKBX2SWU",
+    "name": "环游嘉年华(海珠万达店)",
+    "address": "逸景路238号万达广场广州海珠店F3层",
+    "lat": 23.083397,
+    "lng": 113.314235,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0MBL1TNYE",
+    "name": "广州鲸梦乐园",
+    "address": "西湖路63号光明广场(公园前地铁站出入口步行480米)",
+    "lat": 23.122324,
+    "lng": 113.267696,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFK7QQOC",
+    "name": "奇乐儿MOMO星球主题乐园(白云五号店)",
+    "address": "云霄路168号5号停机坪2层L2054N",
+    "lat": 23.181019,
+    "lng": 113.265423,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0H3N71RN9",
+    "name": "多趣岛(悦汇城店)",
+    "address": "西湾路150号悦汇城三层3B057-058",
+    "lat": 23.15032,
+    "lng": 113.24252,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0H236R90K",
+    "name": "玩童会主题店",
+    "address": "兴民路222号天汇广场L5层",
+    "lat": 23.115939,
+    "lng": 113.331765,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0H3SGJ3BB",
+    "name": "虎宝岛(城光荟)",
+    "address": "康王中路600号城光荟L3层",
+    "lat": 23.124661,
+    "lng": 113.248072,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0IAJKMTOU",
+    "name": "卡通尼乐园(永旺金沙洲店)",
+    "address": "沙凤三路1号、1号之一、1号之二永旺梦乐城(金沙洲店)3F层(B1号门进入直行20m,扶梯上到3F可见)",
+    "lat": 23.150094,
+    "lng": 113.195044,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFHESRFR",
+    "name": "泰迪主题馆(天汇广场店)",
+    "address": "兴民路222号天汇广场L3层",
+    "lat": 23.115868,
+    "lng": 113.331397,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0KRCOEGWT",
+    "name": "喜而乐亲子乐园",
+    "address": "赤岗路14号",
+    "lat": 23.086296,
+    "lng": 113.326622,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0K0GA4IIS",
+    "name": "多来米亲子乐园(悦汇城店)",
+    "address": "西湾路149号悦汇城F3层",
+    "lat": 23.149825,
+    "lng": 113.242525,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0L3FC53RV",
+    "name": "YIYALAND亲子社交馆(南洲店)",
+    "address": "南洲爱都铭轩A1栋101房",
+    "lat": 23.066655,
+    "lng": 113.298523,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0I145BVMY",
+    "name": "叮当猫儿童乐园(曜一城店)",
+    "address": "天河北路711曜一城F2层",
+    "lat": 23.141969,
+    "lng": 113.343558,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFLN99VG",
+    "name": "希乐园(金淘大厦振行楼店)",
+    "address": "广园中路7号3楼302",
+    "lat": 23.161395,
+    "lng": 113.258159,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LA2ZGIGD",
+    "name": "快乐游云湖乐园",
+    "address": "湖泰路6号",
+    "lat": 23.223432,
+    "lng": 113.249414,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0JKTM564O",
+    "name": "卡卡太空站(永旺梦乐城店)",
+    "address": "永旺梦乐城2楼224铺",
+    "lat": 23.150625,
+    "lng": 113.194575,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0HGN7NWPY",
+    "name": "小萌天地(正佳广场店)",
+    "address": "天河路228号正佳广场5F层",
+    "lat": 23.131509,
+    "lng": 113.326167,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFHCETHB",
+    "name": "广州市海珠区巾帼志愿服务协会(海珠区妇女之家)",
+    "address": "龙凤街道宝岗大道132号昌龙苑三楼",
+    "lat": 23.102022,
+    "lng": 113.261431,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0MAZKARIA",
+    "name": "BBC弹珠乐园(百德广场店)",
+    "address": "百德广场K栋(鹅掌坦地铁站C口步行250米)",
+    "lat": 23.156225,
+    "lng": 113.234525,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0MDKCDRI9",
+    "name": "童乐汇.天下粮仓.益智手工",
+    "address": "佳润广场二楼",
+    "lat": 23.181475,
+    "lng": 113.320475,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0M6BRIGHV",
+    "name": "悦空之城小火车",
+    "address": "北京路168号北京路天河城A区L3层",
+    "lat": 23.119362,
+    "lng": 113.270324,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0M6967OG0",
+    "name": "妙趣虫生",
+    "address": "中山四路55号珠江·星火1926",
+    "lat": 23.126376,
+    "lng": 113.276088,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFGGXMP4",
+    "name": "爬山车",
+    "address": "先烈中路120号广州动物园(东南角)",
+    "lat": 23.139227,
+    "lng": 113.307431,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFGTPB84",
+    "name": "四季天地游乐场",
+    "address": "赤岗北路118号四季天地1层",
+    "lat": 23.100117,
+    "lng": 113.32772,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0MGXNWX29",
+    "name": "魔法特工(广东省博物馆店)",
+    "address": "华夏路49号津滨腾越大厦-北塔F15层",
+    "lat": 23.126275,
+    "lng": 113.320925,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFFDTH4W",
+    "name": "海盗船",
+    "address": "先烈中路120号广州动物园(东南角)",
+    "lat": 23.139008,
+    "lng": 113.307411,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0J2KU2V4C",
+    "name": "Kikis其趣酷玩城(佳润广场店)",
+    "address": "广州大道北1419号佳润广场2层",
+    "lat": 23.180939,
+    "lng": 113.320677,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0KAOR396L",
+    "name": "宝拉的创意乐园(白云万象汇)",
+    "address": "棠乐路1,3,5,7号L2层L2008号",
+    "lat": 23.194974,
+    "lng": 113.258801,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFG1M9A3",
+    "name": "鲨鱼岛",
+    "address": "先烈中路120号广州动物园(东南角)",
+    "lat": 23.13883,
+    "lng": 113.307514,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0K6FUG6BW",
+    "name": "广州爱飞乐风洞飞行基地(安华汇店)",
+    "address": "白云大道北880号安华汇一楼北馆11号门旁",
+    "lat": 23.217938,
+    "lng": 113.296186,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0HAY7YVGA",
+    "name": "米粒熊(好信广场店)",
+    "address": "南洲街道盈中路好信街8号好信广场F1层",
+    "lat": 23.069904,
+    "lng": 113.30203,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0L0F4WMTT",
+    "name": "魔法特工(越秀未来城店)",
+    "address": "中山三路与东平一马路交叉口东南60米",
+    "lat": 23.126525,
+    "lng": 113.285675,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0G39AMG0M",
+    "name": "北秀游乐园",
+    "address": "解放北路988号越秀公园内",
+    "lat": 23.142107,
+    "lng": 113.264526,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LBFUTGKP",
+    "name": "牧羊宝贝儿童乐园游教中心(暂停营业)",
+    "address": "人民北路829号",
+    "lat": 23.129397,
+    "lng": 113.254464,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFICV3HP",
+    "name": "幻想岛(海珠城光荟广场店)",
+    "address": "东晓南路1290号海珠城光荟F3层",
+    "lat": 23.072731,
+    "lng": 113.292061,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0G3OLBFPU",
+    "name": "时尚碰碰车乐园(时尚天河商业广场店)",
+    "address": "天河路299号时尚天河商业广场B1",
+    "lat": 23.136336,
+    "lng": 113.325084,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0MGP513LY",
+    "name": "Momo乐园",
+    "address": "观山苑三期",
+    "lat": 23.154019,
+    "lng": 113.331441,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFFDN2UD",
+    "name": "豪华碰碰车",
+    "address": "先烈中路120号广州动物园(东南角)",
+    "lat": 23.137942,
+    "lng": 113.307715,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0KKCROJCI",
+    "name": "动感玩国(百信广场东区)",
+    "address": "机场路1427号百信广场东区二期",
+    "lat": 23.194427,
+    "lng": 113.261724,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LGY72RWE",
+    "name": "宝贝王乐园(安华汇店)",
+    "address": "白云大道北880号安华汇三层L3C001AW",
+    "lat": 23.216676,
+    "lng": 113.296422,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0JKRX3WYZ",
+    "name": "卡姆熊(海珠城光荟广场店)",
+    "address": "东晓南路1290号海珠城光荟广场F3层",
+    "lat": 23.073022,
+    "lng": 113.292189,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFFTU5EN",
+    "name": "飓风飞椅(广州动物园店)",
+    "address": "先烈中路120号广州动物园(东南角)",
+    "lat": 23.138647,
+    "lng": 113.307623,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0L6D6SFVZ",
+    "name": "funwlley家庭娱乐中心",
+    "address": "洛浦街洛溪环岛南路398号喜邻里商业中心F4",
+    "lat": 23.041072,
+    "lng": 113.297324,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0K3NSHGKK",
+    "name": "反斗星自然探索乐园",
+    "address": "东沙大道16号北塔3楼3733铺",
+    "lat": 23.059567,
+    "lng": 113.260997,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0MAVH66RL",
+    "name": "Future Workshop未来工场游乐场(金沙洲永旺店)",
+    "address": "永旺梦乐城3楼未来工场游乐场",
+    "lat": 23.151217,
+    "lng": 113.194971,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFJG0I8F",
+    "name": "东风公园-游乐场",
+    "address": "广州大道北199号东风公园内(东南角)",
+    "lat": 23.14181,
+    "lng": 113.314009,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0HKV7BSIC",
+    "name": "淘气堡乐园(迎龙优创汇店)",
+    "address": "迎龙路5号优创汇3楼307室",
+    "lat": 23.194126,
+    "lng": 113.36457,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LKTCWQCH",
+    "name": "马卡龙王国",
+    "address": "东漖街道花地大道南146号凯升健康城B区一楼114-116铺",
+    "lat": 23.059813,
+    "lng": 113.227646,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFLDTFSK",
+    "name": "北极小镇冰雪乐园(时尚天河店)(暂停营业)",
+    "address": "天河南街道天河路299号时尚天河商业广场中C街B02A号",
+    "lat": 23.136525,
+    "lng": 113.325375,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFIAQKR0",
+    "name": "七彩游乐园",
+    "address": "奥体南路12号优托邦购物中心1层",
+    "lat": 23.130603,
+    "lng": 113.413086,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0HDDM898A",
+    "name": "广州市消防主题体验园",
+    "address": "云城西路1028号",
+    "lat": 23.186257,
+    "lng": 113.273103,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFI8BMPU",
+    "name": "星光动力城(广州万民百货店)",
+    "address": "石井街道石沙路181-183号庆丰商业广场3F层",
+    "lat": 23.21205,
+    "lng": 113.228334,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFK9G7ZP",
+    "name": "HUMANBODy EXPLORATORy",
+    "address": "建设中马路与建设二马路交叉口西北80米",
+    "lat": 23.137321,
+    "lng": 113.281855,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0K6HSCH1B",
+    "name": "享趣玩亲子碰碰车乐园(健康港星河COCO Park店)",
+    "address": "东沙大道16号健康港星河COCO ParkF3层",
+    "lat": 23.059375,
+    "lng": 113.260825,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LKMY54DE",
+    "name": "超级萌弹(动感小西关店)",
+    "address": "荔湾路与福儿路交叉口西北240米",
+    "lat": 23.129125,
+    "lng": 113.241525,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFFDHS76",
+    "name": "反弹蹦床公园(优托邦·奥体超级mall店)",
+    "address": "奥体南路12号广州市高德汇奥体购物中心市场F101之108房",
+    "lat": 23.13053,
+    "lng": 113.414235,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFLGYVLF",
+    "name": "秋千乐园",
+    "address": "齐心路61号广州市儿童公园内(西侧)",
+    "lat": 23.183947,
+    "lng": 113.269482,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0M6XHPAGM",
+    "name": "卡星人怪兽乐园",
+    "address": "京溪街道广州大道北1419号佳润广场二楼",
+    "lat": 23.181425,
+    "lng": 113.320425,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0G1RM131R",
+    "name": "迷宫乐园",
+    "address": "齐心路61号广州市儿童公园内(西侧)",
+    "lat": 23.184149,
+    "lng": 113.26963,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LR17U1K7",
+    "name": "弹射飞珠",
+    "address": "天河新天地1楼115铺",
+    "lat": 23.171625,
+    "lng": 113.343425,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LKDOP56Q",
+    "name": "流浪泡泡",
+    "address": "天河南街道天河路228号正佳商业广场五楼5A011铺",
+    "lat": 23.132775,
+    "lng": 113.329125,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFL0SWKL",
+    "name": "大象滑梯",
+    "address": "齐心路61号广州市儿童公园内(西侧)",
+    "lat": 23.184668,
+    "lng": 113.27047,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFJO8FNN",
+    "name": "Kikis其趣小站(同和金铂天地店)",
+    "address": "同和大街1号同和金铂天地A座2F层A212",
+    "lat": 23.196369,
+    "lng": 113.324752,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0IKXGO1MN",
+    "name": "艾斯塔时空之城(优托邦购物中心店)",
+    "address": "奥体南路12号广州奥体优托邦F3层",
+    "lat": 23.130375,
+    "lng": 113.413925,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0L3MUKCDZ",
+    "name": "魔天轮乐园(广州塔店)",
+    "address": "广州塔E区(广州塔地铁站B口步行220米)",
+    "lat": 23.103975,
+    "lng": 113.323725,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0I17US19H",
+    "name": "神兽出没",
+    "address": "中海花湾天地一楼",
+    "lat": 23.068912,
+    "lng": 113.239749,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0KDXRYADF",
+    "name": "熊猫密室探索乐园(奥体优托邦店)",
+    "address": "黄村街道奥体南路12号奥体优托邦2楼E221铺",
+    "lat": 23.13023,
+    "lng": 113.415671,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LK0Y6FB4",
+    "name": "广州市儿童公园奥咖蹦蹦乐园",
+    "address": "齐心路61号广州市儿童公园(西南角)",
+    "lat": 23.182484,
+    "lng": 113.269735,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFK6J53B",
+    "name": "奥飞欢乐世界(金沙洲永旺梦乐城店)",
+    "address": "金沙街道沙凤三路1号永旺梦乐城3层",
+    "lat": 23.150969,
+    "lng": 113.195434,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFKFOJ1D",
+    "name": "长隆欢乐世界-火箭过山车",
+    "address": "汉溪大道东299号长隆欢乐世界内",
+    "lat": 22.999603,
+    "lng": 113.331813,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0IB3UB76F",
+    "name": "鱼乐海洋(永旺梦乐城金沙洲店)",
+    "address": "沙凤三路1号、1号之一、1号之二永旺梦乐城(金沙洲店)3F层",
+    "lat": 23.15027,
+    "lng": 113.195592,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0L1TR41BO",
+    "name": "亲子乐园",
+    "address": "西槎路129号骏盈广场F2层",
+    "lat": 23.158089,
+    "lng": 113.233675,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0HGKSHXF3",
+    "name": "卡尔飞车(番禺天河城店)",
+    "address": "南村镇南村万博番禺天河城负一层卡尔飞车b1037",
+    "lat": 23.002812,
+    "lng": 113.348217,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0I64SSOME",
+    "name": "肯迪益智乐园(白云汇广场店)",
+    "address": "黄石东路88号白云汇广场L3层(西4门进入直行10m,扶梯上到L3可见)",
+    "lat": 23.202729,
+    "lng": 113.26867,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0K1ZUUHTF",
+    "name": "孩想玩儿童乐园(聚德坊店)",
+    "address": "聚德中路聚德坊一层内",
+    "lat": 23.083691,
+    "lng": 113.326333,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0H3SSJ6VW",
+    "name": "小木马儿童乐园(龙骏广场店)",
+    "address": "增槎路1068号龙骏广场F2层",
+    "lat": 23.178175,
+    "lng": 113.226675,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0H6D9DAG3",
+    "name": "鸭小七自然探索乐园(优托邦购物中心店)",
+    "address": "奥体南路12号广州奥体优托邦F2层",
+    "lat": 23.13022,
+    "lng": 113.413493,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0G3DC16QL",
+    "name": "蒂姆时光(嘉裕太阳城广场店)",
+    "address": "嘉裕太阳城购物中心2层",
+    "lat": 23.188101,
+    "lng": 113.325581,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LKPZZLH0",
+    "name": "儿童活动区",
+    "address": "珠江公园附近",
+    "lat": 23.120984,
+    "lng": 113.338227,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFF2KTOW",
+    "name": "长隆欢乐世界-碰碰车",
+    "address": "汉溪大道东299号长隆欢乐世界内",
+    "lat": 23.00112,
+    "lng": 113.330789,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0MDH6QJ5N",
+    "name": "塔比星球·奇遇乐园(岭南海港汇店)",
+    "address": "大干围与创兴街交叉口西260米",
+    "lat": 23.057325,
+    "lng": 113.290925,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0K2BYAYFM",
+    "name": "嘉比熊探索乐园(六元素体验天地店)",
+    "address": "新港东路1088号六元素体验天地二层13号",
+    "lat": 23.096099,
+    "lng": 113.37218,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFG0DMUP",
+    "name": "旋转迪士高(广州动物园店)",
+    "address": "先烈中路120号广州动物园(东南角)",
+    "lat": 23.138152,
+    "lng": 113.307701,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LRGATELU",
+    "name": "维维熊探索乐园",
+    "address": "白云湖街机场路2829号白云湖金铂天地三层309",
+    "lat": 23.226375,
+    "lng": 113.260325,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0H2H1L1SV",
+    "name": "大华新街乐园",
+    "address": "大德路183号",
+    "lat": 23.118144,
+    "lng": 113.259606,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0JRRURMMU",
+    "name": "广州11号小镇亲子乐园(儿童电玩)",
+    "address": "赤沙路26号之58号",
+    "lat": 23.086503,
+    "lng": 113.355871,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0L3XC1FS4",
+    "name": "Aive秘境乐园",
+    "address": "北京路238号金润铂宫16楼1614室",
+    "lat": 23.122775,
+    "lng": 113.270075,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0L0XUMB1X",
+    "name": "森林小王子(通利店)ForestLittlePrince",
+    "address": "石潭西路118号通利国际时尚港C6栋118-119档",
+    "lat": 23.200805,
+    "lng": 113.23437,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LR0UN65W",
+    "name": "长隆欢乐世界-弹射过山车",
+    "address": "汉溪大道299号长隆欢乐世界",
+    "lat": 23.000496,
+    "lng": 113.32948,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0HRSXT3KL",
+    "name": "超级小飞(白云汇广场)",
+    "address": "黄石东路88号白云汇广场L3层308",
+    "lat": 23.202836,
+    "lng": 113.269321,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LRKXJPAA",
+    "name": "童趣小叮当水上乐园(岑村财富广场店)",
+    "address": "长兴街道岑村沙埔大街38号2层",
+    "lat": 23.159075,
+    "lng": 113.381325,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFF31Y8Y",
+    "name": "长隆欢乐世界-超级大摆锤",
+    "address": "汉溪大道东299号长隆欢乐世界内",
+    "lat": 22.997915,
+    "lng": 113.32924,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0KDY4XHMS",
+    "name": "大笨象滑梯",
+    "address": "仲恺路郭墩新街75号",
+    "lat": 23.105375,
+    "lng": 113.280375,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0MDAR431K",
+    "name": "好又来奇妙岛亲子乐园",
+    "address": "瑞宝街道岭南海港汇3楼好又来奇妙岛亲子乐园",
+    "lat": 23.057102,
+    "lng": 113.29109,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0M6FU04H2",
+    "name": "小猪时光淘气堡",
+    "address": "南悦中一街4号之一201、202二层220、221",
+    "lat": 23.212133,
+    "lng": 113.25959,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFKT06OF",
+    "name": "童趣乐园",
+    "address": "汉溪大道东299号长隆酒店1号大堂B1层",
+    "lat": 23.001876,
+    "lng": 113.327531,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0G0RPBM63",
+    "name": "乐吉狮欢乐世界(奥体优托邦店)",
+    "address": "黄村街道奥体南路12号优托邦·奥体超级Mall2层C206铺",
+    "lat": 23.131524,
+    "lng": 113.416783,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0L0OMIB24",
+    "name": "疯狂牛仔城(美林MLIVE天地店)",
+    "address": "黄埔大道东663号(三溪地铁站C口旁)美林M·LIVE天地-东座3F层",
+    "lat": 23.105892,
+    "lng": 113.414423,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0K6RUBW2N",
+    "name": "广州奥体优托邦-XR PARK馆",
+    "address": "奥体南路12号广州奥体优托邦F1层",
+    "lat": 23.129525,
+    "lng": 113.416825,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0KABP3WUR",
+    "name": "猩猩队长少儿运动馆",
+    "address": "天坤三路天健上城12栋3单元102",
+    "lat": 23.141103,
+    "lng": 113.393781,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0KKLU7YH0",
+    "name": "极力特游乐城(番禺万达广场店)",
+    "address": "万达广场2层(南村万博地铁站B口步行300米)",
+    "lat": 23.007004,
+    "lng": 113.349601,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0KKBXZ620",
+    "name": "橙士乐园(石井校区)",
+    "address": "石井国际大厦(石井地铁站A口步行180米)",
+    "lat": 23.210469,
+    "lng": 113.234037,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0J335WDV4",
+    "name": "小勇士攀爬乐园(万民城MO CITY店)",
+    "address": "大石街道香江路561号万民城MO CITY一层",
+    "lat": 23.012758,
+    "lng": 113.313513,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0L6L1AYSH",
+    "name": "堡萌汇游乐场(花地好邻舍商业中心店)",
+    "address": "芳村百花路8-10号花地商业中心",
+    "lat": 23.095592,
+    "lng": 113.229353,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0L0BUUXX3",
+    "name": "乐夹星球",
+    "address": "优托邦东区(天河客运站地铁站C口步行320米)",
+    "lat": 23.170025,
+    "lng": 113.347725,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFFRAQHY",
+    "name": "小喇叭(长隆水上乐园店)",
+    "address": "汉溪路169号广州长隆水上乐园",
+    "lat": 23.001755,
+    "lng": 113.323669,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0KKX7SH22",
+    "name": "丛林探险",
+    "address": "汉溪大道299号长隆欢乐世界",
+    "lat": 22.998125,
+    "lng": 113.327875,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFFQPJCF",
+    "name": "长隆欢乐世界-奇妙车队",
+    "address": "汉溪大道东299号长隆欢乐世界内",
+    "lat": 22.99863,
+    "lng": 113.330989,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFKQ76PY",
+    "name": "摇滚巨轮(长隆水上乐园店)",
+    "address": "汉溪大道东299号长隆水上乐园内",
+    "lat": 23.002316,
+    "lng": 113.324229,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFF2HCL0",
+    "name": "长隆欢乐世界-欢乐跳跳",
+    "address": "汉溪大道东299号长隆欢乐世界内",
+    "lat": 22.997851,
+    "lng": 113.329941,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFF2V22T",
+    "name": "长隆欢乐世界-欢乐摩天轮",
+    "address": "汉溪大道东299号长隆欢乐世界内",
+    "lat": 22.997705,
+    "lng": 113.329575,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LGROGJ76",
+    "name": "安妮莫游乐园",
+    "address": "花地街道花地大道北93号沃尔玛超市二楼",
+    "lat": 23.092925,
+    "lng": 113.234175,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFKFTJL5",
+    "name": "长隆欢乐世界-极速跳跃",
+    "address": "汉溪大道东299号长隆欢乐世界内",
+    "lat": 22.999253,
+    "lng": 113.332222,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0HRV1BLKV",
+    "name": "淘气仔游乐园(大源时代广场店)",
+    "address": "大源中路99号大源时代广场F2层",
+    "lat": 23.248898,
+    "lng": 113.349728,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFL9CDHM",
+    "name": "欢乐嘉年华",
+    "address": "汉溪大道东299号长隆欢乐世界内",
+    "lat": 22.998162,
+    "lng": 113.330451,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0J157XC2Z",
+    "name": "星萍果游乐园",
+    "address": "炭步镇环山村第一经济合作社山笃台湾岛",
+    "lat": 23.299206,
+    "lng": 113.104017,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFFTA4SO",
+    "name": "长隆欢乐世界-激浪旋艇",
+    "address": "迎宾路长隆欢乐世界",
+    "lat": 22.996859,
+    "lng": 113.327456,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0KKDX1CW3",
+    "name": "白江游乐场",
+    "address": "广深大道西168-29号",
+    "lat": 23.12299,
+    "lng": 113.592873,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LK5UU0RS",
+    "name": "童趣游乐园",
+    "address": "东平时代都荟写字楼",
+    "lat": 23.247825,
+    "lng": 113.309334,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0KKXC52Y5",
+    "name": "长隆欢乐世界-尖叫地带",
+    "address": "汉溪大道299号长隆欢乐世界",
+    "lat": 22.999331,
+    "lng": 113.331925,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0J3HBN5QO",
+    "name": "广州华夏世嘉都市乐园",
+    "address": "新塘镇永和誉山国际山语一街5号钧明欢乐世界C区",
+    "lat": 23.190425,
+    "lng": 113.592825,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFK7N66O",
+    "name": "长隆野生动物世界-萌帅酷舞台",
+    "address": "汉溪大道东299号长隆野生动物世界内(东侧)",
+    "lat": 23.003046,
+    "lng": 113.318241,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFKMUCJ8",
+    "name": "JOYPOLIS都市乐园(广州钧明欢乐世界店)",
+    "address": "永宁街道创盈路3号钧明欢乐世界C栋307-311号",
+    "lat": 23.189496,
+    "lng": 113.594263,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFF2OSSZ",
+    "name": "长隆欢乐世界-垂直过山车(暂停营业)",
+    "address": "汉溪大道东299号长隆欢乐世界内",
+    "lat": 22.996986,
+    "lng": 113.328615,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0H12D8UEV",
+    "name": "COCOLAND可可乐园(广州钧明欢乐世界店)",
+    "address": "新塘镇永宁街创盈路3号钧明欢乐世界B区",
+    "lat": 23.18928,
+    "lng": 113.593645,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFK968KN",
+    "name": "WONDER PARK动感乐园(祈福·缤纷世界店)",
+    "address": "名家三街祈福缤纷世界(市广路地铁站B口步行480米)",
+    "lat": 22.968214,
+    "lng": 113.333152,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0G23MB65X",
+    "name": "森林迷宫",
+    "address": "沙栏路闲云农场附近",
+    "lat": 22.881062,
+    "lng": 113.310182,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LBT56FY0",
+    "name": "马尔代夫欢乐岛",
+    "address": "大敦创业路6号",
+    "lat": 23.13034,
+    "lng": 113.676719,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0I1F9TPNF",
+    "name": "同乐游乐园(新地购物广场店)",
+    "address": "如意三马路193号新地购物广场F1层",
+    "lat": 23.042762,
+    "lng": 113.301882,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFKFMUCS",
+    "name": "迷你飞行器",
+    "address": "汉溪大道东299号长隆欢乐世界内",
+    "lat": 22.996734,
+    "lng": 113.327462,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0GR1902B9",
+    "name": "广州曼古园-游乐场",
+    "address": "秀全街道秀全街道秀全街道秀全街道秀全街道平步大道西大观园路5号广州曼古园",
+    "lat": 23.40208,
+    "lng": 113.158111,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0J2LHRJWF",
+    "name": "湾区穿越体验馆(岭南印象园店)(暂停营业)",
+    "address": "大学城外环西路与大学城广工一路交叉口东南140米",
+    "lat": 23.035075,
+    "lng": 113.40454,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0J0UO661X",
+    "name": "动力火车",
+    "address": "白云白沙路与白沙育才路交叉口南80米",
+    "lat": 23.341294,
+    "lng": 113.375103,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFF2NUT3",
+    "name": "长隆欢乐世界-疯狂巴士",
+    "address": "汉溪大道东299号长隆欢乐世界内",
+    "lat": 22.996743,
+    "lng": 113.327927,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0JRZH12BF",
+    "name": "白云·趣旅水乐园",
+    "address": "凤岗路26号(高增地铁站D口步行340米)",
+    "lat": 23.353546,
+    "lng": 113.292587,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0JUOLCYU2",
+    "name": "广州长隆欢乐世界-律动天地",
+    "address": "汉溪大道299号长隆欢乐世界",
+    "lat": 22.997095,
+    "lng": 113.326972,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFKFMUF4",
+    "name": "长隆欢乐世界-桑巴气球",
+    "address": "汉溪大道东299号长隆欢乐世界内",
+    "lat": 22.999481,
+    "lng": 113.331998,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0KGGC1FZ9",
+    "name": "花都湖公园游乐场",
+    "address": "七亩南九巷与七亩南十巷交叉口南280米",
+    "lat": 23.37431,
+    "lng": 113.234863,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFJRTYQI",
+    "name": "长隆野生动物世界-桑巴气球",
+    "address": "汉溪大道东299号长隆野生动物世界内",
+    "lat": 23.000956,
+    "lng": 113.316394,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B00140I30I",
+    "name": "广州笑翻天乐园",
+    "address": "南岗镇丹水坑风景区",
+    "lat": 23.10428,
+    "lng": 113.527345,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0MGMU9LFR",
+    "name": "米龙村党建文化主题公园",
+    "address": "兴太一路与米龙东北街交叉口东南60米",
+    "lat": 23.288379,
+    "lng": 113.360606,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LALLPFZ3",
+    "name": "小精灵游乐园(巨象广场店)",
+    "address": "天骄时代城",
+    "lat": 23.015925,
+    "lng": 113.327925,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LR9BOFLV",
+    "name": "广州钧明欢乐世界A区",
+    "address": "新新公路与创盈路交叉口东北200米",
+    "lat": 23.190475,
+    "lng": 113.592925,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0MGBASZSL",
+    "name": "南沙湾丛林飞越",
+    "address": "港前大道南1号蒲洲花园内(东侧)",
+    "lat": 22.760982,
+    "lng": 113.619533,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0K1PS9PK2",
+    "name": "闽乐游乐",
+    "address": "为民南路2号添发大厦",
+    "lat": 22.973475,
+    "lng": 113.383225,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0GKL5IKVP",
+    "name": "爱乐园",
+    "address": "新造镇东西庄村民委员会北自编6号",
+    "lat": 23.021802,
+    "lng": 113.438208,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0KUOKUNYM",
+    "name": "快乐星球",
+    "address": "敏捷·上城国际2期(南村万博地铁站B口步行460米)",
+    "lat": 23.002067,
+    "lng": 113.350237,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0I1BD0UZ8",
+    "name": "糖果果游乐场(基盛万科里店)",
+    "address": "基盛万科里BC中间广场",
+    "lat": 22.931379,
+    "lng": 113.386988,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFMDZQKT",
+    "name": "大沥游乐园",
+    "address": "大沥东约街与大沥路交叉口西北120米",
+    "lat": 23.307612,
+    "lng": 113.336579,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFIWQMYN",
+    "name": "艾哆米游乐园(万和百货店)",
+    "address": "新塘镇久裕大道60号久裕商贸城万和百货3楼",
+    "lat": 23.122846,
+    "lng": 113.653999,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0K0DU9HIW",
+    "name": "欢乐湾冰雪王国",
+    "address": "荔湖街连江路68号",
+    "lat": 23.244402,
+    "lng": 113.832046,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0GDROEMQM",
+    "name": "七彩澳游世界澳洲探险科技乐园",
+    "address": "朱村街道联兴村金兴北路七彩澳游世界袋鼠厨房隔壁",
+    "lat": 23.325508,
+    "lng": 113.699625,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0KKFZI1FK",
+    "name": "增城欢乐湾摩天轮",
+    "address": "荔湖街道连江路68号",
+    "lat": 23.244695,
+    "lng": 113.833032,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0KDG4CKA3",
+    "name": "热带雨林主题乐园(增城万达店)",
+    "address": "增城大道69号广州增城万达广场F2层",
+    "lat": 23.275767,
+    "lng": 113.815026,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0IUDLLNEA",
+    "name": "嘉慧游乐园(集耀广场店)",
+    "address": "东环街道市新路205号集耀广场1楼A16",
+    "lat": 22.963467,
+    "lng": 113.37803,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LK17DPJS",
+    "name": "智多星游乐园",
+    "address": "城郊街从城大道999号之一",
+    "lat": 23.561641,
+    "lng": 113.549874,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0LDCHU7ZC",
+    "name": "迪丽游乐",
+    "address": "蔡三新村西进大街与蔡三新村五街交叉口西200米",
+    "lat": 22.971075,
+    "lng": 113.375275,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0J06UH1DE",
+    "name": "星空乐园(阳光城市广场店)",
+    "address": "大岗镇兴业路118号阳光城市广场",
+    "lat": 22.794226,
+    "lng": 113.399774,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0JDCARXTV",
+    "name": "奥乐奥成长游乐园(花东市场店)",
+    "address": "花凤路A07铺",
+    "lat": 23.433686,
+    "lng": 113.322711,
+    "hasKidsPlayArea": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0IGZ50VB1",
+    "name": "华汇欢乐世界(华汇国际广场店)",
+    "address": "南沙街道珠电路4号华汇国际广场首层",
+    "lat": 22.799339,
+    "lng": 113.556639,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0FFM9EM9L",
+    "name": "欢乐天地游乐城(新世纪广场店)",
+    "address": "街口街东成路68号新世纪广场F2层",
+    "lat": 23.547778,
+    "lng": 113.588788,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0KDFX5UFP",
+    "name": "漫奈斯(嘉禾金铂天地店)",
+    "address": "鹤龙二路85号嘉禾金铂天地F2层249铺",
+    "lat": 23.239125,
+    "lng": 113.281475,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B00140JV7T",
+    "name": "祈福新邨度假俱乐部(祈福酒店西南)",
+    "address": "市广路8号祈福新村内(市广路地铁站B口步行400米)",
+    "lat": 22.96985,
+    "lng": 113.334621,
+    "hasKidsPlayArea": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-guangzhou",
+    "amapPoiId": "B0KB6S93B9",
+    "name": "香江温泉旅游度假区",
+    "address": "派潭镇达开北路32号",
+    "lat": 23.56477,
+    "lng": 113.777608,
     "hasKidsPlayArea": false,
     "tags": [
       "ai_draft_v1"

@@ -1,0 +1,1952 @@
+[
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0FFGCS07N",
+    "name": "成都首座万豪酒店",
+    "address": "天府大道北段999号(金融城北地铁站B口步行220米)",
+    "lat": 30.58667,
+    "lng": 104.06969,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0LA2AABYX",
+    "name": "成都春熙路voco酒店",
+    "address": "东大街上东大街段9号",
+    "lat": 30.655714,
+    "lng": 104.071933,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0KDOSTDHG",
+    "name": "成都春熙路福朋喜来登酒店",
+    "address": "总府路15号王府井百货总府路店1F层",
+    "lat": 30.658484,
+    "lng": 104.080168,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0M63S7JWP",
+    "name": "全季酒店(成都太古里春熙路中心旗舰店)",
+    "address": "交通路8号",
+    "lat": 30.656041,
+    "lng": 104.072074,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0LRODWB47",
+    "name": "成都尊悦豪生酒店",
+    "address": "迎宾大道528号",
+    "lat": 30.707896,
+    "lng": 104.000589,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0JUUSQSO9",
+    "name": "成都怡心湖日航酒店",
+    "address": "怡航横四街21号2号楼",
+    "lat": 30.484306,
+    "lng": 104.030169,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0K3DZHS7S",
+    "name": "桔子酒店(成都春熙路天府广场店)",
+    "address": "顺城大街88号(天府广场地铁站东1北口步行490米)",
+    "lat": 30.658994,
+    "lng": 104.071572,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0K61CTFQZ",
+    "name": "成都火车北站希尔顿欢朋酒店",
+    "address": "赛云台东二路2号(五块石地铁站C口步行420米)",
+    "lat": 30.704554,
+    "lng": 104.066942,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0LDM77KWI",
+    "name": "成都金融城英迪格酒店",
+    "address": "锦云东三巷99号",
+    "lat": 30.581025,
+    "lng": 104.074181,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0LRXZYRIC",
+    "name": "成都太古里春熙路步行街城际酒店",
+    "address": "城守街73号(龙抄手总店旁)",
+    "lat": 30.654637,
+    "lng": 104.077648,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0FFGNEU63",
+    "name": "成都宽窄巷子城际酒店(旗舰店)",
+    "address": "小通巷1号",
+    "lat": 30.66716,
+    "lng": 104.054098,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0KKDU5LTS",
+    "name": "君亭酒店(成都杜甫草堂西南财大地铁站店)",
+    "address": "清江中路1号2号楼3单元",
+    "lat": 30.669919,
+    "lng": 104.018827,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0KBKZBV7N",
+    "name": "成都温德姆至尊酒店(成都东站店)",
+    "address": "十陵街道蜀王大道北段89号",
+    "lat": 30.648348,
+    "lng": 104.171404,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0KKRHSR7D",
+    "name": "成都青羊豪生Life酒店",
+    "address": "光华北三路238号2栋1单元",
+    "lat": 30.676061,
+    "lng": 103.966397,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0KA7L4LEY",
+    "name": "成都兴隆湖润扬希尔顿逸林酒店(西博城店)",
+    "address": "菁蓉路388号",
+    "lat": 30.406004,
+    "lng": 104.085699,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0K3JA9HPH",
+    "name": "成都火车南站桔子水晶酒店",
+    "address": "盛和一路88号1栋",
+    "lat": 30.603577,
+    "lng": 104.061872,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0M6DS6BGC",
+    "name": "成都东站福朋喜来登酒店",
+    "address": "百日红西路318号",
+    "lat": 30.603884,
+    "lng": 104.143065,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0L1GY9LB9",
+    "name": "成都光环凯悦尚萃酒店",
+    "address": "通源街229号(东大路地铁站F口步行210米)",
+    "lat": 30.635483,
+    "lng": 104.112132,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0LUXUMWSA",
+    "name": "汉庭酒店(成都太古里春熙路步行街店)",
+    "address": "青年路69号汉庭成都太古里春熙路步行街酒店",
+    "lat": 30.657085,
+    "lng": 104.071838,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0L6PU1CEK",
+    "name": "成都锦禧·悦庭酒店(宽窄巷子店)",
+    "address": "西城角巷18号",
+    "lat": 30.677075,
+    "lng": 104.057676,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0KB47ZDRU",
+    "name": "ECHENG HOTEL·怡程酒店(成都太古里春熙路店)",
+    "address": "暑袜北三街20号1层8号3层4层5层",
+    "lat": 30.658848,
+    "lng": 104.074722,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0L1799692",
+    "name": "成都九眼桥voco酒店",
+    "address": "群众路161号(九眼桥地铁站C口步行480米)",
+    "lat": 30.638266,
+    "lng": 104.083171,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0KACUQW11",
+    "name": "成都新都豪生HOWARD JOHNSON Life酒店",
+    "address": "桂湖街道工业大道东段1号",
+    "lat": 30.803677,
+    "lng": 104.159947,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0L16ZSBAK",
+    "name": "成都东大路地铁站希尔顿欢朋酒店",
+    "address": "汇泉南路499号1层、15-22层",
+    "lat": 30.635967,
+    "lng": 104.108807,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0KDHZIHWE",
+    "name": "成都环球中心城际酒店(世纪城新会展店)",
+    "address": "益州大道中段288号",
+    "lat": 30.562316,
+    "lng": 104.056385,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0K255PE8J",
+    "name": "维也纳国际酒店(成都西博城天府国际会议中心店)",
+    "address": "汉州路999号(天府商务区地铁站C口步行440米)",
+    "lat": 30.425967,
+    "lng": 104.084459,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0L6BCZ265",
+    "name": "成都天府广场美居酒店",
+    "address": "锦里东路2号(文翁石室地铁站A口步行300米)",
+    "lat": 30.64841,
+    "lng": 104.060818,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0L6NSTRX8",
+    "name": "桔子酒店(成都太古里339天府熊猫塔店)",
+    "address": "新鸿南一巷22号(新鸿路地铁站B1口步行400米)",
+    "lat": 30.661382,
+    "lng": 104.098909,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0K0HLBY9V",
+    "name": "成都春熙路天府广场美居酒店",
+    "address": "宾隆街1号人民东路61号",
+    "lat": 30.6582,
+    "lng": 104.068945,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0KRVRDLR9",
+    "name": "成都春熙路太升南路地铁站喆啡锐品酒店",
+    "address": "德盛路33号(近太升南路地铁站,C口出步行300米至酒店)",
+    "lat": 30.668569,
+    "lng": 104.077275,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0JKRC1ZEB",
+    "name": "成都高新会展中心福朋喜来登酒店",
+    "address": "吉庆一路288号3栋1层1号",
+    "lat": 30.553116,
+    "lng": 104.060351,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0K1RZQ510",
+    "name": "雅致酒店(成都文殊院春熙路店)",
+    "address": "荷花池街道人民北路一段4号",
+    "lat": 30.680051,
+    "lng": 104.071446,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0LKSAHIYM",
+    "name": "景澜青棠酒店(成都春熙路太古里店)",
+    "address": "暑袜北二街70号",
+    "lat": 30.660426,
+    "lng": 104.077011,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0L0TSAYNC",
+    "name": "成都新通大道地铁站希尔顿欢朋酒店",
+    "address": "新通大道南一路22号(新通大道地铁站C口步行260米)",
+    "lat": 30.521028,
+    "lng": 104.100255,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0LU45Y2WP",
+    "name": "成都金沙遗址博物馆希尔顿花园酒店(一品天下地铁站店)",
+    "address": "蜀光路3号",
+    "lat": 30.692772,
+    "lng": 104.017598,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0L0GX4TK5",
+    "name": "成都西站希尔顿欢朋酒店",
+    "address": "日月大道一段889号",
+    "lat": 30.674119,
+    "lng": 103.973438,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0LGTRX9P1",
+    "name": "成都成华区豪生Life酒店(东郊记忆店)",
+    "address": "东华一路268号1栋2单元1号地上1层",
+    "lat": 30.678405,
+    "lng": 104.1423,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0LR07NLPQ",
+    "name": "麦客达温德姆酒店(成都宽窄巷子店)",
+    "address": "金仙桥路11-附8号",
+    "lat": 30.678067,
+    "lng": 104.054062,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0K6ZCW6I7",
+    "name": "悦蓝里S酒店(成都宽窄巷子抚琴地铁站店)",
+    "address": "永陵路18号(抚琴地铁站C1口步行460米)",
+    "lat": 30.674347,
+    "lng": 104.045567,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0LAO7J9L1",
+    "name": "成都Wi瑰郦酒店(天府广场春熙路店)",
+    "address": "东御街88号星汇广场四单元1楼",
+    "lat": 30.656296,
+    "lng": 104.069814,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0KGBC995J",
+    "name": "成都新都五粮液文化体育中心亚朵酒店",
+    "address": "甫家东一路166号保利爱尚里8栋",
+    "lat": 30.754989,
+    "lng": 104.07652,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0KGZKUG84",
+    "name": "融康军培酒店(成都太古里春熙路店)",
+    "address": "天仙桥北路12号东大国际F1层",
+    "lat": 30.6514,
+    "lng": 104.086735,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0KGL71I9K",
+    "name": "全季酒店(成都熊猫基地龙潭寺店)",
+    "address": "成都熊猫基地龙潭路龙井路65号(龙潭寺地铁站A2口步行90米)",
+    "lat": 30.703684,
+    "lng": 104.165253,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0KAYK0W7N",
+    "name": "成都宽窄巷子璞石酒店",
+    "address": "十二桥路2号附18号(通惠门地铁站E口步行300米)",
+    "lat": 30.662996,
+    "lng": 104.045245,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0LDYMLH99",
+    "name": "成都新会展中和城际酒店(张家寺地铁站店)",
+    "address": "中和镇中和大道三段669号",
+    "lat": 30.550571,
+    "lng": 104.097727,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0KKP55FD3",
+    "name": "成都熊猫睡觉觉酒店(成都春熙路牛王庙地铁站店)",
+    "address": "建设北村52号(牛王庙地铁站D口步行270米)",
+    "lat": 30.646914,
+    "lng": 104.095575,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0K1HMOOFR",
+    "name": "麗枫酒店(成都西南交大火车北站店)",
+    "address": "二环路北二段177号(北站西二路地铁站D口旁)",
+    "lat": 30.695316,
+    "lng": 104.064927,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0K2D7EIXA",
+    "name": "成都亿啡丽呈酒店(春熙路太古里店)",
+    "address": "太升南路61号(太升南路地铁站B口步行150米)",
+    "lat": 30.662948,
+    "lng": 104.076818,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0KAZ5H0KV",
+    "name": "全季酒店(成都华西医院省体育馆地铁站店)",
+    "address": "一环路南三段13号附3号",
+    "lat": 30.633556,
+    "lng": 104.062505,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0KACAU9E5",
+    "name": "成都世园瀑布美憬阁酒店",
+    "address": "东部新区三岔街道公园大街3199号成都世界园艺博览会内(东侧)",
+    "lat": 30.318765,
+    "lng": 104.33923,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0KGYNB5Y9",
+    "name": "你好酒店(成都春熙路天府广场店)",
+    "address": "东华正街28号(天府广场地铁站东1北口步行430米)",
+    "lat": 30.660222,
+    "lng": 104.069793,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0L6XHSYQM",
+    "name": "你好酒店(成都天府广场地铁站博物馆店)",
+    "address": "东御街55号第7层",
+    "lat": 30.656831,
+    "lng": 104.068401,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0KA1AQAMQ",
+    "name": "全季酒店(成都四川大学领事馆路店)",
+    "address": "人民南路四段30号(倪家桥地铁站F口旁)",
+    "lat": 30.624536,
+    "lng": 104.066416,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0KUYAX26W",
+    "name": "朵兰达S酒店(都江堰景区南桥店)",
+    "address": "商业街2号幸福路89号附6号",
+    "lat": 30.996086,
+    "lng": 103.61985,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0KDC5S3Y1",
+    "name": "全季酒店(成都武侯祠红牌楼地铁站)",
+    "address": "高升桥路19号(红牌楼地铁站E3口步行200米)",
+    "lat": 30.637138,
+    "lng": 104.034118,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0L0TSA67D",
+    "name": "成都双流机场空港丽呈华廷酒店",
+    "address": "西航港街道口岸路366号",
+    "lat": 30.558315,
+    "lng": 103.970294,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0LGY785H2",
+    "name": "Panda·安逸熊猫酒店(成都熊猫基地天府国际动漫城店)",
+    "address": "东紫路1号1层",
+    "lat": 30.704425,
+    "lng": 104.108271,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B001C09E8M",
+    "name": "成都众欣·龙威酒店(龙泉驿龙平路地铁站店)",
+    "address": "龙泉街道龙都南路198号众欣龙威大厦",
+    "lat": 30.564044,
+    "lng": 104.262421,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0KDXBXWCK",
+    "name": "玥蓝里S酒店(都江堰大融城店)",
+    "address": "都江堰大道106号都江堰大融城F1层",
+    "lat": 30.989403,
+    "lng": 103.635453,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0KR9ZBWEQ",
+    "name": "鹿喜·安泊酒店(双流机场奥特莱斯店)",
+    "address": "龙桥路153号",
+    "lat": 30.596303,
+    "lng": 103.94785,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0KUHRH2Q2",
+    "name": "成都杜甫草堂漫心府",
+    "address": "草堂路58号(光华村地铁站G口步行290米)",
+    "lat": 30.660972,
+    "lng": 104.024506,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0KUV9QNQZ",
+    "name": "成都睿景酒店(中旅酒店旗下)",
+    "address": "成都市青羊区蜀都大道少城路8号",
+    "lat": 30.657863,
+    "lng": 104.059707,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0I3Y1KJ2N",
+    "name": "全季成都太古里望平街酒店",
+    "address": "均隆街59号1层(东门大桥地铁站D1口步行320米)",
+    "lat": 30.650559,
+    "lng": 104.088871,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0KUP7E6ZK",
+    "name": "成都融悦庭酒店(武侯祠宽窄巷子店)",
+    "address": "芳邻路10号",
+    "lat": 30.652671,
+    "lng": 104.045794,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0J3G59SPY",
+    "name": "成都龙潭美居酒店",
+    "address": "成致路2号32号楼徳泰创新大厦",
+    "lat": 30.681036,
+    "lng": 104.163067,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0K1N5RGJQ",
+    "name": "全季酒店(成都杜甫草堂西南财大光华校区店)",
+    "address": "光华村街52号",
+    "lat": 30.664385,
+    "lng": 104.012202,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0LUVCCUN3",
+    "name": "锦禧.悦庭酒店(成都人民公园宽窄巷子店)",
+    "address": "西二道街35号(西大街地铁站F1口步行250米)",
+    "lat": 30.67302,
+    "lng": 104.055043,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0LB4M7JNK",
+    "name": "美豪R酒店(成都金牛万达火车北站地铁站店)",
+    "address": "二环路北二段6号(火车北站地铁站F口步行270米)",
+    "lat": 30.694339,
+    "lng": 104.070922,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0KU5AO1GD",
+    "name": "维也纳国际酒店(都江堰古城景区南桥店)",
+    "address": "灌口街道建设路186号",
+    "lat": 30.999736,
+    "lng": 103.624592,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0K0TAMCWN",
+    "name": "高新逸衡酒店(世纪城新会展中心店)",
+    "address": "天府三街619号1栋",
+    "lat": 30.546238,
+    "lng": 104.054123,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0KKSD25VQ",
+    "name": "春熙纯泊酒店(成都春熙路西段太升南路地铁站店)",
+    "address": "玉沙路201号(太升南路地铁站C口步行380米)",
+    "lat": 30.667202,
+    "lng": 104.079973,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0KATHQ5PO",
+    "name": "全枫酒店(都江堰景区店)",
+    "address": "奎光路街道观江社区青城路368号附14号-附15号1层-3层6层",
+    "lat": 30.97918,
+    "lng": 103.622424,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0LDD57SH9",
+    "name": "成都柏栎荟舍酒店(成都西站杜甫草堂店)",
+    "address": "东坡路666号5楼大堂",
+    "lat": 30.66182,
+    "lng": 103.992616,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0K0J5CGUK",
+    "name": "成都蜀枫假日酒店(金牛万达广场梁家巷地铁站店)",
+    "address": "解放路二段329号(梁家巷地铁站C1口步行70米)",
+    "lat": 30.682658,
+    "lng": 104.083853,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0LAAAND7W",
+    "name": "恩季S丨VIBRANT天府·设计师酒店(成都春熙路太古里店)",
+    "address": "青年路67号3楼",
+    "lat": 30.657008,
+    "lng": 104.071935,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0KB9H90ZS",
+    "name": "BOYE柏野酒店(成都熊猫基地店)",
+    "address": "一里塘2期1栋45楼",
+    "lat": 30.727865,
+    "lng": 104.136968,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0K3UCLEDN",
+    "name": "成都宽窄巷子奎星楼街月牙至臻酒店",
+    "address": "马家花园路3号",
+    "lat": 30.679375,
+    "lng": 104.054277,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0KRZ7FHY7",
+    "name": "古堰南桥酒店(都江堰景区离堆公园站店)",
+    "address": "新马路113号",
+    "lat": 30.991315,
+    "lng": 103.628861,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0K1SDX78E",
+    "name": "熊一猫困了酒店(成都熊猫基地店)",
+    "address": "斧头山路一巷19号(201-301-401)",
+    "lat": 30.72755,
+    "lng": 104.136743,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0L6N5J76F",
+    "name": "海伦湖畔酒店(成都西博城华西天府医院店)",
+    "address": "煎茶街道天府大道南二段3999号中广云创中心3栋1楼",
+    "lat": 30.391176,
+    "lng": 104.074379,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0K2RMBVL9",
+    "name": "MUSTEL木文缇酒店(世纪城新会展天府三街店)",
+    "address": "天府三街1304号",
+    "lat": 30.547325,
+    "lng": 104.042425,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0K1ZAX90G",
+    "name": "环球6万里·国际酒店(成都火车南站地铁站店)",
+    "address": "盛和一路116号",
+    "lat": 30.60337,
+    "lng": 104.061167,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0K1Z101A2",
+    "name": "国宝熊猫酒店(春熙路天府广场店)",
+    "address": "横九龙巷57号",
+    "lat": 30.658099,
+    "lng": 104.072819,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0LRMXZGWI",
+    "name": "成都麓湖生态城希尔顿惠庭酒店",
+    "address": "绿野路五段500号9栋",
+    "lat": 30.461786,
+    "lng": 104.042205,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0LB7ZEV9A",
+    "name": "C-loft·套房酒店(成都春熙路太古里店)",
+    "address": "暑袜北二街56号总府时代1栋21楼",
+    "lat": 30.659922,
+    "lng": 104.076605,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0K2OU0ANC",
+    "name": "逸豪星耀酒店(成都羊犀立交茶店子客运站店)",
+    "address": "蜀跃路2号附13号",
+    "lat": 30.705372,
+    "lng": 104.005558,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0L1P56H4M",
+    "name": "成都太古里九眼桥漫心酒店",
+    "address": "致民东路3号(九眼桥地铁站B口步行70米)",
+    "lat": 30.64046,
+    "lng": 104.086743,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0K2J55WHA",
+    "name": "朗丽兹酒店(成都极地海洋公园天府和悦广场店)",
+    "address": "万安街道东林寺北巷399号",
+    "lat": 30.492929,
+    "lng": 104.088138,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0MGXZXDH1",
+    "name": "成都戴斯精选温德姆酒店",
+    "address": "槐树街35号",
+    "lat": 30.669108,
+    "lng": 104.054726,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0LDDS3YPB",
+    "name": "朵兰达V酒店(灌县古城都江堰景区店)",
+    "address": "观景路668号",
+    "lat": 31.004433,
+    "lng": 103.631697,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0M6ZZ11XD",
+    "name": "西子·礼白酒店(成都太古里339熊猫塔新鸿路地铁站店)",
+    "address": "一环路东二段96号(新鸿路地铁站A口旁)",
+    "lat": 30.664016,
+    "lng": 104.101329,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0J295VHBN",
+    "name": "成都龙泉驿北智选假日酒店(四川华新现代职业学院店)",
+    "address": "西河街道成洛大道4555号",
+    "lat": 30.648653,
+    "lng": 104.245144,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0LUPSYVX9",
+    "name": "朵兰达S酒店(成都春熙路天府广场店)",
+    "address": "顺城大街27号1栋1单元1楼2号沿街一层酒店大厅朵兰达S酒店(成都春熙路中信银行正对面)",
+    "lat": 30.659592,
+    "lng": 104.070581,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0K23Z0OS6",
+    "name": "成都瑞玺珺涞酒店(火车南站桐梓林地铁站店)",
+    "address": "人民南路四段53号1栋1层1号",
+    "lat": 30.61066,
+    "lng": 104.067745,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0K65ZGRZQ",
+    "name": "成都凤凰山五粮液体育公园润豪酒店",
+    "address": [],
+    "lat": 30.754482,
+    "lng": 104.076515,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0LDMR4SU2",
+    "name": "云岸318酒店(成都宽窄巷子文殊院地铁站店)",
+    "address": "新华大道通锦桥路65号(西大街地铁站C口步行300米)",
+    "lat": 30.67667,
+    "lng": 104.059869,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0LK773E14",
+    "name": "纯泊酒店(成都双流国际机场珠江路地铁站店)",
+    "address": "黄河中路二段286号",
+    "lat": 30.569145,
+    "lng": 104.008712,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0KGRHGJYC",
+    "name": "云岸318酒店(成都火车东站西广场塔子山公园地铁站店)",
+    "address": "岷江路佳年华广场422号商铺",
+    "lat": 30.627293,
+    "lng": 104.132094,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0KKCZNKY5",
+    "name": "TRIPLE纯泊欢丽酒店(都江堰景区南桥店)",
+    "address": "灌口街道太平社区玉带桥街97号3栋附14号",
+    "lat": 30.995157,
+    "lng": 103.631179,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0LUND5LO7",
+    "name": "都江堰希岸酒店(都江堰景区店)",
+    "address": "翔凤路178号",
+    "lat": 30.98034,
+    "lng": 103.632719,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0L167T6ZS",
+    "name": "成都开元名庭酒店(红牌楼地铁站店)",
+    "address": "二环路南四段61号(红牌楼地铁站E1口步行240米)",
+    "lat": 30.633307,
+    "lng": 104.033109,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0KK05DWIA",
+    "name": "美豪丽致酒店(成都温江大学城凤溪河地铁站店)",
+    "address": "文府苑路15号附1号",
+    "lat": 30.688727,
+    "lng": 103.835819,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0MB2S0KTS",
+    "name": "成都高新丽笙精选酒店",
+    "address": "天府大道中段1577号1栋31层3101号",
+    "lat": 30.53721,
+    "lng": 104.070592,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0K6S54U7Z",
+    "name": "慢喜酒店(成都建设路东郊记忆公园店)",
+    "address": "府青路三段15号附4号3-8层",
+    "lat": 30.689683,
+    "lng": 104.105928,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0LAHUE7LC",
+    "name": "经开铭臻国际大酒店(四川师范大学成龙校区店)",
+    "address": "大面街道经开区南一路1666号3栋",
+    "lat": 30.562853,
+    "lng": 104.182553,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0KKHZ5WVQ",
+    "name": "星悦尊品酒店(成都双流机场店)",
+    "address": "东升街道城北中街2号1栋1层2号、3号",
+    "lat": 30.579312,
+    "lng": 103.922797,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0LUNA55DJ",
+    "name": "成都万达美华酒店(东部新区店)",
+    "address": "东部新区三岔街道蓝绸带街116号绛溪里·湖滨天地酒店",
+    "lat": 30.310258,
+    "lng": 104.300594,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0LAF7OPRW",
+    "name": "成都双流机场丽呈酒店",
+    "address": "西航港街道寺圣一路1号",
+    "lat": 30.568275,
+    "lng": 103.975425,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0JDRK9LIO",
+    "name": "乐乎酒店(成都文殊院店)",
+    "address": "北打铜街与东打铜街交叉口东100米",
+    "lat": 30.669335,
+    "lng": 104.072453,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0KR5XUBMP",
+    "name": "成都春熙路华维酒店(太升南路地铁站店)",
+    "address": "新华大道玉沙路157号",
+    "lat": 30.667052,
+    "lng": 104.082598,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0KR0NIPK1",
+    "name": "佰郦希玥酒店(339天府熊猫塔红星桥地铁站店)",
+    "address": "恒大曹家巷广场东区公寓楼四期1幢1单元1315室(星辉东路)",
+    "lat": 30.671665,
+    "lng": 104.089405,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0KR59P8II",
+    "name": "成都西博城天府国际会议中心城际酒店",
+    "address": "正兴街道汉州路959号",
+    "lat": 30.434924,
+    "lng": 104.081146,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0KU3D8HU3",
+    "name": "玺悦·冠御高空酒店(成都春熙路文殊院店)",
+    "address": "西玉龙街2号(骡马市地铁站F口步行270米)",
+    "lat": 30.667417,
+    "lng": 104.069856,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0L02ZN32Y",
+    "name": "喜缇设计师酒店(龙泉政务中心书房地铁站店)",
+    "address": "玉龙街102号1栋1单元20楼",
+    "lat": 30.570436,
+    "lng": 104.237381,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0K6A5OH3K",
+    "name": "成都金堂花间苑·橘乐",
+    "address": "三溪镇橘咏路88号附8号",
+    "lat": 30.763377,
+    "lng": 104.590213,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0LGL5NMI4",
+    "name": "成都映居酒店(熊猫基地龙潭寺店)",
+    "address": "湖秀二路37号附101号",
+    "lat": 30.70852,
+    "lng": 104.16006,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0KKLCBWBU",
+    "name": "柏悦云璟酒店(文殊院天府广场店)",
+    "address": "洛阳路1号附1号(文殊院地铁站B口步行90米)",
+    "lat": 30.673128,
+    "lng": 104.067314,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0KKLU8TBS",
+    "name": "成都尊居豪生酒店",
+    "address": "三河街道繁昌三路66号",
+    "lat": 30.787821,
+    "lng": 104.140058,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0K6AUE3MB",
+    "name": "叙里酒店(成都宽窄巷子奎星楼街店)",
+    "address": "槐树街38号附8号",
+    "lat": 30.670044,
+    "lng": 104.053255,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0KRRDZ5NB",
+    "name": "亚森希和酒店(春熙路店)",
+    "address": "四川省 成都市 金牛区 成都市金牛区星辉东路3号恒大曹家巷广场C区1栋1单元14楼1418号",
+    "lat": 30.671546,
+    "lng": 104.089426,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0KU3RE0HM",
+    "name": "铂奢·梵幕酒店(宽窄巷子抚琴地铁站店)",
+    "address": "永陵路27号附1号(抚琴地铁站C1口步行180米)",
+    "lat": 30.674937,
+    "lng": 104.043078,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0KR6O3V9B",
+    "name": "万浩酒店(西南财大柳林校区万盛地铁站店)",
+    "address": "海科路东段611号",
+    "lat": 30.675053,
+    "lng": 103.819582,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0KGZLURGH",
+    "name": "夏都凯越酒店(成都西博城地铁站天府国际会议中心店)",
+    "address": "汉州路999号秦皇帝锦3期5栋1楼",
+    "lat": 30.424969,
+    "lng": 104.084,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0KAOAXG6A",
+    "name": "成都太古里未来中心漫心酒店",
+    "address": "东风路26号未来中心B座",
+    "lat": 30.650697,
+    "lng": 104.095226,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0JB4A1HLS",
+    "name": "成都淮州新城希尔顿惠庭酒店",
+    "address": "州城大道66号甘御兰广场F4层",
+    "lat": 30.720117,
+    "lng": 104.545534,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0L62UQ5OC",
+    "name": "农商享住酒店(成都东站四川师范大学店)",
+    "address": "静明路488号东城印象3单元",
+    "lat": 30.614634,
+    "lng": 104.136347,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0KUNULD1P",
+    "name": "金竹韵酒店(都江堰景区南桥店)",
+    "address": "观江社区江安河西路上段122号",
+    "lat": 30.987785,
+    "lng": 103.62132,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0K641UVPK",
+    "name": "成都贵院·东方美学设计师酒店",
+    "address": "荷花池街道白马后巷55号",
+    "lat": 30.684368,
+    "lng": 104.063349,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0K1VRJ72Q",
+    "name": "熊猫的家熊猫谷店",
+    "address": "旅游路玉堂段336号附1-附5号",
+    "lat": 30.963521,
+    "lng": 103.590662,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-chengdu",
+    "amapPoiId": "B0LD6SBLID",
+    "name": "西岭·矿工熊猫的家民宿(大邑斜源古镇店)",
+    "address": "出江镇九龙小区100号26栋",
+    "lat": 30.620048,
+    "lng": 103.340857,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  }
+]

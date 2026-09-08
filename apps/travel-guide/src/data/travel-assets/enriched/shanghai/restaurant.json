@@ -1,16 +1,164 @@
 [
   {
     "cityId": "city-shanghai",
-    "amapPoiId": "B00140HFQ8",
-    "name": "外婆家(世博源店)",
-    "address": "上海市浦东新区国展路1099号",
-    "lat": 31.18712,
-    "lng": 121.49012,
+    "amapPoiId": "B00155H7KN",
+    "name": "麦当劳(悦荟广场店)",
+    "address": "南京东路353号(南京东路地铁站3号口步行50米)",
+    "lat": 31.23661,
+    "lng": 121.483837,
     "hasHighChair": true,
     "isKidTolerant": true,
+    "hasKidsMenu": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFHW7S3V",
+    "name": "麦当劳(龙湖虹桥天街购物中心店)",
+    "address": "新虹街道申长路869号龙湖虹桥天街购物中心B馆L1层",
+    "lat": 31.191407,
+    "lng": 121.313752,
+    "hasHighChair": true,
+    "isKidTolerant": true,
+    "hasKidsMenu": true,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0H32U6V40",
+    "name": "禾基儿童发展中心·发育迟缓·自闭症(巨丰店)",
+    "address": "巨丰文化广场北门旁(杨高北路地铁站1号口步行240米)",
+    "lat": 31.279801,
+    "lng": 121.60562,
+    "hasHighChair": false,
+    "isKidTolerant": true,
     "hasKidsMenu": false,
-    "cuisine": "80元/人",
-    "avgPricePerPerson": 80,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0IR2H1FAJ",
+    "name": "奥特曼主题娱乐区",
+    "address": "银飞路166号上海海昌海洋公园内(南侧)",
+    "lat": 30.91145,
+    "lng": 121.905842,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B00155HAPV",
+    "name": "自然博物馆游客餐厅",
+    "address": "北京西路510号上海自然博物馆(自然博物馆地铁站1号口旁)",
+    "lat": 31.235407,
+    "lng": 121.462826,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFGANH1Q",
+    "name": "自然博物馆店-1868咖啡馆",
+    "address": "北京西路510号上海自然博物馆上海科技馆分馆B2M",
+    "lat": 31.235178,
+    "lng": 121.4628,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0MAYC24VT",
+    "name": "瑞幸咖啡(自然博物馆地铁站店)",
+    "address": "山海关路388号博华广场B2层",
+    "lat": 31.236675,
+    "lng": 121.462025,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0I2J73RKI",
+    "name": "TALK WALK惬雅(新福康里店)",
+    "address": "新闸路882号(自然博物馆地铁站2口步行450米)",
+    "lat": 31.234365,
+    "lng": 121.458543,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0FFLGAC4R",
+    "name": "果之满满(博华广场店)",
+    "address": "山海关路388号博华广场B2层(自然博物馆地铁站2号口旁)",
+    "lat": 31.235775,
+    "lng": 121.462058,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B00156EIWU",
+    "name": "BELLOCO倍乐(静安店)",
+    "address": "新闸路850号(自然博物馆地铁站2号口步行410米)",
+    "lat": 31.234936,
+    "lng": 121.459398,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shanghai",
+    "amapPoiId": "B0I1YU9816",
+    "name": "腔调面(自然博物馆店)",
+    "address": "新闸路777弄1-4号达安城",
+    "lat": 31.236344,
+    "lng": 121.46122,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
     "tags": [
       "ai_draft_v1"
     ],
