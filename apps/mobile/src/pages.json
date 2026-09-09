@@ -23,7 +23,7 @@
     {
       "path": "pages/challenge/index",
       "style": {
-        "navigationBarTitleText": "挑战",
+        "navigationBarTitleText": "小答答",
         "navigationStyle": "custom"
       }
     },
@@ -169,7 +169,7 @@
       },
       {
         "pagePath": "pages/challenge/index",
-        "text": "挑战",
+        "text": "小答答",
         "iconPath": "static/tab/challenge.svg",
         "selectedIconPath": "static/tab/challenge-active.svg"
       },
