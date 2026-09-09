@@ -195,13 +195,15 @@ async function restoreFromHash() {
   const hash = window.location.hash.slice(1)
   if (!hash) return
   const parts = hash.split('/')
-  const view = parts[0]
-  if (view === 'detail' && parts[1]) {
+  // 兼容两种格式：#detail/<id> 或裸 <id>（mobile webview 拼接格式）
+  const view = parts.length > 1 ? parts[0] : 'detail'
+  const id = parts.length > 1 ? parts[1] : parts[0]
+  if (view === 'detail' && id) {
     await ensureFullData()
     if (!fullData.value) return
-    const item = fullData.value.find(t => t.id === parts[1])
+    const item = fullData.value.find(t => t.id === id)
     if (item) { currentTopic.value = item; currentView.value = 'detail' }
-  } else if (view === 'reader' && parts[1]) {
+  } else if (view === 'reader' && id) {
     await ensureFullData()
     if (!fullData.value) return
     // 新格式 reader/topicId/sectionId，兼容旧 reader/sectionId

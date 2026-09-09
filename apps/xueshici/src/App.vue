@@ -244,8 +244,15 @@ async function restoreFromHash() {
   const hash = window.location.hash.slice(1)
   if (!hash) return
   const slashIdx = hash.indexOf('/')
-  const view = slashIdx >= 0 ? hash.slice(0, slashIdx) : hash
-  const id = slashIdx >= 0 ? hash.slice(slashIdx + 1) : ''
+  // 兼容两种格式：#detail/<id> 或裸 <id>（mobile webview 拼接格式）
+  let view: string, id: string
+  if (slashIdx >= 0) {
+    view = hash.slice(0, slashIdx)
+    id = hash.slice(slashIdx + 1)
+  } else {
+    view = 'detail' // 裸 ID 默认走详情
+    id = hash
+  }
   if (!id) return
   if (view === 'poet') {
     currentPoet.value = decodeURIComponent(id)

@@ -331,7 +331,12 @@ async function restoreFromHash() {
     searchResults.value = []
     return
   }
-  const [view, id] = hash.split('/')
+  // 兼容两种 hash 格式：
+  //   旧：#detail/<id> 或 #reader/<id>（带前缀）
+  //   mobile webview：#<id>（裸数字 ID，split('/') 后 view='42'）
+  const parts = hash.split('/')
+  const view = parts.length > 1 ? parts[0] : 'detail' // 裸 ID 默认走 detail
+  const id = parts.length > 1 ? parts[1] : parts[0]
   if ((view === 'detail' || view === 'reader') && id) {
     await ensureFullData()
     if (!fullData.value) return
