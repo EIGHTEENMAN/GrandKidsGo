@@ -56,7 +56,7 @@ const randomClassics = computed(() => {
 
 function openClassic(c: ClassicMeta) {
   uni.navigateTo({
-    url: `/pages/learning/webview?title=${encodeURIComponent(c.title)}&url=${encodeURIComponent('https://xueguoxue.grandand.com/#' + c.id)}`
+    url: `/pages/learning/webview?title=${encodeURIComponent(c.title)}&url=${encodeURIComponent('https://m.grandand.com/xueguoxue/#' + c.id)}`
   })
 }
 </script>

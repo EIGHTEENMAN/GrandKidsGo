@@ -52,7 +52,7 @@ function shareTopic(t: TopicMeta) {
 
 function openTopic(t: TopicMeta) {
   uni.navigateTo({
-    url: `/pages/learning/webview?title=${encodeURIComponent(t.title)}&url=${encodeURIComponent('https://xuetongshi.grandand.com/#' + t.id)}`
+    url: `/pages/learning/webview?title=${encodeURIComponent(t.title)}&url=${encodeURIComponent('https://m.grandand.com/xuetongshi/#' + t.id)}`
   })
 }
 </script>
