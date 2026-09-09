@@ -84,12 +84,12 @@ const displayName = computed(() => {
 })
 const avatar = computed(() => userInfo.value?.avatar || '👤')
 
-// 4 宫格（对齐底部 tabBar 中间 4 项）
+// 4 宫格（对齐底部 tabBar 中间 4 项）— 居中大气风格
 const tiles = [
-  { key: 'learning',  name: '学习',   desc: '国学/诗词/英语', icon: '📚', url: '/pages/learning/index',  color: '#2563eb' },
-  { key: 'challenge', name: '小答答', desc: '答题闯关',       icon: '⚡', url: '/pages/challenge/index', color: '#ef4444' },
-  { key: 'travel',    name: '走天下', desc: '亲子旅行',       icon: '✈️', url: '/pages/travel/index',    color: '#22c55e' },
-  { key: 'mine',      name: '我的',   desc: '账号/收藏',       icon: '👤', url: '/pages/mine/index',      color: '#64748b' },
+  { key: 'learning',  name: '学习',   desc: '国学/诗词/英语', icon: '📚', url: '/pages/learning/index',  color: '#2563eb', gradient: 'linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%)' },
+  { key: 'challenge', name: '小答答', desc: '答题闯关',       icon: '⚡', url: '/pages/challenge/index', color: '#ef4444', gradient: 'linear-gradient(135deg, #fee2e2 0%, #fecaca 100%)' },
+  { key: 'travel',    name: '走天下', desc: '亲子旅行',       icon: '✈️', url: '/pages/travel/index',    color: '#22c55e', gradient: 'linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%)' },
+  { key: 'mine',      name: '我的',   desc: '账号/收藏',       icon: '👤', url: '/pages/mine/index',      color: '#64748b', gradient: 'linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%)' },
 ]
 
 function openTile(url: string) {
@@ -137,7 +137,7 @@ function openTile(url: string) {
       </view>
     </view>
 
-    <!-- 4 宫格 (2x2) -->
+    <!-- 4 宫格 (2x2) — 居中大气 -->
     <view class="grid">
       <view
         v-for="t in tiles"
@@ -146,13 +146,11 @@ function openTile(url: string) {
         hover-class="tile-hover"
         @click="openTile(t.url)"
       >
-        <view class="tile-icon" :style="{ background: t.color + '14' }">
-          <text class="tile-emoji" :style="{ color: t.color }">{{ t.icon }}</text>
+        <view class="tile-icon" :style="{ background: t.gradient }">
+          <text class="tile-emoji">{{ t.icon }}</text>
         </view>
-        <view class="tile-info">
-          <text class="tile-name" :style="{ color: t.color }">{{ t.name }}</text>
-          <text class="tile-desc">{{ t.desc }}</text>
-        </view>
+        <text class="tile-name" :style="{ color: t.color }">{{ t.name }}</text>
+        <text class="tile-desc">{{ t.desc }}</text>
       </view>
     </view>
 
@@ -216,41 +214,53 @@ function openTile(url: string) {
   font-size: 44rpx; border: 2rpx solid #e2e8f0;
 }
 
-/* 4 宫格 (2x2) */
+/* 4 宫格 (2x2) — 居中大气 */
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 24rpx;
-  padding: 0 32rpx;
+  gap: 28rpx;
+  padding: 0 40rpx;
+  max-width: 640rpx;
+  margin: 0 auto;
 }
 .tile {
   background: white;
-  border-radius: 32rpx;
-  padding: 36rpx 28rpx;
-  display: flex; align-items: center; gap: 20rpx;
+  border-radius: 36rpx;
+  padding: 56rpx 24rpx 44rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16rpx;
   border: 1rpx solid #f1f5f9;
-  box-shadow: 0 4rpx 20rpx rgba(15, 23, 42, 0.04);
+  box-shadow: 0 6rpx 24rpx rgba(15, 23, 42, 0.05);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 .tile-hover {
-  transform: translateY(-2rpx);
-  box-shadow: 0 8rpx 24rpx rgba(15, 23, 42, 0.08);
+  transform: translateY(-4rpx);
+  box-shadow: 0 12rpx 32rpx rgba(15, 23, 42, 0.10);
 }
 .tile-icon {
-  width: 96rpx; height: 96rpx; border-radius: 24rpx;
-  display: flex; align-items: center; justify-content: center;
-  flex-shrink: 0;
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 32rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8rpx;
 }
 .tile-emoji {
-  font-size: 48rpx; line-height: 1;
+  font-size: 64rpx;
+  line-height: 1;
 }
-.tile-info { display: flex; flex-direction: column; gap: 6rpx; flex: 1; min-width: 0; }
 .tile-name {
-  font-size: 30rpx; font-weight: 700; letter-spacing: 1rpx;
+  font-size: 32rpx;
+  font-weight: 700;
+  letter-spacing: 1rpx;
 }
 .tile-desc {
-  font-size: 22rpx; color: #94a3b8; letter-spacing: 0.5rpx;
-  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  font-size: 22rpx;
+  color: #94a3b8;
+  letter-spacing: 0.5rpx;
 }
 
 .footer-spacer { height: 40rpx; }
