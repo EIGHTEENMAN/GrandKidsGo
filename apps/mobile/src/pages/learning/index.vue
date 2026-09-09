@@ -24,7 +24,7 @@ function openApp(name: string) {
 <template>
   <view class="page">
     <view class="hero">
-      <text class="hero-title">童慧行乐园</text>
+      <text class="hero-title">童慧行</text>
       <text class="hero-desc">读万卷书，行万里路</text>
     </view>
 
