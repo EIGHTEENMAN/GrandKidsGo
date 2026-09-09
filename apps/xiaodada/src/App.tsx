@@ -103,6 +103,11 @@ export default function App() {
     checkServerAuth()
   }, [])
 
+  // Always clear youth-loading on mount (未登录用户不需要青少年模式检查)
+  useEffect(() => {
+    setYouthLoading(false)
+  }, [])
+
   // Periodic auth sync (every 5s)
   useEffect(() => {
     const interval = setInterval(() => {
