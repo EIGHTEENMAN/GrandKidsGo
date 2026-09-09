@@ -85,7 +85,8 @@ export interface PlanOutline {
   candidates: CandidateOutline[]
 }
 
-export const TRAVEL_API_BASE = ref('https://travel.grandand.com')
+// v1.5+: 走 mobile 同源 /api/travel/* (nginx 反代到 3010 travel-guide)，避开公网 travel.grandand.com ICP 拦截
+export const TRAVEL_API_BASE = ref('/api/travel')
 
 function authHeaders(): Record<string, string> {
   const token = uni.getStorageSync('grandkidsgo_token')
