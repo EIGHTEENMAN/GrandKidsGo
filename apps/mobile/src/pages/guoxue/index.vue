@@ -4,6 +4,7 @@ import { classicIndex, categories, categoryColors, type ClassicMeta } from './da
 import { shareContent } from '@/utils/native'
 import { useSearchHistory } from '@/utils/search-history'
 import ScrollToTop from '@/components/ScrollToTop.vue'
+import PageNav from '@/components/PageNav.vue'
 
 const activeCategory = ref('全部')
 const searchQuery = ref('')
@@ -63,6 +64,7 @@ function openClassic(c: ClassicMeta) {
 
 <template>
   <view class="page">
+    <PageNav title="学国学" />
     <!-- Hero -->
     <view class="hero">
       <view class="hero-row">

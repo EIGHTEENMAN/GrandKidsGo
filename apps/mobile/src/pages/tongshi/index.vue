@@ -4,6 +4,7 @@ import { knowledgeIndex as topicIndex, categories, categoryColors, dailyQuotes, 
 import { shareContent } from '@/utils/native'
 import { useSearchHistory } from '@/utils/search-history'
 import ScrollToTop from '@/components/ScrollToTop.vue'
+import PageNav from '@/components/PageNav.vue'
 
 const activeCategory = ref('全部')
 const searchQuery = ref('')
@@ -59,6 +60,7 @@ function openTopic(t: TopicMeta) {
 
 <template>
   <view class="page">
+    <PageNav title="学通识" />
     <view class="hero">
       <view class="hero-row">
         <view class="hero-left">

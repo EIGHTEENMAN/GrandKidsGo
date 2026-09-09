@@ -2,6 +2,7 @@
 import { ref } from 'vue'
 import { onLoad } from '@dcloudio/uni-app'
 import { trackBrowse } from '@/stores/history'
+import PageNav from '@/components/PageNav.vue'
 
 const title = ref('')
 const url = ref('')
@@ -64,6 +65,7 @@ function goBack() {
 
 <template>
   <view class="webview-page">
+    <PageNav :title="title" />
     <!-- Custom Header -->
     <view class="header" v-if="title">
       <view class="back-btn" @click="goBack">

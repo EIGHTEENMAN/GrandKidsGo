@@ -3,6 +3,7 @@ import { ref, computed, onMounted } from 'vue'
 import { WORLDS, GRADES } from './data'
 import { shareContent } from '@/utils/native'
 import { debounce } from '@/utils/debounce'
+import PageNav from '@/components/PageNav.vue'
 
 const totalWords = 3000
 const currentGrade = ref(0)
@@ -68,6 +69,7 @@ function startFirstWorld() {
 
 <template>
   <view class="page">
+    <PageNav title="学英语" />
     <!-- Hero -->
     <view class="hero">
       <view class="hero-left">

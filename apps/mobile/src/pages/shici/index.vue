@@ -4,6 +4,7 @@ import { poemsIndex, categories, categoryColors, poetBios } from './data'
 import { shareContent, copyToClipboard } from '@/utils/native'
 import { debounce } from '@/utils/debounce'
 import ScrollToTop from '@/components/ScrollToTop.vue'
+import PageNav from '@/components/PageNav.vue'
 
 // 搜索历史（localStorage 持久化）
 const HISTORY_KEY = 'grandkidsgo_shici_search_history'
@@ -131,6 +132,7 @@ const randomPoets = computed(() => {
 
 <template>
   <view class="page">
+    <PageNav title="学诗词" />
     <!-- Hero -->
     <view class="hero">
       <view class="hero-row">

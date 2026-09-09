@@ -3,6 +3,7 @@ import { ref, computed } from 'vue'
 import { onLoad } from '@dcloudio/uni-app'
 import { poemsIndex, categoryColors, poetBios } from './data'
 import { shareContent } from '@/utils/native'
+import PageNav from '@/components/PageNav.vue'
 
 const poetName = ref('')
 const activeDynasty = ref('')
