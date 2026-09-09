@@ -196,7 +196,8 @@ function showLoginTip() {
     </view>
 
     <view class="fab" @click="openWizard">
-      <text class="fab-text">我也要做计划</text>
+      <text class="fab-icon">✈️</text>
+      <text class="fab-text">做一份计划</text>
     </view>
   </view>
 </template>
@@ -244,6 +245,7 @@ function showLoginTip() {
 .card-meta { display: flex; justify-content: space-between; padding: 0 16rpx 16rpx; }
 .card-author { font-size: 22rpx; color: #64748b; }
 .card-stats { font-size: 22rpx; color: #94a3b8; }
-.fab { position: fixed; right: 32rpx; bottom: 32rpx; background: #16a34a; color: #fff; padding: 24rpx 32rpx; border-radius: 32rpx; box-shadow: 0 8rpx 24rpx rgba(22, 163, 74, 0.4); }
+.fab { position: fixed; right: 32rpx; bottom: 140rpx; background: #22c55e; color: #fff; padding: 24rpx 36rpx; border-radius: 999rpx; box-shadow: 0 8rpx 24rpx rgba(34, 197, 94, 0.32); display: flex; align-items: center; gap: 12rpx; }
+.fab-icon { font-size: 28rpx; }
 .fab-text { font-size: 28rpx; font-weight: 600; color: #fff; }
 </style>
