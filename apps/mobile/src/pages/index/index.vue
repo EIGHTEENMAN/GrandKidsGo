@@ -2,6 +2,55 @@
 import { ref, computed, onMounted } from 'vue'
 import { onShow } from '@dcloudio/uni-app'
 
+// PWA install prompt
+const pwaInstallEvent = ref<any>(null)
+const showInstallPrompt = ref(false)
+const showIosTutorial = ref(false)
+const isIos = ref(false)
+const isStandalone = ref(false)
+
+function isStandaloneMode() {
+  try {
+    return window.matchMedia('(display-mode: standalone)').matches
+      || (navigator as any).standalone === true
+  } catch { return false }
+}
+
+onMounted(() => {
+  isIos.value = /ipad|iphone|ipod/i.test(navigator.userAgent)
+  isStandalone.value = isStandaloneMode()
+  if (isStandalone.value) {
+    showInstallPrompt.value = false
+  } else if (isIos.value) {
+    showInstallPrompt.value = true
+    showIosTutorial.value = true
+  }
+  window.addEventListener('beforeinstallprompt', (e) => {
+    e.preventDefault()
+    pwaInstallEvent.value = e
+    showInstallPrompt.value = true
+    showIosTutorial.value = false
+  })
+  window.addEventListener('appinstalled', () => {
+    showInstallPrompt.value = false
+    pwaInstallEvent.value = null
+  })
+})
+
+function installPwa() {
+  if (pwaInstallEvent.value) {
+    pwaInstallEvent.value.prompt()
+    pwaInstallEvent.value.userChoice.then(() => {
+      pwaInstallEvent.value = null
+      showInstallPrompt.value = false
+    })
+  }
+}
+
+function dismissInstall() {
+  showInstallPrompt.value = false
+}
+
 const token = ref('')
 const userInfo = ref<any>(null)
 
@@ -44,13 +93,39 @@ const tiles = [
 ]
 
 function openTile(url: string) {
-  // 学习 / 小答答 / 走天下 / 我的 都是 switchTab；4 宫格全部用 switchTab 保险
   uni.switchTab({ url, fail: () => uni.navigateTo({ url }) })
 }
 </script>
 
 <template>
   <view class="page">
+    <!-- PWA Install Prompt (Android) -->
+    <view class="install-banner" v-if="showInstallPrompt && !showIosTutorial">
+      <view class="install-content">
+        <text class="install-icon">📲</text>
+        <view class="install-texts">
+          <text class="install-title">添加到主屏幕</text>
+          <text class="install-desc">安装到桌面，离线也能学</text>
+        </view>
+      </view>
+      <view class="install-actions">
+        <text class="install-dismiss" @click="dismissInstall">稍后</text>
+        <text class="install-btn" @click="installPwa">立即安装</text>
+      </view>
+    </view>
+
+    <!-- PWA Install Tutorial (iOS Safari) -->
+    <view class="install-banner ios-banner" v-if="showInstallPrompt && showIosTutorial">
+      <view class="install-content">
+        <text class="install-icon">📲</text>
+        <view class="install-texts">
+          <text class="install-title">添加到主屏幕</text>
+          <text class="install-desc">点击底部的分享按钮 ⬆️，选「添加到主屏幕」</text>
+        </view>
+      </view>
+      <text class="install-dismiss" @click="dismissInstall">知道了</text>
+    </view>
+
     <!-- 顶部 -->
     <view class="hero">
       <view class="hero-row">
@@ -91,6 +166,34 @@ function openTile(url: string) {
   background: linear-gradient(180deg, #f8fafc 0%, #ffffff 60%);
   padding-bottom: 40rpx;
 }
+
+/* PWA Install Banner */
+.install-banner {
+  margin: 24rpx 32rpx 0;
+  background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+  border-radius: 24rpx; padding: 20rpx 24rpx;
+  display: flex; align-items: center; justify-content: space-between;
+  border: 1rpx solid #bfdbfe;
+}
+.install-content { display: flex; align-items: center; gap: 14rpx; flex: 1; min-width: 0; }
+.install-icon { font-size: 36rpx; flex-shrink: 0; }
+.install-texts { display: flex; flex-direction: column; min-width: 0; }
+.install-title { font-size: 26rpx; font-weight: 700; color: #1e40af; }
+.install-desc { font-size: 22rpx; color: #3b82f6; margin-top: 2rpx; }
+.install-actions { display: flex; align-items: center; gap: 12rpx; flex-shrink: 0; }
+.install-dismiss { font-size: 24rpx; color: #93c5fd; padding: 6rpx 12rpx; }
+.install-btn {
+  font-size: 24rpx; font-weight: 600; color: white;
+  background: #2563eb; padding: 10rpx 24rpx; border-radius: 12rpx;
+}
+/* iOS 教程 banner */
+.ios-banner {
+  background: linear-gradient(135deg, #fef9c3 0%, #fef08a 100%);
+  border-color: #fde047;
+}
+.ios-banner .install-title { color: #854d0e; }
+.ios-banner .install-desc { color: #a16207; }
+.ios-banner .install-dismiss { color: #ca8a04; }
 
 /* 顶部 */
 .hero {
