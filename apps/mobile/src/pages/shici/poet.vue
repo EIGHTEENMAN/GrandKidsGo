@@ -31,7 +31,7 @@ const dynastyColor = computed(() => categoryColors[poetInfo.value.category] || '
 
 function openPoem(poem: typeof poemsIndex[0]) {
   uni.navigateTo({
-    url: `/pages/learning/webview?title=${encodeURIComponent(poem.title)}&url=${encodeURIComponent('https://m.grandand.com/xueshici/#' + poem.id)}`
+    url: `/pages/learning/webview?title=${encodeURIComponent(poem.title)}&url=${encodeURIComponent('https://xueshici.grandand.com/#' + poem.id)}`
   })
 }
 

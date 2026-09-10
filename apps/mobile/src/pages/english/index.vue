@@ -43,7 +43,7 @@ function dismissHint() {
 
 function openWorld(w: typeof WORLDS[0]) {
   uni.navigateTo({
-    url: `/pages/learning/webview?title=${encodeURIComponent(w.nameCn)}&url=${encodeURIComponent('https://m.grandand.com/english/')}`
+    url: `/pages/learning/webview?title=${encodeURIComponent(w.nameCn)}&url=${encodeURIComponent('https://english.grandand.com/')}`
   })
 }
 
