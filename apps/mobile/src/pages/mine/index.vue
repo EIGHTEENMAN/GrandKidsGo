@@ -276,11 +276,6 @@ const handleShare = debounce(function () {
         </view>
         <text class="profile-arrow">›</text>
       </view>
-      <view v-if="!isLoggedIn" class="profile-benefits">
-        <text class="benefit-item">🏆 解锁勋章墙</text>
-        <text class="benefit-item">📊 查看学习报告</text>
-        <text class="benefit-item">🔥 每日打卡挑战</text>
-      </view>
     </view>
 
     <!-- Learning Stats -->
@@ -426,22 +421,6 @@ const handleShare = debounce(function () {
 
     <!-- Menu List -->
     <view class="menu-section">
-      <view class="menu-item" @click="openWebView('商城', 'https://store.grandand.com')">
-        <text class="menu-icon">🎒</text>
-        <view class="menu-content">
-          <text class="menu-label">积分商城</text>
-          <text class="menu-desc">兑换好礼</text>
-        </view>
-        <text class="menu-arrow">›</text>
-      </view>
-      <view class="menu-item" @click="openWebView('论坛', 'https://forum.grandand.com')">
-        <text class="menu-icon">💬</text>
-        <view class="menu-content">
-          <text class="menu-label">社区论坛</text>
-          <text class="menu-desc">交流分享</text>
-        </view>
-        <text class="menu-arrow">›</text>
-      </view>
       <view class="menu-item" @click="openWebView('常见问题', 'https://grandand.com/faq')">
         <text class="menu-icon">📖</text>
         <view class="menu-content">
@@ -457,6 +436,16 @@ const handleShare = debounce(function () {
           <text class="menu-desc">隐私与协议</text>
         </view>
         <text class="menu-arrow">›</text>
+      </view>
+    </view>
+
+    <!-- Benefits (登录后可解锁) -->
+    <view v-if="!isLoggedIn" class="benefits-card">
+      <text class="benefits-title">登录后可解锁</text>
+      <view class="profile-benefits">
+        <text class="benefit-item">🏆 解锁勋章墙</text>
+        <text class="benefit-item">📊 查看学习报告</text>
+        <text class="benefit-item">🔥 每日打卡挑战</text>
       </view>
     </view>
 
@@ -489,10 +478,16 @@ const handleShare = debounce(function () {
   padding: 32rpx; border: 1rpx solid #e2e8f0;
 }
 .profile-info, .profile-login { display: flex; align-items: center; }
+.benefits-card {
+  margin: 24rpx; background: white; border-radius: 24rpx;
+  padding: 24rpx 28rpx; border: 1rpx solid #e2e8f0;
+}
+.benefits-title {
+  font-size: 24rpx; font-weight: 600; color: #64748b;
+  display: block; margin-bottom: 14rpx;
+}
 .profile-benefits {
   display: flex; flex-wrap: wrap; gap: 8rpx;
-  margin-top: 16rpx; padding-top: 16rpx;
-  border-top: 1rpx dashed #e2e8f0;
 }
 .benefit-item {
   font-size: 22rpx; color: #475569; padding: 6rpx 14rpx;
