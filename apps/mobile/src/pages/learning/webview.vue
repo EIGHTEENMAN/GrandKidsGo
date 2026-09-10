@@ -29,11 +29,16 @@ onLoad((params) => {
     })
   }
 
-  // Inject auth token for SSO
+  // Inject auth token for SSO.
+  // 必须插在 hash 之前：hash 里的 ?token 会被浏览器算进 location.hash，
+  // 导致学习应用 hash.slice(1) 拿到 "100?grandkidsgo_token=xxx" → Number() = NaN → 白屏。
   const token = uni.getStorageSync('grandkidsgo_token')
   if (token && targetUrl) {
-    const sep = targetUrl.includes('?') ? '&' : '?'
-    targetUrl += `${sep}grandkidsgo_token=${token}`
+    const hashIdx = targetUrl.indexOf('#')
+    const base = hashIdx >= 0 ? targetUrl.slice(0, hashIdx) : targetUrl
+    const hash = hashIdx >= 0 ? targetUrl.slice(hashIdx) : ''
+    const sep = base.includes('?') ? '&' : '?'
+    targetUrl = `${base}${sep}grandkidsgo_token=${token}${hash}`
   }
   url.value = targetUrl
 })
