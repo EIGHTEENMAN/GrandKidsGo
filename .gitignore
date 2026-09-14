@@ -68,3 +68,6 @@ tests/artifacts/
 # 环境变量密钥（严禁入库）
 **/.env
 !**/.env.example
+
+# 备案 docx 产物（从 md 生成，不入库）
+ICP备案/方案/*.docx
