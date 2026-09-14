@@ -27,7 +27,9 @@
 - 亲子景点攻略：50+ 城市、1500+ 景点、5000+ 孩子真实反馈
 
 ## 法律与许可
-- ICP 备案：粤ICP备 2024xxxxxx 号
+- ICP 备案：闽ICP备 2026xxxxxx 号-1（主站，含 xueshici/xueguoxue/xuetongshi/english/tiaozhan/m.grandand.com 等子站；申请已提交，等待福建省通信管理局审核）
+- ICP 备案（走天下）：闽ICP备 2026xxxxxx 号-2（travel.grandand.com；与主站同时申请）
+- 公安联网备案：闽公网安备 35000000xxxxxx 号（拿到 ICP 号 30 天内办理）
 - 内容许可：CC BY-NC 4.0（非商业署名）
 - 隐私政策：[grandand.com/legal#privacy](https://grandand.com/legal#privacy)
 

@@ -56,7 +56,7 @@ const promises = [
   { icon: '🔍', title: 'Three-Stage Review', desc: 'DFA filter → AI re-review → manual spot-check. Violating content removed within 24 hours.' },
   { icon: '👨‍👩‍👧', title: 'Real Parents Operate', desc: 'Team consists of parents and child educators. All content is based on real family experience.' },
   { icon: '🌱', title: 'Public Welfare', desc: 'Tonghuixing is a parent co-created non-profit. We welcome more parents to join us.' },
-  { icon: '📜', title: 'ICP Filing Public', desc: 'Filed under Chinese law (粤ICP备 2024xxxxxx 号). Transparent for public supervision.' },
+  { icon: '📜', title: 'ICP Filing Public', desc: 'Filed under Chinese law: 闽ICP备 2026xxxxxx 号-1 (main) / 闽ICP备 2026xxxxxx 号-2 (travel). Transparent for public supervision.' },
 ]
 </script>
 
@@ -132,7 +132,7 @@ const promises = [
           <li><strong>WeChat Official Account:</strong> Tonghuixing (ID: tonghuixing_)</li>
           <li><strong>Xiaohongshu (Little Red Book):</strong> Tonghuixing</li>
           <li><strong>Douyin:</strong> Tonghuixing</li>
-          <li><strong>ICP Filing:</strong> 粤ICP备 2024xxxxxx 号</li>
+          <li><strong>ICP Filing:</strong> 闽ICP备 2026xxxxxx 号-1 (main) / 闽ICP备 2026xxxxxx 号-2 (travel)</li>
         </ul>
       </section>
 

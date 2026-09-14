@@ -56,7 +56,7 @@ const promises = [
   { icon: '🔍', title: '三段内容审核', desc: 'DFA 敏感词 → AI 智能复评 → 人工抽检。违规内容 24 小时内下架。' },
   { icon: '👨‍👩‍👧', title: '真实家长运营', desc: '团队由家长与儿童教育工作者组成，所有内容都基于真实家庭体验。' },
   { icon: '🌱', title: '公益初心', desc: '童慧行是家长共创的非营利项目，欢迎更多家长加入共创。' },
-  { icon: '📜', title: 'ICP 备案公开', desc: '粤ICP备 2024xxxxxx 号。备案信息随时可查，接受社会监督。' },
+  { icon: '📜', title: 'ICP 备案公开', desc: '闽ICP备 2026xxxxxx 号-1（主站）+ 闽ICP备 2026xxxxxx 号-2（走天下）。备案信息随时可查，接受社会监督。' },
 ]
 
 const teamRoles = [
@@ -181,7 +181,7 @@ const teamRoles = [
           <li><strong>微信公众号：</strong>童慧行（ID: tonghuixing_）</li>
           <li><strong>小红书：</strong>童慧行</li>
           <li><strong>抖音：</strong>童慧行</li>
-          <li><strong>ICP 备案：</strong>粤ICP备 2024xxxxxx 号</li>
+          <li><strong>ICP 备案：</strong>闽ICP备 2026xxxxxx 号-1（主站）/ 闽ICP备 2026xxxxxx 号-2（走天下）</li>
         </ul>
       </section>
 

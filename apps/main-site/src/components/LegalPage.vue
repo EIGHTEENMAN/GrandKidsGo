@@ -62,6 +62,7 @@ function scrollTo(id: string) {
 
           <h2>2. 服务说明</h2>
           <p>童慧行是一个专为儿童和父母打造的成长陪伴平台，提供国学经典学习、诗词学习、通识百科阅读、英语单词学习、益智答题挑战、亲子旅行攻略分享等服务。</p>
+          <p><strong>适用范围（2026 年 9 月更新）：</strong>本政策适用于 grandand.com 及旗下所有子站，包括学诗词（xueshici.grandand.com）、学国学（xueguoxue.grandand.com）、学通识（xuetongshi.grandand.com）、学英语（english.grandand.com）、童慧行来挑战（tiaozhan.grandand.com）、童慧行走天下（travel.grandand.com）以及移动端 m.grandand.com。</p>
 
           <h2>3. 用户注册与账户</h2>
           <p>您可以选择通过手机号验证码或用户名密码注册账号。注册时需提供手机号、用户名、出生年份等信息。未满 14 周岁的用户需经家长同意后方可使用。</p>
