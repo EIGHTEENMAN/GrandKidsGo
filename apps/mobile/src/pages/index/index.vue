@@ -95,6 +95,16 @@ const tiles = [
 function openTile(url: string) {
   uni.switchTab({ url, fail: () => uni.navigateTo({ url }) })
 }
+
+function openUrl(url: string) {
+  // #ifdef H5
+  window.open(url, '_blank', 'noopener,noreferrer')
+  // #endif
+  // #ifdef MP-WEIXIN
+  // 微信小程序不支持直接跳转外链，复制到剪贴板
+  uni.setClipboardData({ data: url })
+  // #endif
+}
 </script>
 
 <template>
@@ -166,18 +176,6 @@ function openTile(url: string) {
     </view>
   </view>
 </template>
-
-<script setup>
-const openUrl = (url) => {
-  // #ifdef H5
-  window.open(url, '_blank', 'noopener,noreferrer')
-  // #endif
-  // #ifdef MP-WEIXIN
-  // 微信小程序不支持直接跳转外链，复制到剪贴板
-  uni.setClipboardData({ data: url })
-  // #endif
-}
-</script>
 
 <style scoped>
 .page {
