@@ -4,6 +4,7 @@ import './globals.css';
 import AnalyticsTracker from '@/components/AnalyticsTracker';
 import Header from '@/components/Header';
 import AnimationStyles from '@/components/Animation';
+import Footer from '@/components/Footer';
 
 const siteName = '童慧行走天下';
 const description = '汇聚千万真实家庭的亲子旅行经验，让每一次出行都有迹可循';
@@ -36,6 +37,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Header />
         <AnimationStyles />
         {children}
+        <Footer />
         <AnalyticsTracker />
       </body>
     </html>

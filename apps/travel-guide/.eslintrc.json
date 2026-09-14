@@ -1,6 +1,42 @@
 {
   "extends": ["next/core-web-vitals", "next/typescript"],
   "rules": {
-    "@typescript-eslint/no-explicit-any": "off"
+    "@typescript-eslint/no-explicit-any": "off",
+
+    "no-restricted-syntax": [
+      "error",
+      {
+        "selector": "Property[key.name='bookingUrl']",
+        "message": "走天下 v1 禁止 bookingUrl 字段（v2 agency 上线后开放）。详见信息安全保护/文档/08-商家信息核验SOP.md"
+      },
+      {
+        "selector": "Property[key.name='reservationId']",
+        "message": "走天下 v1 禁止 reservationId 字段（v2 agency 上线后开放）"
+      },
+      {
+        "selector": "Property[key.name='createOrder']",
+        "message": "走天下 v1 禁止 createOrder 字段（v2 在线交易功能上线后开放）"
+      },
+      {
+        "selector": "CallExpression[callee.name=/alipay|wxpay|unionpay/i]",
+        "message": "走天下 v1 禁止接入支付接口（v2 触发 EDI 前置审批）"
+      },
+      {
+        "selector": "CallExpression[callee.property.name=/alipay|wxpay|unionpay/i]",
+        "message": "走天下 v1 禁止调用支付 SDK（v2 触发 EDI 前置审批）"
+      }
+    ],
+
+    "no-restricted-imports": [
+      "error",
+      {
+        "patterns": [
+          {
+            "group": ["alipay*", "wxpay*", "wechat-pay*", "unionpay*"],
+            "message": "走天下 v1 禁止导入支付 SDK（v2 触发 EDI 前置审批）。详见信息安全保护/文档/08-商家信息核验SOP.md"
+          }
+        ]
+      }
+    ]
   }
 }
