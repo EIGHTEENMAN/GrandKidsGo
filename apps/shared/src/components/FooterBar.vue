@@ -6,8 +6,13 @@
       <a href="https://grandand.com/legal">隐私政策</a>
     </div>
     <p>&copy; 2026 童慧行 &mdash; 亲子学习旅行平台</p>
+    <IcpFooter />
   </footer>
 </template>
+
+<script setup>
+import IcpFooter from './IcpFooter.vue'
+</script>
 
 <style scoped>
 .hd-footer { text-align: center; padding: 32px 24px; border-top: 1px solid #e2e8f0; margin-top: 48px; }

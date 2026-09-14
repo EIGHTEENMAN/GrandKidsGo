@@ -306,6 +306,14 @@ export default function App() {
           <QuizBattle user={{ id: user.id, username: displayName, token: getToken() || '' }} onBack={() => navigate('home')} initialMode={battleSettings.mode} initialCategory={battleSettings.category} initialRoomTarget={roomTarget || undefined} initialSectionRef={battleSettings.sectionRef} />
         )}
       </div>
+      <footer style={{ textAlign: 'center', padding: '24px 16px', borderTop: '1px solid #e2e8f0', marginTop: '32px', fontSize: 12, color: '#94a3b8' }}>
+        <p style={{ margin: '0 0 6px' }}>&copy; 2026 童慧行小答答 &mdash; 答题挑战平台</p>
+        <p style={{ margin: 0, display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>
+          <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer" style={{ color: '#94a3b8', textDecoration: 'none' }}>闽ICP备 2026xxxxxx 号-1</a>
+          <span style={{ color: '#cbd5e1' }}>|</span>
+          <a href="https://beian.mps.gov.cn/" target="_blank" rel="noopener noreferrer" style={{ color: '#94a3b8', textDecoration: 'none' }}>🛡 闽公网安备 35000000xxxxxx 号</a>
+        </p>
+      </footer>
       <LoginModal open={showLogin} onClose={() => setShowLogin(false)} onLogin={handleLogin} />
     </>
   )

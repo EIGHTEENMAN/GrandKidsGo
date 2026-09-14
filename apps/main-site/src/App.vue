@@ -10,6 +10,7 @@ import PersonalCenter from '@/components/PersonalCenter.vue'
 import YouthMode from '@/components/YouthMode.vue'
 import CookieConsent from '@/components/CookieConsent.vue'
 import LearningStatus from '@shared/components/LearningStatus.vue'
+import IcpFooter from '@shared/components/IcpFooter.vue'
 import LearningDashboard from '@/components/LearningDashboard.vue'
 import SearchPage from '@/components/SearchPage.vue'
 import DocPage from '@/components/DocPage.vue'
@@ -428,8 +429,8 @@ const stats = [
         <a href="/legal">服务条款</a>
         <a href="/legal">隐私政策</a>
       </div>
-      <p class="footer-icp"><a href="https://beian.miit.gov.cn" target="_blank" rel="noopener noreferrer">京ICP备XXXXXXXX号-X</a> <span class="footer-sep">|</span> 京公网安备 XXXXXXXXXX号</p>
       <p class="footer-copy">&copy; 2026 童慧行 &mdash; 亲子学习旅行平台 <span class="footer-ai">· AI辅助</span></p>
+      <IcpFooter />
     </footer>
 
     <!-- Auth Modal -->

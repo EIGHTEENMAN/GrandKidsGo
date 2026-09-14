@@ -155,8 +155,29 @@ function openTile(url: string) {
     </view>
 
     <view class="footer-spacer"></view>
+
+    <view class="icp-footer">
+      <text class="footer-copy">&copy; 2026 童慧行 &mdash; 亲子学习旅行平台</text>
+      <view class="icp-links">
+        <text class="icp-link-text" @tap="openUrl('https://beian.miit.gov.cn/')">闽ICP备 2026xxxxxx 号-1</text>
+        <text class="icp-sep">|</text>
+        <text class="icp-link-text" @tap="openUrl('https://beian.mps.gov.cn/')">🛡 闽公网安备 35000000xxxxxx 号</text>
+      </view>
+    </view>
   </view>
 </template>
+
+<script setup>
+const openUrl = (url) => {
+  // #ifdef H5
+  window.open(url, '_blank', 'noopener,noreferrer')
+  // #endif
+  // #ifdef MP-WEIXIN
+  // 微信小程序不支持直接跳转外链，复制到剪贴板
+  uni.setClipboardData({ data: url })
+  // #endif
+}
+</script>
 
 <style scoped>
 .page {
@@ -264,4 +285,32 @@ function openTile(url: string) {
 }
 
 .footer-spacer { height: 40rpx; }
+
+.icp-footer {
+  padding: 24rpx 32rpx 32rpx;
+  text-align: center;
+  border-top: 1rpx solid #e2e8f0;
+  margin-top: 24rpx;
+}
+.footer-copy {
+  display: block;
+  font-size: 22rpx;
+  color: #94a3b8;
+  margin-bottom: 12rpx;
+}
+.icp-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12rpx;
+  font-size: 20rpx;
+  color: #94a3b8;
+}
+.icp-link-text {
+  color: #94a3b8;
+}
+.icp-sep {
+  color: #cbd5e1;
+}
 </style>

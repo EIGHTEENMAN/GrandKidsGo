@@ -83,6 +83,11 @@ function go(id: 'study' | 'chat' | 'profile') {
 
     <footer class="hub-footer">
       <p>每日 5 分钟 · 越学越棒</p>
+      <p class="hub-footer-icp">
+        <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">闽ICP备 2026xxxxxx 号-1</a>
+        <span class="hub-footer-sep">|</span>
+        <a href="https://beian.mps.gov.cn/" target="_blank" rel="noopener noreferrer">🛡 闽公网安备 35000000xxxxxx 号</a>
+      </p>
     </footer>
   </div>
 </template>
