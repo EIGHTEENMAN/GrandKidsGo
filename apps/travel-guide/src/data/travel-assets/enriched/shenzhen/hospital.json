@@ -1,0 +1,4458 @@
+[
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F30537D",
+    "name": "深圳市妇幼保健院(红荔院区)",
+    "address": "园岭街道长城社区红荔路2004号(通新岭地铁站D口步行170米)",
+    "lat": 22.549673,
+    "lng": 114.094216,
+    "hasPediatrics": true,
+    "phone": [],
+    "images": [
+      "http://store.is.autonavi.com/showpic/15dec55534a38e00978b1cd6b4e0a93d",
+      "https://store.is.autonavi.com/showpic/74fc7a8f73f5da490000003773666773?type=pic",
+      "https://aos-comment.amap.com/B02F30537D/comment/07839BBB_0AF8_45E7_8F7C_E0527A9ECF89_L0_001_1500_200_1764050001034_98522419.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0K3JOHSGM",
+    "name": "深圳市儿童医院龙华院区",
+    "address": "民治街道民康社区民健路1号(民治地铁站B口)",
+    "lat": 22.61624,
+    "lng": 114.042572,
+    "hasPediatrics": true,
+    "phone": "0755-83008666",
+    "images": [
+      "https://store.is.autonavi.com/showpic/c39b37309d4600d56de713fb12552d45",
+      "https://store.is.autonavi.com/showpic/90b3aacc1e25b25c0000002543290063?type=pic",
+      "https://store.is.autonavi.com/showpic/4215af2d43d76cc80000002543262173?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0IADCWHKE",
+    "name": "深圳市第三儿童医院",
+    "address": "协联路1号",
+    "lat": 22.741258,
+    "lng": 114.239426,
+    "hasPediatrics": true,
+    "phone": [],
+    "images": [
+      "https://store.is.autonavi.com/showpic/34d1218edf29db130000005954662640",
+      "https://store.is.autonavi.com/showpic/bbcd055e0b8f35360000005953824680",
+      "https://store.is.autonavi.com/showpic/14623681b87af2ae0000005954516992"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0KB6U7UPQ",
+    "name": "深圳小米熊儿童诊所",
+    "address": "粤海街道龙城社区南海大道2502号雅仕荔景苑B205",
+    "lat": 22.51086,
+    "lng": 113.926882,
+    "hasPediatrics": true,
+    "phone": "18138485793",
+    "images": [
+      "https://store.is.autonavi.com/showpic/a0c94f3272b1271c9a13bd837691f118",
+      "https://aos-comment.amap.com/B0KB6U7UPQ/comment/1c270c707caedfe45b7c1cdfbc7e9d2f_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B0KB6U7UPQ/comment/db4e0584ca73d7ada29cb4878f9536f1_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0GK2SI573",
+    "name": "大米和小米儿童成长中心(福田)",
+    "address": "香蜜湖街道香岭社区紫竹六道49号敦煌大厦3A",
+    "lat": 22.533757,
+    "lng": 114.005541,
+    "hasPediatrics": true,
+    "phone": "17796364286",
+    "images": [
+      "http://store.is.autonavi.com/showpic/9d572620fb4099140c5553f445817b58",
+      "http://store.is.autonavi.com/showpic/3c00dfbddff4bee5df31c3c6ed32e4c8",
+      "https://aos-comment.amap.com/B0GK2SI573/comment/content_media_external_images_media_100000816_1741153102964_32594254.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0GUOH4AMX",
+    "name": "紫飞语特殊儿童康复中心(宝安)",
+    "address": "宝安大道3009-8德弘基创客居2栋B座2楼",
+    "lat": 22.569609,
+    "lng": 113.878298,
+    "hasPediatrics": true,
+    "phone": "0755-82553933",
+    "images": [
+      "https://store.is.autonavi.com/showpic/61636627b4be65d2665abcc0d3034ba7",
+      "http://store.is.autonavi.com/showpic/d90e3ab5f746e124558c060f71853c24"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0HK27USBM",
+    "name": "优启儿童康复中心",
+    "address": "龙岗大道横岗段3278联建楼2楼201",
+    "lat": 22.641456,
+    "lng": 114.198995,
+    "hasPediatrics": true,
+    "phone": "13699802040",
+    "images": [
+      "https://store.is.autonavi.com/showpic/19bab3874f9fbb6ed79e11fa68a94f23",
+      "http://store.is.autonavi.com/showpic/53b4bcdda658172ed7c4ee2b12293eb4",
+      "https://store.is.autonavi.com/showpic/b951e7ec5699253b8da35cae25deec04"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFH9RNIB",
+    "name": "深圳市福田区星梦缘特殊儿童展能中心",
+    "address": "梅林三村6栋202号(梅村地铁站C1口步行190米)",
+    "lat": 22.567993,
+    "lng": 114.053248,
+    "hasPediatrics": true,
+    "phone": "18824673953",
+    "images": [
+      "https://store.is.autonavi.com/showpic/d35f8806cd0a17993b66b086b1e4c79d",
+      "https://store.is.autonavi.com/showpic/1f39393b9841abdadf899f314be4533b"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0LGNZVB11",
+    "name": "星守护儿童康复",
+    "address": "凤凰街道塘家社区盛迪嘉光明壹号花园8栋二楼801室",
+    "lat": 22.735962,
+    "lng": 113.928616,
+    "hasPediatrics": true,
+    "phone": [],
+    "images": [
+      "http://store.is.autonavi.com/showpic/8ae455defc5ffe6e11828c2b31286d01"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0H2PANKC8",
+    "name": "智荟泉儿童语言康复中心",
+    "address": "石岩街道龙腾社区荔湖花园龙腾商厦2楼智荟泉",
+    "lat": 22.682826,
+    "lng": 113.92663,
+    "hasPediatrics": true,
+    "phone": "18038127130",
+    "images": [
+      "https://store.is.autonavi.com/showpic/b8535cf175856bb8c3a03e53b6ff2759",
+      "https://aos-comment.amap.com/B0H2PANKC8/comment/202601_19-15265_1768807625268_88932026.jpg",
+      "https://store.is.autonavi.com/showpic/ff1446ff5b6028970de88632667e3d9a"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0JGR4ZJNA",
+    "name": "臻语儿童干预中心",
+    "address": "马峦街道坪环市场1栋3楼302",
+    "lat": 22.682275,
+    "lng": 114.350275,
+    "hasPediatrics": true,
+    "phone": [],
+    "images": [
+      "http://store.is.autonavi.com/showpic/9b7a55d47678fef887e0ae76d534cc7f",
+      "https://store.is.autonavi.com/showpic/550bd8c89480952217455653318053d3"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0I31Z3Q3C",
+    "name": "三山青禾儿童康复园",
+    "address": "龙城街道花样年•乐年广场13栋B座三楼",
+    "lat": 22.73389,
+    "lng": 114.230385,
+    "hasPediatrics": true,
+    "phone": [],
+    "images": [
+      "http://store.is.autonavi.com/showpic/8469c4463db19db177f6c5ff45dd8c0c",
+      "https://store.is.autonavi.com/showpic/347c0b1252d996bc0000002447322774",
+      "https://store.is.autonavi.com/showpic/d41fdbb559b2ce200000002447298867"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0KAMH4DJM",
+    "name": "小骋象儿童健康中心(京基百纳店)",
+    "address": "沙河街道白石洲东社区白石路168号御景东方L3-39A",
+    "lat": 22.530694,
+    "lng": 113.969348,
+    "hasPediatrics": true,
+    "phone": "15013816315",
+    "images": [
+      "http://store.is.autonavi.com/showpic/8a263fc6189213c7cdd1081fb1f08c26",
+      "http://store.is.autonavi.com/showpic/67d471151b482edf7f74e84b4ffdb2a3",
+      "http://store.is.autonavi.com/showpic/6ffc4e7ef9c720717b3be26696837ffd"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MBKAPTN2",
+    "name": "深圳市罗湖区彩虹桥特殊儿童康复中心",
+    "address": "东门北路1038号",
+    "lat": 22.555488,
+    "lng": 114.129093,
+    "hasPediatrics": true,
+    "phone": "0755-25505043;17727858504",
+    "images": [
+      "https://store.is.autonavi.com/showpic/408479a9c912c92a0000002669112146",
+      "https://store.is.autonavi.com/showpic/857205fb09f89a5b0000002668972807",
+      "https://store.is.autonavi.com/showpic/b2cbb88b67dc815ee21c729d66f55355"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F3006F6",
+    "name": "深圳市儿童医院",
+    "address": "莲花街道福新社区益田路7019号",
+    "lat": 22.547396,
+    "lng": 114.053925,
+    "hasPediatrics": true,
+    "phone": "0755-83936101",
+    "images": [
+      "https://aos-comment.amap.com/B02F3006F6/comment/b5d1610e95a250a9af2948d8ea51fea6_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B02F3006F6/comment/ADE57EC6_1EE3_44B0_9EB1_EF567C5F68F0_L0_001_1222_946_1759205199072_49812651.jpg",
+      "https://aos-comment.amap.com/B02F3006F6/comment/1b9310b39bdc73475e43f956f47a43e2_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F3006F9",
+    "name": "北京大学深圳医院",
+    "address": "莲花路1120号",
+    "lat": 22.556441,
+    "lng": 114.049251,
+    "hasPediatrics": false,
+    "phone": "0755-83923333",
+    "images": [
+      "http://store.is.autonavi.com/showpic/66d850cf6c17e9c07a28f999d12ed5a3",
+      "https://aos-comment.amap.com/B02F3006F9/comment/content_media_external_file_25343_1748479447219_90631616.jpg",
+      "https://aos-comment.amap.com/B02F3006F9/comment/content_media_external_file_25343_1748479447225_05743362.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFI9PKZE",
+    "name": "深圳市宝安区妇幼保健院",
+    "address": "玉律路56号",
+    "lat": 22.561977,
+    "lng": 113.876734,
+    "hasPediatrics": true,
+    "phone": "0755-27863999",
+    "images": [
+      "https://aos-comment.amap.com/B0FFI9PKZE/comment/content_media_external_images_media_100003285_1767420603601_74719588.jpg",
+      "https://aos-comment.amap.com/B0FFI9PKZE/comment/13FE94BA_71B1_483A_A3D3_6D69FB09ABDF_L0_001_1500_2000_1738901070941_43645069.jpg",
+      "https://aos-comment.amap.com/B0FFI9PKZE/comment/content_media_external_file_100001089_1754555287696_26971324.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37W9ER",
+    "name": "深圳市人民医院",
+    "address": "翠竹街道翠平社区东门北路1017号留医部(翠竹地铁站C/D口)",
+    "lat": 22.557525,
+    "lng": 114.12803,
+    "hasPediatrics": false,
+    "phone": "0755-25533018",
+    "images": [
+      "http://store.is.autonavi.com/showpic/1c508853ef44118bf2a54d4872ee1fd0",
+      "https://aos-comment.amap.com/B02F37W9ER/comment/8E867F04_BCA0_4332_A351_F08E5A27C317_L0_001_IMG_838_1732932618954_21796208.jpg",
+      "https://aos-comment.amap.com/B02F37W9ER/comment/content_media_external_file_6047_1763039027500_99943113.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37S1FD",
+    "name": "深圳市妇幼保健院(福强院区)",
+    "address": "福强路3012号",
+    "lat": 22.518468,
+    "lng": 114.048727,
+    "hasPediatrics": true,
+    "phone": "0755-82889999",
+    "images": [
+      "https://aos-comment.amap.com/B02F37S1FD/comment/7FD96008_2DF4_4D37_B191_E7695BE1F630_L0_001_1439_178_1751438050848_24723059.jpg",
+      "https://aos-comment.amap.com/B02F37S1FD/comment/340dc6326d546f42ba5eb51cd931783f_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B02F37S1FD/comment/ba0a4ca88398880000a3b9d56a30f50a_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F305KXG",
+    "name": "深圳市第二人民医院",
+    "address": "华富街道梅岗社区笋岗西路3002号(黄木岗综合枢纽站12/13出入口)",
+    "lat": 22.557275,
+    "lng": 114.08574,
+    "hasPediatrics": false,
+    "phone": "0755-83366388",
+    "images": [
+      "http://store.is.autonavi.com/showpic/051b2cfce4de839bcf8fc9be3cb3e047",
+      "https://aos-comment.amap.com/B02F305KXG/comment/content_media_external_file_1000102203_ss__1769404174565_63913168.jpg",
+      "https://store.is.autonavi.com/showpic/db8b780e9ad64c4dad55ad3bcd44f57c"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37SEBE",
+    "name": "深圳市龙岗区妇幼保健院",
+    "address": "中心城爱龙路6号(回龙埔地铁站B口电梯上来天桥到北门入口)",
+    "lat": 22.728069,
+    "lng": 114.234828,
+    "hasPediatrics": true,
+    "phone": "0755-89910371",
+    "images": [
+      "https://aos-comment.amap.com/B02F37SEBE/comment/3feedback_sendimag_1742428084249_51628918.jpg",
+      "https://aos-comment.amap.com/B02F37SEBE/comment/IMG_20250816_074618_tem_1755301587707_09861528.jpg",
+      "https://aos-comment.amap.com/B02F37SEBE/comment/d35fea08a4635a41b1f9c0dba3530e02_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37UD0K",
+    "name": "深圳市眼科医院",
+    "address": "泽田路18号",
+    "lat": 22.545914,
+    "lng": 114.014466,
+    "hasPediatrics": false,
+    "phone": "0755-23959510;0755-23959600",
+    "images": [
+      "https://aos-comment.amap.com/B02F37UD0K/comment/content_media_external_file_81286_ss__1771813710492_87427949.jpg",
+      "https://store.is.autonavi.com/showpic/89cffd68c4cde6a30000003573420420?type=pic",
+      "https://aos-comment.amap.com/B02F37UD0K/comment/FE91C934_1DF8_4F31_AC4B_C6C6A7B6D804_L0_001_1080_192_1769149621274_80427507.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F38WSN9",
+    "name": "深圳市龙华区人民医院",
+    "address": "龙华街道景龙社区龙华建设路38号",
+    "lat": 22.655543,
+    "lng": 114.03262,
+    "hasPediatrics": false,
+    "phone": "0755-27741585",
+    "images": [
+      "https://store.is.autonavi.com/showpic/7b1ef77bc1da8dd50000003059100180?type=pic",
+      "https://aos-comment.amap.com/B02F38WSN9/comment/content_media_external_file_1000052197_ss__1762737981157_27049777.jpg",
+      "https://aos-comment.amap.com/B02F38WSN9/comment/content_media_external_file_100004414_1760660228836_94032216.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37V46B",
+    "name": "深圳市中医院福田院区",
+    "address": "福华路1号",
+    "lat": 22.537003,
+    "lng": 114.085633,
+    "hasPediatrics": false,
+    "phone": "0755-88359666;0755-88359899",
+    "images": [
+      "http://store.is.autonavi.com/showpic/f073c262a45a259f978fd8d6d9e43a40",
+      "http://store.is.autonavi.com/showpic/685c1df69b43f222b34a904fe09a30a6",
+      "https://store.is.autonavi.com/showpic/6067a6f853ee79bf0376c3ef83268393"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F38JF90",
+    "name": "深圳市第三人民医院",
+    "address": "南湾街道李朗社区布澜路29号",
+    "lat": 22.635393,
+    "lng": 114.12875,
+    "hasPediatrics": false,
+    "phone": "0755-61222333",
+    "images": [
+      "http://store.is.autonavi.com/showpic/92b2be9b661d508ee82371d5128fec73",
+      "https://store.is.autonavi.com/showpic/b8bffff5798780580000003060626574?type=pic",
+      "https://store.is.autonavi.com/showpic/34945e930763d3a5b651b48ff7bf2f2a"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFGZH820",
+    "name": "南方医科大学深圳医院",
+    "address": "新湖路13号(新安地铁站E口步行260米)",
+    "lat": 22.544303,
+    "lng": 113.896065,
+    "hasPediatrics": false,
+    "phone": "0755-23329999",
+    "images": [
+      "https://store.is.autonavi.com/showpic/8689b60c26827bba4dfdb8c8b4457a35",
+      "http://store.is.autonavi.com/showpic/629baca9a364b4a4b82b45b7df521616",
+      "https://store.is.autonavi.com/showpic/1042370600b86c67e8f26fda0f3b64e7"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F302E7B",
+    "name": "深圳市宝安人民医院",
+    "address": "龙井二路118号(新安公园地铁站A口步行480米)",
+    "lat": 22.562217,
+    "lng": 113.914854,
+    "hasPediatrics": false,
+    "phone": "0755-27788311",
+    "images": [
+      "http://store.is.autonavi.com/showpic/547aa4cd47b670f53af20d058e2ac1ad",
+      "https://store.is.autonavi.com/showpic/65c37830243c8e8a0000000740146663?type=pic",
+      "https://aos-comment.amap.com/B02F302E7B/comment/20260323-5e54dc0b9a90b0e5c4146e3f-AneOF1Mhk5K6npQ5UwVhQO.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F38J6XC",
+    "name": "香港大学深圳医院",
+    "address": "海园一路1号",
+    "lat": 22.525518,
+    "lng": 113.996092,
+    "hasPediatrics": false,
+    "phone": "0755-86913333",
+    "images": [
+      "https://aos-comment.amap.com/B02F38J6XC/comment/dde953e4e98f60fc4529e9320523f619_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B02F38J6XC/comment/content_media_external_file_100000422_1748850948936_70129453.jpg",
+      "https://aos-comment.amap.com/B02F38J6XC/comment/2199be40ae2d16a2486b9629e25203bf_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F38IHAD",
+    "name": "深圳市罗湖区人民医院",
+    "address": "友谊路47号",
+    "lat": 22.53785,
+    "lng": 114.122198,
+    "hasPediatrics": false,
+    "phone": "0755-82203083",
+    "images": [
+      "https://store.is.autonavi.com/showpic/58e36f21f3735bcd0000003065212694?type=pic",
+      "https://store.is.autonavi.com/showpic/3a953274c0d710280cba568ab7d97563",
+      "http://store.is.autonavi.com/showpic/365865a0d62d1bd59b61346a0c5a8d18"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37W6BO",
+    "name": "深圳市南山区人民医院",
+    "address": "桃园路89号",
+    "lat": 22.530603,
+    "lng": 113.922873,
+    "hasPediatrics": false,
+    "phone": "0755-26553111",
+    "images": [
+      "http://store.is.autonavi.com/showpic/6245c4e3b5c16fd76abcd1897fa2ad72",
+      "https://aos-comment.amap.com/B02F309VB7/headerImg/08a902b006000676e59db799c9e9962c_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B02F309VB7/headerImg/df9b131e87cd35c8477ddf8536d47334_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37SEK5",
+    "name": "深圳市龙岗中心医院",
+    "address": "龙岗大道6082号(梨园地铁站B口旁)",
+    "lat": 22.735289,
+    "lng": 114.2835,
+    "hasPediatrics": false,
+    "phone": "0755-84806933",
+    "images": [
+      "https://aos-comment.amap.com/B02F37SEK5/comment/content_media_external_file_100016969_1760337643240_80322936.jpg",
+      "https://store.is.autonavi.com/showpic/b099ff45d3b2bc04862838a479677607",
+      "https://store.is.autonavi.com/showpic/06e6a4831b526f460000000961592412"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFHGD85N",
+    "name": "中山大学附属第八医院",
+    "address": "深南中路3025号",
+    "lat": 22.538751,
+    "lng": 114.079554,
+    "hasPediatrics": false,
+    "phone": "0755-83982222;4001191160",
+    "images": [
+      "https://store.is.autonavi.com/showpic/96416f7726c22c710000003048322195?type=pic",
+      "https://aos-comment.amap.com/B0FFHGD85N/comment/BD075817_E0CF_4EEA_9A61_7AF2F8D40C50_L0_001_1500_200_1756823960105_77596537.jpg",
+      "https://aos-comment.amap.com/B0FFHGD85N/comment/DF921AB0_C2AC_428A_A54D_5B33B97F3B2A_L0_001_1500_200_1756823960099_86388046.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F301B9F",
+    "name": "深圳市龙岗区人民医院",
+    "address": "龙城街道愉园社区爱心路53号",
+    "lat": 22.726294,
+    "lng": 114.227612,
+    "hasPediatrics": false,
+    "phone": "0755-28932833",
+    "images": [
+      "https://aos-comment.amap.com/B02F301B9F/comment/content_media_external_file_1000011093_ss__1762913276756_65940003.jpg",
+      "https://store.is.autonavi.com/showpic/9340a3cbf49a941f0000006775300768?type=pic",
+      "https://aos-comment.amap.com/B02F301B9F/comment/48FD2049_0236_44B0_AA4B_01AD5A463455_L0_001_1500_2000_1739336508097_79202778.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F38MTDW",
+    "name": "中国医学科学院阜外医院深圳医院",
+    "address": "西丽街道松坪山社区朗山路12号",
+    "lat": 22.556935,
+    "lng": 113.947745,
+    "hasPediatrics": false,
+    "phone": "0755-82180028",
+    "images": [
+      "http://store.is.autonavi.com/showpic/3b2b77f87b6608d0e26cce5eac0f8370",
+      "https://aos-comment.amap.com/B0FFKMB5UX/headerImg/32fce5aa19a241e6eb925bba54bbabf3_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B02F38MTDW/comment/content_media_external_images_media_68807_1750279848977_bfc56638.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F38S9PB",
+    "name": "龙华区妇幼保健院",
+    "address": "大浪街道赖屋山社区华旺路68号",
+    "lat": 22.671729,
+    "lng": 113.99287,
+    "hasPediatrics": true,
+    "phone": "0755-29821199",
+    "images": [
+      "https://store.is.autonavi.com/showpic/aefe9423662495c00000002041538912?type=pic",
+      "https://aos-comment.amap.com/B02F38S9PB/comment/EA1DE3D1_A142_4C98_90AF_A6A7F8341707_L0_001_2000_150_1760314353230_20803258.jpg",
+      "https://aos-comment.amap.com/B02F38S9PB/comment/6F13416D_5EBB_46A9_AC78_0D7F42AE8759_L0_001_1500_200_1763878609804_98658591.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37W5P3",
+    "name": "深圳远东妇产医院",
+    "address": "深南东路2097号",
+    "lat": 22.543511,
+    "lng": 114.123855,
+    "hasPediatrics": false,
+    "phone": "18138296408",
+    "images": [
+      "https://store.is.autonavi.com/showpic/45c0c98c69429e2a0000000730586749?type=pic",
+      "https://store.is.autonavi.com/showpic/0a9a93a4f8f1a6820000002907158947?type=pic",
+      "https://store.is.autonavi.com/showpic/75410961b83ea2700000004252726347?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFLPCJPO",
+    "name": "深圳市福田区妇幼保健院(安托山院区)",
+    "address": "安托山一路88号(深康地铁站C口步行430米)",
+    "lat": 22.54692,
+    "lng": 114.003209,
+    "hasPediatrics": true,
+    "phone": "0755-66835110",
+    "images": [
+      "https://store.is.autonavi.com/showpic/fa609142d300fc4b0000003571992973?type=pic",
+      "https://aos-comment.amap.com/B0FFLPCJPO/comment/20260321-6b3ba3f53a3590edcd2eb963-3SXKf8wKjp09haeQKX4iWM.jpg",
+      "https://aos-comment.amap.com/B0FFLPCJPO/comment/content_media_external_images_media_1000016987_ss__1766798504544_92392081.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F38MTMC",
+    "name": "深圳市宝安中医院(集团)",
+    "address": "裕安二路25号",
+    "lat": 22.571818,
+    "lng": 113.899183,
+    "hasPediatrics": false,
+    "phone": "0755-29629366",
+    "images": [
+      "http://store.is.autonavi.com/showpic/ffe2f4531ccc5662049a401e24d243f0",
+      "http://store.is.autonavi.com/showpic/8e3bb26fedcc7ff9877801768fb97e7d",
+      "https://aos-comment.amap.com/B02F38MTMC/comment/268E0EAE_6132_4ADF_B0CE_66CB37BE1E3D_L0_001_1500_200_1751883735482_89165741.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFF6PZGC",
+    "name": "北京中医药大学深圳医院(龙岗)",
+    "address": "体育新城大运路1号(龙城公园地铁站C口步行460米)",
+    "lat": 22.708244,
+    "lng": 114.215663,
+    "hasPediatrics": false,
+    "phone": "0755-89911830",
+    "images": [
+      "https://store.is.autonavi.com/showpic/9ae79f5600e7a91050ff118d56f9cc8c",
+      "http://store.is.autonavi.com/showpic/18d358b589c32b5ce6a7b04c6c73136c",
+      "https://store.is.autonavi.com/showpic/395ec579119888f20000000593202712"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFG7M1GS",
+    "name": "广州中医药大学深圳医院",
+    "address": "北环大道6001号(梅景地铁站A2口步行340米)",
+    "lat": 22.559122,
+    "lng": 114.042405,
+    "hasPediatrics": false,
+    "phone": "0755-83548611;0755-83549999",
+    "images": [
+      "http://store.is.autonavi.com/showpic/f609b69bc235ee2b75e231945ac681ea",
+      "https://aos-comment.amap.com/B0FFG7M1GS/comment/B8765236_A34C_45CA_83E9_535479807768_L0_001_IMG_635_1736724708921_24976407.jpg",
+      "http://store.is.autonavi.com/showpic/4e308be2e4cd7b0c867e240025d6dc5c"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFGS2QMD",
+    "name": "深圳大学总医院",
+    "address": "桃源街道塘朗社区学苑大道1298号",
+    "lat": 22.594355,
+    "lng": 113.987481,
+    "hasPediatrics": false,
+    "phone": "0755-21839999;0755-21839165",
+    "images": [
+      "http://store.is.autonavi.com/showpic/9b23a1b71c7b4a06bd68af21be833182",
+      "https://aos-comment.amap.com/B0FFGS2QMD/comment/content_media_external_images_media_9667_1729133163815_90394025.jpg",
+      "https://aos-comment.amap.com/B0FFGS2QMD/comment/ff0cd47fce7b49fb48921272f1025123_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFH04ESU",
+    "name": "中山大学附属第七医院",
+    "address": "新湖街道圳美社区圳园路628号",
+    "lat": 22.787789,
+    "lng": 113.954565,
+    "hasPediatrics": false,
+    "phone": "0755-81206916",
+    "images": [
+      "https://aos-comment.amap.com/B0FFH04ESU/comment/d7755281b22960398064c32b872db9c6_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B0FFH04ESU/comment/content_media_external_file_1000027614_ss__1753878180044_58664401.jpg",
+      "https://store.is.autonavi.com/showpic/37058255b3163b480000000727804368?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0HANGKRJY",
+    "name": "深圳前海泰康医院",
+    "address": "南山街道梦海大道3099号前海泰康医院201",
+    "lat": 22.514673,
+    "lng": 113.892325,
+    "hasPediatrics": false,
+    "phone": "13265679607;4000195522",
+    "images": [
+      "https://store.is.autonavi.com/showpic/e8261e5de46203a4a38a3e4fb4959696",
+      "https://store.is.autonavi.com/showpic/c58a2ef9df9e3bb273aa1b2a8cc9080b",
+      "https://store.is.autonavi.com/showpic/704f12afe621e7d840190d70df4796c5"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37V92Y",
+    "name": "深圳市宝安区福永人民医院院本部",
+    "address": "福永镇德丰路81号",
+    "lat": 22.671108,
+    "lng": 113.818505,
+    "hasPediatrics": false,
+    "phone": "0755-27382097;0755-27391395",
+    "images": [
+      "https://store.is.autonavi.com/showpic/2c681738e1b206d40000001488470654",
+      "https://aos-comment.amap.com/B02F37V92Y/comment/60822E1C_F0DA_40EB_A632_CB034DA9151C_L0_001_1500_2000_1733554238960_87486925.jpg",
+      "https://store.is.autonavi.com/showpic/09265e215b52919b0000003393576363?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F38RCE8",
+    "name": "深圳爱尔眼科医院",
+    "address": "南园街道华强南路2048号机械大厦主楼1-12层",
+    "lat": 22.535209,
+    "lng": 114.087587,
+    "hasPediatrics": false,
+    "phone": "4006609120",
+    "images": [
+      "https://aos-comment.amap.com/B02F38RCE8/comment/content_media_external_file_1000010473_ss__1759809782610_82558366.jpg",
+      "https://store.is.autonavi.com/showpic/da43cb6578a042912ba7ddc98672f3b8",
+      "https://aos-comment.amap.com/B02F38RCE8/comment/content_media_external_images_media_26265_1741855320402_02393765.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0M6GMOJ29",
+    "name": "深圳中山妇产医院(新院区)",
+    "address": "越华一路8号(地铁9/10号线孖岭站E出口80米)",
+    "lat": 22.566918,
+    "lng": 114.066393,
+    "hasPediatrics": false,
+    "phone": "18818583895",
+    "images": [
+      "https://store.is.autonavi.com/showpic/3d433c162322753a0000002235948616?type=pic",
+      "https://store.is.autonavi.com/showpic/9d4ab5533f7b3d990000002097670920?type=pic",
+      "https://store.is.autonavi.com/showpic/3f84b8b1985b21450000002235932999?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0IDXCZ7KD",
+    "name": "深圳理工大学总医院(总院区)",
+    "address": "公明街道下村社区公明北环大道1459号",
+    "lat": 22.795627,
+    "lng": 113.891607,
+    "hasPediatrics": false,
+    "phone": "0755-26790222",
+    "images": [
+      "https://store.is.autonavi.com/showpic/d5dcbddb8bc0b9730000000717340758?type=pic",
+      "https://store.is.autonavi.com/showpic/dd5784959cefdb5a19a4d7e0cc01fd1e",
+      "https://store.is.autonavi.com/showpic/4d3685b54c8b3f7f536b155ceb207689"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F30A6UW",
+    "name": "深圳市人民医院龙华分院",
+    "address": "龙华街道玉翠社区龙观东路101号",
+    "lat": 22.66534,
+    "lng": 114.023444,
+    "hasPediatrics": false,
+    "phone": "0755-27745118;0755-27745918",
+    "images": [
+      "https://store.is.autonavi.com/showpic/b75994481157dcce0000003065450878?type=pic",
+      "https://aos-comment.amap.com/B02F30A6UW/comment/25432205829645e023359051f0dce691_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B02F30A6UW/comment/34B1E945_EE67_4E02_AA26_B698FC0E0901_L0_001_1580_170_1757926524018_48295408.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37WNHB",
+    "name": "深圳美莱医疗美容医院",
+    "address": "华强北街道福强社区深南中路2044号建材服务楼3栋整栋建材食堂2栋1层1号",
+    "lat": 22.541285,
+    "lng": 114.090429,
+    "hasPediatrics": false,
+    "phone": "18588210675",
+    "images": [
+      "http://store.is.autonavi.com/showpic/ca4ea1be392c18fbb090db9ea330e47c",
+      "https://store.is.autonavi.com/showpic/efd8646de51f22090000005209102615?type=pic",
+      "https://store.is.autonavi.com/showpic/3b35e508123c79a50000006055784117?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFKUBX5P",
+    "name": "龙岗区耳鼻咽喉医院",
+    "address": "黄阁路186号(黄阁坑地铁站B口步行130米)",
+    "lat": 22.721517,
+    "lng": 114.219423,
+    "hasPediatrics": false,
+    "phone": "0755-28989999",
+    "images": [
+      "https://store.is.autonavi.com/showpic/6056740e00fd3a580000003776106134?type=pic",
+      "https://store.is.autonavi.com/showpic/c73d3e15803cfa8dc95a95e3bd17cdd3",
+      "https://store.is.autonavi.com/showpic/029b4d56661b1bfb0000003023326271?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFJ8BMBD",
+    "name": "南方科技大学医院",
+    "address": "西丽街道留仙大道6019号",
+    "lat": 22.579685,
+    "lng": 113.949435,
+    "hasPediatrics": false,
+    "phone": "0755-25232188",
+    "images": [
+      "https://aos-comment.amap.com/B0FFJ8BMBD/comment/FE3FDA11_8B4A_4A44_8AD9_A5171D32862F_L0_001_1440_108_1766568802152_31194262.jpg",
+      "https://store.is.autonavi.com/showpic/da34585c1d6e6d193a46cf1567b0ade0",
+      "https://store.is.autonavi.com/showpic/2d4544ab07680fa40000003099140998?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFIS0N8G",
+    "name": "深圳艺星医疗美容医院",
+    "address": "华强北街道华航社区深南中路3024号航空大厦1021栋1-1-A2",
+    "lat": 22.540833,
+    "lng": 114.082331,
+    "hasPediatrics": false,
+    "phone": "15300529701",
+    "images": [
+      "http://store.is.autonavi.com/showpic/73e9eb89f004d6d8667b601aec21738f",
+      "http://store.is.autonavi.com/showpic/740fa51f2fd28f356bec3e1cfb1a3af6",
+      "http://store.is.autonavi.com/showpic/0b092b15d79740e62d1b905662e75660"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0IRR5GB0L",
+    "name": "深圳市龙岗区第二人民医院",
+    "address": "布吉街道罗岗社区创作路3号(百鸽笼地铁站C口步行约200米)",
+    "lat": 22.594228,
+    "lng": 114.133342,
+    "hasPediatrics": false,
+    "phone": "0755-28870993",
+    "images": [
+      "https://store.is.autonavi.com/showpic/2cec60e3cd92b1cd0000003380850181?type=pic",
+      "https://aos-comment.amap.com/comment/content_service_8de690e1eba38ad1109414dc74a9f84a_1768378243488_82506497.jpg",
+      "https://store.is.autonavi.com/showpic/3081a2ad8b6913ca0000003380828543?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFFPLLBI",
+    "name": "宝安中心医院",
+    "address": "广深路西乡段233号",
+    "lat": 22.580001,
+    "lng": 113.880095,
+    "hasPediatrics": false,
+    "phone": "0755-27956811",
+    "images": [
+      "http://store.is.autonavi.com/showpic/4cb847b8bb3e3819b212225b6859608c",
+      "https://aos-comment.amap.com/B0FFFPLLBI/comment/%5B2025-06-03-09-20-55%5DBE02F065-4EE4-46D3-A1C4-0E1069757F4_1748913657036_45202708.jpg",
+      "https://aos-comment.amap.com/B0FFFPLLBI/comment/F5033210_5D71_46B1_B28C_E75A9D698671_L0_001_1080_81_1748913818922_04847251.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37VE68",
+    "name": "深圳市皮肤病医院",
+    "address": "布心路2021号(太安地铁站A口步行240米)",
+    "lat": 22.574564,
+    "lng": 114.135049,
+    "hasPediatrics": false,
+    "phone": "0755-25108962",
+    "images": [
+      "https://aos-comment.amap.com/B02F37VE68/comment/FB70A97B_79CA_4CEE_8AEE_969DB3AF625B_L0_001_1500_2000_1734963216484_87462195.jpg",
+      "https://aos-comment.amap.com/B02F37VE68/comment/content_media_external_file_4330_1755827737235_88833664.jpg",
+      "https://aos-comment.amap.com/B02F37VE68/comment/content_media_external_file_2549_1761704391456_09522335.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFKYZ3KR",
+    "name": "美年大健康体检中心(深圳宝安美宝分院)",
+    "address": "西乡街道河东社区新城广场402-404",
+    "lat": 22.580162,
+    "lng": 113.882413,
+    "hasPediatrics": false,
+    "phone": "0755-36886645;15986677716",
+    "images": [
+      "https://aos-comment.amap.com/B0FFKYZ3KR/comment/c9bfd7bd76c2b9c320cd0a543f8ce933_2048_2048_80.jpg",
+      "http://store.is.autonavi.com/showpic/20718dd8eef83e0302fddc4d3f70d775",
+      "http://store.is.autonavi.com/showpic/ad3d2e7a9dfcb3add74cb011f0aae731"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFKKZWF0",
+    "name": "深圳市口腔医院",
+    "address": "桂园北路70号",
+    "lat": 22.553315,
+    "lng": 114.113927,
+    "hasPediatrics": false,
+    "phone": "0755-25129999",
+    "images": [
+      "https://store.is.autonavi.com/showpic/05513818334e4ca72fef678add90f785",
+      "https://store.is.autonavi.com/showpic/b06221776f98c2a30000002420986050?type=pic",
+      "https://aos-comment.amap.com/B0FFKKZWF0/comment/3D84ACD9_4A0E_4CE1_8379_1C26D98B4E64_L0_001_1500_200_1764216883446_35432462.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0JG3AW8XT",
+    "name": "深圳博爱曙光医院",
+    "address": "宝安北路2088号深业物流大厦(宝能中心南侧对面)22",
+    "lat": 22.562168,
+    "lng": 114.109679,
+    "hasPediatrics": false,
+    "phone": "18682366857",
+    "images": [
+      "http://store.is.autonavi.com/showpic/5bb188172a396724eb9549fce9c7e89f",
+      "https://store.is.autonavi.com/showpic/1d5ffb82152f5ca70681490d73b0bc64",
+      "https://store.is.autonavi.com/showpic/e8d8c1e6f27d71be4546bd83c6d369d2"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0HRKZ8CUH",
+    "name": "深圳新风和睦家医院",
+    "address": "沙头街道新洲社区福强路4012号新风大厦一层(负2层-27层)",
+    "lat": 22.520622,
+    "lng": 114.044796,
+    "hasPediatrics": false,
+    "phone": "4008919191",
+    "images": [
+      "https://store.is.autonavi.com/showpic/eed8b8c6a374629d0000001645024116?type=pic",
+      "https://store.is.autonavi.com/showpic/9c3a5ce5c31c88d90000001893196273?type=pic",
+      "http://store.is.autonavi.com/showpic/8effd3d119f45b7c449b7554bfa23e0a"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0GURAMWP5",
+    "name": "深圳市中医院(光明院区)",
+    "address": "凤凰街道凤凰社区长圳路218号",
+    "lat": 22.72519,
+    "lng": 113.945478,
+    "hasPediatrics": false,
+    "phone": [],
+    "images": [
+      "https://aos-comment.amap.com/B0GURAMWP5/comment/content_media_external_file_40898_ss__1745303974585_11068081.jpg",
+      "https://aos-comment.amap.com/B0GURAMWP5/comment/E5D02051_1013_4020_857A_2AA3233B06C5_L0_001_1080_478_1744003050790_77688496.jpg",
+      "https://store.is.autonavi.com/showpic/c40d3d3a24618e69018e3c3281ce0c20"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFL0Q6NY",
+    "name": "深圳五洲中医院",
+    "address": "固兴路68号",
+    "lat": 22.605134,
+    "lng": 113.852662,
+    "hasPediatrics": false,
+    "phone": "18938072250",
+    "images": [
+      "http://store.is.autonavi.com/showpic/a1f05a3964888177783a85d879d90e66",
+      "https://aos-comment.amap.com/B0FFL0Q6NY/comment/5552d3c2aec164a64e1bbeca777d2183_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B0FFL0Q6NY/comment/content_media_external_images_media_6526_ss__1726391957092_89481324.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0H0ZAW9I2",
+    "name": "深圳平乐骨伤科医院(总院区)",
+    "address": "平乐路",
+    "lat": 22.704705,
+    "lng": 114.356457,
+    "hasPediatrics": false,
+    "phone": "0755-23379379",
+    "images": [
+      "https://store.is.autonavi.com/showpic/419ca76ebbe518a0de8287df88a71675",
+      "http://store.is.autonavi.com/showpic/784e85a63677afdbbf3974c93175c11e",
+      "http://store.is.autonavi.com/showpic/2423f1af54e16863f2e64e3de75472f5"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37VD7C",
+    "name": "深圳市罗湖区妇幼保健院(太白路)",
+    "address": "东晓街道东晓社区太白路2013号(太安地铁站E口步行390米)",
+    "lat": 22.576369,
+    "lng": 114.136659,
+    "hasPediatrics": true,
+    "phone": "0755-25510706",
+    "images": [
+      "http://store.is.autonavi.com/showpic/365b35d713fcef26cfe504f0748df77c",
+      "https://store.is.autonavi.com/showpic/4e2840875c05dae30000001476150259?type=pic",
+      "https://aos-comment.amap.com/B02F37VD7C/comment/A8BC3612_FA7A_419A_9872_1113B80E79EB_L0_001_2000_150_1762750973268_99664844.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0H6RA6YVJ",
+    "name": "固生堂深圳华强分院",
+    "address": "福田街道福华社区福虹路4号华强花园A、B、C座301A、102E、202A、203",
+    "lat": 22.53967,
+    "lng": 114.084019,
+    "hasPediatrics": false,
+    "phone": "13164744806",
+    "images": [
+      "https://store.is.autonavi.com/showpic/be44b04279616fa0d46a3dbe960a5010",
+      "https://aos-comment.amap.com/B0H6RA6YVJ/comment/E184A5E4_2044_43E3_8E63_801AB4D13430_L0_001_1500_2000_1733740601453_37506128.jpg",
+      "https://aos-comment.amap.com/B0H6RA6YVJ/comment/A3C44126_843F_49CB_ADCC_C6EC63C94692_L0_001_1500_2000_1733740601453_32307622.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37SMLX",
+    "name": "深圳市宝安区松岗人民医院",
+    "address": "沙江路2号(溪头地铁站A口步行330米)",
+    "lat": 22.776397,
+    "lng": 113.840629,
+    "hasPediatrics": false,
+    "phone": "0755-27718530;0755-29626111",
+    "images": [
+      "https://aos-comment.amap.com/B02F37SMLX/comment/9C2B41C3_88E6_4A15_BD35_60781CF87384_L0_001_1170_111_1760578790809_06322506.jpg",
+      "https://aos-comment.amap.com/B02F37SMLX/comment/content_media_external_images_media_1000168391_ss__1731116224682_62259259.jpg",
+      "https://aos-comment.amap.com/B02F37SMLX/comment/content_media_external_file_1000149192_ss__1766111105856_91990348.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F38IG6T",
+    "name": "深圳市龙华区中心医院",
+    "address": "福城街道四和社区观澜大道187号(长湖地铁站B口旁)",
+    "lat": 22.713407,
+    "lng": 114.046105,
+    "hasPediatrics": false,
+    "phone": "0755-28015466",
+    "images": [
+      "https://store.is.autonavi.com/showpic/b604613c3ab8b091a186ff40d3cafd9b",
+      "https://aos-comment.amap.com/B02F38IG6T/comment/176697166331_1766971664069_08539617.jpg",
+      "https://store.is.autonavi.com/showpic/61d5dd446fa0af443f36d266843ed0bc"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFKW54HD",
+    "name": "深圳市人民医院留医部",
+    "address": "东门北路1017号深圳人民医院",
+    "lat": 22.557456,
+    "lng": 114.128204,
+    "hasPediatrics": false,
+    "phone": [],
+    "images": [
+      "https://store.is.autonavi.com/showpic/25ac5714f19ac2b30000003112740164?type=pic",
+      "http://store.is.autonavi.com/showpic/a4bbe32fd1ff264e7aa047fb297e5e21",
+      "https://store.is.autonavi.com/showpic/b491f5797a77240e0000002389552304?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37SCFM",
+    "name": "深圳市坪山区妇幼保健院",
+    "address": "龙田街道龙兴南路6号(坑梓地铁站D口步行180米)",
+    "lat": 22.746719,
+    "lng": 114.369225,
+    "hasPediatrics": true,
+    "phone": "0755-84134902;0755-84136633",
+    "images": [
+      "https://aos-comment.amap.com/B02F37SCFM/comment/content_media_external_file_100000934_1762562025002_71609237.jpg",
+      "http://store.is.autonavi.com/showpic/1e65faee317920487f8849e2cec5119c",
+      "https://aos-comment.amap.com/B02F37SCFM/comment/4D913F50_7692_48D8_B217_B84A5C699B14_L0_001_1500_200_1759742748963_18489966.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFG9LJTD",
+    "name": "中国医学科学院肿瘤医院深圳医院",
+    "address": "龙城街道嶂背社区宝荷路113号",
+    "lat": 22.694254,
+    "lng": 114.25095,
+    "hasPediatrics": false,
+    "phone": "0755-66618168",
+    "images": [
+      "http://store.is.autonavi.com/showpic/1fd55465a96f5219b3c113b98db6fda7",
+      "http://store.is.autonavi.com/showpic/88e6e582f7fd88fe78075ed81d1b2272",
+      "http://store.is.autonavi.com/showpic/9b769a9772ce76f099467d05393af073"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFMAXV9S",
+    "name": "深圳市中西医结合医院",
+    "address": "新沙路528号",
+    "lat": 22.732787,
+    "lng": 113.805327,
+    "hasPediatrics": false,
+    "phone": "0755-27722241",
+    "images": [
+      "http://store.is.autonavi.com/showpic/1d3b629689d10e84dae6a07c4bc645d0",
+      "https://aos-comment.amap.com/B0FFMAXV9S/comment/9f2e4f9a6d906cdb4664279ac318e46f_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B0FFMAXV9S/comment/cd2fab6b8b41babd09b2763fff17d447_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0KG3RPFXX",
+    "name": "美年大健康(深圳美年分院)",
+    "address": "沙河西路1807号",
+    "lat": 22.527658,
+    "lng": 113.953384,
+    "hasPediatrics": false,
+    "phone": "0755-36886645;15986677716",
+    "images": [
+      "http://store.is.autonavi.com/showpic/251b357f0d31261b4ead2b3869ad26b9",
+      "https://store.is.autonavi.com/showpic/cacf8c9c40dd9336ed1579d3e84c4817",
+      "https://store.is.autonavi.com/showpic/ee346ef83b57ee55a68d0854d1853b40"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F30AGX3",
+    "name": "深圳远东妇产医院龙岗妇产医院",
+    "address": "坂田街道吉华路525号",
+    "lat": 22.639539,
+    "lng": 114.071329,
+    "hasPediatrics": false,
+    "phone": "0755-23678999",
+    "images": [
+      "http://store.is.autonavi.com/showpic/4e02099475f1dc296d0c7571cc5b39cc",
+      "https://store.is.autonavi.com/showpic/22eccf4a2cda087a0000002957304735?type=pic",
+      "https://aos-comment.amap.com/B02F30AGX3/comment/9A945651_B732_47CA_9095_213EBE492465_L0_001_1284_76_1751042624059_11325281.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37VEIG",
+    "name": "深圳市康宁医院(罗湖分院)",
+    "address": "翠竹街道翠岭社区翠竹路1080号(田贝地铁站D口步行270米)",
+    "lat": 22.56384,
+    "lng": 114.131093,
+    "hasPediatrics": false,
+    "phone": "0755-25504297",
+    "images": [
+      "http://store.is.autonavi.com/showpic/d67144d5a575e345c4d7b0328187d248",
+      "http://store.is.autonavi.com/showpic/998589112e174606458c15bf73469c87",
+      "https://store.is.autonavi.com/showpic/e2052702ef9c6aa40000003065288910?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37UK0Q",
+    "name": "深圳市前海蛇口自贸区医院",
+    "address": "工业七路128号",
+    "lat": 22.49675,
+    "lng": 113.92218,
+    "hasPediatrics": false,
+    "phone": "0755-21606999",
+    "images": [
+      "https://store.is.autonavi.com/showpic/900091943260e8c80000003065596209?type=pic",
+      "https://aos-comment.amap.com/B02F37UK0Q/comment/4f35f2b836b34064acd8e72b89a5b8e8_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B02F37UK0Q/comment/A4917F99_DFCC_4AA5_87D5_E23E9EE3E1DC_L0_001_1500_200_1762832035647_74275484.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFLK0ZUA",
+    "name": "深圳大学附属华南医院",
+    "address": "平湖街道福新街1号",
+    "lat": 22.674359,
+    "lng": 114.144189,
+    "hasPediatrics": false,
+    "phone": "0755-89698999",
+    "images": [
+      "http://store.is.autonavi.com/showpic/0e3aa9f17af2037f26a6b9fb774ac346",
+      "http://store.is.autonavi.com/showpic/b8f055f76522765e511b0cde0ea8c06f",
+      "https://aos-comment.amap.com/B0FFLK0ZUA/comment/7BE21545_2FFC_47D3_8EB1_C1A6BB460387_L0_001_2000_1334_1728520730471_58084307.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFJCJ9N6",
+    "name": "深圳理工大学总医院(东院区)",
+    "address": "光明街道光明社区华夏路39号",
+    "lat": 22.751108,
+    "lng": 113.943833,
+    "hasPediatrics": false,
+    "phone": "0755-27400061",
+    "images": [
+      "https://aos-comment.amap.com/B0FFJCJ9N6/comment/content_media_external_file_1000027556_ss__1762834809229_63735975.jpg",
+      "https://store.is.autonavi.com/showpic/006b38934b352536794dde93752b5626",
+      "https://store.is.autonavi.com/showpic/25315ce81ee49e49c8ee15f11aaa96d7"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F38MTEA",
+    "name": "深圳希玛林顺潮眼科医院",
+    "address": "泰然九路盛唐商务大厦101号",
+    "lat": 22.529939,
+    "lng": 114.023971,
+    "hasPediatrics": false,
+    "phone": "17704036704",
+    "images": [
+      "https://store.is.autonavi.com/showpic/6c4aa163183d8421d5a8d4d5eefa94d5?type=7",
+      "https://aos-comment.amap.com/B02F38MTEA/comment/fde19044b7614a2642f07b4d6c8c9b16_2048_2048_80.jpg",
+      "http://store.is.autonavi.com/showpic/f1a204cbd6bcc81fe0fa0a33e34e07d3"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFI7QIDI",
+    "name": "深圳麦芽口腔医院(罗湖总院)",
+    "address": "深南东路2102号振华大厦1-3楼",
+    "lat": 22.544155,
+    "lng": 114.122863,
+    "hasPediatrics": false,
+    "phone": "13049325348",
+    "images": [
+      "http://store.is.autonavi.com/showpic/3aac00c70d2eaf04877c097ddf57c614",
+      "http://store.is.autonavi.com/showpic/fec382668b09e6b0b9144b934a9a306a",
+      "http://store.is.autonavi.com/showpic/4956f39c4e08b5d728c4d5c15b534968"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37TXYK",
+    "name": "深圳非凡医疗美容医院",
+    "address": "东门社区人民北路2055号TOT大厦",
+    "lat": 22.547382,
+    "lng": 114.119501,
+    "hasPediatrics": false,
+    "phone": "13554806482;13823574156",
+    "images": [
+      "https://aos-comment.amap.com/B02F37TXYK/comment/100BA115_9523_4B64_8EFC_AC96D9B9B6EE_L0_001_1500_200_1764580633917_47075734.jpg",
+      "https://aos-comment.amap.com/B02F37TXYK/comment/IMG_20250510_154815_tem_1746863317000_95134054.jpg",
+      "https://aos-comment.amap.com/B02F37TXYK/comment/0feedback_sendimag_1726130623338_99951721.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37V8P0",
+    "name": "深圳万丰医院·市二级医院",
+    "address": "沙井中心路11号",
+    "lat": 22.722887,
+    "lng": 113.828322,
+    "hasPediatrics": false,
+    "phone": "18126274307",
+    "images": [
+      "https://store.is.autonavi.com/showpic/d16594be2c04ea350000003065180790?type=pic",
+      "https://store.is.autonavi.com/showpic/bc7a009911503531d0f446388ae604d0",
+      "https://store.is.autonavi.com/showpic/dd035684838458d5b2fbea3de4d468dd"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFF01QYN",
+    "name": "深圳平乐骨伤科医院(福田院区)",
+    "address": "东园路30号(红岭南地铁站C口步行340米)",
+    "lat": 22.537651,
+    "lng": 114.103157,
+    "hasPediatrics": false,
+    "phone": "0755-23379379",
+    "images": [
+      "http://store.is.autonavi.com/showpic/07eaee671db97347c03e62997ead2e49",
+      "https://store.is.autonavi.com/showpic/0e4314d15986149eb7e10ccdac15b4d0",
+      "https://store.is.autonavi.com/showpic/9444db5340c642d50000002267296625?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F38RCDS",
+    "name": "深圳港龙医院",
+    "address": "龙城街道吉祥社区龙岗大道3012-3018号101",
+    "lat": 22.709805,
+    "lng": 114.245662,
+    "hasPediatrics": false,
+    "phone": "17727868518",
+    "images": [
+      "https://store.is.autonavi.com/showpic/fd3ead693e2fa2f2ad45456613afa8d1",
+      "https://aos-comment.amap.com/B02F38RCDS/comment/e0ccfc3e0fb1a25086f07d5cc866fd13_2048_2048_80.jpg",
+      "https://store.is.autonavi.com/showpic/29b6841312636193d8e3d86436c8fa8e"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F30014D",
+    "name": "深圳市龙岗区第三人民医院",
+    "address": "横岗街道松柏社区松柏路278号(横岗地铁站B口步行320米)",
+    "lat": 22.648354,
+    "lng": 114.212844,
+    "hasPediatrics": false,
+    "phone": "0755-28605660;0755-28867002",
+    "images": [
+      "https://aos-comment.amap.com/B02F30014D/comment/content_media_external_images_media_100000990_1745117408465_93901965.jpg",
+      "https://aos-comment.amap.com/B02F30014D/comment/IMG_20250308_130243_tem_1741410213854_08491838.jpg",
+      "https://store.is.autonavi.com/showpic/cb801d60fdffc0864f5c934273bb51ea"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFIS2IOL",
+    "name": "深圳阳光医疗美容医院",
+    "address": "宝安南路1048号河南外贸大厦",
+    "lat": 22.540446,
+    "lng": 114.111866,
+    "hasPediatrics": false,
+    "phone": "18824613714",
+    "images": [
+      "https://aos-comment.amap.com/B0FFM759AG/headerImg/8a1a78b0b191d1427b6a519843cc36b8_2048_2048_80.jpg",
+      "http://store.is.autonavi.com/showpic/24c31879f8dc945fc3fc1faee8be1683",
+      "https://store.is.autonavi.com/showpic/bbffbb2aebd7583d8675f8423c21c37e"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37V5K5",
+    "name": "深圳龙城医院",
+    "address": "晨光路1号",
+    "lat": 22.703099,
+    "lng": 114.231268,
+    "hasPediatrics": false,
+    "phone": "0755-28906060;0755-28944721",
+    "images": [
+      "https://aos-comment.amap.com/B02F37V5K5/comment/f19144a19137d0d22562ee540d16538a_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B02F37V5K5/comment/3E149535_BFBA_4314_9EA7_6016960C5BE5_L0_001_1080_810_1737826196457_07603517.jpg",
+      "http://store.is.autonavi.com/showpic/11361d7f3ff1c158de93747dd00bfdb1"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F3052C4",
+    "name": "深圳市坪山区人民医院",
+    "address": "坪山街道人民街19号",
+    "lat": 22.687216,
+    "lng": 114.351116,
+    "hasPediatrics": false,
+    "phone": "0755-84601781;0755-89263702",
+    "images": [
+      "https://aos-comment.amap.com/B02F3052C4/comment/afd82605c970485ea1055f59e6684651_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B02F3052C4/comment/2feedback_sendimag_1736391970153_48835214.jpg",
+      "https://aos-comment.amap.com/B02F3052C4/comment/5abbdb59d66576fe013e4951fadc6d0b_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFI00B5M",
+    "name": "爱康国宾(深圳福田分院)",
+    "address": "福田街道福山社区滨河大道5022号联合广场B座203",
+    "lat": 22.529886,
+    "lng": 114.069957,
+    "hasPediatrics": false,
+    "phone": "4008100120",
+    "images": [
+      "https://img.alicdn.com/imgextra/i1/O1CN01YPR4aq1PGrZpDXMkD_!!6000000001814-0-tps-365-365.jpg",
+      "https://aos-comment.amap.com/B0FFI00B5M/comment/d11486bf80f31e28834a363684a50ca0_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B0FFI00B5M/comment/D77C7906_B988_44B5_B5B7_DC07F576EDD0_L0_001_1500_2000_1728801676725_77263885.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFF4OFHJ",
+    "name": "爱康国宾(深圳科兴分院)",
+    "address": "高新区中区科苑路科兴科学园B栋B3单元3A层",
+    "lat": 22.548952,
+    "lng": 113.944685,
+    "hasPediatrics": false,
+    "phone": "0755-86963888;4008100120",
+    "images": [
+      "https://img.alicdn.com/imgextra/i1/O1CN01YPR4aq1PGrZpDXMkD_!!6000000001814-0-tps-365-365.jpg",
+      "http://store.is.autonavi.com/showpic/ab0967284e25a53dbe351906178882d7",
+      "https://aos-comment.amap.com/B0FFF4OFHJ/comment/134C97AF_6454_4288_8415_F440519A6C3C_L0_001_1500_200_1760611638235_57208716.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F38JGTX",
+    "name": "深圳永福医院",
+    "address": "福永街道白石厦社区白石厦路1-2号",
+    "lat": 22.674936,
+    "lng": 113.827822,
+    "hasPediatrics": false,
+    "phone": "0755-27335555",
+    "images": [
+      "https://aos-comment.amap.com/B02F38JGTX/comment/354661F0_5310_48AF_87B2_4C85622475FF_L0_001_1242_54_1749186571015_34702226.jpg",
+      "https://aos-comment.amap.com/B02F38JGTX/comment/8894e71975a78d896bcca08ad219fcf9_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B02F38JGTX/comment/8d4b4547e544891f94776eedf4a0a35a_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37VI8X",
+    "name": "石岩人民医院",
+    "address": "吉祥路11号",
+    "lat": 22.678231,
+    "lng": 113.940749,
+    "hasPediatrics": false,
+    "phone": "0755-27609000;0755-81219500",
+    "images": [
+      "http://store.is.autonavi.com/showpic/a97d9355d584d4b7b459e1d58dc96a98",
+      "https://store.is.autonavi.com/showpic/22843a0bcf8a53c20000003380572522?type=pic",
+      "https://store.is.autonavi.com/showpic/1fb9f7586ecbc63c0000003380566609?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFIQBSS6",
+    "name": "深圳仁合医院",
+    "address": "上塘路10号深圳仁合医院一楼",
+    "lat": 22.634964,
+    "lng": 114.02187,
+    "hasPediatrics": false,
+    "phone": "0755-21013333",
+    "images": [
+      "https://store.is.autonavi.com/showpic/dbdb21c5541f3d5b17ebf96289d819d1",
+      "https://store.is.autonavi.com/showpic/e84f52f9ad766da68d821ac07a92bc42",
+      "https://aos-comment.amap.com/B0FFIQBSS6/comment/content_media_external_file_4626_1754656817606_24704843.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F38ZIUE",
+    "name": "瑞慈体检(深圳南山店)",
+    "address": "松坪山路1号源兴科技大厦东座4层",
+    "lat": 22.5541,
+    "lng": 113.951928,
+    "hasPediatrics": false,
+    "phone": "0755-86510055",
+    "images": [
+      "http://store.is.autonavi.com/query_pic?id=stdba819b7-7e69-4e75-8542-d104c51183a8&user=search&operate=original",
+      "https://aos-comment.amap.com/B02F38ZIUE/comment/5CA065E1_C524_4484_86EA_2E380A017A2C_L0_001_1502_200_1772078725754_79702713.jpg",
+      "https://store.is.autonavi.com/showpic/54f7183786a713ae0000002495452526?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37UF62",
+    "name": "深圳市南山妇幼保健院",
+    "address": "湾厦路1号(东角头地铁站D口步行110米)",
+    "lat": 22.487406,
+    "lng": 113.930351,
+    "hasPediatrics": true,
+    "phone": "0755-26566646",
+    "images": [
+      "https://store.is.autonavi.com/showpic/617b52fff92ea2960000002483888464?type=pic",
+      "https://aos-comment.amap.com/B02F37UF62/comment/ddba3b93d71972d571100466b4382e4c_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B02F37UF62/comment/a60b17d8ce29fa25b25a56eafbbc61b6_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0H6SBWT4C",
+    "name": "瑞慈体检(深圳福田店)",
+    "address": "新洲路2008号新洲阳基汇C座4层",
+    "lat": 22.514527,
+    "lng": 114.045543,
+    "hasPediatrics": false,
+    "phone": "0755-83206130",
+    "images": [
+      "http://store.is.autonavi.com/query_pic?id=stdba819b7-7e69-4e75-8542-d104c51183a8&user=search&operate=original",
+      "http://store.is.autonavi.com/showpic/0a73599be37b567fac68ec19ee6b1130",
+      "http://store.is.autonavi.com/showpic/d1a081b7e349507ea1b57078e533c02d"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0JBOZNF48",
+    "name": "深圳市第二人民医院龙华医院",
+    "address": "观湖街道松轩社区平安路西南侧",
+    "lat": 22.702164,
+    "lng": 114.070177,
+    "hasPediatrics": false,
+    "phone": "0755-83366388",
+    "images": [
+      "https://aos-comment.amap.com/B0JBOZNF48/comment/content_media_external_file_1000084767_ss__1768306327328_64143815.jpg",
+      "https://store.is.autonavi.com/showpic/61ee3c166558e7de0fa029d5e3384cf4",
+      "https://store.is.autonavi.com/showpic/54d909b294637142bab2ec47d4dba874"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFG2ECZP",
+    "name": "慈铭体检逸康分院(龙华店)",
+    "address": "民治街道深圳北站西广场深圳通大厦五楼",
+    "lat": 22.609035,
+    "lng": 114.026008,
+    "hasPediatrics": false,
+    "phone": "0755-36886645;0755-86968705;15986677716",
+    "images": [
+      "https://img.alicdn.com/imgextra/i3/O1CN01NBmDQP1cZitc2w5qO_!!6000000003615-0-tps-591-591.jpg",
+      "http://store.is.autonavi.com/showpic/31e09e5bd96a3265d399aee2cf8a37b9",
+      "http://store.is.autonavi.com/showpic/d95d8eddf1cdcbb09881ed470dc777ec"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0IU6SCUWL",
+    "name": "深圳市中医肛肠医院(福田)",
+    "address": "梅林街道梅坳二路1号",
+    "lat": 22.5762,
+    "lng": 114.057245,
+    "hasPediatrics": false,
+    "phone": "0755-88393939",
+    "images": [
+      "https://aos-comment.amap.com/B0IU6SCUWL/comment/1fce4a31-decb-4163-a587-cde7c16716e7.png",
+      "https://aos-comment.amap.com/B0IU6SCUWL/comment/content_media_external_file_56615_ss__1769165967571_60266495.jpg",
+      "https://aos-comment.amap.com/B0IU6SCUWL/comment/23573FF7_B231_4933_89A5_765E87D3BD0D_L0_001_2015_117_1763863515211_54029671.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFL8PDBY",
+    "name": "深圳市新华医院",
+    "address": "民治街道新区大道388号",
+    "lat": 22.61924,
+    "lng": 114.021894,
+    "hasPediatrics": false,
+    "phone": "0755-83193333",
+    "images": [
+      "https://aos-comment.amap.com/B0FFL8PDBY/comment/content_media_external_file_1000029580_ss__1770304451041_92781712.jpg",
+      "https://aos-comment.amap.com/B0FFL8PDBY/comment/content_media_external_file_1000029573_ss__1770304451042_76836624.jpg",
+      "https://store.is.autonavi.com/showpic/60a03707b278eef1ae09d94eec865207"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0IU65QUKT",
+    "name": "深圳鹏爱医疗美容医院",
+    "address": "南山大道1122号(南山地铁站C口步行230米)",
+    "lat": 22.521494,
+    "lng": 113.923271,
+    "hasPediatrics": false,
+    "phone": "18682239726",
+    "images": [
+      "http://store.is.autonavi.com/showpic/9459dea965470ea80908235665616e18",
+      "http://store.is.autonavi.com/showpic/5f1b4fde6ea8b4469555441fec815ec8",
+      "https://store.is.autonavi.com/showpic/8d3b5ec087b7839f735952b18399f783"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFJEFDKR",
+    "name": "罗湖中医院",
+    "address": "莲塘仙桐路16号",
+    "lat": 22.566726,
+    "lng": 114.179176,
+    "hasPediatrics": false,
+    "phone": "0755-82311522;0755-82311646",
+    "images": [
+      "https://aos-comment.amap.com/B0FFJEFDKR/comment/content_media_external_file_1000052317_ss__1759981435134_15016348.jpg",
+      "https://aos-comment.amap.com/B0FFJEFDKR/comment/78dbf9f40a46a5e61830ec5a10b1ff3b_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B0FFJEFDKR/comment/01e71742eea4fc6280ef9397b8cbec25_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFLMDO3U",
+    "name": "南方医科大学深圳口腔医院(坪山)",
+    "address": "东纵路143号",
+    "lat": 22.685856,
+    "lng": 114.364405,
+    "hasPediatrics": false,
+    "phone": "0755-89667096",
+    "images": [
+      "https://store.is.autonavi.com/showpic/6fe3c4117f146bb30000005957232719?type=pic",
+      "https://aos-comment.amap.com/B0FFLMDO3U/comment/content_media_external_file_1000216728_ss__1759452546610_01808388.jpg",
+      "https://aos-comment.amap.com/B0FFLMDO3U/comment/3000e47b75afe29dff71ff53ac4683d6_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFKL4PBW",
+    "name": "深东爱尔眼科医院(龙岗总院)",
+    "address": "龙岗街道南联社区碧新路(龙岗段)2001号101整栋",
+    "lat": 22.709081,
+    "lng": 114.26921,
+    "hasPediatrics": false,
+    "phone": "0755-89610888",
+    "images": [
+      "https://aos-comment.amap.com/B0FFKL4PBW/comment/5bac105bbc908ba1607309a45234f482_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B0FFKL4PBW/comment/0feedback_sendimag_1733484237083_54064177.jpg",
+      "https://aos-comment.amap.com/B0FFKL4PBW/comment/IMG_20241105_172026_tem_1730798436170_89118931.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFKC2IK8",
+    "name": "深圳市康宁医院(坪山院区)",
+    "address": "碧岭街道汤坑社区振碧路77号",
+    "lat": 22.661791,
+    "lng": 114.304368,
+    "hasPediatrics": false,
+    "phone": "0755-82923481",
+    "images": [
+      "https://store.is.autonavi.com/showpic/ca32b4cc7931550ac9c887c8d9c34438",
+      "https://store.is.autonavi.com/showpic/32c08aa68660dbbc69d088cfaab7013e",
+      "http://store.is.autonavi.com/showpic/c0292205bdd3c938a8aed112f609947f"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFHW92M8",
+    "name": "美年大健康体检中心(深圳福田红岭门分院)",
+    "address": "红岭南路红岭大厦4-5栋裙楼2楼",
+    "lat": 22.539141,
+    "lng": 114.103916,
+    "hasPediatrics": false,
+    "phone": "0755-36886645;15986677716",
+    "images": [
+      "http://store.is.autonavi.com/showpic/f3c6881fd9d2ef329e9204ab1ed49f82",
+      "http://store.is.autonavi.com/showpic/fa8ec452717458f29b1e6df2b703076c",
+      "http://store.is.autonavi.com/showpic/96ff9780fbfec70e0e5d7afb91777849"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F30AI4R",
+    "name": "深圳中海医院",
+    "address": "布吉街道南三社区吉政路25号布吉中海医院整套23号",
+    "lat": 22.606645,
+    "lng": 114.126354,
+    "hasPediatrics": false,
+    "phone": "18038168710",
+    "images": [
+      "https://aos-comment.amap.com/B02F30AI4R/comment/content_media_external_file_32564_1747037413569_48337567.jpg",
+      "https://aos-comment.amap.com/B02F30AI4R/comment/6F2D32E4_F7D6_49DD_8F24_7B5BDCC7B210_L0_001_1500_200_1754186841814_18927552.jpg",
+      "https://aos-comment.amap.com/B02F30AI4R/comment/2C164A29_3448_494C_9C7C_540AA0C2C319_L0_001_1280_170_1760667561408_41583451.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFI64NUZ",
+    "name": "深圳市第四人民医院",
+    "address": "石井街道金牛西路1号",
+    "lat": 22.704296,
+    "lng": 114.378096,
+    "hasPediatrics": false,
+    "phone": "0755-21589999;0755-28299969",
+    "images": [
+      "http://store.is.autonavi.com/showpic/25e3b41babcd553f48b0eaea10985d9e",
+      "https://aos-comment.amap.com/B0FFI64NUZ/comment/9691b4f8c77dcb25535d7ae77c23bd47_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B0FFI64NUZ/comment/676893739523fcb33574e1de3ddb6f89_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFJCTRYW",
+    "name": "雍禾植发(深圳总院)",
+    "address": "梅林街道梅观路5号深新大厦一二层",
+    "lat": 22.570395,
+    "lng": 114.071809,
+    "hasPediatrics": false,
+    "phone": "18583695214",
+    "images": [
+      "https://aos-comment.amap.com/B0FFJCTRYW/comment/content_media_external_file_1000279434_ss__1762652229646_45100248.jpg",
+      "https://aos-comment.amap.com/B0FFJCTRYW/comment/2026-03-08-17-47-08%2BFE673524-7E4A-45C1-980F-465494112DE_1772963234067_86664435.jpg",
+      "https://aos-comment.amap.com/B0FFJCTRYW/comment/7F89703F_00C0_413B_B40F_6C75D68F6E0C_L0_001_2001_81_1770098512065_65324484.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37WL02",
+    "name": "深圳怡康医院-妇科",
+    "address": "桂园街道红桂路1018号武汉大厦1-8层",
+    "lat": 22.550932,
+    "lng": 114.111449,
+    "hasPediatrics": false,
+    "phone": "18902483385",
+    "images": [
+      "https://store.is.autonavi.com/showpic/dc517bb3ab2e6cf75bb787d4d2f23a8a",
+      "https://store.is.autonavi.com/showpic/15afd67852c2f9196fa46b2ebe3c1631",
+      "https://store.is.autonavi.com/showpic/aab8b4911aa837a20000002892908639?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F38ZQCJ",
+    "name": "深圳慈海医院",
+    "address": "龙岗街道鹏达路69号69-2号69-3号-5号",
+    "lat": 22.714561,
+    "lng": 114.26578,
+    "hasPediatrics": false,
+    "phone": "19925269415",
+    "images": [
+      "https://aos-comment.amap.com/B02F38ZQCJ/comment/1fa77a800b91ca079cb5ef0e1c78d6ff_2048_2048_80.jpg",
+      "http://store.is.autonavi.com/showpic/5f9064d5fed055293aea69094e062545",
+      "https://aos-comment.amap.com/B02F38ZQCJ/comment/81206710_DA1F_4EBD_B0E9_9F41889F79DD_L0_001_2000_150_1744970042548_33342359.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0KBKHE7TJ",
+    "name": "爱康国宾(深圳宝安分院)",
+    "address": "西乡街道永丰社区新湖路4008号蘅芳科技大厦201-1(一照多址企业)",
+    "lat": 22.576688,
+    "lng": 113.862505,
+    "hasPediatrics": false,
+    "phone": "0755-33268086;4008100120",
+    "images": [
+      "https://img.alicdn.com/imgextra/i1/O1CN01YPR4aq1PGrZpDXMkD_!!6000000001814-0-tps-365-365.jpg",
+      "http://store.is.autonavi.com/showpic/e8732d4ab98886fe87be8fe468e0ba86",
+      "http://store.is.autonavi.com/showpic/e85ab4f8c4b831e5b267b237ed822ce7"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0HR6D87G2",
+    "name": "美年大健康体检中心(深圳美盛分院)",
+    "address": "城街道龙城大道99号正中时代广场B座3楼",
+    "lat": 22.727759,
+    "lng": 114.251699,
+    "hasPediatrics": false,
+    "phone": "0755-36886645;15986677716",
+    "images": [
+      "http://store.is.autonavi.com/showpic/a6942e3d85db182a8e96c4f75c204670"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0K12HGR4E",
+    "name": "瑞慈体检深圳宝安机构",
+    "address": "金融街建安一路9号恒明珠国际金融中心负一层(星巴克旁垂直电梯至负一层)",
+    "lat": 22.557156,
+    "lng": 113.909745,
+    "hasPediatrics": false,
+    "phone": [],
+    "images": [
+      "http://store.is.autonavi.com/query_pic?id=stdba819b7-7e69-4e75-8542-d104c51183a8&user=search&operate=original",
+      "https://store.is.autonavi.com/showpic/e4c51a31177053a35ee5de736eed083d",
+      "https://aos-comment.amap.com/B0K12HGR4E/comment/67832936_6AE2_4956_987A_8F0AAAF5FD68_L0_001_2048_153_1753775309574_85757423.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F30AIXD",
+    "name": "深圳坂田医院",
+    "address": "坂田街道杨美社区布龙路552号(坂田地铁站D口步行370米)",
+    "lat": 22.627935,
+    "lng": 114.067169,
+    "hasPediatrics": false,
+    "phone": "0755-89504000;0755-89504999",
+    "images": [
+      "https://store.is.autonavi.com/showpic/5eba6871c928d9960000003065202669?type=pic",
+      "https://store.is.autonavi.com/showpic/f2cd8469500ceac3a1beb868c865985f",
+      "https://aos-comment.amap.com/B02F30AIXD/comment/acbcf02f5694b4587b20170d5a9cc504_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0JB9HVGAV",
+    "name": "深圳米兰柏羽医疗美容医院",
+    "address": "福田街道深南大道2001号嘉麟豪庭",
+    "lat": 22.539014,
+    "lng": 114.066373,
+    "hasPediatrics": false,
+    "phone": "18100280587",
+    "images": [
+      "http://store.is.autonavi.com/showpic/3338147266bb286d42a3643ec0684c65",
+      "http://store.is.autonavi.com/showpic/6a5479ae89345b60888e5cd5a9f60be5",
+      "http://store.is.autonavi.com/showpic/f77fb192ebd156499c09859c8b15719e"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFKYK4HI",
+    "name": "罗湖区人民医院(春风院区)",
+    "address": "春风路2069号(原流花医院)",
+    "lat": 22.539565,
+    "lng": 114.126124,
+    "hasPediatrics": false,
+    "phone": "0755-82140332;0755-82140336",
+    "images": [
+      "https://aos-comment.amap.com/B0FFKYK4HI/comment/3996A228_A419_4C8C_ADF4_4744617F7016_L0_001_1000_667_1744003461890_12944354.jpg",
+      "https://store.is.autonavi.com/showpic/9014c226c3c5b7590000000714544001",
+      "https://store.is.autonavi.com/showpic/b303e1552e0a73740000000714406877"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F30A85L",
+    "name": "深圳华侨医院",
+    "address": "平湖镇湖新街1号",
+    "lat": 22.687501,
+    "lng": 114.143853,
+    "hasPediatrics": false,
+    "phone": "0755-84656120;0755-84698191",
+    "images": [
+      "https://store.is.autonavi.com/showpic/457ffdc3cc6b198e63174e213c1e2ff8",
+      "https://store.is.autonavi.com/showpic/95f5b144ee4303b0d28cc63130d286ae",
+      "https://aos-comment.amap.com/B02F30A85L/comment/content_media_external_file_1000016231_ss__1756189564739_77565736.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F30AB1D",
+    "name": "深圳伟光医院(综合)",
+    "address": "福城街道茜坑社区松元围居民小组118号119号120号",
+    "lat": 22.710786,
+    "lng": 114.043004,
+    "hasPediatrics": false,
+    "phone": "13380342120",
+    "images": [
+      "https://aos-comment.amap.com/B02F30AB1D/comment/content_media_external_images_media_1000045043_ss__1750385486464_40106141.jpg",
+      "https://store.is.autonavi.com/showpic/1e4f04d1324011d30000002097398315?type=pic",
+      "https://aos-comment.amap.com/B02F30AB1D/comment/db26d0834c4a31ab7b87ece3a497a011_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0HAPCUOY8",
+    "name": "深圳深西爱尔眼科医院(宝安总院)",
+    "address": "福海街道新和社区永福路41号华丽工业园第10栋一楼部分二至五楼",
+    "lat": 22.672284,
+    "lng": 113.802713,
+    "hasPediatrics": false,
+    "phone": "0755-85268666",
+    "images": [
+      "http://store.is.autonavi.com/showpic/b0cdcdb8d4800c50bbcd7ed1891998f6",
+      "https://aos-comment.amap.com/comment/20260307-15b57ffbfb33ec24f058ce7b-389DP3iWP5g6pPyNhETvW4.jpg",
+      "https://aos-comment.amap.com/B0HAPCUOY8/comment/20260322-84b6dee0723574d7c5eff515-Am91ZgY9RU6ABiW5Vg5Wzs.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFF3528Z",
+    "name": "深圳鹏程医院",
+    "address": "桂园街道笋岗东路3013号长虹大厦1楼",
+    "lat": 22.555319,
+    "lng": 114.107705,
+    "hasPediatrics": false,
+    "phone": "15718243212",
+    "images": [
+      "http://store.is.autonavi.com/showpic/7b147b366fb676923c36291393518196",
+      "https://aos-comment.amap.com/B0FFF3528Z/comment/78352882_ECBA_4DDB_B974_97D0D77C3CFB_L0_001_800_55_1748750338330_44779953.jpg",
+      "https://aos-comment.amap.com/B0FFF3528Z/comment/7cb65d1b2f2a7a80029ff5ddb19b9502_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0JD4CL2P2",
+    "name": "深圳深北爱尔眼科医院",
+    "address": "龙华街道玉翠社区清泉北路龙日科技大厦1号楼101-1层整层-5层整层",
+    "lat": 22.670539,
+    "lng": 114.028314,
+    "hasPediatrics": false,
+    "phone": "0755-29735666;18123657037;18938915162",
+    "images": [
+      "https://store.is.autonavi.com/showpic/a8ada7136ffbad6c05b444b3ddb9d1b3",
+      "https://aos-comment.amap.com/B0JD4CL2P2/comment/6d69a0556f2ffa0b62ad69d2cbe4800a_2048_2048_80.jpg",
+      "https://store.is.autonavi.com/showpic/5c1663236ff702e663569abd70a6e721"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0KAXBZ509",
+    "name": "深圳滨海爱尔眼科医院",
+    "address": "粤海街道滨海社区滨海大道3368号广晟科创大厦1-12层",
+    "lat": 22.522689,
+    "lng": 113.940163,
+    "hasPediatrics": false,
+    "phone": "4006609120",
+    "images": [
+      "https://store.is.autonavi.com/showpic/7f19e30a3dbca7b369c5c602f2266d72",
+      "https://aos-comment.amap.com/B0KAXBZ509/comment/5C5F47BA_650A_4B43_AF59_F496FEE4B5F7_L0_001_1500_200_1768659772713_71344157.jpg",
+      "https://store.is.autonavi.com/showpic/7450ed1bb820ed280000002891096065?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFJ0Y9L2",
+    "name": "深圳市龙岗区第五人民医院",
+    "address": "平湖街道双拥街77号(双拥街地铁站C口步行170米)",
+    "lat": 22.698257,
+    "lng": 114.130564,
+    "hasPediatrics": false,
+    "phone": "0755-84684754",
+    "images": [
+      "https://aos-comment.amap.com/B0FFJ0Y9L2/comment/7e395e5ad63556b93eee047fd066fb30_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B0FFJ0Y9L2/comment/E23743B3_A4C4_4B3E_A2D5_FDEA882AF7BB_L0_001_2048_1536_1728649358927_07410038.jpg",
+      "https://aos-comment.amap.com/B0FFJ0Y9L2/comment/content_media_external_images_media_1000031721_ss__1730299793456_11945396.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37VD7D",
+    "name": "深圳市盐田区人民医院(主院区)",
+    "address": "海山街道梧桐社区梧桐路2010号(海山地铁站A2口步行450米)",
+    "lat": 22.55745,
+    "lng": 114.2337,
+    "hasPediatrics": false,
+    "phone": "0755-25216030;0755-25216074;0755-25216114",
+    "images": [
+      "https://store.is.autonavi.com/showpic/27b74cbc1cd9d14f341ffd542547c27a",
+      "https://store.is.autonavi.com/showpic/cb4e3a925d094c8c0000003065196171?type=pic",
+      "https://store.is.autonavi.com/showpic/fe0f3552c22bfe6b354438e38af2404e"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFI6UUPP",
+    "name": "深圳南油麦芽口腔门诊部(南山院区)",
+    "address": "南山大道1153号天源大厦",
+    "lat": 22.521802,
+    "lng": 113.922541,
+    "hasPediatrics": false,
+    "phone": "13049325348",
+    "images": [
+      "http://store.is.autonavi.com/showpic/986793163b6a0b89078f1575e23ef2de",
+      "http://store.is.autonavi.com/showpic/5488777767b1112e093e2002c5ff508e",
+      "https://aos-comment.amap.com/B0FFI6UUPP/comment/content_media_external_images_media_104807_1664936701472_4c441688.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0IUFUYJIK",
+    "name": "深圳尔睦口腔医院·市二级专科医院",
+    "address": "沙井街道马安山社区马安山锦胜财富广场AB栋2层",
+    "lat": 22.712549,
+    "lng": 113.817993,
+    "hasPediatrics": false,
+    "phone": "0755-29989525",
+    "images": [
+      "http://store.is.autonavi.com/showpic/916ec0c305be7d3f8bedb950dc211b24",
+      "https://aos-comment.amap.com/B0IUFUYJIK/comment/d3188d8cc234eb56bb9f1be512ff592f_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B0IUFUYJIK/comment/43bb73c0a2b26593da2805b707c8e989_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0KDYURIT2",
+    "name": "深圳普瑞眼科医院",
+    "address": "南头街道大汪社区桃园路10号新桃园大厦(1-14层)",
+    "lat": 22.532997,
+    "lng": 113.925339,
+    "hasPediatrics": false,
+    "phone": "15338729709",
+    "images": [
+      "http://store.is.autonavi.com/showpic/5739ab280ca1d6a9a58c750b4965b5e6",
+      "https://store.is.autonavi.com/showpic/6a371902df8159250000004906246589?type=pic",
+      "https://store.is.autonavi.com/showpic/7e2b26d8b694ca0a0000003582922688?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFI7X3FU",
+    "name": "南方医科大学深圳口腔医院",
+    "address": "建设路1092号广东省深圳牙科医疗中心",
+    "lat": 22.537791,
+    "lng": 114.116895,
+    "hasPediatrics": false,
+    "phone": "0755-82238026",
+    "images": [
+      "http://store.is.autonavi.com/showpic/3dc81afb46cb789527053f39e4d79379",
+      "https://store.is.autonavi.com/showpic/cba74273bc1ec5d60000002521608197?type=pic",
+      "https://store.is.autonavi.com/showpic/31ffec870efabd590000003325342071?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFGNH9H5",
+    "name": "深圳华厦眼科医院",
+    "address": "莲花街道康欣社区莲花路2032-1号汇邦大厦一层四-八层十一层十二层",
+    "lat": 22.554134,
+    "lng": 114.041706,
+    "hasPediatrics": false,
+    "phone": "18923773785",
+    "images": [
+      "http://store.is.autonavi.com/showpic/ad4e6120e87aec1369c27844166ca4ed",
+      "https://aos-comment.amap.com/B0FFGNH9H5/comment/94bf456685ef8000d30affbaedfebd9f_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B0FFGNH9H5/comment/abbd50e1489c28c36078290afc4b1031_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0J0YSR9VM",
+    "name": "深圳市龙岗区第四人民医院",
+    "address": "南湾街道金健路2号",
+    "lat": 22.609882,
+    "lng": 114.145441,
+    "hasPediatrics": false,
+    "phone": "0755-28700099",
+    "images": [
+      "https://aos-comment.amap.com/comment/20260308-589a18a693cdfcb69699bff2-9JNcOvMZlj69Tx4ElKO3XD.jpg",
+      "https://aos-comment.amap.com/B0J0YSR9VM/comment/9D958B04_CEDD_4C05_95ED_80EC4A2B3E6B_L0_001_1500_200_1761170463543_94714794.jpg",
+      "https://store.is.autonavi.com/showpic/978dddc7d1a2fbb5f4ee28f5db68dd3f"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0L27DJU8G",
+    "name": "京东健康体检中心(深圳南山店)",
+    "address": "中建科工大厦北门2层(登良地铁站C口步行320米)",
+    "lat": 22.509209,
+    "lng": 113.940787,
+    "hasPediatrics": false,
+    "phone": "0755-86660618;13066912430",
+    "images": [
+      "https://store.is.autonavi.com/showpic/6a78c7dd0673e35d07ca123a74761a97",
+      "https://aos-comment.amap.com/B0L27DJU8G/comment/E6A9DEF9_C5A8_4C34_AD30_E368B29ED62B_L0_001_1500_200_1769085523992_60621394.jpg",
+      "https://store.is.autonavi.com/showpic/bfb5782f8aa76e8e0000003069238752?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37SI31",
+    "name": "深圳市龙岗区第六人民医院",
+    "address": "龙岗大道4023号",
+    "lat": 22.780477,
+    "lng": 114.316327,
+    "hasPediatrics": false,
+    "phone": "0755-84092120;0755-84091624",
+    "images": [
+      "https://store.is.autonavi.com/showpic/38aaf36fda780536a13ad852237cfb3c",
+      "https://aos-comment.amap.com/B02F37SI31/comment/ce35e05c8ece4eb6a5ffd949bdcd1829_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B02F37SI31/comment/f85a1bf64425ff331f06ca0d5f78d9ea_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFHVXOK9",
+    "name": "美年大健康体检(美益康分院)",
+    "address": "坂田街道马安堂社区中兴路105号儒骏大厦1、2F整层",
+    "lat": 22.62487,
+    "lng": 114.069512,
+    "hasPediatrics": false,
+    "phone": "0755-36886645;0755-86603919;15986677716",
+    "images": [
+      "http://store.is.autonavi.com/showpic/251b357f0d31261b4ead2b3869ad26b9",
+      "http://store.is.autonavi.com/showpic/485b712371cccc260719352808b47219",
+      "https://aos-comment.amap.com/B0FFHVXOK9/comment/content_media_external_file_42088_ss__1763713329742_57415396.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFK1AP6K",
+    "name": "南方医科大学深圳坪山医院",
+    "address": "S301南坪快速入口与南坪坪盐立交桥交叉口北160米",
+    "lat": 22.665104,
+    "lng": 114.322887,
+    "hasPediatrics": false,
+    "phone": "0755-89263702",
+    "images": [
+      "https://store.is.autonavi.com/showpic/e386ba42a658e06f668e8180da258f8a",
+      "https://store.is.autonavi.com/showpic/4fcb3d1606912cf2781ae7db96388bb7",
+      "https://store.is.autonavi.com/showpic/a18e7be6e66a96420000006610160312"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFHOMZMV",
+    "name": "固生堂深圳香竹分院",
+    "address": "香蜜湖街道香岭社区紫竹六道64号越海家园2栋102、202、203",
+    "lat": 22.53451,
+    "lng": 114.00642,
+    "hasPediatrics": false,
+    "phone": "13172466945",
+    "images": [
+      "https://aos-comment.amap.com/B0FFHOMZMV/comment/IMG_20260104_091623_tem_1767489428909_64154741.jpg",
+      "https://store.is.autonavi.com/showpic/2ff098054987a11f0000003002102361?type=pic",
+      "https://aos-comment.amap.com/B0FFHOMZMV/comment/571C6546_601E_411D_9E1F_9B6A72B5C1DC_L0_001_1500_200_1766226566738_36890248.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFIUYOHL",
+    "name": "卓正医疗深圳湾诊所",
+    "address": "海德三道1288号航天科技广场裙楼5楼2",
+    "lat": 22.519319,
+    "lng": 113.941995,
+    "hasPediatrics": false,
+    "phone": "0755-21677955;0755-86636306",
+    "images": [
+      "https://aos-comment.amap.com/B0FFIUYOHL/headerImg/6f00ce2be4d52ac32616987982580747_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B0FFIUYOHL/comment/40df6bda463b17aaa564971fe4f5b852_2048_2048_80.jpg",
+      "https://store.is.autonavi.com/showpic/07c170da200e04b13c4803beb8ddd06a"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFKUA59G",
+    "name": "深圳市坪山区中心医院",
+    "address": "金辉路",
+    "lat": 22.746231,
+    "lng": 114.397625,
+    "hasPediatrics": false,
+    "phone": "0755-28799886",
+    "images": [
+      "https://store.is.autonavi.com/showpic/b939305c2fe0276d269315a54d0f2fc7",
+      "https://store.is.autonavi.com/showpic/8fffd588a1bed43d818cb57f1a01efe1",
+      "https://aos-comment.amap.com/B0FFKUA59G/comment/99E1513D_0544_4274_A777_09C5444130B0_L0_001_1706_1055_1731781508230_03328782.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFL1EH1R",
+    "name": "深圳市龙岗区第八人民医院(深圳市龙岗区骨科医院深圳市龙岗区手外科研究所)",
+    "address": "宝龙街道同乐社区南同大道36号",
+    "lat": 22.696341,
+    "lng": 114.309825,
+    "hasPediatrics": false,
+    "phone": "0755-89886366",
+    "images": [
+      "http://store.is.autonavi.com/showpic/19776e552934cacca97d0369843c88ce",
+      "http://store.is.autonavi.com/showpic/b8ebc7284c932ff9d80f2a8786d5fae1",
+      "https://aos-comment.amap.com/B0FFL1EH1R/comment/84fd1adaa62e2e1b6c5fde3a5ff74d6d_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFKM990K",
+    "name": "深圳岗厦麦芽口腔门诊部(福田院区)",
+    "address": "福田街道岗厦社区彩田南路3002号彩虹新都203岗厦社区彩虹新都303",
+    "lat": 22.535358,
+    "lng": 114.068446,
+    "hasPediatrics": false,
+    "phone": "13049325348",
+    "images": [
+      "https://aos-comment.amap.com/B0FFKM990K/comment/03417822715963861124b4c0c042b1ab_2048_2048_80.jpg",
+      "http://store.is.autonavi.com/showpic/8c0d5a60997e8f90c91ee66af932fc1b",
+      "https://aos-comment.amap.com/B0FFKM990K/comment/f3ae361b5909cf53315388314c0e8b44_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFFCVAP6",
+    "name": "深圳美中宜和妇产医院",
+    "address": "南山街道南新路2059号1-6层整栋",
+    "lat": 22.526244,
+    "lng": 113.918759,
+    "hasPediatrics": false,
+    "phone": "0755-36886789",
+    "images": [
+      "http://store.is.autonavi.com/showpic/6f7d7e6b9bdf9ead192b2cb606391bb6",
+      "http://store.is.autonavi.com/showpic/76c1a33d34ecfe475f27be7b9be8330d",
+      "http://store.is.autonavi.com/showpic/f54881a4ffd12a22904edbd6363d852b"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFL1II75",
+    "name": "格伦菲尔口腔(龙华壹方天地店)",
+    "address": "龙华街道景龙社区人民北路盛地龙泉人民路4028号1-2楼",
+    "lat": 22.6501,
+    "lng": 114.026468,
+    "hasPediatrics": false,
+    "phone": "13008835269;18219167045",
+    "images": [
+      "https://aos-comment.amap.com/B0FFL1II75/comment/2da4b658b2f9e3e79a29a888a3f3d157_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B0FFL1II75/comment/202507_23-15542_1753257274155_66437743.jpg",
+      "https://aos-comment.amap.com/B0FFL1II75/comment/8228d5670f4bf5730b7e1f4e5e6a39c2_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0G1NC4ODI",
+    "name": "木棉花门诊部(深圳福田分院)",
+    "address": "沙头街道天安社区泰然十一路1号深业泰然大厦L211、L2-12",
+    "lat": 22.53011,
+    "lng": 114.022345,
+    "hasPediatrics": false,
+    "phone": "0755-82794564;18025345188;18025345988",
+    "images": [
+      "https://aos-comment.amap.com/B0G1NC4ODI/comment/176803187199_1768031873327_06084041.jpg",
+      "https://aos-comment.amap.com/B0G1NC4ODI/comment/9CF2DB52_FA9E_42E4_A2D6_C420BF9EBE91_L0_001_2000_90_1758011175837_58265296.jpg",
+      "http://store.is.autonavi.com/showpic/79c53e8ad80b4d5ca8678681290dd5c8"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFGLQ1X5",
+    "name": "深圳理工大学总医院(西院区)",
+    "address": "马田街道松白路4253号",
+    "lat": 22.763521,
+    "lng": 113.901782,
+    "hasPediatrics": false,
+    "phone": "0755-27548735",
+    "images": [
+      "http://store.is.autonavi.com/showpic/5324cdb9b2b43153b1d61f5b64336973",
+      "https://aos-comment.amap.com/B0FFGLQ1X5/comment/content_media_external_file_2125_1766401477611_92224779.jpg",
+      "https://aos-comment.amap.com/B0FFGLQ1X5/comment/81d2100571c6ba0f957ed518d4646320_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0KG2SS2E8",
+    "name": "深圳格伦菲尔口腔医院",
+    "address": "民治街道红山社区汇龙湾花园3栋148-149-1149-2202",
+    "lat": 22.621411,
+    "lng": 114.028757,
+    "hasPediatrics": false,
+    "phone": "13008835269;18219167045",
+    "images": [
+      "https://store.is.autonavi.com/showpic/a2101e6d178e4292f2ea940fa545cf63",
+      "https://aos-comment.amap.com/B0KG2SS2E8/comment/09D28452_A705_4F56_B2B9_A5DC99521A02_L0_001_1440_176_1759304784919_39460043.jpg",
+      "https://aos-comment.amap.com/B0KG2SS2E8/comment/3feedback_sendimag_1737515731198_70349244.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F309PAG",
+    "name": "深圳宝田医院",
+    "address": "薯田埔社区福庄路2号",
+    "lat": 22.782761,
+    "lng": 113.875849,
+    "hasPediatrics": false,
+    "phone": "0755-27121963",
+    "images": [
+      "http://store.is.autonavi.com/showpic/661b65e03c938825f324be634af3d867",
+      "https://store.is.autonavi.com/showpic/bea9809f96c9cf005edcd1665177c42e",
+      "https://store.is.autonavi.com/showpic/914d945dfbf115990000003065190566?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFKZSB9I",
+    "name": "第一健康鼎和分院",
+    "address": "福田街道福安社区福华三路100号鼎和大厦5楼01-07、09-13单元4楼01-04、06单元",
+    "lat": 22.533306,
+    "lng": 114.062486,
+    "hasPediatrics": false,
+    "phone": "13590469884;4001111300",
+    "images": [
+      "http://store.is.autonavi.com/showpic/0f1ead09a8e04009741b4caa044e3a58",
+      "http://store.is.autonavi.com/showpic/1ad421a5b46d8fb91f7c9567f934b6e7",
+      "http://store.is.autonavi.com/showpic/ef026ec3378b9792d23af3df43e6b77c"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0KK2CI7Z7",
+    "name": "深圳市罗湖区人民医院(清水河院区)",
+    "address": "清水河一路112号",
+    "lat": 22.578341,
+    "lng": 114.116115,
+    "hasPediatrics": false,
+    "phone": "0755-82056069",
+    "images": [
+      "https://store.is.autonavi.com/showpic/18d36c40c3f48caa0000003065744506?type=pic",
+      "https://store.is.autonavi.com/showpic/33b93258b84c6560d413fb0c7d098383",
+      "https://aos-comment.amap.com/B0KK2CI7Z7/comment/IMG_20250925_121017_tem_1758773429022_24621716.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0I0XZC3VE",
+    "name": "深圳宝中格伦菲尔口腔门诊部",
+    "address": "新安街道海富社区46区洪福雅苑",
+    "lat": 22.560102,
+    "lng": 113.893208,
+    "hasPediatrics": false,
+    "phone": "13008835269;18219167045",
+    "images": [
+      "https://store.is.autonavi.com/showpic/d01979872f96ec6ffd269e849ae5d5ec",
+      "https://aos-comment.amap.com/B0I0XZC3VE/comment/a92340322e182f74319c64320170635c_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B0I0XZC3VE/comment/1ab4880d3eeaa6b03e2698285148cdb3_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37V9H2",
+    "name": "深圳广生医院",
+    "address": "福海街道新田社区凤塘大道46号和48号",
+    "lat": 22.697507,
+    "lng": 113.828008,
+    "hasPediatrics": false,
+    "phone": "13538204220",
+    "images": [
+      "https://aos-comment.amap.com/B02F37V9H2/comment/9AEEBBCF_3946_4133_BC22_D8659C155A0B_L0_001_900_67_1751369110477_76230299.jpg",
+      "https://aos-comment.amap.com/B02F37V9H2/headerImg/323a8bd4e38278fb9d12be1bab667c44_2048_2048_80.jpg",
+      "https://store.is.autonavi.com/showpic/cccebba1d963ba870000002466114005?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFITCS6P",
+    "name": "深圳禾正医院",
+    "address": "龙苑路16号",
+    "lat": 22.56243,
+    "lng": 113.986312,
+    "hasPediatrics": false,
+    "phone": "4001120333",
+    "images": [
+      "https://store.is.autonavi.com/showpic/cc235ee831bd88420000003065570736?type=pic",
+      "https://aos-comment.amap.com/B0FFITCS6P/comment/33f276ff71118cb39c1448f23f4f1762_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B0FFITCS6P/comment/32f468753a642286b134650e4b3f0ff9_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0KDRMJHHY",
+    "name": "固生堂深圳竹子林分院",
+    "address": "香蜜湖街道竹子林四路越众越海家园3栋201、301",
+    "lat": 22.535037,
+    "lng": 114.007599,
+    "hasPediatrics": false,
+    "phone": "13172466945",
+    "images": [
+      "https://aos-comment.amap.com/B0KDRMJHHY/comment/content_media_external_file_100012534_1769751408009_36455511.jpg",
+      "https://store.is.autonavi.com/showpic/e92b9140d0bf51150000003200100260?type=pic",
+      "https://store.is.autonavi.com/showpic/b91fe5318b30d0240000003089730024?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37VMWI",
+    "name": "深圳首康医院",
+    "address": "龙华街道玉翠社区东环二路356号101",
+    "lat": 22.666689,
+    "lng": 114.024925,
+    "hasPediatrics": false,
+    "phone": "19924506091",
+    "images": [
+      "https://store.is.autonavi.com/showpic/449e08745c813fdd0000003065642727?type=pic",
+      "http://store.is.autonavi.com/showpic/28aff4aaa0eb64fb62cfa1ba384c428b",
+      "https://aos-comment.amap.com/B02F37VMWI/comment/DB4BE6BA_AB61_43B5_A454_1F9BE85EBFE0_L0_001_1500_2000_1742636210827_98637248.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F391GV9",
+    "name": "爱康国宾(深圳罗湖分院)",
+    "address": "南湖街道罗湖社区人民南路2008号深圳嘉里中心三层",
+    "lat": 22.53764,
+    "lng": 114.119377,
+    "hasPediatrics": false,
+    "phone": "0755-33268008;4008100120",
+    "images": [
+      "https://img.alicdn.com/imgextra/i1/O1CN01YPR4aq1PGrZpDXMkD_!!6000000001814-0-tps-365-365.jpg",
+      "http://store.is.autonavi.com/showpic/ab0967284e25a53dbe351906178882d7",
+      "https://aos-comment.amap.com/B02F391GV9/comment/FBEF271D_1598_43D1_9E16_607820C60CC4_L0_001_2000_1904_1733588453212_17006492.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0HRZNONWE",
+    "name": "大麦微针植发·全国连锁(深圳分院)",
+    "address": "福田街道海滨社区福民路2号皇庭居2层-3层",
+    "lat": 22.523631,
+    "lng": 114.067693,
+    "hasPediatrics": false,
+    "phone": "18810061935",
+    "images": [
+      "http://store.is.autonavi.com/showpic/9acd7daa0d0a814620ad3d54931a8ee5",
+      "https://aos-comment.amap.com/B0HRZNONWE/comment/1feedback_sendimag_1740116931532_15529788.jpg",
+      "https://aos-comment.amap.com/B0HRZNONWE/comment/D8CF13CD_4EEA_461C_96A0_2A65988BC66A_L0_001_1500_200_1765422971547_47487393.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37W5SU",
+    "name": "深圳曙光富华医疗美容医院",
+    "address": "南湖街道新南社区东门南路2006号宝丰大厦1层1号,附楼101-105,2层,3层301,4层",
+    "lat": 22.539745,
+    "lng": 114.125524,
+    "hasPediatrics": false,
+    "phone": "13316588492",
+    "images": [
+      "https://aos-comment.amap.com/B02F37W5SU/comment/12f0755ee9f565d909a92466848749c9_2048_2048_80.jpg",
+      "http://store.is.autonavi.com/showpic/8d6bbf30fd8404c672464decc43154af",
+      "https://aos-comment.amap.com/B02F37W5SU/comment/ce18738e19527a7756be9e2cf7203390_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37VHMA",
+    "name": "福田区第二人民医院(中康院区)",
+    "address": "中康路25、27号",
+    "lat": 22.566448,
+    "lng": 114.058843,
+    "hasPediatrics": false,
+    "phone": "0755-83110237",
+    "images": [
+      "https://store.is.autonavi.com/showpic/9be44651291e0f120000002431712883?type=pic",
+      "https://store.is.autonavi.com/showpic/9431b4ebcb74af660000002431748535?type=pic",
+      "https://store.is.autonavi.com/showpic/322d07c550bfec300000002432150851?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFKFWICB",
+    "name": "希玛眼科•港资医院(宝安总院)",
+    "address": "新安街道灵芝园社区创业二路南侧都市翠海华苑1栋1061-2层",
+    "lat": 22.569345,
+    "lng": 113.905534,
+    "hasPediatrics": false,
+    "phone": "18100295954",
+    "images": [
+      "http://store.is.autonavi.com/showpic/88a6dc6ea8a1bf31c4ae16803799fe72",
+      "http://store.is.autonavi.com/showpic/8a3d09f6ecc8d4295686e768f677e002",
+      "https://aos-comment.amap.com/B0FFKFWICB/comment/fba7d53c729d99890376d7a034f67d89_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37VJT4",
+    "name": "深圳同宝医院(妇科)",
+    "address": "西乡街道乐群社区南沙新村西一巷7-9-11-13-15-17号",
+    "lat": 22.575325,
+    "lng": 113.871617,
+    "hasPediatrics": false,
+    "phone": "13342985326",
+    "images": [
+      "http://store.is.autonavi.com/showpic/6545a79832ebbb06f7037f5541b8cd31",
+      "https://store.is.autonavi.com/showpic/130d63b2e383accf83285caaedc453c1",
+      "http://store.is.autonavi.com/showpic/e6aa9ac3c81b763f491e3677e776d59a"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFLICAKD",
+    "name": "深圳边检总站医院",
+    "address": "金湖路8号",
+    "lat": 22.573546,
+    "lng": 114.102483,
+    "hasPediatrics": false,
+    "phone": "0755-82699000;0755-82699717",
+    "images": [
+      "https://store.is.autonavi.com/showpic/883d39d1e734ea060000003065224522?type=pic",
+      "http://store.is.autonavi.com/showpic/02959b353d38c1d49bcbd4e177c586ed",
+      "https://store.is.autonavi.com/showpic/5cc8678cfff00336a5461b97db382c88"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0G1XZHTZQ",
+    "name": "深圳市人民医院(坂田院区)",
+    "address": "坂澜大道",
+    "lat": 22.650424,
+    "lng": 114.077859,
+    "hasPediatrics": false,
+    "phone": "0755-25566770",
+    "images": [
+      "http://store.is.autonavi.com/showpic/d4eb5addb86b1dacc95c85a2672456ee",
+      "http://store.is.autonavi.com/showpic/0df8f9e3a938e86f4084d25d3b209495",
+      "https://aos-comment.amap.com/B0G1XZHTZQ/comment/149513dc58acca05116df77030928dfa_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFF4GZWP",
+    "name": "碧莲盛·不剃发植发(深圳分院)",
+    "address": "沙头街道新华社区滨河路嘉洲豪园裙楼第1、2层02",
+    "lat": 22.527581,
+    "lng": 114.044968,
+    "hasPediatrics": false,
+    "phone": "17812733271",
+    "images": [
+      "http://store.is.autonavi.com/showpic/25b24b166d6df46f883e59125935154a",
+      "https://aos-comment.amap.com/B0FFF4GZWP/comment/bf4e13b6b2e32754ef166ab378a9dbf7_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B0FFF4GZWP/comment/0feedback_sendimag_1745564816363_15629248.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F38IQ33",
+    "name": "深圳宝兴医院",
+    "address": "六和路27号",
+    "lat": 22.635002,
+    "lng": 114.192422,
+    "hasPediatrics": false,
+    "phone": "0755-28662111;0755-28662338",
+    "images": [
+      "https://store.is.autonavi.com/showpic/b41fec448101c93cf0039b77d7f946b7",
+      "https://aos-comment.amap.com/B02F38IQ33/comment/aff3d0fc80e8abd0731d637f3a4f0357_2048_2048_80.jpg",
+      "https://store.is.autonavi.com/showpic/f07f92ae49944840c0858fa383a8a7ef"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F302ABF",
+    "name": "深圳景田医院",
+    "address": "商报路9号",
+    "lat": 22.549234,
+    "lng": 114.042064,
+    "hasPediatrics": false,
+    "phone": "0755-83921555",
+    "images": [
+      "http://store.is.autonavi.com/showpic/eb1cedecc83db1304226fa7ae68cee02",
+      "http://store.is.autonavi.com/showpic/6dabaeb8d5a363a02001804dd69d4eee",
+      "https://store.is.autonavi.com/showpic/44f8139ea6fb7fc90000003048330461?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0LUZZPK9B",
+    "name": "格伦菲尔口腔国际部(车公庙店)",
+    "address": "沙头街道天安社区深南大道6019号金润大厦三层301-307、319-321、323",
+    "lat": 22.535167,
+    "lng": 114.024654,
+    "hasPediatrics": false,
+    "phone": "13008835269;18219167045",
+    "images": [
+      "http://store.is.autonavi.com/showpic/68856505d2f51f698357edd793ff10a1",
+      "http://store.is.autonavi.com/showpic/89e79c7a0f9131754b8124455bb3592d",
+      "https://store.is.autonavi.com/showpic/234d9109c7a78893e92e1178cf8969b2"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0IK3DQSIN",
+    "name": "深圳黑马眼科医院",
+    "address": "华强北街道福强社区深南中路2002号中核大厦(玮鹏花园综合楼101)",
+    "lat": 22.541348,
+    "lng": 114.095046,
+    "hasPediatrics": false,
+    "phone": "0755-88663933;17302670710",
+    "images": [
+      "http://store.is.autonavi.com/showpic/05a526fe387b224658f4acdc8a225806",
+      "http://store.is.autonavi.com/showpic/0f9c15c461ea7e685895cab0f6b5dcf1",
+      "http://store.is.autonavi.com/showpic/61a3c7ef779fde93f61c40507fd14a9b"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFIIK6QD",
+    "name": "深圳新安麦芽口腔门诊部(宝安院区)",
+    "address": "新安街道前进一路90号万悦格兰云天酒店2楼",
+    "lat": 22.568886,
+    "lng": 113.904569,
+    "hasPediatrics": false,
+    "phone": "13049325348",
+    "images": [
+      "http://store.is.autonavi.com/showpic/37b065b2ff57fd1600b7ac9fee0dd247",
+      "https://aos-comment.amap.com/B0FFIIK6QD/comment/ab5928e98b3f14dddd89b4d29bffab8f_2048_2048_80.jpg",
+      "http://store.is.autonavi.com/showpic/986793163b6a0b89078f1575e23ef2de"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0IGMD5NQQ",
+    "name": "深圳宝坪格伦菲尔口腔门诊部",
+    "address": "西乡街道蚝业社区海城路235号海滨新村泰逸大厦F3-001-007",
+    "lat": 22.564934,
+    "lng": 113.868125,
+    "hasPediatrics": false,
+    "phone": "13008835269;18219167045",
+    "images": [
+      "https://aos-comment.amap.com/B0IGMD5NQQ/comment/a66a59af403a72bd51cf181493646a3c_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B0IGMD5NQQ/comment/859deb890703b082738e5fa3bb68a5a7_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B0IGMD5NQQ/comment/fa2c2638e55275f23db54194a3c77e15_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFKB9D1G",
+    "name": "宝安纯中医治疗医院",
+    "address": "来安路99号",
+    "lat": 22.606115,
+    "lng": 113.870977,
+    "hasPediatrics": false,
+    "phone": "0755-23288773",
+    "images": [
+      "https://store.is.autonavi.com/showpic/b7f0efa2b4277662b188bde6b9d9ab31",
+      "https://store.is.autonavi.com/showpic/a22ba1f6f405ae798775142a6dfe7f4c",
+      "https://store.is.autonavi.com/showpic/071c6afb783ebfcf3caa1a62992542b8"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0J6MZFP5N",
+    "name": "福田区第二人民医院(龙尾院区)",
+    "address": "梅亭路1号4栋(下梅林地铁站C口步行210米)",
+    "lat": 22.566821,
+    "lng": 114.042684,
+    "hasPediatrics": false,
+    "phone": "0755-83110237",
+    "images": [
+      "https://store.is.autonavi.com/showpic/428f0fc32de17f61674947d4ee5d97be",
+      "https://store.is.autonavi.com/showpic/d72cf21cec054945b663ae405c0eb766",
+      "https://store.is.autonavi.com/showpic/35a7ae6d38935534a1b875a098397c60"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F38WXSX",
+    "name": "深圳宝生妇产医院",
+    "address": "新安街道上川社区35区黄金台小区10栋",
+    "lat": 22.581012,
+    "lng": 113.895602,
+    "hasPediatrics": false,
+    "phone": "15818682729",
+    "images": [
+      "https://aos-comment.amap.com/B02F38WXSX/comment/67EBFEB0_0EB9_4FC3_9BD1_048D3A19FEBB_L0_001_1500_200_1761015635485_36123036.jpg",
+      "https://store.is.autonavi.com/showpic/c442a9a016ff1f281152e296a71df038",
+      "https://aos-comment.amap.com/B02F38WXSX/comment/389B03DA_E93E_4F39_89D4_7D076F3B5991_L0_001_1276_1702_1727680047969_34125477.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0GK0LCOTK",
+    "name": "美年大健康体检中心(美阳店)",
+    "address": "海山街道深盐路2002号大百汇生命健康产业园3号楼B座4楼",
+    "lat": 22.567208,
+    "lng": 114.249542,
+    "hasPediatrics": false,
+    "phone": "0755-36886645;15986677716",
+    "images": [
+      "http://store.is.autonavi.com/showpic/cc0cfc9bcf5e2cc384be9b814ca26981",
+      "https://aos-comment.amap.com/B0GK0LCOTK/comment/0feedback_sendimage_1659147974550_6ee506e8.jpeg",
+      "https://aos-comment.amap.com/B0GK0LCOTK/comment/1feedback_sendimage_1659147990121_a2f8e955.jpeg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFF477N4",
+    "name": "深圳市职业病防治院",
+    "address": "翠竹街道翠达社区布心路2019号",
+    "lat": 22.573909,
+    "lng": 114.136121,
+    "hasPediatrics": false,
+    "phone": "0755-84356816;0755-84356817",
+    "images": [
+      "https://aos-comment.amap.com/B0FFF477N4/comment/content_media_external_file_100009274_1764166999362_73509217.jpg",
+      "https://aos-comment.amap.com/B0FFF477N4/comment/content_media_external_file_100009274_1764166999356_45000121.jpg",
+      "http://store.is.autonavi.com/showpic/22fcdf5c19b0aedc8d12c334263aa2ae"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0J1PA2H0X",
+    "name": "深圳坂田格伦菲尔口腔门诊部",
+    "address": "坂田街道坂田社区吉华路999号坂田商业广场401-1",
+    "lat": 22.633192,
+    "lng": 114.062587,
+    "hasPediatrics": false,
+    "phone": "13008835269;18219167045",
+    "images": [
+      "https://aos-comment.amap.com/B0J1PA2H0X/comment/content_media_external_images_media_100004816_1737451113067_90398781.jpg",
+      "https://aos-comment.amap.com/B0J1PA2H0X/comment/a86c66bd-47d7-4f0c-a5d2-6f8f03950f15.png",
+      "https://aos-comment.amap.com/B0J1PA2H0X/comment/e34c83bcd299e6f8e0b3720ba05ee556_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0K077HEN3",
+    "name": "深圳普瑞星耀眼科医院",
+    "address": "人民南路3012号天安国际大厦101",
+    "lat": 22.54201,
+    "lng": 114.119377,
+    "hasPediatrics": false,
+    "phone": "18948173102",
+    "images": [
+      "https://aos-comment.amap.com/B0K077HEN3/comment/4BA92FE1_BFC7_4A5C_B59B_9448425834E1_L0_001_2000_1500_1741767073673_19611381.jpg",
+      "https://aos-comment.amap.com/B0K077HEN3/comment/content_media_external_images_media_100000392_1741746872087_55180664.jpg",
+      "https://aos-comment.amap.com/B0K077HEN3/comment/B970B9E2_6089_44B9_A38C_676897ABBA8D_L0_001_1500_2000_1741767073673_32272733.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFKC4PKG",
+    "name": "深圳沙井格伦菲尔口腔门诊部",
+    "address": "沙井街道沙井社区新沙路565号一层转角E号铺位及三楼整层四楼",
+    "lat": 22.732477,
+    "lng": 113.812816,
+    "hasPediatrics": false,
+    "phone": "13008835269;18219167045",
+    "images": [
+      "http://store.is.autonavi.com/showpic/05ef06b3dae74e5d69ee14c2fcc948d6",
+      "http://store.is.autonavi.com/showpic/63a210dbbf4ef5f2704695a7de63742c",
+      "https://aos-comment.amap.com/B0FFKC4PKG/comment/5D9BF858_25B0_470D_B107_7B52D84ACAB1_L0_001_1500_2000_1732511887453_19739279.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0G3SCWA59",
+    "name": "深圳富茂格伦菲尔口腔门诊部",
+    "address": "龙华街道三联社区福茂新村H5H6栋一二三楼H7栋二楼",
+    "lat": 22.661952,
+    "lng": 114.035036,
+    "hasPediatrics": false,
+    "phone": "13008835269;18219167045",
+    "images": [
+      "http://store.is.autonavi.com/showpic/05ef06b3dae74e5d69ee14c2fcc948d6",
+      "http://store.is.autonavi.com/showpic/63a210dbbf4ef5f2704695a7de63742c",
+      "http://store.is.autonavi.com/showpic/e3f72b038396ba36348797b3e5ec4a58"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0LULC833P",
+    "name": "福田区第三人民医院",
+    "address": "新沙路9号(福田工商物价大厦西北门西南50米)",
+    "lat": 22.52946,
+    "lng": 114.044428,
+    "hasPediatrics": false,
+    "phone": "0755-36558333",
+    "images": [
+      "https://store.is.autonavi.com/showpic/8a7f51396a4867920000002335992830?type=pic",
+      "https://store.is.autonavi.com/showpic/6a2be6405ff071030000002336040073?type=pic",
+      "https://store.is.autonavi.com/showpic/577c70248e37db49156ca84b5d1cbc0c"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0HKAZHJPT",
+    "name": "香港中文大学(深圳)医院",
+    "address": "吉华路401号",
+    "lat": 22.639862,
+    "lng": 114.084116,
+    "hasPediatrics": false,
+    "phone": "0755-88888989",
+    "images": [
+      "https://store.is.autonavi.com/showpic/218f9436ac2faf5e6265d15c6e4eb762",
+      "https://store.is.autonavi.com/showpic/e9aced7de47d0080881fc1895979c470",
+      "https://store.is.autonavi.com/showpic/ed74e546a660704e52efe35f83e8119a"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFG9KZWJ",
+    "name": "深圳运动康复门诊部",
+    "address": "福强路3030号福田体育公园体育馆5号门",
+    "lat": 22.52455,
+    "lng": 114.036687,
+    "hasPediatrics": false,
+    "phone": "0755-88892120",
+    "images": [
+      "https://aos-comment.amap.com/B0FFG9KZWJ/comment/dbce3776979cdb2da9ac0a49672a3ffb_2048_2048_80.jpg",
+      "https://store.is.autonavi.com/showpic/7a67310277464a293fa6a43dd252ea3d",
+      "https://aos-comment.amap.com/B0FFG9KZWJ/comment/a556086dcffb02574247eb83d40491e8_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0KDVARNUG",
+    "name": "深圳明森口腔·国际种植·正畸诊疗中心",
+    "address": "南山街道学府社区南山大道2006号南航公司办公楼3层",
+    "lat": 22.524955,
+    "lng": 113.924116,
+    "hasPediatrics": false,
+    "phone": "18138819251",
+    "images": [
+      "https://aos-comment.amap.com/B0KDVARNUG/comment/0D83E57F_F645_40B3_9B08_2D0985BBD7CD_L0_001_2000_150_1768442178401_90558062.jpg",
+      "https://store.is.autonavi.com/showpic/c07dc49ecadcf0620000002731636580?type=pic",
+      "https://aos-comment.amap.com/comment/20260307-22821994ea68e896a6c9fdf0-ADlEKbHerPYA1KDuFVVLN3.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0I60N7GTS",
+    "name": "深圳横岗格伦菲尔口腔门诊部",
+    "address": "茂盛路1号金沙摩尔购物中心5F层(东南门进入直行40m,扶梯上到5F可见)",
+    "lat": 22.646763,
+    "lng": 114.205242,
+    "hasPediatrics": false,
+    "phone": "13008835269;18219167045",
+    "images": [
+      "https://aos-comment.amap.com/B0I60N7GTS/comment/1feedback_sendimag_1732940661326_23287153.jpg",
+      "https://aos-comment.amap.com/B0I60N7GTS/comment/content_media_external_images_media_1000012489_ss__1736663317768_40174018.jpg",
+      "https://aos-comment.amap.com/B0I60N7GTS/comment/e0dc4cd3d6feb19db391642970045bbc_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37UI6K",
+    "name": "爱康卓悦体检中心(快验保分院)",
+    "address": "内环路45号汇宾广场二期汇绣阁裙楼",
+    "lat": 22.509609,
+    "lng": 113.917337,
+    "hasPediatrics": false,
+    "phone": "4008100120",
+    "images": [
+      "https://aos-comment.amap.com/B02F37UI6K/comment/content_media_external_file_1000078781_ss__1763776012981_63351444.jpg",
+      "https://store.is.autonavi.com/showpic/0ac8251f31c7f7ff3db45cc6e36a2a1f",
+      "http://store.is.autonavi.com/showpic/8d3388a7203bbe4130daba110330dfb1"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37VDVU",
+    "name": "深圳市慢性病防治中心",
+    "address": "翠竹街道翠达社区布心路2021号",
+    "lat": 22.574022,
+    "lng": 114.135171,
+    "hasPediatrics": false,
+    "phone": "0755-25108962",
+    "images": [
+      "https://store.is.autonavi.com/showpic/4282c985d804a5c346cd4e19167a7cd9",
+      "http://store.is.autonavi.com/showpic/42c7580e903ce8adda15bdbacaaae87e",
+      "https://store.is.autonavi.com/showpic/57f6695044c20fd111ce6a5ce58e961a"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F30005D",
+    "name": "深圳市龙岗区第七人民医院龙岭院区",
+    "address": "布吉街道吉华路175号(长龙地铁站B口步行450米)",
+    "lat": 22.605508,
+    "lng": 114.115802,
+    "hasPediatrics": false,
+    "phone": "0755-28740471",
+    "images": [
+      "https://aos-comment.amap.com/B02F30005D/comment/content_media_external_images_media_6269_1735316034699_59834663.jpg",
+      "https://aos-comment.amap.com/B02F30005D/comment/172960000364_1729600005995_70509933.jpg",
+      "https://store.is.autonavi.com/showpic/179f78ce72d499fa0000000950916760"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37VG7Q",
+    "name": "深圳百合医院",
+    "address": "龙岗大道布吉段2277号(大芬地铁站C口步行350米)",
+    "lat": 22.61671,
+    "lng": 114.139265,
+    "hasPediatrics": false,
+    "phone": "0755-28729191",
+    "images": [
+      "https://store.is.autonavi.com/showpic/c514b73fe416b020370621cb1e116a34",
+      "https://store.is.autonavi.com/showpic/44d0f99d3f8b58080000003065302201?type=pic",
+      "http://store.is.autonavi.com/showpic/1b21a193f07042d3c84a4b068a1c6f32"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0H6F52W3X",
+    "name": "深圳德贝美口腔门诊部(深圳总院)",
+    "address": "龙华街道三联社区金銮国际商务大厦3期A栋201",
+    "lat": 22.663678,
+    "lng": 114.035503,
+    "hasPediatrics": false,
+    "phone": "18123959356",
+    "images": [
+      "http://store.is.autonavi.com/showpic/911018e71f6acea087a2b7be2dfb23da",
+      "http://store.is.autonavi.com/showpic/7b7cdd6f39c0f70f60a2c963a65dfcae",
+      "http://store.is.autonavi.com/showpic/6dc79ac0f1c0df24973c5f66e83c2c00"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0LDBS5U2D",
+    "name": "深圳鼎植口腔·疑难种植正畸美白中心(福田口岸店)",
+    "address": "福田街道福民社区福强路1031号福民大厦201室",
+    "lat": 22.522698,
+    "lng": 114.068741,
+    "hasPediatrics": false,
+    "phone": "18923712356",
+    "images": [
+      "https://aos-comment.amap.com/B0LDBS5U2D/comment/0feedback_sendimag_1764991223522_39732578.jpg",
+      "https://aos-comment.amap.com/B0LDBS5U2D/comment/2025-12-02-17-18-23%2BE714D7B6-2A22-475F-966E-1764C0D1F77_1764667123783_88332527.jpg",
+      "https://aos-comment.amap.com/B0LDBS5U2D/comment/2025-12-05-10-20-59%2B69CC85B6-D7CA-4CDF-99F8-B0934094167_1764901341213_01450126.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0LU4ZW5OT",
+    "name": "深圳健安医院",
+    "address": "民治街道沙吓工业区169号",
+    "lat": 22.628996,
+    "lng": 114.038074,
+    "hasPediatrics": false,
+    "phone": "0755-89709546;18926055208",
+    "images": [
+      "https://store.is.autonavi.com/showpic/9dc86e84c882a0753a2c3b26c3a185ae",
+      "https://store.is.autonavi.com/showpic/d0dc16ad97cbafe20000002885256939?type=pic",
+      "http://store.is.autonavi.com/showpic/9e81f158b6b31cc6953045c816a203f0"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFHGFZZS",
+    "name": "固生堂深圳南山分院",
+    "address": "南山街道南山大道南海大厦B座301",
+    "lat": 22.519981,
+    "lng": 113.922893,
+    "hasPediatrics": false,
+    "phone": "13168041769",
+    "images": [
+      "https://store.is.autonavi.com/showpic/c3c4ca76cee70d6726943d159ec1c66b",
+      "https://store.is.autonavi.com/showpic/cf4e7b84c25e06450000003767108093?type=pic",
+      "https://aos-comment.amap.com/B0FFHGFZZS/comment/EE115C35_003E_4623_A66F_1237F07F6F88_L0_001_1080_192_1769517759578_63187086.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFHDMF4S",
+    "name": "深圳美莱口腔全国连锁·专科专技(福田总店)",
+    "address": "华强北街道福强杜区深南中路2050号华南电力大厦2层2号、3层、4层、5层",
+    "lat": 22.540775,
+    "lng": 114.09004,
+    "hasPediatrics": false,
+    "phone": "17722581083",
+    "images": [
+      "https://aos-comment.amap.com/B0FFHDMF4S/comment/77cb44dadf10ee548491035ff2108a6a_2048_2048_80.jpg",
+      "https://store.is.autonavi.com/showpic/b0ac27e5ba6d135d1e50c6e4fde80824",
+      "https://aos-comment.amap.com/B0FFHDMF4S/comment/799a21cff2a18daa67a23c5adfd8bac7_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0M67MVPAX",
+    "name": "深圳吉祥格伦菲尔口腔门诊部(龙岗世贸分院)",
+    "address": "龙翔大道8010号vivo手机店门口4号电梯直上",
+    "lat": 22.716331,
+    "lng": 114.245494,
+    "hasPediatrics": false,
+    "phone": "13008835269;18219167045",
+    "images": [
+      "https://store.is.autonavi.com/showpic/afeffb6cd793f7e05e9ec6650aec61c7",
+      "https://store.is.autonavi.com/showpic/54ad0c959b8e32b08e5b5869590ee93e",
+      "https://store.is.autonavi.com/showpic/fc8471ca4c1873b9822e22150e8154ff"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0L015FUFN",
+    "name": "固生堂深圳宝安分院",
+    "address": "西乡街道前进二路103号",
+    "lat": 22.592887,
+    "lng": 113.879669,
+    "hasPediatrics": false,
+    "phone": "13144845268",
+    "images": [
+      "https://store.is.autonavi.com/showpic/fd4016fe64d643df610245c0b7ab7faa",
+      "https://store.is.autonavi.com/showpic/667e64e7449d3d2e0000002706826638?type=pic",
+      "https://store.is.autonavi.com/showpic/c1ef860b8efaf8bf0000002706910696?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F38TEYX",
+    "name": "深圳爱康健口腔医院",
+    "address": "南湖街道罗湖桥社区建设路1001号火车站综合大楼建设路1001-3号1楼北侧、4-8楼",
+    "lat": 22.532863,
+    "lng": 114.117585,
+    "hasPediatrics": false,
+    "phone": "0755-61302631",
+    "images": [
+      "http://store.is.autonavi.com/showpic/9d5c93b99be3bf051a9152b2e433eccd",
+      "https://store.is.autonavi.com/showpic/a580548a5d45e2f00000003489136580",
+      "http://store.is.autonavi.com/showpic/0750a5ac769ea8feb9e1fe774c3d3884"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0HUK788B1",
+    "name": "深圳悦瞳眼科",
+    "address": "粤海街道海珠社区海德一道88号中洲控股金融中心A栋16A",
+    "lat": 22.517585,
+    "lng": 113.933406,
+    "hasPediatrics": false,
+    "phone": "13310865629",
+    "images": [
+      "http://store.is.autonavi.com/showpic/1cc9e3c4d4f34efaaf9b3955afc9e3c7",
+      "http://store.is.autonavi.com/showpic/21ce0d0d0b1ee46e9e14644af42769c8",
+      "http://store.is.autonavi.com/showpic/b32b6f652b25168445b8e15da7da1cfa"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFIPW0LP",
+    "name": "深圳岗厦格伦菲尔口腔门诊部",
+    "address": "福田街道岗厦社区福华路322号文蔚大厦102及2楼",
+    "lat": 22.535321,
+    "lng": 114.069632,
+    "hasPediatrics": false,
+    "phone": "13008835269;18219167045",
+    "images": [
+      "https://store.is.autonavi.com/showpic/cc424253b23403e60000002416894094?type=pic",
+      "http://store.is.autonavi.com/showpic/05ef06b3dae74e5d69ee14c2fcc948d6",
+      "http://store.is.autonavi.com/showpic/63a210dbbf4ef5f2704695a7de63742c"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFLN49B8",
+    "name": "安仁堂门诊",
+    "address": "福华三路11号辛诚花园(岗厦地铁站D口步行410米)",
+    "lat": 22.531076,
+    "lng": 114.066128,
+    "hasPediatrics": false,
+    "phone": "0755-23480927;0755-82536334;17302681510",
+    "images": [
+      "http://store.is.autonavi.com/showpic/91a5ee8487af7e1f81cdc0bff81a1bc7",
+      "http://store.is.autonavi.com/showpic/1f7df6a7ad9f1087f2a05ba8b7187a89",
+      "http://store.is.autonavi.com/showpic/d2177f3016805981a74ef188590a702e"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0J3FA7799",
+    "name": "雍禾植发(深圳南山分院)",
+    "address": "南山街道荔林社区东滨路4531号荔源商务大厦A座三楼",
+    "lat": 22.511491,
+    "lng": 113.912535,
+    "hasPediatrics": false,
+    "phone": "18583695214",
+    "images": [
+      "https://aos-comment.amap.com/B0J3FA7799/comment/643760b4d3d321720836f91722a6562a_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B0J3FA7799/comment/IMG_20240921_144519_tem_1726901194236_12720836.jpg",
+      "https://aos-comment.amap.com/B0J3FA7799/comment/8d1085c78fc37d6a0be74858ff979cc9_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFHZDVOR",
+    "name": "深圳平乐骨伤科医院(康复院区)",
+    "address": "坪山大道6100号",
+    "lat": 22.738426,
+    "lng": 114.362373,
+    "hasPediatrics": false,
+    "phone": "0755-23379379",
+    "images": [
+      "https://aos-comment.amap.com/B0FFHZDVOR/comment/b9b67b62f09cc4b765c29fe6869ffab8_2048_2048_80.jpg",
+      "https://store.is.autonavi.com/showpic/1bb32a6a8702e243a164822d486b50f9",
+      "http://store.is.autonavi.com/showpic/9761a06135183e029a44307013f7cbb7"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFK8S6I5",
+    "name": "深圳宝城口腔门诊部",
+    "address": "西乡街道乐群社区南沙新村西一巷1-3-5号一层二层三层四层",
+    "lat": 22.574808,
+    "lng": 113.87226,
+    "hasPediatrics": false,
+    "phone": "0755-22225661",
+    "images": [
+      "https://aos-comment.amap.com/B0FFK8S6I5/comment/a7817f4b83ba688e70aedd8163e6ed6e_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B0FFK8S6I5/comment/f2cb054f23d996d9fdad9df6552bab0e_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B0FFK8S6I5/comment/7047b0dd84f3a1520350016f3e90979a_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0I1K7Y96G",
+    "name": "深圳婳美医疗美容医院",
+    "address": "翠竹街道水贝社区文锦北路1118号鹏大厦1层二层、三层",
+    "lat": 22.566204,
+    "lng": 114.123347,
+    "hasPediatrics": false,
+    "phone": "18665867235",
+    "images": [
+      "https://aos-comment.amap.com/B0I1K7Y96G/comment/7f02e87763eb82043e7ac535e7b6b3ed_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B0I1K7Y96G/comment/1f5a324c75f6195ed294e9c921dcd3fd_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B0I1K7Y96G/comment/5e397e7c266a82f30b4049eda7f4664f_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0I1FSOCRK",
+    "name": "第一健康(宝安院区)",
+    "address": "西乡街道富华社区美兰悦城B栋5-6层",
+    "lat": 22.593319,
+    "lng": 113.883999,
+    "hasPediatrics": false,
+    "phone": "0755-23571652;4001111300",
+    "images": [
+      "https://store.is.autonavi.com/showpic/ed4a90b1f01526064043ca98693d375c",
+      "https://store.is.autonavi.com/showpic/d939e84244bd873c0000002260522314?type=pic",
+      "https://store.is.autonavi.com/showpic/7a243ac7502f81ffcfc8c99e503cc8b8"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFF4G9WA",
+    "name": "坪山区中医院(坑梓院区)",
+    "address": "坪山大道6100号",
+    "lat": 22.738425,
+    "lng": 114.362376,
+    "hasPediatrics": false,
+    "phone": "0755-23379379",
+    "images": [
+      "http://store.is.autonavi.com/showpic/0324dd067704f19db74ecd286543a37c",
+      "http://store.is.autonavi.com/showpic/00b7110d95522893db0007ea8532795a",
+      "https://aos-comment.amap.com/B0FFF4G9WA/comment/D6AD4D41_5E4D_4860_96A9_D6336F590113_L0_001_1080_192_1765250653838_05836237.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFFG0BRZ",
+    "name": "深圳市龙华区慢性病防治中心",
+    "address": "福城街道四和社区观澜大道118号(茜坑地铁站F口旁)",
+    "lat": 22.697208,
+    "lng": 114.041452,
+    "hasPediatrics": false,
+    "phone": "0755-28024008;0755-28024068",
+    "images": [
+      "http://store.is.autonavi.com/showpic/922dcbe67db77e87aec7e605d204bb74",
+      "https://store.is.autonavi.com/showpic/350e264f95204aed79c93b8db6b83591",
+      "http://store.is.autonavi.com/showpic/6ff3e3ed0e97934df68f463ed6f4a2ff"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0KRL6X547",
+    "name": "深圳德正堂中医(华强北店)",
+    "address": "华强北街道华航社区振华路122号海外装饰大厦1栋振华西路122-1号",
+    "lat": 22.544519,
+    "lng": 114.082493,
+    "hasPediatrics": false,
+    "phone": "0755-23615320;15919887931",
+    "images": [
+      "https://store.is.autonavi.com/showpic/3f6def8ade72ddb6e0db2846f520b9e2",
+      "https://store.is.autonavi.com/showpic/0aab85de6a80dacaa188cc705efe34ac",
+      "https://store.is.autonavi.com/showpic/b65dec93085315772ce23f06ad14fbd7"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37TA5M",
+    "name": "福田区八卦岭社区健康服务中心",
+    "address": "八卦路56号(八卦岭地铁站B口步行470米)",
+    "lat": 22.562824,
+    "lng": 114.099962,
+    "hasPediatrics": false,
+    "phone": "0755-25926966",
+    "images": [
+      "http://store.is.autonavi.com/showpic/52ceff3b803481e80aa713dad7254ab9",
+      "http://store.is.autonavi.com/showpic/9693c55ce43382dabc14052e29ceeffd",
+      "http://store.is.autonavi.com/showpic/572812147ac63a091e24a4fb"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFJ1MEL4",
+    "name": "深圳奥亚(森之康分院)",
+    "address": "莲花街道福中社区金田路4036号荣超大厦M2层01、02、03b、05、06、08、09单元",
+    "lat": 22.54815,
+    "lng": 114.063591,
+    "hasPediatrics": false,
+    "phone": "0755-36886645;15986677716",
+    "images": [
+      "http://store.is.autonavi.com/showpic/07d54e43b975126638b6bc7520a1007c",
+      "http://store.is.autonavi.com/showpic/887e98e179dc9529391cb108be0a3fec",
+      "http://store.is.autonavi.com/showpic/865217fa8a64159f30a71eb789fdaf45"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0I63CXCBN",
+    "name": "深圳蚝乡麦芽口腔门诊部(沙井院区)",
+    "address": "新桥街道新二社区中心路金达城大厦3A",
+    "lat": 22.733095,
+    "lng": 113.830208,
+    "hasPediatrics": false,
+    "phone": "13049325348",
+    "images": [
+      "https://comment-oss-online.oss-cn-wulanchabu.aliyuncs.com/B0I63CXCBN/comment/1654597911844_temp_1654597913322_77ffd718.jpg",
+      "https://aos-comment.amap.com/B0I63CXCBN/comment/0BCC1B95_5108_4449_8FD3_B5D16E6F86C9_L0_001_1080_192_1754448292238_29856815.jpg",
+      "https://aos-comment.amap.com/B0I63CXCBN/comment/374bf339738d2ce824965ce78f00ae03_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F38I7XY",
+    "name": "罗湖区中医院康复分院",
+    "address": "黄贝路2136号碧波社区健康服务中心二楼",
+    "lat": 22.560835,
+    "lng": 114.143944,
+    "hasPediatrics": false,
+    "phone": "0755-25548588",
+    "images": [
+      "https://aos-comment.amap.com/B02F38I7XY/comment/20260306-5b4b47a68d06204d543e1ba5-6W7Z2AzHl0r5zVY8ikk33t.jpg",
+      "http://store.is.autonavi.com/showpic/3a86a9448262ce74d1dc2f1726a4dfee",
+      "http://store.is.autonavi.com/showpic/ccb1a221a454b8ac6de9230c5c899c77"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFGX70QO",
+    "name": "深圳市大鹏新区葵涌人民医院",
+    "address": "葵新北路26号",
+    "lat": 22.632309,
+    "lng": 114.422435,
+    "hasPediatrics": false,
+    "phone": "0755-84207803",
+    "images": [
+      "http://store.is.autonavi.com/showpic/28e175228caed313855d5bab67d7ccbe",
+      "https://store.is.autonavi.com/showpic/b23ed7e7d7d714630000003065592105?type=pic",
+      "https://store.is.autonavi.com/showpic/95ecaabe2ce22988888bdda0acbb4d33"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0IK9ZWJTX",
+    "name": "深圳大仟里麦芽口腔门诊部(光明院区)",
+    "address": "马田街道合水口社区松白路4545号大仟里b区负一楼148-150号",
+    "lat": 22.774526,
+    "lng": 113.89632,
+    "hasPediatrics": false,
+    "phone": "13049325348",
+    "images": [
+      "http://store.is.autonavi.com/showpic/d017fc93269003474a9676396ba7dffd",
+      "https://aos-comment.amap.com/B0IK9ZWJTX/comment/ca9ee3c45b93ff948a7e0e28a8a10968_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B0IK9ZWJTX/comment/781902d64269441ee260b37736335d1e_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0G0TUFOSO",
+    "name": "爱康卓悦(深圳车公庙分院)",
+    "address": "沙头街道天安社区深南大道6031号杭钢富春商务大厦二层201",
+    "lat": 22.534288,
+    "lng": 114.020804,
+    "hasPediatrics": false,
+    "phone": "4008100120",
+    "images": [
+      "https://aos-comment.amap.com/B0G0TUFOSO/comment/content_media_external_file_59310_ss__1764983294570_30627813.jpg",
+      "https://aos-comment.amap.com/B0G0TUFOSO/comment/content_media_external_file_59312_ss__1764983321070_87646944.jpg",
+      "https://aos-comment.amap.com/B0G0TUFOSO/comment/content_media_external_file_59315_ss__1764983294565_78566777.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFLI3SEM",
+    "name": "深圳肤康皮肤病专科门诊部",
+    "address": "南新路23号满维大厦",
+    "lat": 22.516008,
+    "lng": 113.916669,
+    "hasPediatrics": false,
+    "phone": "13163760913;18122053652",
+    "images": [
+      "https://aos-comment.amap.com/B0FFLI3SEM/comment/5b0cace157f30161e3777fdf401d5021_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B0FFLI3SEM/comment/content_media_external_file_15051_1749968301125_02202095.jpg",
+      "https://aos-comment.amap.com/B0FFLI3SEM/comment/content_media_external_file_15051_1749968301132_57339002.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFIOX7KR",
+    "name": "深圳鹏爱秀琪医疗美容医院",
+    "address": "梅林街道梅华路252号1层二层三层",
+    "lat": 22.563025,
+    "lng": 114.044468,
+    "hasPediatrics": false,
+    "phone": "0755-83122526",
+    "images": [
+      "http://store.is.autonavi.com/showpic/f848f208914c387c2d031cabe2ea26d8",
+      "https://aos-comment.amap.com/B0FFIOX7KR/comment/dbd3993b71edde29e7ce7116979b8e77_2048_2048_80.jpg",
+      "https://store.is.autonavi.com/showpic/21001c17496d05dedb401e1d320d463b"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFGBIEFN",
+    "name": "深圳市南山区医疗集团总部田厦社区健康服务中心",
+    "address": "南新路2030-14号",
+    "lat": 22.528975,
+    "lng": 113.918825,
+    "hasPediatrics": false,
+    "phone": "0755-26460646",
+    "images": [
+      "https://store.is.autonavi.com/showpic/183b5fe203cd685d7a6aa74849f1c5b8",
+      "https://store.is.autonavi.com/showpic/1f2f0bc414a631920000003041038185",
+      "https://aos-comment.amap.com/B0FFGBIEFN/comment/content_media_external_file_1000012106_ss__1772698904506_02903786.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0HRO7M1MZ",
+    "name": "泰康拜博口腔(华强北旗舰店)",
+    "address": "华强北街道红荔路38号群星广场裙楼六楼",
+    "lat": 22.548391,
+    "lng": 114.087769,
+    "hasPediatrics": false,
+    "phone": "4008500755",
+    "images": [
+      "http://store.is.autonavi.com/showpic/d28676f66fd97e204340ba396cef7321",
+      "https://store.is.autonavi.com/showpic/de8dae7a3c2103dd1b08a7af8eff8f05",
+      "https://store.is.autonavi.com/showpic/903817c55628e666162eaecdc19e04a3"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFHHU1OV",
+    "name": "美年大健康体检中心(深圳福田中港城分院)",
+    "address": "福保街道福强路中亚美食城三层A01G-A16",
+    "lat": 22.516384,
+    "lng": 114.053531,
+    "hasPediatrics": false,
+    "phone": "0755-36886645;15986677716",
+    "images": [
+      "https://aos-comment.amap.com/B0FFHHU1OV/comment/b04ec3ea4e7e16dd1d0469d5a36e1649_2048_2048_80.jpg",
+      "http://store.is.autonavi.com/showpic/04fb36404263584f8e4983f263034617",
+      "https://store.is.autonavi.com/showpic/7432082f3f780ceba1cab5aea8871686"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0JBZSG9ZX",
+    "name": "深圳市人民医院第二门诊部",
+    "address": "东门北路1017号(翠竹地铁站D口步行230米)",
+    "lat": 22.55662,
+    "lng": 114.127626,
+    "hasPediatrics": false,
+    "phone": "0755-82297791",
+    "images": [
+      "http://store.is.autonavi.com/showpic/d3f722f53fd650fb9e87d4fc1caeef02",
+      "https://store.is.autonavi.com/showpic/22fc158ecf50fbba500db297d9d260cb"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0KGX7QVK9",
+    "name": "深圳粤式格伦菲尔口腔门诊部",
+    "address": "南湖街道罗湖桥社区人民南路2069号国际商业大厦北座嘉宾路二层A号",
+    "lat": 22.539526,
+    "lng": 114.118252,
+    "hasPediatrics": false,
+    "phone": "13008835269;18219167045",
+    "images": [
+      "http://store.is.autonavi.com/showpic/8397da7974360efaf633680175e1721d",
+      "https://store.is.autonavi.com/showpic/819d6813ed8a8279c7883ff7226ee1ac",
+      "https://aos-comment.amap.com/B0KGX7QVK9/comment/D7C00D26_D916_44CB_9469_D1A1ED1527D8_L0_001_1170_1554_1741625193995_07319345.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFKPSNM6",
+    "name": "深圳四达格伦菲尔口腔门诊部",
+    "address": "南山街道登良社区粤海路2号四达大厦A栋、B栋103-104、202",
+    "lat": 22.510079,
+    "lng": 113.925397,
+    "hasPediatrics": false,
+    "phone": "13008835269;18219167045",
+    "images": [
+      "http://store.is.autonavi.com/showpic/05ef06b3dae74e5d69ee14c2fcc948d6",
+      "http://store.is.autonavi.com/showpic/e3f72b038396ba36348797b3e5ec4a58",
+      "https://aos-comment.amap.com/B0FFKPSNM6/comment/77ec117ec949547121d5780be61ec607_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFK29FSS",
+    "name": "深圳江南格伦菲尔口腔门诊部",
+    "address": "东门街道东门中路江南大厦首层101号铺",
+    "lat": 22.546258,
+    "lng": 114.121855,
+    "hasPediatrics": false,
+    "phone": "13008835269;18219167045",
+    "images": [
+      "https://store.is.autonavi.com/showpic/61967d88c20952330000003240180523?type=pic",
+      "https://store.is.autonavi.com/showpic/deced1591928eea667c02adf9bd3ff90?type=7",
+      "https://aos-comment.amap.com/B0FFK29FSS/comment/5b1035ed44d325006016c9da30e0f37f_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F38UN6A",
+    "name": "深圳市龙华区人民医院体检中心",
+    "address": "龙华街道景龙建设路38号",
+    "lat": 22.654818,
+    "lng": 114.031997,
+    "hasPediatrics": false,
+    "phone": [],
+    "images": [
+      "http://store.is.autonavi.com/showpic/a5dad5cb9c56238fb5eb04b47fd38958",
+      "https://aos-comment.amap.com/B02F38UN6A/comment/content_media_external_file_1000015165_ss__1763775843275_81235485.jpg",
+      "https://aos-comment.amap.com/B02F38UN6A/comment/content_media_external_file_100001516_1763777167370_04514459.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F38PEEQ",
+    "name": "北京大学深圳医院门诊部",
+    "address": "莲花路1120号北京大学深圳医院内",
+    "lat": 22.555688,
+    "lng": 114.049479,
+    "hasPediatrics": false,
+    "phone": [],
+    "images": [
+      "https://store.is.autonavi.com/showpic/f0ff9f0dc2e1b32090a298f038fd77eb",
+      "http://store.is.autonavi.com/showpic/0926ad50841d56a8ef4a9c10f538b4de",
+      "http://store.is.autonavi.com/showpic/21f15eb87a3240f2bd457e57d9f85a69"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0K2X79I6U",
+    "name": "春分口腔医院",
+    "address": "新桥街道新沙路276号新沙·集悦汇",
+    "lat": 22.728588,
+    "lng": 113.824559,
+    "hasPediatrics": false,
+    "phone": "13714291513",
+    "images": [
+      "http://store.is.autonavi.com/showpic/54455c53d45d522f6ac9c51408ee5cbb",
+      "https://store.is.autonavi.com/showpic/696ff5de0b8d0ca80000004916202904?type=pic",
+      "https://store.is.autonavi.com/showpic/e92e7cbd824d6c3d0000005187938896?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFJFC1OT",
+    "name": "卓正医疗(金中环国际商务大厦店)",
+    "address": "金田路3037号金中环商务大厦A座5楼",
+    "lat": 22.534205,
+    "lng": 114.062489,
+    "hasPediatrics": false,
+    "phone": "0755-83479801",
+    "images": [
+      "https://aos-comment.amap.com/B0FFJFC1OT/comment/23122FFB_CEB5_4810_9E36_34E2D02338AE_L0_001_1170_130_1764324628388_30031114.jpg",
+      "https://aos-comment.amap.com/B0FFJFC1OT/comment/7B125DA3_8A31_40AA_98BE_33709B1B6201_L0_001_1170_140_1764324628388_78249593.jpg",
+      "https://aos-comment.amap.com/B0FFJFC1OT/comment/0F0488F1_48FB_4C4F_90A8_B8D77C4D57B3_L0_001_1170_145_1764324628388_00339356.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFFWXV0I",
+    "name": "河山口腔连锁(宝安总店)",
+    "address": "西乡街道龙珠社区富成路2-4号西秦宾馆二楼(西乡大门旁)",
+    "lat": 22.576923,
+    "lng": 113.883657,
+    "hasPediatrics": false,
+    "phone": "0755-85254177",
+    "images": [
+      "http://store.is.autonavi.com/showpic/b68af9c310162540e3ec675fd53bb5da",
+      "http://store.is.autonavi.com/showpic/131779345459a58622c2c15bc7c25adb",
+      "http://store.is.autonavi.com/showpic/3275dca62fb01e5910a7b02773bf682c"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFJIVUFU",
+    "name": "罗湖医院集团翠竹街道社区健康服务中心",
+    "address": "贝丽南路25号",
+    "lat": 22.562018,
+    "lng": 114.127037,
+    "hasPediatrics": false,
+    "phone": "0755-82171452",
+    "images": [
+      "https://store.is.autonavi.com/showpic/a82e0209d0cb0f200000002470372585",
+      "https://aos-comment.amap.com/B0FFJIVUFU/comment/file_media_Photo_478_IMG_1759976214_462_IMG_20251009_101514_jpg_ss_2.jpg",
+      "https://store.is.autonavi.com/showpic/84ea84621cee3ea5863b7b5dfb25fee1"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0H10STCBE",
+    "name": "深圳市光明区妇幼保健院院本部",
+    "address": "光明街道华夏路39号",
+    "lat": 22.752281,
+    "lng": 113.943372,
+    "hasPediatrics": true,
+    "phone": "0755-23242051",
+    "images": [
+      "https://store.is.autonavi.com/showpic/f8a66acd4c490c93230ee22e61d73ced",
+      "https://aos-comment.amap.com/B0H10STCBE/comment/content_media_external_file_1000033989_ss__1753773214304_38215659.jpg",
+      "https://aos-comment.amap.com/B0H10STCBE/comment/content_media_external_images_media_100004740_1749371392577_63774855.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFK3KJRS",
+    "name": "深圳市光明区妇幼保健院门诊部",
+    "address": "华夏路北侧华明苑A栋1-3层",
+    "lat": 22.760537,
+    "lng": 113.935851,
+    "hasPediatrics": true,
+    "phone": "0755-23242180",
+    "images": [
+      "https://aos-comment.amap.com/B0FFK3KJRS/comment/content_media_external_images_media_11632_1727340893615_85817497.jpg",
+      "https://aos-comment.amap.com/B0FFK3KJRS/comment/content_media_external_images_media_11632_1727340893616_65522121.jpg",
+      "https://aos-comment.amap.com/B0FFK3KJRS/comment/content_media_external_images_media_11632_1727340893616_94530608.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F38TCOP",
+    "name": "泰康拜博口腔(科技园店)",
+    "address": "粤海街道滨海社区白石路3939号怡化金融科技大厦301",
+    "lat": 22.524447,
+    "lng": 113.935963,
+    "hasPediatrics": false,
+    "phone": "0755-82349067",
+    "images": [
+      "https://store.is.autonavi.com/showpic/cbdd619c968b973857186a54927389ff",
+      "https://store.is.autonavi.com/showpic/f7d646f9e7773e6707dbbbe9a7ea853c",
+      "https://store.is.autonavi.com/showpic/797b37d6a12b529d4b6124f98f1bd6e3"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFHZMA5K",
+    "name": "深圳市眼科医院门诊",
+    "address": "泽田路18号深圳市眼科医院内",
+    "lat": 22.546077,
+    "lng": 114.014367,
+    "hasPediatrics": false,
+    "phone": "0755-23959600",
+    "images": [
+      "http://store.is.autonavi.com/showpic/979d91ea92292f69e2bfd2a1240caf4c",
+      "https://store.is.autonavi.com/showpic/1d4fa4e4da5a38930000004631338771?type=pic",
+      "http://store.is.autonavi.com/showpic/9ca1a3c512f4be34ae52f4b448220904"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0M6TL6OP3",
+    "name": "美年大健康(深圳美幸门诊部)",
+    "address": "香蜜湖街道香岭社区紫竹七道1号博园商务大厦401",
+    "lat": 22.533885,
+    "lng": 114.005969,
+    "hasPediatrics": false,
+    "phone": "0755-36886645;15986677716",
+    "images": [
+      "http://store.is.autonavi.com/showpic/251b357f0d31261b4ead2b3869ad26b9",
+      "http://store.is.autonavi.com/showpic/87dbb50cf5d1a9ff5939bfe77591fed8",
+      "https://store.is.autonavi.com/showpic/dae2f78c91414a715071b2bdf028018d"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0IU9AX8NQ",
+    "name": "木棉花门诊部(深圳科学馆分院)",
+    "address": "华强北街道深南中路2002号中核大厦5楼",
+    "lat": 22.541296,
+    "lng": 114.095003,
+    "hasPediatrics": false,
+    "phone": "0755-82736293",
+    "images": [
+      "http://store.is.autonavi.com/showpic/7ef35f260a4a3356b43728a4d69f3242",
+      "http://store.is.autonavi.com/showpic/52fe8f9cb94bac3e4a2c113d605e843f",
+      "https://aos-comment.amap.com/B0IU9AX8NQ/comment/98FD13DC_752D_4D0B_A1CB_57B5945C3C80_L0_001_2000_150_1758012477727_11691693.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F38IC2P",
+    "name": "深圳市第二人民医院(中西医结合分院)",
+    "address": "振华路2号",
+    "lat": 22.544877,
+    "lng": 114.095731,
+    "hasPediatrics": false,
+    "phone": "0755-83216006",
+    "images": [
+      "http://store.is.autonavi.com/showpic/8f1448710fd70f89d528eb9f5d5ae3a1",
+      "https://store.is.autonavi.com/showpic/3366364000b033a2dee06ea51f00aa8d",
+      "https://store.is.autonavi.com/showpic/2f071f34cc2503c095263103e22716cd"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFJB6HJ6",
+    "name": "深圳新锦华妇产医院",
+    "address": "横岗街道六园路7号",
+    "lat": 22.643672,
+    "lng": 114.193464,
+    "hasPediatrics": false,
+    "phone": "0755-33113386;18594203135",
+    "images": [
+      "https://aos-comment.amap.com/B0FFJB6HJ6/comment/46C1D78D_2E40_477D_AC45_628E8FA7E57A_L0_001_1500_200_1749963554544_73306763.jpg",
+      "https://aos-comment.amap.com/B0FFJB6HJ6/comment/E1CE3212_5EF8_4F67_9C55_D01AD5B0A33F_L0_001_2000_150_1746874623896_36734923.jpg",
+      "https://aos-comment.amap.com/B0FFJB6HJ6/comment/IMG_20250519_145339_tem_1747638146248_57933753.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFK1WO9C",
+    "name": "海王星辰(深圳天骄华庭店)",
+    "address": "招商街道海月社区工业八路123号天骄华庭2栋147号",
+    "lat": 22.49971,
+    "lng": 113.935348,
+    "hasPediatrics": false,
+    "phone": "0755-86953750",
+    "images": [
+      "https://store.is.autonavi.com/showpic/13e51026a79230aff8a788d78b071e30",
+      "http://store.is.autonavi.com/showpic/204f544a90898d89680599d0b403a214"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFIC7XEG",
+    "name": "深圳铭德口腔(龙岗总院)",
+    "address": "龙岗街道平南社区龙岗大道(龙岗段)4001号万汇大厦112-115",
+    "lat": 22.717588,
+    "lng": 114.254129,
+    "hasPediatrics": false,
+    "phone": "13631651496",
+    "images": [
+      "http://store.is.autonavi.com/showpic/4a5bf89f1ae4db5afdf8dac98642e666",
+      "http://store.is.autonavi.com/showpic/539333e4c641ee4bba31fa46798b6215",
+      "https://aos-comment.amap.com/B0FFIC7XEG/comment/723f91a8ea559cf02b4c56ab48766c4f_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  }
+]

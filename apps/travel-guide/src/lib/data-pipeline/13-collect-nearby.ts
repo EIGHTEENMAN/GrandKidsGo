@@ -3,15 +3,23 @@
 //
 // 数据来源：高德周边搜索 v3/place/around，中心点=spot.lat/lng，半径=2000m
 //
-// 周边 5 类（覆盖前端期望字段名 + 配额可控）：
+// 周边 11 类（5 基础 + 6 亲子专属，覆盖前端期望字段名 + 配额可控）：
 //   - 母婴室: 双路搜 (types=060000 keywords=母婴室) + (types=060000 keywords=母婴)，合并去重
 //   - 儿童餐: 餐饮大类 + 儿童友好品牌正则识别（肯德基/麦当劳/必胜客/海底捞/亲子/儿童）
 //   - 医院  : 医疗大类 + 儿科医院识别（独立儿科标记 isPediatrics）
 //   - 便利店: 便利店子类
 //   - 停车场: 停车场子类
+//   - 药店  : 药店子类（应急用药）
+//   - 母婴店: 商场内母婴用品店（奶粉/尿不湿）
+//   - 玩具店: 反斗城/乐高/泡泡玛特 等儿童玩具专卖店
+//   - 儿童书店: 绘本馆/儿童书店
+//   - 亲子酒店: 住宿大类 + 亲子/家庭/儿童 名称正则二次过滤
+//   - 直饮水: 公园/景区常见直饮水点
 //
 // 输出 JSON 形态（写入 Spot.nearbyFacilities JSONB）：
-//   { 母婴室:[{name,distance}], 儿童餐:[...], 医院:[...], 便利店:[...], 停车场:[...], 推车可达:bool, 无障碍通道:bool }
+//   { 母婴室:[{name,distance}], 儿童餐:[...], 医院:[...], 便利店:[...], 停车场:[...],
+//     药店:[...], 母婴店:[...], 玩具店:[...], 儿童书店:[...], 亲子酒店:[...], 直饮水:[...],
+//     推车可达:bool, 无障碍通道:bool }
 //
 // 优化：
 //   - 并发处理多个 spot（默认 8 个并发，可调）
@@ -40,6 +48,9 @@ const CHILD_FRIENDLY_RESTAURANT_RE = /肯德基|麦当劳|必胜客|汉堡王|�
 
 /** 儿科医院识别（基于关键词） */
 const PEDIATRICS_RE = /儿童医院|儿科|妇幼|儿童医学|小儿|儿童保健/i;
+
+/** 亲子酒店识别（基于名称） */
+const CHILD_FRIENDLY_HOTEL_RE = /亲子|家庭|儿童|度假|主题|club/i;
 
 /** 无障碍通道识别（基于高德 tag 字段，弱信号） */
 const ACCESSIBILITY_RE = /无障碍|disabled|accessible/i;
@@ -72,6 +83,33 @@ const NEARBY_CATEGORIES: CategoryConfig[] = [
   {
     key: "停车场",
     queries: [{ types: "150200", keywords: "" }],
+  },
+  {
+    key: "药店",
+    queries: [{ types: "090200", keywords: "" }],
+  },
+  {
+    key: "母婴店",
+    queries: [{ types: "060000", keywords: "母婴" }],
+  },
+  {
+    key: "玩具店",
+    queries: [{ types: "060000", keywords: "玩具" }],
+  },
+  {
+    key: "儿童书店",
+    queries: [
+      { types: "060000", keywords: "书店" },
+      { types: "060000", keywords: "绘本馆" },
+    ],
+  },
+  {
+    key: "亲子酒店",
+    queries: [{ types: "100000", keywords: "" }], // 住宿大类 + 名称正则二次过滤
+  },
+  {
+    key: "直饮水",
+    queries: [{ types: "060000", keywords: "直饮水" }],
   },
 ];
 
@@ -146,6 +184,12 @@ async function main() {
   console.log(`[13] city=${cityFilter ?? "all"} limit=${limit ?? "无"} dryRun=${dryRun} force=${force} concurrency=${concurrency}`);
 
   const client = createAmapClient();
+  // 跑前提示：AMAP 当日已用配额（多天续跑时一眼看出还剩多少）
+  if ((client as any).usedToday !== undefined) {
+    const u = (client as any).usedToday as number;
+    const b = (client as any).dailyBudget as number;
+    console.log(`[13] AMAP 当日已用 ${u}/${b}（剩余 ${b - u} calls）`);
+  }
   const cache = new Map<string, Record<string, any[]>>();
   const startTime = Date.now();
 
@@ -158,7 +202,10 @@ async function main() {
     select: { id: true, name: true, cityId: true, lat: true, lng: true, nearbyFacilities: true },
     ...(limit ? { take: limit } : {}),
   });
-  console.log(`[13] 处理 ${spots.length} 个 spot`);
+  // 已写入 nearbyFacilities 的 spot 数（force=true 时仍会跑这些），方便续跑
+  const alreadyFilled = spots.filter(s => s.nearbyFacilities && Object.keys(s.nearbyFacilities as any).length > 0).length;
+  const toRun = force ? spots.length : spots.length - alreadyFilled;
+  console.log(`[13] 处理 ${spots.length} 个 spot（已写入 ${alreadyFilled}, ${force ? "force 全跑" : `待跑 ${toRun}`}）`);
 
   let updated = 0;
   let skipped = 0;
@@ -213,6 +260,8 @@ async function main() {
           ...p,
           isPediatrics: p.name && PEDIATRICS_RE.test(p.name),
         }));
+      } else if (cat.key === "亲子酒店") {
+        list = rawList.filter((p: any) => p.name && CHILD_FRIENDLY_HOTEL_RE.test(p.name)).slice(0, 5);
       } else {
         list = rawList.slice(0, 5);
       }
@@ -237,6 +286,17 @@ async function main() {
       推车可达: Boolean(hasParkingNear || hasEssentialNear),
       无障碍通道: hasAccessibilityTag,
     };
+
+    // 防护：所有 11 类周边设施都为空（高德 daily quota 耗尽时常见）。
+    // 此时跳过写入，避免污染 spot.nearby_facilities（前端无法区分"真没设施"与"还没采集"）。
+    const allFacEmpty = NEARBY_CATEGORIES.every(c => {
+      const arr = (facilities as any)[c.key];
+      return Array.isArray(arr) && arr.length === 0;
+    });
+    if (allFacEmpty) {
+      console.warn(`[13] ${spot.name} 11 类全空，跳过写入（疑似 AMAP quota 耗尽）`);
+      return { kind: "skip" as const };
+    }
 
     if (!dryRun) {
       try {
@@ -277,6 +337,28 @@ async function main() {
 
   const totalElapsed = ((Date.now() - startTime) / 1000).toFixed(1);
   console.log(`[13] 完成 updated=${updated} skipped=${skipped} errors=${errors} cacheHits=${cacheHits} 用时 ${totalElapsed}s`);
+  // 跑后提示：明早续跑时一眼看出还剩多少 spot + AMAP quota 余量
+  if (!force) {
+    // Prisma Json 字段 null 比较必须用 equals: null（空 JSONB 由 processSpot 防护不再写入）
+    const stillEmpty = await prisma.spot.count({
+      where: {
+        ...(cityFilter ? { cityId: `city-${cityFilter}` } : {}),
+        lat: { not: null },
+        lng: { not: null },
+        nearbyFacilities: { equals: null },
+      },
+    });
+    if (stillEmpty > 0) {
+      console.log(`[13] ⚠️  还有 ${stillEmpty} 个 spot 未写 nearby_facilities，建议明天 daily quota reset 后重跑本脚本`);
+    } else {
+      console.log(`[13] ✅ 该城全部 spot 已写完 nearby_facilities`);
+    }
+  }
+  if ((client as any).usedToday !== undefined) {
+    const u = (client as any).usedToday as number;
+    const b = (client as any).dailyBudget as number;
+    console.log(`[13] AMAP 当日累计 ${u}/${b} calls（剩余 ${b - u}）`);
+  }
   await prisma.$disconnect();
 }
 

@@ -56,11 +56,11 @@ async function ensureCity(city: typeof CITY_META[number]): Promise<void> {
       province: city.province,
       lat: city.center.lat,
       lng: city.center.lng,
-      tags: ["亲子", "三城首站"],
+      tags: ["亲子", "数据采集中"],
       bestSeasons: ["3", "4", "5", "9", "10", "11"],
-      kidHook: `${city.name} 三城首站，由高德 POI + AI 起草保障的初始数据。KOL 复评后升级。`,
-      momHook: `${city.name} 妈妈视角点点评测请到发完后被 KOL 复评。`,
-      dadHook: `${city.name} 爸爸视角下延续体力考里考虑。`,
+      kidHook: `${city.name} 亲子数据由高德 POI + AI 起草保障的初始数据。KOL 复评后升级。`,
+      momHook: `${city.name} 妈妈视角点点评测待 KOL 复评。`,
+      dadHook: `${city.name} 爸爸视角待 KOL 复评。`,
     },
   });
 }

@@ -1,0 +1,5860 @@
+[
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0I07ZJMY6",
+    "name": "深圳美高梅酒店",
+    "address": "盐梅路33号",
+    "lat": 22.602591,
+    "lng": 114.329754,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://aos-comment.amap.com/B0I07ZJMY6/comment/content_media_external_file_100008888_1756712138258_52713076.jpg",
+      "https://aos-comment.amap.com/comment/content_service__1769650709296_17569473_1769650775319_10861438.jpg",
+      "https://store.is.autonavi.com/showpic/9ad6f3cfa7b096317740f431706c7367"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0LB9SW90J",
+    "name": "深圳南山伊敦酒店",
+    "address": "蛇口龟山路8号(海上世界地铁站H口步行270米)",
+    "lat": 22.484224,
+    "lng": 113.911851,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/cd008e21c94d26ce170d08a49e55155f",
+      "https://aos-comment.amap.com/B0LB9SW90J/comment/C9B025CC_5A45_4D9E_AE81_8BFC459E4706_L0_001_1500_200_1752900269468_01356805.jpg",
+      "https://store.is.autonavi.com/showpic/13cf067367ffe25b9c6563ad4f1afb51"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0K2O57B25",
+    "name": "深圳光明温德姆至尊酒店",
+    "address": "光明办事处光明新区创投路368号",
+    "lat": 22.744556,
+    "lng": 113.938795,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/dd4a4f587e0ed1923775e4686cbe1aef",
+      "https://store.is.autonavi.com/showpic/6ad10e0d8dc6e43d0e2c2c5fd9a6ae5e",
+      "https://store.is.autonavi.com/showpic/1c1250213ae3853455a5503071027003"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0KU9LHIJ8",
+    "name": "深圳宝安京基华邑酒店",
+    "address": "西乡街道宝安大道4560号",
+    "lat": 22.589744,
+    "lng": 113.854332,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://aos-comment.amap.com/B0KU9LHIJ8/comment/content_media_external_file_1000057087_ss__1770739153785_29004921.jpg",
+      "https://aos-comment.amap.com/4d964927b040f119f3181508/comment/content_service__1773807190084_31556632_1773807192977_51951594.jpg",
+      "https://store.is.autonavi.com/showpic/40667b832a3f7dde65ba0c1cccaf1ce3"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0KD2S1EQA",
+    "name": "五洲体育中心酒店",
+    "address": "泥岗西路2013号(黄木岗地铁站11号口步行140米)",
+    "lat": 22.556928,
+    "lng": 114.088873,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/596949abc2154dd6f1e61d1d31828a10",
+      "https://aos-comment.amap.com/B0KD2S1EQA/comment/content_media_external_file_540888_ss__1767499037063_15224626.jpg",
+      "https://store.is.autonavi.com/showpic/1faa24f293cdf80b7da288029cd5bec1"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFHH4OLZ",
+    "name": "深圳海景嘉途酒店",
+    "address": "华侨城华侨街(华侨城地铁站A口步行50米)",
+    "lat": 22.53458,
+    "lng": 113.98606,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/0a71fbe21f0b5a98fef36cd2bb740de2",
+      "https://aos-comment.amap.com/B0FFHH4OLZ/comment/366535EC_528D_49CE_87C6_94A6353E4023_L0_001_910_69_1769992187809_46138232.jpg",
+      "https://store.is.autonavi.com/showpic/34f2112d7112ad3603c471f8f267b08a"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0KDJ5EFMI",
+    "name": "较场尾非渡故里民宿(较场尾大鹏所城店)",
+    "address": "鹏飞路与迎宾一街交叉口东南220米",
+    "lat": 22.590176,
+    "lng": 114.5129,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://aos-comment.amap.com/B0KDJ5EFMI/comment/content_media_external_file_42768_ss__1750491944074_44111227.jpg",
+      "https://store.is.autonavi.com/showpic/847a35ea9345a08ccd1107471cb679ce",
+      "https://aos-comment.amap.com/B0KDJ5EFMI/comment/content_media_external_file_60043_1751778792440_54950342.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0KGZC44ZP",
+    "name": "深圳湾城际酒店",
+    "address": "滨海大道3368号广晟科创大厦",
+    "lat": 22.522332,
+    "lng": 113.940196,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/d8d01208d6758fb68dc04e7b41668ef6",
+      "https://store.is.autonavi.com/showpic/3223b1ee61d07a2fe187df1fb5283dd7",
+      "https://store.is.autonavi.com/showpic/15507128aa3f616f56dbacedbedcbced"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0LK0589XD",
+    "name": "深圳湾万象城桔子水晶酒店",
+    "address": "粤海街道海珠社区海德三道1066号深创投广场2001",
+    "lat": 22.518729,
+    "lng": 113.945213,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/a977a5fc61ea6cb9e395d175e042c6f9",
+      "https://store.is.autonavi.com/showpic/268c05491654643fe6908b4b50e4d991",
+      "https://store.is.autonavi.com/showpic/830c50462b52e99b42e2bc73749cefeb"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0KGGP97WE",
+    "name": "深圳南山水瑆花园臻品之选酒店",
+    "address": "科技园科技路13号",
+    "lat": 22.543996,
+    "lng": 113.949292,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://aos-comment.amap.com/B0KGGP97WE/comment/content_media_external_images_media_1000023402_ss__1750777965105_93074862.jpg",
+      "https://aos-comment.amap.com/B0KGGP97WE/comment/B42976D1_5A44_4861_9E83_C33633977C2E_L0_001_1320_99_1767319109991_74560565.jpg",
+      "https://store.is.autonavi.com/showpic/c68ac08eb47d0f841dc01aedbbf20b62"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0L1XSQAL3",
+    "name": "深圳北站壹方天地亚朵酒店",
+    "address": "深圳市龙华区壹方天地D区西南侧",
+    "lat": 22.64303,
+    "lng": 114.03288,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/bdda51f697496d069ce025db45caa46a",
+      "https://aos-comment.amap.com/B0L1XSQAL3/comment/963AD990_1E4F_43AD_ADD7_4E354C3AFAED_L0_001_2000_150_1766679125136_12822791.jpg",
+      "https://store.is.autonavi.com/showpic/1203ba8d47fbe0fa52026387d2a58c75"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0KGZ7563P",
+    "name": "深圳南山科技园澳特科兴亚朵S酒店",
+    "address": "粤海街道琼宇路10号澳特科兴科学园C栋101号",
+    "lat": 22.551079,
+    "lng": 113.948015,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/9805450f448696791e32575832fef23b",
+      "http://store.is.autonavi.com/showpic/1d7b1a10eec71cc93cc684987462ba59",
+      "https://store.is.autonavi.com/showpic/696f3df04b29be0f769ad2633a99d540"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MAKDNLP5",
+    "name": "深圳雅高美憬阁精选酒店",
+    "address": "浪韵路8号",
+    "lat": 22.703642,
+    "lng": 113.988691,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/63abf71d0b39ac226b434ddae92cc5c0",
+      "https://store.is.autonavi.com/showpic/29bdbf3b59b6255a35e52c82d4eeb1da",
+      "https://store.is.autonavi.com/showpic/54f76bb1bbe930d24ab402791f21d64f"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0KDGPF42C",
+    "name": "深圳罗湖口岸国贸桔子水晶酒店",
+    "address": "南湖街道嘉南社区春风路3001号",
+    "lat": 22.538144,
+    "lng": 114.125312,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/5f1c366f6b134270e18722be5c4e1ebf",
+      "https://store.is.autonavi.com/showpic/cc80fef8b9d1a6fd92f0736fec6125a6",
+      "https://store.is.autonavi.com/showpic/fb89ee346a582a683226fc663e4420cc"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0L1TA32U3",
+    "name": "深圳坪山站六和城亚朵酒店",
+    "address": "东纵路373号(坪环地铁站A1口步行310米)",
+    "lat": 22.686207,
+    "lng": 114.343263,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/659f679234a381c2357498f7cc636c9f",
+      "https://store.is.autonavi.com/showpic/185bdac9ed8749917fb09301921e6f14",
+      "https://store.is.autonavi.com/showpic/6d935db7bcfc7298181e1a65a6c5a81b"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0KDX7YZ3O",
+    "name": "深圳龙华大浪商业中心希尔顿欢朋酒店",
+    "address": "华荣路联建产业园1栋B座",
+    "lat": 22.683102,
+    "lng": 113.992192,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/73ae7106511c18070b3f8a2d3cb82ede",
+      "https://store.is.autonavi.com/showpic/3d2ece89f7876b1e3801dfea73163d17",
+      "https://store.is.autonavi.com/showpic/4c9978d2901fb40281414f55ec21a3fe"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0KU45Q4X8",
+    "name": "秋果S酒店(深圳科技园南头古城店)",
+    "address": "南新路3125号5号商铺",
+    "lat": 22.537968,
+    "lng": 113.919624,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/1f7a9c1a84fcbd26211745cd8d7c0e49",
+      "https://store.is.autonavi.com/showpic/a7e70e9a90730f48c830d11fb24340e9",
+      "https://store.is.autonavi.com/showpic/c2723c6e22d6eb6ac64cc5e5a8779929"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0K09ZZLP1",
+    "name": "深圳福田CBD岗厦北地铁站亚朵酒店",
+    "address": "彩田路3012-1号(岗厦北地铁站10号口步行90米)",
+    "lat": 22.536394,
+    "lng": 114.068395,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/970916bde92dad39df2c401b8cdb3a5e",
+      "http://store.is.autonavi.com/showpic/a845d38cc3d75e6145c9bba495a02de9",
+      "https://store.is.autonavi.com/showpic/d58e33c181240a9fe409996e5d93e422"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0KU319DK0",
+    "name": "深圳大梅沙万豪万枫酒店",
+    "address": "宋彩道1号(大梅沙地铁站C口步行150米)",
+    "lat": 22.596042,
+    "lng": 114.307739,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/3c8b6aa0056075dfc0aa0973c1141f81",
+      "https://aos-comment.amap.com/B0KU319DK0/comment/content_media_external_images_media_100006705_1729651981927_19024913.jpg",
+      "https://store.is.autonavi.com/showpic/cda45246cc8d635901f53d650ef06b43"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0LUKCP0Y7",
+    "name": "深圳南山万科云城城际酒店",
+    "address": "西丽街道曙光社区茶光路东文光工业区17号101、3楼局部、4-8楼",
+    "lat": 22.569075,
+    "lng": 113.951728,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/84347934eb211b83aabf4c099c4885cd",
+      "https://store.is.autonavi.com/showpic/76037e28600ab7cd269e0a47ed0c2ef9",
+      "https://store.is.autonavi.com/showpic/3bc5039d1f2cd11ede8129279aa440e5"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0LA656Y09",
+    "name": "深圳宝安机场希尔顿惠庭酒店",
+    "address": "深圳市宝安区西乡街道南昌社区航城大道501号",
+    "lat": 22.60255,
+    "lng": 113.843954,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/11baa4b975d314b3334dfabcb6d09532",
+      "https://store.is.autonavi.com/showpic/a3d6454f638b05d50000000957678125?type=pic",
+      "https://store.is.autonavi.com/showpic/59ac731b91cdbc5056a63e9020409b0e"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0KBRUQN9D",
+    "name": "深圳宝安新安希尔顿欢朋酒店",
+    "address": "龙江二巷71号(新安公园地铁站C2口步行260米)",
+    "lat": 22.561487,
+    "lng": 113.909239,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/308e4ce74abe0d4289e2d0c608383044",
+      "https://store.is.autonavi.com/showpic/9115af6b64faaa3100ffe3d2f702edb8",
+      "https://store.is.autonavi.com/showpic/369ac398e937d151a5b8967c5b623763"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0KRRHYYGY",
+    "name": "深圳光明福朋喜来登酒店",
+    "address": "聚丰路7号",
+    "lat": 22.755785,
+    "lng": 113.92871,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/5c6d9de654b31645c57021c5b776411e",
+      "https://aos-comment.amap.com/B0KRRHYYGY/comment/0E861DE6_7FB7_4B52_95EF_89DBC05844CD_L0_001_1500_2000_1740234188185_43856542.jpg",
+      "https://store.is.autonavi.com/showpic/ea752481e0739eebac04040a3a88d531"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0LACOLCYB",
+    "name": "深圳湾万象城逸扉酒店",
+    "address": "粤海街道海珠社区滨海大道3369号有线信息传输大厦北门",
+    "lat": 22.520864,
+    "lng": 113.937137,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/c956593ce20edc020000002801296911?type=pic",
+      "https://store.is.autonavi.com/showpic/bc149b4f9ae114c4c1295eb18b20efe7",
+      "https://store.is.autonavi.com/showpic/4c6224cffc403585cd59047468b82846"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0KRSSJIIN",
+    "name": "美季酒店(深圳龙华区政府观澜天虹商场店)",
+    "address": "观澜大和路234号",
+    "lat": 22.699297,
+    "lng": 114.049839,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/dce152aa2e2d091dac11e08ca0564c2d",
+      "https://store.is.autonavi.com/showpic/48055e138b2fcaf2d904774721368be6",
+      "https://store.is.autonavi.com/showpic/e5139d9eb7ac9f88d7e983c968110722"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MDG5QO5M",
+    "name": "深圳大运新城黄阁坑地铁站亚朵酒店",
+    "address": "龙城街道黄阁坑社区黄阁路京基智慧科园2栋2单元",
+    "lat": 22.718225,
+    "lng": 114.217575,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/70559e0299aeb391f14de53c79b3a9f1",
+      "https://store.is.autonavi.com/showpic/98ae64e8786ede1289787946e1211486",
+      "https://store.is.autonavi.com/showpic/7e41c55ac02893add30f35f4fa95edd5"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0L22U0B3C",
+    "name": "全季酒店(深圳华强北八卦岭地铁站酒店)",
+    "address": "岁宝壹品D座47层(八卦岭地铁站D口步行70米)",
+    "lat": 22.562122,
+    "lng": 114.094221,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/261f4e52a1565314ce9d5b43fab456c7",
+      "https://store.is.autonavi.com/showpic/03ad88cc62bdcad3bd84914bde1f08cf",
+      "https://store.is.autonavi.com/showpic/51c1f90a82a3b9848b5540829e5e57dd"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0K675ADED",
+    "name": "深圳福田皇岗口岸秋果酒店",
+    "address": "福田南路32号",
+    "lat": 22.52764,
+    "lng": 114.077692,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/5ccfb1684794aff55ed03b8d02e727b0",
+      "https://store.is.autonavi.com/showpic/3afa54e306198bc434b6ae2af9c0f3b8",
+      "https://store.is.autonavi.com/showpic/593b66d7185dd6c51eace33f799b4497"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0K65AHE45",
+    "name": "深圳宝安中心颐朵朵酒店(宝安体育馆店)",
+    "address": "玉兰路与新湖路交叉口南60米",
+    "lat": 22.563242,
+    "lng": 113.876912,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/46e370f8a9a851e5b44eed0091150500",
+      "https://aos-comment.amap.com/B0K65AHE45/comment/20260319-1796cec89cba4fd786e0cfa8-8270JACmjTU5sWKfZe2CNR.jpg",
+      "https://store.is.autonavi.com/showpic/f596adf8a8ad6bbcba6f06ce80f6e66d"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0KASZN12O",
+    "name": "建国璞隐酒店(深圳福田华强北店)",
+    "address": "深南中路2081-1号西丽大厦",
+    "lat": 22.540024,
+    "lng": 114.088554,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/37c5e08915f5684c892ecb4d3c412528",
+      "https://store.is.autonavi.com/showpic/93dca5e7c88bae1da046324518990887",
+      "https://store.is.autonavi.com/showpic/23fa7f9a93cdc06738cf1c205c95af88"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0LBT75FCC",
+    "name": "深圳湾希尔顿逸林酒店",
+    "address": "海天一路8号百度国际大厦西塔楼20层",
+    "lat": 22.524388,
+    "lng": 113.942011,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/706171f86f3e27c19e3fada0ebe304e8",
+      "https://aos-comment.amap.com/comment/content_service_fa5ac7a3fefc346d537dc35aeae59ed1_1768624264909_22584156.jpg",
+      "https://store.is.autonavi.com/showpic/4a182d7d7f084599b78c32e786866814"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0K2O787MR",
+    "name": "米漾酒店(福田会展中心岗厦地铁站店)",
+    "address": "福田街道岗厦社区彩田路3002号",
+    "lat": 22.535959,
+    "lng": 114.068399,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/8a48f54d75df6599f582d24777d90935",
+      "http://store.is.autonavi.com/showpic/85b15452841f773a845ade6de16c1536",
+      "https://aos-comment.amap.com/B0K2O787MR/comment/15DD3584_D295_4D0D_B82D_4AE285BD8F77_L0_001_1500_200_1746645339579_18679851.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0KBK4CW1P",
+    "name": "深圳光明希尔顿欢朋酒店",
+    "address": "田园路马田街道雪仙丽大厦",
+    "lat": 22.78444,
+    "lng": 113.861813,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/5c3bcfb30152dec709b7d59a175d8f7e",
+      "https://store.is.autonavi.com/showpic/1c6b65cfcf05984077ad685d1ab5f90e",
+      "https://store.is.autonavi.com/showpic/261465b91f6093d9ca66b78562d1bd38"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0K0K58W2P",
+    "name": "贝纳德酒店(深圳前海宝安中心壹方城店)",
+    "address": "创业一路2108号好望角D栋-E栋303",
+    "lat": 22.558195,
+    "lng": 113.889888,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/b98dd1be1dac9a0ede1b989126bb8aa9",
+      "http://store.is.autonavi.com/showpic/88a2161e00f163db6ea8d3db6fb67a98",
+      "https://aos-comment.amap.com/B0K0K58W2P/comment/content_media_external_images_media_1000015272_ss__1733804078194_44606266.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0KRHNOITV",
+    "name": "深圳宝安大悦城桔子水晶酒店",
+    "address": "宝晖大厦自由路2号(翻身地铁站C口步行500米)",
+    "lat": 22.563632,
+    "lng": 113.89596,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/903b07a970608678a3afdf2aa989df71",
+      "https://store.is.autonavi.com/showpic/a812c2bfd9aa47acfde5f6fdf32cd5d4",
+      "https://store.is.autonavi.com/showpic/22371605baf69d0dc3a57bcf4208ebe2"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0KG4CIHWM",
+    "name": "深圳湾南油逸扉酒店",
+    "address": "粤海街道南油社区建南路15号恒大天璟B栋40层",
+    "lat": 22.508715,
+    "lng": 113.926646,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/03a7b5599c221fda7556f0ec37d86f57",
+      "https://store.is.autonavi.com/showpic/16dc1d4c4a6e06407c61d0bbc29d79b7",
+      "https://store.is.autonavi.com/showpic/78074f95d811cc07c4b1ffcb81b41930"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0L2JU7430",
+    "name": "深圳龙岗凯悦嘉轩酒店",
+    "address": "腾飞路42号",
+    "lat": 22.724941,
+    "lng": 114.216313,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/a7ad225ae3f01c6e4b1be23788f79260",
+      "https://aos-comment.amap.com/comment/20260314-2c97ea047887275377c8525a-1GJTynbchKQ7QGN7xzJsJi.jpg",
+      "https://store.is.autonavi.com/showpic/8d4963bbe1e064c1b9aa3864b3f23a4f"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0K1MSPPZP",
+    "name": "深圳宝安机场美仑酒店",
+    "address": "宝安大道5010号A座(后瑞地铁站A口步行330米)",
+    "lat": 22.626558,
+    "lng": 113.837379,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/5bac99644a440cd28a5ab6dec3d39a1b",
+      "https://store.is.autonavi.com/showpic/a3af05c93cb944e40d844d0888d894bc",
+      "https://store.is.autonavi.com/showpic/75fb1b0120a2e7216cdc41748a44cf77"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MBOUX6Y8",
+    "name": "卓邦国际酒店(深圳罗湖东门老街万象城店)",
+    "address": "宝安南路3097号",
+    "lat": 22.555334,
+    "lng": 114.10858,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "images": [
+      "https://store.is.autonavi.com/showpic/3d0437abd3460f496fc241bb211ef6b3",
+      "https://store.is.autonavi.com/showpic/daff281aad8e80710000003568558626?type=pic",
+      "https://store.is.autonavi.com/showpic/1927bb5072b965bdd1d08150b5f70975"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0KAAU8PPY",
+    "name": "欢漫酒店(深圳布吉石芽岭地铁站店)",
+    "address": "布李路295号",
+    "lat": 22.629019,
+    "lng": 114.13104,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/71509be2c498a74e40db5aa546d86150",
+      "https://store.is.autonavi.com/showpic/4e5ad976f970986a3d45f0779a90bd41",
+      "https://store.is.autonavi.com/showpic/539e9f28d9dae36e20036bf61abdec44"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0LRBHNU5Y",
+    "name": "深圳福田华强北桔子水晶酒店",
+    "address": "华强北街道福强社区振华路1号滨江爱义南方大厦2楼",
+    "lat": 22.544373,
+    "lng": 114.095518,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/93067e33dbea144a0eac9b1d0c372db4",
+      "https://store.is.autonavi.com/showpic/2cc5e2f87636e5180a9b9601eeb660e5",
+      "https://store.is.autonavi.com/showpic/5dfc3567a6d3ce0ca1849b430bc3a48a"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MABMSF83",
+    "name": "秋果X酒店(深圳宝安中心西乡地铁站店)",
+    "address": "西乡街道西乡大道296号",
+    "lat": 22.570623,
+    "lng": 113.861044,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/9cacc86e7952b3e0d8b4eceaca76261f",
+      "https://store.is.autonavi.com/showpic/9fb72b1ba7e698d3e8e8cbaa13eab68d",
+      "https://store.is.autonavi.com/showpic/53a85478a4cfcb4c04460d3c298e8a15"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0K35U83A4",
+    "name": "深圳南山英达仕酒店",
+    "address": "达实大厦2号门旁(深大地铁站C口步行350米)",
+    "lat": 22.535111,
+    "lng": 113.941711,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/f8838487c8247d12e177e6beb5d8e4c2",
+      "https://store.is.autonavi.com/showpic/c7ca82dab451ebf422dfee9e455bec86",
+      "https://store.is.autonavi.com/showpic/d9ad7a82643abbf1cc7bb1dc51096b85"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0K0HZPIOD",
+    "name": "深圳龙华大浪商业中心桔子水晶酒店",
+    "address": "华兴路19号1978龙海国际A座",
+    "lat": 22.679222,
+    "lng": 113.994734,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/0f6933b7878c6d43489b01847811892f",
+      "https://store.is.autonavi.com/showpic/ad04fb11e2a3e2572eae309012e57432",
+      "https://store.is.autonavi.com/showpic/759fc083342806b98d58f7023e3ce259"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0K1T1YJHI",
+    "name": "艺龙壹棠酒店(深圳南山科技园高新北地铁站店)",
+    "address": "西丽街道科苑北路78号共享大厦A座",
+    "lat": 22.5603,
+    "lng": 113.94646,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/dabe517dfbea45cd5184acb5ec4faa90",
+      "https://store.is.autonavi.com/showpic/672d80e52611121049dd7b18c42fbd78",
+      "https://store.is.autonavi.com/showpic/5198997299498b8d8c37e46b58f67191"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0LKMR732I",
+    "name": "深圳文歆酒店(翻身宝安中心地铁站店)",
+    "address": "海华社区新安街道翻身路159号",
+    "lat": 22.566309,
+    "lng": 113.888393,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/878b15490e1cc1d09c36d4bd1ad14d09",
+      "https://store.is.autonavi.com/showpic/e38559652c40ea27f00b172a78b8f850",
+      "https://store.is.autonavi.com/showpic/c5886b1a63652b963343ea6f8c7d7e80"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0K35Z6S0Q",
+    "name": "深圳光明智选假日酒店",
+    "address": "光源四路8号贝特瑞新材料集团大厦一层、三层、五至九层",
+    "lat": 22.740349,
+    "lng": 113.936613,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/2f744c2e0c40cb9a0a577cf63b1e49f4",
+      "https://store.is.autonavi.com/showpic/89570f70208494a575819e26838065e2",
+      "https://store.is.autonavi.com/showpic/e616c4e185b07c6519bfe5f51662279d"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0KB659BV5",
+    "name": "丽呈朗誉酒店(深圳大运新城黄阁坑地铁站店)",
+    "address": "吉祥里豪庭9栋铭德大厦A座1楼",
+    "lat": 22.722653,
+    "lng": 114.220075,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/939926675d2e7711731b4a2f763629a8",
+      "https://store.is.autonavi.com/showpic/9cb3fd6a250d505f4f153e6267a1c1ee",
+      "https://store.is.autonavi.com/showpic/8338fdbc5c16676153a54dbb078a85f1"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0LRGHTVZT",
+    "name": "秋果酒店X(水贝珠宝城东湖公园店)",
+    "address": "太宁路7-5号(东湖商务公寓西北门旁)",
+    "lat": 22.566492,
+    "lng": 114.141849,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/a9c31531a6f8b3a15b386bc28ad6efe6",
+      "https://store.is.autonavi.com/showpic/170025ecf813a8b7db67cc5175718e11",
+      "https://store.is.autonavi.com/showpic/4a9852c08f28de48616fe4ae56947f83"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MB4GYJ8D",
+    "name": "麗枫酒店(深圳光明国际汽车城明湖公园店)",
+    "address": "马田街道石围社区石围油麻岗工业区216号102",
+    "lat": 22.744007,
+    "lng": 113.894963,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "images": [
+      "https://store.is.autonavi.com/showpic/28091306803ff38fa21dd553a54598ca",
+      "https://store.is.autonavi.com/showpic/b5d369b7ca4b30bc68de649390e2d06e",
+      "https://store.is.autonavi.com/showpic/2fc0a27c68999306ed1f5f27e5e25a6a"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MBTHC4UB",
+    "name": "铂莱德花园酒店(深圳宝能中心笋岗店)",
+    "address": "笋岗街道笋西社区展艺路8号干货仓825栋二层整层",
+    "lat": 22.560686,
+    "lng": 114.107992,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/df35de65f525d3b3cc5ffd0af3742596",
+      "https://store.is.autonavi.com/showpic/ec116b3066ae997fd5fa4962c251427d",
+      "https://store.is.autonavi.com/showpic/84e969bd4c472d6e5b6c6e17e0c6156b"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0LRNHKXC6",
+    "name": "悦途酒店(深圳大学南头古城地铁站店)",
+    "address": "南新路南头街88号(南头古城地铁站E4口步行420米)",
+    "lat": 22.536011,
+    "lng": 113.92004,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/bea084c99824be048d57db3810c45401",
+      "https://store.is.autonavi.com/showpic/e2ce4ff91a6d34ae0000002430774665?type=pic",
+      "https://aos-comment.amap.com/B0LRNHKXC6/comment/content_media_external_file_65994_ss__1767831237522_97771416.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0LDJGWKU9",
+    "name": "深圳铂尔登酒店(世界之窗华润万象天地店)",
+    "address": "沙河街道明珠街社区沙河东路186号湾畔花园8栋201",
+    "lat": 22.540069,
+    "lng": 113.968143,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/16eea78a3af4e8422c9a94a0bca4fb2a",
+      "https://aos-comment.amap.com/B0LDJGWKU9/comment/2c5a64972fe161fb55121edaa06a5838_2048_2048_80.jpg",
+      "https://store.is.autonavi.com/showpic/92d8e9cc4da4a87d44ae34fa21588c94"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0KGHR33XG",
+    "name": "望桐露营地(梧桐山风景店)",
+    "address": "东湖街道梧桐山社区赤水洞村16-1号101",
+    "lat": 22.594909,
+    "lng": 114.194793,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/f84c5978043fe5c9e533b73f5e358d72",
+      "https://store.is.autonavi.com/showpic/bd575b729c8b810db90515bc2b97edbd",
+      "https://store.is.autonavi.com/showpic/d05dfe91ce9369c2ef45d82fe3ad66ea"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0LRVCJWXP",
+    "name": "深圳北站壹方天地轻居酒店",
+    "address": "工业路67号",
+    "lat": 22.638542,
+    "lng": 114.042739,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/ef105506e63a76de7014c62d88518bc1",
+      "https://store.is.autonavi.com/showpic/1cfe83158a9cc93c21a79176fb180454",
+      "https://store.is.autonavi.com/showpic/e619b98bacd35c089bba3afb33e92f78"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0K1KRONKL",
+    "name": "深圳憬黎酒店(深圳湾口岸南山服装批发城店)",
+    "address": "工业八路63号",
+    "lat": 22.500854,
+    "lng": 113.921675,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/e874e81ab1e8b1c0c6b4ed642128a48a",
+      "https://store.is.autonavi.com/showpic/f25a88521b077f6694cfb65ed5a25c55",
+      "https://store.is.autonavi.com/showpic/3a2c805c6bc600a68f7262d838a7a8e9"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0K1O51T3F",
+    "name": "深圳大梅沙栖鸾山海度假酒店",
+    "address": "梅沙街道爱梅路1号(大梅沙地铁站C口步行340米)",
+    "lat": 22.596506,
+    "lng": 114.306505,
+    "hasFamilyRoom": false,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "images": [
+      "https://store.is.autonavi.com/showpic/a13068f3d4c598342f9ea0bfded83d2b",
+      "https://store.is.autonavi.com/showpic/f2ce020a026a450c7e4abe684ce5dae1",
+      "https://store.is.autonavi.com/showpic/19f050743a9baab375cf86963a1a2b89"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0K0L7LZX0",
+    "name": "深圳盛捷湾厦服务公寓",
+    "address": "招商东路27号(湾厦地铁站D口步行230米)",
+    "lat": 22.492443,
+    "lng": 113.937888,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/a4e6810208f023e0cf9174713f116b69",
+      "http://store.is.autonavi.com/showpic/d7f1d9270a6b0980468ddf81fdee51eb",
+      "https://store.is.autonavi.com/showpic/b69f68b225b8963dfff9461d22f50fb3"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0JK1OK8M5",
+    "name": "阿卡那拉·橘子海日落美宿",
+    "address": "南澳街道洋稠路3号洋畴湾花园44栋101",
+    "lat": 22.508714,
+    "lng": 114.48207,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://aos-comment.amap.com/B0JK1OK8M5/comment/788766AD_CED7_46E4_BA08_EB0D45AD5C2D_L0_001_1126_2000_1734343845658_96285948.jpg",
+      "https://aos-comment.amap.com/B0JK1OK8M5/comment/content_media_external_file_1000005153_ss__1749549583925_36300073.jpg",
+      "https://store.is.autonavi.com/showpic/716218287e39f96eb57f9016801e6cb4"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0LBLRHXIL",
+    "name": "卓邦酒店(深圳罗湖口岸万象城店)",
+    "address": "建设路2016南方证券大厦B座F1层",
+    "lat": 22.540238,
+    "lng": 114.11684,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/6a9a60b05651ed894b65649c53f2d6ab",
+      "https://store.is.autonavi.com/showpic/973833625cccb87b60393b2f495a6399",
+      "https://store.is.autonavi.com/showpic/c59e921fb2f5a29003ebdfafd422b8f2"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0LKHSQ4RV",
+    "name": "深圳罗湖口岸金光华希岸Deluxe酒店",
+    "address": "春风路3007号5楼(向西村地铁站A2口步行130米)",
+    "lat": 22.537845,
+    "lng": 114.124924,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/8e8c1d020a015886c4a6bda9f5914d87",
+      "https://store.is.autonavi.com/showpic/43dc154f1d5293b05ecabca160173761",
+      "https://store.is.autonavi.com/showpic/a55c66ecd8157c2aaa20d0811aacc2ec"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0K30RL690",
+    "name": "深圳澳澄海岸酒店(深圳湾口岸后海中心河公园店)",
+    "address": "蓝天路15-18号(湾厦地铁站A口步行480米)",
+    "lat": 22.488631,
+    "lng": 113.938911,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/8b8df63181b24eab685b2de0d692befe",
+      "https://store.is.autonavi.com/showpic/8d9cd9aaa184e2495e87eabb81d82c7b",
+      "http://store.is.autonavi.com/showpic/e2088f76f7cf25de7376572eeef8e07f"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0K0DSAZ44",
+    "name": "中濠悦际酒店(深圳国际会展中心店)",
+    "address": "福海街道永福路114号(森钢工业园)",
+    "lat": 22.682709,
+    "lng": 113.802306,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "images": [
+      "https://store.is.autonavi.com/showpic/57fc6759889c33d9bccb9084a0a700f9",
+      "https://store.is.autonavi.com/showpic/6e936b5dc16f9a45d1ed562e5e8fb376",
+      "https://store.is.autonavi.com/showpic/a0ee8a45d11a818f13b475e92961c9e6"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0LKBUU0ZA",
+    "name": "深圳卓邦酒店(南山荔林地铁站店)",
+    "address": "南山街道前海路瑞景华庭1楼",
+    "lat": 22.513896,
+    "lng": 113.9094,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/8d36cdea432c16038ef277ae9f3ebebf",
+      "https://store.is.autonavi.com/showpic/deb9bb831a1e55444f942049932d0a96",
+      "https://aos-comment.amap.com/B0LKBUU0ZA/comment/41B22D38_F7F1_4476_9970_C918331BDA4D_L0_001_1080_192_1766737818955_67470006.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0LU35A3R4",
+    "name": "深圳大鹏文旅格兰云天国际酒店",
+    "address": "大鹏新区葵涌街道坝光社区海潮路18号绿岛国际壹中心D栋",
+    "lat": 22.645131,
+    "lng": 114.495156,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "images": [
+      "https://store.is.autonavi.com/showpic/617ed8a31c26cabe52c7a041a6c90d4f",
+      "https://store.is.autonavi.com/showpic/de77822ad14bd7660000003059706276?type=pic",
+      "https://store.is.autonavi.com/showpic/558879405d2ae56dd9135757a3348afe"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0LUTC3L5R",
+    "name": "鹏城丽景酒店(福田上梅林地铁站店)",
+    "address": "梅林路83怡景大厦F1层(上梅林地铁站G口步行80米)",
+    "lat": 22.568158,
+    "lng": 114.060342,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/14123949bfbb71824ebb1a06072b4daa",
+      "https://store.is.autonavi.com/showpic/ea5cf448af9ad5d51be6e93b6faf788c",
+      "https://store.is.autonavi.com/showpic/571e934aa4b6a02ddfc292af926f680b"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0LR0KKQF2",
+    "name": "鸟窝酒店(深圳宝安国际机场店)",
+    "address": "西乡街道鹤洲路2号",
+    "lat": 22.623676,
+    "lng": 113.860834,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "images": [
+      "https://store.is.autonavi.com/showpic/86968244ad4161251c351b095c753551",
+      "https://store.is.autonavi.com/showpic/5d860c8a5fd105feb70d03852b63b5df",
+      "https://store.is.autonavi.com/showpic/1557ec877b09099caec0b4cdf6bd5a55"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0L0DNLYZU",
+    "name": "康福瑞酒店(深圳虹桥公园光明城地铁站店)",
+    "address": "凤凰街道凤凰社区观光路招商局光明科技园B9栋",
+    "lat": 22.735025,
+    "lng": 113.946825,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/71124db89b4288db67ba7852de072f54",
+      "https://store.is.autonavi.com/showpic/d904e5d96c83c9d774357fdb98b60a1c",
+      "https://store.is.autonavi.com/showpic/9a8f0db2183e86858c3be05310719d12"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0LBLABX3Q",
+    "name": "SOVIS PLUS·索为斯酒店(深圳湾口岸海上世界店)",
+    "address": "水湾路52号招商大厦F6层",
+    "lat": 22.49052,
+    "lng": 113.921528,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/48d0acc58914ab1bde60f65cc3b1cdc6",
+      "http://store.is.autonavi.com/showpic/aa41df9a926442c6960c50a5a26b4d3d",
+      "https://store.is.autonavi.com/showpic/1612deb51ae5f21ee5184dc15ff269bd"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0LRA11CIT",
+    "name": "莱卡酒店(深圳会展中心岗厦地铁站店)",
+    "address": "福华路322号文蔚大厦F1层",
+    "lat": 22.535293,
+    "lng": 114.069438,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/0dda6ed27aa7891ad7109309255f04bc",
+      "https://store.is.autonavi.com/showpic/ea79e8d8711ffb467b510e50bf0affec",
+      "https://store.is.autonavi.com/showpic/4677edebf3f7191f5731eaa553620378"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0M6R93NE7",
+    "name": "MOTRI莫里酒店(宝安海雅缤纷城店)",
+    "address": "新安街道新安二路61号(新安公园地铁站D口步行60米)",
+    "lat": 22.560825,
+    "lng": 113.910523,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/8880ca85c1258b4bbddac16f1aa27ac2",
+      "https://store.is.autonavi.com/showpic/fbf64cdd151223770000002907358973?type=pic",
+      "https://store.is.autonavi.com/showpic/08b3f1fb6c86534c1f7341c893b2f4ac"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0K6AUBIRH",
+    "name": "深圳嘉朵GLaDoRe酒店(宝安店)",
+    "address": "松白路47号商业中心F1层",
+    "lat": 22.768859,
+    "lng": 113.848318,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/cd03b2e5b81235e8f521649f5e354f47",
+      "https://store.is.autonavi.com/showpic/66b37d81ce9ce595de879fa6d137d945",
+      "https://store.is.autonavi.com/showpic/9287cd407dc2a8d1320f57cff2895c2f"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0KKSUS6HZ",
+    "name": "康伯希酒店(深圳国际会展中心店)",
+    "address": "福海街道重庆路南侧",
+    "lat": 22.682705,
+    "lng": 113.792449,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "images": [
+      "https://store.is.autonavi.com/showpic/e629e7999d59175356259443d04e0900",
+      "https://store.is.autonavi.com/showpic/8593141ff78bc6bf39ad84840fca5102",
+      "https://store.is.autonavi.com/showpic/9b0632279a324f76b78ec00d3e8607f7"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0L37CLL3G",
+    "name": "深圳甘坑古镇丽呈酒店",
+    "address": "吉华街道甘坑社区甘和路9号永平文创园5号楼",
+    "lat": 22.656196,
+    "lng": 114.102045,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/7747cde9a6ba62a49166bd39c53aac4c",
+      "https://store.is.autonavi.com/showpic/329d7da39149a903d999491412620d36",
+      "https://store.is.autonavi.com/showpic/253900b00e2af1f12d273db14367e210"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0LRRZJP2A",
+    "name": "蔚漫酒店(罗湖口岸老街地铁站店)",
+    "address": "深南东路3018号(东门地铁站J1口步行270米)",
+    "lat": 22.543867,
+    "lng": 114.120124,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/8ca4265e4ef3a72f84d2aaccb13ba26c",
+      "http://store.is.autonavi.com/showpic/efee43617b354b1b41e128295cbd48ce",
+      "https://store.is.autonavi.com/showpic/795b1a0594c240b808110501ca0b475b"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0KDGSFME9",
+    "name": "深圳雅思酒店(深圳湾公园口岸店)",
+    "address": "中心路翡翠海岸商业楼1-3层",
+    "lat": 22.487952,
+    "lng": 113.941501,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/e8193422c4f1a2432d2986a3488f921c",
+      "https://store.is.autonavi.com/showpic/83c69e357dde6f2342cb2f6b66e4fda4",
+      "https://store.is.autonavi.com/showpic/17c74eed22e31af71c8a202bec980b85"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0K16DU14C",
+    "name": "希城·行政澜庭(深圳福城天虹茜坑地铁站店)",
+    "address": "福城街道四和社区观澜大道123号澜汇云轩一楼",
+    "lat": 22.702525,
+    "lng": 114.041375,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/f7767ab874e39b1b9603d4b21047bced",
+      "https://store.is.autonavi.com/showpic/4f448c6b40fc7af21c9a4edb35a57b47",
+      "https://store.is.autonavi.com/showpic/2c9d8e0cbd658c7619a6e2d3c19ef917"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0KABS6GP9",
+    "name": "泊雲漫居·高空城景|SeaView云端酒店(深圳水贝国际黄金珠宝城店)",
+    "address": "布心路3008号水贝IBC环球商务中43层前台",
+    "lat": 22.574875,
+    "lng": 114.124425,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "images": [
+      "https://store.is.autonavi.com/showpic/0406aaddeac2f8d7f548df60077087b7",
+      "https://store.is.autonavi.com/showpic/170e6bff29f875c42ed45a24ebd5d684",
+      "https://store.is.autonavi.com/showpic/000485f24c6d0f38df1a8835b29f9dd9"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFF5U6AB",
+    "name": "大梅沙海景酒店",
+    "address": "盐梅路98号",
+    "lat": 22.594202,
+    "lng": 114.30709,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/ce8f7c371ddee49e644b4e34228bdc27",
+      "https://store.is.autonavi.com/showpic/cd0c6c3dbcb38345c298c8735ef0302c",
+      "https://store.is.autonavi.com/showpic/15e5c2f6e5c3e2acebe7c7140b6ee7cb"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F301F7C",
+    "name": "恒丰海悦国际酒店",
+    "address": "宝民二路127号",
+    "lat": 22.580548,
+    "lng": 113.882041,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "images": [
+      "https://store.is.autonavi.com/showpic/2f0d3718c397dfeda80fdfd85bd74f3d",
+      "http://store.is.autonavi.com/showpic/d4b7195857a21d47f0594ee916e17674",
+      "https://store.is.autonavi.com/showpic/7f199c31497c9e0edb3d98dc5d60a229"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F30095C",
+    "name": "阳光酒店",
+    "address": "嘉宾路2001号",
+    "lat": 22.540046,
+    "lng": 114.122924,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/6938628e17a5d6d3462d0d95df0d6a56",
+      "https://store.is.autonavi.com/showpic/0a5e03f5a64f7a3dbaceb4138bd57798",
+      "http://store.is.autonavi.com/showpic/89e81cc30fe2c5967eea937cdf392fb9"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFJ7KBXJ",
+    "name": "南香楼艺术酒店(深圳甘坑古镇店)",
+    "address": "吉华街道甘李路18号甘坑古镇内(西北角)",
+    "lat": 22.657487,
+    "lng": 114.103342,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/2368750497cecd48ed95e2d8439205e5",
+      "https://aos-comment.amap.com/B0FFJ7KBXJ/comment/file_media_Photo_2237_IMG_1768355271_1865_IMG_20260114_094611_jpg_ss__1768355187387_33411477.jpg",
+      "https://store.is.autonavi.com/showpic/6891100a1f1ff44190dcfe369b9224da"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37WRSV",
+    "name": "深圳宝亨达国际大酒店",
+    "address": "布澜路35号",
+    "lat": 22.645388,
+    "lng": 114.121361,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "images": [
+      "https://store.is.autonavi.com/showpic/e01488a026d7c93ee8437990620a19a7",
+      "https://aos-comment.amap.com/B02F37WRSV/comment/content_media_external_file_3434_1769268082165_97917633.jpg",
+      "https://store.is.autonavi.com/showpic/9912a312188f66b92180daf909aab81f"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F30A1CY",
+    "name": "君逸国际酒店",
+    "address": "横岗为民路8号",
+    "lat": 22.645091,
+    "lng": 114.196894,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "images": [
+      "https://store.is.autonavi.com/showpic/efbd4861d8a3c4b9c9a0760f4ef73db5",
+      "https://store.is.autonavi.com/showpic/16687186ce90991b70faaf9dcf0c684a",
+      "https://store.is.autonavi.com/showpic/c67040d66b2b3cc8d25f1ba837ace6b3"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37VQJG",
+    "name": "宝利来国际大酒店",
+    "address": "福永大道1号",
+    "lat": 22.672488,
+    "lng": 113.827284,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "images": [
+      "https://store.is.autonavi.com/showpic/35e7cc839ef9c986233bcfecd40612a5",
+      "https://store.is.autonavi.com/showpic/ef0ea38dcef33efa0398e762d87425bf",
+      "https://store.is.autonavi.com/showpic/d501336362168f209e4a7d40dbb16a8a"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F3029F6",
+    "name": "宝晖花园酒店(深圳宝安翻身地铁站)",
+    "address": "自由路2号(翻身地铁站C口步行460米)",
+    "lat": 22.563541,
+    "lng": 113.896104,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/0723eb0dadd6a87c97eee9136c2ac20d",
+      "https://store.is.autonavi.com/showpic/4cabe00b83e5585ef334b8336abbea60",
+      "http://store.is.autonavi.com/showpic/7c951e2fa20f4f845996201f42ced923"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFF6X4TM",
+    "name": "光明招待所(法政北路店)",
+    "address": "法政北路26号(光明大街地铁站B口步行310米)",
+    "lat": 22.764217,
+    "lng": 113.944799,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/544b413d565d3c1a138e361bdef98f5a",
+      "https://aos-comment.amap.com/B0FFF6X4TM/comment/content_media_external_file_100001251_1770012940926_47172689.jpg",
+      "https://aos-comment.amap.com/B0FFF6X4TM/comment/47512750_D24D_46E4_80D9_A73BE928BF51_L0_001_2016_151_1766544573261_19716643.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFG11I3K",
+    "name": "深圳宝立方国际酒店",
+    "address": "新安四路198号(上川地铁站F1口步行110米)",
+    "lat": 22.580621,
+    "lng": 113.891775,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "images": [
+      "https://store.is.autonavi.com/showpic/fd472419621828208fd26622bae9304d",
+      "http://store.is.autonavi.com/showpic/aa7edf284c386decf00892f91da72d03",
+      "https://store.is.autonavi.com/showpic/0e4c53a235b6f151ef69be48d3bc241e"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F38IEP8",
+    "name": "芭堤雅酒店",
+    "address": "大梅沙环梅路20号",
+    "lat": 22.599981,
+    "lng": 114.310054,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/79d91523d97f5c463216760b5488e022",
+      "https://store.is.autonavi.com/showpic/14d7827f2918e792f2fa559706778837",
+      "https://store.is.autonavi.com/showpic/1198b3ed7fa8e2a46d1720aa25e0d0b8"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0HUPROLR5",
+    "name": "深圳龙岗中心城锦江都城酒店",
+    "address": "龙城街道长兴北路1号(尚景地铁站C口步行230米)",
+    "lat": 22.730667,
+    "lng": 114.243046,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/5ca5a7c5d020bcf9409c40f36c9f6551",
+      "https://store.is.autonavi.com/showpic/44dd552132cb09807bdb89b91410e341",
+      "https://store.is.autonavi.com/showpic/0e98ee16d040824b20b11073c076b53e"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFLK93SP",
+    "name": "深圳大梅沙京基洲际度假酒店",
+    "address": "盐葵路9号",
+    "lat": 22.597653,
+    "lng": 114.314845,
+    "hasFamilyRoom": false,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "images": [
+      "https://store.is.autonavi.com/showpic/9972f4eac4e5e2228b60a82e15ef6d2d",
+      "https://store.is.autonavi.com/showpic/ae365fd73ba148c31afd3432d3bc8fef",
+      "https://store.is.autonavi.com/showpic/3e7937a7a4fd62a227b6ce48e040c859"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F30081E",
+    "name": "中航城格兰云天大酒店",
+    "address": "深南中路3024号",
+    "lat": 22.541056,
+    "lng": 114.082635,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/7cdb815ba62c16c43e61b26843cf4644",
+      "https://aos-comment.amap.com/B02F30081E/comment/content_media_external_file_17943_ss__1764919859763_39617766.jpg",
+      "https://store.is.autonavi.com/showpic/c9cbc9f9cb5e49fef9cafc5fd78a9dd3"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37T50N",
+    "name": "深圳华侨城洲际大酒店",
+    "address": "沙河街道东方社区深南大道9009号",
+    "lat": 22.532356,
+    "lng": 113.984689,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://aos-comment.amap.com/B02F37T50N/comment/DAB8E148_E0FD_46F3_8171_D6CF9B1480D8_L0_001_1290_164_1766403963328_21861348.jpg",
+      "https://aos-comment.amap.com/B02F37T50N/comment/03A93365_B983_46F6_A25A_139F16FBBEFA_L0_001_1536_204_1768592735144_82132328.jpg",
+      "https://store.is.autonavi.com/showpic/0a3fcb76aaf20d87e91025fa22ebfe93"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37W9T0",
+    "name": "观澜湖度假酒店",
+    "address": "观澜高尔夫大道1号",
+    "lat": 22.737698,
+    "lng": 114.076611,
+    "hasFamilyRoom": false,
+    "hasKidsPool": true,
+    "hasKidsBreakfast": true,
+    "images": [
+      "https://store.is.autonavi.com/showpic/538c40de87e0105a2c1eaf21c482b047",
+      "https://store.is.autonavi.com/showpic/27f48c1a4d8fb17a806216c4ed3c9ce3",
+      "http://store.is.autonavi.com/showpic/970f2d9b791d9651bf8674066e0128f5"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37UPSW",
+    "name": "百合酒店",
+    "address": "布吉百鸽路",
+    "lat": 22.598455,
+    "lng": 114.120755,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/2166ffe503904f491c369064ef505fc3",
+      "https://store.is.autonavi.com/showpic/4f44816aa73f3ebc8a2db8ff8c81b563",
+      "https://store.is.autonavi.com/showpic/54ef8ff1f41077b6657d7a16e82cd642"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F306R5W",
+    "name": "深圳东方银座酒店",
+    "address": "竹子林七路与紫竹六道交叉口西南100米竹子林地铁站B2出口",
+    "lat": 22.535099,
+    "lng": 114.012748,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/d9c9f5ad06858b5916d51756a6d5bc3c",
+      "https://store.is.autonavi.com/showpic/a114ac34e7070b428aed6bd292c318c9",
+      "https://store.is.autonavi.com/showpic/ed4ca21bc7debf77f2146638f3ea81e8"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F302506",
+    "name": "深圳中油阳光大酒店",
+    "address": "南山大道1110号中油大厦",
+    "lat": 22.519442,
+    "lng": 113.922989,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/3f103fd55d8a5a6daba7f5b7e1b10002",
+      "https://aos-comment.amap.com/B02F302506/comment/content_media_external_file_1000063890_ss__1770045008411_02100396.jpg",
+      "https://store.is.autonavi.com/showpic/493cfda41c65ade2cc92003842b1b738"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37WRTL",
+    "name": "南澳鹿嘴山庄客栈(鹿嘴大道分店)",
+    "address": "南澳街道东山社区新东路问海阁餐厅东南20米",
+    "lat": 22.539321,
+    "lng": 114.607133,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/3b72f0c3d63a4f9f23cb29c07c14cbdf",
+      "http://store.is.autonavi.com/showpic/15a2ce213e73e589f91a2c7e3d260dc8",
+      "http://store.is.autonavi.com/showpic/3c445335516e12ddf6b938c639880fba"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFH73B19",
+    "name": "维也纳酒店(深圳龙城万科里吉祥地铁站店)",
+    "address": "龙岗大道龙岗段3074号中熹投资大厦",
+    "lat": 22.713751,
+    "lng": 114.25003,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/69b6e64e4ab59aaa28263365eeedf872",
+      "https://store.is.autonavi.com/showpic/cc4c82a4977240d413857277339272c5",
+      "https://store.is.autonavi.com/showpic/41045d6ceac1f281149b94b2faeacc8f"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MDDRP7EV",
+    "name": "安于海青年公寓(海港大厦店)",
+    "address": "深盐路2001号合景同创广场3B栋707",
+    "lat": 22.566075,
+    "lng": 114.251975,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/d0e2a193af077ca87034b62d78ff1b23",
+      "https://store.is.autonavi.com/showpic/d046f45b75ad430b0000003091878923?type=pic",
+      "https://store.is.autonavi.com/showpic/6f2e3058132cb3fc0c896cf85f869d56"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0KR4CFOUC",
+    "name": "深圳南山新豪方桔子水晶酒店大堂",
+    "address": "深南大道10188号深圳南山新豪方",
+    "lat": 22.540783,
+    "lng": 113.925916,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/00c0e4494284dc875f48bbea7b1c6be5",
+      "https://aos-comment.amap.com/B0KR4CFOUC/comment/A0953FBD_6776_4F68_B616_80DEDC31870A_L0_001_1500_200_1773620751617_94895683.jpg",
+      "https://aos-comment.amap.com/B0KR4CFOUC/comment/content_media_external_images_media_1000021246_ss__1745585018010_69669291.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MALS6CIU",
+    "name": "温庭里青年旅舍",
+    "address": "燕南路宝树台C栋",
+    "lat": 22.543325,
+    "lng": 114.092875,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/51c41e29654b82e1e3e9cca266e43689",
+      "https://store.is.autonavi.com/showpic/0f7b2a97b1f60e5c219d48046fb8c21d",
+      "https://store.is.autonavi.com/showpic/da9933a7fd75449bf454e85667da26cc"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MBSBDPSR",
+    "name": "星屿青年旅舍(南油地铁站店)",
+    "address": "登良路18号龙城花园6栋202室",
+    "lat": 22.511025,
+    "lng": 113.928275,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/2957e9561ee0da55983a20b1fceadefc",
+      "https://store.is.autonavi.com/showpic/4768341f63378b7a446b8e58f4c08769",
+      "https://store.is.autonavi.com/showpic/32b40dbf634bd6674c6ee3169b79c5fb"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFFQ2JCK",
+    "name": "7天优品Premium旗舰店(深圳科技园高新园地铁站店)",
+    "address": "科发路2号科技园30区4栋",
+    "lat": 22.544567,
+    "lng": 113.95025,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/d75a6af2f56515ee046c3316a856f10b",
+      "https://store.is.autonavi.com/showpic/96d28e8bad52c59cc3066f5538ecdff2",
+      "http://store.is.autonavi.com/showpic/df1b831ceff48f195d0d83810fac0dc5"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFHH449P",
+    "name": "深圳民丰公寓",
+    "address": "民治街道白石龙老村36栋",
+    "lat": 22.604474,
+    "lng": 114.035269,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/4d41a3e7cafc96bb4590be7c62357322",
+      "https://store.is.autonavi.com/showpic/bedc346a7be74249d61485df00754da5",
+      "https://store.is.autonavi.com/showpic/1b13c337ccfa7aa8d463b17d132baba2"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MA6AKP64",
+    "name": "锦瑞·高奢青年旅舍",
+    "address": "马田街道禾湾社区松白路4919号中粮云景广场5栋806",
+    "lat": 22.776875,
+    "lng": 113.889175,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/c26f5aa3694b3b20e2a3a61d873b666e",
+      "https://store.is.autonavi.com/showpic/87162b75c481bea5ee22b723c21165fb",
+      "https://store.is.autonavi.com/showpic/b9a9b6a0d1c37c1c817cbd7a5fdd0098"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MAGUXUZA",
+    "name": "7天优品酒店(深圳龙华大浪商业中心店)",
+    "address": "华旺路150号",
+    "lat": 22.674088,
+    "lng": 113.995547,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/d1c4995aca15f66f0a048c5eea58f622",
+      "https://store.is.autonavi.com/showpic/1e85f5f3652da4a028f5db42d3f1fcb3",
+      "http://store.is.autonavi.com/showpic/626e049c61c45e0ad7ce8c535af4ad00"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0IAUHY8LT",
+    "name": "玛可酒店深圳京基100地王大厦店大堂",
+    "address": "玛可酒店公寓(东门老街店)",
+    "lat": 22.548954,
+    "lng": 114.109756,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/6b9c7b5b4fdc2691ac2d4afd5ca3f123",
+      "https://aos-comment.amap.com/B0IAUHY8LT/comment/b833a40370932253e981700c3a42f295_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B0IAUHY8LT/comment/3a82709913999dae65e7345e34b24df7_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFF36ENS",
+    "name": "深圳平价住宿",
+    "address": "大浪街道华昌路金盈新村11栋平价旅馆",
+    "lat": 22.673362,
+    "lng": 114.001872,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/a62b66009bb34805183cded0990cf590",
+      "https://store.is.autonavi.com/showpic/79b5735eb8857d78efec2648b34acc26",
+      "https://store.is.autonavi.com/showpic/10d6234c721bd0a22c8a8050d8778da2"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37W9OY",
+    "name": "长丰花园酒店",
+    "address": "石岩镇浪心社区万大工业园(青年路与洲石路交叉口北约100米处)",
+    "lat": 22.67246,
+    "lng": 113.921352,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/3db4bab25efe18a14a3b69d87f53da3c",
+      "http://store.is.autonavi.com/showpic/f0e10d70af3637862a3d6e50ceb76105",
+      "http://store.is.autonavi.com/showpic/3e920b4ced80857d445379047b78ad58"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFFO41XJ",
+    "name": "深圳龙兴宾馆",
+    "address": "松岗街道居乐路11号(山美新区南2门西南60米)",
+    "lat": 22.767638,
+    "lng": 113.849371,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/61679c0147af337332da4ad9d3754e49",
+      "https://store.is.autonavi.com/showpic/945564aebcc64b26a998dd6e2cbcd4a7",
+      "https://store.is.autonavi.com/showpic/f2a688fbc13a8af0e4aad0f3c573e094"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFHCFSYD",
+    "name": "玉帆快捷酒店(深圳国际会展中心店)",
+    "address": "上北四巷1号",
+    "lat": 22.721404,
+    "lng": 113.841038,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "images": [
+      "https://store.is.autonavi.com/showpic/e8cf0db2ad9dc4173b37e88a950fd104",
+      "https://store.is.autonavi.com/showpic/a9cac32c05535431e6f6c39bc45c777e",
+      "https://store.is.autonavi.com/showpic/bab6ffb1e420c0d74f60150029199909"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFFA02SL",
+    "name": "锦丰商务酒店(深圳大学城店)",
+    "address": "桃源街道丽山东路平康苑三楼",
+    "lat": 22.584019,
+    "lng": 113.965435,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/5e05cf4ea204ef3c8a81ff9b08124d42",
+      "http://store.is.autonavi.com/showpic/461388753b43776bed2ba83b84a7d978",
+      "http://store.is.autonavi.com/showpic/d079dadd7e7b56f30595ab479294edd5"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFH36I4H",
+    "name": "如家酒店(深圳西丽地铁站深职院店)",
+    "address": "西丽石鼓路北旺棠综合楼25栋4004-11号",
+    "lat": 22.584993,
+    "lng": 113.948362,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://img.alicdn.com/imgextra/i3/O1CN01bacGNG1vh1rlkuYio_!!6000000006203-2-tps-1011-1112.png",
+      "http://store.is.autonavi.com/showpic/50ce9cd065e0824e184d725609729564",
+      "http://store.is.autonavi.com/showpic/0ead9b0e7b7c34a467aec3761445dee2"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFG1DJUH",
+    "name": "莫泰酒店(深圳南山海岸城南油地铁站服装城店)",
+    "address": "粤海街道创业路社区南海大道2616号粤海大厦中座十五层",
+    "lat": 22.513069,
+    "lng": 113.927333,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/453bafb1a295b31357933e67acd645e8",
+      "https://store.is.autonavi.com/showpic/2ff4b9964ca5d93fc83e229ce537f3d8",
+      "https://store.is.autonavi.com/showpic/68ac5805ffe0f6f2fc85779e375b7e7a"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37VSPX",
+    "name": "庐山酒店",
+    "address": "春风路3019号(向西村地铁站D2口步行210米)",
+    "lat": 22.537112,
+    "lng": 114.123745,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/56b047faa310218d5b4ae052",
+      "http://store.is.autonavi.com/showpic/8d4e399eb787746598190d92bc7cc871",
+      "http://store.is.autonavi.com/showpic/f993c6d5ec75e1d7f503bcd48a46a8a6"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFGW56XQ",
+    "name": "星航恒悦酒店(深圳机场T3航站楼店)",
+    "address": "三围社区南路2-5号(近宝安大道)",
+    "lat": 22.609744,
+    "lng": 113.849208,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/023d7d5eabf93cbe024e493264896735",
+      "https://store.is.autonavi.com/showpic/c43c4274f64edd06fd671a05cbcb8984",
+      "http://store.is.autonavi.com/showpic/8f2f3279918857749f73457eae4f7812"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFHBTYMW",
+    "name": "深圳messin美星青年旅舍",
+    "address": "新洲三街与七街交汇处(沙尾地铁站C口步行350米)",
+    "lat": 22.522662,
+    "lng": 114.042965,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/4f24987261e0842a9386cbb0cbbe8f4b",
+      "https://store.is.autonavi.com/showpic/19e29d263c0a88de19cf4c2244aa9a3d",
+      "https://store.is.autonavi.com/showpic/676e3940c274c96183ed5cab0211b4bb"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFGROFUS",
+    "name": "青朴旅居公寓(深圳世界之窗店)",
+    "address": "沙河世纪广场C座14楼1402",
+    "lat": 22.53875,
+    "lng": 113.972074,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/600c4a69183dcdf48c8cdcfc1a364f96",
+      "https://store.is.autonavi.com/showpic/b7a17623d70c4177035fb19fd3dbddb6",
+      "https://aos-comment.amap.com/B0FFGROFUS/comment/b165a526eb58ef28b9b2ebd82d5c498c_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFHGK1QE",
+    "name": "城市便捷酒店(深圳会展中心塘尾地铁站店)",
+    "address": "沙井宝安大道7546号",
+    "lat": 22.707626,
+    "lng": 113.81704,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/e7d086d7a6f4d6a73013d560d4f22409",
+      "https://store.is.autonavi.com/showpic/86c5a354f5068233bb8525a493641e7f",
+      "https://store.is.autonavi.com/showpic/afc2b74f3baf1ed053de53872f0d0554"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MB2U14GS",
+    "name": "美尚酒店(深圳T3航站楼后瑞地铁站店)",
+    "address": "航城街道后瑞社区凯城一路10号201",
+    "lat": 22.633119,
+    "lng": 113.833886,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://aos-comment.amap.com/B0GUCH5JCO/comment/content_media_external_file_4826_ss__1751537286487_81050053.jpg",
+      "https://aos-comment.amap.com/B0GUCH5JCO/comment/content_media_external_file_485_1751537286458_56084519.jpg",
+      "https://aos-comment.amap.com/B0GUCH5JCO/comment/ef4177a4c11f4014a05bbadfe4f594bd_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37WNY9",
+    "name": "深圳瑞居酒店公寓",
+    "address": "嘉宾路4055号城市天地广场裙楼",
+    "lat": 22.537663,
+    "lng": 114.113379,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/d329a66c9051fac8173ba300a142689b",
+      "http://store.is.autonavi.com/showpic/bfbfa09c6f9151b43ee323ff7641f181",
+      "http://store.is.autonavi.com/showpic/15b2ce3b3926f729df06ca839f59a35f"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0L3NUDFNN",
+    "name": "安的酒店(宝安坪洲地铁站店)",
+    "address": "西乡街道西乡社区河东路95号永安商业城303室",
+    "lat": 22.575516,
+    "lng": 113.880742,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/8d6281b4678457aae0b96370d20d6e00",
+      "https://store.is.autonavi.com/showpic/446c18a49a1b8a260000002417456105?type=pic",
+      "https://store.is.autonavi.com/showpic/4d4604aebae4a07b679fe24ec2c1d514"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFGKGAJP",
+    "name": "深圳新巢太空舱酒店",
+    "address": "东门街道深南东路百货广场大厦西座6层",
+    "lat": 22.543778,
+    "lng": 114.11836,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/1770b694e6adfbfb47e4fcd88630d623",
+      "http://store.is.autonavi.com/showpic/0eb5ecba6a08f4528b7f4f4be6521f86",
+      "https://store.is.autonavi.com/showpic/56ba743dc0ad331879ace4c96e55d491"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFHT65VZ",
+    "name": "深圳冠华商务宾馆",
+    "address": "龙华新区龙华东环一路68号世贸广场",
+    "lat": 22.660796,
+    "lng": 114.022429,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/10ffc47f27c8e1c580983e1c57137a6f",
+      "https://store.is.autonavi.com/showpic/a7f1d57ca3e2d8f3a9064d5448eb8695",
+      "http://store.is.autonavi.com/showpic/7140253f653fa3ae8bcbf2b0c75e1211"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFHESRMX",
+    "name": "容锦酒店(深圳大浪商业中心店)",
+    "address": "工业园路1号凯豪达广场",
+    "lat": 22.681642,
+    "lng": 113.984301,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/b0d643327acbd3b13c882a7ee26d341c",
+      "https://store.is.autonavi.com/showpic/49b6af6ef69743d5aa641db367f2efb5",
+      "https://store.is.autonavi.com/showpic/834469d0e64989080c5aec032b0b0773"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F38IU3N",
+    "name": "泊莱公寓(坂田华为店)",
+    "address": "坂田街道吉华路535号",
+    "lat": 22.639143,
+    "lng": 114.070703,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/e2700cfe9ffc37e0ff2b7937ba5091f3",
+      "http://store.is.autonavi.com/showpic/9738f385100f3fc2dec0f2857997c1b8",
+      "http://store.is.autonavi.com/showpic/930eadb4e5ebb7867e51511235389cb2"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0GKSDIENL",
+    "name": "维也纳国际酒店(深圳华南城万达广场店)",
+    "address": "平湖镇华南国际工业原料城深南大道1号",
+    "lat": 22.675275,
+    "lng": 114.128588,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "images": [
+      "https://store.is.autonavi.com/showpic/806124f368813ee2ab8b7107f60602a1",
+      "https://store.is.autonavi.com/showpic/b646a1c81fe54a1be63ab7964254f3af",
+      "https://store.is.autonavi.com/showpic/1750dd30c09ac4255a47baaa22029790"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F30019B",
+    "name": "帝田酒店",
+    "address": "文锦北路1090号(洪湖地铁站C2口步行110米)",
+    "lat": 22.564398,
+    "lng": 114.123699,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/27dbc46db158e9bcaf8fe301f199d4fa",
+      "https://store.is.autonavi.com/showpic/1514c877a3fd63bfe463b5c3c1e722aa",
+      "https://store.is.autonavi.com/showpic/045f01b0c37b876599ecb8a568b94bd0"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFHBAPI9",
+    "name": "安朴逸城",
+    "address": "坂田街道环城路华为荔枝苑西区东门",
+    "lat": 22.633904,
+    "lng": 114.078772,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://aos-comment.amap.com/B0FFHBAPI9/comment/BC37CAEA_63C0_4ACF_9DFE_A419BBC8BBFF_L0_001_2048_153_1747986210631_23994757.jpg",
+      "https://store.is.autonavi.com/showpic/d710d281277376290000003114648776?type=pic",
+      "https://aos-comment.amap.com/B0FFHBAPI9/comment/683bd6359e2f1b5c582dbfa66c55748c_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F38SVJ9",
+    "name": "平安住宿(深圳富联新村一区店)",
+    "address": "清龙路13号6号商铺(清湖地铁站B1口步行320米)",
+    "lat": 22.66643,
+    "lng": 114.036164,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/9663fd03efb68dfcb44f8550fed976ba",
+      "https://aos-comment.amap.com/B02F38SVJ9/comment/b00e8bb490f289db86a02ba74392a497_2048_2048_80.jpg",
+      "https://store.is.autonavi.com/showpic/ecc9d5c29fbe97aab1ca28294328359b"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37WAOJ",
+    "name": "依兰时尚精品酒店",
+    "address": "宝龙二路5号",
+    "lat": 22.688884,
+    "lng": 114.289882,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/328af83f4d640d66cf732be1d8198803",
+      "https://store.is.autonavi.com/showpic/4cabdf02fe35d5c61867f560f1ac923d",
+      "https://store.is.autonavi.com/showpic/6f03865c8643adfb5f7d35b0dece5d6c"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFK69M4G",
+    "name": "城邦精品酒店(深圳石龙仔店)",
+    "address": "石岩镇石龙路石龙社区石龙仔新村一区40栋",
+    "lat": 22.697864,
+    "lng": 113.966705,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/c1da60be518faa50dab3fd876f894fef",
+      "https://aos-comment.amap.com/B0FFK69M4G/comment/70ebf7d4db0598e7f700351c5beb4232_2048_2048_80.jpg",
+      "https://store.is.autonavi.com/showpic/998ed5a5c65b3d300025ed90e5ebc7fb"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0GDTCYF1N",
+    "name": "H酒店(深圳宝安国际机场店)",
+    "address": "航城街道三围社区盛泰路8号",
+    "lat": 22.613784,
+    "lng": 113.841793,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "images": [
+      "http://store.is.autonavi.com/showpic/ea5058fdf091bb24932d12d57eda5c93",
+      "http://store.is.autonavi.com/showpic/492bb82fd3812ab8416dd568a50f7476",
+      "http://store.is.autonavi.com/showpic/8278f936df0adeee5aa5d66ff5df0770"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37SH2Q",
+    "name": "南航宾馆(航站四路)",
+    "address": "航站四路2035号",
+    "lat": 22.635786,
+    "lng": 113.826921,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/a0d56530001aebc8f002ea1861d655a2",
+      "https://store.is.autonavi.com/showpic/b8c26ba2865065d6dbabf5d51eb04ef2"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F38IP4N",
+    "name": "7天酒店(龙南路店)",
+    "address": "桥东街16号永业大厦1、9-16层",
+    "lat": 22.727787,
+    "lng": 114.283483,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/7750347f4d95190d862934cd2e7f29b1",
+      "http://store.is.autonavi.com/showpic/57bd547145616926fe1efef82a362d1c",
+      "http://store.is.autonavi.com/showpic/b533d1007bc0cea5473f6fc836d5002c"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0M6N7F9FD",
+    "name": "希朗顿·SILATON(深圳西丽地铁站深职院店)",
+    "address": "西丽街道新高路149-1号",
+    "lat": 22.586675,
+    "lng": 113.949875,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/a238d29b081c95732c5e57992795eaf9",
+      "https://store.is.autonavi.com/showpic/bd81ad37dbed66b82f1cf8557e325b64",
+      "https://store.is.autonavi.com/showpic/6cd49d1ef73a5c7f3abf984318e3fb79"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFG8P415",
+    "name": "城邦精品酒店(上南店)",
+    "address": "沙井镇新桥村上南大街245号",
+    "lat": 22.720237,
+    "lng": 113.840222,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/c2247fa8e7476970ccbd6944292828c4",
+      "https://store.is.autonavi.com/showpic/613689d814072e190504e28df405f2cd",
+      "https://store.is.autonavi.com/showpic/198ff998f69710f79d3902c15949ada6"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MD1SRKPM",
+    "name": "枫泽·青年Hotel(深圳罗湖口岸黄贝岭地铁站店)",
+    "address": "黄贝街道文华社区深南东路1027号文华大厦西座25C",
+    "lat": 22.545275,
+    "lng": 114.135225,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/2c916196696469eb31407a963d68bbc4",
+      "https://store.is.autonavi.com/showpic/c4fe7fcdc44a2d07b90fad475df598f8",
+      "https://store.is.autonavi.com/showpic/69a1774da645d2bc1a5443d3e05c6672"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFHCPESL",
+    "name": "贵宾舍优选酒店(深圳国际会展中心宝安机场店)",
+    "address": "福永新田大道12号202",
+    "lat": 22.685781,
+    "lng": 113.830752,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "images": [
+      "https://store.is.autonavi.com/showpic/20f9ac5e6de3717fa921d8f3c84b17d1",
+      "https://store.is.autonavi.com/showpic/04426bffc8613278cb7c8a8590087a94",
+      "https://store.is.autonavi.com/showpic/c27eec18a31899083347a2fa9407f217"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F38TF7M",
+    "name": "友佳宾馆(深圳龙华店)",
+    "address": "建设路185号(锦秀花园,龙华地铁站D出口)",
+    "lat": 22.647563,
+    "lng": 114.023786,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/ae9fed290b51ab6a0d1c81c59f27620f",
+      "https://store.is.autonavi.com/showpic/0f03299578a7deb638dd85dd39486bfc",
+      "https://store.is.autonavi.com/showpic/9a4fcdfe0bdf13612ed5e0ba5f13585c"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFGJQKCH",
+    "name": "章华宾馆(深圳公明地铁站大仟里店)",
+    "address": "公明镇长春中路富豪花园B区1栋",
+    "lat": 22.777834,
+    "lng": 113.893725,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/f1c048ff9f01b33d1628c95e306bb672",
+      "https://store.is.autonavi.com/showpic/a879c2f7f2703f2041781132e5020a11",
+      "https://store.is.autonavi.com/showpic/29618bb611ecbba284911ef0b4652c7e"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFI624TM",
+    "name": "七橙酒店(深圳北站民治店)",
+    "address": "民治大道241号民泰大厦东侧3层",
+    "lat": 22.613717,
+    "lng": 114.042332,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/e5711c58f0e360f123cf82adce2b49ad",
+      "https://store.is.autonavi.com/showpic/0a3a280cb9e7bc1bc46f1582c8fcf4c9",
+      "https://store.is.autonavi.com/showpic/003f4dc77647102a4a3fbeac846bc68f"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F305M10",
+    "name": "深圳富都宾馆(罗湖口岸火车站店)",
+    "address": "人民南路1007房地产大厦3层",
+    "lat": 22.534573,
+    "lng": 114.118311,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/cb819e2cb73fd66fbbf0523923e06a6f",
+      "https://store.is.autonavi.com/showpic/7ff5bdb082335354c61848ab43989efb",
+      "https://store.is.autonavi.com/showpic/26b96a6ac545ad9bf91643305a1e74dd"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37W9E1",
+    "name": "城市3米6公寓",
+    "address": "福保地铁站E4口旁",
+    "lat": 22.50871,
+    "lng": 114.056147,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/6e1ea285f6130eed9f016cba5412a4d2",
+      "http://store.is.autonavi.com/showpic/1d185c4b8f4273fedc14de82e2b30b2e",
+      "https://store.is.autonavi.com/showpic/a6612d03115767129b270cef6600262f"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFGG7K2B",
+    "name": "安永昌酒店(深圳国际会展中心宝和店)",
+    "address": "永和路37号骏丰工业区d1栋",
+    "lat": 22.685184,
+    "lng": 113.792717,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "images": [
+      "https://store.is.autonavi.com/showpic/d59ed5dccb73bbb2d93603dc63ca8f14",
+      "https://store.is.autonavi.com/showpic/df8eccff60fbe17255e75473726d27cf",
+      "https://store.is.autonavi.com/showpic/315f52dedee75f50c405d3d42d8d34b2"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFGX84E4",
+    "name": "尚客优酒店(深圳国际会展中心蚝乡地铁站店)",
+    "address": "沙井街道沙二社区海欣花园外侧A3栋110栋",
+    "lat": 22.73677,
+    "lng": 113.794269,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "images": [
+      "https://store.is.autonavi.com/showpic/ce349637bef737a383491777ce889537",
+      "https://store.is.autonavi.com/showpic/f5d349bbd265f3acdd5d2120a0658331",
+      "https://store.is.autonavi.com/showpic/f35c552499229eaa06de1efd38fb4cb1"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F38MG7L",
+    "name": "西部快捷宾馆(高速桥辅道)",
+    "address": "西辅路潭头西部工业区B区54栋",
+    "lat": 22.753345,
+    "lng": 113.838361,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/f7a692e17ccaf0394f97ca84a0cf8acb",
+      "https://store.is.autonavi.com/showpic/ca89368dbb147986b90a7280e9d48030",
+      "https://store.is.autonavi.com/showpic/87254c7311c153618a28913c7966ff41"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFJV9EYS",
+    "name": "深圳北极星精品酒店(松岗地铁站店)",
+    "address": "沿河北路1号",
+    "lat": 22.768711,
+    "lng": 113.844125,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/6cc289a222eaac090cd60ce13977f25b",
+      "https://store.is.autonavi.com/showpic/4d125be636c017b4f2b2ced474945699",
+      "https://store.is.autonavi.com/showpic/85fcda70fecacc75ec389bc8943dbc22"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFGRLXEP",
+    "name": "尚水精品酒店(沙井店)",
+    "address": "沙井大街104号",
+    "lat": 22.734215,
+    "lng": 113.806662,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/652fb76b6e7076283345636d157d4741",
+      "https://store.is.autonavi.com/showpic/e1ccb15ae6d8bbfe6301fadd8bc99351",
+      "https://store.is.autonavi.com/showpic/fc6bd31a56cdbd3e17489ef3d7670f44"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFHSAH76",
+    "name": "深圳时光小屋青年旅舍",
+    "address": "桃园路147号南景苑大厦10楼",
+    "lat": 22.531907,
+    "lng": 113.920685,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/52d113659b62f689ea8363f28fdc32c3",
+      "http://store.is.autonavi.com/showpic/539d74c8b160d2a7a7c4b443d047c514",
+      "https://store.is.autonavi.com/showpic/c8ef030ed09bae9327be03067b11adaa"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFGVVPOQ",
+    "name": "深圳如嘉宾馆(观澜兴万达店)",
+    "address": "观澜镇玫园新村兴万达后门",
+    "lat": 22.719449,
+    "lng": 114.058995,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/bd854934b09cbcf41a671f74da91cdf4",
+      "https://store.is.autonavi.com/showpic/5703f83adb4b3db5b2d45db64b2d54c5",
+      "https://aos-comment.amap.com/B0FFGVVPOQ/comment/20260315-13d0fbd80f6bb0762a567132-8nZaGqRVYNw85IjbdSyEcu.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFHIUZ50",
+    "name": "侨威主题酒店(观澜高尔夫店)",
+    "address": "观澜镇福楼村德胜路20号侨威大厦1楼",
+    "lat": 22.713856,
+    "lng": 114.073585,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/f7808bd9bd154cfd4adc62a1a96fd992",
+      "https://store.is.autonavi.com/showpic/e034956db1f9e7974c7132fde255d9fb",
+      "https://store.is.autonavi.com/showpic/87a74665f24a8cb4f27d7240b0dbba0e"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F38PFYL",
+    "name": "深圳方圆旅馆(五和地铁站店)",
+    "address": "长发西路32号(五和地铁站附近)",
+    "lat": 22.63077,
+    "lng": 114.057434,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/351b507cb25b5ad0b18fa99065929d6b",
+      "https://store.is.autonavi.com/showpic/a71617809c34a09b6d2acb495ce05a34",
+      "https://store.is.autonavi.com/showpic/bb5ae5d459bc4c5a4c5d8d3a74ae97b2"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37WH4R",
+    "name": "万发住宿",
+    "address": "大浪南路130号(三联河背围合式小区西南1门东南330米)",
+    "lat": 22.667351,
+    "lng": 114.019205,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/ac0a70c58061b15b06baf5d6922a683b",
+      "https://store.is.autonavi.com/showpic/382b105b1604dd1af29ac47fefdc7b60",
+      "https://store.is.autonavi.com/showpic/60fc672bfc4123fa339556871add76ce"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37VMR7",
+    "name": "金泉商务宾馆",
+    "address": "龙河路18号(龙城广场地铁站C口步行360米)",
+    "lat": 22.719006,
+    "lng": 114.255346,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/4a5a78caa581254ab13e67e9c12eb185",
+      "http://store.is.autonavi.com/showpic/44ccef8a8ebc3213315396ca3558ce32",
+      "https://store.is.autonavi.com/showpic/41236d2accb8fcf43743d5268113d35e"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F38K97Y",
+    "name": "鄱阳湖宾馆(深圳布吉长龙地铁站店)",
+    "address": "吉华路218号广发大厦4层",
+    "lat": 22.606613,
+    "lng": 114.115993,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/14fd0b0b8ecdfa91c00014bec002c6d9",
+      "https://store.is.autonavi.com/showpic/cbf9f7ffa55a6272225c83886735fe4a",
+      "https://store.is.autonavi.com/showpic/cdd3905fe29bc5a783a0f2c42556d88a"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F38PWP5",
+    "name": "深圳金福宾馆",
+    "address": "福永街道白石厦路20号(永福医院旁)",
+    "lat": 22.675593,
+    "lng": 113.827845,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/76ecf046640e5221628ab2b6995b6676",
+      "https://store.is.autonavi.com/showpic/2c981b51ed8c73a9e48aba2d02b4deb4",
+      "https://store.is.autonavi.com/showpic/99901756d6f0a4f8331b98a5191b47a3"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFFYURWE",
+    "name": "港天时尚公寓(深圳北站店)",
+    "address": "北站民康路口樟坑三区76栋",
+    "lat": 22.612068,
+    "lng": 114.039117,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/a6c5ea7ad3b88852da5791acdfd460c6",
+      "https://store.is.autonavi.com/showpic/f5fa8a8dc524e0f9451e6e3406019df9",
+      "https://store.is.autonavi.com/showpic/a1ebd35eaf4d42bcfaea63f6184e794e"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37WDIA",
+    "name": "蓝田宾馆(深圳沙头角地铁站店)",
+    "address": "深盐路3010号",
+    "lat": 22.554088,
+    "lng": 114.230185,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/a0c2f7ab207450ebe1642b4b344a27e6",
+      "https://store.is.autonavi.com/showpic/14c97380dac1f587237a3c54e05fe3d9",
+      "https://store.is.autonavi.com/showpic/2abc536dbb7bb40f7fa5d42439687b6a"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37WK09",
+    "name": "鑫尚座公寓酒店",
+    "address": "华宁路2-5号",
+    "lat": 22.690284,
+    "lng": 113.991423,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/358aed0b17e65dadf7dc2c043f1cdc58",
+      "https://store.is.autonavi.com/showpic/2d4bf30741f9344865be7c5034c23c53",
+      "https://store.is.autonavi.com/showpic/d5f128be59df5107d526364ee25dc50a"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F38SUOR",
+    "name": "深圳龙珠旅馆(龙华地铁站店)",
+    "address": "人民路景龙新村西区15栋",
+    "lat": 22.656718,
+    "lng": 114.020786,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/21425296cacc7601d0a21319cff31c67",
+      "http://store.is.autonavi.com/showpic/869622d98418420dd1afa934e74d15d2",
+      "https://store.is.autonavi.com/showpic/273f6ebbe955fca262edf7728a06c9af"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFFLJLVP",
+    "name": "栖游太空舱青年旅舍(深圳中心公园华强北店)",
+    "address": "振兴路113号新欣大厦B座4层",
+    "lat": 22.546309,
+    "lng": 114.082356,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/e1bad9da3aeb0ae47a819b7c7323af9a",
+      "https://aos-comment.amap.com/B0FFFLJLVP/comment/content_media_external_file_1000052745_ss__1758648857469_36869053.jpg",
+      "https://store.is.autonavi.com/showpic/e141c890afd42e422d9cdea18d8960a6"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F38JHJ3",
+    "name": "美悦轻奢酒店(深圳国际会展中心上南大街店)",
+    "address": "沙井街道广深路116号",
+    "lat": 22.72175,
+    "lng": 113.840811,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "images": [
+      "https://store.is.autonavi.com/showpic/67c0db511456601fbff89441ab074c42",
+      "https://store.is.autonavi.com/showpic/0b63334524f062e1f4f5fea8c4e4d839",
+      "https://store.is.autonavi.com/showpic/01ecf0fee67c5c7aba0cf2e1f1816e47"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37VJIP",
+    "name": "威尔斯酒店(深圳国际会展中心店)",
+    "address": "蚝业路1号",
+    "lat": 22.679931,
+    "lng": 113.801349,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "images": [
+      "https://store.is.autonavi.com/showpic/422ebab39a96f957d2d28501eae153d0",
+      "http://store.is.autonavi.com/showpic/5826e362c5b88f14451b611eed734c47",
+      "https://store.is.autonavi.com/showpic/dd333cd223011f8263cfc8fc3f94a74f"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFHN2G1Y",
+    "name": "好优客酒店(深圳坪山比亚迪石井地铁站店)",
+    "address": "金田路61号(石井地铁站D口步行250米)",
+    "lat": 22.690882,
+    "lng": 114.380223,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/57a010a41de6bc674af6667b426da702",
+      "https://store.is.autonavi.com/showpic/a2ceb42657f27daf0b1b5d383ab42e02",
+      "https://store.is.autonavi.com/showpic/4129142dfe7c0e1eb7a705ac79ab8125"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0GUCU8FP5",
+    "name": "常尚·北欧酒店(深圳万科云城西丽地铁站店)",
+    "address": "西丽街道丽城社区沙河西路镇东楼3268号(西丽地铁站C出口)",
+    "lat": 22.578653,
+    "lng": 113.954747,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/0b805258d17e7f70a630973cfd4d2366",
+      "https://store.is.autonavi.com/showpic/aaab6c918193d51110678941ce9f599a",
+      "https://store.is.autonavi.com/showpic/0745fd7a47a7cfce60ab8496de320c77"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37UJOJ",
+    "name": "深圳西部明珠商务酒店",
+    "address": "蛇口南水村68号二三楼",
+    "lat": 22.488906,
+    "lng": 113.924881,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/504f9a0ec709a9377ff29aaa6959f1e9",
+      "https://aos-comment.amap.com/B02F37UJOJ/comment/bae65f6be6e9ac21bc8eda93bd47f1f6_2048_2048_80.jpg",
+      "https://store.is.autonavi.com/showpic/3e467f69d3ae1c5b0188042ab785ab58"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFH0YRWX",
+    "name": "优品酒店(深圳机场T3航站楼店)",
+    "address": "航城街道黄田岗贝工业区17号",
+    "lat": 22.628217,
+    "lng": 113.848359,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/65a31ecb1fb6ccfe1959124b49f40ee7",
+      "https://aos-comment.amap.com/B0FFH0YRWX/comment/13d8e165a34239be694c5f5c0528bacd_2048_2048_80.jpg",
+      "https://store.is.autonavi.com/showpic/8f6661fe006dad60d1ebea21a5069d4c"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFH0ZKAI",
+    "name": "城市丰度酒店(深圳壹城中心龙华地铁站店)",
+    "address": "龙华街道牛地埔商住楼B栋B区2-3层",
+    "lat": 22.660362,
+    "lng": 114.015441,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/443b0d85b6199d7e3dff35167f1b09a0",
+      "https://store.is.autonavi.com/showpic/753f75bd92454c716b7e074ec0d6fb74",
+      "https://store.is.autonavi.com/showpic/b4239004952b67ba4404046effe7a02e"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0LAASO18P",
+    "name": "瑞洛酒店(公明下村店)",
+    "address": "下村路43号",
+    "lat": 22.78937,
+    "lng": 113.886561,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/58b308d071930cd34eec28eb14ee1b1c",
+      "https://aos-comment.amap.com/B0LAASO18P/comment/content_media_external_file_100003168_1763828098240_68054689.jpg",
+      "https://store.is.autonavi.com/showpic/d6ce8153b25c0590658fc0c5e62d32c2"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFI7A44E",
+    "name": "领航精品酒店(深圳北壹方天地购物中心龙华地铁站店)",
+    "address": "和平东路祥龙大厦7单元(龙华地铁站A口步行380米)",
+    "lat": 22.653926,
+    "lng": 114.025951,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://aos-comment.amap.com/B0FFI7A44E/comment/4f603ddc0853be8e9ba8c9a0cc6c2f87_2048_2048_80.jpg",
+      "http://store.is.autonavi.com/showpic/12c3c5677d8257f49eaf42d82244438b",
+      "https://store.is.autonavi.com/showpic/b25fff38a3658c7cbff6ce108cc2e225"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFF61W1O",
+    "name": "城邦酒店",
+    "address": "观澜街道人民路东6号",
+    "lat": 22.701566,
+    "lng": 114.04962,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/0ccc81096f565c6b660a7f98148b80b6",
+      "https://store.is.autonavi.com/showpic/914f658eb89ee2a3c8829f78c82c8d18",
+      "https://store.is.autonavi.com/showpic/73326a6a4aaf914dc60e9bc07db92beb"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F38JJAY",
+    "name": "OYO快8连锁酒店(松岗立业店)",
+    "address": "立业路42-7号",
+    "lat": 22.768406,
+    "lng": 113.853634,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/97ebcce4cf6f613945dbc0b0c6d7264d",
+      "https://store.is.autonavi.com/showpic/ecccf4588b3d5a23e66b7e6e8ad13f5d",
+      "https://store.is.autonavi.com/showpic/c624a7c0fa4147477620a4b505465b49"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFI1EYRE",
+    "name": "悦巢HOTEL(深圳北站6979商业中心店)",
+    "address": "民治街道东泉新村151栋201",
+    "lat": 22.623178,
+    "lng": 114.029615,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/f4010f4d5a82b4fb7838c3c6a0559336",
+      "https://store.is.autonavi.com/showpic/78b3104a5927ddbb6db920a8e9db4082",
+      "https://store.is.autonavi.com/showpic/9ecd804da7991b8356860b4e688e03b5"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MG0AGYRR",
+    "name": "微特尔酒店(罗湖口岸向西村地铁站店)",
+    "address": "友谊路29号云峰花园二层",
+    "lat": 22.538129,
+    "lng": 114.123266,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/ff21e0beccf665808e29b96047f791ef",
+      "https://store.is.autonavi.com/showpic/34b1a60e07d555e3f2fd4a6e56aa3050",
+      "https://store.is.autonavi.com/showpic/2f70f3395afc5a078387ac444c9b8b0a"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFKEKRFX",
+    "name": "麗枫酒店(深圳坪山高铁站龙东地铁站店)",
+    "address": "宝龙街道深汕路218号(龙东地铁站A2口旁)",
+    "lat": 22.722142,
+    "lng": 114.294104,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/f3eeef5d669b89f152cf9397ae01be56",
+      "https://store.is.autonavi.com/showpic/11bf134c4c96519b07c7d6a6b8aba0b3",
+      "https://store.is.autonavi.com/showpic/92c3107a0c297d67ecce8dac205fc0e0"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFJHCICA",
+    "name": "深圳红星连锁酒店(松岗地铁站店)",
+    "address": "松瑞路54号",
+    "lat": 22.763349,
+    "lng": 113.837979,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/57c85a89dafe409e1460007157364856",
+      "http://store.is.autonavi.com/showpic/64b91864cf49f9de974be171c1c46674",
+      "https://store.is.autonavi.com/showpic/1c730cfa3865b0eda5df192b1c5206b5"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37WCOY",
+    "name": "丰居商务酒店(深圳机场后瑞地铁站店)",
+    "address": "西乡街道后瑞村南一巷107号",
+    "lat": 22.632953,
+    "lng": 113.835493,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/bc46aa0da60a42c8637b3144379c3899",
+      "https://store.is.autonavi.com/showpic/b1dcfe26adc8d50db64178d0eba37c0b",
+      "https://store.is.autonavi.com/showpic/8417f34938878c61abf9cda7a9b7bbd1"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFG9R6C1",
+    "name": "海之友酒店(深圳宝能中心笋岗地铁站店)",
+    "address": "笋岗街道宝岗路207号时尚新居1栋2-3层",
+    "lat": 22.567925,
+    "lng": 114.112525,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/5a8b021c5f0ca1e5df8f9b2e3406b949",
+      "https://store.is.autonavi.com/showpic/7318ec67735b354e20593202a22530ec",
+      "http://store.is.autonavi.com/showpic/210c397086ce593c6d67ac2c5829423c"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37VLX2",
+    "name": "江城酒店(深圳华南城平湖高铁站店)",
+    "address": "平湖社区平湖大街330-332号(近华南城)",
+    "lat": 22.687199,
+    "lng": 114.14012,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/36ab2899bd07ac19916cdcccdeca6cc6",
+      "https://store.is.autonavi.com/showpic/efcdfa6af8751be2e133d998c7802ed0",
+      "https://store.is.autonavi.com/showpic/ddcf35af1e5047c37386b699291df71b"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F38JKNZ",
+    "name": "荔湖酒店(深圳石岩店)",
+    "address": "石岩街道松白路西2号(石岩汽车站往西100米)",
+    "lat": 22.684811,
+    "lng": 113.926781,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/2ad5a5681b4f1ee9ef9964256839e01e",
+      "https://store.is.autonavi.com/showpic/c9a4a0ffef5812b1ea18184a08aa1657",
+      "https://store.is.autonavi.com/showpic/0134e99b2d20c36480d87a4072489110"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F38J3BS",
+    "name": "源悦酒店(深圳龙华地铁站壹方天地店)",
+    "address": "龙发路67号中环路锦绣花园缘份烟酒店南路口旁",
+    "lat": 22.646627,
+    "lng": 114.024393,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/549ecc4befe31ac9644112c2ad3f5038",
+      "https://store.is.autonavi.com/showpic/5c2efd692270382b47b59bfdafc1fefd",
+      "https://store.is.autonavi.com/showpic/04f56ab73dd893162cb0a9ff4718bec5"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFG7O4PQ",
+    "name": "深圳石榴水晶酒店",
+    "address": "观澜镇章阁社区澳门工业区5号",
+    "lat": 22.745667,
+    "lng": 114.020467,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/2ef566f5ccc95ce7511f765428bb1f20",
+      "https://store.is.autonavi.com/showpic/197de3e9239c61f91b2b976186dc39eb",
+      "https://store.is.autonavi.com/showpic/daacb1437628e5c8cc5f11d7bff99edf"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFMCY2AW",
+    "name": "麗枫酒店(深圳坪山高铁站店)",
+    "address": "宝龙街道同心社区站前路1号",
+    "lat": 22.704693,
+    "lng": 114.326227,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/99cca4523fd5fcf2d72a0e235723e30f",
+      "http://store.is.autonavi.com/showpic/77b66d8187123027f7f622c361cb9d82",
+      "https://store.is.autonavi.com/showpic/3ecc27cd58a2a04b91688ef8cfb3ebec"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0L1M7H15R",
+    "name": "英伦酒店式公寓",
+    "address": "清泉路118-120号",
+    "lat": 22.670125,
+    "lng": 114.028625,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/429f315fd6b03d075a19c61bbdd4fb17",
+      "https://store.is.autonavi.com/showpic/ee30ae45f1c148f1fd1044118816536a",
+      "https://store.is.autonavi.com/showpic/4f9fb66097bf423c8ff5abb217021d9c"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37WDT0",
+    "name": "快8连锁酒店(松岗地铁站店)",
+    "address": "松明街道松河南路",
+    "lat": 22.765386,
+    "lng": 113.835861,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/1624516a894af1306e80439a2bb15e81",
+      "https://store.is.autonavi.com/showpic/73791497940806f6f938721380bb88fa",
+      "https://store.is.autonavi.com/showpic/673bfe570d28b7182fdd6ceb9110b914"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFH9W1GL",
+    "name": "深圳今日酒店",
+    "address": "光明新区公明镇西田村社区别墅区一巷3栋",
+    "lat": 22.801664,
+    "lng": 113.898569,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/efd6da4b68a8f117712661e137f1f621",
+      "https://store.is.autonavi.com/showpic/800e279bf147ebd2e1db3ac8a3e35bed",
+      "https://store.is.autonavi.com/showpic/bb8e647054a6e7a935cbeea3a1868678"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0JB7UNO3W",
+    "name": "铂曼美瑾酒店(南山西丽地铁站店)",
+    "address": "西丽街道九祥岭东区商业街二楼",
+    "lat": 22.583295,
+    "lng": 113.956466,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/ea92e876449701ae37e306bda6bb4e36",
+      "https://store.is.autonavi.com/showpic/afb99d2ebc399b0f87c74e571f7d269d",
+      "https://store.is.autonavi.com/showpic/ac2b17ff5369c0003656b5fcab1644e8"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFHMV8DE",
+    "name": "深圳德锦源商务酒店",
+    "address": "松岗街道塘下涌社区恒珠路3号",
+    "lat": 22.801748,
+    "lng": 113.840342,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/6edcf114107f56e8899264af831b1e26",
+      "http://store.is.autonavi.com/showpic/1a36edb8f54d29c2d9982bb161b31883",
+      "https://store.is.autonavi.com/showpic/f468c04a397162d9bfa3940cd51d5866"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFG4OIJU",
+    "name": "星期一商务酒店(深圳国际会展中心福海西地铁站店)",
+    "address": "永和路45号",
+    "lat": 22.687022,
+    "lng": 113.790876,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "images": [
+      "https://store.is.autonavi.com/showpic/61c2e7d769dece90fc67d247518330f3",
+      "https://store.is.autonavi.com/showpic/a219a39251353cc4523c75adc83c885c",
+      "https://store.is.autonavi.com/showpic/7bf8966e358c47475e82aa164b373f20"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F301BDA",
+    "name": "深圳三阳酒店(深圳双龙地铁站店)",
+    "address": "龙兴街1号(双龙地铁站A口步行340米)",
+    "lat": 22.727704,
+    "lng": 114.274201,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://aos-comment.amap.com/B02F301BDA/comment/0b22ea51d423ee30d0b1ff31d3e14f63_2048_2048_80.jpg",
+      "https://store.is.autonavi.com/showpic/8fe04c3f410b7f12ec9cb5fd7165f3b0",
+      "https://store.is.autonavi.com/showpic/efd5158a7f5d9946c3a33a5b157a9219"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFF4G1IC",
+    "name": "金莱悦商务宾馆(深圳技术大学店)",
+    "address": "竹坑社区科技路15-6号",
+    "lat": 22.712317,
+    "lng": 114.396778,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/251067be9c2837dec0d090769806a571",
+      "http://store.is.autonavi.com/showpic/4e3d846f1a226dc7aac9b0f059a93893",
+      "https://aos-comment.amap.com/B0FFF4G1IC/comment/3344195edc485908109ff99b6598242c_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFG2ANH3",
+    "name": "徽商168酒店",
+    "address": "观澜街道桔坑路34号",
+    "lat": 22.729928,
+    "lng": 114.011627,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/65f09628c91aaf5717ef6226d8d75c8f",
+      "https://store.is.autonavi.com/showpic/875e8740787cdd3b60272db3c65e8877",
+      "https://store.is.autonavi.com/showpic/3bf482d024727bfccb85d5cd2b43f894"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFHQDKNE",
+    "name": "深圳驿家青旅",
+    "address": "科兴路10号汇景豪苑海悦阁14层",
+    "lat": 22.541123,
+    "lng": 113.943836,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/91dfea59dd85fc1688af09f9f83a397d",
+      "https://store.is.autonavi.com/showpic/bd35de6279cf9f1b98f3836d5b8e9c72",
+      "https://store.is.autonavi.com/showpic/53bb3395a38934175a1c121199df7f51"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFG7UMJ9",
+    "name": "时光纪青年旅舍(深圳世界之窗店)",
+    "address": "华夏路42号世界花园米兰居1栋2单元",
+    "lat": 22.539583,
+    "lng": 113.972583,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/daf415253ba397945a03fcb9b2136599",
+      "https://store.is.autonavi.com/showpic/cc64d068396ff2853067ec52241f4aa5",
+      "http://store.is.autonavi.com/showpic/34710f1030238ce3bc64f3d3442d1ce0"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F38J6KP",
+    "name": "深圳富海城市酒店(深圳大梅沙店)",
+    "address": "海星道20号心海假日公寓204",
+    "lat": 22.599244,
+    "lng": 114.310372,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/31cedcd539c113149815cf48672a4064",
+      "https://store.is.autonavi.com/showpic/ee364e183c77e31e76df443563cc47aa",
+      "http://store.is.autonavi.com/showpic/06b26880ec7a98c5aa7fc60a1767a9ac"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37VMWJ",
+    "name": "金港宾馆(深圳龙华汽车站店)",
+    "address": "清泉路龙华汽车站右侧",
+    "lat": 22.670061,
+    "lng": 114.029335,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/5e715d1ff5d3213112a485a1cd2be33e",
+      "https://store.is.autonavi.com/showpic/085259521f9ae1991c0258fdc2c035b3",
+      "https://store.is.autonavi.com/showpic/f4006e58d18626e88032f7b74bd772ec"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F38VO1V",
+    "name": "粤发宾馆(深圳东门步行街晒布地铁站店)",
+    "address": "人民北路2178号(晒布地铁站D1口步行400米)",
+    "lat": 22.549443,
+    "lng": 114.1202,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/5ee71fde45c024c14fa9f7ccb3d18dab",
+      "https://store.is.autonavi.com/showpic/e96efc9282b551d8f3219b58563d77d7",
+      "http://store.is.autonavi.com/showpic/d6a12e3f8c14d0211e41499b9518c231"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFHHCQEV",
+    "name": "深圳益煌酒店(石岩汽车站店)",
+    "address": "宝石西路18号",
+    "lat": 22.681591,
+    "lng": 113.933461,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/021e1e2633a6fa0a16509dd59c11050c",
+      "https://store.is.autonavi.com/showpic/f11ba6fbaf0465115ffe12f003193b7e",
+      "https://store.is.autonavi.com/showpic/e2d5774f655585b643f26dd90351b443"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFFEV801",
+    "name": "深圳六六酒店(石岩汽车站店)",
+    "address": "石岩街道光明路55号六六酒店",
+    "lat": 22.689723,
+    "lng": 113.921461,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/d393a3226eadedb508c9328e1bcac86d",
+      "https://store.is.autonavi.com/showpic/9e1b5e48035eb018189e7bc3417815e6",
+      "https://store.is.autonavi.com/showpic/231c5f8062887143ce660ab921334a6a"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37W30F",
+    "name": "龙联尚品酒店",
+    "address": "如意路4-8",
+    "lat": 22.692977,
+    "lng": 114.239825,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/cb32a4564bf64b421db2d23c3772c141",
+      "http://store.is.autonavi.com/showpic/e552a558d699814ee43da6a6dbb9aa28",
+      "https://store.is.autonavi.com/showpic/4231f698148126ad374cce4b5f1de04f"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F38MTJS",
+    "name": "北海稻酒店(深圳平湖店)",
+    "address": "平湖街道凤凰大道凤凰商业广场",
+    "lat": 22.696242,
+    "lng": 114.143159,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/910c4d6f6565c0f1b7876b03f1cdf7b2",
+      "https://store.is.autonavi.com/showpic/784b6bac83569ac32192581f2f16d66a",
+      "https://store.is.autonavi.com/showpic/9afe6c80fc520e516265a88f776ac483"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0H3TRN03H",
+    "name": "快8连锁酒店(深圳松岗溪头地铁站店)",
+    "address": "松岗溪头工业二路42号(溪头地铁站C1口步行290米)",
+    "lat": 22.772952,
+    "lng": 113.835435,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://aos-comment.amap.com/B0H3TRN03H/comment/content_media_external_images_media_100001702_1726935429637_79713946.jpg",
+      "https://store.is.autonavi.com/showpic/940f37312e0950637a579a179af6ffef",
+      "https://store.is.autonavi.com/showpic/a0f48d581a6678dbf9af153d6f624009"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0LULC833A",
+    "name": "怡景玥途酒店(深圳石岩地铁站店)",
+    "address": "石岩街道宝石西路108号",
+    "lat": 22.683277,
+    "lng": 113.929753,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/8dd1e1998a7fd6c0874ddc07d75c4799",
+      "https://store.is.autonavi.com/showpic/f882e799a1e5e11b10969318dd773e1f",
+      "https://store.is.autonavi.com/showpic/04e8bbfc4a63ebaa8d0cb48a04af8a28"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFFFPWJ4",
+    "name": "凯顺酒店(创兴时代北)",
+    "address": "坂田街道大发埔社区里浦街17号",
+    "lat": 22.629698,
+    "lng": 114.05802,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/27d1d27211767c1e6aa614f4fd1b781f",
+      "https://store.is.autonavi.com/showpic/a83e1da9852e5b6616aeb5d084ad1117",
+      "https://store.is.autonavi.com/showpic/764c42b8cd938301d481ef044915f529"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37VJ67",
+    "name": "舒适酒店(深圳国际会展中心福永地铁站店)",
+    "address": "福洲大道46-5号",
+    "lat": 22.675472,
+    "lng": 113.798083,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "images": [
+      "https://store.is.autonavi.com/showpic/4a40753f4e388c816aa6ee09e455c96a",
+      "http://store.is.autonavi.com/showpic/d68fc0e4a81faac5a843a5df5718d524",
+      "https://store.is.autonavi.com/showpic/c2c08c6a4c5aa769cdbc847e920d311c"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFH9Q1M9",
+    "name": "深圳暖心青年旅社(深大科技园店)",
+    "address": "科兴路11-13号",
+    "lat": 22.541142,
+    "lng": 113.945044,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/7a7134225cebe0b26ae7351373ade1d0",
+      "https://store.is.autonavi.com/showpic/4ca16aa669e48524c692d24bc61cc28b"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37WEUH",
+    "name": "山林商务酒店",
+    "address": "凤凰山大道85号",
+    "lat": 22.686004,
+    "lng": 113.842812,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/9c650d03d9b604dd38aeda380e0d0664",
+      "https://store.is.autonavi.com/showpic/d49c5b3d3be377d74535e8022c0c1550",
+      "https://store.is.autonavi.com/showpic/6e6a7d4e98ce49869d60b27cbca342a9"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0KUARARSE",
+    "name": "喜来酒店(深圳公明广场地铁站大仟里店)",
+    "address": "公明广场南路与金辉路交叉口南40米",
+    "lat": 22.777552,
+    "lng": 113.896444,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/1c17fd3c42726f8ca1fea1f65badf10b",
+      "https://aos-comment.amap.com/B0KUARARSE/comment/content_media_external_file_1300_ss__1748297766796_93704505.jpg",
+      "https://store.is.autonavi.com/showpic/e7f99d850d3f224832e3eb2a7d499a61"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0L29CR56T",
+    "name": "唐合興·香港飯店(大运天地店)",
+    "address": "大运天地购物中心北区9栋1-2层NL110号",
+    "lat": 22.699742,
+    "lng": 114.215736,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://aos-comment.amap.com/B0M61HHBRR/comment/A3A068A7_BF98_458B_ABEA_1C15789146C5_L0_001_1500_200_1769694480846_84039581.jpg",
+      "https://aos-comment.amap.com/B0M61HHBRR/comment/content_media_external_file_100006895_1770559026217_34398259.jpg",
+      "https://aos-comment.amap.com/B0M61HHBRR/comment/BBC30A45_1022_46BC_BA80_DA8F367C4E9E_L0_001_1500_200_1769694480848_46718328.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFH9SVM1",
+    "name": "深圳凯茂酒店(东门老街晒布地铁站店)",
+    "address": "晒布路48号水产商住楼12号(晒布小区西南门西北60米)",
+    "lat": 22.550968,
+    "lng": 114.120539,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/984d89a285042cf0b4b040fa3d12ce4e",
+      "https://store.is.autonavi.com/showpic/e271ca71bdb336644e5edfad6f29ae61",
+      "https://store.is.autonavi.com/showpic/ced24c9f7ca7e985fbde562995063b69"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0J2SUU7ZE",
+    "name": "深圳福田华强北步行街亚朵酒店",
+    "address": "振华路100号深纺大厦C座10层",
+    "lat": 22.544564,
+    "lng": 114.085323,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://aos-comment.amap.com/B0J2SUU7ZE/comment/68964c3d99b0e33578646fce65df2c2b_2048_2048_80.jpg",
+      "https://store.is.autonavi.com/showpic/373c566f0fc26aa8611c1cb2ceaee487",
+      "https://store.is.autonavi.com/showpic/87d5eb29d1929d94576940172e7a1f0a"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFIBKP64",
+    "name": "深圳万豪住宿",
+    "address": "马田路与民生路交叉处和平广场二楼A",
+    "lat": 22.78776,
+    "lng": 113.880331,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/878467bb8dba54b80000005020842702?type=pic",
+      "https://store.is.autonavi.com/showpic/478b4984b7615491c6563c764000d4d4",
+      "https://aos-comment.amap.com/B0FFIBKP64/comment/content_media_external_images_media_20831_1733035114683_14060708.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0HKHDAEA9",
+    "name": "城市乐酒店(深圳大学城店)",
+    "address": "珠光路与龙珠二路交叉口朗苑191号",
+    "lat": 22.569787,
+    "lng": 113.961171,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/a13f1ee056bf8e72d545aa7f562d927a",
+      "https://store.is.autonavi.com/showpic/9e3734c0ffdfcce0e7baca114360581d",
+      "https://store.is.autonavi.com/showpic/a6625f290ed020c6a1a915479c9eece2"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFF6OUK9",
+    "name": "深圳西涌一朵小花客栈",
+    "address": "西涌鹤薮二区169号",
+    "lat": 22.485116,
+    "lng": 114.538728,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/23309801d75ad8c204e5e1d01d5fbc12",
+      "https://store.is.autonavi.com/showpic/43947ec988653316cd7306ede9e2304a",
+      "https://store.is.autonavi.com/showpic/0695a675301fea1d9b2b05e83ea84ebd"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFG3UZYC",
+    "name": "明珠商务公寓(深圳石岩浪心商业街店)",
+    "address": "宝石南路164号",
+    "lat": 22.677404,
+    "lng": 113.932617,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/e648c25caf52b398b2e9ac1397e91ce1",
+      "https://store.is.autonavi.com/showpic/58d92a95f5d8b5f97991aa5ec5a1812d",
+      "https://store.is.autonavi.com/showpic/55e9f8a08a853608bf540c9856b2b7b9"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFKCT8AG",
+    "name": "深圳三明浪漫酒店",
+    "address": "公明街道办康德街51号",
+    "lat": 22.783425,
+    "lng": 113.892175,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/ec658bdf64c89345d6ecd0e3b47a3eac",
+      "https://store.is.autonavi.com/showpic/a00c2c8f8f0898b929c98686ec7f5652",
+      "https://store.is.autonavi.com/showpic/048eca2b37d9fbc49bf60e42ead8f72d"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0LDO1Z6TN",
+    "name": "润景精品酒店(深圳公明广场红花山公园店)",
+    "address": "宝安区光明新区公明镇民生路86号",
+    "lat": 22.784243,
+    "lng": 113.902002,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/612566bc838746ccc773b116406dd1ff",
+      "https://store.is.autonavi.com/showpic/c65b0236166f2ecdd7c5336ad0f29368",
+      "https://store.is.autonavi.com/showpic/74d7813f7d944c412220f3256f81290c"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F30A3KF",
+    "name": "龙湖商务酒店(龙园店)",
+    "address": "龙岗街道南联社区龙园路237号6-8楼",
+    "lat": 22.729324,
+    "lng": 114.265333,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/ba342d0916f5fc783c7a5b354b1c899c",
+      "https://store.is.autonavi.com/showpic/10ba028ec80329e5505772ebbcd6296e",
+      "https://store.is.autonavi.com/showpic/951445181930aa9602d9fe6e941aa018"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFK5D5T3",
+    "name": "深发宾馆(深圳布吉大芬油画村店)",
+    "address": "深惠路大芬沃尔玛南50米附近",
+    "lat": 22.611186,
+    "lng": 114.136283,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/485d728badeed8df5add01a899159c19",
+      "http://store.is.autonavi.com/showpic/b0a13bfc360e49199c43f542ceccaa21",
+      "https://store.is.autonavi.com/showpic/38f26cc7f846ffc5c5e7f6f568fc986a"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFFAGNSF",
+    "name": "宜居酒店(公明西环大道)",
+    "address": "公明镇福前3巷5号华荣百货商场旁",
+    "lat": 22.781365,
+    "lng": 113.871816,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/945c65aa71a8b636b060a093a9af5a26",
+      "http://store.is.autonavi.com/showpic/91b80d9bffdf6660ec92044dff3ca2f8",
+      "https://store.is.autonavi.com/showpic/665aff8dada666d0d0d9bff2f74a6e62"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0LUUHBCB6",
+    "name": "七月居青年旅舍(宝安上川地铁站店)",
+    "address": "新安街道文汇社区前进一路331号雅然居花园1栋205",
+    "lat": 22.578564,
+    "lng": 113.89319,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/fee4bbba6d7e665973eeaa659a8b9f58",
+      "https://store.is.autonavi.com/showpic/30cd2c4b8d26f3e17230a406b1d96595",
+      "https://store.is.autonavi.com/showpic/4fb317e4c41e600e5e0da9443091ec16"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFHDVPBJ",
+    "name": "深圳万山酒店(国际会展中心桥头西地铁站店)",
+    "address": "福永街道永和路31号(靠近福永国际会展中心)",
+    "lat": 22.681984,
+    "lng": 113.792805,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "images": [
+      "https://store.is.autonavi.com/showpic/ec613d1920aabde62394fc367b446739",
+      "https://store.is.autonavi.com/showpic/7b24966276037f8797f167ec60a395f6",
+      "https://store.is.autonavi.com/showpic/79ddb2908f099b469d60d1ffe1ff640e"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0G1XZI1KY",
+    "name": "皇御轩酒店(深圳龙园地铁站店)",
+    "address": "龙平东路298号(龙园地铁站C口步行340米)",
+    "lat": 22.730056,
+    "lng": 114.270017,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/bc9c9d979f0f37f43d131c490264d075",
+      "http://store.is.autonavi.com/showpic/35eb27815e7b2fc96c5ea4dd0e3fa9df",
+      "https://store.is.autonavi.com/showpic/417888e976100a67e3fdf8a1c47ceca1"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0LAF5RR45",
+    "name": "荟友酒店(星城购物中心上屋地铁站店)",
+    "address": "石岩街道上屋社区园岭村一巷8号1栋1楼",
+    "lat": 22.688877,
+    "lng": 113.941256,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/a016838f48ad1ec5d419ec7081386e52",
+      "https://store.is.autonavi.com/showpic/f446f15c9290f543437e54444a0ec0c8",
+      "https://store.is.autonavi.com/showpic/40a549d69f776603dde6b004c47c8bb9"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFGQXZ6G",
+    "name": "城市主题酒店(深圳北站店)",
+    "address": "民治街道民治大道490号-4号满滔大厦A栋1楼",
+    "lat": 22.636204,
+    "lng": 114.037718,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/d60f174d612a65b243b9897bc9fb80c1",
+      "https://store.is.autonavi.com/showpic/8cb9c8de063f9d2fcd1278a731b3cf01",
+      "https://store.is.autonavi.com/showpic/645123232e4eb0ed129799e6c12620c1"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37VJPB",
+    "name": "千富大酒店",
+    "address": "石岩镇虚背街3号",
+    "lat": 22.678018,
+    "lng": 113.931542,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/18ca41df0931a2d49883794260779013",
+      "https://store.is.autonavi.com/showpic/d32fe29eddb5eff1b4b80156e057e1b1",
+      "https://store.is.autonavi.com/showpic/71808aa03c48c361068f2384a6aa8cec"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MBOUXDVQ",
+    "name": "深圳大湾仔公馆(龙岗吉溪地铁站店)",
+    "address": "园山街道保安社区简龙街3号101",
+    "lat": 22.664081,
+    "lng": 114.244707,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/e104b95115d0c7481f2086f7e6fcdb26",
+      "https://store.is.autonavi.com/showpic/330ed9ab5438e5aaf6c063bbf8baec4c",
+      "https://store.is.autonavi.com/showpic/1406e03d9b1cd58bbdbd4b91b7584659"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFHI3NW8",
+    "name": "精途酒店(圳松岗铁站店)",
+    "address": "松明大道49号",
+    "lat": 22.767115,
+    "lng": 113.8443,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/50bf2b173265ef0a19ad1994734937e7",
+      "https://store.is.autonavi.com/showpic/d18271afeb0653e9def69a94702baa53",
+      "https://store.is.autonavi.com/showpic/bbe149c904e3d917c9d8704b893284c2"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFFQ0F20",
+    "name": "蓝天商务酒店(深圳坪山高铁站店)",
+    "address": "坪山六联社区金碧路4号207",
+    "lat": 22.690194,
+    "lng": 114.33776,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/26c91e1f4a28d81ba5feb411ff9610f9",
+      "http://store.is.autonavi.com/showpic/9501234021622c5b483e721f2d9d8e2f",
+      "https://store.is.autonavi.com/showpic/76564cc7fa67db3337d91d3e0aafbdf1"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFHCON35",
+    "name": "80青年连锁酒店(深圳塘下涌店)",
+    "address": "广田路260号(塘下涌社康服务中心旁)",
+    "lat": 22.800498,
+    "lng": 113.839739,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/bc0fe3b20dac578ec835d621e3a3af7a",
+      "https://store.is.autonavi.com/showpic/6844909d71768ac587ae58778aae3fa3",
+      "https://store.is.autonavi.com/showpic/9e3026e60b3cb247a6ae6da338173145"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFF9ZGFK",
+    "name": "芯晨宾馆(西丽地铁站店)",
+    "address": "沙河西路丽新花园F栋北二楼4061号",
+    "lat": 22.58323,
+    "lng": 113.954288,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/bc9ac349371d1c883c459ab89999dee3",
+      "https://aos-comment.amap.com/B0FFF9ZGFK/comment/f5f9c28a128f0cfd256cfc1d34651d84_2048_2048_80.jpg",
+      "https://store.is.autonavi.com/showpic/28bcf5706fc10d83432c54eabb1dde17"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0KUCCZ3GC",
+    "name": "美偲途商务公馆",
+    "address": "石龙新村七区六号四单元",
+    "lat": 22.69781,
+    "lng": 113.970227,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/cbffc293d92ac98ef9fcfb8dce5e13c8",
+      "https://store.is.autonavi.com/showpic/8a0e80b5883443c254fdaf196864897e",
+      "https://store.is.autonavi.com/showpic/9b611dedaa7a3e005620b2a2d5841f5f"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F309V2K",
+    "name": "观澜酒店",
+    "address": "观澜镇新澜大街91号(观澜地铁站B口步行430米)",
+    "lat": 22.718254,
+    "lng": 114.054665,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/b38b544b92f8dc27700630e8ee3fe215",
+      "https://store.is.autonavi.com/showpic/11a48f049625a380afe8332c17f97930",
+      "http://store.is.autonavi.com/showpic/9bdc4b6e3e09097b5cf63a6fd61d614c"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFF3IXZ7",
+    "name": "深圳顺鑫旅馆(平湖双拥街地铁站店)",
+    "address": "平湖街道新风北街3号3-4层",
+    "lat": 22.69529,
+    "lng": 114.131126,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/62e7bdc1ad86e24b48efb4bcf6ca425d",
+      "https://store.is.autonavi.com/showpic/ece95cc4d0b3d6750662b730a7403cbf",
+      "https://store.is.autonavi.com/showpic/e3e71a12375e83465240f04f7139283c"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0G0GHJ206",
+    "name": "飞怡酒店(深圳机场T3航站楼黄田地铁站店)",
+    "address": "107国道黄田社区甲田岗工业区一号综合楼",
+    "lat": 22.62935,
+    "lng": 113.84722,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://aos-comment.amap.com/B0G0GHJ206/comment/file_media_Photo_707_IMG_1766224530_679_IMG_20251220_175350_jpg_ss__1766224508065_51472002.jpg",
+      "https://aos-comment.amap.com/B0G0GHJ206/comment/173598494774_1735984950580_96108965.jpg",
+      "https://store.is.autonavi.com/showpic/59c7e63384c020656727dfebecb356b1"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0IASSK0C3",
+    "name": "一品酒店(深圳福永国际会展中心店)",
+    "address": "福永街道凤凰社区兴业一路200号",
+    "lat": 22.702065,
+    "lng": 113.834408,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "images": [
+      "https://store.is.autonavi.com/showpic/582302328b560c3225e4e7087a9cd131",
+      "https://store.is.autonavi.com/showpic/dd1ec97929a96f610d38338d28c04604",
+      "https://store.is.autonavi.com/showpic/b6f5bf50c5b77ea36e0959c35c34d032"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F38QLJY",
+    "name": "深圳鹏达宾馆(罗湖火车站店)",
+    "address": "人民南路1007房地产大厦12层",
+    "lat": 22.534524,
+    "lng": 114.118361,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/735f04d2a8466291001980deb1bf719f",
+      "https://store.is.autonavi.com/showpic/d5227575d6eb38c112bc3a60e30726de",
+      "https://store.is.autonavi.com/showpic/7d2dfed079f4c6586d7286dd9a182d3c"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFMAYLAM",
+    "name": "深圳迈娅酒店",
+    "address": "南园新园路5号",
+    "lat": 22.517454,
+    "lng": 113.919626,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/62a6d4ae7100453ccaf424e7105df0e8",
+      "https://store.is.autonavi.com/showpic/bcb136b75c380187739914ac0d24fc07",
+      "https://store.is.autonavi.com/showpic/3e38c1cbb1cf0cd40a54a674c4e06dcc"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0JG5RDIWE",
+    "name": "万澳青舍(深圳东站布吉地铁站店)",
+    "address": "金利路52号(长龙地铁站C2出口步行380米)",
+    "lat": 22.606133,
+    "lng": 114.116571,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://aos-comment.amap.com/B0JG5RDIWE/comment/b08016580e4a69861d3e8d3703095a26_2048_2048_80.jpg",
+      "https://store.is.autonavi.com/showpic/bae57c0c6c28ec4b4450441b17ff40f1",
+      "https://store.is.autonavi.com/showpic/8aea48addacf192aee8ccfb5698f33a3"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37VJG5",
+    "name": "福来登酒店(深圳国际会展中心桥头地铁站店)",
+    "address": "福永街道新田社区大洋路美盛新村2号",
+    "lat": 22.694232,
+    "lng": 113.822635,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "images": [
+      "https://store.is.autonavi.com/showpic/d38accaa5a5dec5b5b01aaee30e2d369",
+      "https://store.is.autonavi.com/showpic/9b42267bfa8740af49668eaef205857b",
+      "https://store.is.autonavi.com/showpic/4e73f30cac74ff9f1abc282823502cdb"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F38IG6Z",
+    "name": "深圳安泰商务酒店(深圳国际会展中心店)",
+    "address": "沙井街道东塘东业苑B区8巷8号",
+    "lat": 22.732313,
+    "lng": 113.802063,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "images": [
+      "https://store.is.autonavi.com/showpic/a16989a57580b06dcd4f87264d93fa80",
+      "https://store.is.autonavi.com/showpic/3279b0a8a09e276512f0c2d64ff735e8",
+      "https://store.is.autonavi.com/showpic/d70cfba63836c7c308d2fc0f6e531c38"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37WFHA",
+    "name": "岚途·云智能酒店(深圳宏发大世界店)",
+    "address": "青年路38号,宏发大世界,青年路口公交站旁",
+    "lat": 22.674287,
+    "lng": 113.927131,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/dd438a2c7300d224af53be68a41a4f68",
+      "https://store.is.autonavi.com/showpic/c8724240e7e2c6ab9c5cf815289755cd",
+      "https://store.is.autonavi.com/showpic/391919a4d845ab3621ca0b3a4f889a99"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFF2Z06P",
+    "name": "天惠多商务宾馆(深圳观澜富士康店)",
+    "address": "福城街道观光路1513号天惠多商务大厦8322室",
+    "lat": 22.731779,
+    "lng": 114.004355,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/61d992192e8611f876215c91b3e019c0",
+      "https://store.is.autonavi.com/showpic/aeff4c53bde12eb1e4d70fd3e5cc1673",
+      "https://store.is.autonavi.com/showpic/b5fcb4529cd2582136cf65703db6abd5"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFGG7OI1",
+    "name": "198精品酒店(深圳公明广场地铁站大仟里店)",
+    "address": "金安路27-2号",
+    "lat": 22.781319,
+    "lng": 113.889427,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/389d1c724191cc660000002739740466?type=pic",
+      "https://aos-comment.amap.com/B0FFGG7OI1/comment/b5b605f320bf240159fdf8c5640739f3_2048_2048_80.jpg",
+      "https://store.is.autonavi.com/showpic/9a70be8bfea961905b2f464c5148b20e"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37VKMK",
+    "name": "宇富恒商旅酒店(深圳龙华汽车站店)",
+    "address": "东环一路374号狮头岭村综合办公楼1楼",
+    "lat": 22.662941,
+    "lng": 114.0221,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/7563eb25b5b822a98044fb667f45283f",
+      "http://store.is.autonavi.com/showpic/87c5d51425679d795bd62902a6e82343",
+      "https://store.is.autonavi.com/showpic/b36c290407d42dcf4163ead6f24c894d"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFI1PQGA",
+    "name": "登巴国际青年旅舍(深圳皇岗口岸会展中心地铁站店)",
+    "address": "福民地铁站J2口步行390米",
+    "lat": 22.528081,
+    "lng": 114.065566,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "images": [
+      "https://store.is.autonavi.com/showpic/c27996d58357fa7cdff0aa17a1846e0f",
+      "https://store.is.autonavi.com/showpic/f09a5410b3e1dfdc2610660cd1d02038",
+      "https://store.is.autonavi.com/showpic/6b175e1942d7e1a91d306042d2ad3ff6"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0G3ML217E",
+    "name": "爱在·鸿运旅馆(元芬地铁站店)",
+    "address": "龙华村鹊山新村37号(元芬地铁站B口步行220米)",
+    "lat": 22.6581,
+    "lng": 114.00506,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/774d2d9bb904fdb657742c40df5d23fc",
+      "https://store.is.autonavi.com/showpic/1767b9ea88e4f318e0fad09a6ddf666d",
+      "https://store.is.autonavi.com/showpic/aa5d9b48c1df6618b117ffe72fa2a3ed"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFFWNOQY",
+    "name": "深圳华丰连锁酒店(塘朗店)",
+    "address": "塘朗市场爱购超市1层、3层",
+    "lat": 22.589425,
+    "lng": 113.986525,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/6b65b63eac7755728562e25a53102059",
+      "https://store.is.autonavi.com/showpic/eb020e3b21e4f286b256373850afd223",
+      "https://store.is.autonavi.com/showpic/55d0a3e5e32cdea9d102873f2846e048"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F38PFX8",
+    "name": "宏昌宾馆(罗湖口岸国贸地铁站店)",
+    "address": "人民南路熙龙大厦4-5楼(国贸地铁站E口步行180米)",
+    "lat": 22.538105,
+    "lng": 114.117846,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/1817c7c1f0084299866eea9087c07b00",
+      "https://store.is.autonavi.com/showpic/dc40befd9c190db9e7dd235460ec31af",
+      "https://store.is.autonavi.com/showpic/5dfb47bd40a7afbdb15004bdb7fd394d"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0LGSMWRA5",
+    "name": "酷玩电竞酒店(樟坑径店)",
+    "address": "观湖街道樟溪社区安澜路327号302",
+    "lat": 22.684386,
+    "lng": 114.077064,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/8aa884508123ac908228306a78bbae6c",
+      "https://store.is.autonavi.com/showpic/e554f500145e6e2edbb9487caada9680",
+      "https://store.is.autonavi.com/showpic/770c3f2f6927ed573654030a14d26f08"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFG4D4PU",
+    "name": "深圳福华酒店(石厦地铁站店)",
+    "address": "新洲路石厦西村136号3楼",
+    "lat": 22.521526,
+    "lng": 114.049163,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://aos-comment.amap.com/B0FFG4D4PU/comment/file_media_Photo_1700_IMG_1757523930_1495_screenshot_20250911_010350_jpg.jpg",
+      "https://aos-comment.amap.com/B0FFG4D4PU/comment/file_media_Photo_1701_IMG_1757523936_1496_screenshot_20250911_010356_jpg.jpg",
+      "https://store.is.autonavi.com/showpic/0d6ef7f65787fa20067c04889fe0a853"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37SAGC",
+    "name": "金山宾馆(深圳龙岗龙城广场地铁站店)",
+    "address": "龙岗街道南联怡丰路23号芙盛宇宏大厦1楼(近银威路)",
+    "lat": 22.716282,
+    "lng": 114.25962,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/3251fdfe56095c08da45a19d6ae08a3a",
+      "https://aos-comment.amap.com/B02F37SAGC/comment/content_media_external_images_media_100004482_1732789431744_85750083.jpg",
+      "https://aos-comment.amap.com/B02F37SAGC/comment/95f883d56b595d167023a2a0c7078baa_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFKX8BX4",
+    "name": "深圳爱吧商务宾馆",
+    "address": "松岗街道吉祥路69号",
+    "lat": 22.768521,
+    "lng": 113.844386,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://aos-comment.amap.com/B0FFKX8BX4/comment/a6a5375e425e7cfe15f112d98db1f77a_2048_2048_80.jpg",
+      "https://store.is.autonavi.com/showpic/e4e0b20096dd4d2d670d0ef464bf2681",
+      "https://store.is.autonavi.com/showpic/380da0b14de56ebe23fd5ce06ba5b0c0"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F38M8KW",
+    "name": "新东源国际酒店",
+    "address": "沙井北环路154号",
+    "lat": 22.747029,
+    "lng": 113.818374,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "images": [
+      "https://store.is.autonavi.com/showpic/e9252eb49abf4bef7e56e5bf6cc0bd32",
+      "http://store.is.autonavi.com/showpic/fe5f9f51dd483ad6abe2efb4ffc7c451",
+      "https://store.is.autonavi.com/showpic/ad42d681af3f4dc3ee86c903cb07eef2"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0I6BAFUM7",
+    "name": "深圳聚点酒店公寓(龙城广场地铁站店)",
+    "address": "龙河路8号(龙城广场地铁站C口步行330米)",
+    "lat": 22.718813,
+    "lng": 114.255573,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/8a2a3f54d84bcadb87be185061a07853",
+      "https://store.is.autonavi.com/showpic/be7399d882437d6ef3eadfb9f0a3a82e",
+      "https://aos-comment.amap.com/B0I6BAFUM7/comment/8f0bf46c19ff97f1e45e337adc94eaf8_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0K23RS57S",
+    "name": "万象天地青年旅舍",
+    "address": "科技路18号大冲新城花园1栋101",
+    "lat": 22.542337,
+    "lng": 113.953036,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/854520c019fd513c437f5d4c3e64c9f5",
+      "https://store.is.autonavi.com/showpic/2c40bacfc8cdb5a5484b688a35653b24",
+      "https://store.is.autonavi.com/showpic/84536065fea9766024eb46404e3981fe"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0JBL7RZZ6",
+    "name": "南山科技园青年旅舍",
+    "address": "粤海街道铜鼓路28号润府二期1层商铺",
+    "lat": 22.543246,
+    "lng": 113.954986,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/9d13ff3768df934bd3ed269a63cc92c6",
+      "https://store.is.autonavi.com/showpic/abdef7f69b5ca58dc7442fb386906ec1",
+      "https://store.is.autonavi.com/showpic/21ab324ba57288ea28a40b617c59a95d"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFG74DOS",
+    "name": "半岛青年旅舍",
+    "address": "新洲三街55号凯欣园(沙尾地铁站C口步行370米)",
+    "lat": 22.523067,
+    "lng": 114.043331,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/1334f4bc6ef1df56f35b7edae1a59279",
+      "https://store.is.autonavi.com/showpic/5ac4ea4931bdb2f9526bf4c1f8fdddba",
+      "https://store.is.autonavi.com/showpic/b71d162cd9a047421f76bbe301e486b5"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFKSXU0G",
+    "name": "骏怡精选酒店(深圳大鹏新区葵涌街道办店)",
+    "address": "葵涌工业区金业大道138-1号(葵涌街道办对面)",
+    "lat": 22.636327,
+    "lng": 114.426603,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/fa4a677f8ca757e6ae14b04b7af68f80",
+      "https://store.is.autonavi.com/showpic/b96064bf25f2447971c21af15b74cbb6",
+      "https://store.is.autonavi.com/showpic/4f6696d90b84693ee33ac3603e618722"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFHIQWCQ",
+    "name": "苏雅酒店(深圳国际会展中心福永凤凰山店)",
+    "address": "腾丰二路10号",
+    "lat": 22.682859,
+    "lng": 113.843308,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "images": [
+      "https://store.is.autonavi.com/showpic/d67b0682a07680ca841088c70c9ec855",
+      "https://store.is.autonavi.com/showpic/ba0d349f48ba78a9d951470d659d6d67",
+      "https://store.is.autonavi.com/showpic/3e861b3e2dd155d06347358c7e212c28"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F38ZZLT",
+    "name": "紫华园酒店(深圳大梅沙地铁站店)",
+    "address": "大梅沙街道办彩陶路18-22号(鸿威·海怡轩东南门旁)",
+    "lat": 22.595916,
+    "lng": 114.305478,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/fc54faf406384302938c1c9b73bb38b6",
+      "https://aos-comment.amap.com/B02F38ZZLT/comment/content_media_external_file_1000036562_ss__1766899356430_45588797.jpg",
+      "https://store.is.autonavi.com/showpic/a365f05e7d8e0d31f9b346628a6606bd"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFG2PJ3L",
+    "name": "深圳大鹏东部阳光酒店",
+    "address": "大鹏新区葵涌街道金葵中路81号",
+    "lat": 22.627165,
+    "lng": 114.425877,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://aos-comment.amap.com/B0FFG2PJ3L/comment/content_media_external_file_1000065253_ss__1765464442237_10672736.jpg",
+      "https://store.is.autonavi.com/showpic/4eba7c42d41d4f338daa3b0f1b54163f",
+      "https://aos-comment.amap.com/B0FFG2PJ3L/comment/content_media_external_file_1000065252_ss__1765464442241_60471263.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F38JM6G",
+    "name": "米兰时尚酒店",
+    "address": "三联路兴万和商业广场(清湖地铁站C2口步行470米)",
+    "lat": 22.666242,
+    "lng": 114.034165,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/31bd53755363874153eaaa6bd1a19a7e",
+      "https://store.is.autonavi.com/showpic/0fdba3ebdbc61cbed4b63a9ed5a35732",
+      "https://store.is.autonavi.com/showpic/5441cc4d2fe4a716a8e8bd1b4fa53326"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0K1D5BEVH",
+    "name": "安永昌酒店(深圳国际会展中心展城路店)",
+    "address": "福海街道展城社区和秀西路68号宝祥和工业园8栋",
+    "lat": 22.694818,
+    "lng": 113.783168,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "images": [
+      "https://store.is.autonavi.com/showpic/75f6e9525f4aff4f3ecadc2dfdd788ed",
+      "https://store.is.autonavi.com/showpic/4e2eb284df9b060634aadcf4f632c9ef",
+      "https://store.is.autonavi.com/showpic/0014258aa4abce8b9e085927725190bb"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F38J2JN",
+    "name": "龙成精品酒店(深圳南联地铁站店)",
+    "address": "怡丰路3号(荣域幼儿园正对面)",
+    "lat": 22.717059,
+    "lng": 114.261999,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/933a409c9342c2921d3c1f61b6b85117",
+      "https://store.is.autonavi.com/showpic/4055b76e469790d2a83567ff48d2eabc",
+      "https://store.is.autonavi.com/showpic/092c12d16f29715edcb2adb8e23d54fa"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFI30HK1",
+    "name": "深圳尘栖青年旅舍",
+    "address": "人民南路1001号华民大厦F9层",
+    "lat": 22.534108,
+    "lng": 114.118593,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://aos-comment.amap.com/B0FFI30HK1/comment/8b50f7d2fc9aafcbb05262bed4bdf5d7_2048_2048_80.jpg",
+      "https://store.is.autonavi.com/showpic/0bef036efb0bc29e3b74b898f8db2416",
+      "https://store.is.autonavi.com/showpic/069f9c7bbb3b56d9b5f7351cb3ca30aa"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F38PFOI",
+    "name": "深圳客8酒店(莲塘地铁站仙湖植物园店)",
+    "address": "莲塘街道国威路78号莲塘第一工业区D小区101栋3楼",
+    "lat": 22.564195,
+    "lng": 114.170319,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/9a620f8da7134008bef570db168ddd4a",
+      "http://store.is.autonavi.com/showpic/6f284ac5c620ee0f1cea31a8e4a3cd1c",
+      "http://store.is.autonavi.com/showpic/16057ebfc77708a3d9fe93bfb53d52d5"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFF454W8",
+    "name": "山景酒店(凤凰山店)",
+    "address": "台湾美食街13栋",
+    "lat": 22.684178,
+    "lng": 113.84673,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/a33eeca654fc913380d70896923c58f4",
+      "https://store.is.autonavi.com/showpic/ab61e2b1c8883fbadbcde3a36c582a29",
+      "https://store.is.autonavi.com/showpic/724b8d8c32d8ecade779238f75bff6aa"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFG2MW4C",
+    "name": "兆丰商务宾馆",
+    "address": "平湖街道凤凰社区富民街2号2层(香港金六福珠宝店)",
+    "lat": 22.695898,
+    "lng": 114.132453,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/2cda5e703b4c6b2e6885ab9fed763135",
+      "https://store.is.autonavi.com/showpic/9925413a7cb3855276a64f88a38d2647",
+      "https://store.is.autonavi.com/showpic/b604154e8349ebdb4d274325250eda16"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0I2RDUGN6",
+    "name": "富临云端酒店(深圳燕子湖国际会展中心东纵纪念馆地铁站店)",
+    "address": "三洋湖路与三洋湖三巷交叉口西南20米",
+    "lat": 22.686716,
+    "lng": 114.35491,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "images": [
+      "https://store.is.autonavi.com/showpic/16ba6ca70acc51f92053bb91a65a272b",
+      "https://store.is.autonavi.com/showpic/055a568f14ebf21d0000002260860879?type=pic",
+      "https://store.is.autonavi.com/showpic/ec67b0678e2bd5b1d7b5a5239d2110a4"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37WLTI",
+    "name": "深圳好又来酒店(东门步行街湖贝地铁站店)",
+    "address": "华佳大厦一楼(晒布地铁站A1口步行320米)",
+    "lat": 22.54566,
+    "lng": 114.122045,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/e48e5abdd9577f341c0aadc44005e347",
+      "https://store.is.autonavi.com/showpic/44af0babb05d495374deb54c2357456b",
+      "https://store.is.autonavi.com/showpic/4400766691772ba346b6ac2c193a6289"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFK0ETLW",
+    "name": "领航尊享酒店(深圳宝安国际会展中心店)",
+    "address": "福海街道塘尾社区荔园路8-1号",
+    "lat": 22.697075,
+    "lng": 113.803282,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "images": [
+      "https://store.is.autonavi.com/showpic/a14d0490ff55af10b99b42fe271e7126",
+      "http://store.is.autonavi.com/showpic/c58e969463f4d071012d8bce9300f8d2",
+      "https://store.is.autonavi.com/showpic/eb2575f80a170ced698218236d6784f3"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F38JGY2",
+    "name": "冠华酒店(深圳国际会展中心福永地铁站店)",
+    "address": "福永街道桥头社区七号路之5号楼",
+    "lat": 22.679377,
+    "lng": 113.803264,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "images": [
+      "https://store.is.autonavi.com/showpic/5545e6ee2846da7544d29a9f28169b84",
+      "https://aos-comment.amap.com/B02F38JGY2/comment/content_media_external_file_1000065899_ss__1772475140385_64228666.jpg",
+      "https://store.is.autonavi.com/showpic/f36361462b750930003e58dcf82eef38"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37S03Y",
+    "name": "深圳丰南苑大酒店(观澜新田店)",
+    "address": "观湖街道新田观平路87号1668公寓",
+    "lat": 22.701453,
+    "lng": 114.087777,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/4338367c02fe4d6730ac24aa131329fd",
+      "https://store.is.autonavi.com/showpic/6bedaf8040de49be0aa1fa69a252c7a0",
+      "https://store.is.autonavi.com/showpic/d4bcf8f412923bb62575248287261de5"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0H251OR3X",
+    "name": "雅斯格公寓(深圳北站店)",
+    "address": "梅龙路樟坑三区131栋(近鑫茂公寓、潜龙花园公交站)",
+    "lat": 22.610326,
+    "lng": 114.03958,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/1f59d3d05af183758bb5237181bfc7d1",
+      "https://store.is.autonavi.com/showpic/20f2a2f8222f85dfe669a356940fb7f8",
+      "https://store.is.autonavi.com/showpic/69ad936df13d8c53e0e56c9fcddaf778"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFGRZNI4",
+    "name": "华庭酒店(光翠路)",
+    "address": "光明街道光翠路光明广场侧1号",
+    "lat": 22.757841,
+    "lng": 113.942696,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/24adf6409dc6accf02b85831b0d38ded",
+      "https://store.is.autonavi.com/showpic/ce916905112be4335268cf449ddd35fb",
+      "https://store.is.autonavi.com/showpic/cbc7b600f178cf25a0c089bd6238088d"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37VJAZ",
+    "name": "锦江之星酒店(深圳宝安国际机场店)",
+    "address": "福永镇下十围村福海二路66号",
+    "lat": 22.648607,
+    "lng": 113.82354,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "images": [
+      "https://store.is.autonavi.com/showpic/7a2bd13b837e9dc3c0e7f162e4cd30b8",
+      "https://store.is.autonavi.com/showpic/73546fbb1fb1f59bae45758d673d7911",
+      "http://store.is.autonavi.com/showpic/8d21684665961c0690f3e237d9c6ba3f"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F38JJYM",
+    "name": "深圳嘉悦酒店(共和社区天源隆广场店)",
+    "address": "福和路东四巷5号",
+    "lat": 22.756565,
+    "lng": 113.803428,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/e372456f74d62ea82108a435f9f0f3e0",
+      "https://store.is.autonavi.com/showpic/de5d4f277217718c95e13707445caf28",
+      "https://store.is.autonavi.com/showpic/01061adf69d86dbe987803af93d8693e"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFFK8IQD",
+    "name": "领航精品酒店(新机场航站楼店)",
+    "address": "西乡街道三围社区宝安大道5004号",
+    "lat": 22.614473,
+    "lng": 113.841307,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/2a13c5b16e5100eb8e30418e49e61036",
+      "https://store.is.autonavi.com/showpic/bbe03c272df69bb457a8e5ff64a07421",
+      "https://store.is.autonavi.com/showpic/b69b84e6ab2ea692fa42dcb4de1b899e"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFGY0KUO",
+    "name": "梦之恋精品酒店(深圳水湾地铁站蛇口店)",
+    "address": "公园南路37-1号",
+    "lat": 22.489261,
+    "lng": 113.924944,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/cf6ad4bc5391f2dea3896c834cfb549e",
+      "https://store.is.autonavi.com/showpic/6484f7ba3de372da8b2530445db6eca3",
+      "https://store.is.autonavi.com/showpic/0d25aca0ddab5e8af2cae1c62e8f25bb"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37W2BA",
+    "name": "金福来酒店(凤塘大道)",
+    "address": "福海街道新田社区碧湖新村二巷2号",
+    "lat": 22.693381,
+    "lng": 113.831884,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/61c88a123f50b6503df1b0d268d5f374",
+      "http://store.is.autonavi.com/showpic/21371b241820f1f304c10a624838ba21",
+      "https://store.is.autonavi.com/showpic/53d11cea9b49b89650762667de043e16"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F38PFJX",
+    "name": "聚福宾馆(深圳罗湖店)",
+    "address": "人民南路1007房地产大厦9楼",
+    "lat": 22.534602,
+    "lng": 114.118346,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/79197b02db9127c46912191dff333ff1",
+      "https://store.is.autonavi.com/showpic/1bd5a49fc87b9b0de10446001a27cd93",
+      "https://store.is.autonavi.com/showpic/a1ef9bd4820d348477612a070f8c9d18"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0JR7UG7CR",
+    "name": "海友酒店(深圳坪山火车站店)",
+    "address": "坪山街道六和社区龙坪路4039号C栋",
+    "lat": 22.700284,
+    "lng": 114.338176,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/88e276e679c7aee104262d7d6a1c6d5c",
+      "https://store.is.autonavi.com/showpic/dafe7f3befdd534bec631216320bb863",
+      "https://store.is.autonavi.com/showpic/6bfe50ad5dd8a93373987ed1f8ed598f"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFFPA05H",
+    "name": "深圳拉菲酒店(蛇口老街海上世界店)",
+    "address": "蛇口街道蛇口老街108号(蓝漪花园停车场对面)",
+    "lat": 22.485905,
+    "lng": 113.927353,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/ce62040d2110871edb04edfc7c792213",
+      "http://store.is.autonavi.com/showpic/e3c5c79ae019687cb43b15b069b3f719",
+      "https://store.is.autonavi.com/showpic/708be56b289e372b59d2f432dfdd703f"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F38K75U",
+    "name": "如家酒店·neo(深圳东站布吉地铁站店)",
+    "address": "布吉老街吉信街8号九矿大厦5楼(近布吉地铁站,深圳东站,布吉老街)",
+    "lat": 22.601096,
+    "lng": 114.116811,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/4894b1c20dc55b6f7765dc5725c562bc",
+      "http://store.is.autonavi.com/showpic/e07b704fffb074e09c89d1e97e6d305c",
+      "https://store.is.autonavi.com/showpic/e9ef5b7d8d8d16055a5b9fd49ada5501"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37VMEF",
+    "name": "鸿福来酒店(深圳横岗四联店)",
+    "address": "横岗街道四联路135号(隆盛花园斜对面)",
+    "lat": 22.648626,
+    "lng": 114.201894,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/af00e3004557373ed81e5436309a0b14",
+      "https://store.is.autonavi.com/showpic/5d45bfc0e19b4e1032fa52ba59fcbbef",
+      "https://store.is.autonavi.com/showpic/82b2e97d907bd6eedcd6374e5ef27153"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFGSIMVO",
+    "name": "深圳大万精品酒店(锦龙地铁站大万世居店)",
+    "address": "坪山街道坪环社区大万新村十六巷8号南边5-7层",
+    "lat": 22.680737,
+    "lng": 114.341437,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/790d83722e0a0a9d53c540b8c3a84c10",
+      "https://store.is.autonavi.com/showpic/87f93c0ab10126ae45defb5799bbfacb",
+      "https://store.is.autonavi.com/showpic/5b724488960b3d35fafb2f558977367c"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFHU4SRV",
+    "name": "深圳筑梦者遨游太空舱酒店",
+    "address": "松岭路6号杰恩大厦F4层",
+    "lat": 22.536147,
+    "lng": 114.094757,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/453daeaef487037702eb58ee8a7cda0c",
+      "https://store.is.autonavi.com/showpic/1d63b8f95f00e414607567b86e642609",
+      "https://store.is.autonavi.com/showpic/16b1101b2b750727204d75691810da80"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFH0T5MH",
+    "name": "深圳漫时光青年旅舍(罗湖口岸店)",
+    "address": "人民南路华民大厦16楼G号",
+    "lat": 22.534179,
+    "lng": 114.11848,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/205314ce57e2def4351e7620bd16b8f4",
+      "https://store.is.autonavi.com/showpic/f49f1f5b16c8ed0391e5de4cd85522b4",
+      "http://store.is.autonavi.com/showpic/34710f1030238ce3bc64f3d3442d1ce0"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0K2458C3N",
+    "name": "瑞洛臻品酒店(深圳国际会展中心沙井地铁站店)",
+    "address": "新桥街道新沙路289号2-5层",
+    "lat": 22.727044,
+    "lng": 113.826461,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "images": [
+      "https://store.is.autonavi.com/showpic/43bbcadce5cb7c8bb9e73a0981deb192",
+      "https://aos-comment.amap.com/default_poi/comment/77534CAD_5F1F_421A_AA22_14DD7EAEF03E_L0_001_1179_1188_1728193807269_35856965.jpg",
+      "https://store.is.autonavi.com/showpic/2a42b9279f1f3da920d22eef45e294b5"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0I64SREMV",
+    "name": "格慕·GREEM HOTEL酒店(深圳宝安国际机场固戍地铁站店)",
+    "address": "西乡街道固戍一路811号",
+    "lat": 22.594165,
+    "lng": 113.847082,
+    "hasFamilyRoom": false,
+    "hasKidsPool": false,
+    "hasKidsBreakfast": true,
+    "images": [
+      "https://store.is.autonavi.com/showpic/e475e033663faf315b532cd961001247",
+      "https://store.is.autonavi.com/showpic/4ee173157752e4cac1a9bd1043a36116",
+      "https://store.is.autonavi.com/showpic/5aaa906ee4f31cf7ae0949ba6f01e48c"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  }
+]

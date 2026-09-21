@@ -1,0 +1,3673 @@
+[
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFF4H6BT",
+    "name": "麦当劳(大运DT店)",
+    "address": "深圳大运天地南区北门西北60米",
+    "lat": 22.696327,
+    "lng": 114.218956,
+    "hasHighChair": true,
+    "isKidTolerant": true,
+    "hasKidsMenu": true,
+    "images": [
+      "https://aos-comment.amap.com/B0FFF4H6BT/comment/63ADAD47_DD2C_41AB_A87B_A6F4B93A6078_L0_001_1284_189_1762943854178_92979743.jpg",
+      "https://aos-comment.amap.com/B0FFF4H6BT/comment/content_media_external_images_media_1000061578_ss__1734878425541_41647729.jpg",
+      "https://aos-comment.amap.com/B0FFF4H6BT/comment/b461fced95a6c0fcec9cba83b96f266a_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFLLAWDG",
+    "name": "麦当劳(深圳One Avenue·卓悦中心店)",
+    "address": "福田街道岗厦社区福华路北面岗厦城L1层126号商铺",
+    "lat": 22.536665,
+    "lng": 114.066835,
+    "hasHighChair": true,
+    "isKidTolerant": true,
+    "hasKidsMenu": true,
+    "images": [
+      "https://store.is.autonavi.com/showpic/fbb312980ae486be0000005083490667?type=pic",
+      "https://aos-comment.amap.com/B0FFLLAWDG/comment/2bd43c36c115a53bad6bde4f27fe992a_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B0FFLLAWDG/comment/10b6756d8e094e0f7914907bca9696c6_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFFS4REL",
+    "name": "麦当劳(上步分店餐厅)",
+    "address": "深南中路79号华垦大厦一楼",
+    "lat": 22.540275,
+    "lng": 114.089339,
+    "hasHighChair": true,
+    "isKidTolerant": true,
+    "hasKidsMenu": true,
+    "images": [
+      "http://store.is.autonavi.com/showpic/7312818c670d7806deb485b555cb1002",
+      "http://store.is.autonavi.com/showpic/ef320d1a232f538d48b3be835eaedb04",
+      "https://store.is.autonavi.com/showpic/764a5bf4cb75c4cd0000002437462700?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFGDW0U7",
+    "name": "深圳威尼斯英迪格酒店西餐厅",
+    "address": "华侨城深南大道9026号深圳南山威尼斯英迪格酒店",
+    "lat": 22.536912,
+    "lng": 113.977759,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/fb6d9a88560ee59cb21ca9d817df79fd",
+      "http://store.is.autonavi.com/showpic/24c07f2fee0ce6a7628590ede7219891",
+      "https://store.is.autonavi.com/showpic/841d33d94e448891db839abdae85590d"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFIUXCJS",
+    "name": "卡丹新疆美食(南园新村店)",
+    "address": "南园路82号(科学馆地铁站C口步行220米)",
+    "lat": 22.538924,
+    "lng": 114.094207,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B0FFIUXCJS/comment/content_media_external_file_11743_1760016633613_77216148.jpg",
+      "https://store.is.autonavi.com/showpic/fc7f71f18d34b48f0758f9581b9eb305",
+      "http://store.is.autonavi.com/showpic/897cf5f66062cdbaad0e6c049df8e460"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFH230E6",
+    "name": "庙街旅游美食城(深圳东门店)",
+    "address": "东门步行街东门印象城(西北角)",
+    "lat": 22.546459,
+    "lng": 114.120621,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B0FFJD14X0/comment/174084211771_1740842144555_28946596.jpg",
+      "https://store.is.autonavi.com/showpic/05b6fa03c8b4f8568d49badf27bd0e47",
+      "http://store.is.autonavi.com/showpic/a8ae8bf65b0e81731cb764d1ecfcde66"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFGNMSPX",
+    "name": "墨念素食咖啡小馆",
+    "address": "甘坑古镇7D-116-21",
+    "lat": 22.656064,
+    "lng": 114.104929,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B0FFGNMSPX/comment/3929812081e1bbace606d0231a059d7d_2048_2048_80.jpg",
+      "http://store.is.autonavi.com/showpic/e81cfc1ed6bb7d1420a0d03b1c9fc686",
+      "https://aos-comment.amap.com/B0FFGNMSPX/comment/183f7ebf9f0b0c22b9ece6e3a4c00770_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFJ1S1TD",
+    "name": "佐聆佑舍椰子鸡音乐餐厅",
+    "address": "大鹏新区佳兆业广场一楼L105",
+    "lat": 22.593966,
+    "lng": 114.474906,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/a211170d31cc11840000004863374867?type=pic",
+      "https://store.is.autonavi.com/showpic/97cf8fde550334496445addb185a4cd0",
+      "https://store.is.autonavi.com/showpic/d40a8a7df810ffb30000004863388598?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFJKUZ6L",
+    "name": "笨鱼水产(2店)",
+    "address": "龙城街道白灰围二路42号(家和盛世二期南门旁)",
+    "lat": 22.721207,
+    "lng": 114.231769,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B0FFJKUZ6L/comment/content_media_external_images_media_100053808_1736587379463_38428296.jpg",
+      "https://aos-comment.amap.com/B0FFJKUZ6L/comment/content_media_external_images_media_100053125_1736478937002_65265716.jpg",
+      "https://aos-comment.amap.com/B0FFJKUZ6L/comment/content_media_external_images_media_100053125_1736478937000_73885219.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFIQ19N2",
+    "name": "常来居韩国料理",
+    "address": "福永街道聚福社区天欣花园如意楼第2单元101",
+    "lat": 22.669151,
+    "lng": 113.825993,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B0FFIQ19N2/comment/content_media_external_file_66620_ss__1765026379303_01170706.jpg",
+      "https://aos-comment.amap.com/B0FFIQ19N2/comment/5C133EF3_1B22_40D2_BBF7_4ED1241FA32C_L0_001_1512_201_1758087339731_34665803.jpg",
+      "https://aos-comment.amap.com/B0FFIQ19N2/comment/content_media_external_file_100004833_1759241061646_14427685.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFGW5SW7",
+    "name": "晴会所(首地容御店)",
+    "address": "华侨城香山西街18号(近纯水岸,天鹅堡)",
+    "lat": 22.549992,
+    "lng": 113.973574,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/eb8f23871afac44ac8769ecef02fa58c",
+      "https://store.is.autonavi.com/showpic/4c4481c02583f3fc0000002304452525?type=pic",
+      "http://store.is.autonavi.com/showpic/9dda076b62d49cf4bfa469aabc39af70"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFGBD9VV",
+    "name": "梅花鹿农庄",
+    "address": "新平大道与瓦窑头路交叉口南480米",
+    "lat": 22.593903,
+    "lng": 114.17459,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/db16c49096ffac2ee1b2a28d74858e83",
+      "http://store.is.autonavi.com/showpic/e80367000712a1dcfc5430904530b9d0",
+      "https://aos-comment.amap.com/B0FFGBD9VV/comment/content_media_external_images_media_1411131.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F38TGDE",
+    "name": "贵州苗王·酸汤鱼(龙华店)",
+    "address": "民治街道人民南路玉华花园首层(锦绣江南斜对面)",
+    "lat": 22.640198,
+    "lng": 114.027435,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/09b3541dda577d1f0000002197660914?type=pic",
+      "https://store.is.autonavi.com/showpic/93a81c9558f2013a0000002873950391?type=pic",
+      "https://aos-comment.amap.com/B02F38TGDE/comment/content_media_external_images_media_1000077636_ss__1738386174519_86051141.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F38TAAH",
+    "name": "潮荣海鲜大饭店(上合店)",
+    "address": "滨城新村安乐花园9栋181号",
+    "lat": 22.581782,
+    "lng": 113.898613,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B02F38TAAH/headerImg/4af29df3905ed803f3d7893a3a1efe2e_2048_2048_80.jpg",
+      "https://store.is.autonavi.com/showpic/adeec2e6e1e055580000000839704380?type=pic",
+      "https://store.is.autonavi.com/showpic/df73c552b1ec1cfb0000003369360285?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F38JEU4",
+    "name": "辛三多家韩国料理·烤肉(横岗总店)",
+    "address": "信义锦绣花园(四联地铁站A口步行180米)",
+    "lat": 22.647331,
+    "lng": 114.191835,
+    "hasHighChair": false,
+    "isKidTolerant": false,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/547d0737e333e7dde56542e440ecdddf",
+      "https://aos-comment.amap.com/B02F38JEU4/comment/90ae996e444998dc1b7cd73be6d693f7_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B02F38JEU4/comment/d62cd5d60afa5f54e57fcbf0e21c2df5_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37WHG9",
+    "name": "如意轩茶餐厅(爱联店)",
+    "address": "龙城街道爱联社区如意路昌盛百货一楼110",
+    "lat": 22.697046,
+    "lng": 114.232956,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B02F37WHG9/comment/content_media_external_file_1000089329_ss__1770451412170_28322606.jpg",
+      "https://aos-comment.amap.com/B02F37WHG9/comment/content_media_external_file_101376_ss__1764997712456_32474746.jpg",
+      "https://store.is.autonavi.com/showpic/a372a57b0c38f98c0000000700948413?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37U98I",
+    "name": "味藏·赤醋寿司·日本料理(南山店)",
+    "address": "南海大道2285-1号(南山书城地铁站E口旁)",
+    "lat": 22.518402,
+    "lng": 113.927832,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B02F37U98I/headerImg/4b26e779a93ad4d3eeccf7016721e0bd_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B02F37U98I/comment/fb5e9bb9111b861ea0ed47a877c5821e_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B02F37U98I/comment/2ad3bc344f53e906068fc882afc03a28_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFH17TJ2",
+    "name": "绿景农庄",
+    "address": "绿荫路",
+    "lat": 22.718382,
+    "lng": 114.370558,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B0FFH17TJ2/comment/content_media_external_file_1000035870_ss__1758378936871_91382226.jpg",
+      "https://store.is.autonavi.com/showpic/16e335252d3fd4f2fa02176abefa4516",
+      "http://store.is.autonavi.com/showpic/935b014f90e712a0095028ed62d8170f"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F38JEJO",
+    "name": "潮汕楚兴大排档(西丽南支路店)",
+    "address": "西丽南支路1071号1楼",
+    "lat": 22.573045,
+    "lng": 113.952736,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B02F38JEJO/comment/647bcdff2be03f60ef809bd7ad9363a8_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B02F38JEJO/comment/20260312-d17a5c3577fe677b4a475d42-8D9ObGKzGiNAOTdlNPuvBY.jpg",
+      "https://aos-comment.amap.com/B02F38JEJO/comment/content_media_external_file_100006685_1769737840900_10788675.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFFVNMD2",
+    "name": "有汁有味驴庄(中心城店)",
+    "address": "龙城街道清林中路95号1层",
+    "lat": 22.718972,
+    "lng": 114.22966,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/a00d4524a01f8d8f0000003172916321?type=pic",
+      "https://store.is.autonavi.com/showpic/75bacd72f8ea32d0f2b0863666ec8bf7",
+      "https://store.is.autonavi.com/showpic/976b54ef792fbd19ea4e18def2f314e0"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F300222",
+    "name": "师公会海鲜酒家(盐田店)",
+    "address": "盐田街道海鲜街8号(盐田墟地铁站B口步行380米)",
+    "lat": 22.586043,
+    "lng": 114.279097,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/af710ce4733e2730d41b24fd905fe8f9",
+      "http://store.is.autonavi.com/showpic/0c517b1786b96971dec649149b1fae5f",
+      "http://store.is.autonavi.com/showpic/f96523ffc3e5481bbd17f928fff45939"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFI9AF4G",
+    "name": "和家养生擂茶(锦星花园店)",
+    "address": "春风路锦星花园6栋二单元103(北斗小学对面)",
+    "lat": 22.54265,
+    "lng": 114.133982,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/40722df90ddfcdf93e3e7387870a42b6",
+      "http://store.is.autonavi.com/showpic/bc1c3095e3ebcefb23b62b8423f161bd",
+      "https://aos-comment.amap.com/B0FFI9AF4G/comment/1E6DFD7B_72BB_49EF_8586_B3FC20FF319A_L0_001_2000_150_1759816720968_22439075.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFHQ7ZE0",
+    "name": "little papa印度尼泊尔餐厅(购物公园店)",
+    "address": "民田路与福华路交叉口购物公园北园负一层b18商铺",
+    "lat": 22.534924,
+    "lng": 114.053206,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B0FFHQ7ZE0/comment/1047e57e8781969eb31515e319c50fd9_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B0FFHQ7ZE0/comment/7d4a0d230f8ae351ec91145a07b37ea1_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B0FFHQ7ZE0/comment/6e35a59065e994bd389aebf22294ef37_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFGX6ILT",
+    "name": "荷坳山庄(荷坳店)",
+    "address": "荷坳路55号-8",
+    "lat": 22.678197,
+    "lng": 114.224127,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/2cdc35da3f9582ee0000002575810593",
+      "http://store.is.autonavi.com/showpic/661d4ec040af65126b186f9555b78948",
+      "http://store.is.autonavi.com/showpic/6f268c7260ae6364588107b4b12dae56"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFGP7K72",
+    "name": "新湖烧鸡",
+    "address": "光侨路与河心南路交叉口南150米",
+    "lat": 22.75315,
+    "lng": 113.951302,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B0FFGP7K72/comment/content_media_external_images_media_247_1740066536080_74360077.jpg",
+      "https://aos-comment.amap.com/B0FFGP7K72/comment/content_media_external_file_1429_ss__1759331312248_50507445.jpg",
+      "https://aos-comment.amap.com/B0FFGP7K72/comment/content_media_external_file_1000168458_ss__1754726549225_57424475.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFG9O047",
+    "name": "桥头海鲜美食街",
+    "address": "福永街道宝安大道与桥和路交汇处(桥头公交站旁)",
+    "lat": 22.683369,
+    "lng": 113.808968,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/ec66e7928f6e5a4c63a7a0c8b2497711",
+      "http://store.is.autonavi.com/showpic/ee700bf3ea80262d3f91ca75ecfd51e3",
+      "https://aos-comment.amap.com/B0FFG9O047/comment/11cdc1272f860f2734b4a5d4589034de_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F38SUDA",
+    "name": "中山脆肉鲩(新圳东路店)",
+    "address": "新安湖花园南门旁(新安公园地铁站C1口步行260米)",
+    "lat": 22.562546,
+    "lng": 113.908425,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B02F38SUDA/comment/1FF72280_0013_4160_AFC9_EB56739F59D9_L0_001_1500_200_1767262618184_62370831.jpg",
+      "https://aos-comment.amap.com/B02F38SUDA/comment/c1f29425df6d2cbeff5828e38a259172_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B02F38SUDA/comment/content_media_external_file_100008302_1752394131318_87266764.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F38N1AD",
+    "name": "景好海鲜餐厅",
+    "address": "海滨北路39-1号",
+    "lat": 22.549682,
+    "lng": 114.482073,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B02F38N1AD/comment/27666259793cc58eaedd8bd50f8e3959_2048_2048_80.jpg",
+      "https://store.is.autonavi.com/showpic/a1ea95a98af0bcfd0000000670390484?type=pic",
+      "http://store.is.autonavi.com/showpic/6d9fac6de731fad2acd04b52bea32bdf"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F309SI0",
+    "name": "深圳市大鹏新区东洲海鲜餐厅",
+    "address": "水头商业街39号",
+    "lat": 22.566137,
+    "lng": 114.496213,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/2c384620b71d36fab4ac3fca4f00f661",
+      "http://store.is.autonavi.com/showpic/4fd32fab19523d9933cf2c9f80f59f6d",
+      "https://store.is.autonavi.com/showpic/0cdbeaefe65f2fa23e6e5d7469f39fb3"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MGU7DCEW",
+    "name": "方松院(高新南店)",
+    "address": "安居南馨苑1栋4搂406铺",
+    "lat": 22.534725,
+    "lng": 113.953225,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/e6a9a242150945afe673a2420da9250c",
+      "https://store.is.autonavi.com/showpic/ba27f277b14db03bca67c1f489798b51"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MACZVFK4",
+    "name": "不赖Bligh8·Brunch&Bistro(前海华发冰雪世界店)",
+    "address": "沙井街道和一社区滨江大道6666号超感公园S1栋2002",
+    "lat": 22.710882,
+    "lng": 113.769242,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/68bb98092fef84ca0000005140296775?type=pic",
+      "https://store.is.autonavi.com/showpic/bc75fac61c43dfe96cf360c05c7edcef",
+      "https://store.is.autonavi.com/showpic/d1df8e5c89d585820000005140302595?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0L6S559XP",
+    "name": "海胖子超鲜(文锦广场店)",
+    "address": "田贝一路23号文锦广场",
+    "lat": 22.556905,
+    "lng": 114.125828,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/4ee4ef748c419435fbcd966c5c1e2d1e"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0L307LC82",
+    "name": "正谈炸鸡(龙岗万科大厦店)",
+    "address": "鸿基花园2栋101(吉祥地铁站D口步行470米)",
+    "lat": 22.711669,
+    "lng": 114.242052,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B0L307LC82/comment/%5B2025-12-04-23-46-39%5DCD033661-17C4-47D9-8036-BE970ADC8F6_1764863206969_30990627.jpg",
+      "https://aos-comment.amap.com/B0L307LC82/comment/%5B2025-12-04-23-46-45%5DD89A9691-4F05-463A-A740-4550D6BE71B_1764863206968_91767691.jpg",
+      "https://store.is.autonavi.com/showpic/69510d504db185bdbefb29db72ec9707"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0L2BMISHH",
+    "name": "帕沙曼(深圳宝安店)",
+    "address": "福永街道福永家私街欧上美居建材中心二楼",
+    "lat": 22.665325,
+    "lng": 113.830075,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B0L2BMISHH/comment/CF998259_0BA4_455F_ACAF_4EB8D10FA3CF_L0_001_1280_170_1762442329750_97112501.jpg",
+      "https://aos-comment.amap.com/B0L2BMISHH/comment/1CB6061C_E008_4306_A221_00982B45EE36_L0_001_1280_170_1762442329749_01556858.jpg",
+      "https://aos-comment.amap.com/B0L2BMISHH/comment/B9D9B66C_4A23_4CE4_8909_39A7E67DAF4D_L0_001_1707_128_1762442329750_75731299.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0I05M0HPD",
+    "name": "猫员外啤酒馆(水围店)",
+    "address": "福田街道水围社区水围村水围街33号龙轩豪庭15A铺(水围一街-21)",
+    "lat": 22.520508,
+    "lng": 114.061826,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/25bc8231b309714670da24f2b791bb1c",
+      "http://store.is.autonavi.com/showpic/0f3dc36276d3a4ab359d16bb87866d5b"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0K36ZVXJ7",
+    "name": "结绳记龙岗万科广场店",
+    "address": "万科广场L2(星巴克旁边)",
+    "lat": 22.714362,
+    "lng": 114.243741,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/query_pic?id=stf83a3edc-6f8d-4702-abbf-8cfc7333eb1c&user=search&operate=original",
+      "https://store.is.autonavi.com/showpic/909c505ee01b2a56eb7aa1ebe09138e0",
+      "https://store.is.autonavi.com/showpic/141514500cae57d3c9ce70998588022d"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0H0KGL995",
+    "name": "LINLEE·手打柠檬茶(大冲新城花园店)",
+    "address": "大冲新城花园2栋2D座1-377",
+    "lat": 22.541655,
+    "lng": 113.952028,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://img.alicdn.com/imgextra/i4/O1CN01IjGJnC1D2s5gyHvU6_!!6000000000159-2-tps-1061-1061.png",
+      "https://aos-comment.amap.com/B0HDZH14JL/comment/a3b24521d76cb9bc2dff8ad625ff1c35_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B0HDZH14JL/comment/0df7952e69ddffa5827cd6b4dbe7e892_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFJCG7BE",
+    "name": "小牛犊火锅串串(爱联旗舰店)",
+    "address": "爱联社区A区爱都路68号",
+    "lat": 22.696615,
+    "lng": 114.22924,
+    "hasHighChair": false,
+    "isKidTolerant": false,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B0FFJCG7BE/comment/content_media_external_images_media_100027422_1736070672554_22986037.jpg",
+      "https://aos-comment.amap.com/B0FFJCG7BE/comment/ABB17669_BC85_4F7C_B4A5_78173CE4B06E_L0_001_2000_1500_1740970608175_45146505.jpg",
+      "https://store.is.autonavi.com/showpic/7559d547f238ba3d0000003918576680?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFIR5GPU",
+    "name": "稻香(锦泰城店)",
+    "address": "碧新路锦泰城L3层A301",
+    "lat": 22.723514,
+    "lng": 114.266615,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/9829f3d05813d34a0000003184174327?type=pic",
+      "http://store.is.autonavi.com/showpic/6b4761b43f6d998ced1d8685263ed490",
+      "http://store.is.autonavi.com/showpic/e9901b0920aa3f5354f597916a56f784"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFGW3WS8",
+    "name": "江湖一家",
+    "address": "新丰路45号",
+    "lat": 22.700873,
+    "lng": 114.224965,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/930f020b978134120000002814084399?type=pic",
+      "https://store.is.autonavi.com/showpic/c73adc7cc5d2dd4b0000003043764554?type=pic",
+      "http://store.is.autonavi.com/showpic/0cb478676bb0fe4e27b9b2c56c25caf0"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFHWHT85",
+    "name": "邓家传文糕点店",
+    "address": "东海道盐田四村126号新港超市后身",
+    "lat": 22.594355,
+    "lng": 114.247558,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://img.alicdn.com/imgextra/i4/2200807543702/O1CN01hPH3Yn1dDYumTo5wg_!!2200807543702-0-koubei.jpg",
+      "https://aos-comment.amap.com/B0FFHWHT85/comment/707327EF_D12F_4DDC_B91F_2C276027354E_L0_001_1500_200_1763251221888_98267045.jpg",
+      "https://store.is.autonavi.com/showpic/ca40a94cd70ffcf20000004377382538?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFG80G9O",
+    "name": "友友山谷",
+    "address": "南澳镇东大路梁屋吓67号",
+    "lat": 22.559346,
+    "lng": 114.543212,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B0FFG80G9O/comment/content_media_external_file_82782_ss__1753943758108_69067612.jpg",
+      "http://store.is.autonavi.com/showpic/b60b73149d55d9d01c82b9b1bbbcb4cf",
+      "https://aos-comment.amap.com/B0FFG80G9O/comment/content_media_external_images_media_100002454_1740073542071_33601776.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFF0ABX0",
+    "name": "南澳新大农庄",
+    "address": "大鹏新区南澳街道新大社区大岭村27号117号",
+    "lat": 22.537447,
+    "lng": 114.513961,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B0FFF0ABX0/comment/20260313-9efccc62057bd7df730eb882-1SYQxyhmAej7yqN4Ko55Yv.jpg",
+      "http://store.is.autonavi.com/showpic/162a647b8474def17ec09bcad248ca38",
+      "https://aos-comment.amap.com/B0FFF0ABX0/comment/F99FC7F9_605F_433B_8A94_E3875EA08E82_L0_001_1536_204_1768402288938_02412014.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F309SAZ",
+    "name": "东江海鲜大排档.潮汕菜.砂锅粥",
+    "address": "西丽南支路77号",
+    "lat": 22.57303,
+    "lng": 113.952712,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/0c13995fa3bbf16d0000002834796186?type=pic",
+      "https://store.is.autonavi.com/showpic/5085e417850694af0000000667374343?type=pic",
+      "https://store.is.autonavi.com/showpic/5d9c04aa23dd37d20000002212126115?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFH30HF4",
+    "name": "唐味私房菜",
+    "address": "黄沙坑村黄沙坑路21号",
+    "lat": 22.676032,
+    "lng": 114.339838,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B0FFH30HF4/comment/019fbd493ebb0c013135fdf15c1922b7_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B0FFH30HF4/comment/c0310c287067726a5a79b6928172d72f_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B0FFH30HF4/comment/46F96A46_72A1_4A9B_B308_353E0F321A37_L0_001_1500_2000_1740226615692_05338832.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFG7MG1L",
+    "name": "蒸的好海鲜馆(蛇口网谷店)",
+    "address": "南海大道蛇口网谷万融大厦C座G层102",
+    "lat": 22.4912,
+    "lng": 113.9162,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B0FFG7MG1L/comment/3F6F7855_23CC_4782_955F_1935A0D24593_L0_001_1504_200_1764339042130_16790316.jpg",
+      "https://store.is.autonavi.com/showpic/720b0f3a58f791330000002376926557?type=pic",
+      "https://aos-comment.amap.com/B0FFG7MG1L/comment/176980231372_1769802314654_95900885.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFF4B8LG",
+    "name": "勇叔公·肥蚝脆皮鸡煲",
+    "address": "南园街道爱华路27号(华强南地铁站E1口步行390米)",
+    "lat": 22.537109,
+    "lng": 114.091583,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B0FFF4B8LG/comment/0623053F_B199_48C4_AD37_84B422591788_L0_001_1512_201_1766114124161_46649421.jpg",
+      "https://aos-comment.amap.com/B0FFF4B8LG/headerImg/D5CA811A_5D41_4566_9381_C4B76A531A0A_L0_001_4032_2268__1683839491608_b8f526d8.jpg",
+      "https://aos-comment.amap.com/B0FFF4B8LG/comment/20260313-caecf84277da883ede00dbd1-9oc8U0c2WoEAi0DWKnuNFM.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F38TDO2",
+    "name": "潮荣海鲜大饭店(宝安总店)",
+    "address": "45区自由路16-18号(宝晖大厦附近)",
+    "lat": 22.564945,
+    "lng": 113.894066,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/1265ca587ce731150000003293820947?type=pic",
+      "https://store.is.autonavi.com/showpic/b49884b27051470e0000003305756017?type=pic",
+      "https://store.is.autonavi.com/showpic/e1242a0c5b5364180000003362458412?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F38TD1B",
+    "name": "上岸渔民",
+    "address": "龙园路45号",
+    "lat": 22.722334,
+    "lng": 114.257245,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/4bfdd31c570f9da60b27ea813df4348f",
+      "https://aos-comment.amap.com/B02F38TD1B/comment/A5A820F6_4819_4D00_8C94_E8AC52BE75BD_L0_001_2000_112_1761419125558_17427359.jpg",
+      "https://aos-comment.amap.com/comment/content_service__1773198955837_00464284_1773198964548_73534621.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F38MZSV",
+    "name": "紫荆园·潮宴(怡景店)",
+    "address": "黄贝路与德智路交叉口西南80米",
+    "lat": 22.556506,
+    "lng": 114.142133,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/9766ee04729a0c130000003005174845?type=pic",
+      "https://aos-comment.amap.com/B02F38MZSV/comment/%5B2026-01-18-20-24-54%5D05E90987-766A-45A7-95CD-8138BFA7925_1768739095735_04915184.jpg",
+      "https://store.is.autonavi.com/showpic/692306a442882d470000003180652888?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F30AGFH",
+    "name": "湛记佬海鲜(白石洲店)",
+    "address": "白石洲石洲中路14号",
+    "lat": 22.532049,
+    "lng": 113.967122,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B02F30AGFH/comment/content_media_external_file_100008827_1769169774768_33061526.jpg",
+      "https://aos-comment.amap.com/B02F30AGFH/comment/content_media_external_file_100003454_1750309428758_85932755.jpg",
+      "https://aos-comment.amap.com/B02F30AGFH/comment/content_media_external_images_media_100072976_1746719061600_99963768.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F309YC4",
+    "name": "黄金海岸美食水会",
+    "address": "深南大道9010号华侨城保龄球馆一楼",
+    "lat": 22.534002,
+    "lng": 113.98784,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B02F309YC4/comment/3772a4a31a8e600e349974121a9b8d1c_2048_2048_80.jpg",
+      "http://store.is.autonavi.com/showpic/9cde9580ba1ab8bca201cb06a50b1807",
+      "https://aos-comment.amap.com/B02F309YC4/comment/b8bc933cbde07bd4beb278b5a1e5e004_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F38JZRX",
+    "name": "华美农场",
+    "address": "布吉街道吉华路391-19号",
+    "lat": 22.635391,
+    "lng": 114.092399,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/3aa1f1badff45b194029a71789161c0e",
+      "https://aos-comment.amap.com/B02F38JZRX/comment/content_media_external_images_media_100011693_1736467681011_12169346.jpg",
+      "https://aos-comment.amap.com/B02F38JZRX/comment/06745D8A_7315_4880_8753_0E6B4570DB2F_L0_001_IMG_8490_1655779029562_e06ef438.JPG"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MGZZHH1Z",
+    "name": "idou拼豆(罗湖老街店)",
+    "address": "深南东路3020号深圳市百货广场大厦9层911",
+    "lat": 22.543838,
+    "lng": 114.119214,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/8b535efa1e466c3c36e047484f046521",
+      "https://store.is.autonavi.com/showpic/ef8c12517ae0afd2ca8eb46b237a72f8",
+      "https://store.is.autonavi.com/showpic/49f19eadc3d6ccbf3bf82e1697cb983f"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MGN9R8K9",
+    "name": "鸿元食光小院",
+    "address": "南头街18号荔香源1号商铺",
+    "lat": 22.536009,
+    "lng": 113.926216,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/6f42418ce7d49229c165178ec374dbda",
+      "https://aos-comment.amap.com/B0MGN9R8K9/comment/content_media_external_file_1000070335_ss__1772988320943_36938615.jpg",
+      "https://aos-comment.amap.com/B0MGN9R8K9/comment/content_media_external_file_1000070334_ss__1772988320941_21189763.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MG0HH19D",
+    "name": "Tezu's特竹(嘉里建设广场店)",
+    "address": "福田街道福安社区中心四路1号嘉里建设广场2座105B",
+    "lat": 22.534833,
+    "lng": 114.058082,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/d8a9809a44fbd9130000001610312661",
+      "https://store.is.autonavi.com/showpic/87239f954bb9bf5b0000001610346206",
+      "https://store.is.autonavi.com/showpic/7fcab4368b03e3db0000001610356075"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0M6JUEAX1",
+    "name": "烧肉LIKE(前海冰雪世界店)",
+    "address": "南环路549号",
+    "lat": 22.715525,
+    "lng": 113.769075,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/019412fe06415cd8a7cc48e980ed0444",
+      "https://store.is.autonavi.com/showpic/0e87e4928ee723ce0000002464270973?type=pic",
+      "https://store.is.autonavi.com/showpic/5d3d23ddbf22bd1c0000002464280276?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0M6H5AL50",
+    "name": "邻里手打柠檬茶露营地",
+    "address": "沙井街道沙蚝社区沙四南路南一巷3号平房101",
+    "lat": 22.744245,
+    "lng": 113.807529,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/e708d78d90ed06f3236f09fcc61473f2",
+      "https://store.is.autonavi.com/showpic/72d36111a4c5e1cbbc98bdcff1aa4c67",
+      "https://store.is.autonavi.com/showpic/b8fbf94613211b040000003262104250"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0M6GMOIWZ",
+    "name": "叁佰SANBAI",
+    "address": "沙河街道高发社区深安路28号深云村商业综合楼210室",
+    "lat": 22.553951,
+    "lng": 113.992291,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/bdbe88f0e5d16d109dd4fdb4bafc5ce5",
+      "https://store.is.autonavi.com/showpic/2f6ec6d46d85d3e3c6efdfe05a822be5",
+      "https://store.is.autonavi.com/showpic/54ff45e2e044b803edbf38239bdcde86"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0LK2DQHN7",
+    "name": "L'MODA地中海料理(前海嘉里店)",
+    "address": "南山街道前海深港合作区前海嘉里中心-T2栋-L105",
+    "lat": 22.526463,
+    "lng": 113.891195,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/7565965688095dbc45212d2fdf53a0a6",
+      "https://store.is.autonavi.com/showpic/6b2cf203ee9d2aa7ee18245d1a14bfeb",
+      "https://store.is.autonavi.com/showpic/c963067faaa2644279a4e3ee3578631b"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0K37CVKWC",
+    "name": "福庭雅荟潮粤菜(花园格兰云天店)",
+    "address": "深南中路4026号田面城市大厦F3层",
+    "lat": 22.541236,
+    "lng": 114.07634,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/88324233ebdc59a9823c87249debac6a"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0JR9NDKUY",
+    "name": "Dr.stretch·拉伸博士(前海嘉里中心店)",
+    "address": "前海嘉里中心T8栋商业L2层",
+    "lat": 22.525454,
+    "lng": 113.892771,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/790aca0c5dbb15680000002437034468?type=pic",
+      "https://store.is.autonavi.com/showpic/a5d18c9422c256060000002436984974?type=pic",
+      "https://store.is.autonavi.com/showpic/2d2e24e5fa86eeaa0000002436996973?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0HA6B6AA8",
+    "name": "国际会展希尔顿酒店·观廊大堂酒廊",
+    "address": "展丰路80号国际会展中心希尔顿酒店4楼",
+    "lat": 22.705375,
+    "lng": 113.777875,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/541968649c16c2b40000002745026287?type=pic",
+      "https://store.is.autonavi.com/showpic/b7b26a37ebd0a7da0000002745032246?type=pic",
+      "https://store.is.autonavi.com/showpic/375e3dbefe2726fa0000002745054024?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37WAJC",
+    "name": "将军烧鹅",
+    "address": "东纵路332号(坪环地铁站A1口步行370米)",
+    "lat": 22.686245,
+    "lng": 114.345399,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B02F37WAJC/comment/8812CE1F_EA11_4D97_8301_8BACA0834901_L0_001_2000_1334_1734587051595_46363773.jpg",
+      "http://store.is.autonavi.com/showpic/a965c8e3279d8baca098274d4447de7f",
+      "https://aos-comment.amap.com/B02F37WAJC/comment/0f8f7ff73c3aff540de473e86c0aaa90_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFIQO3W8",
+    "name": "冠峰园茶楼(布吉店)",
+    "address": "布吉街道新乐路64-66号源丰酒店2楼",
+    "lat": 22.607032,
+    "lng": 114.117434,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/642624827c49547e55a443dd94a2c805",
+      "https://aos-comment.amap.com/B0FFIQO3W8/comment/FD210FF5_EBF7_4200_8AB6_7E5A54141D4A_L0_001_1920_108_1759908521839_83017149.jpg",
+      "https://aos-comment.amap.com/B0FFIQO3W8/comment/cd9e0efc9038f9c438898b9006140f5f_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MG96OFT8",
+    "name": "潘小厨鸡煲-顺德桑拿鸡(学府路店)",
+    "address": "学府路198号华府花园",
+    "lat": 22.528407,
+    "lng": 113.917569,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/f430d711292e8809e3a43e98d18e80f3"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0L6HHBLQI",
+    "name": "御洺·私房菜(安徽大厦创展中心店)",
+    "address": "沙头街道天安社区深南大道6007号安徽创展中心301",
+    "lat": 22.536181,
+    "lng": 114.031647,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/038091565ac025ae74f7c7f5df515552",
+      "https://store.is.autonavi.com/showpic/0938b774883e568154e627861f960905",
+      "https://aos-comment.amap.com/B0I03PUU8F/comment/b437855b6224c18e161878c65fdc6de5_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0JA1ZJGD5",
+    "name": "W·hello music & English 古典音乐校区",
+    "address": "南海玫瑰花园二期37-39栋38号商铺",
+    "lat": 22.485204,
+    "lng": 113.924365,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/80119500fe05fcc93f4b892e08fad3d9",
+      "http://store.is.autonavi.com/showpic/66de5d7b7e1b8ab2418d3bb38c838710",
+      "http://store.is.autonavi.com/showpic/dcc3dd351693c37ffe725735ad917a5c"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0IAXU12AY",
+    "name": "東岸轰趴团建乐园(鸿瀚大厦南山店)",
+    "address": "南头街道马家龙社区虹步路15号马家龙鸿瀚大厦7楼天台东岸营地",
+    "lat": 22.550275,
+    "lng": 113.927625,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/8fbc1fd26eb4b958262eb65f5d9df770",
+      "http://store.is.autonavi.com/showpic/b255c501947276e9abb1e0eb1d04ecea",
+      "http://store.is.autonavi.com/showpic/4e60bea32aa5e41475720035ff66aec9"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFHQWPFY",
+    "name": "美作Loving cake",
+    "address": "粤海街道长园新材料港1栋102号",
+    "lat": 22.550243,
+    "lng": 113.944434,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/b28a78258d254dc104dea3ebab4d7688",
+      "https://aos-comment.amap.com/B0FFHQWPFY/comment/E75E05F6_F1A7_47E3_AFDF_E269690E2233_L0_001_1179_148_1769674079807_38006295.jpg",
+      "https://aos-comment.amap.com/B0FFHQWPFY/comment/content_media_external_images_media_13996_1728157428883_80379044.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37UNQ5",
+    "name": "凯撒咖啡西餐厅(广发大厦店)",
+    "address": "东门南路2007号深圳丽都酒店2层",
+    "lat": 22.538968,
+    "lng": 114.12459,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/30d81f158d6631ed6caab80335f3326d",
+      "http://store.is.autonavi.com/showpic/6ad0a8f5f6f3a795c11c6c1e92d996d0",
+      "http://store.is.autonavi.com/showpic/f14438164f491abcffafde07e382d6d8"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFIXTH0J",
+    "name": "VILACLUB(龙岗店)",
+    "address": "龙城街道尚景社区龙城大道万科里L1-29号",
+    "lat": 22.717085,
+    "lng": 114.251781,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/fa43f16f81c3e3682cfc8d376e48865f",
+      "http://store.is.autonavi.com/showpic/c843d38518cd31dff5e6980253096a13",
+      "https://store.is.autonavi.com/showpic/33483b24b86e0052f1d9e51fbf48abe9"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFHDUVF9",
+    "name": "为么斯.武汉特色烧烤·油焖大虾(深圳总店)",
+    "address": "坂田街道冲之大道黄金山沿街15-18号",
+    "lat": 22.640843,
+    "lng": 114.062225,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B0FFHDUVF9/comment/content_media_external_file_5599_1751938693021_70541609.jpg",
+      "https://store.is.autonavi.com/showpic/a4e21676c1268ca84a949e9e450bcf0a",
+      "https://aos-comment.amap.com/B0FFHDUVF9/comment/content_media_external_file_5598_1751938693020_19124404.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFGWO6DX",
+    "name": "花溪牛肉粉(龙岗店)",
+    "address": "中心城西埔路鸿基花园7栋103号商铺",
+    "lat": 22.712837,
+    "lng": 114.242645,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/c6528c49b3e9c228f348aa3d80d95a22",
+      "http://store.is.autonavi.com/showpic/7b64516c0ef2eb66cd91a0b6b9363daf",
+      "http://store.is.autonavi.com/showpic/515cf92048d22d7b5f6b95baf09d3fc4"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFGHAL26",
+    "name": "权仔农家菜馆",
+    "address": "六联社区刘屋村六联路95号",
+    "lat": 22.780082,
+    "lng": 114.324502,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://comment-oss-online.oss-cn-wulanchabu.aliyuncs.com/B0FFGHAL26/comment/content_media_external_images_media_1492236.jpg",
+      "https://store.is.autonavi.com/showpic/87c289fc93bab92c0000002470358410?type=pic",
+      "https://aos-comment.amap.com/B0FFGHAL26/comment/BDA344D9_2044_4479_B2F2_6BD1F02CF003_L0_001_1290_164_1761840533093_73850712.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFFWQ9KB",
+    "name": "老北方面饺王(横岗信义店)",
+    "address": "横岗街道信义锦绣花园2号楼1层",
+    "lat": 22.646822,
+    "lng": 114.19034,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/2235722afec4edd90000002361974521?type=pic",
+      "https://store.is.autonavi.com/showpic/eefd9b3d750f648c299fffcabeb61ae0",
+      "http://aos-cdn-image.amap.com/sns/ugccomment/6a77f028-4635-4960-9b8c-eac5a186aeb5.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F38ZLJO",
+    "name": "蚝味轩(水围店)",
+    "address": "福田街道水围村水围七街龙轩豪庭一楼蚝味轩",
+    "lat": 22.52052,
+    "lng": 114.062096,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/f5a3c53eb50559edc47531fdad64b7de",
+      "https://aos-comment.amap.com/B02F38ZLJO/comment/a11501950f580c89110ac1a2aa3ced92_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B02F38ZLJO/comment/content_media_external_images_media_1252_1741082492800_43392659.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F38OMFE",
+    "name": "韩盛苑(鸿基花园东区店)",
+    "address": "鸿进路9号(吉祥地铁站D口步行370米)",
+    "lat": 22.711088,
+    "lng": 114.24204,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/5836b743d502944b0000002329366744?type=pic",
+      "https://store.is.autonavi.com/showpic/163b0e6133dee0f80000001617174308?type=pic",
+      "https://aos-comment.amap.com/B02F38OMFE/comment/content_media_external_images_media_100008318_1731153983340_50424386.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F38MD5Z",
+    "name": "刘冰乳鸽店",
+    "address": "法政北路16栋",
+    "lat": 22.763797,
+    "lng": 113.945236,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/8c2682ad99f8910bca7d68ad2d987cff",
+      "http://store.is.autonavi.com/showpic/c5ec7817620010124553504291c589e4",
+      "https://store.is.autonavi.com/showpic/059fbbc7c6d51ebd8006f7dd3188ee60"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37WJLH",
+    "name": "醉翁渔府(梅林老店)",
+    "address": "上梅林梅华路东旭飞华安宛1楼6-5号(华润万家对面)",
+    "lat": 22.565268,
+    "lng": 114.060335,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/460986006b6fbaed47d509e990cf1781",
+      "http://store.is.autonavi.com/showpic/3b74847fbc2015fbbcec87acf9068eb3",
+      "https://aos-comment.amap.com/B02F37WJLH/comment/a16d2a8b0c4a1e046930f4d34b3928da_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFHN2SVX",
+    "name": "桂柳缘螺蛳粉(民乐一区店)",
+    "address": "民治街道民乐一区45栋-2号",
+    "lat": 22.597233,
+    "lng": 114.052246,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B0FFHN2SVX/comment/f087fdf0ae51eb8e6f79e101e602bb14_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B0FFHN2SVX/comment/82e628354f0a005c9662a752d5dd5d22_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B0FFHN2SVX/comment/60b80c0b558d897c94ef6ed6dc4634fe_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFHCS66X",
+    "name": "燚青春东北泥炉烤肉(坪洲店)",
+    "address": "西乡街道海城路宝城花园甲栋115号",
+    "lat": 22.56801,
+    "lng": 113.870398,
+    "hasHighChair": false,
+    "isKidTolerant": false,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/52eb321dbb6791930000000699796100?type=pic",
+      "https://aos-comment.amap.com/B0FFHCS66X/comment/c4b62837f4451cb5d3ca3b179b9257d0_2048_2048_80.jpg",
+      "https://store.is.autonavi.com/showpic/2b9e9ec116e27df90000002386026178?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFF91UFA",
+    "name": "东山茶寮",
+    "address": "新安19区69栋108号",
+    "lat": 22.565975,
+    "lng": 113.908618,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B0FFF91UFA/comment/D81C7ABD_CD26_483F_86EC_21B1E9822A00_L0_001_1080_192_1764061476644_48629269.jpg",
+      "https://aos-comment.amap.com/B0FFF91UFA/comment/content_media_external_file_1000135748_ss__1759406127998_74686445.jpg",
+      "https://aos-comment.amap.com/B0FFF91UFA/comment/content_media_external_file_1000135755_ss__1759406127998_20496827.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFF3S2AV",
+    "name": "李记热干面·襄阳牛杂面(水湾路店)",
+    "address": "水湾路44号",
+    "lat": 22.489331,
+    "lng": 113.920888,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/44af2a47e25e398eed69f1903fb25e30",
+      "https://store.is.autonavi.com/showpic/037a03d4eaa9c0790000002508628802?type=pic",
+      "https://store.is.autonavi.com/showpic/d4a66ceac5b54cdd0000002508680414?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFHZZA7W",
+    "name": "青瓦苑私房菜",
+    "address": "大鹏古城东门戴屋巷1号P4停车场靠近东北村大楼旁边",
+    "lat": 22.596614,
+    "lng": 114.51334,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B0FFHZZA7W/comment/51A261B8_E1EC_4AF4_8A4A_BF9AD461ABE0_L0_001_1500_200_1745218305676_35856934.jpg",
+      "https://aos-comment.amap.com/B0FFHZZA7W/comment/ab07a9be5c5634956c6ece7c2c1413ab_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B0FFHZZA7W/comment/60D92682_D5A3_4D12_B251_FDDC83B1F693_L0_001_1500_200_1745218305265_93706844.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFHQVI8J",
+    "name": "八合里潮汕鲜牛肉火锅(深圳振中路店)",
+    "address": "富强社区华强北街道振中路86号爱华科研楼6栋1层1号、2号",
+    "lat": 22.543038,
+    "lng": 114.091696,
+    "hasHighChair": false,
+    "isKidTolerant": false,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/8b30f522d394ed770c2c234bc48c294f",
+      "http://store.is.autonavi.com/query_pic?id=st724a6e9a-91b8-4e08-813e-dc551cdf86ff&user=search&operate=original",
+      "http://store.is.autonavi.com/showpic/587114383b72b8ace68f98df0bd5f061"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFG65CVX",
+    "name": "碧源农庄(龙岗店)",
+    "address": "布澜路129-3号",
+    "lat": 22.64679,
+    "lng": 114.123346,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B0FFG65CVX/comment/594f3612-3d50-44a4-be85-bcf0b0796894.png",
+      "https://aos-comment.amap.com/B0FFG65CVX/comment/5b919b88-a13e-43f1-9a4d-ab4e2049cde9.png",
+      "https://store.is.autonavi.com/showpic/76537144822d34c90000002800196340?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFF6YVXW",
+    "name": "百草堂祖传凉茶铺",
+    "address": "蛇口新街207号(蛇口影剧院对面)",
+    "lat": 22.487764,
+    "lng": 113.928505,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://img.alicdn.com/imgextra/i2/3695320962/O1CN01durxiW1IydiHhiCir_!!3695320962-0-kbcontentapng.jpg",
+      "https://store.is.autonavi.com/showpic/96d976b64954fdae0000004228176209?type=pic",
+      "https://store.is.autonavi.com/showpic/827229479365d0500000003396550207?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFF5PO0P",
+    "name": "新花园农庄",
+    "address": "观澜办事处新田社区环观南路与观景路交界(和记仓库旁)",
+    "lat": 22.704229,
+    "lng": 114.095111,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/d6c13d9769f88f9b6bece4e310842bd5",
+      "http://store.is.autonavi.com/showpic/28a0986d3b4bcca6a46aa8001dc21d47",
+      "https://store.is.autonavi.com/showpic/0eac69f9354e30f99520dedc6dcf5354"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F38MCXT",
+    "name": "赖记黄酒鸡(官吓店)",
+    "address": "沙头角官路吓村13号",
+    "lat": 22.550333,
+    "lng": 114.232303,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B02F38MCXT/comment/a0e3b807f7463a2d400f9e6fd0d1dd43_2048_2048_80.jpg",
+      "http://store.is.autonavi.com/showpic/7c2b9942d6d3232d98c7906a68a5e09f",
+      "http://store.is.autonavi.com/showpic/da8ce1074dfb6f4d3673885913e34703"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F38MCWX",
+    "name": "森记潮州砂锅粥(大梅沙店)",
+    "address": "大梅沙彩陶路115号(鸿威·海怡轩斜对面)",
+    "lat": 22.595347,
+    "lng": 114.305025,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B02F38MCWX/comment/7f5513d0c3b47845c5961d1fb2f7402b_2048_2048_80.jpg",
+      "http://store.is.autonavi.com/showpic/ee2ee69c72341d7e4e18df25f19ba4f1",
+      "http://store.is.autonavi.com/showpic/5b5bc986eba9c9094fd7dd2bc2b28bd8"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F38J1JQ",
+    "name": "鱼神·脆肉鲩 全鱼宴(西乡店)",
+    "address": "西乡大道290号宝源华丰总部经济大厦B座1层",
+    "lat": 22.572749,
+    "lng": 113.862013,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/8d7654e6e10699c60000000950734435?type=pic",
+      "https://store.is.autonavi.com/showpic/47292e5a9a3eb4c70000000982020089?type=pic",
+      "https://store.is.autonavi.com/showpic/fe9709d3addee7180000000954678204?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F38IQQJ",
+    "name": "钱塘潮·精致江浙菜(南山店)",
+    "address": "高新南环路63号京武浪琴半岛商铺24、25、26、27(一层)号27(二层)号铺",
+    "lat": 22.52226,
+    "lng": 113.949843,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B02F38IQQJ/comment/5f9a17f43e45cdf2a214a81ebc53005c_2048_2048_80.jpg",
+      "https://store.is.autonavi.com/showpic/bcfe91af91b77ea5c91fb3c8a10de4c8",
+      "https://aos-comment.amap.com/B02F38IQQJ/comment/content_media_external_file_100025715_1772585317627_32676058.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37UCS9",
+    "name": "博韵轩茶艺馆(帝涛豪园店)",
+    "address": "福田保税区桂花路帝涛豪园1栋1楼",
+    "lat": 22.510293,
+    "lng": 114.058472,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/2b9d35414256df06e0e9e2a8d07d9713",
+      "https://store.is.autonavi.com/showpic/59b01e142d8e80c1de902704421bb058",
+      "http://store.is.autonavi.com/showpic/6d8f37aebb02511a1e574dbecb0d8a54"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F3020FC",
+    "name": "汤泉客家菜馆(蛇口店)",
+    "address": "蛇口招商路21号",
+    "lat": 22.491369,
+    "lng": 113.930142,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/07ddf5483032b7050000005332352102?type=pic",
+      "https://store.is.autonavi.com/showpic/9be8c65a3a44c0890000002508472027?type=pic",
+      "https://store.is.autonavi.com/showpic/1ed5d9f509ead5d00000002466678693?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFFWZOTE",
+    "name": "波记(福田店)",
+    "address": "润田路3号(侨香地铁站B口步行100米)",
+    "lat": 22.549049,
+    "lng": 114.015685,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B0FFFWZOTE/headerImg/05a8aa06be5d04099f5559da87cc05c5_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B0FFFWZOTE/headerImg/d22139bce6fbf30529e80513b23cb055_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B0FFFWZOTE/headerImg/c825b0adaa009f6029afd8cd0241062d_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F38M9LA",
+    "name": "Emily's Cafe(半岛·城邦二期店)",
+    "address": "金世纪路半岛城邦2期7号",
+    "lat": 22.48138,
+    "lng": 113.931019,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B02F38M9LA/comment/B64A57EF_ACE1_4A31_97E5_1B57FAA3530A_L0_001_1500_200_1758171495945_82770484.jpg",
+      "https://aos-comment.amap.com/B02F38M9LA/comment/143384D6_91FB_4F6D_9499_7D779A2253F7_L0_001_1500_200_1758171496237_95987303.jpg",
+      "https://aos-comment.amap.com/B02F38M9LA/comment/78911050_377C_4374_8160_341D400D5645_L0_001_1500_200_1758171496237_64973503.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFF4CA03",
+    "name": "君悦轩会所(鸿瑞花园店)",
+    "address": "南光路鸿瑞花园大门口16栋2楼",
+    "lat": 22.521732,
+    "lng": 113.927253,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/ad23590f785af09445f09f0301f201a2",
+      "https://store.is.autonavi.com/showpic/aea7e1ebaa716302f3f4361254dda7aa",
+      "https://store.is.autonavi.com/showpic/af74aa9edc0643e92a1d06f6f0330d47"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F37V9J6",
+    "name": "河隆客家菜(新高路店)",
+    "address": "南山新围村旺棠工业区沃尔大厦1层",
+    "lat": 22.584228,
+    "lng": 113.950471,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/76f6651ead5c2cab849b5cb7a6f181cc",
+      "https://aos-comment.amap.com/B02F37V9J6/comment/9c3dbc5b3aadcff5aa993c59b09f9e80_2048_2048_80.jpg",
+      "https://aos-comment.amap.com/B02F37V9J6/comment/d54dbdc036da7bfe6f4effa681e82502_2048_2048_80.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MUPZDZA6",
+    "name": "星巴克臻选(深圳布吉万象汇1F店)",
+    "address": "布吉街道翔鸽路2号华润万象汇购物中心1层L171号商铺",
+    "lat": 22.59205,
+    "lng": 114.131342,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/50faab0dd4fef8c13b53ef62039aec3e",
+      "https://store.is.autonavi.com/showpic/018a98a4c3a926050000000775552314?type=pic",
+      "https://aos-comment.amap.com/B0HG0SWXMK/comment/9B8FF82D_D190_40C5_8BDB_B29DF0044C4E_L0_001_1500_200_1755240465345_90824233.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MUNH1OQU",
+    "name": "屋岩·日式料理(龙华捷顺店)",
+    "address": "观湖街道鹭湖社区观盛二路5号捷顺科技中心103",
+    "lat": 22.687682,
+    "lng": 114.060512,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/b275579a61b807d40000002883832866?type=pic",
+      "https://store.is.autonavi.com/showpic/1a7d542e8a0333360000004346764692?type=pic",
+      "https://store.is.autonavi.com/showpic/263da87e99fd8f720000004345118338?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MUCD1J7P",
+    "name": "和谷记·粤味小馆(石井店)",
+    "address": "天健和悦府3栋106(和民路8-60)",
+    "lat": 22.69324,
+    "lng": 114.382383,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/e009db0704f8c70d0000003131010126?type=pic",
+      "https://store.is.autonavi.com/showpic/eb9b58fde77bfd77e7e2f25e9bf38dfc",
+      "https://store.is.autonavi.com/showpic/1c894b1f8b2696ec6823fa9af14d82cc"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MU6ZTXX2",
+    "name": "潮香四海·潮汕家常味(国贸店)",
+    "address": "南湖街道人民南路3002号国贸spring商场L3-02",
+    "lat": 22.541153,
+    "lng": 114.119725,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/74427c60b361b0916af09f27a5c1efbd",
+      "https://store.is.autonavi.com/showpic/ff84ab590b434f430000003382902197?type=pic",
+      "https://store.is.autonavi.com/showpic/34eaffb232d1560e0000003382906094?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MGYR75GC",
+    "name": "BRBR叙利亚餐厅(深圳海上世界店)",
+    "address": "招商街道水湾区海上世界C区船后广场一单元B06",
+    "lat": 22.483182,
+    "lng": 113.917734,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/0ea7bb506d1966920000004275002295?type=pic",
+      "https://store.is.autonavi.com/showpic/9f361cb2d9a388aa0000005228050692?type=pic",
+      "https://store.is.autonavi.com/showpic/76a1401ac0f261b10000003096388436?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MGV5EONF",
+    "name": "昊来了寿司(深圳首店)",
+    "address": "海雅缤纷城L5层L509号",
+    "lat": 22.559633,
+    "lng": 113.905849,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/dfe61908ae810b80c511ec259e91403a",
+      "https://store.is.autonavi.com/showpic/e4d3480b82adc3a10000000742432977?type=pic",
+      "https://store.is.autonavi.com/showpic/9f4c8bf0891bdc970000002095608541?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MGTS6U9I",
+    "name": "茉莉奶白(深圳融湖广场店)",
+    "address": "平湖街道辅城坳社区平吉大道408号融湖四期融湖广场LG层LG-07号",
+    "lat": 22.692578,
+    "lng": 114.121721,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/f53a6d23076486f10000002883870136?type=pic",
+      "https://store.is.autonavi.com/showpic/4abf97f743b98550bca41899759253f7",
+      "https://store.is.autonavi.com/showpic/53b4e203394fee290000000731520314?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MGOUVZJM",
+    "name": "素满香(皇庭广场店)",
+    "address": "福田街道福华三路118号皇庭国商购物广场B1层",
+    "lat": 22.533912,
+    "lng": 114.060023,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/52175924b497584f0000002745486241?type=pic",
+      "https://store.is.autonavi.com/showpic/ce44c8ba37f7e8000000001501976392?type=pic",
+      "https://store.is.autonavi.com/showpic/db8e5d680fb1568d0000002215582758?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MGLAMXXN",
+    "name": "海底捞火锅(水贝IBC店)",
+    "address": "布心路3008号IBC MALL L5层",
+    "lat": 22.575485,
+    "lng": 114.124907,
+    "hasHighChair": true,
+    "isKidTolerant": false,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/bcb84a02dd0ebb388d01c309af554414?operate=original",
+      "http://store.is.autonavi.com/showpic/de33981f01c22ab680ac4c2f8d5143a5",
+      "http://store.is.autonavi.com/showpic/f91d076a9ddd520586cab94a9b6e147b"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MGG74IJF",
+    "name": "喜记避风塘炒辣蟹(深圳布吉店)",
+    "address": "布吉街道百鸽路359-1",
+    "lat": 22.597231,
+    "lng": 114.122207,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/7e768a3e81b1e1a60000003161232961?type=pic",
+      "https://store.is.autonavi.com/showpic/0825f124e0409c900000003442350677?type=pic",
+      "https://store.is.autonavi.com/showpic/d2ae46cc5eb11c810000002344326825?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MGF963P9",
+    "name": "乐沙儿LESHAER(深圳东门三店)",
+    "address": "东门街道一横街9号新白马·次元9号1层",
+    "lat": 22.545878,
+    "lng": 114.120098,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/56d4d7c4e5d3a1dd3b6bef7fb08e2ba0",
+      "https://store.is.autonavi.com/showpic/6ec76e789f0179c20e088b4c0b82b9db",
+      "https://store.is.autonavi.com/showpic/98db3c7ef93305980000002885860320?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MGDPPAZY",
+    "name": "刘栋梁大排档(深圳首店)",
+    "address": "红花园社区南新路3229号鸿洲新都A108、201",
+    "lat": 22.539525,
+    "lng": 113.919725,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/d9955cef322561460000002510614174?type=pic",
+      "https://store.is.autonavi.com/showpic/79a3a7e1f1c4204b0000002501606476?type=pic",
+      "https://store.is.autonavi.com/showpic/d91523c4cac1cdc20000002501768694?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MG4DXC6R",
+    "name": "海底捞火锅(港澳湾上河坊店)",
+    "address": "民治街道民塘路书香门第上河坊广场一层",
+    "lat": 22.596974,
+    "lng": 114.047568,
+    "hasHighChair": true,
+    "isKidTolerant": false,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/06e4ad9c7a9287280000006438932868?type=pic",
+      "https://store.is.autonavi.com/showpic/232502b93bc661730000006438938372?type=pic",
+      "https://store.is.autonavi.com/showpic/03887ba6b008d9690000002388944990?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MG41YYPV",
+    "name": "茶颜悦色(深圳湾万象城店)",
+    "address": "科苑南路2888号深圳湾万象城B区B1层",
+    "lat": 22.512559,
+    "lng": 113.944773,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/22af3e5d12a514620000004121682860",
+      "https://store.is.autonavi.com/showpic/7f130cd133c1efe20000002482536309?type=pic",
+      "https://store.is.autonavi.com/showpic/73ade99617abe2390000002341642667?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MG2N0SYP",
+    "name": "文记虾一跳(车公庙店)",
+    "address": "泰然九路11号海松大厦A座F1层",
+    "lat": 22.531176,
+    "lng": 114.024527,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/8946b124867b11cb0000003055486887?type=pic",
+      "https://store.is.autonavi.com/showpic/b2a293a9132745ba0000002368630153?type=pic",
+      "https://store.is.autonavi.com/showpic/ead1c1bb9c5384f40000002674272179?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MDYRV8D1",
+    "name": "塞纳河·Seine Bistro",
+    "address": "横岗街道富利时路2013时代广场一楼A1-27",
+    "lat": 22.648584,
+    "lng": 114.192222,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/589839658c6914200000003027050774?type=pic",
+      "https://store.is.autonavi.com/showpic/5d6ff85dabbd01945aeb986691480cb7"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MDX7Z3H5",
+    "name": "luckin coffee 瑞幸咖啡(龙岗天安数码城店)",
+    "address": "黄阁路龙岗天安数码城(黄阁坑地铁站C口步行300米)",
+    "lat": 22.721687,
+    "lng": 114.217318,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/35db70789487026c0000002899410460?type=pic",
+      "https://store.is.autonavi.com/showpic/2f8cc268e488c7020000002899420289?type=pic",
+      "https://store.is.autonavi.com/showpic/68cd470914fc992c0000002899388884?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MDSXJMTS",
+    "name": "同仁四季椰子鸡(光明星河COCO City店)",
+    "address": "光明大道511号光明星河COCO City A馆4楼L4-011",
+    "lat": 22.759313,
+    "lng": 113.940152,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/5b923aebe2ab53060000003545164495?type=pic",
+      "https://store.is.autonavi.com/showpic/c78c711351f97e362762c4b8036d3ec9",
+      "https://store.is.autonavi.com/showpic/9593c7840950cb020000003057944949?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MDRRBRSN",
+    "name": "肯德基(华强广场店)",
+    "address": "华强北路1019号华强广场负一层",
+    "lat": 22.543455,
+    "lng": 114.086312,
+    "hasHighChair": true,
+    "isKidTolerant": true,
+    "hasKidsMenu": true,
+    "images": [
+      "http://store.is.autonavi.com/showpic/62e8c0ce15bcc103e31e666dae763967",
+      "http://store.is.autonavi.com/showpic/d0a87f377c8ddf776cb3cc18d9aed25d",
+      "http://store.is.autonavi.com/showpic/423771f81c6ab874ef5f34985404c37c"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MDJXLIF2",
+    "name": "寿司郎(壹方城店)",
+    "address": "新安街道新湖路99号壹方中心北区L5-001D",
+    "lat": 22.553437,
+    "lng": 113.887321,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/44f64b68728c09bf0000003211882655?type=pic",
+      "https://store.is.autonavi.com/showpic/2a526456527fcf7b0000002991772923?type=pic",
+      "https://store.is.autonavi.com/showpic/ef77690075fd9d2a0000002991714939?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MDGZNPAK",
+    "name": "肯德基(丁山河畔店)",
+    "address": "坪地街道黄竹北路9号",
+    "lat": 22.764476,
+    "lng": 114.303677,
+    "hasHighChair": true,
+    "isKidTolerant": true,
+    "hasKidsMenu": true,
+    "images": [
+      "http://store.is.autonavi.com/showpic/62e8c0ce15bcc103e31e666dae763967",
+      "https://store.is.autonavi.com/showpic/af766f8533f2a62f0000002451044866?type=pic",
+      "http://store.is.autonavi.com/showpic/4cd63b876ce31b1d390fec27052f9038"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MDG7RZ3U",
+    "name": "上菌山·云南野生牛肝菌火锅(前海华发冰雪世界店)",
+    "address": "超感公园S3栋3层3015号",
+    "lat": 22.711638,
+    "lng": 113.769626,
+    "hasHighChair": false,
+    "isKidTolerant": false,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/c87ae0c4321807ec5c1e265eef8172a6",
+      "https://store.is.autonavi.com/showpic/d6619e2ccc310e19aa37375de45c3f80",
+      "https://store.is.autonavi.com/showpic/f42a0620b8f9fe1b70a6504e77d5bbed"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MDF1A80Q",
+    "name": "文记虾一跳(南山首店)",
+    "address": "维也纳酒店深圳南油服装城南光地铁站店西北门西南60米",
+    "lat": 22.516425,
+    "lng": 113.920975,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/9490add14cc0e18f0000004043620970?type=pic",
+      "https://store.is.autonavi.com/showpic/368a24d69a67d19cec679f013f735130",
+      "https://store.is.autonavi.com/showpic/62aa5754542f10df0000005052500409?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MDDRPFJZ",
+    "name": "盛香亭",
+    "address": "福田石厦时代广场3层(石厦地铁站F口步行290米)",
+    "lat": 22.52095,
+    "lng": 114.053164,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/ddd6b86ed66951337ca8b599daae10fb",
+      "https://store.is.autonavi.com/showpic/f912a634b3050b490000003099818364?type=pic",
+      "https://store.is.autonavi.com/showpic/9ab260c77493c1ad0000003099808975?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MD6P9YQ4",
+    "name": "东洞·烤肉小馆(深圳湾绿谷店)",
+    "address": "深圳湾万象城二期负一楼绿谷广场C区(华为楼下)",
+    "lat": 22.515301,
+    "lng": 113.944128,
+    "hasHighChair": false,
+    "isKidTolerant": false,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/3de2993a811e396a0000003200290809?type=pic",
+      "https://store.is.autonavi.com/showpic/e5a61adf86201ba894eb2aad28f38323",
+      "https://store.is.autonavi.com/showpic/bd4c7d97c28f0eff0000003120036137?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MD5RXJ41",
+    "name": "龍歌自助小火锅(1234space店)",
+    "address": "建设路3018号5层L508室",
+    "lat": 22.544476,
+    "lng": 114.116087,
+    "hasHighChair": false,
+    "isKidTolerant": false,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/4d96ec0ce0001e860000003774184356?type=pic",
+      "https://store.is.autonavi.com/showpic/82de02148bfe40c70000005789078219?type=pic",
+      "https://store.is.autonavi.com/showpic/c0cb9b8105bc99b60000002958780369?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MD5HWDCN",
+    "name": "壹号粥火锅·海鲜煲仔粥(龙华壹方天地店)",
+    "address": "龙华街道壹方天地A2区L3-023A(3楼外摆)",
+    "lat": 22.648725,
+    "lng": 114.027925,
+    "hasHighChair": false,
+    "isKidTolerant": false,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/0fcda1f8990d882e3e5cee356da9ef33",
+      "https://store.is.autonavi.com/showpic/f855815f0915e8a80000003138460388?type=pic",
+      "https://store.is.autonavi.com/showpic/d30efaf25a87d4eb0000003679592052?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MBU5M0FS",
+    "name": "懒人业余餐厅(华强北店)",
+    "address": "华富街道田面社区振华西路31号田面国际文创小镇10栋L1-01号",
+    "lat": 22.544416,
+    "lng": 114.074976,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/2bd35a834ddfd85f0000004012720681?type=pic",
+      "https://store.is.autonavi.com/showpic/568cb98f6115256b0000003088374077?type=pic",
+      "https://store.is.autonavi.com/showpic/21c0569998ca984c0000003714654545?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MBNUSVQF",
+    "name": "湛龙牛庄·潮汕牛肉火锅(景田店)",
+    "address": "莲花街道紫荆社区景田岁宝百货1层",
+    "lat": 22.54624,
+    "lng": 114.04855,
+    "hasHighChair": false,
+    "isKidTolerant": false,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/9fdee72bd511472b0000004442728362?type=pic",
+      "https://store.is.autonavi.com/showpic/66b11b54b8a3a94b0000000742688546?type=pic",
+      "https://aos-comment.amap.com/comment/content_service__1772678764742_64169766_1772678840852_51610966.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MBKLRA7W",
+    "name": "探鱼·鲜青椒爽麻烤鱼(坪山百佳华佳漾里店)",
+    "address": "坪山街道六和社区龙平路4045号佳华领悦广场3栋C座2F016",
+    "lat": 22.702779,
+    "lng": 114.337085,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/37727912438247d60000000965950949?type=pic",
+      "https://store.is.autonavi.com/showpic/f7e2e4f4ff43fee70000002753446339?type=pic",
+      "https://store.is.autonavi.com/showpic/735454f0f51e9c3a0000002753454199?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MBGC3I5A",
+    "name": "探鱼·鲜青椒爽麻烤鱼(观澜湖新城MHMALL店)",
+    "address": "观澜街道高尔夫大道8号1栋L405",
+    "lat": 22.722268,
+    "lng": 114.075447,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/7417d9ad229b6efcff65b77e4c9aa23b",
+      "https://aos-comment.amap.com/B0MBGC3I5A/comment/20260317-bf0a9a7a00a077ee9e36ed0d-1VXmBbYXell875J3adOqKn.jpg",
+      "https://store.is.autonavi.com/showpic/9d0bd17d1f9572df0000001837900340?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MBFZ3673",
+    "name": "好利来(罗湖金光华店)",
+    "address": "南湖街道罗湖社区人民南路2028号金光华广场B2层-019号",
+    "lat": 22.53925,
+    "lng": 114.119866,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B0MBFZ3673/comment/D0C7118D_61DD_41E7_B4C7_3B6B020F490D_L0_001_1500_200_1772432269057_50103019.jpg",
+      "https://store.is.autonavi.com/showpic/6f677f9998b6dd11a2856bff01cf722b",
+      "https://store.is.autonavi.com/showpic/9ae4c2ec1739e26b0000005917480162?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MBFD60DI",
+    "name": "79号渔船海鲜饭店(坪山店)",
+    "address": "坪山街道坪山大道2009号城投芯时代大厦1至3楼",
+    "lat": 22.681887,
+    "lng": 114.335628,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/193984500a682062a5da89e5b4facfff",
+      "https://store.is.autonavi.com/showpic/09628125d2f0066b0000002636702850",
+      "https://store.is.autonavi.com/showpic/614336347ef36bef0000002636778411"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MBC6MUMP",
+    "name": "粒上皇(万象食家梅园路店)",
+    "address": "梅园路71号深圳笋岗万象食家B1层",
+    "lat": 22.561734,
+    "lng": 114.110563,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/615b714a009fb6800000002362130995?type=pic",
+      "https://store.is.autonavi.com/showpic/80d821b294772cbd0000002362190210?type=pic",
+      "https://store.is.autonavi.com/showpic/771ac5c56a8e02da0000003239594105?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MBBZVH51",
+    "name": "小菜园新徽菜(深圳福田KKOne店)",
+    "address": "沙头街道下沙社区滨河大道289号京基滨河时代广场L407、407a号",
+    "lat": 22.527706,
+    "lng": 114.02702,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B0MBBZVH51/comment/177115809087_1771158091803_56359405.jpg",
+      "https://store.is.autonavi.com/showpic/b918d2bd34dd1b854a63d9de43644ddd",
+      "https://store.is.autonavi.com/showpic/d082b0bab3b408080000002631634013?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MBBCWLQL",
+    "name": "弓二·烧鸟居酒屋(龙华天虹店)",
+    "address": "民治街道人民路2020号天虹购物中心外围1楼L166商铺探鱼旁边",
+    "lat": 22.625975,
+    "lng": 114.021325,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/421ddd9a9fa890130000003252048689?type=pic",
+      "https://store.is.autonavi.com/showpic/8ed3d0856cf757a40000002080974531?type=pic",
+      "https://store.is.autonavi.com/showpic/a9d8abd02bfb45aa0000002876538717?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MBB5W6YM",
+    "name": "813芭依珊BAESAn(龙华首创店)",
+    "address": "龙华街道龙华广场首创商务大厦124",
+    "lat": 22.657339,
+    "lng": 114.037988,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/ad57ff95f475b1080ea025967b7244bb",
+      "https://store.is.autonavi.com/showpic/1636c1584cb853df0000003012142116?type=pic",
+      "https://store.is.autonavi.com/showpic/d00bf9eeef6d321d0000003012144104?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MB6UNNEZ",
+    "name": "极上万膳·日料放题(阳光酒店)",
+    "address": "嘉宾路2003号阳光酒店B座1层G号",
+    "lat": 22.540178,
+    "lng": 114.122127,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/1a7137445501d38b768d8df573e67fb4",
+      "https://aos-comment.amap.com/B0MB6UNNEZ/comment/20260307-10d93cc6e1a862390fa1cc5e-8EvvdEVfLfn7oBGS5fxOmg.jpg",
+      "https://store.is.autonavi.com/showpic/68001f4aba0419300000003348034746?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MB6SN43D",
+    "name": "大富烧鸡大牌档(车公庙店)",
+    "address": "泰然六路19号(下沙地铁站C口步行380米)",
+    "lat": 22.531755,
+    "lng": 114.026101,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B0MB6SN43D/comment/20260319-4a4fabaf182d680c6132f8b9-11AOXPZaEty9FdFjnva8nE.jpg",
+      "https://store.is.autonavi.com/showpic/aaba8bd80e2ff8907ca6bbb7dd319c53",
+      "https://aos-comment.amap.com/B0MB6SN43D/comment/20260319-4a4fabaf182d680c6132f8b9-4jzvjdVYVpfA5c3p75zRjr.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MB1OWPCT",
+    "name": "寿司郎(天利名城店)",
+    "address": "粤海街道海德三道195号天利名城购物中心304",
+    "lat": 22.518009,
+    "lng": 113.935497,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/a96058ad98ec461a0000005125324721?type=pic",
+      "https://store.is.autonavi.com/showpic/f052754d1238785c0000002349406320?type=pic",
+      "https://store.is.autonavi.com/showpic/e29024bc1f0188850000001117630448?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MAYD1KBP",
+    "name": "麦当劳(星河天地店)",
+    "address": "光明大道511光明星河COCO City光明大道店F1层",
+    "lat": 22.760036,
+    "lng": 113.939995,
+    "hasHighChair": true,
+    "isKidTolerant": true,
+    "hasKidsMenu": true,
+    "images": [
+      "https://store.is.autonavi.com/showpic/ddd2cf826c87ebb70000003057646197?type=pic",
+      "https://store.is.autonavi.com/showpic/616e79d326c97b0f0000005200948538?type=pic",
+      "https://store.is.autonavi.com/showpic/d0d8e5dfa8362ab00000003385586698?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MAU5SJBK",
+    "name": "你瞅啥东北烧烤(光明万达店)",
+    "address": "凤凰城地铁站D出口(美爵酒店右后侧,篮球场旁)汉堡王对面",
+    "lat": 22.748274,
+    "lng": 113.931739,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/7c45b948c26027546e2cb31e561d26e2",
+      "https://store.is.autonavi.com/showpic/7efc1cf328a2ad580000001807538314",
+      "https://store.is.autonavi.com/showpic/262c7c1d793945c62632d2c7ec36cfb8"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MAR74NJP",
+    "name": "湘领名厨(星河COCOCity店)",
+    "address": "光明星河COCO City A馆",
+    "lat": 22.759625,
+    "lng": 113.940225,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/e1d87b6407e86b9e0000002776354055?type=pic",
+      "https://store.is.autonavi.com/showpic/be3d2bfbabeaf39c0000003057928063?type=pic",
+      "https://store.is.autonavi.com/showpic/8eb2ba79071e2f300000002997342420?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MAO5JAKE",
+    "name": "宁家十職(深圳罗湖万象城店)",
+    "address": "宝安南路1881号万象城一期5楼L540",
+    "lat": 22.539757,
+    "lng": 114.110462,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/4784cb1b7eb9e5850000003771500627?type=pic",
+      "https://store.is.autonavi.com/showpic/b546364cdd1b14580000003771506443?type=pic",
+      "https://store.is.autonavi.com/showpic/14cc86074cd43ea30000003771520013?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MAN7QSD7",
+    "name": "麦当劳(六约北店)",
+    "address": "红棉路6088号振业上观8-2栋103、104、105、106号商铺",
+    "lat": 22.64343,
+    "lng": 114.181878,
+    "hasHighChair": true,
+    "isKidTolerant": true,
+    "hasKidsMenu": true,
+    "images": [
+      "https://store.is.autonavi.com/showpic/2b86baa53ccd86ec0000002349852097?type=pic",
+      "https://store.is.autonavi.com/showpic/0464b460b4124ff20000000981434041",
+      "https://store.is.autonavi.com/showpic/35d6947ea7ad410c0000003093774725?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MAMO8DS8",
+    "name": "粤陈记煲仔粥(海雅缤纷城店)",
+    "address": "新安街道建安一路99号海雅缤纷城2号门5楼L5",
+    "lat": 22.560946,
+    "lng": 113.906135,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/77f723e738d6b2223744dcd3998c8f18",
+      "https://store.is.autonavi.com/showpic/ebb3179a2e6d9aca0000002739842081?type=pic",
+      "https://store.is.autonavi.com/showpic/3d76fe2ccb04a9780000002619002751?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MADSI4CT",
+    "name": "缪氏川菜(光明星河店)",
+    "address": "光明大道光明星河Cococitya馆",
+    "lat": 22.759497,
+    "lng": 113.94025,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/711591dc82a5ffec0000002402674667?type=pic",
+      "https://store.is.autonavi.com/showpic/24c584a8d2cdc1f80000003057976201?type=pic",
+      "https://store.is.autonavi.com/showpic/7232810c532b34400000003057956891?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MAD7IU96",
+    "name": "寿司郎(万象前海店)",
+    "address": "南山街道桂湾社区桂湾四路169号万象前海",
+    "lat": 22.53119,
+    "lng": 113.898491,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/c5415c0511e2ddc90000003331780739?type=pic",
+      "https://store.is.autonavi.com/showpic/cb826cfdb536b9bd0000003075884207",
+      "https://store.is.autonavi.com/showpic/6e80dfd2a64d07b50000003174250488?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MA9UBTQ6",
+    "name": "塔斯汀(龙华清湖小学店)",
+    "address": "龙华大道龙湖君荟时尚公寓4753号商铺",
+    "lat": 22.670196,
+    "lng": 114.043792,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://img.alicdn.com/imgextra/i1/O1CN01Q2tJZW28ztDwxBC0P_!!6000000008004-0-tps-640-640.jpg",
+      "https://store.is.autonavi.com/showpic/77f7740239334ede0000002749782050?type=pic",
+      "https://store.is.autonavi.com/showpic/e7d69937ae75112a0000002749704989?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MA76YJYM",
+    "name": "达美乐比萨(坪山益田假日店)",
+    "address": "坪山街道深汕路168号益田假日世界一楼L1-43-2",
+    "lat": 22.691923,
+    "lng": 114.338279,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/909e29254bb7b0a526a3ce6237a1f371",
+      "https://store.is.autonavi.com/showpic/fcf802b4ba7c323ea3693bf9a912bc79",
+      "https://store.is.autonavi.com/showpic/7bec8d77fd4dcb250000002459698651?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MA69MIFZ",
+    "name": "木屋烧烤",
+    "address": "桂园街道新围社区深南东路5033号金山大厦一单元负18-B02",
+    "lat": 22.540675,
+    "lng": 114.109425,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/487c3f239963a2541f73064565a58f1a",
+      "https://store.is.autonavi.com/showpic/24d7f94a6c7c6ccb0000006302532974?type=pic",
+      "https://store.is.autonavi.com/showpic/797399dc627fcc910000006302562025?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MA4UUSVT",
+    "name": "粤陈记·煲仔粥(光明星河COCOCity店)",
+    "address": "光明大道511号光明星河COCO City光明大道店F4层",
+    "lat": 22.759765,
+    "lng": 113.939855,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/07b155766ff1ac250000003546532391?type=pic",
+      "https://store.is.autonavi.com/showpic/ee13e33ee672b9970000002428420548?type=pic",
+      "https://store.is.autonavi.com/showpic/1541a9e3724a11ae0000002427160306?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MA4CV3AH",
+    "name": "一栗nutco(深圳万象天地店)",
+    "address": "科发路19号深圳万象天地B1层",
+    "lat": 22.540991,
+    "lng": 113.954318,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/c29cae5caa111ad90000003945224218?type=pic",
+      "https://store.is.autonavi.com/showpic/4726bd385aac8c9f0000003141542344?type=pic",
+      "https://store.is.autonavi.com/showpic/96a8718f92749dbe0000003077550949?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MA3NYQ4G",
+    "name": "七欣天(深圳龙岗万科店)",
+    "address": "龙城街道龙翔大道7188号万科广场(项目)L4层10号",
+    "lat": 22.714543,
+    "lng": 114.243698,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/d7a6f02e26d36e44c991747ba30d6edc",
+      "https://store.is.autonavi.com/showpic/bab96677eba763de0000002781070905?type=pic",
+      "https://store.is.autonavi.com/showpic/8163b6b76c0c08f00000003046804890?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MA3MYG2N",
+    "name": "星巴克(光明星河coco店)",
+    "address": "光明街道东周社区光明大道511号星河天地商厦1层L1-010单元",
+    "lat": 22.759694,
+    "lng": 113.940028,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/f665d89f876efeb20000002476760378?type=pic",
+      "https://store.is.autonavi.com/showpic/f742f7319d69f2dfc1b3979ba664dbff",
+      "https://store.is.autonavi.com/showpic/de5b3c17b62940b40000002756012775?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MA2SQTIM",
+    "name": "五谷芳乳鸽海鲜餐厅(杨梅坑店)",
+    "address": "南澳街道东山社区杨梅坑小组9-1号",
+    "lat": 22.544541,
+    "lng": 114.572121,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/a6cc625767347be70000002737598090?type=pic",
+      "https://store.is.autonavi.com/showpic/a17141d321f3ebc90000002652042080?type=pic",
+      "https://store.is.autonavi.com/showpic/43dde5b7281c6afd20e10231bc766aeb"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0MA11GATZ",
+    "name": "潮汕大目牛肉火锅(彩田店)",
+    "address": "彩田路润恒大厦一楼",
+    "lat": 22.531013,
+    "lng": 114.068588,
+    "hasHighChair": false,
+    "isKidTolerant": false,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/5731166f7184a9390000003000800365?type=pic",
+      "https://store.is.autonavi.com/showpic/d8daccc412912f3c0000002990060690?type=pic",
+      "https://store.is.autonavi.com/showpic/1cee36d9babf82060000002942030618?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0M6ZR21VB",
+    "name": "岳州大叔·岳阳烧烤(龙华红山店)",
+    "address": "民治街道北站社区民塘路南源新村129栋1楼101号(顺懿Hotel旁边)",
+    "lat": 22.622657,
+    "lng": 114.029477,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/8a8446af144eb7d70000002094424501?type=pic",
+      "https://aos-comment.amap.com/B0M6ZR21VB/comment/20260316-863a1e159c15356c698563b7-53hD366EYV47VlyJVzKUbh.jpg",
+      "https://store.is.autonavi.com/showpic/6a39e9b944cca36c0000000671168210?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0M6XMOV7L",
+    "name": "O'eat(罗湖万象城店)",
+    "address": "华润大厦Gucci店旁靠近深南东路边",
+    "lat": 22.541325,
+    "lng": 114.110925,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B0M6XMOV7L/comment/83650A92_C85F_40BE_8B73_A9D213E123EB_L0_001_1500_200_1772505265375_87001126.jpg",
+      "https://store.is.autonavi.com/showpic/d52d8c32b795974e0000001813374386?type=pic",
+      "https://aos-comment.amap.com/B0M6XMOV7L/comment/6a760c61-cb4c-4a7d-8eb5-0bfee6a34b5e.png"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0M6VUJYHA",
+    "name": "头牌小厨•广东饭店(罗湖店)",
+    "address": "人民南路3023-1号",
+    "lat": 22.542542,
+    "lng": 114.118579,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/2b456bb4365b0b450000003203066196?type=pic",
+      "https://store.is.autonavi.com/showpic/b2ce9104587628470000002594644289?type=pic",
+      "https://aos-comment.amap.com/comment/content_service__1773130886154_67408428_1773130917371_82241323.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0M6VUJFTO",
+    "name": "珮姐重庆火锅(深圳白石洲店)",
+    "address": "白石街248号",
+    "lat": 22.536449,
+    "lng": 113.967215,
+    "hasHighChair": false,
+    "isKidTolerant": false,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/comment/content_service__1772388846194_64022981_1772388986882_39150011.jpg",
+      "https://aos-comment.amap.com/comment/content_service__1772388846207_84724516_1772388986884_02934554.jpg",
+      "https://aos-comment.amap.com/comment/content_service__1772388846216_32431157_1772388986885_29443881.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0M6VSJ4UH",
+    "name": "客家本色客家菜(欢乐港湾店)",
+    "address": "海天路15-4号(临海地铁站B2口步行480米)",
+    "lat": 22.543125,
+    "lng": 113.886225,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B0M6VSJ4UH/comment/B8D0F114_4A8C_4809_A265_64CF8786150C_L0_001_2000_150_1773309899495_46534141.jpg",
+      "https://aos-comment.amap.com/B0KD3RZ5W2/comment/8D132A2F_5FD2_42FB_A3BB_E970E340D650_L0_001_2000_1500_1737109754620_72375749.jpg",
+      "https://aos-comment.amap.com/B0KD3RZ5W2/comment/5846543E_B2AD_4FA2_99FD_4C472CBF0CE8_L0_001_2004_1504_1737109754622_63357498.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0M6V7KENM",
+    "name": "野渔翁·鱼火锅·万绿湖有机大头活鱼现杀(深圳首店)",
+    "address": "大浪街道新石社区浪腾路1号5栋111",
+    "lat": 22.698278,
+    "lng": 113.982823,
+    "hasHighChair": false,
+    "isKidTolerant": false,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/ad7232713191f31e0000001066670868?type=pic",
+      "https://aos-comment.amap.com/B0M6V7KENM/comment/4A4AA8BD_1CDB_443A_A138_11615F5136FB_L0_001_1273_93_1772859842988_04333314.jpg",
+      "https://store.is.autonavi.com/showpic/8b9bd935eda9b62b0000002563768236?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0M6UUQO21",
+    "name": "蛮涮自助小火锅·糖水铺子集合店(宝能环球汇店)",
+    "address": "笋岗街道宝安北路宝能环球中心6楼",
+    "lat": 22.56402,
+    "lng": 114.109915,
+    "hasHighChair": false,
+    "isKidTolerant": false,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/fe65c374bf3b58a50000003210484375?type=pic",
+      "https://store.is.autonavi.com/showpic/d5c892c59e7d213e0000003435270269?type=pic",
+      "https://aos-comment.amap.com/B0M6UUQO21/comment/1372C863_F9C9_4DAF_963A_770EF947630E_L0_001_1170_188_1769960628827_76015382.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0M6URRJ10",
+    "name": "茉酸奶(深圳龙华观澜新城店)",
+    "address": "高尔夫大道8号观澜湖新城MH MALLB1层",
+    "lat": 22.722675,
+    "lng": 114.076225,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/d41ba02c2b2cf417316e148d7545620a?operate=original?operate=original",
+      "https://store.is.autonavi.com/showpic/dabf8ca55e5264175485f800a3f5de87",
+      "https://store.is.autonavi.com/showpic/dad94443d6f24d6d0000000669054173?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0M6UHPFNP",
+    "name": "茉莉奶白(深圳湾万象城店)",
+    "address": "粤海街道海珠社区科苑南路2516号深圳湾文化广场北馆B1-3",
+    "lat": 22.511935,
+    "lng": 113.945026,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/80ee8088cc8ddb050000002375358691?type=pic",
+      "https://aos-comment.amap.com/B0M6UHPFNP/comment/content_media_external_file_1000000342_ss__1772591897412_01273593.jpg",
+      "https://aos-comment.amap.com/B0M6UHPFNP/comment/20260316-15835f94c637ded7c38df52e-5igpEWSj98W7D4EbPyu6AQ.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0M6SY2LEP",
+    "name": "滨寿司(深圳连城购物公园二店)",
+    "address": "连城新天地地下广场一期B11A",
+    "lat": 22.534353,
+    "lng": 114.056877,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/b9a1ae2d162796260000002910266824?type=pic",
+      "https://store.is.autonavi.com/showpic/a60ed9dc10fb56350000002247494849?type=pic",
+      "https://aos-comment.amap.com/comment/content_service__1768716766264_08234643_1768716830576_89900986.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0M6SA3ALJ",
+    "name": "塔斯汀中国汉堡(深圳市罗瑞合南街店)",
+    "address": "龙岗街道南联社区罗瑞合南街13-102",
+    "lat": 22.7261,
+    "lng": 114.26819,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://img.alicdn.com/imgextra/i1/O1CN01Q2tJZW28ztDwxBC0P_!!6000000008004-0-tps-640-640.jpg",
+      "http://store.is.autonavi.com/showpic/4d0a8c08ba03c7204a88b5e1d92c3c6d",
+      "http://store.is.autonavi.com/showpic/e905baf29a5aa03cdd5d967ba710554f"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0M6RU2DE4",
+    "name": "海底捞火锅(龙岗星河COCO Park店)",
+    "address": "爱南路666号星河COCO Park(龙岗店)L5层(南门进入直行40m,扶梯上到L5可见)",
+    "lat": 22.690814,
+    "lng": 114.228614,
+    "hasHighChair": true,
+    "isKidTolerant": false,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/21b1e5ed07e8f9251b2985b7db431c1d",
+      "https://store.is.autonavi.com/showpic/bcb84a02dd0ebb388d01c309af554414?operate=original",
+      "https://aos-comment.amap.com/B0FFFCQYW9/comment/CD28C303_3386_4BB3_958A_BEBFD60DE906_L0_001_1500_200_1754463242962_62528876.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0M6O7MQTC",
+    "name": "冯校长老火锅(榕湾汇店)",
+    "address": "西乡街道永丰社区悦和二街9号榕江壹号院163",
+    "lat": 22.574908,
+    "lng": 113.857239,
+    "hasHighChair": false,
+    "isKidTolerant": false,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/99b545fa0b7b4d330000003537912606?type=pic",
+      "https://store.is.autonavi.com/showpic/49377554d49218380000002902446055?type=pic",
+      "https://store.is.autonavi.com/showpic/7d2c7ff857627c420000002749622587?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0M6N7FO15",
+    "name": "铭厨·客家土菜·家宴·团建(坪山佳漾里店)",
+    "address": "六和社区龙坪路4045号佳华领悦广场3楼",
+    "lat": 22.702285,
+    "lng": 114.337378,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B0M6N7FO15/comment/B1538B60_97D2_4053_BE4F_88D15A8DEEB5_L0_001_1500_200_1768502799464_84849043.jpg",
+      "https://store.is.autonavi.com/showpic/04e79c105f30818854ab9ab483ac8562",
+      "https://aos-comment.amap.com/B0M6N7FO15/comment/90F5FA9F_7467_4F37_A6D3_A26C9D3221B5_L0_001_1500_200_1768502799463_68362107.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0M6N7F9OW",
+    "name": "和府捞面(奥特莱斯湖心岛店)",
+    "address": "怀渡街2号奥特莱斯湖心岛F1层",
+    "lat": 22.596758,
+    "lng": 114.307913,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/query_pic?id=st2eeeb9c7-e911-4ec1-bed7-17dc20dfccf6&user=search&operate=original",
+      "https://aos-comment.amap.com/B0M6N7F9OW/comment/F990EBD3_CBC2_4DF9_B478_D9604D044494_L0_001_1500_200_1768562560448_93433465.jpg",
+      "https://store.is.autonavi.com/showpic/77a8d2578d66ed020000003295528900?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0M6MUUPRJ",
+    "name": "泸溪河桃酥(光明蓝鲸世界店)",
+    "address": "凤凰街道东坑社区龙光玖龙台6栋C座L1-29A(蓝鲸世界L1层)",
+    "lat": 22.746349,
+    "lng": 113.933053,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://img.alicdn.com/imgextra/i1/O1CN015bmFwo27rMEE9NLh3_!!6000000007850-2-tps-512-512.png",
+      "https://aos-comment.amap.com/B0M6MUUPRJ/comment/content_media_external_file_83401_ss__1770451116805_07041771.jpg",
+      "https://store.is.autonavi.com/showpic/39766edb4f9cd0130000003158164797?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0M6L96SHB",
+    "name": "水牛奶皇后面包(南山店)",
+    "address": "南头街道田厦社区桃苑单身公寓A、B",
+    "lat": 22.527663,
+    "lng": 113.923909,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/78e50e2d8da726336752b066d7d29bb9",
+      "https://aos-comment.amap.com/B0M6L96SHB/comment/content_media_external_file_504693_ss__1771029613462_06711559.jpg",
+      "https://aos-comment.amap.com/B0M6L96SHB/comment/content_media_external_file_504695_ss__1771029613458_01309071.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0M6H7CGCQ",
+    "name": "海底捞火锅(大浪商业中心店)",
+    "address": "华荣路361号大浪街道后浪新天地8栋3层8306-8309",
+    "lat": 22.678133,
+    "lng": 113.994595,
+    "hasHighChair": true,
+    "isKidTolerant": false,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/bcb84a02dd0ebb388d01c309af554414?operate=original",
+      "https://store.is.autonavi.com/showpic/e5f32d23ffbe41b60000001178776544?type=pic",
+      "https://aos-comment.amap.com/B0M6ACYOM3/comment/%5B2026-01-27-12-25-02%5DB6345E65-FCCE-4CFE-853B-2D5E7657839_1769487903526_26750573.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0M6G7OUZC",
+    "name": "野妹火锅(欢乐海岸店)",
+    "address": "白石东路欢乐海岸曲水湾-13栋b座(喜茶对面)",
+    "lat": 22.524085,
+    "lng": 113.991323,
+    "hasHighChair": false,
+    "isKidTolerant": false,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/query_pic?id=stc90880b8-29aa-470a-a178-7753bfd70d70&user=search&operate=original",
+      "https://aos-comment.amap.com/B0M6G7OUZC/comment/content_media_external_file_1000116340_ss__1771512410872_13852239.jpg",
+      "https://store.is.autonavi.com/showpic/df29a7d062e6f30b0000000970250726?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0M6B9IVWV",
+    "name": "chuchulab日式短蛋糕(万象城店)",
+    "address": "海珠社区科苑南路2888号深圳湾万象城B151B",
+    "lat": 22.516732,
+    "lng": 113.946419,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/fa52cc5480043b0d96aea10e61629d39",
+      "https://store.is.autonavi.com/showpic/60bf30910438297f0000002564326421?type=pic",
+      "https://store.is.autonavi.com/showpic/1e03d33c2c12a6a40000002678160496?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0M6AHYK9W",
+    "name": "融湖广场必胜客",
+    "address": "平吉大道408号融湖广场LG层",
+    "lat": 22.692793,
+    "lng": 114.122038,
+    "hasHighChair": true,
+    "isKidTolerant": true,
+    "hasKidsMenu": true,
+    "images": [
+      "https://store.is.autonavi.com/showpic/9471cfc1133fde0a0000002466426026?type=pic",
+      "https://store.is.autonavi.com/showpic/f743028d2cfc935d0000001923336701?type=pic",
+      "https://store.is.autonavi.com/showpic/6c99a9bc6efc3f410f88a5dd260e4fd2"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0M67AWIUR",
+    "name": "必胜客(光明大道光明星河COCO City店)",
+    "address": "光明大道511光明星河COCO City光明大道店F2层",
+    "lat": 22.759625,
+    "lng": 113.939775,
+    "hasHighChair": true,
+    "isKidTolerant": true,
+    "hasKidsMenu": true,
+    "images": [
+      "https://store.is.autonavi.com/showpic/82db77a335d4114f0000003057784338?type=pic",
+      "https://aos-comment.amap.com/B0M67AWIUR/comment/content_media_external_file_327_1772465263137_33491364.jpg",
+      "https://aos-comment.amap.com/B0M67AWIUR/comment/20260320-0b9d1c613810bb0f7019382d-2NgtLygIjcg69Xnl75vkag.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0M676V8NL",
+    "name": "华莱士·全鸡汉堡(宝安大浪店)",
+    "address": "大浪街道大浪南路542号",
+    "lat": 22.678654,
+    "lng": 114.008544,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/ea4f7ec098ffc7862f967bc49eed39fc",
+      "https://store.is.autonavi.com/showpic/c406ecbf863a7c93518b1bad6a34294e?operate=original",
+      "http://store.is.autonavi.com/showpic/4ef21ec58040cf7deae1141139091c9c"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0M676V1Y5",
+    "name": "华莱士·全鸡汉堡(爱联店)",
+    "address": "余岭西路48号(华莱士)",
+    "lat": 22.697264,
+    "lng": 114.228495,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/ea4f7ec098ffc7862f967bc49eed39fc",
+      "https://store.is.autonavi.com/showpic/c406ecbf863a7c93518b1bad6a34294e?operate=original",
+      "http://store.is.autonavi.com/showpic/4ef21ec58040cf7deae1141139091c9c"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0M637A0LP",
+    "name": "野杜鹃",
+    "address": "嘉宾路4号金光华广场L6层L6-003A(西2门进入直行20m,扶梯上到L6可见)",
+    "lat": 22.53976,
+    "lng": 114.120205,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/0638dc8171ab41d10000002480852694?type=pic",
+      "https://store.is.autonavi.com/showpic/f4461ce1ee7e799c0000002470080770?type=pic",
+      "https://store.is.autonavi.com/showpic/2f5c701ed0942c970000003078804479?type=pic"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F301BD4",
+    "name": "金龙大酒店(鸿基路)",
+    "address": "深汕公路龙东地段146号(龙东社区公交站旁)",
+    "lat": 22.723773,
+    "lng": 114.28981,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://store.is.autonavi.com/showpic/998c46658c9b8d89d4b899feac8c444d",
+      "https://aos-comment.amap.com/B02F301BD4/comment/content_media_external_file_171_1767263319257_37775695.jpg",
+      "https://store.is.autonavi.com/showpic/029408e943fd13e97ed914d08169fc21"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B02F305EJ4",
+    "name": "客家名栈(新洲店)",
+    "address": "新洲九街综合楼1楼(近新洲小学)",
+    "lat": 22.524639,
+    "lng": 114.048274,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "http://store.is.autonavi.com/showpic/2c0c6de5f7a7745f2f8db6b7f3838681",
+      "https://store.is.autonavi.com/showpic/4691e85d99d883fdfcf1ed698cdb7de6",
+      "https://store.is.autonavi.com/showpic/602e2f35140d99553661b0dd92054858"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  },
+  {
+    "cityId": "city-shenzhen",
+    "amapPoiId": "B0FFGDI2T3",
+    "name": "绿景佐阾红树林购物中心",
+    "address": "沙嘴一坊与沙嘴东路交叉口西北60米",
+    "lat": 22.520042,
+    "lng": 114.036683,
+    "hasHighChair": false,
+    "isKidTolerant": true,
+    "hasKidsMenu": false,
+    "images": [
+      "https://aos-comment.amap.com/B0FFGDI2T3/comment/F298B334_A835_4F6A_9FCB_DC94F9E00035_L0_001_1080_192_1757654996658_03127056.jpg",
+      "https://aos-comment.amap.com/B0FFGDI2T3/comment/content_media_external_file_1000023460_ss__1750774218721_54013208.jpg",
+      "https://aos-comment.amap.com/B0FFGDI2T3/comment/content_media_external_file_1000023455_ss__1750774218546_37581712.jpg"
+    ],
+    "tags": [
+      "ai_draft_v1"
+    ],
+    "dataSource": "ai_draft_v1"
+  }
+]

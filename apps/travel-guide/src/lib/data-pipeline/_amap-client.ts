@@ -51,7 +51,8 @@ export interface AmapClientOptions {
 export class AmapClient {
   readonly apiKey: string;
   readonly dailyBudget: number;
-  private usedToday = 0;
+  /** 当日已用配额（API 调用次数）。新的一天 0 点 ISO 日期切换后自动归零。 */
+  private _usedToday = 0;
   private dayKey: string;
 
   constructor(opts: AmapClientOptions) {
@@ -60,18 +61,24 @@ export class AmapClient {
     this.dayKey = new Date().toISOString().slice(0, 10);
   }
 
+  /** 读取当日已用配额（用于跑前/跑后打印） */
+  get usedToday(): number {
+    this.resetIfNewDay();
+    return this._usedToday;
+  }
+
   private resetIfNewDay(): void {
     const today = new Date().toISOString().slice(0, 10);
     if (today !== this.dayKey) {
       this.dayKey = today;
-      this.usedToday = 0;
+      this._usedToday = 0;
     }
   }
 
   private track(): void {
     this.resetIfNewDay();
-    this.usedToday += 1;
-    if (this.usedToday > this.dailyBudget) {
+    this._usedToday += 1;
+    if (this._usedToday > this.dailyBudget) {
       throw new AmapApiError("429", `达每日配额 ${this.dailyBudget}`);
     }
   }
