@@ -207,6 +207,14 @@ async function main() {
   const toRun = force ? spots.length : spots.length - alreadyFilled;
   console.log(`[13] 处理 ${spots.length} 个 spot（已写入 ${alreadyFilled}, ${force ? "force 全跑" : `待跑 ${toRun}`}）`);
 
+  // 空 spot：上游 04-import-db 没入该城市的 spot。退非 0 让 cron 报警 + 不前进 state，
+  // 明早同一城市再跑 (避免把 spot=0 静默当成功)
+  if (spots.length === 0) {
+    console.error(`[13] ❌ ${cityFilter ?? "当前"} 城市在数据库里 0 个 spot — 04-import-db 漏跑或 AI enrich 失败，请人工排查`);
+    await prisma.$disconnect();
+    process.exit(2);
+  }
+
   let updated = 0;
   let skipped = 0;
   let errors = 0;
