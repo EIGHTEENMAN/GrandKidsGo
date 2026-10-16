@@ -184,8 +184,8 @@ const FALLBACK_GUARDIAN: z.infer<typeof GuardianSchema> = {
 };
 
 async function callGuardian(entry: RawEntry): Promise<z.infer<typeof GuardianSchema>> {
-  const provider = getProvider();
   try {
+    const provider = getProvider();
     return await provider.json(
       [
         { role: "system", content: systemPrompt(entry.subtype) },
