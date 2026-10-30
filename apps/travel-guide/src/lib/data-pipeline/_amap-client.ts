@@ -42,17 +42,77 @@ export class AmapApiError extends Error {
   }
 }
 
+/**
+ * 判断错误是否为「当日配额耗尽」（而非 QPS 限流）。
+ *
+ * 2026-10-29 修复：高德返回的两种错误都被旧代码误判成 QPS 限流，导致
+ * **告警被静默吞掉**，脚本继续空跑一整天（实测 10/22~10/29 连续 8 天
+ * 每天白烧 9058 次失败调用、产出 0 条数据）。
+ *
+ * 真实错误码：
+ *   - 10044 USER_DAILY_QUERY_OVER_LIMIT → 账号日配额耗尽（**必须中止**）
+ *   - 10003 DAILY_QUERY_OVER_LIMIT       → Key 级日配额耗尽（必须中止）
+ *   - 10029 ABROAD_DAILY_QUERY_OVER_LIMIT→ 海外服务配额耗尽（必须中止）
+ *   - 10004 ACCESS_TOO_FREQUENT         → 分钟级访问过频（退避后可继续）
+ *   - 10029 CUQPS 超限 / LIMIT / Too Many → QPS 限流（退避后可继续）
+ */
+export function isQuotaExhausted(e: unknown): boolean {
+  const msg = (e as any)?.message ?? String(e ?? "");
+  const info = (e as any)?.info ?? "";
+  const status = String((e as any)?.status ?? "");
+  const code = (e as any)?.infocode ?? "";
+  return (
+    msg.includes("USER_DAILY_QUERY_OVER_LIMIT") ||
+    msg.includes("DAILY_QUERY_OVER_LIMIT") ||
+    info.includes("USER_DAILY_QUERY_OVER_LIMIT") ||
+    info.includes("DAILY_QUERY_OVER_LIMIT") ||
+    status === "10044" ||
+    status === "10003" ||
+    code === "10044" ||
+    code === "10003" ||
+    msg.includes("10044") ||
+    msg.includes("10003")
+  );
+}
+
+/** 判断错误是否为 QPS 限流（可退避重试） */
+export function isQpsLimited(e: unknown): boolean {
+  const msg = (e as any)?.message ?? String(e ?? "");
+  const info = (e as any)?.info ?? "";
+  return (
+    msg.includes("CUQPS") ||
+    msg.includes("Too Many") ||
+    msg.includes("ACCESS_TOO_FREQUENT") ||
+    info.includes("ACCESS_TOO_FREQUENT") ||
+    msg.includes("10004") ||
+    msg.includes("10029")
+  );
+}
+
 export interface AmapClientOptions {
   apiKey: string;
   /** 高德 daily 上限；触达会 throw，由调用方处理 */
   dailyBudget?: number;
 }
 
+/**
+ * 配额桶类型。
+ *
+ * 2026-10-29 实测：高德把「搜索类」和「地理编码类」分开计配额，
+ * 两个桶独立重置、独立封禁：
+ *   - search  ：place/around、place/text、place/polygon、place/detail
+ *   - geocode ：geocode/geo、geocode/regeo
+ * 搜索桶被打满时 geocode 桶仍可正常调用（当日实测 regeo 连打 30000 次 0 失败）。
+ */
+export type AmapQuotaBucket = "search" | "geocode";
+
 export class AmapClient {
   readonly apiKey: string;
   readonly dailyBudget: number;
   /** 当日已用配额（API 调用次数）。新的一天 0 点 ISO 日期切换后自动归零。 */
   private _usedToday = 0;
+  /** 按桶分别计数：搜索桶 / 地理编码桶 */
+  private _usedByBucket: Record<AmapQuotaBucket, number> = { search: 0, geocode: 0 };
   private dayKey: string;
 
   constructor(opts: AmapClientOptions) {
@@ -67,20 +127,35 @@ export class AmapClient {
     return this._usedToday;
   }
 
+  /** 读取指定桶当日已用配额 */
+  usedIn(bucket: AmapQuotaBucket): number {
+    this.resetIfNewDay();
+    return this._usedByBucket[bucket];
+  }
+
   private resetIfNewDay(): void {
     const today = new Date().toISOString().slice(0, 10);
     if (today !== this.dayKey) {
       this.dayKey = today;
       this._usedToday = 0;
+      this._usedByBucket = { search: 0, geocode: 0 };
     }
   }
 
-  private track(): void {
+  /**
+   * 记录一次调用。
+   *
+   * 2026-10-29 修复：旧实现**本地计数超过 5000 就自己 throw**，
+   * 而高德搜索类配额实际上早就是 10044（账号日配额，见下）。这导致：
+   *   1. 计数与真实配额脱节（本地报 23114/5000，实际是服务端封禁）
+   *   2. 触顶后仍然继续发请求，每天白烧 9000+ 次失败调用
+   * 现在改为：**只计数，不本地抛**——真实配额以服务端返回为准，
+   * 由调用方通过 isQuotaExhausted() 判断并切换/中止。
+   */
+  private track(bucket: AmapQuotaBucket = "search"): void {
     this.resetIfNewDay();
     this._usedToday += 1;
-    if (this._usedToday > this.dailyBudget) {
-      throw new AmapApiError("429", `达每日配额 ${this.dailyBudget}`);
-    }
+    this._usedByBucket[bucket] += 1;
   }
 
   /**
@@ -99,7 +174,7 @@ export class AmapClient {
     if (!this.apiKey) {
       throw new AmapApiError(401, "API key 未配置（AMAP_API_KEY）");
     }
-    this.track();
+    this.track("search");
     const qs = new URLSearchParams({
       key: this.apiKey,
       keywords: params.keywords,
@@ -126,7 +201,7 @@ export class AmapClient {
     if (!this.apiKey) {
       throw new AmapApiError(401, "API key 未配置（AMAP_API_KEY）");
     }
-    this.track();
+    this.track("search");
     const qs = new URLSearchParams({
       key: this.apiKey,
       keywords: params.keywords,
@@ -150,12 +225,60 @@ export class AmapClient {
   }
 
   /**
+   * 逆地理编码：坐标 → 周边 POI（**独立配额池**，搜索类配额耗尽时仍可用）
+   *
+   * 2026-10-29 实测：高德「搜索类」配额（place/around / place/text / place/polygon）
+   * 与「地理编码类」配额（geocode/geo / geocode/regeo）是**两个独立桶**。
+   * 搜索桶被 10044 USER_DAILY_QUERY_OVER_LIMIT 封死时，regeo 仍可正常返回。
+   * 2026-10-29 单日实测 regeo 连打 30000 次 0 失败。
+   *
+   * poitype 支持高德 POI 分类码，可按类目精准召回（实测有效的见 13-collect-nearby.ts）。
+   */
+  async regeo(params: {
+    location: string;            // "lng,lat"
+    radius?: number;             // 米，最大 5000（实测 2000 之外仍生效但覆盖稀疏）
+    poitype?: string;            // POI 分类码，如 060101
+    extensions?: "base" | "all";
+    signal?: AbortSignal;
+  }): Promise<AmapPoiRaw[]> {
+    if (!this.apiKey) {
+      throw new AmapApiError(401, "API key 未配置（AMAP_API_KEY）");
+    }
+    this.track("geocode");
+    // 注意：regeo 必须用 extensions=all —— 用 base 时高德**不返回 regeocode.pois 数组**
+    // （实测 base → n=0，all → n=2），会静默采不到任何数据。
+    const qs = new URLSearchParams({
+      key: this.apiKey,
+      location: params.location,
+      radius: String(params.radius ?? 2000),
+      extensions: params.extensions ?? "all",
+      poi: "true",
+      ...(params.poitype ? { poitype: params.poitype } : {}),
+    });
+    const url = `https://restapi.amap.com/v3/geocode/regeo?${qs.toString()}`;
+    const res = await fetch(url, { signal: params.signal });
+    if (!res.ok) {
+      throw new AmapApiError(res.status, await res.text().catch(() => ""));
+    }
+    const data = (await res.json()) as {
+      status: string;
+      info: string;
+      infocode?: string;
+      regeocode?: { pois?: AmapPoiRaw[] };
+    };
+    if (data.status !== "1") {
+      throw new AmapApiError(data.status, data.info);
+    }
+    return data.regeocode?.pois ?? [];
+  }
+
+  /**
    * 高德地理编码：地址 → 坐标（备用）
    * 当前数据流水线用不到，留接口供未来二期
    */
   async geocode(address: string, city?: string): Promise<{ lng: number; lat: number } | null> {
     if (!this.apiKey) return null;
-    this.track();
+    this.track("geocode");
     const qs = new URLSearchParams({
       key: this.apiKey,
       address,
