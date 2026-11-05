@@ -98,33 +98,6 @@ export default function QuizBattle({ user, onBack, initialMode, initialCategory,
   const [countdown, setCountdown] = useState<number | null>(null)
   const [isHost, setIsHost] = useState(false)
 
-  // GEO: 当前题目切换时，注入 Question schema 单题标记
-  useEffect(() => {
-    if (!question) return
-    let options: string[] = []
-    try { options = JSON.parse(question.options) } catch {}
-    const correctText = options[question.answer] || ''
-    const difficulty = question.difficulty === 1 ? 'easy' : question.difficulty === 2 ? 'medium' : 'hard'
-    const categoryMap: Record<string, string> = { poetry: '古诗词', english: '英语', guoxue: '国学', general: '通识' }
-    const subject = categoryMap[question.category] || '挑战题'
-    injectQuiz({
-      name: `${subject} · 当前挑战题`,
-      description: question.question,
-      url: 'https://tiaozhan.grandand.com',
-      about: subject,
-      educationalLevel: difficulty,
-      questions: [{
-        text: question.question,
-        answerText: correctText,
-        difficulty: difficulty as 'easy' | 'medium' | 'hard',
-      }],
-      providerName: '童慧行小答答',
-    })
-    return () => {
-      document.querySelectorAll('[id^="geo-jsonld"]').forEach(el => el.remove())
-    }
-  }, [question])
-
   // WebSocket
   const [ws, setWs] = useState<WebSocket | null>(null)
   const wsRef = useRef<WebSocket | null>(null)
@@ -155,6 +128,35 @@ export default function QuizBattle({ user, onBack, initialMode, initialCategory,
 
   // Auto-start solo when coming from home page
   const autoStarted = useRef(false)
+
+  // GEO: 当前题目切换时，注入 Question schema 单题标记
+  // ⚠️ 必须放在 question 声明之后 —— 依赖数组在渲染时立即求值，
+  // 若 question 尚未声明会抛 TDZ ReferenceError 导致整页白屏。
+  useEffect(() => {
+    if (!question) return
+    let options: string[] = []
+    try { options = JSON.parse(question.options) } catch {}
+    const correctText = options[question.answer] || ''
+    const difficulty = question.difficulty === 1 ? 'easy' : question.difficulty === 2 ? 'medium' : 'hard'
+    const categoryMap: Record<string, string> = { poetry: '古诗词', english: '英语', guoxue: '国学', general: '通识' }
+    const subject = categoryMap[question.category] || '挑战题'
+    injectQuiz({
+      name: `${subject} · 当前挑战题`,
+      description: question.question,
+      url: 'https://tiaozhan.grandand.com',
+      about: subject,
+      educationalLevel: difficulty,
+      questions: [{
+        text: question.question,
+        answerText: correctText,
+        difficulty: difficulty as 'easy' | 'medium' | 'hard',
+      }],
+      providerName: '童慧行小答答',
+    })
+    return () => {
+      document.querySelectorAll('[id^="geo-jsonld"]').forEach(el => el.remove())
+    }
+  }, [question])
 
   useEffect(() => {
     if (initialMode === 'solo' && !autoStarted.current) {
