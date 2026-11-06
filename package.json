@@ -1,6 +1,15 @@
 {
+  "name": "grandkidsgo",
+  "private": true,
+  "scripts": {
+    "typecheck": "npm --prefix apps/xiaodada run typecheck && npm --prefix apps/store run typecheck && npm --prefix apps/forum run typecheck",
+    "check:tdz": "node scripts/check-tdz-deps.mjs apps",
+    "verify": "npm run typecheck && npm run check:tdz",
+    "prepare": "husky"
+  },
   "devDependencies": {
     "@playwright/test": "^1.62.1",
-    "playwright": "^1.62.1"
+    "playwright": "^1.62.1",
+    "husky": "^9.1.7"
   }
 }

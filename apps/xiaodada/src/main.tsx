@@ -2,11 +2,14 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
 import './index.css'
+import ErrorBoundary from './components/ErrorBoundary'
 import { initErrorReporter } from '@shared/composables/useErrorReporter'
 
 initErrorReporter({ endpoint: 'https://auth.grandand.com/api/errors', appName: 'xiaodada' })
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <App />
+    <ErrorBoundary appName="xiaodada">
+      <App />
+    </ErrorBoundary>
   </React.StrictMode>,
 )

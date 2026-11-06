@@ -4,6 +4,7 @@ import { navLinks } from '@shared/config/navLinks'
 import Home from './pages/Home'
 import QuizBattle from './pages/QuizBattle'
 import LoginModal from './components/LoginModal'
+import ErrorBoundary from './components/ErrorBoundary'
 
 type Page = 'home' | 'quiz'
 
@@ -299,12 +300,15 @@ export default function App() {
         </div>
       </header>
       <div className="app">
-        {page === 'home' && (
-          <Home user={user} onLogin={handleLogin} onStart={startBattle} roomTarget={roomTarget} onShowLogin={() => setShowLogin(true)} />
-        )}
-        {page === 'quiz' && user && battleSettings && (
-          <QuizBattle user={{ id: user.id, username: displayName, token: getToken() || '' }} onBack={() => navigate('home')} initialMode={battleSettings.mode} initialCategory={battleSettings.category} initialRoomTarget={roomTarget || undefined} initialSectionRef={battleSettings.sectionRef} />
-        )}
+        {/* 内层错误边界 —— 答题页崩溃时保住 header/footer，不至于整站白屏 */}
+        <ErrorBoundary appName="xiaodada">
+          {page === 'home' && (
+            <Home user={user} onLogin={handleLogin} onStart={startBattle} roomTarget={roomTarget} onShowLogin={() => setShowLogin(true)} />
+          )}
+          {page === 'quiz' && user && battleSettings && (
+            <QuizBattle user={{ id: user.id, username: displayName, token: getToken() || '' }} onBack={() => navigate('home')} initialMode={battleSettings.mode} initialCategory={battleSettings.category} initialRoomTarget={roomTarget || undefined} initialSectionRef={battleSettings.sectionRef} />
+          )}
+        </ErrorBoundary>
       </div>
       <footer style={{ textAlign: 'center', padding: '24px 16px', borderTop: '1px solid #e2e8f0', marginTop: '32px', fontSize: 12, color: '#94a3b8' }}>
         <p style={{ margin: '0 0 6px' }}>&copy; 2026 童慧行小答答 &mdash; 答题挑战平台</p>

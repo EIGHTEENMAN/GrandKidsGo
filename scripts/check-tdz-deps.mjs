@@ -129,10 +129,14 @@ for (const f of files) {
 
 if (!findings.length) {
   console.log(`✅ 扫描 ${files.length} 个文件，未发现 TDZ 依赖数组问题`);
+  process.exit(0);
 } else {
   console.log(`⚠️  发现 ${findings.length} 处 TDZ 风险（扫描 ${files.length} 个文件）：\n`);
   for (const f of findings) {
     console.log(`${f.file}:${f.callLine}  ${f.hook}(..., ${f.deps})`);
     console.log(`   └─ 依赖 "${f.dep}" 声明于第 ${f.declLine} 行（晚于 hook 调用）`);
   }
+  console.log('\n修复方法：把该 hook 移到被依赖变量的声明之后。');
+  console.log('（TS 也会报 TS2448，可用 npm run typecheck 交叉确认）');
+  process.exit(1);
 }
